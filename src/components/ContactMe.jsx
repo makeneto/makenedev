@@ -161,6 +161,7 @@ const ContactForm = styled.form`
         & p {
             color: red;
             font-size: .8rem;
+            font-weight: 400;
         }
     }
 `;
