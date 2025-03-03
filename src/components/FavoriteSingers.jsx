@@ -66,7 +66,7 @@ const Singers = styled.div`
         &:hover {
             & .controls {
                 opacity: 1;
-                bottom: 2%;
+                bottom: 5%;
             }
         }
 
