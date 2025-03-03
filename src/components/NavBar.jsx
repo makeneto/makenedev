@@ -128,8 +128,14 @@ export default function NavBar() {
     }, [])
 
     useEffect(() => {
-        if (isMobile) {
-            setIsVisible(false)
+        let lastScrollY = window.scrollY
+
+        if (isMobile && window.scrollY >= 90) {
+            if (window.scrollY > lastScrollY) {
+                setIsVisible(false)
+            } else {
+                setIsVisible(true)
+            }
         }
     }, [isMobile])
 
