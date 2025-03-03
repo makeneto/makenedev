@@ -9,7 +9,7 @@ const Nav = styled.nav`
     pointer-events: auto;
     z-index: 9999;
     position: fixed;
-    top: ${({ isVisible }) => (isVisible ? '3%' : '-100px')};
+    top: ${({ isVisible, isMobile }) => (isVisible ? (isMobile ? '2.3%' : '3%') : '-100px')};
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
@@ -34,7 +34,6 @@ const Nav = styled.nav`
     }
 
     @media (max-width: 480px) {
-        top: 2.3%;
         padding: .8rem .5rem .8rem 1rem;
         gap: .3rem;
     }
@@ -128,6 +127,12 @@ export default function NavBar() {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
 
+    useEffect(() => {
+        if (isMobile) {
+            setIsVisible(false)
+        }
+    }, [isMobile])
+
     const isHome = location.pathname === '/'
 
     const handleScrollToSection = (section) => {
@@ -151,7 +156,7 @@ export default function NavBar() {
     }
 
     return (
-        <Nav isScrolled={isScrolled} isVisible={isVisible}>
+        <Nav isScrolled={isScrolled} isVisible={isVisible} isMobile={isMobile}>
             <Logo to="/">{!isMobile ? 'makenedev' : 'mdev'}</Logo>
             <ul>
                 <li>
