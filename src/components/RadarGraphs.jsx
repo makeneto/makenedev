@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import * as echarts from 'echarts'
 import styled from 'styled-components'
 
-import { SmallTitle } from './TechnologiesPassing'
+import { SmallTitle } from './ui/SmallTitle'
 import RadarGraph2 from './ui/RadarGraph2'
 import { Graphs } from './ui/Graphs'
 
