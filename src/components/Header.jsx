@@ -80,8 +80,8 @@ const Content = styled.div`
 
         @media (max-width: 480px) {
             font-size: 1.6rem;
-            line-height: 2.5rem;
-            margin: .7rem 0 .4rem;
+            line-height: 2.2rem;
+            margin: .7rem 0 .5rem;
         }
     }
 
@@ -111,7 +111,7 @@ const Content = styled.div`
 
     @media (max-width: 480px) {
         width: 90%;
-        top: 42%;
+        top: 47%;
     }
 `
 
