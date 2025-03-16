@@ -12,8 +12,8 @@ const Nav = styled.nav`
     z-index: 9999;
     position: fixed;
 
-    top: ${({ $isVisible, $isMobile, $isLoaded }) =>
-        ($isLoaded ? ($isVisible ? ($isMobile ? "2%" : "3%") : "-100px") : "-100px")};
+    top: ${({ $isVisible, $isLoaded }) =>
+        ($isLoaded ? ($isVisible ? "3%" : "-100px") : "-100px")};
         
     left: 50%;
     transform: translateX(-50%);
@@ -29,7 +29,6 @@ const Nav = styled.nav`
         ($isScrolled ? "rgba(1,28,64,0.5)" : "transparent")};
 
     -webkit-backdrop-filter: blur(17px);
-
     backdrop-filter: ${({ $isScrolled }) =>
         ($isScrolled ? "blur(17px)" : "blur(0)")};
 
@@ -53,7 +52,7 @@ const Nav = styled.nav`
             }
 
             @media (max-width: 480px) {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             @media (max-width: 375px) {
@@ -67,11 +66,11 @@ const Nav = styled.nav`
     }
 
     @media (max-width: 480px) {
+        top: ${({ $isVisible }) => ($isVisible ? "-0.1rem" : "-100px")};
         padding: 1rem 1rem 0.9rem .7rem;
         gap: .5rem;
         border-radius: 0;
         width: 100%;
-        top: -0.3rem;
     }
 `
 
@@ -88,6 +87,7 @@ export const Logo = styled(Link)`
 
     @media (max-width: 480px) {
         font-size: ${({ size }) => size === 'big' && '1.7rem'};
+        margin-inline: ${({ size }) => size === 'big' ? 'auto' : '.3rem'};
     }
 `
 
@@ -149,11 +149,9 @@ const GithubButton = styled.a`
 
     @media (max-width: 884px) {
         font-size: 1.3rem;
-        margin-left: .3rem;
     }
 
     @media (max-width: 480px) {
-        margin-left: .7rem;
         padding: 0.3rem 0.8rem;
     }
 `
@@ -167,22 +165,31 @@ export default function NavBar() {
     const scrollToSection = useScrollToSection();
 
     useEffect(() => {
-        let lastScrollY = window.scrollY;
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
 
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-            
-            if (window.scrollY > 300 && window.scrollY > lastScrollY) {
-                setIsVisible(false); // Esconde a NavBar ao rolar para baixo
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+            setIsScrolled(currentScrollY > 10);
+
+            if (currentScrollY > 500 && currentScrollY > lastScrollY) {
+                setIsVisible(false);
             } else {
-                setIsVisible(true); // Mostra a NavBar ao rolar para cima
+                setIsVisible(true);
             }
-            
-            lastScrollY = window.scrollY;
+
+            lastScrollY = currentScrollY;
         };
 
+        setIsVisible(true);
+
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("touchmove", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleScroll);
+        };
     }, []);
 
     useEffect(() => {
@@ -202,7 +209,7 @@ export default function NavBar() {
     }, [])
 
     return (
-        <Nav  $isScrolled={isScrolled} $isVisible={isVisible} $isMobile={isMobile} $isLoaded={isLoaded}>
+        <Nav $isScrolled={isScrolled} $isVisible={isVisible} $isMobile={isMobile} $isLoaded={isLoaded}>
             <Logo to="/" translate="no">
                 {!isMobile ? (
                     <span>makenedev</span>
