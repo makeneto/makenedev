@@ -118,6 +118,7 @@ const TextPage = styled.div`
     background-color: var(--dark-blue-v2) ;
     overflow-y: scroll;
     padding: 0.3rem 2rem 1rem;
+    font-weight: 400;
 
     & h2 {
         margin-top: 1.6rem;
