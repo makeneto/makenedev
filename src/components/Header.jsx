@@ -23,8 +23,8 @@ const HeaderStyled = styled.header`
     }   
 
     @media (max-width: 480px) {
-        height: 92dvh;
-        margin-bottom: -3rem;
+        height: 100dvh;
+        margin-bottom: 0rem;
         padding: 0;
     }
 `;
@@ -111,7 +111,7 @@ const Content = styled.div`
 
     @media (max-width: 480px) {
         width: 90%;
-        top: 47%;
+        top: 45%;
     }
 `
 
