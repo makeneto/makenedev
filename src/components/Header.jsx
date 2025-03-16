@@ -1,11 +1,11 @@
 import moment from "moment"
-import { HiOutlineArrowDown } from "react-icons/hi"
 import { Link as ScrollLink } from 'react-scroll'
+import { useMediaQuery } from "react-responsive"
+import { FaChevronDown } from "react-icons/fa"
 import styled from "styled-components"
 
-import { handleConfetti } from "../helpers/confetti"
-import { useMediaQuery } from "react-responsive"
 import { useScrollToSection } from "../helpers/scrollToSection"
+import { handleConfetti } from "../helpers/confetti"
 
 const HeaderStyled = styled.header`
     height: 123dvh;
@@ -36,8 +36,29 @@ const Content = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
 
+    & img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-inline: auto;
+        object-fit: cover;
+        margin-bottom: 1.4rem;
+
+        @media (max-width: 884px) {
+            width: 14rem;
+            height: 14rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
     & h1 {
-        margin: 2.3rem 0 1rem;
+        margin: 1rem 0 1rem;
         font-size: 4.2rem;
         font-weight: 900;
         line-height: 5.8rem;
@@ -49,18 +70,18 @@ const Content = styled.div`
         
         @media (max-width: 1280px) {
             font-size: 3rem;
-            line-height: 3.8rem;
+            line-height: 3.9rem;
         }
 
         @media (max-width: 884px) {
-            font-size: 3.5rem;
-            line-height: 4.3rem;
+            font-size: 3rem;
+            line-height: 3.7rem;
         }
 
         @media (max-width: 480px) {
             font-size: 1.6rem;
-            line-height: 2.1rem;
-            margin: 1.5rem 0 1rem;
+            line-height: 2.5rem;
+            margin: .7rem 0 .4rem;
         }
     }
 
@@ -69,7 +90,7 @@ const Content = styled.div`
         font-weight: 500;
 
         @media (max-width: 1280px) {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         @media (max-width: 480px) {
@@ -97,7 +118,8 @@ const Content = styled.div`
 const Career = styled.span`
     border: var(--light-border);
     border-radius: 10rem;
-    padding: 0.7rem 0.9rem;
+    padding: 0.4rem 0.7rem;
+    font-size: .8rem;
     font-weight: 400;
     color: white;
     cursor: pointer;
@@ -123,17 +145,9 @@ const Button = styled(ScrollLink)`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: var(--light-blue);
-    font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: black;
-    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: white;
     border: none;
-    border-radius: 10rem;
     margin-top: 2rem;
     cursor: pointer;
     transition: all .2s ease-in;
@@ -149,21 +163,15 @@ const Button = styled(ScrollLink)`
     
     @media (max-width: 1280px) {
         font-size: 1rem;
-        padding: 0.5rem 1.7rem;
     }
 
     @media (max-width: 884px) {
         font-size: 1.3rem;
-        padding: 0.6rem 1.9rem;
     }
 
     @media (max-width: 480px) {
-        width: max-content;
-        padding: 0.4rem 1.3rem;
         margin: 2.6rem 0 0;
         font-size: 1rem;
-        text-align: center;
-        justify-content: center;
     }
 `
 
@@ -172,11 +180,14 @@ export default function Header() {
     const now = moment()
     const currentCareerYears = now.diff(startDate, 'years')
     const isMobile = useMediaQuery({ maxWidth: 884 })
+    // const isPhone = useMediaQuery({ maxWidth: 480 })
     const scrollToSection = useScrollToSection()
 
     return (
         <HeaderStyled>
             <Content>
+                <img src="/images/profile.jpg" alt="Makene's Profile" loading="lazy" />
+
                 <Career onClick={handleConfetti}>🎉 {currentCareerYears} years in programming</Career>
 
                 <h1><span>Boosting </span>growth with smart and <span>efficient solutions</span></h1>
@@ -190,8 +201,7 @@ export default function Header() {
                     offset={-100}
                     spy={true}
                 >
-                    Explore more
-                    <HiOutlineArrowDown />
+                    <FaChevronDown />
                 </Button>
             </Content>
         </HeaderStyled>
