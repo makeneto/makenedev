@@ -35,7 +35,6 @@ const Documents = styled.div`
         }
     }
 
-
     @media (max-width: 1280px) {
         top: 107%;
     }
@@ -215,7 +214,7 @@ export default function PersonalPages() {
                                     email: "makeneto17@gmail.com",
                                     education: [
                                         {
-                                            institution: "CPNSA",
+                                            institution: "CEPNSA",
                                             course: "Computer Technician",
                                             period: "2021 - 2025",
                                             description: "I learned full stack developm...",
@@ -335,32 +334,6 @@ export default function PersonalPages() {
                             <li>Firebase</li>
                             <li>PostgreSQL</li>
                         </ul>
-
-                        {/* <ul>
-                            <h3>Tools</h3>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Figma</li>
-                            <li>Vercel</li>
-                        </ul>
-
-                        <ul>
-                            <h3>Soft Skills</h3>
-                            <li>Problem solving</li>
-                            <li>Teamwork</li>
-                            <li>Self -Daidatism</li>
-                            <li>Communication</li>
-                            <li>Critical thinking</li>
-                        </ul>
-
-                        <ul>
-                            <h3>Other</h3>
-                            <li>ui/uxDesign</li>
-                            <li>Automated tests</li>
-                            <li>Agile Methodologies</li>
-                            <li>ci/cd</li>
-                            <li>Software Architecture</li>
-                        </ul> */}
                     </Skills>
                 </TextPage>
             </Page>
