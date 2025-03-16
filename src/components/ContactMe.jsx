@@ -169,7 +169,7 @@ const ContactForm = styled.form`
         }
 
         & p {
-            color: red;
+            color: #F20F38;
             font-size: .8rem;
             font-weight: 400;
         }
@@ -328,7 +328,7 @@ export default function ContactMe() {
                                                     type="text"
                                                     name="name"
                                                     placeholder='Enter your name'
-                                                    {...register('Name', { required: `Whoa! No name, no email! I even need to know who you are talking to. 🤖` })}
+                                                    {...register('Name', { required: `Wow! No name, no email! Even AI needs to know who you are talking to. 🤖` })}
                                                 />
                                                 <ValidationError
                                                     prefix="Name"
