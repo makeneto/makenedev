@@ -355,10 +355,10 @@ export default function ContactMe() {
                                                     name="email"
                                                     placeholder='your@email.com'
                                                     {...register('Email', {
-                                                        required: 'Hmm ... try to send an email without email? Is this magic or a bug? 🪄📧',
+                                                        required: 'Hmm... try to send an email without email? Is this magic or a bug? 🪄📧',
                                                         pattern: {
                                                             value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                                                            message: 'Hmm ... try to send an email without email? Is this magic or a bug? 🪄📧'
+                                                            message: 'Hmm... try to send an email without email? Is this magic or a bug? 🪄📧'
                                                         }
                                                     })}
                                                 />
@@ -388,7 +388,7 @@ export default function ContactMe() {
                                                     type="text"
                                                     name="about"
                                                     placeholder='Subject of discussion'
-                                                    {...register('About', { required: 'Have you ever wondered if the movies were like this?Now we present... nothing! Insert a theme, please.🎬' })}
+                                                    {...register('About', { required: 'Have you ever wondered if the movies were like this? Now we present... nothing! Insert a theme, please.🎬' })}
                                                 />
                                                 <ValidationError
                                                     prefix="About"
