@@ -1,20 +1,21 @@
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { IoLogoLinkedin, IoDocumentText, IoLogoGithub } from 'react-icons/io5'
 import { FaCode } from "react-icons/fa"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 import styled from 'styled-components'
+
 import { useCloseSkills } from "../helpers/showSkills"
 
 const SubMenu = styled.aside`
     width: fit-content;
     position: fixed;
     left: 50%;
-    bottom: -2%;
+    bottom: ${({ isHidden }) => (isHidden ? "-100px" : "-2%")};
     transform: translate(-50%, -50%);
     padding: .6rem;
     border-radius: .6rem;
-    
     background: var(--weak-blue) !important;
     -webkit-backdrop-filter: blur(17px);
     backdrop-filter: blur(17px) !important;
@@ -22,6 +23,7 @@ const SubMenu = styled.aside`
     align-items: center;
     gap: 1rem;
     z-index: 9999;
+    transition: bottom 0.3s ease-in-out;
 
     svg {
         background: var(--light-blue) !important;
@@ -54,9 +56,9 @@ const SubMenu = styled.aside`
     }
 
     @media (max-width: 884px) {
-        bottom: 0;
+        bottom: ${({ isHidden }) => (isHidden ? "-100px" : "0")};
     }
-`
+`;
 
 const MenuBottom = styled(Link)`
     position: relative;
@@ -132,15 +134,35 @@ const iconVariants = {
 }
 
 export default function SubNav() {
+    const [isHidden, setIsHidden] = useState(false)
+    const [lastScrollY, setLastScrollY] = useState(0)
+
     const linkedInLink = 'https://linkedin.com/in/makene-neto'
-    // const handleCloseReadme = useCloseReadme()
     const handleCloseSkills = useCloseSkills()
     const handlePdfClick = () => {
         window.open('/docs/makenes-curriculum.pdf', '_blank')
-    }
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY
+
+            if (currentScrollY > lastScrollY && currentScrollY > 500) {
+                setIsHidden(true)
+            } else {
+                setIsHidden(false)
+            }
+            setLastScrollY(currentScrollY)
+        };
+
+        window.addEventListener("scroll", handleScroll)
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [lastScrollY])
 
     return (
-        <SubMenu>
+        <SubMenu isHidden={isHidden}>
             <MenuBottom
                 to={linkedInLink}
                 target='_blank'
@@ -183,21 +205,6 @@ export default function SubNav() {
                     <FaCode />
                 </motion.div>
             </MenuBottom>
-
-            {/* <MenuButton
-                onClick={handleCloseReadme}
-            >
-
-                <motion.div
-                    initial="initial"
-                    whileHover="hover"
-                    onHoverEnd={(e) => e.target.style.animation = "none"}
-                    variants={iconVariants}
-                >
-                    <span>Readme</span>
-                    <IoLogoGithub />
-                </motion.div>
-            </MenuButton> */}
         </SubMenu>
     )
 }
