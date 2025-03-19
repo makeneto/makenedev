@@ -32,6 +32,7 @@ const Contact = styled.div`
     @media (max-width: 884px) {
         width: 100%;
         padding: 0 5%;
+        margin: 2rem auto 0;
     }
 
     @media (max-width: 480px) {
