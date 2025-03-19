@@ -30,11 +30,11 @@ const Contact = styled.div`
     }
 
     @media (max-width: 884px) {
+        width: 100%;
         padding: 0 5%;
     }
 
     @media (max-width: 480px) {
-        padding: 0 5%;
         grid-template-columns: repeat(1, 1fr);
     }
 `;
