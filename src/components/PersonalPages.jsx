@@ -35,6 +35,10 @@ const Documents = styled.div`
         }
     }
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     @media (max-width: 1280px) {
         top: 107%;
     }
@@ -66,6 +70,10 @@ const Page = styled.div`
         background: linear-gradient(to top, var(--dark-blue-v2) 10%, transparent 100%);
         pointer-events: none;
         z-index: 1;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 
     @media (max-width: 1280px) {
@@ -116,7 +124,7 @@ const TextPage = styled.div`
     margin-top: 1rem;
     color: white;
     background-color: var(--dark-blue-v2) ;
-    overflow-y: scroll;
+    overflow-y: hidden;
     padding: 0.3rem 2rem 1rem;
     font-weight: 400;
 
