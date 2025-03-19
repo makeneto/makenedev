@@ -12,7 +12,7 @@ export default function MessageSent() {
                         </span>
 
                         <h3 id="hs-task-created-alert-label" class="mb-2 text-xl font-bold text-gray-800 dark:text-neutral-200">
-                            Mensagem enviada com sucesso!
+                            Message sent successfully!
                         </h3>
                         <p class="text-gray-500 dark:text-neutral-500">
                         If you need a faster response, contact us directly at <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium dark:text-blue-500" href="https://wa.me/945336003?text=Hello,%20I%20am%20contacting%20you%20through%20the%20website%20makenedev.com.">Whatsapp.</a> Thanks 🫰.
