@@ -1,2 +1,0 @@
-# Makene Neto
-My Portfolio
