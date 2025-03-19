@@ -55,6 +55,11 @@ const Content = styled.div`
             height: 10rem;
             margin-bottom: 1.6rem;
         }
+
+        @media (max-height: 600px) {
+            width: 9rem;
+            height: 9rem;
+        }
     }
 
     & h1 {
@@ -82,6 +87,11 @@ const Content = styled.div`
             font-size: 1.6rem;
             line-height: 2.2rem;
             margin: .7rem 0 .5rem;
+        }
+
+        @media (max-height: 600px) {
+            font-size: 2.2rem;
+            line-height: 2.6rem;
         }
     }
 
