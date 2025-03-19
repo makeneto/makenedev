@@ -428,7 +428,10 @@ export default function ContactMe() {
                                                 {isValid && (
                                                     <SendButton type="submit" disabled={state.submitting}>
                                                         {!state.submitting ? (
-                                                            <>Send <HiOutlinePaperAirplane /></>
+                                                            <>
+                                                                Send
+                                                                <HiOutlinePaperAirplane />
+                                                            </>
                                                         ) : (
                                                             <SpinnerMini />
                                                         )}
