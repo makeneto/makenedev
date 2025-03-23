@@ -4,7 +4,6 @@ import RadarGraphs from "../components/RadarGraphs"
 import Certificates from '../components/Certificates'
 import LastProjects from "../components/LastProjects"
 import WorkSection from "../components/WorkSection"
-import Skills from "../components/Skills"
 import ContactMe from "../components/ContactMe"
 import FAQ from "../components/FAQ"
 
@@ -17,10 +16,6 @@ export default function Home() {
             <article>
                 <PersonalPages />
             </article>
-
-            <aside>
-                <Skills />
-            </aside>
 
             <main>
                 <RadarGraphs />

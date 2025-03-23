@@ -94,7 +94,6 @@ export default function Project({ projectObj }) {
             <img
                 src={imageUrl ? imageUrl : '/images/projects/clean-code.png'}
                 alt={`${name} pic`}
-                loading="lazy"
             />
             <h4>{formatNameProject(name)}</h4>
             <p>{description}</p>

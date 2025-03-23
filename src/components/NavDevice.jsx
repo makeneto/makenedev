@@ -104,16 +104,22 @@ export default function NavDevice() {
 
     useEffect(() => {
         const updateBatteryStatus = (battery) => {
-            setBatteryInfo({ charging: battery.charging, level: battery.level })
-        }
+            setBatteryInfo({ charging: battery.charging, level: battery.level });
+        };
 
         navigator.getBattery().then((battery) => {
-            updateBatteryStatus(battery)
+            updateBatteryStatus(battery);
 
-            battery.addEventListener("chargingchange", () => updateBatteryStatus(battery))
-            battery.addEventListener("levelchange", () => updateBatteryStatus(battery))
-        })
-    }, [batteryInfo, setBatteryInfo])
+            battery.addEventListener("chargingchange", () => updateBatteryStatus(battery));
+            battery.addEventListener("levelchange", () => updateBatteryStatus(battery));
+
+            // Cleanup listeners ao desmontar o componente
+            return () => {
+                battery.removeEventListener("chargingchange", updateBatteryStatus);
+                battery.removeEventListener("levelchange", updateBatteryStatus);
+            };
+        });
+    }, []); // Remova `batteryInfo` e `setBatteryInfo` das dependências
 
     useEffect(() => {
         const batteryLevel = Math.round(batteryInfo.level * 100)

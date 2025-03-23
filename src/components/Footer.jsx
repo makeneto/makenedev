@@ -98,7 +98,7 @@ export default function Footer() {
                 <Logo size="big" translate="no">makenedev</Logo>
                 <div>
                     <p>Glad to share my work.</p>
-                    <p>© {currentYear} Makene Neto, All rights reserved.</p>
+                    <p>© {currentYear}, All rights reserved.</p>
                     <div>
                         <Link to="https://www.instagram.com/makenedev" target="_blank">
                             <FaInstagram />

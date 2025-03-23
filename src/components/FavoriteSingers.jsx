@@ -15,7 +15,7 @@ const SingerStyled = styled.section`
 `
 
 export const DescriptionTitle = styled.p`
-    width: 50rem;
+    width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '50rem'};
     font-size: 1.4rem;
     font-weight: 400;
     color: var(--light-grey);
@@ -23,13 +23,18 @@ export const DescriptionTitle = styled.p`
     margin: ${({ margin }) => margin === 'large' ? '2rem auto 4rem' : '1rem auto 2rem'};
 
     @media (max-width: 1280px) {
-        width: 45rem;
+        width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '45rem'};
+        width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '45rem'};
         margin: 0 auto 2rem;
         font-size: 1.2rem;
     }
+    
+    @media (max-width: 884px) {
+        width: ${({ noWidth }) => noWidth === 'yes' ? '16rem;' : ''};
+    }
 
     @media (max-width: 480px) {
-        width: 95%;
+        width: ${({ noWidth }) => noWidth === 'yes' ? '95%' : '95%'};
         margin: 0 auto 2rem;
         font-size: 1rem;
         padding-inline: 1rem;

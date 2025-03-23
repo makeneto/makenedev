@@ -104,8 +104,7 @@ const NavLinks = styled(Link)`
     }
 
     &.active {
-        color: var(--dark-green);
-        font-weight: 600;
+        font-size: 2rem;
     }
 `
 
@@ -231,7 +230,7 @@ export default function NavBar() {
                     </AnotherNavLinks>
                 </li>
                 <li>
-                    <NavLinks to="/about">About</NavLinks>
+                    <NavLinks to="/about" className="activeLink">About</NavLinks>
                 </li>
                 <li>
                     <AnotherNavLinks

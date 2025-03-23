@@ -85,7 +85,7 @@ export default function Certificate({ ObjData }) {
     return (
         <CertificateStyled href={link}>
             {isNew(date) && <New>New</New>}
-            <img src={image} alt={title} loading="lazy" />
+            <img src={image} alt={title} />
             <h5>{title}</h5>
 
             <Details>
