@@ -93,7 +93,7 @@ export default function Skills() {
     return (
         <>
             <Overlay show={showSkills} />
-            <SkillStyled show={showSkills}>
+            <SkillStyled show={showSkills ? "true" : undefined}>
                 <SkillsContainer>
                     {skills.map((skill) => (
                         <Skill key={skill.title} skillObj={skill} />

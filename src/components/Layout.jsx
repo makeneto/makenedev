@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 import ClientWrapper from "./ClientWrapper"
 import NavFeatures from "./NavFeatures"
+import Skills from "./Skills"
 import SubNav from "./SubNav"
 import Footer from "./Footer"
 import GlobalStyles from "../css/globalStyles"
@@ -17,7 +18,10 @@ export default function Layout({ children }) {
         <>
             <GlobalStyles />
             <NavFeatures />
-            <SubNav />
+
+            <aside>
+                <Skills />
+            </aside>
 
             <ClientWrapper>
                 <Main>
@@ -26,6 +30,7 @@ export default function Layout({ children }) {
                 <Footer />
             </ClientWrapper>
 
+            <SubNav />
             <ScrollTop />
         </>
     )
