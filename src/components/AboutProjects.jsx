@@ -138,6 +138,10 @@ const Techs = styled.div`
             width: 7.3rem;
             height: 2.1rem;
             justify-self: center;
+
+            &:nth-child(3) {
+                justify-self: center;
+            }
         }
     }
 
@@ -193,7 +197,8 @@ const ProjectsContainer = styled.section`
 
     @media (max-width: 480px) {
         display: grid;
-        justify-content: center;
+        justify-content: center;   
+        margin-top: 7rem;
         
         & div:first-child {
             display: none;
@@ -263,7 +268,7 @@ const Website = styled.div`
     `}
 
     @media (max-width: 480px) {
-        width: 85%;
+        width: 82vw;
         height: 25rem;
     }
 `
