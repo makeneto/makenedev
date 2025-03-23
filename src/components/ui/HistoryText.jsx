@@ -60,7 +60,7 @@ export default function HistoryText() {
     return (
         <AnimatedText id="history-text">
             <Line style={{ opacity: isVisible ? 1 : 0 }}>
-                Since I was a child, I have always fell in love with technology, but it was in programming that I discovered my purpose. The encouragement of my family, I learned alone, creating projects like destination pages and a platform for a gym. Then, as a full stack developer, I still evolve, facing challenges and exploring new technologies to create impactful solutions.
+                Since I was a child, I have always fell in love with technology, but it was in programming that I discovered my purpose. The encouragement of my family, I learned alone, creating projects like <span translate="no">landing pages</span> and a platform for a gym. Then, as a full stack developer, I still evolve, facing challenges and exploring new technologies to create impactful solutions.
             </Line>
         </AnimatedText>
     )
