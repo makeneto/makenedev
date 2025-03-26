@@ -140,7 +140,7 @@ export default function SubNav() {
     const linkedInLink = 'https://linkedin.com/in/makene-neto'
     const handleCloseSkills = useCloseSkills()
     const handlePdfClick = () => {
-        window.open('/docs/makenes-curriculum.pdf', '_blank')
+        window.open('/docs/makenes-resume-en.pdf', '_blank')
     };
 
     useEffect(() => {
