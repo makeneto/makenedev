@@ -97,13 +97,12 @@ export default function LastProjects() {
                 )}
 
                 <div>
-                    <Link href='https://github.com/makeneto?tab=repositories' target="_blank">
+                    <Link to='https://github.com/makeneto?tab=repositories' target="_blank">
                         Full List
                         <HiOutlineArrowRight />
                     </Link>
                 </div>
             </ProjectsContainer>
-
         </ProjectsStyled>
     )
 }

@@ -1,18 +1,29 @@
 import { useLocation, useNavigate } from "react-router-dom"
-import { animateScroll as scroll } from "react-scroll"
 
 export const useScrollToSection = () => {
     const location = useLocation()
     const navigate = useNavigate()
 
     const handleScrollToSection = (section) => {
-        if (location.pathname === '/') {
-            scroll.scrollTo(document.getElementById(section).offsetTop - 100, {
-                smooth: true,
-                duration: 500,
-            })
+        if (location.pathname === "/") {
+            const element = document.getElementById(section)
+            if (element) {
+                window.scrollTo({
+                    top: element.offsetTop - 100,
+                    behavior: "smooth",
+                })
+            }
         } else {
-            navigate(`/#${section}`, { replace: true })
+            navigate(`/#${section}`)
+            setTimeout(() => {
+                const element = document.getElementById(section)
+                if (element) {
+                    window.scrollTo({
+                        top: element.offsetTop - 100,
+                        behavior: "smooth",
+                    })
+                }
+            }, 300)
         }
     }
 

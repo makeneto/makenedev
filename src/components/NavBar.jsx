@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useMediaQuery } from "react-responsive"
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { Link as ScrollLink } from "react-scroll"
 import styled from "styled-components"
 
@@ -121,7 +121,7 @@ const AnotherNavLinks = styled(ScrollLink)`
     }
 `
 
-const GithubButton = styled.a`
+const GithubButton = styled(Link)`
     width: max-content;
     background-color: ${({ $isScrolled }) => ($isScrolled ? "var(--light-blue)" : "transparent")};
     border: var(--light-border);
@@ -160,6 +160,7 @@ export default function NavBar() {
     const [isVisible, setIsVisible] = useState(true);
     const [isLoaded, setIsLoaded] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const isMobile = useMediaQuery({ maxWidth: 480 });
     const scrollToSection = useScrollToSection();
 
@@ -229,9 +230,28 @@ export default function NavBar() {
                         Projects
                     </AnotherNavLinks>
                 </li>
+
                 <li>
-                    <NavLinks to="/about" className="activeLink">About</NavLinks>
+                    <AnotherNavLinks
+                        onClick={() => {
+                            if (location.pathname !== "/about") {
+                                navigate("/about", { replace: true })
+                                setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100)
+                            } else {
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
+                        }}
+                        to="gallery"
+                        smooth
+                        duration={500}
+                        offset={0}
+                        spy
+                    >
+                        About
+                    </AnotherNavLinks>
                 </li>
+
+
                 <li>
                     <AnotherNavLinks
                         onClick={() => scrollToSection("contact")}
@@ -247,14 +267,14 @@ export default function NavBar() {
             </ul>
             {isMobile ? (
                 <GithubButton
-                    href="https://github.com/makeneto"
+                    to="https://github.com/makeneto"
                     $isScrolled={isScrolled}
                 >
                     <GithubLogo />
                 </GithubButton>
             ) : (
                 <GithubButton
-                    href="https://github.com/makeneto"
+                    to="https://github.com/makeneto"
                     $isScrolled={isScrolled}
                 >
                     <GithubLogo />

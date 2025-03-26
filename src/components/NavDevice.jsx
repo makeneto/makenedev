@@ -113,13 +113,12 @@ export default function NavDevice() {
             battery.addEventListener("chargingchange", () => updateBatteryStatus(battery));
             battery.addEventListener("levelchange", () => updateBatteryStatus(battery));
 
-            // Cleanup listeners ao desmontar o componente
             return () => {
                 battery.removeEventListener("chargingchange", updateBatteryStatus);
                 battery.removeEventListener("levelchange", updateBatteryStatus);
-            };
-        });
-    }, []); // Remova `batteryInfo` e `setBatteryInfo` das dependências
+            }
+        })
+    }, [])
 
     useEffect(() => {
         const batteryLevel = Math.round(batteryInfo.level * 100)

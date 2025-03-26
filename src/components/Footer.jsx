@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const FooterStyled = styled.footer`
     background-color: var(--hover-blue);
-    height: 25rem;
+    height: 22.5rem;
     position: relative;
 
     & div:first-child {
@@ -22,12 +22,12 @@ const FooterStyled = styled.footer`
     }
 
     @media (max-width: 884px) {
-        height: 28rem;
+        height: 24rem;
         margin: 2rem auto 0;
     }
 
     @media (max-width: 480px) {
-        height: 27rem;
+        height: 22rem;
     }
 
     & div:last-child {

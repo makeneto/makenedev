@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useForm as useFormSpree, ValidationError } from '@formspree/react'
 import { useForm as useFormHookForm } from 'react-hook-form'
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
@@ -10,7 +11,7 @@ import { motion } from 'framer-motion'
 import SpinnerMini from './ui/SpinnerMini'
 import { LargeTitle } from './FAQ'
 import { DescriptionTitle } from './FavoriteSingers'
-import MessageSent from './MessageSent'
+import MessageSent from './ui/MessageSent'
 
 const Contact = styled.div`
     width: 50%;
@@ -288,7 +289,7 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Email</p>
-                                <h6><a href="mailto:makeneto17@gmail.com">makeneto17@gmail.com</a></h6>
+                                <h6><Link to="mailto:makeneto17@gmail.com">makeneto17@gmail.com</Link></h6>
                             </div>
                         </article>
                         <article>
@@ -297,7 +298,7 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Phone</p>
-                                <h6><a href="tel:+244945336003">+244 945336003</a></h6>
+                                <h6><Link to="tel:+244945336003">+244 945336003</Link></h6>
                             </div>
                         </article>
                         <article>
@@ -306,7 +307,7 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Location</p>
-                                <h6><a href="https://www.google.com/maps/place/Zango+0,+Luanda,+Angola" target="_blank" rel="noopener noreferrer">Luanda, Angola</a></h6>
+                                <h6><Link to="https://www.google.com/maps/place/Zango+0,+Luanda,+Angola" target="_blank" rel="noopener noreferrer">Luanda, Angola</Link></h6>
                             </div>
                         </article>
                     </main>

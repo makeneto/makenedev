@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { FaPlus } from "react-icons/fa"
 import { motion, AnimatePresence } from "framer-motion"
@@ -51,7 +52,7 @@ const Answer = styled(motion.div)`
   }
 `
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   color: var(--light-blue);
   text-decoration: none;
 
@@ -74,7 +75,7 @@ export default function FAQItem({ question, answer }) {
         const href = part
         const linkText = parts[index + 1]
         return (
-          <StyledLink key={index} href={href} target="_blank">
+          <StyledLink key={index} to={href} target="_blank">
             {linkText}
           </StyledLink>
         )
