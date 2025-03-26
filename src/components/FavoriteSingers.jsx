@@ -6,11 +6,15 @@ import { HiOutlinePlusCircle } from "react-icons/hi";
 import { LargeTitle } from "./FAQ"
 
 const SingerStyled = styled.section`
-    margin-top: 4rem;
+    margin-top: 10rem;
     width: 100%;
 
+    @media (max-width: 1280px) {
+        margin-top: 10rem;
+    }
+
     @media (max-width: 480px) {
-        margin-top: -1rem;
+        margin-top: 6rem;
     }
 `
 
@@ -23,7 +27,6 @@ export const DescriptionTitle = styled.p`
     margin: ${({ margin }) => margin === 'large' ? '2rem auto 4rem' : '1rem auto 2rem'};
 
     @media (max-width: 1280px) {
-        width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '45rem'};
         width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '45rem'};
         margin: 0 auto 2rem;
         font-size: 1.2rem;
@@ -54,7 +57,7 @@ const Singers = styled.div`
     @media (max-width: 1280px) {
         width: 95%;
         grid-template-rows: 28rem;
-        margin: 4rem auto 9rem;
+        margin: 4rem auto 11rem;
     }
 
     @media (max-width: 884px) {
@@ -108,7 +111,7 @@ const Singers = styled.div`
 
         .controls {
             opacity: 0;
-            transition: all 0.3s ease-in;
+            transition: all .3s ease-in;
             width: 100%;
             position: absolute;
             bottom: -8%;
@@ -120,8 +123,8 @@ const Singers = styled.div`
             & span {
                 background-color: rgba(0, 0, 0, 0.41);
                 color: white;
-                font-size: 0.9rem;
-                padding: 0.2rem 0.5rem;
+                font-size: .9rem;
+                padding: .2rem .5rem;
                 border-radius: 22rem;
                 display: flex;
                 align-items: center;
@@ -167,7 +170,7 @@ const Singers = styled.div`
                     color: black;
                     width: 2.6rem;
                     height: 2.6rem;
-                    padding: 0 0 0.1rem .2rem;
+                    padding: 0 0 .1rem .2rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -193,7 +196,7 @@ const Singers = styled.div`
     .profileSinger {
         width: 6rem;
         height: 6rem;
-        border-radius: 0.2rem;
+        border-radius: .2rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
         z-index: 2;
 
@@ -252,10 +255,13 @@ const SingerInfo = styled.div`
 
 const SingerText = styled.div`
     display: grid;
-    gap: 0.5rem;
+    gap: .1rem;
     color: white;
     
     & h1 {
+        font-weight: 500;
+        font-size: 1.7rem;
+        
         @media (max-width: 1280px) {
             font-size: 1.3rem;
         }
@@ -263,12 +269,16 @@ const SingerText = styled.div`
         @media (max-width: 884px) {
             font-size: 1.8rem;
         }
+
+        @media (max-width: 480px) {
+            font-size: 1.4rem;
+        }
     }
 
     & p {
         display: flex;
         align-items: center;
-        gap: 0.2rem;
+        gap: .2rem;
 
         & img {
             width: 1rem;
@@ -325,15 +335,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link href={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link href={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link href={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -359,15 +369,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link href={drake} target="_blank">
+                            <Link to={drake} target="_blank">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link href={drake} target="_blank">
+                            <Link to={drake} target="_blank">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link href={drake} target="_blank">
+                            <Link to={drake} target="_blank">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -393,15 +403,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link href={veigh} target="_blank">
+                            <Link to={veigh} target="_blank">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link href={veigh} target="_blank">
+                            <Link to={veigh} target="_blank">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link href={veigh} target="_blank">
+                            <Link to={veigh} target="_blank">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -427,15 +437,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link href={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link href={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link href={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
