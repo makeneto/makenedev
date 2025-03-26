@@ -1,6 +1,6 @@
-import HistoryText from "../components/ui/HistoryText"
-import HistoryGallery from "../components/ui/HistoryGallery"
-import Map from "../components/Map"
+import HistoryGallery from "../components/HistoryGallery"
+import HistoryText from "../components/HistoryText"
+import FavoriteSingers from "../components/FavoriteSingers"
 import AboutProjects from "../components/AboutProjects"
 
 export default function About() {
@@ -8,8 +8,8 @@ export default function About() {
         <main>
             <HistoryGallery />
             <HistoryText />
+            <FavoriteSingers />
             <AboutProjects />
-            {/* <Map /> */}
         </main>
     )
 }

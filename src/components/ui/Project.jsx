@@ -90,7 +90,7 @@ export default function Project({ projectObj }) {
     }, [name])
 
     return (
-        <ProjectStyled href={homepage ? homepage : `${introUrl}${name}`}>
+        <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`}>
             <img
                 src={imageUrl ? imageUrl : '/images/projects/clean-code.png'}
                 alt={`${name} pic`}

@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { HiOutlineExternalLink } from "react-icons/hi"
 
 import { formatDate } from '../../helpers/utils'
 
-const CertificateStyled = styled.a`
+const CertificateStyled = styled(Link)`
     color: white;
     white-space: nowrap;
     overflow: hidden;
@@ -83,7 +84,7 @@ export default function Certificate({ ObjData }) {
     }
 
     return (
-        <CertificateStyled href={link}>
+        <CertificateStyled to={link}>
             {isNew(date) && <New>New</New>}
             <img src={image} alt={title} />
             <h5>{title}</h5>
