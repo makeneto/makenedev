@@ -159,8 +159,8 @@ export default function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [isLoaded, setIsLoaded] = useState(false);
-    const location = useLocation();
-    const navigate = useNavigate();
+    const location = useLocation()
+    const navigate = useNavigate()
     const isMobile = useMediaQuery({ maxWidth: 480 });
     const scrollToSection = useScrollToSection();
 
@@ -236,7 +236,7 @@ export default function NavBar() {
                         onClick={() => {
                             if (location.pathname !== "/about") {
                                 navigate("/about", { replace: true })
-                                setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100)
+                                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50)
                             } else {
                                 window.scrollTo({ top: 0, behavior: "smooth" })
                             }
@@ -265,22 +265,14 @@ export default function NavBar() {
                     </AnotherNavLinks>
                 </li>
             </ul>
-            {isMobile ? (
-                <GithubButton
-                    to="https://github.com/makeneto"
-                    $isScrolled={isScrolled}
-                >
-                    <GithubLogo />
-                </GithubButton>
-            ) : (
-                <GithubButton
-                    to="https://github.com/makeneto"
-                    $isScrolled={isScrolled}
-                >
-                    <GithubLogo />
-                    My Github
-                </GithubButton>
-            )}
+
+            <GithubButton
+                to="https://github.com/makeneto"
+                $isScrolled={isScrolled}
+            >
+                <GithubLogo />
+                {isMobile ? "" : "My Github"}
+            </GithubButton>
         </Nav>
     )
 }

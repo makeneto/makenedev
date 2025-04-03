@@ -1,6 +1,7 @@
 import moment from "moment"
 import { useState, useEffect } from "react"
 import { BiWifi, BiWifiOff } from "react-icons/bi"
+import { BatteryCharging, Battery, BatteryLow, BatteryMedium, BatteryFull } from 'lucide-react'
 import styled from "styled-components"
 
 const NavInfo = styled.div`
@@ -46,9 +47,15 @@ const NavInfo = styled.div`
             & div {
                 gap: .4rem;
 
-                ion-icon {
+                svg {
                     width: 1.2rem;
                     height: 1.2rem;
+                }
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    gap: .1rem;
                 }
             }
         }
@@ -125,16 +132,19 @@ export default function NavDevice() {
         const batteryCharging = batteryInfo.charging
 
         if (batteryCharging) {
-            setBatteryIcon('charging')
+            setBatteryIcon(<BatteryCharging />)
+        }
+        else if (!batteryCharging && batteryLevel === 0) {
+            setBatteryIcon(<Battery />)
         }
         else if (batteryLevel < 20) {
-            setBatteryIcon('dead')
+            setBatteryIcon(<BatteryLow />)
         }
         else if (batteryLevel < 80) {
-            setBatteryIcon('half')
+            setBatteryIcon(<BatteryMedium />)
         }
         else {
-            setBatteryIcon('full')
+            setBatteryIcon(<BatteryFull />)
         }
     }, [batteryInfo])
 
@@ -144,8 +154,8 @@ export default function NavDevice() {
                 <span>
                     {isOnline ? <BiWifi /> : <BiWifiOff />}
                     <div>
-                        <ion-icon name={`battery-${batteryIcon}-outline`}></ion-icon>
-                        {Math.round(batteryInfo.level * 100)}%
+                        {batteryIcon}
+                        <span>{Math.round(batteryInfo.level * 100)}%</span>
                     </div>
                 </span>
                 <p>|</p>

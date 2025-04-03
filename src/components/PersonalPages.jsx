@@ -1,5 +1,8 @@
 import { BiArrowFromLeft } from "react-icons/bi";
-import styled from "styled-components"
+import styled from "styled-components";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Documents = styled.div`
     width: fit-content;
@@ -17,28 +20,6 @@ const Documents = styled.div`
         color: white;
     }
 
-    .rotateLeft {
-            transform: rotate(-6deg);
-    }
-
-    .rotateRight {
-        transform: rotate(6deg);
-    }
-
-    &:hover {
-        .rotateLeft {
-            transform: rotate(0);
-        }
-
-        .rotateRight {
-            transform: rotate(0);
-        }
-    }
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
     @media (max-width: 1280px) {
         top: 107%;
     }
@@ -46,35 +27,18 @@ const Documents = styled.div`
     @media (max-width: 884px) {
         display: none;
     }
-`
+`;
 
-const Page = styled.div`
+const Page = styled(motion.div)`
     background-color: var(--dark-blue-v2);
     text-align: start;
     border-radius: 0.5rem;
     width: 28rem;
     height: 42rem;
     overflow: hidden;
-    scrollbar-width: none;
     position: relative;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-    transition: all .3s ease-in-out;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 6rem;
-        background: linear-gradient(to top, var(--dark-blue-v2) 10%, transparent 100%);
-        pointer-events: none;
-        z-index: 1;
-    }
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    transition: all 0.3s ease-in-out;
 
     @media (max-width: 1280px) {
         height: 40rem;
@@ -94,7 +58,7 @@ const Controls = styled.div`
     font-size: 0.8rem;
     font-weight: 400;
     color: gray;
-    
+
     & div:first-child {
         display: flex;
         gap: 0.3rem;
@@ -118,7 +82,7 @@ const Controls = styled.div`
             background-color: #27c93f;
         }
     }
-`
+`;
 
 const TextPage = styled.div`
     margin-top: 1rem;
@@ -198,9 +162,23 @@ const Lists = styled.div`
 `
 
 export default function PersonalPages() {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({ threshold: 0.2 });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start({ rotate: 0 });
+        }
+    }, [inView, controls]);
+
     return (
-        <Documents id="personalPages">
-            <Page className="rotateLeft">
+        <Documents id="personalPages" ref={ref}>
+            <Page
+                className="rotateLeft"
+                animate={controls}
+                initial={{ rotate: -6 }}
+                transition={{ duration: 0.5 }}
+            >
                 <Controls>
                     <div>
                         <span></span>
@@ -211,7 +189,7 @@ export default function PersonalPages() {
                 </Controls>
 
                 <TextPage>
-                    <pre >
+                    <pre>
                         <code>
                             {JSON.stringify(
                                 {
@@ -289,7 +267,12 @@ export default function PersonalPages() {
 
             <BiArrowFromLeft />
 
-            <Page className="rotateRight">
+            <Page
+                className="rotateRight"
+                animate={controls}
+                initial={{ rotate: 6 }}
+                transition={{ duration: 0.5 }}
+            >
                 <Controls>
                     <div>
                         <span></span>
@@ -346,6 +329,6 @@ export default function PersonalPages() {
                     </Skills>
                 </TextPage>
             </Page>
-        </Documents>
+        </Documents >
     )
 }

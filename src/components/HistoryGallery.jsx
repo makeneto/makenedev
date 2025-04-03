@@ -16,6 +16,12 @@ const Gallery = styled.div`
         margin: 7rem 3rem 10rem;
     }
 
+    @media (max-height: 600px) {
+        height: 26rem;
+        gap: 8px;
+        margin: 5.3rem 3rem 10rem;        
+    }
+
     @media (max-width: 884px) {
         height: 19rem;
         margin: 12rem 3rem 8rem;

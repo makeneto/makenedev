@@ -139,6 +139,6 @@ export default function WorkSection() {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }

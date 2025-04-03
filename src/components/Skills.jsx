@@ -18,7 +18,7 @@ const SkillStyled = styled.article`
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 2.2rem 3rem;
+    padding: 2.2rem 2.2rem;
     font-weight: 400;
     color: white;
     border-radius: .6rem;
