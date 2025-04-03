@@ -6,6 +6,7 @@ import styled from "styled-components"
 
 import { useScrollToSection } from "../helpers/scrollToSection"
 import { handleConfetti } from "../helpers/confetti"
+import { useEffect, useState } from "react";
 
 const HeaderStyled = styled.header`
     height: 123dvh;
@@ -202,8 +203,20 @@ export default function Header() {
     const isMobile = useMediaQuery({ maxWidth: 884 })
     const scrollToSection = useScrollToSection()
 
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     return (
-        <HeaderStyled>
+        <HeaderStyled
+            style={{
+                transform: animate ? "translateY(0)" : "translateY(10px)",
+                opacity: animate ? 1 : 0,
+                transition: "transform 0.8s ease-out, opacity 0.8s ease-out",
+            }}
+        >
             <Content>
                 <img src="/images/profile.jpg" alt="Makene's Profile" loading="lazy" />
 
@@ -224,5 +237,5 @@ export default function Header() {
                 </Button>
             </Content>
         </HeaderStyled>
-    )
+    );
 }
