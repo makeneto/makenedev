@@ -19,7 +19,7 @@ const Contact = styled.div`
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    margin: 6rem auto 0;
+    margin: 6rem auto 11rem;
 
     & h1 {
         font-size: 1.4rem;;
@@ -27,17 +27,18 @@ const Contact = styled.div`
 
     @media (max-width: 1280px) {
         width: 70%;
-        margin: 4rem auto 0;
+        margin: 4rem auto 9rem;
     }
 
     @media (max-width: 884px) {
         width: 100%;
         padding: 0 5%;
-        margin: 2rem auto 0;
+        margin: 2rem auto 6rem;
     }
-
+    
     @media (max-width: 480px) {
         grid-template-columns: repeat(1, 1fr);
+        margin: 2rem auto 6rem;
     }
 `;
 

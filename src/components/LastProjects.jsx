@@ -24,7 +24,7 @@ const ProjectsStyled = styled.section`
 
 const ProjectsContainer = styled.ul`
     width: 80%;
-    margin: 3.5rem auto 0;
+    margin: 3.5rem auto 15rem;
     display: grid;
     grid-template-columns: 42% 42% 16%;
     gap: 2rem;
@@ -69,6 +69,7 @@ const ProjectsContainer = styled.ul`
         width: 92%;
         grid-template-columns: repeat(1, 1fr);
         gap: 4rem;
+        margin-bottom: 5rem;
     }
 `
 

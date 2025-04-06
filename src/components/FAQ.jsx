@@ -18,10 +18,11 @@ const FAQContainer = styled.div`
   @media (max-width: 884px) {
     width: 92%;
     padding: 0;
+    margin: 9rem auto 6rem;
   }
 
   @media (max-width: 480px) {
-    margin: 5rem auto 1.2rem;
+    margin: 6rem auto 2rem;
     width: 100%;
     padding: 25px;
   }

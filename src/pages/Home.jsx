@@ -14,7 +14,6 @@ export default function Home() {
     const [refRadarGraphs, inViewRadarGraphs] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refWorkSection, inViewWorkSection] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refCertificates, inViewCertificates] = useInView({ threshold: 0.2, triggerOnce: true })
-    const [refFAQ, inViewFAQ] = useInView({ threshold: 0.2, triggerOnce: true })
 
     const fadeInVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -60,15 +59,6 @@ export default function Home() {
                 <LastProjects />
 
                 <ContactMe />
-
-                <motion.div
-                    ref={refFAQ}
-                    variants={fadeInVariants}
-                    initial="hidden"
-                    animate={inViewFAQ ? "visible" : "hidden"}
-                >
-                    <FAQ />
-                </motion.div>
             </main>
         </>
     )

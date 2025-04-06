@@ -9,7 +9,7 @@ import { handleConfetti } from "../helpers/confetti"
 import { useEffect, useState } from "react";
 
 const HeaderStyled = styled.header`
-    height: 123dvh;
+    height: 129dvh;
     padding: 4rem;
     text-align: center;
     position: relative;

@@ -15,7 +15,7 @@ const Item = styled(motion.div)`
   }
 `
 
-const Question = styled.div`  /* Alterado de <p> para <div> */
+const Question = styled.div`
   font-weight: 500;
   display: flex;
   align-items: center;
