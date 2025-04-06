@@ -45,7 +45,7 @@ const NavInfo = styled.div`
             }
             
             & div {
-                gap: .4rem;
+                gap: .3rem;
 
                 svg {
                     width: 1.2rem;

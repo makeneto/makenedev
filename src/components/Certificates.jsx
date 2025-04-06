@@ -9,7 +9,7 @@ import { useState } from 'react'
 const CertificatesStyled = styled.article`
     display: grid;
     gap: 1.2rem;
-    margin: 5rem 0 11rem;
+    margin: 9rem 0 15rem;
 
     @media (max-width: 1280px) {
         margin: 5rem 0 11rem;

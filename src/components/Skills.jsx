@@ -13,7 +13,7 @@ const SkillStyled = styled.article`
     transform: translate(-50%, -50%);
 
     background-color: var(--dark-blue-v2);
-    width: 80%;
+    width: 50%;
     max-height: 70dvh;
     overflow-y: auto;
     scrollbar-width: none;
@@ -46,6 +46,7 @@ const SkillStyled = styled.article`
     }
 
     @media (max-width: 1280px) {
+        width: 80%;
         max-height: 66dvh;
     }
 

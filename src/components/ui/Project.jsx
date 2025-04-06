@@ -95,7 +95,7 @@ export default function Project({ projectObj }) {
                 src={imageUrl ? imageUrl : '/images/projects/clean-code.png'}
                 alt={`${name} pic`}
             />
-            <h4>{formatNameProject(name)}</h4>
+            <h4 translate="no">{formatNameProject(name)}</h4>
             <p>{description}</p>
 
             <ProjectLink>
