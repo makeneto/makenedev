@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
     --hover-blue: #273038;
     
     --light-border: 1px solid rgba(188, 195, 192, 0.14);
+
+    ${'' /* --legacy-peer-deps */}
   }
 `
 
