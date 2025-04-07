@@ -2,8 +2,24 @@ import styled from "styled-components"
 import { UseUserContext } from "../context/UserContext"
 import { skills } from "../data/skillsData"
 import Skill from "./ui/Skill"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Overlay } from "./ui/Overlay"
+
+// dnd-kit
+import {
+    DndContext,
+    closestCenter,
+    useSensor,
+    useSensors,
+    PointerSensor
+} from '@dnd-kit/core'
+import {
+    SortableContext,
+    arrayMove,
+    useSortable,
+    verticalListSortingStrategy
+} from '@dnd-kit/sortable'
+import { CSS } from '@dnd-kit/utilities'
 
 const SkillStyled = styled.article`
     z-index: 888;
@@ -79,8 +95,29 @@ const SkillsContainer = styled.ul`
     }
 `
 
+function SortableSkill({ skill }) {
+    const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: skill.title })
+    const style = {
+        transform: CSS.Transform.toString(transform),
+        transition
+    }
+
+    return (
+        <li ref={setNodeRef} style={style} {...attributes} {...listeners}>
+            <Skill key={skill.title} skillObj={skill} />
+        </li>
+    )
+}
+
 export default function Skills() {
     const { showSkills } = UseUserContext()
+    const [items, setItems] = useState(skills.map(skill => skill.title))
+
+    const sensors = useSensors(
+        useSensor(PointerSensor, {
+            activationConstraint: { distance: 5 }
+        })
+    )
 
     useEffect(() => {
         if (showSkills) {
@@ -95,11 +132,28 @@ export default function Skills() {
         <>
             <Overlay show={showSkills} />
             <SkillStyled show={showSkills ? "true" : undefined}>
-                <SkillsContainer>
-                    {skills.map((skill) => (
-                        <Skill key={skill.title} skillObj={skill} />
-                    ))}
-                </SkillsContainer>
+                <DndContext
+                    sensors={sensors}
+                    collisionDetection={closestCenter}
+                    onDragEnd={({ active, over }) => {
+                        if (active.id !== over.id) {
+                            setItems((prevItems) => {
+                                const oldIndex = prevItems.indexOf(active.id)
+                                const newIndex = prevItems.indexOf(over.id)
+                                return arrayMove(prevItems, oldIndex, newIndex)
+                            })
+                        }
+                    }}
+                >
+                    <SortableContext items={items} strategy={verticalListSortingStrategy}>
+                        <SkillsContainer>
+                            {items.map((id) => {
+                                const skill = skills.find(s => s.title === id)
+                                return <SortableSkill key={id} skill={skill} />
+                            })}
+                        </SkillsContainer>
+                    </SortableContext>
+                </DndContext>
             </SkillStyled>
         </>
     )
