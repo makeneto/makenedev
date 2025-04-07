@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const SkillStyled = styled.li`
+    cursor: pointer;
+    user-select: none;
     background-color: var(--weak-blue);
     padding: 1rem;
     border-radius: .5rem;
@@ -23,13 +25,6 @@ const SkillStyled = styled.li`
         & p {
             font-size: .8rem;
         }
-    }
-
-
-    &:hover {
-        background-color: transparent;
-        border: var(--light-border);
-        cursor: default;
     }
 `
 
