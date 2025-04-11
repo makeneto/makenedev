@@ -19,11 +19,11 @@ export const skills = [
         title: 'React',
         level: 'Professional',
     },
-    // {
-    //     logo: 'https://skillicons.dev/icons?i=ts',
-    //     title: 'TypeScript',
-    //     level: 'Professional',
-    // },
+    {
+        logo: 'https://skillicons.dev/icons?i=ts',
+        title: 'TypeScript',
+        level: 'Professional',
+    },
     {
         logo: 'https://skillicons.dev/icons?i=next',
         title: 'Next.JS',
