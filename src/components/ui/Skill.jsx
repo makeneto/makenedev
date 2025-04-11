@@ -5,7 +5,7 @@ import Skill from "./ui/Skill"
 import { useEffect, useState } from "react"
 import { Overlay } from "./ui/Overlay"
 
-// dnd-kit
+// dnd-kit.
 import {
     DndContext,
     closestCenter,
