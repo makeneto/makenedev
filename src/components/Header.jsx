@@ -218,7 +218,7 @@ export default function Header() {
             }}
         >
             <Content>
-                <img src="/images/profile.jpg" alt="Makene's Profile" loading="lazy" />
+                <img src="/images/profile.webp" alt="Makene's Profile" loading="lazy" />
 
                 <Career onClick={handleConfetti}>🎉 {currentCareerYears} years in programming</Career>
 

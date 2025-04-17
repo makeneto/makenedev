@@ -25,7 +25,7 @@ const ProjectStyled = styled(Link)`
         height: auto;
     }
 
-    & h4 {
+    & h1 {
         font-weight: 600;
         font-size: 1.4rem;
     }
@@ -90,21 +90,22 @@ export default function Project({ projectObj }) {
     }, [name])
 
     return (
-        <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`}>
-            <img
-                src={imageUrl ? imageUrl : '/images/projects/clean-code.png'}
-                alt={`${name} pic`}
-            />
-            <h4 translate="no">{formatNameProject(name)}</h4>
-            <p>{description}</p>
-
-            <ProjectLink>
-                <div>
-                    <span className="hovered">Explore</span>
-                    <HiOutlineExternalLink />
-                </div>
-                <span>{formatDate(created_at)}</span>
-            </ProjectLink>
-        </ProjectStyled>
+        <li>
+            <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`}>
+                <img
+                    src={imageUrl ? imageUrl : '/images/projects/clean-code.webp'}
+                    alt={`${name} pic`}
+                />
+                <h1 translate="no">{formatNameProject(name)}</h1>
+                <p>{description}</p>
+                <ProjectLink>
+                    <div>
+                        <span className="hovered">Explore</span>
+                        <HiOutlineExternalLink />
+                    </div>
+                    <span>{formatDate(created_at)}</span>
+                </ProjectLink>
+            </ProjectStyled>
+        </li>
     );
 }

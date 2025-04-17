@@ -111,6 +111,7 @@ export default function Certificates() {
                         className={`${professional ? 'active' : 'inactive'}`}
                         onClick={() => chooseProfessional()}
                         disabled={professional}
+                        aria-label="Professional certificates"
                     >
                         Professional
                     </button>
@@ -118,7 +119,7 @@ export default function Certificates() {
                         className={`${!professional ? 'active' : 'inactive'}`}
                         onClick={() => chooseProfessional()}
                         disabled={!professional}
-
+                        aria-label="Academic certificates"
                     >
                         Academic
                     </button>

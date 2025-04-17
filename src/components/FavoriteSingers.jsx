@@ -213,35 +213,35 @@ const Singers = styled.div`
 `
 
 const Singer1 = styled.div`
-    background: url('/images/singers/kendrik-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/kendrik-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger1 = styled.div`
-    background: url('/images/singers/kendrik-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/kendrik-artist.webp') no-repeat center center/cover;
 `
 
 const Singer2 = styled.div`
-    background: url('/images/singers/drake-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger2 = styled.div`
-    background: url('/images/singers/drake-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const Singer3 = styled.div`
-    background: url('/images/singers/veigh-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/veigh-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger3 = styled.div`
-    background: url('/images/singers/veigh-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/veigh-artist.webp') no-repeat center center/cover;
 `
 
 const Singer4 = styled.div`
-    background: url('/images/singers/burna-boy-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/burna-boy-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger4 = styled.div`
-    background: url('/images/singers/burna-boy-artist.jpeg') no-repeat center center/cover;
+    background: url('/images/singers/burna-boy-artist.webp') no-repeat center center/cover;
 `
 
 const SingerInfo = styled.div`
@@ -323,7 +323,7 @@ export default function FavoriteSingers() {
                             <h1>Kendrik Lamar</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.png" alt="verified" loading="lazy" />
+                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -335,15 +335,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link to={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank" aria-label="More options">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link to={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank" aria-label="Add to playlist">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link to={kendrik} target="_blank">
+                            <Link to={kendrik} target="_blank" aria-label="Play">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -357,7 +357,7 @@ export default function FavoriteSingers() {
                             <h1>Drake</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.png" alt="verified" loading="lazy" />
+                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -369,15 +369,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link to={drake} target="_blank">
+                            <Link to={drake} target="_blank" aria-label="More options">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link to={drake} target="_blank">
+                            <Link to={drake} target="_blank" aria-label="Add to playlist">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link to={drake} target="_blank">
+                            <Link to={drake} target="_blank" aria-label="Play">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -391,7 +391,7 @@ export default function FavoriteSingers() {
                             <h1>Veigh</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.png" alt="verified" loading="lazy" />
+                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -403,15 +403,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link to={veigh} target="_blank">
+                            <Link to={veigh} target="_blank" aria-label="More options">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link to={veigh} target="_blank">
+                            <Link to={veigh} target="_blank" aria-label="Add to playlist">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link to={veigh} target="_blank">
+                            <Link to={veigh} target="_blank" aria-label="Play">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
@@ -425,7 +425,7 @@ export default function FavoriteSingers() {
                             <h1>Burna Boy</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.png" alt="verified" loading="lazy" />
+                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -437,15 +437,15 @@ export default function FavoriteSingers() {
                         </span>
 
                         <div className="controls__btn">
-                            <Link to={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank" aria-label="More options">
                                 <HiOutlineEllipsisHorizontal />
                             </Link>
 
-                            <Link to={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank" aria-label="Add to playlist">
                                 <HiOutlinePlusCircle />
                             </Link>
 
-                            <Link to={burnaBoy} target="_blank">
+                            <Link to={burnaBoy} target="_blank" aria-label="Play">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>

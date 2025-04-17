@@ -49,15 +49,15 @@ const Gallery = styled.div`
 `;
 
 const images = [
-    "/images/gallery/1.jpg",
-    "/images/gallery/2.jpg",
-    "/images/gallery/3.jpg",
-    "/images/gallery/4.jpg",
-    "/images/gallery/5.jpg",
-    "/images/gallery/6.jpg",
-    "/images/gallery/7.jpg",
-    "/images/gallery/8.jpg",
-    "/images/gallery/9.jpg",
+    "/images/gallery/1.webp",
+    "/images/gallery/2.webp",
+    "/images/gallery/3.webp",
+    "/images/gallery/4.webp",
+    "/images/gallery/5.webp",
+    "/images/gallery/6.webp",
+    "/images/gallery/7.webp",
+    "/images/gallery/8.webp",
+    "/images/gallery/9.webp",
 ];
 
 const gridPositions = [

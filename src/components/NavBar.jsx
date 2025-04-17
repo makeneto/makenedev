@@ -269,6 +269,8 @@ export default function NavBar() {
             <GithubButton
                 to="https://github.com/makeneto"
                 $isScrolled={isScrolled}
+                target="_blank"
+                aria-label="Github Profile"
             >
                 <GithubLogo />
                 {isMobile ? "" : "My Github"}

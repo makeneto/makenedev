@@ -73,6 +73,7 @@ const SkillStyled = styled.article`
     }
 
     @media (max-width: 480px) {
+        top: 48%;
         width: 92%;
         padding: 1rem;
     }
