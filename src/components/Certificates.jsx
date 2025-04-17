@@ -37,7 +37,7 @@ const CertificatesContainer = styled.ul`
 
     @media (max-width: 1280px) {
         width: 95%;
-        grid-auto-columns: 24rem;
+        grid-auto-columns: 23.5rem;
     }
 
     @media (max-width: 884px) {
