@@ -46,7 +46,7 @@ const Page = styled(motion.div)`
 `;
 
 const Controls = styled.div`
-    background-color: inherit;
+    background-color: var(--dark-blue-v2);
     padding: 0.7rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -88,9 +88,16 @@ const TextPage = styled.div`
     margin-top: 1rem;
     color: white;
     background-color: var(--dark-blue-v2) ;
-    overflow-y: hidden;
+    overflow: hidden;
     padding: 0.3rem 2rem 1rem;
     font-weight: 400;
+    height: 100%;
+
+    & h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
 
     & h2 {
         margin-top: 1.6rem;
@@ -98,11 +105,6 @@ const TextPage = styled.div`
         font-size: 1.3rem;
     }
 
-    & h3 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
 
     & p {
         font-weight: 400;
@@ -121,27 +123,26 @@ const Skills = styled.div`
     gap: 1rem;
     margin-top: 1rem;
 
-    & h3 {
+    & h1 {
         font-weight: 500;
         font-size: 1rem;
     }
 
     & li {
-        margin-left: 17px;
-        text-indent: 2px;
         color: #AFB7B4;
         font-weight: 400;
     }
 `
 
 const Lists = styled.div`
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: grid;
     gap: 1rem;
 
-    & h3 {  
+    & h1 {  
         font-weight: 500;
         font-size: 1rem;
+        margin-bottom: 0 !important;
     }
 
     & li {
@@ -283,19 +284,19 @@ export default function PersonalPages() {
                 </Controls>
 
                 <TextPage>
-                    <h3>Brief presentation</h3>
+                    <h1>Brief presentation</h1>
                     <p><span>Makene Neto:</span> Full Stack Developer</p>
                     <p>Full stack developer with experience in creating functional and well-designed digital solutions.</p>
 
                     <Lists>
+                        <h1>Languages</h1>
                         <ul>
-                            <h3>Languages</h3>
                             <li className="strong">Portuguese - Fluent</li>
                             <li>English - Intermediate</li>
                         </ul>
 
+                        <h1>Education</h1>
                         <ul>
-                            <h3>Education</h3>
                             <li className="strong"><strong>College Nossa Senhora da Anunciação</strong></li>
                             <li>Computer Technician (2021 - 2025)</li>
                             <li>I learned full stack development through online courses, personal projects, and contributions to startups.</li>
@@ -305,30 +306,34 @@ export default function PersonalPages() {
                     <h2>Skills</h2>
 
                     <Skills>
-                        <ul>
-                            <h3>Front-end</h3>
-                            <li>HTML & (S)CSS</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
-                            <li>Styled-components</li>
-                            <li>Next.js</li>
-                            <li>Redux</li>
-                            <li>TailwindCSS</li>
-                        </ul>
+                        <div>
+                            <h1>Front-end</h1>
+                            <ul>
+                                <li>HTML & (S)CSS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>React</li>
+                                <li>Styled-components</li>
+                                <li>Next.js</li>
+                                <li>Redux</li>
+                                <li>TailwindCSS</li>
+                            </ul>
+                        </div>
 
-                        <ul>
-                            <h3>Back-end</h3>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>Supabase</li>
-                            <li>MongoDB</li>
-                            <li>Firebase</li>
-                            <li>PostgreSQL</li>
-                        </ul>
+                        <div>
+                            <h1>Back-end</h1>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Supabase</li>
+                                <li>MongoDB</li>
+                                <li>Firebase</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
                     </Skills>
                 </TextPage>
             </Page>
-        </Documents >
+        </Documents>
     )
 }

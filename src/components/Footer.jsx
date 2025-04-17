@@ -7,7 +7,7 @@ import { Logo } from "./NavBar"
 import { Link } from "react-router-dom";
 
 const FooterStyled = styled.footer`
-    background-color: var(--hover-blue);
+    background-color: #181d22;
     height: 22.5rem;
     position: relative;
 
@@ -100,16 +100,16 @@ export default function Footer() {
                     <p>Glad to share my work.</p>
                     <p>© {currentYear}, All rights reserved.</p>
                     <div>
-                        <Link to="https://www.instagram.com/makenedev" target="_blank">
+                        <Link to="https://www.instagram.com/makenedev" target="_blank"  aria-label="Instagram">
                             <FaInstagram />
                         </Link>
-                        <Link to="https://www.threads.net/@makenedev" target="_blank">
+                        <Link to="https://www.threads.net/@makenedev" target="_blank" aria-label="Threads">
                             <FaThreads />
                         </Link>
-                        <Link to="https://www.facebook.com/N.Makeny" target="_blank">
+                        <Link to="https://www.facebook.com/N.Makeny" target="_blank" aria-label="Facebook">
                             <FaFacebook />
                         </Link>
-                        <Link to="https://www.linkedin.com/in/makene-neto" target="_blank">
+                        <Link to="https://www.linkedin.com/in/makene-neto" target="_blank" aria-label="LinkedIn">
                             <FaLinkedin />
                         </Link>
                     </div>

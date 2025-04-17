@@ -29,33 +29,6 @@ const ProjectsContainer = styled.ul`
     grid-template-columns: 42% 42% 16%;
     gap: 2rem;
 
-    & div {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        padding-right: 4rem;
-        
-        & a {
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: .3rem;
-            text-decoration: none;
-            font-size: .9rem;
-            font-weight: 400;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        @media (max-width: 480px) {
-            align-items: flex-start;
-            justify-content: flex-start;
-            padding-right: 2rem;
-        }
-    }
-
     @media (max-width: 1280px) {
         width: 95%;
     }
@@ -70,6 +43,33 @@ const ProjectsContainer = styled.ul`
         grid-template-columns: repeat(1, 1fr);
         gap: 4rem;
         margin-bottom: 5rem;
+    }
+`
+
+const FullList = styled.li`
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    
+    & a {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 480px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 2rem;
     }
 `
 
@@ -97,12 +97,17 @@ export default function LastProjects() {
                     ))
                 )}
 
-                <div>
-                    <Link to='https://github.com/makeneto?tab=repositories' target="_blank">
+                <FullList>
+                    <Link
+                        to='https://github.com/makeneto?tab=repositories'
+                        target="_blank"
+                        aria-label="GitHub Projects"
+                        className="link"
+                    >
                         Full List
                         <HiOutlineArrowRight />
                     </Link>
-                </div>
+                </FullList>
             </ProjectsContainer>
         </ProjectsStyled>
     )

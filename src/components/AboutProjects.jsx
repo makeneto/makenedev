@@ -212,7 +212,7 @@ const ProjectsContainer = styled.section`
 
 const Website = styled.div`
     position: relative;
-    background: ${({ type }) => type === 'first' ? `url('/images/about-projects/page1.png')` : `url('/images/about-projects/page2.png')`}  top center/cover;
+    background: ${({ type }) => type === 'first' ? `url('/images/about-projects/page1.webp')` : `url('/images/about-projects/page2.webp')`}  top center/cover;
     width: 34rem;
     height: 48rem;
     border-radius: .4rem .4rem 0 0;
@@ -290,30 +290,36 @@ export default function AboutProjects() {
 
                 <Techs>
                     <img src='/images/about-projects/next-white.svg'
-                        alt=''
+                        alt='Next JS'
+                        loading='lazy'
                     />
                     <img src='/images/about-projects/radix-white.svg'
-                        alt=''
+                        alt='Radix UI'
+                        loading='lazy'
                     />
                     <img src='/images/about-projects/framer-motion-white.svg'
-                        alt=''
+                        alt='Framer Motion'
+                        loading='lazy'
                     />
                     <img src='/images/about-projects/tailwind-white.svg'
-                        alt=''
+                        alt='Tailwind CSS'
                         className='imageSize'
+                        loading='lazy'
                     />
 
                     {isTablet && <div></div>}
 
                     <img src='/images/about-projects/headlessui-white.svg'
                         alt=''
-                        className='imageSize' />
+                        className='imageSize'
+                        loading='lazy'
+                    />
                 </Techs>
             </TextBlock>
 
             <ProjectsContainer>
                 <Website type='first'>
-                    <img src='/images/about-projects/page1-screen.png' alt='Website' />
+                    <img src='/images/about-projects/page1-screen.webp' alt='Website' loading='lazy' />
                 </Website>
 
                 <Content>
@@ -322,7 +328,7 @@ export default function AboutProjects() {
                 </Content>
 
                 <Website type='last'>
-                    <img src='/images/about-projects/page2-screen.png' alt='Website' />
+                    <img src='/images/about-projects/page2-screen.webp' alt='Website' loading='lazy' />
                 </Website>
             </ProjectsContainer>
         </MyFeatures>

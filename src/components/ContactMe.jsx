@@ -290,7 +290,11 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Email</p>
-                                <h6><Link to="mailto:makeneto17@gmail.com">makeneto17@gmail.com</Link></h6>
+                                <h2>
+                                    <Link to="mailto:makeneto17@gmail.com" aria-label="Access the email">
+                                        makeneto17@gmail.com
+                                    </Link>
+                                </h2>
                             </div>
                         </article>
                         <article>
@@ -299,7 +303,11 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Phone</p>
-                                <h6><Link to="tel:+244945336003">+244 945336003</Link></h6>
+                                <h2>
+                                    <Link to="tel:+244945336003" aria-label="Access the phone number">
+                                        +244 945336003
+                                    </Link>
+                                </h2>
                             </div>
                         </article>
                         <article>
@@ -308,7 +316,15 @@ export default function ContactMe() {
                             </span>
                             <div>
                                 <p>Location</p>
-                                <h6><Link to="https://www.google.com/maps/place/Zango+0,+Luanda,+Angola" target="_blank" rel="noopener noreferrer">Luanda, Angola</Link></h6>
+                                <h2>
+                                    <Link to="https://www.google.com/maps/place/Zango+0,+Luanda,+Angola"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Access the location"
+                                    >
+                                        Luanda, Angola
+                                    </Link>
+                                </h2>
                             </div>
                         </article>
                     </main>

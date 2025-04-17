@@ -166,6 +166,7 @@ export default function SubNav() {
             <MenuBottom
                 to={linkedInLink}
                 target='_blank'
+                aria-label="LinkedIn profile"
             >
                 <motion.div
                     initial="initial"
@@ -180,6 +181,7 @@ export default function SubNav() {
 
             <MenuButton
                 onClick={handlePdfClick}
+                aria-label="Download Resume"
             >
                 <motion.div
                     initial="initial"
@@ -194,6 +196,7 @@ export default function SubNav() {
 
             <MenuBottom
                 onClick={handleCloseSkills}
+                aria-label="Open/Close skills"
             >
                 <motion.div
                     initial="initial"

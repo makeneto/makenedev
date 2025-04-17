@@ -51,7 +51,11 @@ export default function ScrollTop() {
     }
 
     return (
-        <ScrollTopButton show={showButton} onClick={scrollToTop}>
+        <ScrollTopButton
+            show={showButton}
+            onClick={scrollToTop}
+            aria-label="Go back to the top"
+        >
             <FaArrowUp />
         </ScrollTopButton>
     )

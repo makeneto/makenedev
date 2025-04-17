@@ -11,8 +11,8 @@ const CertificateStyled = styled(Link)`
     text-overflow: ellipsis;
     position: relative;
 
-    &:hover{
-        .link{
+    &:hover {
+        .link {
             text-decoration: underline;
         }
     } 
@@ -21,7 +21,7 @@ const CertificateStyled = styled(Link)`
         margin: .8rem 0 1.4rem;
     }
 
-    & h5 {
+    & h1 {
         font-size: 1.4rem;
         margin-bottom: 1.4rem;
         font-weight: 500;
@@ -84,21 +84,28 @@ export default function Certificate({ ObjData }) {
     }
 
     return (
-        <CertificateStyled to={link}>
-            {isNew(date) && <New>New</New>}
-            <img src={image} alt={title} />
-            <h5>{title}</h5>
-
-            <Details>
-                {link &&
-                    <span className="link">
-                        Learn more
-                        <HiOutlineExternalLink />
-                    </span>
-                }
-
-                <span>{formatDate(date)}</span>
-            </Details>
-        </CertificateStyled>
+        <li>
+            <CertificateStyled
+                to={link}
+                aria-label={`Certificate for ${title}`}
+            >
+                {isNew(date) && <New>New</New>}
+                <img
+                    src={image}
+                    alt={`Image for certificate titled ${title}`}
+                    loading="lazy"
+                />
+                <h1>{title}</h1>
+                <Details>
+                    {link && (
+                        <span className="link">
+                            Learn more
+                            <HiOutlineExternalLink />
+                        </span>
+                    )}
+                    <span>{formatDate(date)}</span>
+                </Details>
+            </CertificateStyled>
+        </li>
     )
 }
