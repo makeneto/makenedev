@@ -197,7 +197,7 @@ const Button = styled(ScrollLink)`
 `
 
 export default function Header() {
-    const startDate = moment('2020-07-25')
+    const startDate = moment('2021-07-25')
     const now = moment()
     const currentCareerYears = now.diff(startDate, 'years')
     const isMobile = useMediaQuery({ maxWidth: 884 })
