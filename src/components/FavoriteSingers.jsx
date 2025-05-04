@@ -26,6 +26,10 @@ export const DescriptionTitle = styled.p`
     text-align: center;
     margin: ${({ margin }) => margin === 'large' ? '2rem auto 4rem' : '1rem auto 2rem'};
 
+    @media (max-width: 1919px){
+        margin: 0 auto 2rem;
+    }
+
     @media (max-width: 1280px) {
         width: ${({ noWidth }) => noWidth === 'yes' ? '32rem' : '45rem'};
         margin: 0 auto 2rem;
@@ -53,6 +57,11 @@ const Singers = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40rem;
     gap: 1rem;
+
+    @media (max-width: 1919px){
+        width: 90%;
+        grid-template-rows: 32rem;
+    }
     
     @media (max-width: 1280px) {
         width: 95%;

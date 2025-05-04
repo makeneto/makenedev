@@ -7,7 +7,7 @@ const ChartContainer = styled.div`
     height: 40rem;
     margin: -1rem 0 4rem;
     
-    @media (max-width: 1280px) {
+    @media (max-width: 1919px) {
         height: 20rem;
     }
 

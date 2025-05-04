@@ -11,6 +11,11 @@ const CertificatesStyled = styled.article`
     gap: 1.2rem;
     margin: 9rem 0 15rem;
 
+    @media (max-width: 1919px){
+        margin: 7rem 0 11rem;
+
+    }
+
     @media (max-width: 1280px) {
         margin: 5rem 0 11rem;
     }
@@ -33,6 +38,11 @@ const CertificatesContainer = styled.ul`
 
     &::-webkit-scrollbar {
         display: none;
+    }
+
+    @media (max-width: 1919px){
+        width: 90%;
+        grid-auto-columns: 27rem;
     }
 
     @media (max-width: 1280px) {

@@ -82,8 +82,9 @@ export const LargeTitle = styled.h2`
     100% { transform: rotate(0deg); }
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1919px) {
     font-size: 2.4rem;
+    margin-bottom: 0;
   }
 
   @media (max-width: 480px) {

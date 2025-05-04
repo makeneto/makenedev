@@ -11,6 +11,10 @@ const MyFeatures = styled.main`
     gap: 16rem;
     border-top: var(--light-border);
     padding-top: 6rem;
+
+    @media (max-width: 1919px){
+        padding-top: 4rem;
+    }
     
     @media (max-width: 1280px) {
         gap: 12rem;
@@ -32,6 +36,11 @@ const TextBlock = styled.div`
     display: grid;
     margin-inline: 7rem;
     gap: 8.5rem;
+
+    @media (max-width: 1919px){
+        margin-inline: 5rem;
+        width: 90vw;
+    }
 
     @media (max-width: 1280px) {
         gap: 6rem;
@@ -56,6 +65,11 @@ const Text = styled.div`
         font-size: 3rem;
         font-weight: 800;
         line-height: 3.8rem;
+
+        @media (max-width: 1919px){
+            font-size: 2.5rem;
+            line-height: 3.4rem;
+        }
 
         @media (max-width: 1280px) {
             font-size: 2rem;
@@ -91,6 +105,10 @@ const Text = styled.div`
         @media (max-width: 480px) {
             font-size: 1.1rem;
         }
+    }
+
+    @media (max-width: 1919px) {
+        width: 60%;
     }
 
     @media (max-width: 884px) {
@@ -187,6 +205,10 @@ const ProjectsContainer = styled.section`
     position: relative;
     margin-inline: 6rem;
 
+    @media (max-width: 1919px){
+        margin-inline: 5rem;
+    }
+
     @media (max-width: 1280px) {
         margin-inline: 3rem;
     }
@@ -220,6 +242,10 @@ const Website = styled.div`
     & img {
         box-shadow: 0 0 8px 4px #0000001c;
     }
+
+    @media (max-width: 1919px){
+        width: 24rem;
+    }   
 
     @media (max-width: 1280px) {
         width: 20rem;

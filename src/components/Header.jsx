@@ -45,6 +45,12 @@ const Content = styled.div`
         margin-inline: auto;
         object-fit: cover;
         margin-bottom: 3rem;
+
+        @media (max-width: 1919px){
+            width: 10rem;
+            height: 10rem;
+        }
+
         @media (max-width: 1280px) {
             width: 10rem;
             height: 10rem;
@@ -79,6 +85,10 @@ const Content = styled.div`
             color: white;
         }
 
+        @media (max-width: 1919px){
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+        }
         
         @media (max-width: 1280px) {
             font-size: 3rem;
@@ -105,6 +115,10 @@ const Content = styled.div`
     & p {
         font-size: 1.7rem;
         font-weight: 500;
+
+        @media (max-width: 1919px){
+            font-size: 1.3rem;
+        }
 
         @media (max-width: 1280px) {
             font-size: 1.2rem;
@@ -135,7 +149,7 @@ const Content = styled.div`
 const Career = styled.span`
     border: var(--light-border);
     border-radius: 10rem;
-    padding: 0.4rem 0.7rem;
+    padding: .4rem .7rem;
     font-size: 1rem;
     font-weight: 400;
     color: white;
@@ -144,6 +158,10 @@ const Career = styled.span`
 
     &:hover {
         background-color: rgba(99, 161, 242, 0.09);
+    }
+
+    @media (max-width: 1919px){
+        font-size: .8rem;
     }
 
     @media (max-width: 1280px) {

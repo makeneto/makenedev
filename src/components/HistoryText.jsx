@@ -10,6 +10,12 @@ const AnimatedText = styled.h1`
     margin-inline: 7rem;
     word-spacing: .3rem;
 
+    @media (max-width: 1919px){
+        font-size: 3.4rem;
+        line-height: 1.5;
+        margin-inline: 4rem;
+    }
+
     @media (max-width: 1280px) {
         font-size: 2.7rem;
         line-height: 1.5;
