@@ -291,7 +291,7 @@ export default function ContactMe() {
                             <div>
                                 <p>Email</p>
                                 <h2>
-                                    <Link to="mailto:makeneto17@gmail.com" aria-label="Access the email">
+                                    <Link to="mailto:makeneto17@gmail.com" target='_blank' aria-label="Access the email">
                                         makeneto17@gmail.com
                                     </Link>
                                 </h2>
@@ -304,7 +304,7 @@ export default function ContactMe() {
                             <div>
                                 <p>Phone</p>
                                 <h2>
-                                    <Link to="tel:+244945336003" aria-label="Access the phone number">
+                                    <Link to="tel:+244945336003" target='_blank' aria-label="Access the phone number">
                                         +244 945336003
                                     </Link>
                                 </h2>

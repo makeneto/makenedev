@@ -87,6 +87,7 @@ export default function Certificate({ ObjData }) {
         <li>
             <CertificateStyled
                 to={link}
+                target='_blank'
                 aria-label={`Certificate for ${title}`}
             >
                 {isNew(date) && <New>New</New>}

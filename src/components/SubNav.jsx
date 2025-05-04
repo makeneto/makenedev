@@ -139,9 +139,7 @@ export default function SubNav() {
 
     const linkedInLink = 'https://linkedin.com/in/makene-neto'
     const handleCloseSkills = useCloseSkills()
-    const handlePdfClick = () => {
-        window.open('/docs/en-makenes-resume.pdf', '_blank')
-    };
+    const makeneResume = 'https://suave-woodwind-741.notion.site/Makene-Neto-1e9c66691455804595b3d0c254a66754?pvs=73'
 
     useEffect(() => {
         const handleScroll = () => {
@@ -179,9 +177,10 @@ export default function SubNav() {
                 </motion.div>
             </MenuBottom>
 
-            <MenuButton
-                onClick={handlePdfClick}
-                aria-label="Download Resume"
+            <MenuBottom
+                to={makeneResume}
+                target="_blank"
+                aria-label="Makene Resume"
             >
                 <motion.div
                     initial="initial"
@@ -189,10 +188,10 @@ export default function SubNav() {
                     onHoverEnd={(e) => e.target.style.animation = "none"}
                     variants={iconVariants}
                 >
-                    <span>Curriculum</span>
+                    <span>Resume</span>
                     <IoDocumentText />
                 </motion.div>
-            </MenuButton>
+            </MenuBottom>
 
             <MenuBottom
                 onClick={handleCloseSkills}
