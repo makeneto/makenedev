@@ -61,6 +61,10 @@ const SkillStyled = styled.article`
         }
     }
 
+    @media (max-width: 1919px){
+        width: 67%;
+    }
+
     @media (max-width: 1280px) {
         width: 80%;
         max-height: 66dvh;
