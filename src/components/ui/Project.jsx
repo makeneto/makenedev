@@ -91,7 +91,7 @@ export default function Project({ projectObj }) {
 
     return (
         <li>
-            <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`}>
+            <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`} target="_blank">
                 <img
                     src={imageUrl ? imageUrl : '/images/projects/clean-code.webp'}
                     alt={`${name} pic`}
