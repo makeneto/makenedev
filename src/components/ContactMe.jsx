@@ -25,6 +25,10 @@ const Contact = styled.div`
         font-size: 1.4rem;;
     }
 
+    @media (max-width: 1919px){
+        width: 60%;
+    }
+
     @media (max-width: 1280px) {
         width: 70%;
         margin: 4rem auto 9rem;

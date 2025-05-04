@@ -10,6 +10,11 @@ const Gallery = styled.div`
     gap: 10px;
     margin: 9rem 7rem 10rem;
 
+    @media (max-width: 1919px){
+        height: 35rem;
+        margin: 9rem 4rem 11rem;
+    }
+
     @media (max-width: 1280px) {
         height: 30rem;
         gap: 8px;
