@@ -52,7 +52,7 @@ const Header = styled.header`
 export default function AllProjects() {
   return (
     <Projects>
-      <Header>
+      <Header>	
         <h1>All Projects</h1>
       </Header>
 

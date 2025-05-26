@@ -1,5 +1,5 @@
 import { HiOutlineArrowRight } from "react-icons/hi2"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useQuery } from "@tanstack/react-query"
 import styled from "styled-components"
 
@@ -79,6 +79,8 @@ const FullList = styled.li`
 `
 
 export default function LastProjects() {
+    const navigate = useNavigate()
+
     const { data, isPending } = useQuery({
         queryKey: ["projects"],
         queryFn: gitProjects,
@@ -104,9 +106,20 @@ export default function LastProjects() {
 
                 <FullList>
                     <Link
-                        to='https://github.com/makeneto?tab=repositories'
-                        target="_blank"
-                        aria-label="GitHub Projects"
+                        onClick={() => {
+                            if (location.pathname !== "/projects") {
+                                navigate("/projects", { replace: true })
+                                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50)
+                            } else {
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
+                        }}
+                        to="/projects"
+                        smooth
+                        duration={500}
+                        offset={0}
+                        spy
+                        aria-label="All Projects"
                         className="link"
                     >
                         Full List

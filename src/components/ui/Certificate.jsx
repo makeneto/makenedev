@@ -48,7 +48,7 @@ const New = styled.span`
     transform: rotate(180deg);
 
     @media (max-width: 480px) {
-        top: 3.6%;
+        top: 3.3%;
     }
 `
 
