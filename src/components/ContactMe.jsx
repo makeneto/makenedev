@@ -309,7 +309,7 @@ export default function ContactMe() {
                                 <p>Phone</p>
                                 <h2>
                                     <Link to="tel:+244945336003" target='_blank' aria-label="Access the phone number">
-                                        +244 945336003
+                                        +244 945 336 003
                                     </Link>
                                 </h2>
                             </div>

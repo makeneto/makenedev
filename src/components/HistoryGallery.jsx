@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { motion } from "framer-motion";
 
 const Gallery = styled.div`
-    height: 48rem;
+    height: 48rem !important;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -33,8 +33,8 @@ const Gallery = styled.div`
     }
 
     @media (max-width: 480px) {
-        height: 11rem;
-        margin: 8rem 1rem 5rem;
+        height: 11rem !important;
+        margin: 8rem 1rem 5rem !important;
     }
 
     & div {

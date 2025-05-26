@@ -26,11 +26,11 @@ const CertificatesStyled = styled.article`
 `
 
 const CertificatesContainer = styled.ul`
-    width: 80%;
+    width: 90% !important;
     margin: 1.6rem auto 0;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 31rem;
+    grid-auto-columns: 25.4rem !important;
     gap: 1.5rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -39,25 +39,28 @@ const CertificatesContainer = styled.ul`
     &::-webkit-scrollbar {
         display: none;
     }
-
-    @media (max-width: 1919px){
-        width: 90%;
-        grid-auto-columns: 27rem;
-    }
-
-    @media (max-width: 1280px) {
-        width: 95%;
-        grid-auto-columns: 23.5rem;
+    
+    @media (max-width: 480px) {
+        width: 92% !important;
+        grid-auto-columns: 22rem !important;
     }
 
     @media (max-width: 884px) {
         grid-auto-columns: 22rem;
     }
 
-    @media (max-width: 480px) {
-        width: 92%;
-        grid-auto-columns: 20.4rem;
+    @media (max-width: 1280px) {
+        width: 95%;
+        grid-auto-columns: 23.5rem;
     }
+    
+    @media (max-width: 1919px){
+        width: 90%;
+        grid-auto-columns: 27rem;
+    }
+
+
+
 `
 
 const NavCertificates = styled.nav`
