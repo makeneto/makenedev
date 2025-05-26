@@ -8,6 +8,7 @@ import { UserProvider } from './context/UserContext'
 export default function App() {
     const Home = lazy(() => import('./pages/Home'))
     const About = lazy(() => import('./pages/About'))
+    const AllProjects = lazy(() => import('./pages/AllProjects'))
     const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
     return (
@@ -18,6 +19,7 @@ export default function App() {
                         <Routes>
                             <Route index element={<Home />} />
                             <Route path="about" element={<About />} />
+                            <Route path="projects" element={<AllProjects />} />
                             <Route path="*" element={<NotFoundPage />} />
                         </Routes>
                     </Layout>
