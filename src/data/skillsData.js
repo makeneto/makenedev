@@ -1,20 +1,5 @@
 export const skills = [
     {
-        logo: 'https://skillicons.dev/icons?i=html',
-        title: 'HTML & CSS',
-        level: 'Expert',
-    },
-    {
-        logo: 'https://skillicons.dev/icons?i=javascript',
-        title: 'JavaScript',
-        level: 'Professional',
-    },
-    {
-        logo: 'https://skillicons.dev/icons?i=sass',
-        title: 'SCSS',
-        level: 'Professional',
-    },
-    {
         logo: 'https://skillicons.dev/icons?i=react',
         title: 'React',
         level: 'Professional',
@@ -28,6 +13,21 @@ export const skills = [
         logo: 'https://skillicons.dev/icons?i=next',
         title: 'Next.JS',
         level: 'Professional',
+    },
+    {
+        logo: 'https://skillicons.dev/icons?i=javascript',
+        title: 'JavaScript',
+        level: 'Professional',
+    },
+    {
+        logo: 'https://skillicons.dev/icons?i=sass',
+        title: 'SCSS',
+        level: 'Professional',
+    },
+    {
+        logo: 'https://skillicons.dev/icons?i=html',
+        title: 'HTML & CSS',
+        level: 'Expert',
     },
     {
         logo: 'https://skillicons.dev/icons?i=redux',

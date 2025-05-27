@@ -4,11 +4,13 @@ import { useInView } from "react-intersection-observer"
 
 import HistoryGallery from "../components/HistoryGallery"
 import HistoryText from "../components/HistoryText"
+import Experiences from "../components/Experiences"
 import FavoriteSingers from "../components/FavoriteSingers"
 import AboutProjects from "../components/AboutProjects"
 import FAQ from "../components/FAQ"
 
 export default function About() {
+    // const [refExperiences, inViewExperiences] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refFavoriteSingers, inViewFavoriteSingers] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refAboutProjects, inViewAboutProjects] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refFAQ, inViewFAQ] = useInView({ threshold: 0.2, triggerOnce: true })
@@ -22,6 +24,15 @@ export default function About() {
         <main>
             <HistoryGallery />
             <HistoryText />
+
+            {/* <motion.div
+                ref={refExperiences}
+                variants={fadeInVariants}
+                initial="hidden"
+                animate={inViewExperiences ? "visible" : "hidden"}
+            >
+                <Experiences />
+            </motion.div> */}
 
             <motion.div
                 ref={refFavoriteSingers}
