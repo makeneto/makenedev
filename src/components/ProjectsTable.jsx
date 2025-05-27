@@ -105,13 +105,13 @@ const TitleLink = styled.a`
     }
 `
 
-const StyledSmallTechs = styled.td`
+export const StyledSmallTechs = styled.td`
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 `
 
-const SmallTech = styled.span`
+export const SmallTech = styled.span`
     font-size: 0.78rem;
     color: var(--light-blue);
     font-weight: 500;
@@ -119,6 +119,8 @@ const SmallTech = styled.span`
     padding: 0.2rem .7rem;
     border-radius: 1rem;
     gap: 5rem;
+
+    user-select: none;
 `
 
 const ProjectLink = styled.a`
