@@ -9,11 +9,13 @@ import LastProjects from "../components/LastProjects"
 import WorkSection from "../components/WorkSection"
 import ContactMe from "../components/ContactMe"
 import FAQ from "../components/FAQ"
+import Books from "../components/Books"
 
 export default function Home() {
     const [refRadarGraphs, inViewRadarGraphs] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refWorkSection, inViewWorkSection] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refCertificates, inViewCertificates] = useInView({ threshold: 0.2, triggerOnce: true })
+    const [refBooks, inViewBooks] = useInView({ threshold: 0.2, triggerOnce: true })
 
     const fadeInVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -23,7 +25,7 @@ export default function Home() {
     return (
         <>
             <Header />
-
+            
             <article>
                 <PersonalPages />
             </article>
@@ -56,8 +58,16 @@ export default function Home() {
                     <Certificates />
                 </motion.div>
 
-                <LastProjects />
+                <motion.div
+                    ref={refBooks}
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate={inViewBooks ? "visible" : "hidden"}
+                >
+                    <Books />
+                </motion.div>
 
+                <LastProjects />
                 <ContactMe />
             </main>
         </>

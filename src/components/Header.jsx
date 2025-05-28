@@ -17,7 +17,7 @@ const HeaderStyled = styled.header`
     
     @media (max-width: 1280px) {
         height: 193dvh;
-        margin: 0 0 10rem;
+        margin: 0 0 12rem;
     }
 
     @media (max-width: 884px) {

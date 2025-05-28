@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { IoLogoLinkedin, IoDocumentText, IoLogoGithub } from 'react-icons/io5'
 import { FaCode } from "react-icons/fa"
@@ -12,11 +11,11 @@ const SubMenu = styled.aside`
     width: fit-content;
     position: fixed;
     left: 50%;
-    bottom: ${({ isHidden }) => (isHidden ? "-100px" : "-2%")};
+    bottom: -2%;
     transform: translate(-50%, -50%);
     padding: .6rem;
     border-radius: .6rem;
-    background: var(--weak-blue) !important;
+    background: rgb(99 161 242 / 19%) !important;;
     -webkit-backdrop-filter: blur(17px);
     backdrop-filter: blur(17px) !important;
     display: flex;
@@ -36,27 +35,31 @@ const SubMenu = styled.aside`
         padding: 0.4rem;
         border-radius: 0.6rem;
 
-        @media (max-width: 1280px) {
-            padding: .4rem;     
-            width: 2.4rem;
-            height: 2.4rem;
-        }
+        @media (max-width: 480px) {
+            width: 2.8rem;
+            height: 2.8rem;
+            padding: 0.5rem;
+        }  
 
-        @media (max-width: 884px) {
+        @media (min-width: 481px) and (max-width: 884px) {
             padding: .7rem;     
             width: 3.4rem;
             height: 3.4rem;
         }
 
-        @media (max-width: 480px) {
-            width: 2.8rem;
-            height: 2.8rem;
-            padding: 0.5rem;
-        }   
+        @media (max-width: 1280px) {
+            padding: .4rem;     
+            width: 2.4rem;
+            height: 2.4rem;
+        }
     }
 
-    @media (max-width: 884px) {
-        bottom: ${({ isHidden }) => (isHidden ? "-100px" : "0")};
+    @media (max-width: 480px) {
+        bottom: -2%;
+    }
+
+    @media (min-width: 481px) and (max-width: 884px) {
+        bottom: 0;
     }
 `;
 
@@ -134,33 +137,12 @@ const iconVariants = {
 }
 
 export default function SubNav() {
-    const [isHidden, setIsHidden] = useState(false)
-    const [lastScrollY, setLastScrollY] = useState(0)
-
     const linkedInLink = 'https://linkedin.com/in/makene-neto'
     const handleCloseSkills = useCloseSkills()
     const makeneResume = 'https://suave-woodwind-741.notion.site/Makene-Neto-1e9c66691455804595b3d0c254a66754'
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY
-
-            if (currentScrollY > lastScrollY && currentScrollY > 500) {
-                setIsHidden(true)
-            } else {
-                setIsHidden(false)
-            }
-            setLastScrollY(currentScrollY)
-        };
-
-        window.addEventListener("scroll", handleScroll)
-        return () => {
-            window.removeEventListener("scroll", handleScroll)
-        }
-    }, [lastScrollY])
-
     return (
-        <SubMenu isHidden={isHidden}>
+        <SubMenu>
             <MenuBottom
                 to={linkedInLink}
                 target='_blank'

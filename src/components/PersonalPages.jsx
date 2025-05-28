@@ -195,9 +195,9 @@ export default function PersonalPages() {
                             {JSON.stringify(
                                 {
                                     name: "Makene Neto",
-                                    title: "Full Stack Developer",
+                                    title: "Front End Developer",
                                     description:
-                                        "Full stack developer with ...",
+                                        "Front End developer with ...",
                                     urlToImage: "https://avatars.githubusercontent...",
                                     email: "makeneto17@gmail.com",
                                     education: [
@@ -285,8 +285,8 @@ export default function PersonalPages() {
 
                 <TextPage>
                     <h1>Brief presentation</h1>
-                    <p><span>Makene Neto:</span> Full Stack Developer</p>
-                    <p>Full stack developer with experience in creating functional and well-designed digital solutions.</p>
+                    <p><span>Makene Neto:</span> Front End Developer</p>
+                    <p>Front End developer with experience in creating functional and well-designed digital solutions.</p>
 
                     <Lists>
                         <h1>Languages</h1>
