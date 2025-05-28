@@ -38,5 +38,5 @@ button {
 code,
 pre {
   font-weight: 400;
-  font-size: .8rem;
+  font-size: .8rem !important;
 }

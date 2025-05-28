@@ -59,6 +59,12 @@ export const professionalCertificates = [
 
 export const academicCertificates = [
     {
+        id: 745,
+        date: '2025-05-12',
+        image: 'images/certificates/q-honra-2.webp',
+        title: 'Certificate of Merit - CEPNSA',
+    },
+    {
         id: 379,
         date: '2025-01-21',
         image: 'images/certificates/q-honra-1.webp',

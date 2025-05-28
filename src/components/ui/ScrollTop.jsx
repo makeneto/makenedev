@@ -10,7 +10,7 @@ const ScrollTopButton = styled.button`
     background-color: var(--light-blue);
     color: black;
     border: none;
-    border-radius: .2rem;
+    border-radius: .5rem;
     padding: .6rem;
     cursor: pointer;
     opacity: ${({ show }) => (show ? "1" : "0")};
@@ -26,7 +26,7 @@ const ScrollTopButton = styled.button`
     }
 
     @media (max-width: 480px) {
-        bottom: 5%;
+        bottom: 3%;
     }
 `
 
