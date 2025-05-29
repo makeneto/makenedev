@@ -55,8 +55,8 @@ const Cover = styled.div`
     height: 28.4rem;
 
     @media (max-width: 480px) {
-        width: 17.3rem;
-        height: 24.4rem;
+        width: 11.3rem;
+        height: 17.4rem;
     }
 
     @media (min-width: 481px) and (max-width: 884px) {
@@ -171,16 +171,18 @@ export default function Books() {
             <BookList>
                 {books.map((book, index) => (
                     <li key={index}>
-                        <Cover >
-                            <CoverSpan isCompleted={book.completed}>
-                                {book.completed < 100 ? 'Currently Reading' : 'Completed'}
+                        <Cover>
+                            <CoverSpan isCompleted={book.completed * 100}>
+                                {(book.completed * 100) < 100 ? 'Currently Reading' : 'Completed'}
                             </CoverSpan>
 
-                            <CoverImage isCompleted={book.completed} src={book.cover} alt={book.title} />
+                            <CoverImage isCompleted={book.completed * 100} src={book.cover} alt={book.title} />
 
-                            {book.completed < 100 && <ProgressBar completed={book.completed}>
-                                <div style={{ width: `${book.completed}%` }}></div>
-                            </ProgressBar>}
+                            {(book.completed * 100) < 100 && (
+                                <ProgressBar>
+                                    <div style={{ width: `${book.completed * 100}%` }}></div>
+                                </ProgressBar>
+                            )}
                         </Cover>
 
                         <ContentBook>
@@ -190,7 +192,6 @@ export default function Books() {
                     </li>
                 ))}
             </BookList>
-
         </BooksStyled>
     )
 }
