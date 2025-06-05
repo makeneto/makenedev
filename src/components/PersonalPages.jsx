@@ -228,16 +228,12 @@ export default function PersonalPages() {
                                             "Node.js",
                                             "Express",
                                             "Supabase",
-                                            "MongoDB",
-                                            "Firebase",
-                                            "PostgreSQL"
                                         ],
                                         "tools": [
                                             "Git",
                                             "GitHub",
                                             "Figma",
                                             "Vercel",
-                                            "Postman",
                                             "Docker",
                                             "ESLint",
                                             "Prettier"
@@ -292,14 +288,14 @@ export default function PersonalPages() {
                         <h1>Languages</h1>
                         <ul>
                             <li className="strong">Portuguese - Fluent</li>
-                            <li>English - Intermediate</li>
+                            <li>English - Intermediate (B2)</li>
                         </ul>
 
                         <h1>Education</h1>
                         <ul>
                             <li className="strong"><strong>College Nossa Senhora da Anunciação</strong></li>
-                            <li>Computer Technician (2021 - 2025)</li>
-                            <li>I learned full stack development through online courses, personal projects, and contributions to startups.</li>
+                            <li>Computer Technician (2021 - 2024)</li>
+                            <li>I learned front end development through online courses, personal projects, and more.</li>
                         </ul>
                     </Lists>
 
@@ -309,13 +305,13 @@ export default function PersonalPages() {
                         <div>
                             <h1>Front-end</h1>
                             <ul>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Redux</li>
                                 <li>HTML & (S)CSS</li>
                                 <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>React</li>
                                 <li>Styled-components</li>
                                 <li>Next.js</li>
-                                <li>Redux</li>
                                 <li>TailwindCSS</li>
                             </ul>
                         </div>
@@ -324,10 +320,7 @@ export default function PersonalPages() {
                             <h1>Back-end</h1>
                             <ul>
                                 <li>Node.js</li>
-                                <li>Express</li>
                                 <li>Supabase</li>
-                                <li>MongoDB</li>
-                                <li>Firebase</li>
                                 <li>PostgreSQL</li>
                             </ul>
                         </div>
