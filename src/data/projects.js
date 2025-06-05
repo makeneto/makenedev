@@ -1,5 +1,13 @@
 export const projects = [
     {
+        id: 4234,
+        date: '2025-05-02',
+        duration: '3 hours',
+        title: 'AskMe',
+        techs: ['Vite', 'React', 'Styled-components'],
+        link: 'https://askfrontend.vercel.app'
+    },
+    {
         id: 2873,
         date: '2025-05-20',
         duration: '3 days',
