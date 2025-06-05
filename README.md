@@ -1,12 +1,60 @@
-# React + Vite
+<h1 align="left">Hi 👋🏾, my name is Makene Neto!</h1>
+<img align="right" width="300em" height="300em" src="https://github.com/nublson/nublson/blob/dev/animation_500_kv8i962g.gif"/>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=nublson&color=blueviolet" alt="Profile views" /> </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-   💓 I've been addicted to programming since **2021**
 
-Currently, two official plugins are available:
+-   🛠️ I constantly work to improve my skills as a **Front End Developer**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   🔍 Always looking for new challenges to expand my knowledge.
 
-## Expanding the ESLint configuration
+-   🌍 I dream of contributing to big projects that have a global impact.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   🦖 And... Obviously, it's me🙈
+
+<br>
+
+## 🛠️Technology Stack
+
+<br>
+
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
+![SASS](https://img.shields.io/badge/-SASS-05122A?style=flat&logo=SASS&logoColor=1572B6)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/-Tailwindcss-05122A?style=flat&logo=Tailwindcss&logoColor=1572B6)&nbsp;
+![Styled-Components](https://img.shields.io/badge/-Styled%20Components-05122A?style=flat&logo=styled-components)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=JavaScript&logoColor=1572B6)&nbsp;
+![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+![NextJS](https://img.shields.io/badge/-NextJS-05122A?style=flat&logo=next.js)&nbsp;
+
+<!-- ![React Native](https://img.shields.io/badge/-React%20Native-05122A?style=flat&logo=react)&nbsp;
+![Expo](https://img.shields.io/badge/-Expo-05122A?style=flat&logo=expo)&nbsp; -->
+
+![Redux](https://img.shields.io/badge/-Redux-05122A?style=flat&logo=redux&logoColor=ba8fff)&nbsp;
+![Supabase](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=Supabase)&nbsp;
+
+<br>
+
+## ⚙️Github Analysis
+
+<br>
+
+<p align="center">
+<img width="530em" src="https://github-readme-stats.vercel.app/api?username=makeneto&show_icons=true&theme=nightowl" alt="makenedev's stats"/>
+</p>
+
+<br>
+
+---
+
+<br>
+
+<p align="center">
+  <a href="https://instagram.com/makenedev" target="_blank">
+ <img align="center" src="https://img.shields.io/badge/-makenedev-05122A?style=flat&logo=instagram" alt="instagram"/>
+</a>
+<a href="mailto:cmp.1a.makeneto17@gmailcom" target="_blank">
+ <img align="center" src="https://img.shields.io/badge/-GMAIL-05122A?style=flat&logo=gmail" alt="GMAIL"/>
+</a>
+</p>
