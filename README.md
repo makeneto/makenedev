@@ -33,6 +33,7 @@
 
 ![Redux](https://img.shields.io/badge/-Redux-05122A?style=flat&logo=redux&logoColor=ba8fff)&nbsp;
 ![Supabase](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=Supabase)&nbsp;
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=Git)&nbsp;
 
 <br>
 
