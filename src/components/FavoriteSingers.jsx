@@ -222,19 +222,19 @@ const Singers = styled.div`
 `
 
 const Singer1 = styled.div`
-    background: url('/images/singers/kendrik-artist.webp') no-repeat center center/cover;
+    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger1 = styled.div`
-    background: url('/images/singers/kendrik-artist.webp') no-repeat center center/cover;
+    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const Singer2 = styled.div`
-    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
+    background: url('/images/singers/omah-lay-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger2 = styled.div`
-    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
+    background: url('/images/singers/omah-lay-artist.webp') no-repeat center center/cover;
 `
 
 const Singer3 = styled.div`
@@ -314,7 +314,7 @@ const SingerText = styled.div`
 `
 
 export default function FavoriteSingers() {
-    const kendrik = 'https://open.spotify.com/intl-pt/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=6_Bb3b-8StKq1-_yOLrysQ'
+    const omahLay = 'https://open.spotify.com/intl-pt/artist/5yOvAmpIR7hVxiS6Ls5DPO?flow_ctx=4ce44a01-2893-4462-9d7a-c354e8310e3f%3A1749159120'
     const drake = 'https://open.spotify.com/intl-pt/artist/3TVXtAsR1Inumwj472S9r4?si=lfdgwGmuTWmzb4WBJhg_RQ'
     const veigh = 'https://open.spotify.com/intl-pt/artist/4YqwRbMLqGHRHLS1w2ZKse?si=6ocKu7jRSHmJEbOwKVR0YQ'
     const burnaBoy = 'https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa?si=ZBKRaJUMR1ui9Qco3Sv-Vw'
@@ -328,40 +328,6 @@ export default function FavoriteSingers() {
                 <Singer1 className="singer">
                     <SingerInfo>
                         <ProfileSinger1 className="profileSinger"></ProfileSinger1>
-                        <SingerText>
-                            <h1>Kendrik Lamar</h1>
-                            <p>
-                                Verified artist
-                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
-                            </p>
-                        </SingerText>
-                    </SingerInfo>
-
-                    <div className="controls">
-                        <span>
-                            <HiOutlineSpeakerXMark />
-                            Preview
-                        </span>
-
-                        <div className="controls__btn">
-                            <Link to={kendrik} target="_blank" aria-label="More options">
-                                <HiOutlineEllipsisHorizontal />
-                            </Link>
-
-                            <Link to={kendrik} target="_blank" aria-label="Add to playlist">
-                                <HiOutlinePlusCircle />
-                            </Link>
-
-                            <Link to={kendrik} target="_blank" aria-label="Play">
-                                <div className="controls__btn--play">▶</div>
-                            </Link>
-                        </div>
-                    </div>
-                </Singer1>
-
-                <Singer2 className="singer">
-                    <SingerInfo>
-                        <ProfileSinger2 className="profileSinger"></ProfileSinger2>
                         <SingerText>
                             <h1>Drake</h1>
                             <p>
@@ -387,6 +353,40 @@ export default function FavoriteSingers() {
                             </Link>
 
                             <Link to={drake} target="_blank" aria-label="Play">
+                                <div className="controls__btn--play">▶</div>
+                            </Link>
+                        </div>
+                    </div>
+                </Singer1>
+
+                <Singer2 className="singer">
+                    <SingerInfo>
+                        <ProfileSinger2 className="profileSinger"></ProfileSinger2>
+                        <SingerText>
+                            <h1>Omah Lay</h1>
+                            <p>
+                                Verified artist
+                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
+                            </p>
+                        </SingerText>
+                    </SingerInfo>
+
+                    <div className="controls">
+                        <span>
+                            <HiOutlineSpeakerXMark />
+                            Preview
+                        </span>
+
+                        <div className="controls__btn">
+                            <Link to={omahLay} target="_blank" aria-label="More options">
+                                <HiOutlineEllipsisHorizontal />
+                            </Link>
+
+                            <Link to={omahLay} target="_blank" aria-label="Add to playlist">
+                                <HiOutlinePlusCircle />
+                            </Link>
+
+                            <Link to={omahLay} target="_blank" aria-label="Play">
                                 <div className="controls__btn--play">▶</div>
                             </Link>
                         </div>
