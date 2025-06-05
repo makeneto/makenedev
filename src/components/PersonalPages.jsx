@@ -280,7 +280,7 @@ export default function PersonalPages() {
                 </Controls>
 
                 <TextPage>
-                    <h1>Brief presentation</h1>
+                    <h1>Brief Presentation</h1>
                     <p><span>Makene Neto:</span> Front End Developer</p>
                     <p>Front End developer with experience in creating functional and well-designed digital solutions.</p>
 
