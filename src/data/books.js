@@ -63,7 +63,7 @@ export const books = [
         cover: "/images/books/a-psicologia-financeira.webp",
         title: "A Psicologia Financeira",
         author: "Morgan Housel",
-        completed: (140 / 208),
+        completed: (146 / 208),
     },
     {
         cover: "/images/books/o-caminho-para-a-felicidade.webp",
