@@ -101,14 +101,13 @@ const NavCertificates = styled.nav`
 
 export default function Certificates() {
     const [professional, setProfessional] = useState(true)
-
     const isProfessional = professional ? professionalCertificates : academicCertificates
+    const totalCertificates = professionalCertificates.length + academicCertificates.length
 
     function chooseProfessional() {
         setProfessional(!professional)
     }
 
-    const totalCertificates = professionalCertificates.length + academicCertificates.length
 
     return (
         <CertificatesStyled>

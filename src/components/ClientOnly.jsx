@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 export default function ClientOnly({ children }) {
-  const [hasMounted, setHasMounted] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false)
 
   useEffect(() => {
     setHasMounted(true);
   }, []);
 
-  if (!hasMounted) return null;
+  if (!hasMounted) return null
 
-  return <>{children}</>;
+  return <>{children}</>
 }
