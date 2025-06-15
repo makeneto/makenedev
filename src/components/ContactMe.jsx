@@ -264,7 +264,7 @@ export default function ContactMe() {
         formState: { errors: hookFormErrors, isValid }
     } = useFormHookForm({ mode: 'onChange' })
 
-    const [state, handleSubmitSpree] = useFormSpree("xjkgnvjl")
+    const [state, handleSubmitSpree] = useFormSpree("mnnvvbop")
 
     const onSubmit = (data) => {
         handleSubmitSpree(data)
@@ -295,8 +295,8 @@ export default function ContactMe() {
                             <div>
                                 <p>Email</p>
                                 <h2>
-                                    <Link to="mailto:makeneto17@gmail.com" target='_blank' aria-label="Access the email">
-                                        makeneto17@gmail.com
+                                    <Link to="mailto:makenedev@gmail.com" target='_blank' aria-label="Access the email">
+                                        makenedev@gmail.com
                                     </Link>
                                 </h2>
                             </div>
@@ -333,6 +333,7 @@ export default function ContactMe() {
                         </article>
                     </main>
                 </ContactInfo>
+
                 <MessageContainer>
                     {sent ? (
                         <MessageSent />
@@ -356,6 +357,7 @@ export default function ContactMe() {
                                                     name="name"
                                                     placeholder='Enter your name'
                                                     {...register('Name', { required: `Wow! No name, no email! Even AI needs to know who you are talking to. 🤖` })}
+                                                    autoComplete='off'
                                                 />
                                                 <ValidationError
                                                     prefix="Name"
@@ -388,6 +390,7 @@ export default function ContactMe() {
                                                             message: 'Hmm... try to send an email without email? Is this magic or a bug? 🪄📧'
                                                         }
                                                     })}
+                                                    autoComplete='off'
                                                 />
                                                 <ValidationError
                                                     prefix="Email"
@@ -416,6 +419,7 @@ export default function ContactMe() {
                                                     name="about"
                                                     placeholder='Subject of discussion'
                                                     {...register('About', { required: 'Have you ever wondered if the movies were like this? Now we present... nothing! Insert a theme, please.🎬' })}
+                                                    autoComplete='off'
                                                 />
                                                 <ValidationError
                                                     prefix="About"
@@ -442,6 +446,7 @@ export default function ContactMe() {
                                                     name="message"
                                                     placeholder='Type your message here...'
                                                     {...register('Message', { required: 'We really wanted to answer, but there is nothing to read! 🤷‍♂️' })}
+                                                    autoComplete='off'
                                                 />
                                                 <ValidationError
                                                     prefix="Message"
