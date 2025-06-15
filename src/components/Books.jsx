@@ -173,7 +173,7 @@ export default function Books() {
                     <li key={index}>
                         <Cover>
                             <CoverSpan isCompleted={book.completed * 100}>
-                                {(book.completed * 100) < 100 ? 'Currently Reading' : 'Completed'}
+                                {(book.completed * 100) < 100 ? 'Reading' : 'Completed'}
                             </CoverSpan>
 
                             <CoverImage isCompleted={book.completed * 100} src={book.cover} alt={book.title} />
