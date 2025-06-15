@@ -56,7 +56,7 @@
  <img align="center" src="https://img.shields.io/badge/-makenedev-05122A?style=flat&logo=instagram" alt="instagram"/>
 </a>
   |
-<a href="mailto:cmp.1a.makeneto17@gmailcom" target="_blank">
+<a href="mailto:cmp.1a.makenedev@gmailcom" target="_blank">
  <img align="center" src="https://img.shields.io/badge/-GMAIL-05122A?style=flat&logo=gmail" alt="GMAIL"/>
 </a>
 </p>
