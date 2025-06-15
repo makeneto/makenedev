@@ -21,7 +21,7 @@ const BooksStyled = styled.section`
 
     @media (min-width: 885px) and (max-width: 1280px) {
         padding: 5.6rem 2rem;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
 `;
 
