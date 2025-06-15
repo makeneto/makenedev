@@ -257,27 +257,27 @@ const Stepper = styled.div`
 `;
 
 export default function ContactMe() {
-    const [step, setStep] = useState(1);
+    const [step, setStep] = useState(1)
     const {
         register,
         handleSubmit: handleSubmitHookForm,
         formState: { errors: hookFormErrors, isValid }
-    } = useFormHookForm({ mode: 'onChange' });
+    } = useFormHookForm({ mode: 'onChange' })
 
-    const [state, handleSubmitSpree] = useFormSpree("xjkgnvjl");
+    const [state, handleSubmitSpree] = useFormSpree("xjkgnvjl")
 
     const onSubmit = (data) => {
-        handleSubmitSpree(data);
+        handleSubmitSpree(data)
     };
 
     const sent = state.succeeded
 
     const nextStep = () => {
         if (isValid) {
-            setStep(step + 1);
+            setStep(step + 1)
         }
-    };
-    const prevStep = () => setStep(step - 1);
+    }
+    const prevStep = () => setStep(step - 1)
 
     return (
         <article id='contact'>
