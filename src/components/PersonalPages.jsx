@@ -199,7 +199,7 @@ export default function PersonalPages() {
                                     description:
                                         "Front End developer with ...",
                                     urlToImage: "https://avatars.githubusercontent...",
-                                    email: "makeneto17@gmail.com",
+                                    email: "makenedev@gmail.com",
                                     education: [
                                         {
                                             institution: "CEPNSA",
