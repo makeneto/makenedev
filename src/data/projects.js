@@ -1,5 +1,13 @@
 export const projects = [
     {
+        id: 5430,
+        date: '2025-06-13',
+        duration: '5 days',
+        title: 'Finix',
+        techs: ['Vite', 'React', 'TypeScript', 'Styled-components'],
+        link: 'https://finix-m.vercel.app'
+    },
+    {
         id: 4234,
         date: '2025-05-02',
         duration: '3 hours',
@@ -12,7 +20,7 @@ export const projects = [
         date: '2025-05-20',
         duration: '3 days',
         title: 'Gimme',
-        techs: ['Vite', 'React', 'Styled-components', 'TypeScript'],
+        techs: ['Vite', 'React', 'TypeScript', 'Styled-components'],
         link: 'https://gimmepass.vercel.app'
     },
     {
@@ -28,7 +36,7 @@ export const projects = [
         date: '2025-03-16',
         duration: '1.5 months',
         title: 'Makenedev',
-        techs: ['Vite', 'React', 'Styled-components', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
+        techs: ['Vite', 'React', 'TypeScript', 'Framer Motion', 'Styled-components', 'TailwindCSS'],
         link: 'https://makenedev.vercel.app'
     },
     {
@@ -52,7 +60,7 @@ export const projects = [
         date: '2025-01-02',
         duration: '3 months',
         title: 'Solid Games',
-        techs: ['Vite', 'React', 'Styled-components',  'HTML5', 'SASS', 'JavaScript', 'Framer Motion'],
+        techs: ['Vite', 'JavaScript', 'React', 'Framer Motion', 'Styled-components', 'HTML5', 'SASS'],
         link: 'https://solid-games.vercel.app',
     },
     {
@@ -60,7 +68,7 @@ export const projects = [
         date: '2024-04-28',
         duration: '15 days',
         title: 'World Wise',
-        techs: ['Vite', 'React', 'SASS', 'API REST'],
+        techs: ['Vite', 'React', 'API REST', 'SASS'],
         link: 'https://github.com/makeneto/worldwise',
     },
     {
