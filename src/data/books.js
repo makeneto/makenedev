@@ -18,12 +18,6 @@ export const books = [
     //     completed: (0 / 121),
     // },
     // {
-    //     cover: "/images/books/o-ego-e-seu-inimigo.webp",
-    //     title: "O Ego é Seu Inimigo",
-    //     author: "Ryan Holiday",
-    //     completed: (0 / 28),
-    // },
-    // {
     //     cover: "/images/books/pai-rico-pai-pobre.webp",
     //     title: "Pai Rico, Pai Pobre",
     //     author: "Robert Kiyosaki",
@@ -48,22 +42,22 @@ export const books = [
     //     completed: (0 / 752),
     // },
     // {
-    //     cover: "/images/books/1-ano-em-12-semanas.webp",
-    //     title: "1 Ano em 12 Semanas",
-    //     author: "Brian P. Moran",
-    //     completed: (0 / 194),
-    // },
-    // {
     //     cover: "/images/books/habitos-atomicos.webp",
     //     title: "Hábitos Atômicos",
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
     // },
     {
+        cover: "/images/books/1-ano-em-12-semanas.webp",
+        title: "1 Ano em 12 Semanas",
+        author: "Brian P. Moran",
+        completed: (4 / 194),
+    },
+    {
         cover: "/images/books/a-psicologia-financeira.webp",
         title: "A Psicologia Financeira",
         author: "Morgan Housel",
-        completed: (183 / 208),
+        completed: (208 / 208),
     },
     {
         cover: "/images/books/o-caminho-para-a-felicidade.webp",
