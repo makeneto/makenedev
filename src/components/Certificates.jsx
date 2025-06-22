@@ -11,22 +11,22 @@ const CertificatesStyled = styled.article`
     gap: 1.2rem;
     margin: 9rem 0 15rem;
 
-    @media (max-width: 1919px){
+    @media (max-width: 1281px) and (max-width: 1919px){
         margin: 7rem 0 11rem;
-
     }
 
-    @media (max-width: 1280px) {
+    @media (min-width: 885px) and (max-width: 1280px) {
         margin: 5rem 0 11rem;
     }
 
     @media (max-width: 480px) {
-        margin: 3.6rem 0 7rem;
+        gap: 0;
+        margin: 3.6rem 0 7rem !important;
     }
 `
 
 const CertificatesContainer = styled.ul`
-    width: 90%;
+    width: 80% !important;
     margin: 1.6rem auto 0;
     display: grid;
     grid-auto-flow: column;
@@ -39,28 +39,25 @@ const CertificatesContainer = styled.ul`
     &::-webkit-scrollbar {
         display: none;
     }
-    
-    @media (max-width: 480px) {
-        width: 92%;
-        grid-auto-columns: 22rem;
-    }
 
-    @media (min-width: 481px) and (max-width: 884px) {
-        grid-auto-columns: 22rem;
-    }
-
-    @media (min-width: 885px) and (max-width: 1280px) {
-        width: 95%;
-        grid-auto-columns: 23.5rem;
-    }
-    
     @media (min-width: 1281px)  and (max-width: 1919px){
-        width: 90%;
+        width: 90% !important;
         grid-auto-columns: 27rem;
     }
 
+    @media (min-width: 885px) and (max-width: 1280px) {
+        width: 95% !important;
+        grid-auto-columns: 23.5rem;
+    }
 
-
+    @media (min-width: 481px) and (max-width: 884px) {
+        grid-auto-columns: 22rem !important;
+    }
+    
+    @media (max-width: 480px) {
+        width: 92% !important;
+        grid-auto-columns: 22rem;
+    }
 `
 
 const NavCertificates = styled.nav`
@@ -92,6 +89,7 @@ const NavCertificates = styled.nav`
         padding: .4rem .7rem;
         border-radius: .4rem;
         transition: all .2s ease-in;
+
         &:hover {
             background-color: var(--weak-blue);
         }
@@ -103,6 +101,8 @@ export default function Certificates() {
     const [professional, setProfessional] = useState(true)
     const isProfessional = professional ? professionalCertificates : academicCertificates
     const totalCertificates = professionalCertificates.length + academicCertificates.length
+
+    console.log(typeof isProfessional)
 
     function chooseProfessional() {
         setProfessional(!professional)

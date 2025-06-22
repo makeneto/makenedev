@@ -9,20 +9,21 @@ const AnimatedText = styled.h1`
     white-space: pre-line;
     margin-inline: 7rem;
     word-spacing: .3rem;
+    margin: 10rem 10rem 14rem;
 
-    @media (max-width: 1919px){
+    @media (max-width: 1281px) and (max-width: 1919px){
         font-size: 3.4rem;
         line-height: 1.5;
         margin-inline: 4rem;
     }
 
-    @media (max-width: 1280px) {
+    @media (min-width: 885px) and (max-width: 1280px) {
         font-size: 2.7rem;
         line-height: 1.5;
         margin-inline: 3rem;
     }
 
-    @media (max-width: 884px) {
+    @media (min-width: 481px) and (max-width: 884px) {
         font-size: 2.2rem;
         word-spacing: .1rem;
         margin: 0 3rem 0;
@@ -30,7 +31,7 @@ const AnimatedText = styled.h1`
 
     @media (max-width: 480px) {
         font-size: 1.7rem;
-        margin: 0 1rem 0;
+        margin: 4rem 1rem 5rem;
     }
 `
 

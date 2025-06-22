@@ -12,7 +12,7 @@ const NotFoundContainer = styled.main`
         content: "";
         position: absolute;
         inset: 0;
-        background: url('/images/notfound-bg.png') center center/cover;
+        background: url('/assets/notfound-bg.png') center center/cover;
         filter: blur(5px) brightness(20%);
         z-index: -1;
     }

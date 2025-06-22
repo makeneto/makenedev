@@ -120,11 +120,14 @@ export default function NavDevice() {
             battery.addEventListener("chargingchange", () => updateBatteryStatus(battery));
             battery.addEventListener("levelchange", () => updateBatteryStatus(battery));
 
+            console.log(battery)
+
             return () => {
                 battery.removeEventListener("chargingchange", updateBatteryStatus);
                 battery.removeEventListener("levelchange", updateBatteryStatus);
             }
         })
+
     }, [])
 
     useEffect(() => {

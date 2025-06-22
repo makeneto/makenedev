@@ -10,18 +10,18 @@ const BooksStyled = styled.section`
     margin-bottom: 5rem;
     border-top: var(--light-border);
 
-    @media (max-width: 480px) {
-        padding: 3rem 0rem;
-        margin-bottom: 4.3rem;
+    @media (min-width: 885px) and (max-width: 1280px) {
+        padding: 5.6rem 2rem 0;
+        margin-bottom: 4rem;
     }
 
     @media (min-width: 481px) and (max-width: 884px) {
         padding: 5.6rem 3rem;
     }
 
-    @media (min-width: 885px) and (max-width: 1280px) {
-        padding: 5.6rem 2rem;
-        margin-bottom: 4rem;
+    @media (max-width: 480px) {
+        padding: 4rem 0rem 1.8rem;
+        margin-bottom: 4.3rem;
     }
 `;
 
@@ -38,14 +38,18 @@ const BookList = styled.ul`
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
-    @media (max-width: 480px) {
-        gap: 1.6rem;
-        padding: 0 1rem;
-        margin-top: 3rem;
+    @media (min-width: 885px) and (max-width: 1280px) {
+        margin-top: 3.2rem;
     }
 
     @media (min-width: 481px) and (max-width: 884px) {
         margin-top: 4rem;
+    }
+
+    @media (max-width: 480px) {
+        gap: 1.6rem;
+        padding: 0 1rem;
+        margin-top: 4.3rem;
     }
 `
 
@@ -54,9 +58,9 @@ const Cover = styled.div`
     width: 19.3rem;
     height: 28.4rem;
 
-    @media (max-width: 480px) {
-        width: 11.3rem;
-        height: 17.4rem;
+    @media (min-width: 885px) and (max-width: 1280px) {
+        width: 16.3rem;
+        height: 24rem;
     }
 
     @media (min-width: 481px) and (max-width: 884px) {
@@ -64,9 +68,9 @@ const Cover = styled.div`
         height: 20.4rem;
     }
 
-    @media (min-width: 885px) and (max-width: 1280px) {
-        width: 16.3rem;
-        height: 24rem;
+    @media (max-width: 480px) {
+        width: 11.3rem;
+        height: 17.4rem;
     }
 `
 
@@ -106,9 +110,9 @@ const ContentBook = styled.div`
         margin-top: 1rem;
         line-height: 1.3;
 
-        @media (max-width: 480px) {
+        @media (min-width: 885px) and (max-width: 1280px) {
             font-size: 0.8rem;
-            margin-bottom: .1rem;
+            margin-bottom: .2rem;
         }
 
         @media (min-width: 481px) and (max-width: 884px) {
@@ -116,10 +120,11 @@ const ContentBook = styled.div`
             margin-bottom: .2rem;
         }
 
-        @media (min-width: 885px) and (max-width: 1280px) {
+        @media (max-width: 480px) {
             font-size: 0.8rem;
-            margin-bottom: .2rem;
+            margin-bottom: .1rem;
         }
+
     }
 
     & p {
@@ -127,9 +132,9 @@ const ContentBook = styled.div`
         font-weight: 400;
         color: var(--light-grey);
 
-        @media (max-width: 480px) {
+        @media (min-width: 885px) and (max-width: 1280px) {
+            font-size: 0.7rem;
             font-size: 0.8rem;
-            font-weight: 500;
         }
 
         @media (min-width: 481px) and (max-width: 884px) {
@@ -137,10 +142,11 @@ const ContentBook = styled.div`
             font-weight: 500;
         }
 
-        @media (min-width: 885px) and (max-width: 1280px) {
-            font-size: 0.7rem;
+        @media (max-width: 480px) {
             font-size: 0.8rem;
+            font-weight: 500;
         }
+
     }
 `
 
