@@ -58,18 +58,18 @@ const Singers = styled.div`
     grid-template-rows: 40rem;
     gap: 1rem;
 
-    @media (max-width: 1919px){
+    @media (max-width: 1281px) and (max-width: 1919px){
         width: 90%;
         grid-template-rows: 32rem;
     }
-    
-    @media (max-width: 1280px) {
+
+    @media (min-width: 885px) and (max-width: 1280px) {
         width: 95%;
         grid-template-rows: 28rem;
         margin: 4rem auto 11rem;
     }
 
-    @media (max-width: 884px) {
+    @media (min-width: 481px) and (max-width: 884px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 26rem);
     }
@@ -222,35 +222,35 @@ const Singers = styled.div`
 `
 
 const Singer1 = styled.div`
-    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger1 = styled.div`
-    background: url('/images/singers/drake-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/drake-artist.webp') no-repeat center center/cover;
 `
 
 const Singer2 = styled.div`
-    background: url('/images/singers/omah-lay-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/omah-lay-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger2 = styled.div`
-    background: url('/images/singers/omah-lay-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/omah-lay-artist.webp') no-repeat center center/cover;
 `
 
 const Singer3 = styled.div`
-    background: url('/images/singers/veigh-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/veigh-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger3 = styled.div`
-    background: url('/images/singers/veigh-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/veigh-artist.webp') no-repeat center center/cover;
 `
 
 const Singer4 = styled.div`
-    background: url('/images/singers/burna-boy-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/burna-boy-artist.webp') no-repeat center center/cover;
 `
 
 const ProfileSinger4 = styled.div`
-    background: url('/images/singers/burna-boy-artist.webp') no-repeat center center/cover;
+    background: url('/assets/singers/burna-boy-artist.webp') no-repeat center center/cover;
 `
 
 const SingerInfo = styled.div`
@@ -332,7 +332,7 @@ export default function FavoriteSingers() {
                             <h1>Drake</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
+                                <img src="/assets/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -366,7 +366,7 @@ export default function FavoriteSingers() {
                             <h1>Omah Lay</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
+                                <img src="/assets/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -400,7 +400,7 @@ export default function FavoriteSingers() {
                             <h1>Veigh</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
+                                <img src="/assets/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>
@@ -434,7 +434,7 @@ export default function FavoriteSingers() {
                             <h1>Burna Boy</h1>
                             <p>
                                 Verified artist
-                                <img src="/images/singers/verificado.webp" alt="verified" loading="lazy" />
+                                <img src="/assets/singers/verificado.webp" alt="verified" loading="lazy" />
                             </p>
                         </SingerText>
                     </SingerInfo>

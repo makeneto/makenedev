@@ -12,6 +12,7 @@ import SpinnerMini from './ui/SpinnerMini'
 import { LargeTitle } from './FAQ'
 import { DescriptionTitle } from './FavoriteSingers'
 import MessageSent from './ui/MessageSent'
+import { useMediaQuery } from 'react-responsive'
 
 const Contact = styled.div`
     width: 50%;
@@ -25,22 +26,23 @@ const Contact = styled.div`
         font-size: 1.4rem;;
     }
 
-    @media (max-width: 1919px){
+    @media (max-width: 1281px) and (max-width: 1919px){
         width: 60%;
     }
 
-    @media (max-width: 1280px) {
+    @media (min-width: 885px) and (max-width: 1280px) {
         width: 70%;
         margin: 4rem auto 9rem;
     }
 
-    @media (max-width: 884px) {
+    @media (min-width: 481px) and (max-width: 884px) {
         width: 100%;
         padding: 0 5%;
         margin: 2rem auto 6rem;
     }
     
     @media (max-width: 480px) {
+        width: 94%;
         grid-template-columns: repeat(1, 1fr);
         margin: 2rem auto 6rem;
     }
@@ -257,6 +259,7 @@ const Stepper = styled.div`
 `;
 
 export default function ContactMe() {
+    const isMobile = useMediaQuery({ maxWidth: 480 })
     const [step, setStep] = useState(1)
     const {
         register,
@@ -286,7 +289,7 @@ export default function ContactMe() {
 
             <Contact>
                 <ContactInfo>
-                    <h1>Contact Information</h1>
+                    {!isMobile && <h1>Contact Information</h1>}
                     <main>
                         <article>
                             <span>

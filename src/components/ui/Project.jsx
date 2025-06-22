@@ -93,7 +93,7 @@ export default function Project({ projectObj }) {
         <li>
             <ProjectStyled to={homepage ? homepage : `${introUrl}${name}`} target="_blank">
                 <img
-                    src={imageUrl ? imageUrl : '/images/projects/clean-code.webp'}
+                    src={imageUrl ? imageUrl : '/assets/projects/clean-code.webp'}
                     alt={`${name} pic`}
                 />
                 <h1 translate="no">{formatNameProject(name)}</h1>

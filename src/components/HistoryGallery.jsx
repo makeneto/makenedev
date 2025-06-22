@@ -54,15 +54,15 @@ const Gallery = styled.div`
 `;
 
 const images = [
-    "/images/gallery/1.webp",
-    "/images/gallery/2.webp",
-    "/images/gallery/3.webp",
-    "/images/gallery/4.webp",
-    "/images/gallery/5.webp",
-    "/images/gallery/6.webp",
-    "/images/gallery/7.webp",
-    "/images/gallery/8.webp",
-    "/images/gallery/9.webp",
+    "/assets/gallery/1.webp",
+    "/assets/gallery/2.webp",
+    "/assets/gallery/3.webp",
+    "/assets/gallery/4.webp",
+    "/assets/gallery/5.webp",
+    "/assets/gallery/6.webp",
+    "/assets/gallery/7.webp",
+    "/assets/gallery/8.webp",
+    "/assets/gallery/9.webp",
 ];
 
 const gridPositions = [

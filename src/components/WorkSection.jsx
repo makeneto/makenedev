@@ -23,7 +23,7 @@ export default function WorkSection() {
                     <div className={`${isTablet ? 'h-[30rem]' : 'h-full'}`}>
                         <img
                             className={`${isTablet ? 'h-[30rem]' : 'h-full'} w-full object-cover rounded-xl`}
-                            src={`${fontSizeClass ? "/images/work-img.webp" : "/images/work-img-sm.webp"}`}
+                            src={`${fontSizeClass ? "/assets/work-img.webp" : "/assets/work-img-sm.webp"}`}
                             alt="Features Image"
                             loading="lazy"
                         />

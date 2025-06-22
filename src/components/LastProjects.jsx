@@ -29,18 +29,21 @@ const ProjectsContainer = styled.ul`
     grid-template-columns: 42% 42% 16%;
     gap: 2rem;
 
-    @media (max-width: 1919px){
+    
+    @media (max-width: 1281px) and (max-width: 1919px){
         width: 90%;
         margin: 3.5rem auto 11rem;
     }
 
-    @media (max-width: 1280px) {
+    @media (min-width: 885px) and (max-width: 1280px) {
         width: 95%;
     }
 
-    @media (max-width: 884px) {
+
+    @media (min-width: 481px) and (max-width: 884px) {
         grid-template-columns: 39% 39% 21%;
         gap: 1.4rem;
+    
     }
 
     @media (max-width: 480px) {
