@@ -1,5 +1,21 @@
 export const projects = [
     {
+        id: 8883,
+        date: '2025-06-24',
+        duration: '1 day',
+        title: 'Ourivesaria Jinito Moniz',
+        techs: ['Vite', 'React', 'TypeScript', 'Styled-components', 'SASS'],
+        link: 'https://ourojinitomoniz.vercel.app'
+    },
+    {
+        id: 5443,
+        date: '2025-06-23',
+        duration: '1 week',
+        title: 'Ourivesaria Luciano B',
+        techs: ['Vite', 'React', 'TypeScript', 'Styled-components', 'SASS'],
+        link: 'https://lucianob.vercel.app'
+    },
+    {
         id: 5430,
         date: '2025-06-13',
         duration: '5 days',
