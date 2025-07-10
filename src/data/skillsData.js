@@ -1,12 +1,17 @@
 export const skills = [
     {
         logo: 'https://skillicons.dev/icons?i=react',
-        title: 'React',
+        title: 'React Native',
         level: 'Professional',
     },
     {
         logo: 'https://skillicons.dev/icons?i=ts',
         title: 'TypeScript',
+        level: 'Professional',
+    },
+    {
+        logo: 'https://skillicons.dev/icons?i=react',
+        title: 'React',
         level: 'Professional',
     },
     {
