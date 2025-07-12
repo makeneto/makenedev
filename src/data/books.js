@@ -57,7 +57,7 @@ export const books = [
         cover: "/assets/books/1-ano-em-12-semanas.webp",
         title: "1 Ano em 12 Semanas",
         author: "Brian P. Moran",
-        completed: (110 / 194),
+        completed: (114 / 194),
     },
     {
         cover: "/assets/books/a-psicologia-financeira.webp",
