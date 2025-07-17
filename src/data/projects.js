@@ -1,11 +1,11 @@
 export const projects = [
     {
-        id: 8883,
-        date: '2025-06-24',
-        duration: '1 day',
-        title: 'Ourivesaria Jinito Moniz',
-        techs: ['Vite', 'React', 'TypeScript', 'Styled-components', 'SASS'],
-        link: 'https://ourojinitomoniz.vercel.app'
+        id: 7564,
+        date: '2025-07-13',
+        duration: '5 day',
+        title: 'Goals',
+        techs: ['Expo', 'React Native', 'TypeScript'],
+        link: 'https://github.com/makeneto/goals'
     },
     {
         id: 5443,
