@@ -68,7 +68,7 @@ export const projects = [
         date: '2025-02-01',
         duration: '1.5 months',
         title: 'GYMak Database',
-        techs: ['React', 'API REST', 'SASS', 'Styled-components'],
+        techs: ['Create React App', 'React', 'API REST', 'SASS', 'Styled-components'],
         link: 'https://gymak-me.vercel.app'
     },
     {
