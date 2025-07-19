@@ -214,14 +214,14 @@ export default function PersonalPages() {
                                     },
                                     "skills": {
                                         "frontend": [
-                                            "HTML",
-                                            "CSS",
-                                            "SCSS",
-                                            "JavaScript",
+                                            "React Native",
                                             "TypeScript",
                                             "React",
-                                            "Next.js",
                                             "Redux",
+                                            "HTML & (S)CSS",
+                                            "JavaScript",
+                                            "Styled-components",
+                                            "Next.js",
                                             "TailwindCSS"
                                         ],
                                         "backend": [
@@ -328,6 +328,6 @@ export default function PersonalPages() {
                     </Skills>
                 </TextPage>
             </Page>
-        </Documents>
+        </Documents >
     )
 }
