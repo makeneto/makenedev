@@ -12,6 +12,7 @@ const Features = styled.div`
 
 export default function NavFeatures() {
     const isComputer = useMediaQuery({ minWidth: 884 })
+
     return (
         <Features>
             <NavBar />

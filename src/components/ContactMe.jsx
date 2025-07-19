@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useForm as useFormSpree, ValidationError } from '@formspree/react'
-import { useForm as useFormHookForm } from 'react-hook-form'
+import { ValidationError } from '@formspree/react'
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 import styled from 'styled-components'
 import { HiOutlinePaperAirplane } from 'react-icons/hi2'
@@ -12,7 +10,7 @@ import SpinnerMini from './ui/SpinnerMini'
 import { LargeTitle } from './FAQ'
 import { DescriptionTitle } from './FavoriteSingers'
 import MessageSent from './ui/MessageSent'
-import { useMediaQuery } from 'react-responsive'
+import useContactMe from '../hooks/useContactMe'
 
 const Contact = styled.div`
     width: 50%;
@@ -23,7 +21,7 @@ const Contact = styled.div`
     margin: 6rem auto 11rem;
 
     & h1 {
-        font-size: 1.4rem;;
+        font-size: 1.4rem;
     }
 
     @media (max-width: 1281px) and (max-width: 1919px){
@@ -259,28 +257,19 @@ const Stepper = styled.div`
 `;
 
 export default function ContactMe() {
-    const isMobile = useMediaQuery({ maxWidth: 480 })
-    const [step, setStep] = useState(1)
     const {
+        state,
+        isValid,
+        step,
+        isMobile,
+        prevStep,
+        sent,
         register,
-        handleSubmit: handleSubmitHookForm,
-        formState: { errors: hookFormErrors, isValid }
-    } = useFormHookForm({ mode: 'onChange' })
-
-    const [state, handleSubmitSpree] = useFormSpree("mnnvvbop")
-
-    const onSubmit = (data) => {
-        handleSubmitSpree(data)
-    };
-
-    const sent = state.succeeded
-
-    const nextStep = () => {
-        if (isValid) {
-            setStep(step + 1)
-        }
-    }
-    const prevStep = () => setStep(step - 1)
+        onSubmit,
+        nextStep,
+        handleSubmitHookForm,
+        hookFormErrors
+    } = useContactMe()
 
     return (
         <article id='contact'>

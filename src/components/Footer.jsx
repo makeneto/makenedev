@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const FooterStyled = styled.footer`
     background-color: #181d22;
-    height: 22.5rem;
+    height: 24.8rem;
     position: relative;
 
     & div:first-child {
@@ -27,7 +27,7 @@ const FooterStyled = styled.footer`
     }
 
     @media (max-width: 480px) {
-        height: 22rem;
+        height: 23rem;
     }
 
     & div:last-child {
@@ -89,7 +89,7 @@ const FooterStyled = styled.footer`
 
 export default function Footer() {
     const now = moment()
-    const currentYear = now.years()
+    const currentYear = now.year()
 
     return (
         <FooterStyled>
@@ -100,14 +100,11 @@ export default function Footer() {
                     <p>Glad to share my work.</p>
                     <p>© {currentYear}, All rights reserved.</p>
                     <div>
-                        <Link to="https://www.instagram.com/makenedev" target="_blank"  aria-label="Instagram">
+                        <Link to="https://www.instagram.com/makenedev" target="_blank" aria-label="Instagram">
                             <FaInstagram />
                         </Link>
                         <Link to="https://www.threads.net/@makenedev" target="_blank" aria-label="Threads">
                             <FaThreads />
-                        </Link>
-                        <Link to="https://www.facebook.com/N.Makeny" target="_blank" aria-label="Facebook">
-                            <FaFacebook />
                         </Link>
                         <Link to="https://www.linkedin.com/in/makene-neto" target="_blank" aria-label="LinkedIn">
                             <FaLinkedin />

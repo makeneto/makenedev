@@ -2,16 +2,11 @@ import styled from "styled-components"
 import { UseUserContext } from "../context/UserContext"
 import { skills } from "../data/skillsData"
 import Skill from "./ui/Skill"
-import { useEffect, useState } from "react"
 import { Overlay } from "./ui/Overlay"
 
-// dnd-kit
 import {
     DndContext,
     closestCenter,
-    useSensor,
-    useSensors,
-    PointerSensor
 } from '@dnd-kit/core'
 import {
     SortableContext,
@@ -20,6 +15,7 @@ import {
     verticalListSortingStrategy
 } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
+import useSkills from "../hooks/useSkills"
 
 const SkillStyled = styled.article`
     z-index: 888;
@@ -115,23 +111,7 @@ function SortableSkill({ skill }) {
 }
 
 export default function Skills() {
-    const { showSkills } = UseUserContext()
-    const [items, setItems] = useState(skills.map(skill => skill.title))
-
-    const sensors = useSensors(
-        useSensor(PointerSensor, {
-            activationConstraint: { distance: 5 }
-        })
-    )
-
-    useEffect(() => {
-        if (showSkills) {
-            document.body.style.overflow = "hidden"
-        }
-        else {
-            document.body.style.overflow = ""
-        }
-    }, [showSkills])
+    const { showSkills, items, setItems, sensors } = useSkills()
 
     return (
         <>

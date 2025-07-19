@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import styled from "styled-components"
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const ScrollTopButton = styled.button`
     position: fixed;
@@ -31,24 +31,7 @@ const ScrollTopButton = styled.button`
 `
 
 export default function ScrollTop() {
-    const [showButton, setShowButton] = useState(false)
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY >= 600) {
-                setShowButton(true)
-            } else {
-                setShowButton(false)
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }
+    const { scrollToTop, showButton } = useScrollToTop()
 
     return (
         <ScrollTopButton

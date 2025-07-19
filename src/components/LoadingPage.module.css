@@ -12,7 +12,6 @@
         animation: dashArray 4s ease-in-out infinite,
             dashOffset 4s linear infinite;
     }
-
 }
 
 @keyframes dashArray {

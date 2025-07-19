@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { HiOutlineExternalLink } from "react-icons/hi"
 
 import { formatDate } from '../../helpers/utils'
+import { isNew } from '../../js/isNew'
 
 const CertificateStyled = styled(Link)`
     color: white;
@@ -75,13 +76,6 @@ const Details = styled.div`
 
 export default function Certificate({ ObjData }) {
     const { date, image, title, link } = ObjData
-
-    const isNew = (date) => {
-        const now = new Date();
-        const certificateDate = new Date(date);
-        const threeMonthsAgo = new Date(now.setMonth(now.getMonth() - 3));
-        return certificateDate >= threeMonthsAgo;
-    }
 
     return (
         <li>

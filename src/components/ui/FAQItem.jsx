@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { FaPlus } from "react-icons/fa"
 import { motion, AnimatePresence } from "framer-motion"
+import useRenderAnswer from "../../hooks/useRenderAnswer"
 
 const Item = styled(motion.div)`
   border-bottom: var(--light-border);
@@ -50,7 +51,7 @@ const Answer = styled(motion.div)`
   }
 `
 
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   color: var(--light-blue);
   text-decoration: none;
 
@@ -61,26 +62,7 @@ const StyledLink = styled(Link)`
 
 export default function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false)
-
-  const renderAnswer = (text) => {
-    const linkRegex = /<a href="(.*?)" target="_blank">(.*?)<\/a>/g
-    const parts = text.split(linkRegex)
-
-    return parts.map((part, index) => {
-      if (index % 3 === 0) {
-        return part
-      } else if (index % 3 === 1) {
-        const href = part
-        const linkText = parts[index + 1]
-        return (
-          <StyledLink key={index} to={href} target="_blank">
-            {linkText}
-          </StyledLink>
-        )
-      }
-      return null
-    })
-  }
+  const renderAnswer = useRenderAnswer()
 
   return (
     <Item animate={{ height: isOpen ? "auto" : 50 }} transition={{ duration: 0.3, ease: "easeInOut" }}>

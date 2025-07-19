@@ -102,12 +102,9 @@ export default function Certificates() {
     const isProfessional = professional ? professionalCertificates : academicCertificates
     const totalCertificates = professionalCertificates.length + academicCertificates.length
 
-    console.log(typeof isProfessional)
-
     function chooseProfessional() {
         setProfessional(!professional)
     }
-
 
     return (
         <CertificatesStyled>
