@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa"
 import { motion } from "framer-motion"
 import styled from 'styled-components'
 
-import { useCloseSkills } from "../helpers/showSkills"
+import useSubNav from "../hooks/useSubNav"
 
 const SubMenu = styled.aside`
     width: fit-content;
@@ -137,9 +137,7 @@ const iconVariants = {
 }
 
 export default function SubNav() {
-    const linkedInLink = 'https://linkedin.com/in/makene-neto'
-    const makeneResume = 'https://suave-woodwind-741.notion.site/Makene-Neto-1e9c66691455804595b3d0c254a66754'
-    const handleCloseSkills = useCloseSkills()
+    const { linkedInLink, makeneResume, handleCloseSkills } = useSubNav()
 
     return (
         <SubMenu>

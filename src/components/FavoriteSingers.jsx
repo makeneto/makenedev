@@ -4,6 +4,7 @@ import { HiOutlineEllipsisHorizontal, HiOutlineSpeakerXMark } from "react-icons/
 import { HiOutlinePlusCircle } from "react-icons/hi";
 
 import { LargeTitle } from "./FAQ"
+import useSingers from "../hooks/useSingers";
 
 const SingerStyled = styled.section`
     margin-top: 10rem;
@@ -314,10 +315,10 @@ const SingerText = styled.div`
 `
 
 export default function FavoriteSingers() {
-    const omahLay = 'https://open.spotify.com/intl-pt/artist/5yOvAmpIR7hVxiS6Ls5DPO?flow_ctx=4ce44a01-2893-4462-9d7a-c354e8310e3f%3A1749159120'
-    const drake = 'https://open.spotify.com/intl-pt/artist/3TVXtAsR1Inumwj472S9r4?si=lfdgwGmuTWmzb4WBJhg_RQ'
-    const veigh = 'https://open.spotify.com/intl-pt/artist/4YqwRbMLqGHRHLS1w2ZKse?si=6ocKu7jRSHmJEbOwKVR0YQ'
-    const burnaBoy = 'https://open.spotify.com/artist/3wcj11K77LjEY1PkEazffa?si=ZBKRaJUMR1ui9Qco3Sv-Vw'
+    const { omahLay,
+        drake,
+        veigh,
+        burnaBoy } = useSingers()
 
     return (
         <SingerStyled>

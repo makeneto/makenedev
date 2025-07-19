@@ -4,8 +4,8 @@ export default function ClientOnly({ children }) {
   const [hasMounted, setHasMounted] = useState(false)
 
   useEffect(() => {
-    setHasMounted(true);
-  }, []);
+    setHasMounted(true)
+  }, [])
 
   if (!hasMounted) return null
 

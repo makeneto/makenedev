@@ -42,16 +42,16 @@ export const books = [
     //     completed: (0 / 752),
     // },
     // {
-    //     cover: "/assets/books/essencialismo.webp",
-    //     title: "Essencialismo",
-    //     author: "Greg Mckeown",
-    //     completed: (0 / 227),
-    // },
-    // {
     //     cover: "/assets/books/habitos-atomicos.webp",
     //     title: "Hábitos Atômicos",
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
+    // },
+    // {
+    //     cover: "/assets/books/essencialismo.webp",
+    //     title: "Essencialismo",
+    //     author: "Greg Mckeown",
+    //     completed: (0 / 227),
     // },
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",

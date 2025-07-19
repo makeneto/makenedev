@@ -163,14 +163,14 @@ const Lists = styled.div`
 `
 
 export default function PersonalPages() {
-    const controls = useAnimation();
-    const [ref, inView] = useInView({ threshold: 0.2 });
+    const controls = useAnimation()
+    const [ref, inView] = useInView({ threshold: 0.2 })
 
     useEffect(() => {
         if (inView) {
-            controls.start({ rotate: 0 });
+            controls.start({ rotate: 0 })
         }
-    }, [inView, controls]);
+    }, [inView, controls])
 
     return (
         <Documents id="personalPages" ref={ref}>
@@ -305,8 +305,9 @@ export default function PersonalPages() {
                         <div>
                             <h1>Front-end</h1>
                             <ul>
-                                <li>React</li>
+                                <li>React Native</li>
                                 <li>TypeScript</li>
+                                <li>React</li>
                                 <li>Redux</li>
                                 <li>HTML & (S)CSS</li>
                                 <li>JavaScript</li>

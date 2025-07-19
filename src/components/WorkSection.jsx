@@ -5,7 +5,6 @@ export default function WorkSection() {
     const scrollToSection = useScrollToSection()
     const isTablet = useMediaQuery({ maxWidth: 884 })
     const isPhone = useMediaQuery({ maxWidth: 884 })
-
     const fontSizeClass = !isTablet ? "text-base" : "pr-[4px]"
 
     return (

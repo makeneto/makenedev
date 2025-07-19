@@ -1,12 +1,9 @@
-import moment from "moment"
 import { Link as ScrollLink } from 'react-scroll'
-import { useMediaQuery } from "react-responsive"
 import { FaChevronDown } from "react-icons/fa"
 import styled from "styled-components"
 
-import { useScrollToSection } from "../helpers/scrollToSection"
 import { handleConfetti } from "../helpers/confetti"
-import { useEffect, useState } from "react";
+import useHeader from "../hooks/useHeader"
 
 const HeaderStyled = styled.header`
     height: 129dvh;
@@ -215,17 +212,12 @@ const Button = styled(ScrollLink)`
 `
 
 export default function Header() {
-    const startDate = moment('2021-07-25')
-    const now = moment()
-    const currentCareerYears = now.diff(startDate, 'years')
-    const isMobile = useMediaQuery({ maxWidth: 884 })
-    const scrollToSection = useScrollToSection()
-
-    const [animate, setAnimate] = useState(false);
-
-    useEffect(() => {
-        setAnimate(true);
-    }, []);
+    const {
+        currentCareerYears,
+        isMobile,
+        scrollToSection,
+        animate
+    } = useHeader()
 
     return (
         <HeaderStyled

@@ -12,7 +12,6 @@ const Main = styled.main`
     border-radius: 0 0 30rem 30rem;
 `
 
-
 export default function Layout({ children }) {
     return (
         <>

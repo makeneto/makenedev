@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react"
 import { useMediaQuery } from "react-responsive"
-import { Link, useLocation, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Link as ScrollLink } from "react-scroll"
 import styled from "styled-components"
 
 import GithubLogo from "./ui/GithubLogo"
 import { useScrollToSection } from "../helpers/scrollToSection"
+import useNavScrolling from "../hooks/useNavScrolling"
+import usePageLocation from "../hooks/usePageLocation"
 
 const Nav = styled.nav`
     pointer-events: auto;
@@ -156,57 +157,10 @@ const GithubButton = styled(Link)`
 `
 
 export default function NavBar() {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isVisible, setIsVisible] = useState(true);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const location = useLocation()
-    const navigate = useNavigate()
-    const isMobile = useMediaQuery({ maxWidth: 480 });
-    const scrollToSection = useScrollToSection();
-
-    useEffect(() => {
-        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
-
-        const handleScroll = () => {
-            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
-
-            setIsScrolled(currentScrollY > 10);
-
-            if (currentScrollY > 500 && currentScrollY > lastScrollY) {
-                setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }
-
-            lastScrollY = currentScrollY;
-        };
-
-        setIsVisible(true);
-
-        window.addEventListener("scroll", handleScroll);
-        window.addEventListener("touchmove", handleScroll)
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("touchmove", handleScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-        if (location.hash) {
-            const sectionId = location.hash.replace("#", "")
-            const element = document.getElementById(sectionId)
-            if (element) {
-                element.scrollIntoView({ behavior: "smooth", block: "start" })
-            }
-        }
-    }, [location])
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoaded(true)
-        }, 500)
-    }, [])
+    const { isScrolled, isVisible } = useNavScrolling()
+    const { isLoaded, navigate } = usePageLocation()
+    const scrollToSection = useScrollToSection()
+    const isMobile = useMediaQuery({ maxWidth: 480 })
 
     return (
         <Nav $isScrolled={isScrolled} $isVisible={isVisible} $isMobile={isMobile} $isLoaded={isLoaded}>
@@ -220,12 +174,21 @@ export default function NavBar() {
             <ul>
                 <li>
                     <AnotherNavLinks
-                        onClick={() => scrollToSection("projects")}
-                        to="projects"
+                        onClick={() => {
+                            if (location.pathname !== "/projects") {
+                                navigate("/projects", { replace: true })
+                                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50)
+                            } else {
+                                window.scrollTo({ top: 0, behavior: "smooth" })
+                            }
+                        }}
+                        to="/projects"
                         smooth
                         duration={500}
-                        offset={-70}
+                        offset={0}
                         spy
+                        aria-label="All Projects"
+                        className="link"
                     >
                         Projects
                     </AnotherNavLinks>
