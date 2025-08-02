@@ -47,17 +47,17 @@ export const books = [
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
     // },
-    // {
-    //     cover: "/assets/books/essencialismo.webp",
-    //     title: "Essencialismo",
-    //     author: "Greg Mckeown",
-    //     completed: (0 / 227),
-    // },
+    {
+        cover: "/assets/books/essencialismo.webp",
+        title: "Essencialismo",
+        author: "Greg Mckeown",                         
+        completed: (0 / 227),
+    }, 
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
         title: "1 Ano em 12 Semanas",
         author: "Brian P. Moran",
-        completed: (163 / 194),
+        completed: (194 / 194),
     },
     {
         cover: "/assets/books/a-psicologia-financeira.webp",
