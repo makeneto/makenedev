@@ -51,7 +51,7 @@ export const books = [
         cover: "/assets/books/essencialismo.webp",
         title: "Essencialismo",
         author: "Greg Mckeown",                         
-        completed: (28 / 227),
+        completed: (39 / 227),
     }, 
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
