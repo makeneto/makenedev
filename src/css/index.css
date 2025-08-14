@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Radio Canada Big", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: #0E1821;
+  color: white;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+::selection {
+  background-color: rgba(99, 161, 242, 0.25);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+code,
+pre {
+  font-weight: 400;
+  font-size: .8rem !important;
+}

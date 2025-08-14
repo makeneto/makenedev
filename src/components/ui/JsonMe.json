@@ -1,0 +1,65 @@
+{
+  "name": "Makene Neto",
+    "title": "Front end Developer",
+    "description": "Front End developer with experience in creating functional and well-designed digital solutions",
+
+  "education": [
+    {
+      "institution": "Colégio Nossa Senhora da Anunciação",
+      "course": "Computer Technician",
+      "period": "2021 - 2025",
+      "description": "I learned full stack development through online courses, personal projects, and contributions to startups."
+    }
+  ],
+
+  "languages": {
+    "Portuguese": "Fluente",
+    "English": "Intermediário"
+  },
+
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux",
+      "TailwindCSS"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "Supabase",
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Figma",
+      "Vercel",
+      "Postman",
+      "Docker",
+      "ESLint",
+      "Prettier"
+    ],
+    "soft_skills": [
+      "Resolução de Problemas",
+      "Trabalho em Equipe",
+      "Autodidatismo",
+      "Comunicação",
+      "Pensamento Crítico"
+    ],
+    "other": [
+      "UI/UX Design",
+      "Testes Automatizados",
+      "Metodologias Ágeis",
+      "CI/CD",
+      "Arquitetura de Software"
+    ]
+  }
+}
