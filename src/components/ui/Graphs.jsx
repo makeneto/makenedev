@@ -4,11 +4,14 @@ export const Graphs = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 4rem;
     margin-bottom: 7rem;
-    padding-left: 3.5rem;
     
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin-bottom: 4rem;
+    }
+
     @media (max-width: 884px) {
         display: flex;
         flex-direction: column;

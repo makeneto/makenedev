@@ -13,7 +13,6 @@ import FAQ from "../components/FAQ"
 
 export default function About() {
     // const [refExperiences, inViewExperiences] = useInView({ threshold: 0.2, triggerOnce: true })
-    const [refRadarGraphs, inViewRadarGraphs] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refFavoriteSingers, inViewFavoriteSingers] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refAboutProjects, inViewAboutProjects] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refFAQ, inViewFAQ] = useInView({ threshold: 0.2, triggerOnce: true })
@@ -26,7 +25,6 @@ export default function About() {
 
     return (
         <main>
-            <HistoryGallery />
             <HistoryText />
 
             {/* <motion.div
@@ -38,14 +36,7 @@ export default function About() {
                 <Experiences />
             </motion.div> */}
 
-            <motion.div
-                ref={refRadarGraphs}
-                variants={fadeInVariants}
-                initial="hidden"
-                animate={inViewRadarGraphs ? "visible" : "hidden"}
-            >
-                <RadarGraphs />
-            </motion.div>
+            <RadarGraphs />
 
             <motion.div
                 ref={refBooks}

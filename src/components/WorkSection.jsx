@@ -1,8 +1,7 @@
-import { useScrollToSection } from "../helpers/scrollToSection"
 import { useMediaQuery } from "react-responsive"
+import { Link } from "react-router-dom"
 
 export default function WorkSection() {
-    const scrollToSection = useScrollToSection()
     const isTablet = useMediaQuery({ maxWidth: 884 })
     const isPhone = useMediaQuery({ maxWidth: 480 })
     const fontSizeClass = !isTablet ? "text-base" : "pr-[4px]"
@@ -120,10 +119,9 @@ export default function WorkSection() {
                             </div>
                         </div>
 
-                        <button
+                        <Link
+                            to="/contact"
                             className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#63A1F2] font-medium text-sm text-neutral-800 rounded-full focus:outline-hidden"
-                            onClick={() => scrollToSection("contact")}
-                            to="contact"
                             smooth
                             duration={500}
                             offset={-70}
@@ -135,7 +133,7 @@ export default function WorkSection() {
                                 <path className="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition" d="M14.05 6A5 5 0 0 1 18 10"></path>
                             </svg>
                             Contact now
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

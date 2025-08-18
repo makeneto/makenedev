@@ -11,6 +11,7 @@ import ContactMe from "../components/ContactMe"
 export default function Home() {
     const [refWorkSection, inViewWorkSection] = useInView({ threshold: 0.2, triggerOnce: true })
     const [refCertificates, inViewCertificates] = useInView({ threshold: 0.2, triggerOnce: true })
+    const [refProjects, inViewProjects] = useInView({ threshold: 0.2, triggerOnce: true })
 
     const fadeInVariants = {
         hidden: { opacity: 0, y: 50 },
@@ -36,6 +37,15 @@ export default function Home() {
                 </motion.div>
 
                 <motion.div
+                    ref={refProjects}
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate={inViewProjects ? "visible" : "hidden"}
+                >
+                    <LastProjects />
+                </motion.div>
+
+                <motion.div
                     ref={refCertificates}
                     variants={fadeInVariants}
                     initial="hidden"
@@ -43,9 +53,6 @@ export default function Home() {
                 >
                     <Certificates />
                 </motion.div>
-
-                <LastProjects />
-                <ContactMe />
             </main>
         </>
     )

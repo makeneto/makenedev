@@ -1,10 +1,8 @@
 import { useMediaQuery } from "react-responsive"
-import { Link } from "react-router-dom"
-import { Link as ScrollLink } from "react-scroll"
+import { Link, NavLink } from "react-router-dom"
 import styled from "styled-components"
 
 import GithubLogo from "./ui/GithubLogo"
-import { useScrollToSection } from "../helpers/scrollToSection"
 import useNavScrolling from "../hooks/useNavScrolling"
 import usePageLocation from "../hooks/usePageLocation"
 
@@ -92,24 +90,7 @@ export const Logo = styled(Link)`
     }
 `
 
-const NavLinks = styled(Link)`
-    text-decoration: none;
-    color: white;
-    transition: all 0.2s ease-in;
-    padding: 0.4rem 0.8rem;
-    border-radius: 10rem;
-    cursor: pointer;
-
-    &:hover {
-        background-color: var(--weak-blue);
-    }
-
-    &.active {
-        font-size: 2rem;
-    }
-`
-
-const AnotherNavLinks = styled(ScrollLink)`
+const PageLink = styled(NavLink)`
     text-decoration: none;
     color: white;
     transition: all 0.2s ease-in;
@@ -158,8 +139,7 @@ const GithubButton = styled(Link)`
 
 export default function NavBar() {
     const { isScrolled, isVisible } = useNavScrolling()
-    const { isLoaded, navigate } = usePageLocation()
-    const scrollToSection = useScrollToSection()
+    const { isLoaded } = usePageLocation()
     const isMobile = useMediaQuery({ maxWidth: 480 })
 
     return (
@@ -173,59 +153,22 @@ export default function NavBar() {
             </Logo>
             <ul>
                 <li>
-                    <AnotherNavLinks
-                        onClick={() => {
-                            if (location.pathname !== "/projects") {
-                                navigate("/projects", { replace: true })
-                                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50)
-                            } else {
-                                window.scrollTo({ top: 0, behavior: "smooth" })
-                            }
-                        }}
-                        to="/projects"
-                        smooth
-                        duration={500}
-                        offset={0}
-                        spy
-                        aria-label="All Projects"
-                        className="link"
-                    >
+                    <PageLink to="/projects">
                         Projects
-                    </AnotherNavLinks>
+                    </PageLink>
                 </li>
 
                 <li>
-                    <AnotherNavLinks
-                        onClick={() => {
-                            if (location.pathname !== "/about") {
-                                navigate("/about", { replace: true })
-                                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 50)
-                            } else {
-                                window.scrollTo({ top: 0, behavior: "smooth" })
-                            }
-                        }}
-                        to="gallery"
-                        smooth
-                        duration={500}
-                        offset={0}
-                        spy
-                    >
+                    <PageLink to="/about">
                         About
-                    </AnotherNavLinks>
+                    </PageLink>
                 </li>
 
 
                 <li>
-                    <AnotherNavLinks
-                        onClick={() => scrollToSection("contact")}
-                        to="contact"
-                        smooth
-                        duration={500}
-                        offset={-70}
-                        spy
-                    >
+                    <PageLink to="/contact">
                         Contact
-                    </AnotherNavLinks>
+                    </PageLink>
                 </li>
             </ul>
 

@@ -14,7 +14,7 @@ const ProjectsStyled = styled.section`
     gap: 2rem;
 
     @media (max-width: 1280px) {
-        margin: 4rem auto 9rem;
+        margin: 6rem auto 9rem;
     }
 
     @media (max-width: 480px) {

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from './components/Layout'
 import LoadingPage from './components/LoadingPage'
 import { UserProvider } from './context/UserContext'
+import ContactPage from "./pages/Contact"
 
 export default function App() {
     const Home = lazy(() => import('./pages/Home'))
@@ -18,8 +19,9 @@ export default function App() {
                     <Layout>
                         <Routes>
                             <Route index element={<Home />} />
-                            <Route path="about" element={<About />} />
                             <Route path="projects" element={<AllProjects />} />
+                            <Route path="about" element={<About />} />
+                            <Route path="contact" element={<ContactPage />} />
                             <Route path="*" element={<NotFoundPage />} />
                         </Routes>
                     </Layout>

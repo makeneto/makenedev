@@ -177,7 +177,7 @@ const Career = styled.span`
     }
 `
 
-const Button = styled(ScrollLink)`
+const Button = styled.span`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -185,7 +185,6 @@ const Button = styled(ScrollLink)`
     color: white;
     border: none;
     margin-top: 2rem;
-    cursor: pointer;
     transition: all .2s ease-in;
     
     &:hover {
@@ -212,21 +211,10 @@ const Button = styled(ScrollLink)`
 `
 
 export default function Header() {
-    const {
-        currentCareerYears,
-        isMobile,
-        scrollToSection,
-        animate
-    } = useHeader()
+    const { currentCareerYears } = useHeader()
 
     return (
-        <HeaderStyled
-            style={{
-                transform: animate ? "translateY(0)" : "translateY(10px)",
-                opacity: animate ? 1 : 0,
-                transition: "transform 0.8s ease-out, opacity 0.8s ease-out",
-            }}
-        >
+        <HeaderStyled>
             <Content>
                 <img
                     src="/assets/profile.webp"
@@ -240,14 +228,7 @@ export default function Header() {
                 <h1><span>Boosting </span>growth with smart and <span>efficient solutions</span></h1>
                 <p>Driving the growth with agile and smart solutions</p>
 
-                <Button
-                    onClick={() => scrollToSection(isMobile ? "graphs" : "personalPages")}
-                    to={isMobile ? "graphs" : "personalPages"}
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    spy={true}
-                >
+                <Button>
                     <FaChevronDown />
                 </Button>
             </Content>

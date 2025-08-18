@@ -3,16 +3,18 @@ import * as echarts from 'echarts'
 import styled from 'styled-components'
 
 import { SmallTitle } from './ui/SmallTitle'
-import RadarGraph2 from './ui/RadarGraph2'
 import { Graphs } from './ui/Graphs'
 
 const ChartContainer = styled.div`
     width: 100%;
-    height: 40rem;
     margin: -1rem 0 4rem;
     
     @media (max-width: 1919px) {
         height: 32rem;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: auto;
     }
 `
 
@@ -33,7 +35,7 @@ export default function RadarGraphs() {
                     indicator: [
                         { name: 'Agility', max: 10000 },
                         { name: 'Adaptability', max: 10000 },
-                        { name: 'Creativity', max: 10000 },
+                        { name: 'Creativity', max: 11000 },
                         { name: 'Organization', max: 10000 },
                         { name: 'Leadership', max: 10000 },
                         { name: 'Proactivity', max: 10000 }
@@ -101,7 +103,6 @@ export default function RadarGraphs() {
 
             <Graphs id="graphs">
                 <ChartContainer ref={chartRef} />
-                <RadarGraph2 />
             </Graphs>
         </>
     )
