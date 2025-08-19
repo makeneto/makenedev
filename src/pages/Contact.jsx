@@ -12,6 +12,22 @@ import { LargeTitle } from '../components/FAQ'
 import { DescriptionTitle } from '../components/FavoriteSingers'
 import MessageSent from '../components/ui/MessageSent'
 
+const ContactPageStyled = styled.main`
+    padding-top: 10%;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        padding-top: 9%;
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        padding-top: 20%;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 24%;
+    }
+`
+
 const Contact = styled.div`
     width: 50%;
     display: grid;
@@ -271,7 +287,7 @@ export default function ContactPage() {
     } = useContactMe()
 
     return (
-        <article style={{ marginTop: "9%" }}>
+        <ContactPageStyled>
             <LargeTitle>Let's Connect<span>👋</span></LargeTitle>
             <DescriptionTitle>Choose your preferred way to reach out</DescriptionTitle>
 
@@ -476,6 +492,6 @@ export default function ContactPage() {
                     )}
                 </MessageContainer>
             </Contact>
-        </article>
+        </ContactPageStyled>
     );
 }
