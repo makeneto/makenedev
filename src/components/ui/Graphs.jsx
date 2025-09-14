@@ -7,7 +7,7 @@ export const Graphs = styled.div`
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 7rem;
-    
+
     @media (min-width: 769px) and (max-width: 1024px) {
         margin-bottom: 4rem;
     }
