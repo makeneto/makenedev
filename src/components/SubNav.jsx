@@ -14,20 +14,34 @@ const SubMenu = styled.aside`
     bottom: -2%;
     transform: translate(-50%, -50%);
     padding: .6rem;
-    border-radius: .6rem;
-    background: rgb(99 161 242 / 19%) !important;;
-    -webkit-backdrop-filter: blur(17px);
-    backdrop-filter: blur(17px) !important;
+    border-radius: 1rem;
+    z-index: 9999;
     display: flex;
     align-items: center;
     gap: 1rem;
-    z-index: 9999;
     transition: bottom 0.3s ease-in-out;
+
+    background: rgba(99, 161, 242, 0.19);
+    backdrop-filter: brightness(1.1) blur(12px) url(#displacementFilter);
+    -webkit-backdrop-filter: brightness(1.1) blur(12px) url(#displacementFilter);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    position: fixed;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 1rem;
+        box-shadow: inset 6px 6px 0px -6px rgba(255, 255, 255, 0.7),
+                    inset 0 0 8px 1px rgba(255, 255, 255, 0.7);
+        pointer-events: none;
+    }
 
     svg {
         background: var(--light-blue) !important;
-        -webkit-backdrop-filter: blur(17px);
-        backdrop-filter: blur(17px) !important;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         cursor: pointer;
         width: 2.7rem;
         height: 2.7rem;
@@ -70,34 +84,7 @@ const MenuBottom = styled(Link)`
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: -2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        background: var(--weak-blue);
-        padding: 0.2rem 0.4rem;
-        border-radius: 0.4rem;
-        color: white;
-        font-weight: 600;
-        font-size: 0.6rem;
-        transition: all 0.2s ease-in-out;
-    }
-
-    &:hover span {
-        opacity: 1;
-        visibility: visible;
-    }
-`
-
-const MenuButton = styled.button`
-    all: unset;
-    position: relative;
-    cursor: pointer;
-
-    & span {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: -2rem;
+        top: -1.6rem;
         left: 50%;
         transform: translateX(-50%);
         background: var(--weak-blue);
