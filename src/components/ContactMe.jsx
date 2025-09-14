@@ -83,7 +83,7 @@ const ContactInfo = styled.div`
                     color: var(--light-grey);
                 }
 
-                & h6 > a {
+                & h2 > a {
                     font-size: 1rem;
                     font-weight: 400;
                     color: var(--dark-green);
@@ -312,13 +312,7 @@ export default function ContactMe() {
                             <div>
                                 <p>Location</p>
                                 <h2>
-                                    <Link to="https://www.google.com/maps/place/Zango+0,+Luanda,+Angola"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="Access the location"
-                                    >
-                                        Luanda, Angola
-                                    </Link>
+                                    Luanda, Angola
                                 </h2>
                             </div>
                         </article>
