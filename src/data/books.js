@@ -1,11 +1,5 @@
 export const books = [
     // {
-    //     cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
-    //     title: "How to make friends and influence people",
-    //     author: "Dale Carnegie",
-    //     completed: (0 / 284),
-    // },
-    // {
     //     cover: "/assets/books/quem-pensa-enriquece.webp",
     //     title: "Who thinks enriches",
     //     author: "Napoleon Hill",
@@ -47,11 +41,17 @@ export const books = [
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
     // },
+    // {
+    //     cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
+    //     title: "How to make friends and influence people",
+    //     author: "Dale Carnegie",
+    //     completed: (10 / 284),
+    // },
     {
         cover: "/assets/books/a-sutil-arte-de-ligar-o-foda-se.webp",
         title: "The Subtle Art of Not Giving a F*ck",
         author: "Mark Manson",
-        completed: (21 / 163),
+        completed: (100 / 163),
     },
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
