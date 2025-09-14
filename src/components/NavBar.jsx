@@ -27,7 +27,7 @@ const Nav = styled.nav`
     background: ${({ $isScrolled }) =>
         ($isScrolled ? "rgba(1,28,64,0.5)" : "transparent")};
 
-    -webkit-backdrop-filter: blur(17px);
+   -webkit-backdrop-filter: blur(17px);
     backdrop-filter: ${({ $isScrolled }) =>
         ($isScrolled ? "blur(17px)" : "blur(0)")};
 
@@ -35,7 +35,7 @@ const Nav = styled.nav`
 
     box-shadow: ${({ $isScrolled }) =>
         ($isScrolled ? "0 4px 12px rgba(0, 0, 0, 0.2)" : "0 0 7px #0000000f")};
-
+        
     & ul {
         list-style: none;
         display: flex;
@@ -98,6 +98,7 @@ const PageLink = styled(NavLink)`
     border-radius: 10rem;
     cursor: pointer;
 
+    &.active, 
     &:hover {
         background-color: var(--weak-blue);
     }
@@ -151,6 +152,7 @@ export default function NavBar() {
                     <span>m</span>
                 )}
             </Logo>
+
             <ul>
                 <li>
                     <PageLink to="/projects">
