@@ -60,7 +60,7 @@ const FooterStyled = styled.footer`
 
         & div {
             display: grid;
-            gap: .4rem;
+            gap: 0;
             margin-top: 0.5rem;
             text-align: center;
 
