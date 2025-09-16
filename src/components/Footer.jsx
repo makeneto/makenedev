@@ -103,12 +103,6 @@ export default function Footer() {
                         <Link to="https://www.instagram.com/makenedev" target="_blank" aria-label="Instagram">
                             <FaInstagram />
                         </Link>
-                        <Link to="https://www.threads.net/@makenedev" target="_blank" aria-label="Threads">
-                            <FaThreads />
-                        </Link>
-                        <Link to="https://www.linkedin.com/in/makene-neto" target="_blank" aria-label="LinkedIn">
-                            <FaLinkedin />
-                        </Link>
                     </div>
                 </div>
             </div>
