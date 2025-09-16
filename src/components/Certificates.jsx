@@ -16,12 +16,12 @@ const CertificatesStyled = styled.article`
     }
 
     @media (min-width: 885px) and (max-width: 1280px) {
-        margin: 10rem 0 11rem;
+        margin: 10rem 0 15rem;
     }
 
     @media (max-width: 480px) {
         gap: 0;
-        margin: 3.6rem 0 7rem !important;
+        margin: 3.6rem 0 4rem !important;
     }
 `
 
