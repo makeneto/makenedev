@@ -1,5 +1,13 @@
 export const webProjects = [
     {
+        id: 6547,
+        date: '2025-09-16',
+        duration: '30 min',
+        title: 'Chat AI',
+        techs: ['Next', 'TypeScript', 'Open AI API', 'Tailwindcss'],
+        link: 'https://github.com/makeneto/chat-ai'
+    },
+    {
         id: 5443,
         date: '2025-06-23',
         duration: '1 week',
