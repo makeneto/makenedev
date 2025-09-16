@@ -19,7 +19,7 @@ const ProjectsStyled = styled.section`
     }
 
     @media (max-width: 480px) {
-        margin: 0 auto 7rem;
+        margin: 3rem auto 7rem;
     }
 `
 
