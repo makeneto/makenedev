@@ -46,20 +46,24 @@ export const LargeTitle = styled.h2`
   }
   
   & div {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 17%;
-    right: -6%;
+    top: 13%;
+    right: -8%;
     font-size: .7rem;
     background: var(--light-blue);
     color: black;
-    padding: .1rem .4rem;
     border-radius: 50%;
     animation: wave 2s infinite;
 
     @media (max-width: 480px) {
-        top: 14%;
-        right: -8%;
-        font-size: .6rem;
+        top: 8%;
+        right: -5%;
+        font-size: .4rem;
         width: 1rem;
         height: 1rem;
         display: flex;
