@@ -7,6 +7,7 @@ import { DescriptionTitle } from "./FavoriteSingers"
 import MobileCarousel from "./ui/MobileCarousel"
 import { mobileProjects } from "../data/mobileProjects"
 import { useMediaQuery } from "react-responsive"
+import { webProjects } from "../data/webProjects"
 
 const ProjectsStyled = styled.section`
     width: 100%;
@@ -92,11 +93,16 @@ const FullList = styled.li`
 export default function LastProjects() {
     const navigate = useNavigate()
     const isMobile = useMediaQuery({ maxWidth: 768 })
+    const countProjects = mobileProjects.length + webProjects.length
+
 
     return (
         <ProjectsStyled id="projects">
             <section>
-                <LargeTitle>Latest Projects</LargeTitle>
+                <LargeTitle>
+                    Latest Projects
+                    <div>{countProjects}+</div>
+                </LargeTitle>
                 <DescriptionTitle>
                     Innovative solutions developed with a focus on performance, usability and cutting-edge technology.
                 </DescriptionTitle>
