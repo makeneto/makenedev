@@ -15,6 +15,11 @@ export const skills = [
         level: 'Professional',
     },
     {
+        logo: 'https://skillicons.dev/icons?i=ai',
+        title: 'AI Integration',
+        level: 'Professional',
+    },
+    {
         logo: 'https://skillicons.dev/icons?i=next',
         title: 'Next.JS',
         level: 'Professional',
