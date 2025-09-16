@@ -129,9 +129,8 @@ export default function SubNav() {
     return (
         <SubMenu>
             <MenuBottom
-                to={linkedInLink}
-                target='_blank'
-                aria-label="LinkedIn profile"
+                onClick={handleCloseSkills}
+                aria-label="Open/Close skills"
             >
                 <motion.div
                     initial="initial"
@@ -139,8 +138,8 @@ export default function SubNav() {
                     onHoverEnd={(e) => e.target.style.animation = "none"}
                     variants={iconVariants}
                 >
-                    <span>LinkedIn</span>
-                    <IoLogoLinkedin />
+                    <span>Skills</span>
+                    <FaCode />
                 </motion.div>
             </MenuBottom>
 
@@ -161,8 +160,9 @@ export default function SubNav() {
             </MenuBottom>
 
             <MenuBottom
-                onClick={handleCloseSkills}
-                aria-label="Open/Close skills"
+                to={linkedInLink}
+                target='_blank'
+                aria-label="LinkedIn profile"
             >
                 <motion.div
                     initial="initial"
@@ -170,8 +170,8 @@ export default function SubNav() {
                     onHoverEnd={(e) => e.target.style.animation = "none"}
                     variants={iconVariants}
                 >
-                    <span>Skills</span>
-                    <FaCode />
+                    <span>LinkedIn</span>
+                    <IoLogoLinkedin />
                 </motion.div>
             </MenuBottom>
         </SubMenu>
