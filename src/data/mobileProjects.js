@@ -1,6 +1,43 @@
 export const mobileProjects = [
     {
-        id: 'app1',
+        id: 'app3',
+        logo: '/assets/projects/favmovies-logo.webp',
+        title: 'Favmovies',
+        description: 'Your titles, your list',
+        category: 'Entertainment',
+        screenshots: [
+            {
+                id: 's1',
+                imageUrl: '/assets/projects/favmovies1.webp',
+            },
+            {
+                id: 's2',
+                imageUrl: '/assets/projects/favmovies2.webp',
+            },
+            {
+                id: 's3',
+                imageUrl: '/assets/projects/favmovies3.webp',
+            },
+            {
+                id: 's4',
+                imageUrl: '/assets/projects/favmovies4.webp',
+            },
+            {
+                id: 's5',
+                imageUrl: '/assets/projects/favmovies5.webp',
+            },
+            {
+                id: 's6',
+                imageUrl: '/assets/projects/favmovies6.webp',
+            },
+            {
+                id: 's6',
+                imageUrl: '/assets/projects/favmovies7.webp',
+            },
+        ],
+    },
+    {
+        id: 'app2',
         logo: '/assets/projects/finloop-logo.webp',
         title: 'Finloop',
         description: 'Smart savings, real progress',
@@ -33,7 +70,7 @@ export const mobileProjects = [
         ],
     },
     {
-        id: 'app2',
+        id: 'app1',
         logo: '/assets/projects/goals-logo.webp',
         title: 'Goals',
         description: 'Focus. Act. Achieve',
