@@ -1,5 +1,13 @@
 export const webProjects = [
     {
+        id: 1034,
+        date: '2025-09-20',
+        duration: '40 min',
+        title: 'FC 26 Release',
+        techs: ['Next', 'TypeScript'],
+        link: 'https://fc26.vercel.app'
+    },
+    {
         id: 6547,
         date: '2025-09-16',
         duration: '30 min',
