@@ -51,7 +51,7 @@ export const books = [
         cover: "/assets/books/a-sutil-arte-de-ligar-o-foda-se.webp",
         title: "The Subtle Art of Not Giving a F*ck",
         author: "Mark Manson",
-        completed: (125 / 163),
+        completed: (130 / 163),
     },
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
