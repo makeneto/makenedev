@@ -22,7 +22,6 @@ const SkillStyled = styled.article`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     background-color: var(--dark-blue-v2);
     width: 50%;
     max-height: 70dvh;

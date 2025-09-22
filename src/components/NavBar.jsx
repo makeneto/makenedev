@@ -155,17 +155,16 @@ export default function NavBar() {
 
             <ul>
                 <li>
-                    <PageLink to="/projects">
-                        Projects
-                    </PageLink>
-                </li>
-
-                <li>
                     <PageLink to="/about">
                         About
                     </PageLink>
                 </li>
 
+                <li>
+                    <PageLink to="/projects">
+                        Projects
+                    </PageLink>
+                </li>
 
                 <li>
                     <PageLink to="/contact">

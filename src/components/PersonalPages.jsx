@@ -186,7 +186,7 @@ export default function PersonalPages() {
                         <span></span>
                         <span></span>
                     </div>
-                    <div>me.json</div>
+                    <div>makenedev.json</div>
                 </Controls>
 
                 <TextPage>
@@ -195,25 +195,30 @@ export default function PersonalPages() {
                             {JSON.stringify(
                                 {
                                     name: "Makene Neto",
-                                    title: "Front End Developer",
-                                    description:
-                                        "Front End developer with ...",
-                                    urlToImage: "https://avatars.githubusercontent...",
+                                    job: "Front End Developer",
+                                    description: "Front End developer with experien...",
+                                    urlToImage: "https://github.com/makeneto.png",
                                     email: "makenedev@gmail.com",
                                     education: [
                                         {
                                             institution: "CEPNSA",
                                             course: "Computer Technician",
-                                            period: "2021 - 2025",
-                                            description: "I learned full stack developm...",
-                                        },
+                                            period: "2021 - 2024",
+                                            description: "I learned front end develop..."
+                                        }
                                     ],
-                                    languages: {
-                                        Portuguese: "Fluent",
-                                        English: "Intermediary",
-                                    },
-                                    "skills": {
-                                        "frontend": [
+                                    language: [
+                                        {
+                                            name: "Portuguese",
+                                            level: "Fluent"
+                                        },
+                                        {
+                                            name: "English",
+                                            level: "Intermediate (B2)"
+                                        }
+                                    ],
+                                    skills: {
+                                        frontend: [
                                             "React Native",
                                             "TypeScript",
                                             "React",
@@ -224,12 +229,12 @@ export default function PersonalPages() {
                                             "Next.js",
                                             "TailwindCSS"
                                         ],
-                                        "backend": [
+                                        backend: [
                                             "Node.js",
                                             "Express",
-                                            "Supabase",
+                                            "Supabase"
                                         ],
-                                        "tools": [
+                                        tools: [
                                             "Git",
                                             "GitHub",
                                             "Figma",
@@ -238,14 +243,14 @@ export default function PersonalPages() {
                                             "ESLint",
                                             "Prettier"
                                         ],
-                                        "soft_skills": [
+                                        soft_skills: [
                                             "Problem solving",
                                             "Teamwork",
-                                            "Self -Daidatism",
+                                            "Self-didactism",
                                             "Communication",
                                             "Critical thinking"
                                         ],
-                                        "other": [
+                                        other: [
                                             "UI/UX Design",
                                             "Automated tests",
                                             "Agile Methodologies",
@@ -276,7 +281,7 @@ export default function PersonalPages() {
                         <span></span>
                         <span></span>
                     </div>
-                    <div>presentation.jpeg</div>
+                    <div>resume.pdf</div>
                 </Controls>
 
                 <TextPage>
@@ -293,7 +298,7 @@ export default function PersonalPages() {
 
                         <h1>Education</h1>
                         <ul>
-                            <li className="strong"><strong>College Nossa Senhora da Anunciação</strong></li>
+                            <li className="strong"><strong>CEPNSA</strong></li>
                             <li>Computer Technician (2021 - 2024)</li>
                             <li>I learned front end development through online courses, personal projects, and more.</li>
                         </ul>

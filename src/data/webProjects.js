@@ -145,7 +145,7 @@ export const webProjects = [
     },
     {
         id: '2667',
-        date: '2021-10-03',
+        date: '2021-08-03',
         duration: '1 week',
         title: 'Nike Store',
         techs: ['HTML5', 'CSS', 'JavaScript'],
@@ -153,7 +153,7 @@ export const webProjects = [
     },
     {
         id: '3284',
-        date: '2020-10-03',
+        date: '2021-03-03',
         duration: '1 week',
         title: 'VLSM Calculator',
         techs: ['HTML5', 'CSS', 'JavaScript'],
@@ -161,7 +161,7 @@ export const webProjects = [
     },
     {
         id: '3284',
-        date: '2020-08-07',
+        date: '2021-01-07',
         duration: '3 days',
         title: 'IP Calculator',
         techs: ['HTML5', 'CSS', 'JavaScript'],

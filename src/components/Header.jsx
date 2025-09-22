@@ -6,6 +6,10 @@ import { handleConfetti } from "../helpers/confetti"
 import useHeader from "../hooks/useHeader"
 
 const HeaderStyled = styled.header`
+    background: 
+        linear-gradient(to bottom, rgba(0,0,0,0) 70%, #0E1821 100%),
+        url('/assets/hero-bg.webp') center center;
+    background-size: cover;
     height: 129dvh;
     padding: 4rem;
     text-align: center;

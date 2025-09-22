@@ -271,10 +271,7 @@ export default function ContactMe() {
     } = useContactMe()
 
     return (
-        <article id='contact'>
-            <LargeTitle>Let's Connect<span>👋</span></LargeTitle>
-            <DescriptionTitle>Choose your preferred way to reach out</DescriptionTitle>
-
+        <article>
             <Contact>
                 <ContactInfo>
                     {!isMobile && <h1>Contact Information</h1>}
