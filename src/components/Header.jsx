@@ -7,7 +7,7 @@ import useHeader from "../hooks/useHeader"
 
 const HeaderStyled = styled.header`
     background: 
-        linear-gradient(to bottom, rgba(0,0,0,0) 70%, #0E1821 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0) 50%, #0E1821 100%),
         url('/assets/hero-bg.webp') center center;
     background-size: cover;
     height: 129dvh;
