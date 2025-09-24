@@ -41,17 +41,17 @@ export const books = [
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
     // },
-    // {
-    //     cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
-    //     title: "How to make friends and influence people",
-    //     author: "Dale Carnegie",
-    //     completed: (10 / 284),
-    // },
+    {
+        cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
+        title: "How to make friends and influence people",
+        author: "Dale Carnegie",
+        completed: (33 / 284),
+    },
     {
         cover: "/assets/books/a-sutil-arte-de-ligar-o-foda-se.webp",
         title: "The Subtle Art of Not Giving a F*ck",
         author: "Mark Manson",
-        completed: (143 / 163),
+        completed: (163 / 163),
     },
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
