@@ -60,7 +60,7 @@ const Cover = styled.div`
     height: 28.4rem;
 
     @media (min-width: 885px) and (max-width: 1280px) {
-        width: 16.3rem;
+        width: 16rem;
         height: 24rem;
     }
 
