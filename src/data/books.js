@@ -41,6 +41,12 @@ export const books = [
     //     author: "Morgan Housel",
     //     completed: (0 / 314),
     // },
+    // {
+    //     cover: "/assets/books/startwithwhy.webp",
+    //     title: "Start with why",
+    //     author: "Simon Sinek",
+    //     completed: (11 / 169),
+    // },
     {
         cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
         title: "How to make friends and influence people",
