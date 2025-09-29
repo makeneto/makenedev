@@ -42,6 +42,12 @@ export const books = [
     //     completed: (0 / 314),
     // },
     // {
+    //     cover: "/assets/books/zerotoone.webp",
+    //     title: "Zero to One",
+    //     author: "Peter Thiel & Blacke Masters",
+    //     completed: (7 / 248),
+    // },
+    // {
     //     cover: "/assets/books/startwithwhy.webp",
     //     title: "Start with why",
     //     author: "Simon Sinek",
