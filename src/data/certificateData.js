@@ -1,10 +1,10 @@
 export const professionalCertificates = [
     {
-        id: 465,
-        date: '2025-04-17',
-        image: '/assets/certificates/typescript.webp',
-        title: `TypeScript: The complete Developer's Guide`,
-        link: 'https://www.udemy.com/certificate/UC-38e8a080-e0de-4239-ba46-4978f4efcc43/'
+        id: 337,
+        date: '2025-10-14',
+        image: '/assets/certificates/mental-health.webp',
+        title: `Mental Health and Career Performance`,
+        link: 'https://app.rocketseat.com.br/certificates/6631a2c7-0c54-4885-bd1b-7af7676db4ac'
     },
     {
         id: 143,
