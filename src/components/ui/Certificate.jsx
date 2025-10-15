@@ -20,6 +20,19 @@ const CertificateStyled = styled(Link)`
 
     & img {
         margin: .8rem 0 1.4rem;
+        height: 22rem;
+        
+        @media (max-width: 480px) {
+            height: 16rem;
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            height: 14rem;   
+        }
+        
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            height: 17rem;   
+        }
     }
 
     & h1 {
@@ -39,7 +52,7 @@ const CertificateStyled = styled(Link)`
 
 const New = styled.span`
     position: absolute;
-    top: 3.1%;
+    top: 2.5%;
     right: 3%;
     padding: 1.3rem .2rem .9rem;
     border-radius: 1rem 1rem 0 0;
@@ -50,6 +63,11 @@ const New = styled.span`
 
     @media (max-width: 480px) {
         top: 3.3%;
+    }
+    
+    @media (min-width: 481px) and (max-width: 768px) {
+        top: 3.2%;
+        right: 6%
     }
 `
 
