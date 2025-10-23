@@ -57,7 +57,7 @@ export const books = [
         cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
         title: "How to make friends and influence people",
         author: "Dale Carnegie",
-        completed: (127 / 284),
+        completed: (136 / 284),
     },
     {
         cover: "/assets/books/a-sutil-arte-de-ligar-o-foda-se.webp",
