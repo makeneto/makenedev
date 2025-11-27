@@ -51,7 +51,7 @@ export const books = [
         cover: "/assets/books/startwithwhy.webp",
         title: "Start with why",
         author: "Simon Sinek",
-        completed: (137 / 169),
+        completed: (156 / 169),
     },
     {
         cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
