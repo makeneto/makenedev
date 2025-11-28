@@ -18,12 +18,6 @@ export const books = [
     //     completed: (0 / 227),
     // },
     // {
-    //     cover: "/assets/books/pai-rico-pai-pobre.webp",
-    //     title: "Rich father, poor father",
-    //     author: "Robert Kiyosaki",
-    //     completed: (0 / 169),
-    // },
-    // {
     //     cover: "/assets/books/a-arte-da-seducao.webp",
     //     title: "The Art of Seduction",
     //     author: "Robert Greene",
@@ -47,6 +41,12 @@ export const books = [
     //     author: "Peter Thiel & Blacke Masters",
     //     completed: (7 / 248),
     // },
+    {
+        cover: "/assets/books/pai-rico-pai-pobre.webp",
+        title: "Rich father, poor father",
+        author: "Robert Kiyosaki",
+        completed: (3 / 169),
+    },
     {
         cover: "/assets/books/startwithwhy.webp",
         title: "Start with why",
