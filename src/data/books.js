@@ -1,13 +1,13 @@
 export const books = [
     // {
     //     cover: "/assets/books/quem-pensa-enriquece.webp",
-    //     title: "Who thinks enriches",
+    //     title: "Who Thinks Enriches",
     //     author: "Napoleon Hill",
     //     completed: (0 / 276),
     // },
     // {
     //     cover: "/assets/books/o-homem-mais-rico-da-babilonia.webp",
-    //     title: "The richest man in Babylon",
+    //     title: "The Richest Man in Babylon",
     //     author: "George S. Clason",
     //     completed: (0 / 121),
     // },
@@ -43,7 +43,7 @@ export const books = [
     // },
     // {
     //     cover: "/assets/books/pai-rico-pai-pobre.webp",
-    //     title: "Rich father, poor father",
+    //     title: "Rich Father, Poor Father",
     //     author: "Robert Kiyosaki",
     //     completed: (3 / 169),
     // },
@@ -55,13 +55,13 @@ export const books = [
     },
     {
         cover: "/assets/books/startwithwhy.webp",
-        title: "Start with why",
+        title: "Start with Why",
         author: "Simon Sinek",
         completed: (169 / 169),
     },
     {
         cover: "/assets/books/como-fazer-amigos-e-influenciar-pessoas.webp",
-        title: "How to make friends and influence people",
+        title: "How to Make Friends and Influence People",
         author: "Dale Carnegie",
         completed: (284 / 284),
     },
@@ -73,7 +73,7 @@ export const books = [
     },
     {
         cover: "/assets/books/1-ano-em-12-semanas.webp",
-        title: "1 year in 12 weeks",
+        title: "1 Year in 12 Weeks",
         author: "Brian P. Moran",
         completed: (194 / 194),
     },
