@@ -106,7 +106,6 @@ const ContentBook = styled.div`
 
     & h1 {
         font-size: 1rem;
-        text-transform: uppercase;
         font-weight: 500;
         margin-top: 1rem;
         line-height: 1.3;
