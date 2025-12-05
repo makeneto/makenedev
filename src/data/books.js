@@ -41,11 +41,17 @@ export const books = [
     //     author: "Peter Thiel & Blacke Masters",
     //     completed: (7 / 248),
     // },
+    // {
+    //     cover: "/assets/books/pai-rico-pai-pobre.webp",
+    //     title: "Rich father, poor father",
+    //     author: "Robert Kiyosaki",
+    //     completed: (3 / 169),
+    // },
     {
-        cover: "/assets/books/pai-rico-pai-pobre.webp",
-        title: "Rich father, poor father",
-        author: "Robert Kiyosaki",
-        completed: (3 / 169),
+        cover: "/assets/books/the-art-of-spending-money.webp",
+        title: "The Art of Spending Money",
+        author: "Morgan Housel",
+        completed: (272 / 272),
     },
     {
         cover: "/assets/books/startwithwhy.webp",
