@@ -45,7 +45,7 @@ export const books = [
         cover: "/assets/books/as-48-leis-do-poder.webp",
         title: "The 48 Laws of Power",
         author: "Robert Greene",
-        completed: (600 / 752),
+        completed: (752 / 752),
     },
     {
         cover: "/assets/books/the-art-of-spending-money.webp",
