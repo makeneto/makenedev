@@ -1,8 +1,8 @@
 export const webProjects = [
     {
         id: 1122,
-        date: '2025-10-12',
-        duration: '15 days',
+        date: '2025-09-30',
+        duration: '2 months',
         title: 'Criativuz Suplementos',
         techs: ['Next', 'TypeScript', 'NodeJS', 'Express', 'SCSS', 'Pnpm'],
         link: 'https://github.com/makeneto/criativuz-suplementos'
