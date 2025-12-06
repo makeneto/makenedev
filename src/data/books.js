@@ -24,12 +24,6 @@ export const books = [
     //     completed: (0 / 234),
     // },
     // {
-    //     cover: "/assets/books/as-48-leis-do-poder.webp",
-    //     title: "The 48 Laws of Power",
-    //     author: "Robert Greene",
-    //     completed: (0 / 752),
-    // },
-    // {
     //     cover: "/assets/books/habitos-atomicos.webp",
     //     title: "Atomic Habits",
     //     author: "Morgan Housel",
@@ -47,6 +41,12 @@ export const books = [
     //     author: "Robert Kiyosaki",
     //     completed: (3 / 169),
     // },
+    {
+        cover: "/assets/books/as-48-leis-do-poder.webp",
+        title: "The 48 Laws of Power",
+        author: "Robert Greene",
+        completed: (600 / 752),
+    },
     {
         cover: "/assets/books/the-art-of-spending-money.webp",
         title: "The Art of Spending Money",
