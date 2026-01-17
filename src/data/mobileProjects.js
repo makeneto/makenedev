@@ -7,6 +7,14 @@ export const mobileProjects = [
         category: 'Finance',
         screenshots: [
             {
+                id: 'fl6',
+                imageUrl: '/assets/projects/fload6.webp',
+            },
+            {
+                id: 'fl5',
+                imageUrl: '/assets/projects/fload5.webp',
+            },
+            {
                 id: 'fl1',
                 imageUrl: '/assets/projects/fload1.webp',
             },
@@ -21,15 +29,7 @@ export const mobileProjects = [
             {
                 id: 'fl4',
                 imageUrl: '/assets/projects/fload4.webp',
-            },
-            {
-                id: 'fl5',
-                imageUrl: '/assets/projects/fload5.webp',
-            },
-            {
-                id: 'fl6',
-                imageUrl: '/assets/projects/fload6.webp',
-            },
+            }
         ],
     },
     {
