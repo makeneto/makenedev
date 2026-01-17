@@ -1,5 +1,38 @@
 export const mobileProjects = [
     {
+        id: 'app4',
+        logo: '/assets/projects/fload-logo.webp',
+        title: 'Fload',
+        description: 'Organized Motion',
+        category: 'Finance',
+        screenshots: [
+            {
+                id: 'fl1',
+                imageUrl: '/assets/projects/fload1.webp',
+            },
+            {
+                id: 'fl2',
+                imageUrl: '/assets/projects/fload2.webp',
+            },
+            {
+                id: 'fl3',
+                imageUrl: '/assets/projects/fload3.webp',
+            },
+            {
+                id: 'fl4',
+                imageUrl: '/assets/projects/fload4.webp',
+            },
+            {
+                id: 'fl5',
+                imageUrl: '/assets/projects/fload5.webp',
+            },
+            {
+                id: 'fl6',
+                imageUrl: '/assets/projects/fload6.webp',
+            },
+        ],
+    },
+    {
         id: 'app3',
         logo: '/assets/projects/favmovies-logo.webp',
         title: 'Favmovies',
@@ -7,31 +40,31 @@ export const mobileProjects = [
         category: 'Entertainment',
         screenshots: [
             {
-                id: 's1',
+                id: 'fa1',
                 imageUrl: '/assets/projects/favmovies1.webp',
             },
             {
-                id: 's2',
+                id: 'fa2',
                 imageUrl: '/assets/projects/favmovies2.webp',
             },
             {
-                id: 's3',
+                id: 'fa3',
                 imageUrl: '/assets/projects/favmovies3.webp',
             },
             {
-                id: 's4',
+                id: 'fa4',
                 imageUrl: '/assets/projects/favmovies4.webp',
             },
             {
-                id: 's5',
+                id: 'fa5',
                 imageUrl: '/assets/projects/favmovies5.webp',
             },
             {
-                id: 's6',
+                id: 'fa6',
                 imageUrl: '/assets/projects/favmovies6.webp',
             },
             {
-                id: 's6',
+                id: 'fa6',
                 imageUrl: '/assets/projects/favmovies7.webp',
             },
         ],
@@ -44,27 +77,27 @@ export const mobileProjects = [
         category: 'Finance',
         screenshots: [
             {
-                id: 's1',
+                id: 'fi1',
                 imageUrl: '/assets/projects/finloop1.webp',
             },
             {
-                id: 's2',
+                id: 'fi2',
                 imageUrl: '/assets/projects/finloop2.webp',
             },
             {
-                id: 's3',
+                id: 'fi3',
                 imageUrl: '/assets/projects/finloop3.webp',
             },
             {
-                id: 's4',
+                id: 'fi4',
                 imageUrl: '/assets/projects/finloop4.webp',
             },
             {
-                id: 's5',
+                id: 'fi5',
                 imageUrl: '/assets/projects/finloop5.webp',
             },
             {
-                id: 's6',
+                id: 'fi6',
                 imageUrl: '/assets/projects/finloop6.webp',
             },
         ],
@@ -77,19 +110,19 @@ export const mobileProjects = [
         category: 'Productivity',
         screenshots: [
             {
-                id: 's1',
+                id: 'go1',
                 imageUrl: '/assets/projects/goals1.webp',
             },
             {
-                id: 's2',
+                id: 'go2',
                 imageUrl: '/assets/projects/goals2.webp',
             },
             {
-                id: 's3',
+                id: 'go3',
                 imageUrl: '/assets/projects/goals3.webp',
             },
             {
-                id: 's4',
+                id: 'go4',
                 imageUrl: '/assets/projects/goals4.webp',
             },
         ],
