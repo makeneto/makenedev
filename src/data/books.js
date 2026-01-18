@@ -30,17 +30,17 @@ export const books = [
     //     completed: (0 / 314),
     // },
     // {
-    //     cover: "/assets/books/zerotoone.webp",
-    //     title: "Zero to One",
-    //     author: "Peter Thiel & Blacke Masters",
-    //     completed: (7 / 248),
-    // },
-    // {
     //     cover: "/assets/books/pai-rico-pai-pobre.webp",
     //     title: "Rich Father, Poor Father",
     //     author: "Robert Kiyosaki",
     //     completed: (3 / 169),
     // },
+    {
+        cover: "/assets/books/zerotoone.webp",
+        title: "Zero to One",
+        author: "Peter Thiel & Blacke Masters",
+        completed: (11 / 248),
+    },
     {
         cover: "/assets/books/as-48-leis-do-poder.webp",
         title: "The 48 Laws of Power",
