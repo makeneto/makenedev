@@ -39,7 +39,7 @@ export const books = [
         cover: "/assets/books/zerotoone.webp",
         title: "Zero to One",
         author: "Peter Thiel & Blacke Masters",
-        completed: (14 / 248),
+        completed: (19 / 248),
     },
     {
         cover: "/assets/books/as-48-leis-do-poder.webp",
