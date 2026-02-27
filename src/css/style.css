@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding-inline: 15rem;
+}
+
+.header {
+  margin-block: 10rem 30rem;
+  display: grid;
+  gap: 13rem;
+}
+.header__heroContent {
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+  position: relative;
+}
+.header__heroContent h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 6.4rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.header__heroContent img {
+  position: absolute;
+  top: -20%;
+}
+.header__openToWork {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+}
+.header__openToWork div {
+  background-color: #2b2b2b;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.header__openToWork--dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #818181;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__openToWork--dot--inner {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.header__intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: "Anton", sans-serif;
+}
+.header__intro h2, .header__intro h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header__intro h2 {
+  font-size: 6rem;
+  line-height: 7rem;
+}
+.header__intro h3 {
+  font-size: 2.9rem;
+  line-height: 3.5rem;
+  color: #c0c0c0;
+}
+
+.quoteOfTheDay {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 30rem;
+}
+.quoteOfTheDay__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quoteOfTheDay__header p:first-child {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.4rem;
+}
+.quoteOfTheDay__header p:last-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.quoteOfTheDay__content {
+  border-left: 0.3em solid white;
+  padding-block: 1rem;
+  padding-inline: 3rem 0;
+  display: grid;
+  gap: 2rem;
+}
+.quoteOfTheDay__content h1, .quoteOfTheDay__content small {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.quoteOfTheDay__content h1 {
+  width: 65%;
+  font-size: 4rem;
+  color: #a7a7a7;
+}
+.quoteOfTheDay__content small {
+  font-size: 1.7rem;
+}
+.quoteOfTheDay__content .error {
+  color: #f44336;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

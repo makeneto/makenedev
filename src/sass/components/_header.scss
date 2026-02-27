@@ -1,0 +1,78 @@
+.header {
+    margin-block: 10rem 30rem;
+    display: grid;
+    gap: 13rem;
+
+    &__heroContent {
+        display: flex;
+        justify-content: center;
+        gap: 40rem;
+        position: relative;
+
+        & h1 {
+            font-family: "Playfair Display", sans-serif;
+            font-size: 6.4rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        & img {
+            position: absolute;
+            top: -20%;
+        }
+    }
+
+    &__openToWork {
+        display: flex;
+        justify-content: flex-end;
+        font-family: "Roboto", sans-serif;
+
+        & div {
+            background-color: #2b2b2b;
+            border-radius: 2rem;
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+        }
+
+        &--dot {
+            width: 1rem;
+            height: 1rem;
+            background-color: #818181;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--inner {
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+    } 
+
+    &__intro {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-family: "Anton", sans-serif;
+        & h2, h3 {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            font-size: 6rem;
+            line-height: 7rem;
+        }
+
+        & h3 {
+            font-size: 2.9rem;
+            line-height: 3.5rem;
+            color: #c0c0c0;
+        }
+    }
+}
