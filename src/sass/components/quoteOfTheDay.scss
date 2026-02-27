@@ -1,0 +1,52 @@
+.quoteOfTheDay {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 30rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & p:first-child {
+            font-family: "Antonio", sans-serif;
+            font-size: 1.4rem;
+        }
+
+        & p:last-child {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+
+    &__content {
+        border-left: .3em solid white;
+        padding-block: 1rem;
+        padding-inline: 3rem 0;
+        
+        display: grid;
+        gap: 2rem;
+        
+        & h1, small {
+            font-family: "Playfair Display", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+        & h1 {
+            width: 65%;
+            font-size: 4rem;
+            color: #a7a7a7;
+        }
+
+        & small {
+            font-size: 1.7rem;
+        }
+
+        .error {
+            color: #f44336;
+            font-weight: 500;
+        }
+    }
+}
