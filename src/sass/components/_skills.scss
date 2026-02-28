@@ -1,0 +1,86 @@
+.skills {
+    display: grid;
+    gap: 1.3rem;
+    margin-bottom: 30rem;
+
+
+    &__hero {
+            display: grid;
+
+            & span {
+                font-family: "Antonio", sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: rgb(209, 209, 209);
+            }
+
+            & h1 {
+                font-family: "Playfair Display", sans-serif;
+                font-style: italic;
+                font-size: 4rem;
+            }
+        }
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &--block {
+            width: 40%;
+        }
+    }
+
+    &__description {
+        display: grid;
+        gap: 1.3rem;
+
+        & p {
+            font-family: "Roboto", sans-serif;
+            line-height: 1.8rem;    
+            display: grid;
+            gap: .1rem;
+
+            & span {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 2.5rem;
+
+        &--item {
+            & div:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "Roboto", sans-serif;
+                margin-bottom: 1rem;
+            }
+
+            & h2 {
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+
+            & p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    &__bar {
+        width: 100%;
+        height: .3rem;
+        background-color: rgb(92, 92, 92);
+        border-radius: 10rem;
+
+        & div {
+            height: 100%;
+            background-color: white;
+            border-radius: 10rem;   
+        }
+    }
+}

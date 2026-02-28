@@ -80,6 +80,76 @@ body {
   color: #c0c0c0;
 }
 
+.skills {
+  display: grid;
+  gap: 1.3rem;
+  margin-bottom: 30rem;
+}
+.skills__hero {
+  display: grid;
+}
+.skills__hero span {
+  font-family: "Antonio", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: rgb(209, 209, 209);
+}
+.skills__hero h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+}
+.skills__content {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__content--block {
+  width: 40%;
+}
+.skills__description {
+  display: grid;
+  gap: 1.3rem;
+}
+.skills__description p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8rem;
+  display: grid;
+  gap: 0.1rem;
+}
+.skills__description p span {
+  font-size: 1.1rem;
+}
+.skills__list {
+  display: grid;
+  gap: 2.5rem;
+}
+.skills__list--item div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+.skills__list--item h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.skills__list--item p {
+  font-size: 1.1rem;
+}
+.skills__bar {
+  width: 100%;
+  height: 0.3rem;
+  background-color: rgb(92, 92, 92);
+  border-radius: 10rem;
+}
+.skills__bar div {
+  height: 100%;
+  background-color: white;
+  border-radius: 10rem;
+}
+
 .quoteOfTheDay {
   display: grid;
   gap: 2rem;
