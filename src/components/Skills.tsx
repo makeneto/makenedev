@@ -5,7 +5,7 @@ export default function Skills() {
         <section className="skills">
             <div className="skills__hero">
                 <span>My top</span>
-                <h1>Skills</h1>
+                <h1>Skills.</h1>
             </div>
 
             <div className="skills__content">
