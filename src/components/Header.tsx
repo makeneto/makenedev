@@ -24,7 +24,7 @@ export default function Header() {
                     Makene
                 </h2>
 
-                <h3>Full-stack <br /> developer</h3>
+                <h3>Software <br /> Engineer</h3>
             </article>
         </header>
     )
