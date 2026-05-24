@@ -1,5 +1,7 @@
 @use "./base/base";
 
+@use "./components/footer";
 @use "./components/header";
-@use "./components/skills";
+@use "./components/navbar";
 @use "./components/quoteOfTheDay";
+@use "./components/faq";

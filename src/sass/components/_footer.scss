@@ -1,0 +1,18 @@
+.footer {
+      margin-top: 20rem;
+      padding-bottom: 1.5rem;
+
+      &__gratitude {
+            font-size: 1.3rem;
+            
+            & span {
+                  font-style: italic;
+                  font-family: "Playfair Display", sans-serif;
+            }
+      }
+
+      &__links {
+            border-top: 1px solid #313131;
+            padding-top: 1.5rem;
+      }
+}

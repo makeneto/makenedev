@@ -1,43 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
+  font-family: "Inter", sans-serif;
   background-color: black;
   color: white;
-  padding-inline: 15rem;
+  padding-inline: 25rem;
 }
 
-.header {
-  margin-block: 10rem 30rem;
+.footer {
+  margin-top: 20rem;
+  padding-bottom: 1.5rem;
+}
+.footer__gratitude {
+  font-size: 1.3rem;
+}
+.footer__gratitude span {
+  font-style: italic;
+  font-family: "Playfair Display", sans-serif;
+}
+.footer__links {
+  border-top: 1px solid #313131;
+  padding-top: 1.5rem;
+}
+
+.homeHeader {
+  margin-bottom: 30rem;
   display: grid;
   gap: 13rem;
 }
-.header__heroContent {
+.homeHeader__heroContent {
   display: flex;
   justify-content: center;
   gap: 40rem;
   position: relative;
 }
-.header__heroContent h1 {
+.homeHeader__heroContent h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 6.4rem;
   font-style: italic;
   font-weight: 500;
 }
-.header__heroContent img {
+.homeHeader__heroContent img {
   position: absolute;
   top: -20%;
 }
-.header__openToWork {
+.homeHeader__openToWork {
   display: flex;
   justify-content: flex-end;
   font-family: "Roboto", sans-serif;
 }
-.header__openToWork div {
+.homeHeader__openToWork div {
   background-color: #2b2b2b;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
@@ -45,7 +57,7 @@ body {
   align-items: center;
   gap: 0.6rem;
 }
-.header__openToWork--dot {
+.homeHeader__openToWork--dot {
   width: 1rem;
   height: 1rem;
   background-color: #818181;
@@ -54,107 +66,78 @@ body {
   align-items: center;
   justify-content: center;
 }
-.header__openToWork--dot--inner {
+.homeHeader__openToWork--dot--inner {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: white;
 }
-.header__intro {
+.homeHeader__intro {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   font-family: "Anton", sans-serif;
 }
-.header__intro h2, .header__intro h3 {
+.homeHeader__intro h2, .homeHeader__intro h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
-.header__intro h2 {
+.homeHeader__intro h2 {
   font-size: 6rem;
   line-height: 7rem;
 }
-.header__intro h3 {
+.homeHeader__intro h3 {
   font-size: 2.9rem;
   line-height: 3.5rem;
-  color: #c0c0c0;
+  color: #9f9f9f;
+  padding-bottom: 0.6rem;
+  letter-spacing: 0.08rem;
 }
 
-.skills {
+.default-header {
   display: grid;
-  gap: 1.3rem;
-  margin-bottom: 30rem;
+  gap: 1.2rem;
 }
-.skills__hero {
-  display: grid;
-}
-.skills__hero span {
-  font-family: "Antonio", sans-serif;
+.default-header__title {
+  font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  color: rgb(209, 209, 209);
 }
-.skills__hero h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-style: italic;
-  font-size: 4rem;
-  text-transform: uppercase;
-}
-.skills__content {
-  display: flex;
-  justify-content: space-between;
-}
-.skills__content--block {
-  width: 40%;
-}
-.skills__description {
-  display: grid;
-  gap: 1.3rem;
-}
-.skills__description p {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.8rem;
-  display: grid;
-  gap: 0.1rem;
-}
-.skills__description p span {
-  font-size: 1.1rem;
-}
-.skills__list {
-  display: grid;
-  gap: 2.5rem;
-}
-.skills__list--item div:first-child {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 1rem;
-}
-.skills__list--item h2 {
-  font-weight: 500;
+.default-header__description {
   font-size: 1.2rem;
+  color: var(--color-zinc-400);
 }
-.skills__list--item p {
-  font-size: 1.1rem;
+.default-header--about {
+  display: grid;
+  gap: 1rem;
 }
-.skills__bar {
-  width: 100%;
-  height: 0.3rem;
-  background-color: rgb(92, 92, 92);
-  border-radius: 10rem;
+.default-header--about span {
+  color: white;
+  font-weight: 600;
 }
-.skills__bar div {
-  height: 100%;
-  background-color: white;
-  border-radius: 10rem;
+
+.nav {
+  font-family: "Inter", sans-serif;
+  padding-top: 1.5rem;
+  margin-bottom: 10rem;
+}
+.nav--activeLink {
+  font-weight: 600;
+  color: white;
+  text-decoration: line-through;
+}
+.nav--link {
+  font-weight: 500;
+  color: var(--color-zinc-400);
+  transition: color 0.2s ease;
+}
+.nav--link:hover {
+  color: white;
 }
 
 .quoteOfTheDay {
   display: grid;
   gap: 2rem;
-  margin-bottom: 30rem;
 }
 .quoteOfTheDay__header {
   display: flex;
@@ -193,6 +176,31 @@ body {
 .quoteOfTheDay__content .error {
   color: #f44336;
   font-weight: 500;
+}
+
+.faq {
+  margin-inline: 10rem;
+  margin-top: 10rem;
+  display: grid;
+  gap: 5rem;
+}
+.faq__header {
+  text-align: center;
+  display: grid;
+  gap: 0.8rem;
+}
+.faq__header--subtitle {
+  color: var(--color-zinc-400);
+  text-transform: uppercase;
+}
+.faq__header h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.faq__header h1 span {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

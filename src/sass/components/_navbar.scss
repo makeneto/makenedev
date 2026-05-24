@@ -1,0 +1,22 @@
+.nav {
+      font-family: "Inter", sans-serif;
+      padding-top: 1.5rem;
+      margin-bottom: 10rem;
+
+      &--activeLink {
+            font-weight: 600;
+            color: white;
+            text-decoration: line-through;
+      }
+
+      &--link {
+            font-weight: 500;
+            color: var(--color-zinc-400);
+            transition: color 0.2s ease;
+      
+            &:hover {
+                  color: white;
+            }
+      }
+
+}
