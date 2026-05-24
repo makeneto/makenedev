@@ -1,5 +1,5 @@
-.header {
-    margin-block: 10rem 30rem;
+.homeHeader {
+    margin-bottom: 30rem;
     display: grid;
     gap: 13rem;
 
@@ -59,6 +59,7 @@
         align-items: flex-end;
         justify-content: space-between;
         font-family: "Anton", sans-serif;
+
         & h2, h3 {
             font-weight: 500;
             text-transform: uppercase;
@@ -72,7 +73,35 @@
         & h3 {
             font-size: 2.9rem;
             line-height: 3.5rem;
-            color: #c0c0c0;
+            color: #9f9f9f;
+            padding-bottom: 0.6rem;
+            letter-spacing: 0.08rem;
+        }
+    }
+}
+
+.default-header {
+    display: grid;
+    gap: 1.2rem;
+
+    &__title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        color: var(--color-zinc-400);
+    }
+
+    &--about {
+        display: grid;
+        gap: 1rem;
+        
+        & span {
+            color: white;
+            font-weight: 600;
         }
     }
 }

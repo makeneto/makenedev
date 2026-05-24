@@ -1,10 +1,10 @@
-import Header from "../components/Header"
+import HomeHeader from "../components/headers/HomeHeader"
 import QuoteOfTheDay from "../components/QuoteOfTheDay"
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <HomeHeader />
       <QuoteOfTheDay />
     </>
   )

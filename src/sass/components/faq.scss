@@ -1,0 +1,29 @@
+.faq {
+      margin-inline: 10rem;
+      margin-top: 10rem;
+      display: grid;
+      gap: 5rem;
+
+      &__header {
+            text-align: center;
+            display: grid;
+            gap: .8rem;
+
+            &--subtitle {
+                  color: var(--color-zinc-400);
+                  text-transform: uppercase;
+            }
+
+            & h1 {
+                  font-weight: 600;
+                  font-size: 1.8rem;
+
+                  & span {
+                        font-family: "Playfair Display", sans-serif;
+                        font-style: italic;
+                        font-weight: 400;
+                  }
+            }
+
+      }
+}
