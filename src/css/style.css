@@ -178,9 +178,101 @@ body {
   font-weight: 500;
 }
 
+.work-experience {
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 4rem;
+}
+.work-experience a {
+  transition: color 0.2s ease;
+}
+.work-experience a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.work-experience .profile {
+  display: grid;
+  gap: 1rem;
+}
+.work-experience .profile__pic {
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+  object-position: top;
+}
+.work-experience .profile__content {
+  display: grid;
+  gap: 2.2rem;
+}
+.work-experience .profile__header--name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.work-experience .profile__header--title {
+  color: var(--color-zinc-400);
+}
+.work-experience .profile__contact {
+  display: grid;
+  gap: 0.5rem;
+}
+.work-experience .profile__links {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.work-experience .profile__links svg {
+  color: var(--color-zinc-400);
+  transition: color 0.2s ease;
+}
+.work-experience .profile__links svg:hover {
+  color: white;
+}
+.work-experience .profile__resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--color-zinc-700);
+  border-radius: 9rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.work-experience .profile__resume, .work-experience .profile__resume svg {
+  transition: all 0.2s ease-in;
+}
+.work-experience .profile__resume svg {
+  color: var(--color-zinc-700);
+}
+.work-experience .profile__resume:hover {
+  border-color: white;
+}
+.work-experience .profile__resume:hover svg {
+  color: white;
+}
+.work-experience .experiences h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.work-experience .experiences__timeline {
+  color: var(--color-zinc-400);
+  display: grid;
+  gap: 2.5rem;
+}
+.work-experience .experiences__timeline h2 {
+  color: white;
+  font-weight: 500;
+}
+.work-experience .experiences__work {
+  display: grid;
+  gap: 0.5rem;
+}
+
 .faq {
   margin-inline: 10rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
   display: grid;
   gap: 5rem;
 }
