@@ -19,7 +19,8 @@ export function FaqAccordion() {
         </AccordionTrigger>
 
         <AccordionContent>
-           I ask what nobody asked, break down what seems simple, and double what seems fast. Not out of pessimism — out of experience.
+          I ask what nobody asked, break down what seems simple, and double what
+          seems fast. Not out of pessimism — out of experience.
         </AccordionContent>
       </AccordionItem>
 
