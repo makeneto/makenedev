@@ -8,3 +8,12 @@ body {
     color: white;
     padding-inline: 25rem;
 }
+
+textarea {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
