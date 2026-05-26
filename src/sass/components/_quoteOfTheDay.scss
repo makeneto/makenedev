@@ -9,7 +9,10 @@
 
         & p:first-child {
             font-family: "Antonio", sans-serif;
-            font-size: 1.4rem;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: var(--color-zinc-200);
+            text-transform: uppercase;
         }
 
         & p:last-child {
