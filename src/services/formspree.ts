@@ -1,6 +1,6 @@
 import type { ContactFormData } from "../constants/contact"
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqnyvzn"
+const formspreeKey = import.meta.env.VITE_FORMSPREE_KEY
 
 export async function sendContactForm(data: ContactFormData) {
   const payload = {
@@ -13,7 +13,7 @@ export async function sendContactForm(data: ContactFormData) {
     _subject: `New contact request from ${data.fullName}`,
   }
 
-  const response = await fetch(FORMSPREE_ENDPOINT, {
+  const response = await fetch(`https://formspree.io/f/${formspreeKey}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
