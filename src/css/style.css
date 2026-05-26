@@ -7,6 +7,73 @@ body {
   padding-inline: 25rem;
 }
 
+textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.contact {
+  margin-top: 30rem;
+  color: white;
+}
+.contact__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.contact__subtitle {
+  font-family: "Antonio", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-zinc-200);
+  text-transform: uppercase;
+}
+.contact__title {
+  margin-top: 20px;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.contact__title i {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.contact__description, .contact__email {
+  margin-top: 40px;
+  max-width: 480px;
+  color: var(--color-zinc-400);
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.contact__email {
+  margin-top: 60px;
+}
+.contact a {
+  font-size: 1.2rem;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact-form__label {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #bebec8;
+}
+
+.teste {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .footer {
   margin-top: 20rem;
   padding-bottom: 1.5rem;
@@ -146,7 +213,10 @@ body {
 }
 .quoteOfTheDay__header p:first-child {
   font-family: "Antonio", sans-serif;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-zinc-200);
+  text-transform: uppercase;
 }
 .quoteOfTheDay__header p:last-child {
   font-family: "Roboto", sans-serif;
@@ -290,7 +360,7 @@ body {
   font-size: 1.8rem;
 }
 .faq__header h1 span {
-  font-family: "Playfair Display", sans-serif;
+  font-family: serif;
   font-style: italic;
   font-weight: 400;
 }
