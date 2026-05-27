@@ -2,9 +2,9 @@ import { ContactForm } from "./ContactForm"
 import { ContactSectionEmail } from "./ContactSectionEmail"
 import { ContactSectionHeader } from "./ContactSectionHeader"
 
-export function ContactSection() {
+export default function ContactSection({ className }: { className?: string }) {
   return (
-    <section className="contact">
+    <section className={`${className} contact`}>
       <div className="contact__content">
         <div className="contact__left">
           <ContactSectionHeader />
