@@ -1,6 +1,6 @@
 export function ContactSectionHeader() {
   return (
-    <>
+    <header>
       <span className="contact__subtitle">Contact me</span>
 
       <h2 className="contact__title">
@@ -14,6 +14,6 @@ export function ContactSectionHeader() {
         maintainable architecture and a strong focus on efficiency and
         measurable impact.
       </p>
-    </>
+    </header>
   )
 }
