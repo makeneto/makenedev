@@ -1,0 +1,59 @@
+.section {
+  padding: 3rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  border-bottom: 1px solid var(--color-zinc-600);
+}
+
+.heading {
+  font-family: "Antonio", sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: white;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background-color: #d4d4d4;
+}
+
+.viewAll {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.showCaseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
+  column-gap: 2rem;
+  row-gap: 4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--multi-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
