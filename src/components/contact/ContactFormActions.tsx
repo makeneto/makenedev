@@ -1,6 +1,7 @@
 import { Loader2, Send } from "lucide-react"
 
 import { Button } from "../ui/button"
+import React from "react"
 
 interface Props {
   loading: boolean
@@ -29,10 +30,10 @@ export function ContactFormActions({ loading, disabled, onSubmit }: Props) {
       {loading ? (
         <Loader2 className="animate-spin" />
       ) : (
-        <>
+        <React.Fragment>
           Submit Form
           <Send size={10} />
-        </>
+        </React.Fragment>
       )}
     </Button>
   )
