@@ -13,7 +13,7 @@ export default function DefaultHeader({
     <header className="default-header">
       <h1 className="default-header__title">{title}</h1>
       {description && (
-        <p className="default-header__description">{description}</p>
+        <p className="description--normal">{description}</p>
       )}
       {component && <div>{component}</div>}
     </header>
