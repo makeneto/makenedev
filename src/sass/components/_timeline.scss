@@ -1,0 +1,152 @@
+.timeline {
+  width: 100%;
+  background: #000;
+  color: #fff;
+
+  &__empty {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+
+  &__wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 1fr);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &__header {
+    padding: 1.9rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+    .timeline__track {
+      font-size: 0.55rem;
+      letter-spacing: 0.15em;
+      color: rgba(255, 255, 255, 0.4);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-zinc-400);
+    }
+  }
+
+  &__year {
+    padding-top: 1.9rem;
+    padding-inline: 2rem;
+
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.35);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &__column {
+    min-height: 150px;
+    padding: 1.5rem 1rem 2.2rem;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    position: relative;
+  }
+}
+
+.timeline-card {
+  position: relative;
+  padding-left: 1rem;
+
+      &__dot {
+            position: absolute;
+                  left: -1.22rem;
+            top: 0.66rem;
+
+            width: 6px;
+            height: 6px;
+
+            border-radius: 999px;
+            background: #fff;
+
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
+      }
+
+  &__title {
+    display: inline-block;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    margin-bottom: 0.5rem;
+
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  &__description {
+    font-size: 0.72rem;
+    line-height: 1.6;
+
+    max-width: 220px;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    margin-bottom: 0.85rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    font-size: 0.55rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: rgba(255, 255, 255, 0.45);
+
+    border-radius: 999px;
+
+    padding: 0.2rem 0.55rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline {
+    &__grid {
+      grid-template-columns: 60px 1fr;
+    }
+
+    &__header:nth-child(3),
+    &__header:nth-child(4) {
+      display: none;
+    }
+
+    &__column:nth-child(4n),
+    &__column:nth-child(4n - 1) {
+      display: none;
+    }
+  }
+}
