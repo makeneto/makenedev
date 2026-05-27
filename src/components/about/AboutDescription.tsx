@@ -1,7 +1,7 @@
 export default function AboutDescription() {
   return (
     <section className="grid gap-20">
-      <div className="default-header__description default-header--about">
+      <div className="description--normal default-header--about">
         <p>
           <span>
             Software Engineer with 4+ years of experience building reliable,
