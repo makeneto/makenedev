@@ -1,9 +1,13 @@
 @use "./base/base";
 
 @use "./components/contact";
+@use "./components/descriptions";
 @use "./components/footer";
 @use "./components/header";
 @use "./components/navbar";
 @use "./components/quoteOfTheDay";
+@use "./components/showcase-section";
+@use "./components/showcase-card";
+@use "./components/timeline";
 @use "./components/work-experience";
 @use "./components/faq";
