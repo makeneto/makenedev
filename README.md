@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+﻿<h1 align="left">Hi 👋🏾, my name is Makene Neto!</h1>
+<img align="right" width="300em" height="300em" src="https://github.com/nublson/nublson/blob/dev/animation_500_kv8i962g.gif"/>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=makeneto&color=blue" alt="Profile views" /> </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 💓 I've been addicted to programming since **2021**
 
-Currently, two official plugins are available:
+- 🛠️ I constantly work to improve my skills as a **Full-stack Developer**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Always looking for new challenges to expand my knowledge.
 
-## React Compiler
+- 🌍 I dream of contributing to big projects that have a global impact.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🦖 And... Obviously, it's me ⛅☕
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️Technology Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<br>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+![(S)CSS](<https://img.shields.io/badge/-(S)CSS-05122A?style=flat&logo=SASS>)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/-Tailwindcss-05122A?style=flat&logo=Tailwindcss)&nbsp;
+![Styled-Components](https://img.shields.io/badge/-Styled%20Components-05122A?style=flat&logo=styled-components)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=JavaScript)&nbsp;
+![React Native](https://img.shields.io/badge/-React%20Native-05122A?style=flat&logo=react)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript)&nbsp;
+![NextJS](https://img.shields.io/badge/-NextJS-05122A?style=flat&logo=next.js)&nbsp;
+![Redux](https://img.shields.io/badge/-Redux-05122A?style=flat&logo=redux)&nbsp;
+![NodeJS](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)&nbsp;
+![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)&nbsp;
+![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)&nbsp;
+![Mongoose](https://img.shields.io/badge/-Mongoose-05122A?style=flat&logo=mongoose)&nbsp;
+![Claude](https://img.shields.io/badge/-Claude-05122A?style=flat&logo=claude)&nbsp;
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=Git)&nbsp;
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p align="center">
+  <a href="https://instagram.com/makenedev" target="_blank">
+ <img align="center" src="https://img.shields.io/badge/-makenedev-05122A?style=flat&logo=instagram" alt="instagram"/>
+</a>
+  |
+<a href="mailto:cmp.1a.makenedev@gmailcom" target="_blank">
+ <img align="center" src="https://img.shields.io/badge/-GMAIL-05122A?style=flat&logo=gmail" alt="GMAIL"/>
+</a>
+</p>
