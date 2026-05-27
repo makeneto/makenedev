@@ -1,5 +1,5 @@
 .homeHeader {
-    margin-bottom: 30rem;
+    margin-bottom: 25rem;
     display: grid;
     gap: 13rem;
 
@@ -83,16 +83,12 @@
 .default-header {
     display: grid;
     gap: 1.2rem;
+    margin-bottom: 10rem;
 
     &__title {
         font-size: 3.5rem;
         font-weight: bold;
         text-transform: uppercase;
-    }
-
-    &__description {
-        font-size: 1.2rem;
-        color: var(--color-zinc-400);
     }
 
     &--about {
