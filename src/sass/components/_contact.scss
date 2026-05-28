@@ -1,68 +1,67 @@
 .contact {
-      &__content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: start;
-      }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
 
-      &__subtitle {
-            font-family: "Antonio", sans-serif;
-            font-weight: 600;
-            font-size: 1.3rem;
-            color: var(--color-zinc-200);
-            text-transform: uppercase;
-      }
-      
-      &__title {
-            margin-top: 20px;
-            font-size: 3.5rem;
-            line-height: 1.2;
-            font-weight: 700;
+  &__subtitle {
+    font-family: "Antonio", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--color-zinc-200);
+    text-transform: uppercase;
+  }
 
-            i {
-                  font-family: "Playfair Display", sans-serif;
-                  font-style: italic;
-                  font-weight: 500;
-            }
-      }
+  &__title {
+    margin-top: 20px;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
 
-      &__description,
-      &__email {
-            margin-top: 40px;
-            max-width: 480px;
-            color: var(--color-zinc-400);
-            font-size: 1.2rem;
-            line-height: 1.7;
-      }
+    i {
+      font-family: "Playfair Display", sans-serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+  &__description,
+  &__email {
+    margin-top: 40px;
+    max-width: 480px;
+    color: var(--color-zinc-400);
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
 
-      &__email {
-            margin-top: 60px;
-      }
+  &__email {
+    margin-top: 60px;
+  }
 
-      a {
-            font-size: 1.2rem;
+  a {
+    font-size: 1.2rem;
 
-            &:hover {
-                  text-decoration: underline;
-            }
-      }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .contact-form {
-      &__label {
-            margin-bottom: 12px;
+  &__label {
+    margin-bottom: 12px;
 
-            display: flex;
-            align-items: center;
-            gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-            font-size: 14px;
-            color: #bebec8;;
-      }
+    font-size: 14px;
+    color: #bebec8;
+  }
 }
 
 .teste {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
