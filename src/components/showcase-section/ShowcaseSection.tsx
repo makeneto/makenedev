@@ -35,8 +35,8 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
   const showControls = !isHomePage && totalPages > 1
 
   return (
-    <section className="section" ref={sectionRef}>
-      <header className="header">
+    <section className="showcase-section" ref={sectionRef}>
+      <header className="showcase-header">
         <h2 className="heading">{title}</h2>
         {viewAllHref && (
           <a href={viewAllHref} className="viewAll">
