@@ -1,6 +1,6 @@
-import { Mail } from "lucide-react"
 import { NavLink } from "react-router-dom"
 import {
+  RiDribbbleFill,
   RiGithubLine,
   RiInstagramLine,
   RiLinkedinBoxFill,
@@ -23,10 +23,10 @@ export default function SocialLinks() {
             <RiGithubLine size={20} />
           ) : link.label === "LinkedIn" ? (
             <RiLinkedinBoxFill size={20} />
-          ) : link.label === "Email" ? (
-            <Mail size={20} />
           ) : link.label === "Instagram" ? (
             <RiInstagramLine size={20} />
+          ) : link.label === "Dribbble" ? (
+            <RiDribbbleFill size={20} />
           ) : (
             link.label
           )}

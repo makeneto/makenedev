@@ -8,8 +8,8 @@ export const navLinks = [
     link: "/work",
   },
   {
-    label: "Story",
-    link: "/story",
+    label: "Stack",
+    link: "/stack",
   },
 ]
 
@@ -27,8 +27,8 @@ export const footerLinks = [
     link: "/work",
   },
   {
-    label: "Story",
-    link: "/story",
+    label: "Stack",
+    link: "/stack",
   },
 ]
 
@@ -42,12 +42,12 @@ export const socialLinks = [
     link: "https://linkedin.com/in/makene-neto",
   },
   {
-    label: "Email",
-    link: "mailto:makenedev@gmail.com",
-  },
-  {
     label: "Instagram",
     link: "https://instagram.com/makeneto",
+  },
+  {
+    label: "Dribbble",
+    link: "https://dribbble.com/makeneto",
   },
 ]
 
