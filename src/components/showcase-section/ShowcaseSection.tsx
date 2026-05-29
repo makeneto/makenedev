@@ -1,62 +1,47 @@
-import React, { useState, useRef, useEffect } from "react"
 import type { ShowcaseSectionProps } from "../../interfaces/showcase"
-import ShowcaseCard from "./ShowcaseCard"
+import ShowcaseHeader from "./ShowcaseHeader"
+import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
+import { usePagination } from "../../hooks/usePagination"
+import { useScrollOnPaginate } from "../../hooks/useScrollOnPaginate"
 
-const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
+const ShowcaseSection = ({
   title,
   viewAllHref,
   items,
   isHomePage = false,
-}) => {
-  const sectionRef = useRef<HTMLElement>(null)
+}: ShowcaseSectionProps) => {
   const itemsPerPage = isHomePage ? 2 : 6
-  const [page, setPage] = useState(0)
 
-  const totalPages = Math.max(1, Math.ceil(items.length / itemsPerPage))
+  const { page, totalPages, visibleItems, nextPage, prevPage } = usePagination({
+    items,
+    itemsPerPage,
+  })
 
-  const handlePrev = () => {
-    setPage((p) => Math.max(0, p - 1))
-  }
+  const { sectionRef, markPagination } = useScrollOnPaginate({
+    page,
+    enabled: !isHomePage,
+  })
 
   const handleNext = () => {
-    setPage((p) => Math.min(totalPages - 1, p + 1))
+    markPagination()
+    nextPage()
   }
 
-  useEffect(() => {
-    if (!isHomePage && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-    }
-  }, [page, isHomePage])
+  const handlePrev = () => {
+    markPagination()
+    prevPage()
+  }
 
-  const start = page * itemsPerPage
-  const visibleItems = items.slice(start, start + itemsPerPage)
-
-  const showControls = !isHomePage && totalPages > 1
+  const showControls = isHomePage || totalPages > 1
 
   return (
-    <section className="showcase-section" ref={sectionRef}>
-      <header className="showcase-header">
-        <h2 className="heading">{title}</h2>
-        {viewAllHref && (
-          <a href={viewAllHref} className="viewAll">
-            View all
-          </a>
-        )}
-      </header>
+    <section ref={sectionRef} className="showcase-section">
+      <ShowcaseHeader title={title} viewAllHref={viewAllHref} />
 
-      <ul
-        className={`showCaseGrid ${!isHomePage ? "showCaseGrid--multi-row" : ""}`}
-        role="list"
-      >
-        {visibleItems.map((item) => (
-          <li key={item.id}>
-            <ShowcaseCard item={item} />
-          </li>
-        ))}
-      </ul>
+      <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
 
-      {(isHomePage || showControls) && (
+      {showControls && (
         <SectionControls
           page={page}
           totalPages={totalPages}
