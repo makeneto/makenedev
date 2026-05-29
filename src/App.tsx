@@ -5,7 +5,7 @@ const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
 const Work = lazy(() => import("./pages/Work"))
 const Contact = lazy(() => import("./pages/Contact"))
-const Story = lazy(() => import("./pages/Story"))
+const Stack = lazy(() => import("./pages/Stack"))
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/stack" element={<Stack />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/story" element={<Story />} />
       </Routes>
     </div>
   )
