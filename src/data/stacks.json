@@ -1,0 +1,220 @@
+{
+  "sections": [
+    {
+      "id": "frontend",
+      "title": "Front-end",
+      "stacks": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "category": "Language",
+          "link": "https://developer.mozilla.org/docs/Web/JavaScript"
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "category": "Library",
+          "link": "https://react.dev"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "category": "Language",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "id": "next",
+          "name": "Next.js",
+          "category": "Framework",
+          "link": "https://nextjs.org"
+        },
+        {
+          "id": "redux",
+          "name": "Redux",
+          "category": "Library",
+          "link": "https://redux.js.org"
+        },
+        {
+          "id": "styledcomponents",
+          "name": "Styled Components",
+          "category": "Library",
+          "link": "https://styled-components.com"
+        },
+        {
+          "id": "sass",
+          "name": "Sass",
+          "category": "Language",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "id": "tailwindcss",
+          "name": "Tailwind CSS",
+          "category": "Framework",
+          "link": "https://tailwindcss.com"
+        },
+        {
+          "id": "shadcn",
+          "name": "Shadcn/ui",
+          "category": "Library",
+          "link": "https://ui.shadcn.com"
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Back-end",
+      "stacks": [
+        {
+          "id": "node",
+          "name": "Node.js",
+          "category": "Library",
+          "link": "https://nodejs.org"
+        },
+        {
+          "id": "express",
+          "name": "Express.js",
+          "category": "Framework",
+          "link": "https://expressjs.com"
+        },
+        {
+          "id": "postman",
+          "name": "Postman",
+          "category": "Software",
+          "link": "https://postman.com"
+        },
+        {
+          "id": "socketio",
+          "name": "Socket.IO",
+          "category": "Software",
+          "link": "https://socket.io"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "stacks": [
+        {
+          "id": "claude",
+          "name": "Claude AI",
+          "category": "AI",
+          "link": "https://claude.ai"
+        },
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "category": "AI",
+          "link": "https://openai.com"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "category": "AI",
+          "link": "https://lovable.ai"
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "title": "Database",
+      "stacks": [
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "category": "Database",
+          "link": "https://www.postgresql.org"
+        },
+        {
+          "id": "mongodb",
+          "name": "MongoDB",
+          "category": "Database",
+          "link": "https://www.mongodb.com"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "stacks": [
+        {
+          "id": "figma",
+          "name": "Figma",
+          "category": "Design",
+          "link": "https://figma.com"
+        },
+        {
+          "id": "canva",
+          "name": "Canva",
+          "category": "Design",
+          "link": "https://canva.com"
+        },
+        {
+          "id": "gimp",
+          "name": "Gimp",
+          "category": "Design",
+          "link": "https://gimp.org"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "stacks": [
+        {
+          "id": "git",
+          "name": "Git",
+          "category": "Software",
+          "link": "https://git-scm.com"
+        },
+        {
+          "id": "github",
+          "name": "Github",
+          "category": "Software",
+          "link": "https://github.com/makeneto"
+        },
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "category": "Software",
+          "link": "https://vercel.com"
+        },
+        {
+          "id": "pnpm",
+          "name": "Pnpm",
+          "category": "Software",
+          "link": "https://pnpm.io"
+        },
+        {
+          "id": "npm",
+          "name": "Npm",
+          "category": "Software",
+          "link": "https://www.npmjs.com"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "stacks": [
+        {
+          "id": "udemy",
+          "name": "Udemy",
+          "category": "Education",
+          "link": "https://www.udemy.com"
+        },
+        {
+          "id": "anthropic",
+          "name": "Anthropic",
+          "category": "Education",
+          "link": "https://www.anthropic.com"
+        },
+        {
+          "id": "microsoft",
+          "name": "Microsoft",
+          "category": "Education",
+          "link": "https://learn.microsoft.com"
+        }
+      ]
+    }
+  ]
+}
