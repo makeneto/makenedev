@@ -1,114 +1,121 @@
+.experience-section {
+  margin-top: 15rem;
+}
 .work-experience {
-      margin-top: 15rem;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 4rem;
+
+  & a {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  & .profile {
+    display: grid;
+    gap: 1rem;
+
+    &__pic {
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%),
+        url("/assets/makenedev-profile.jpeg");
+      background-position: center top;
+      background-size: cover;
+      width: 100%;
+      height: 28rem;
+      border-radius: 0.3rem;
+    }
+
+    &__content {
       display: grid;
-      grid-template-columns: 30% auto;
-      gap: 4rem;
+      gap: 2.2rem;
+    }
 
-      & a {
-            transition: color 0.2s ease;
-
-            &:hover {
-                  color: white;
-                  text-decoration: underline;
-            }
+    &__header {
+      &--name {
+        font-size: 1.2rem;
+        font-weight: 500;
       }
 
-      & .profile {
-            display: grid;
-            gap: 1rem;
+      &--title {
+        color: var(--color-zinc-400);
+      }
+    }
 
-            &__pic {
-                  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%), url('/assets/makenedev-profile.jpeg');
-                  background-position: center top;
-                  background-size: cover;
-                  width: 100%;
-                  height: 28rem;
-                  border-radius: .3rem;
-            }
+    &__contact {
+      display: grid;
+      gap: 0.5rem;
+    }
 
-            &__content {
-                  display: grid;
-                  gap: 2.2rem;
-            }
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
 
-            &__header {
-                  &--name {
-                        font-size: 1.2rem;
-                        font-weight: 500;
-                  }
-      
-                  &--title {
-                        color: var(--color-zinc-400);
-                  }
-            }
+      & svg {
+        color: var(--color-zinc-400);
+        transition: color 0.2s ease;
 
-            &__contact {
-                  display: grid;
-                  gap: .5rem;
-            }
+        &:hover {
+          color: white;
+        }
+      }
+    }
 
-            &__links {
-                  display: flex;
-                  align-items: center;
-                  gap: .7rem;
+    &__resume {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 2px solid var(--color-zinc-700);
+      border-radius: 9rem;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.8rem;
+      font-weight: 500;
 
-                  & svg {
-                        color: var(--color-zinc-400);
-                        transition: color 0.2s ease;
-                  
-                        &:hover {
-                              color: white;
-                        }
-                  }
-            }
-
-            &__resume {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-                  border: 2px solid var(--color-zinc-700);
-                  border-radius: 9rem;
-                  padding: 0.5rem 1.2rem;
-                  font-size: .8rem;
-                  font-weight: 500;
-
-                  &, & svg {transition: all .2s ease-in;}
-
-                  & svg {
-                        color: var(--color-zinc-700);
-                  }
-
-                  &:hover {
-                        border-color: white;
-
-                        & svg {
-                              color: white;
-                        }
-                  }     
-            }
+      &,
+      & svg {
+        transition: all 0.2s ease-in;
       }
 
-      & .experiences {  
-            h1 {
-                  font-size: 1.3rem;
-                  font-weight: 500;
-                  margin-bottom: 2.5rem;
-            }
-            
-            &__timeline {
-                  color: var(--color-zinc-400);
-                  display: grid;
-                  gap: 2.5rem;
-
-                  & h2 {
-                        color: white;
-                        font-weight: 500;
-                  }
-            }
-
-            &__work {
-                  display: grid;
-                  gap: .5rem;
-            }
+      & svg {
+        color: var(--color-zinc-700);
       }
+
+      &:hover {
+        border-color: white;
+
+        & svg {
+          color: white;
+        }
+      }
+    }
+  }
+
+  & .experiences {
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+    }
+
+    &__timeline {
+      color: var(--color-zinc-400);
+      display: grid;
+      gap: 2.5rem;
+
+      & h2 {
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    &__work {
+      display: grid;
+      gap: 0.5rem;
+    }
+  }
 }
