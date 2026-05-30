@@ -30,6 +30,10 @@ export const footerLinks = [
     label: "Stack",
     link: "/stack",
   },
+  {
+    label: "Contact",
+    link: "/contact",
+  },
 ]
 
 export const socialLinks = [
@@ -54,13 +58,13 @@ export const socialLinks = [
 export const contacts = [
   {
     label: "Email",
-    href: "mailto:makenedev@gmail.com",
-    display: "makenedev@gmail.com",
+    href: "/contact",
+    display: "m/contact",
   },
   {
-    label: "WhatsApp",
-    href: "https://wa.me/244945336003?text=Hi%20Makene!%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20get%20in%20touch",
-    display: "+244 945 536 003",
+    label: "Meeting",
+    href: "https://calendly.com/makeneto17/30min",
+    display: "calendly.com",
   },
   {
     label: "Portfolio",
