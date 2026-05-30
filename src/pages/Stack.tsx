@@ -2,8 +2,11 @@ import React from "react"
 import DefaultHeader from "../components/headers/DefaultHeader"
 import StackSection from "../components/stack/StackSection"
 import StackResume from "../components/stack/StackResume"
+import { useTitle } from "../hooks/useTitle"
 
 export default function Stack() {
+  useTitle("My Stack")
+
   return (
     <React.Fragment>
       <DefaultHeader
