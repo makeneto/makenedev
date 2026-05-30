@@ -1,0 +1,122 @@
+{
+  "timelineData": [
+    {
+      "year": "2026",
+      "personal": {
+        "title": "Self-Mastery",
+        "subtitle": "Driver's License & Mental Performance",
+        "description": "Strengthened self-development and personal autonomy. ",
+        "tags": ["Psychology", "Performance", "Responsibility", "Independence"]
+      },
+      "engineering": {
+        "title": "AI Exploration",
+        "subtitle": "Data & Intelligence",
+        "description": "Exploration of AI and data systems.",
+        "tags": ["AI", "PostgreSQL", "MongoDB", "Data Modeling"]
+      },
+      "business": {
+        "title": "Business Mindset",
+        "subtitle": "MBA Program",
+        "description": "Advanced studies in business, leadership and decision-making.",
+        "tags": ["Strategy", "Leadership", "Finance", "Operations"]
+      }
+    },
+    {
+      "year": "2025",
+      "personal": {
+        "title": "Academic Milestone",
+        "subtitle": "High School Graduation",
+        "description": "Graduated with a final score of 19/20.",
+        "tags": ["Excellence", "Discipline", "Results"]
+      },
+      "engineering": {
+        "title": "Design Shift",
+        "subtitle": "UI/UX Focus",
+        "description": "Focus on user experience and interface design.",
+        "tags": ["Figma", "UX", "Design System"]
+      },
+      "business": null
+    },
+    {
+      "year": "2024",
+      "personal": null,
+      "engineering": {
+        "title": "Freelance Start",
+        "subtitle": "Real Projects & Clients",
+        "description": "First real client work experience.",
+        "tags": ["Frontend", "Backend"]
+      },
+      "business": null
+    },
+    {
+      "year": "2023",
+      "personal": {
+        "title": "Fitness Journey",
+        "subtitle": "Strength Training",
+        "description": "Started training and building discipline.",
+        "tags": ["Fitness", "Consistency"]
+      },
+      "engineering": {
+        "title": "Backend Era",
+        "subtitle": "APIs & Systems",
+        "description": "Backend development and API design.",
+        "tags": ["Node.js", "Express"]
+      },
+      "business": null
+    },
+    {
+      "year": "2022",
+      "personal": null,
+      "engineering": {
+        "title": "Frontend Era",
+        "subtitle": "UI Development",
+        "description": "Solid frontend development foundation.",
+        "tags": ["React", "Next.js", "Redux", "TypeScript", "Git", "Figma"]
+      },
+      "business": null
+    },
+    {
+      "year": "2021",
+      "personal": null,
+      "engineering": {
+        "title": "Core Programming",
+        "subtitle": "Algorithms & Logic",
+        "description": "Programming logic and fundamentals.",
+        "tags": ["C", "C++", "C#", "Java", "Python"]
+      },
+      "business": {
+        "title": "Digital Literacy",
+        "subtitle": "Office Tools Fundamentals",
+        "description": "Basic productivity tools for documents and presentations.",
+        "tags": ["Microsoft Word", "Excel", "PowerPoint"]
+      }
+    },
+    {
+      "year": "2020",
+      "personal": {
+        "title": "Spark of Curiosity",
+        "subtitle": "Passion for Technology",
+        "description": "Develop a strong interest in computing.",
+        "tags": ["Computers", "Technology", "Programming"]
+      },
+      "engineering": {
+        "title": "Web Fundamentals",
+        "subtitle": "Web development basics",
+        "description": "Programming logic and fundamentals.",
+        "tags": ["HTML", "CSS", "JavaScript", "Github"]
+      },
+      "business": null
+    },
+    {
+      "year": "2019",
+      "personal": null,
+      "engineering": {
+        "title": "THE BEGINNING",
+        "subtitle": "Technical Drawing (CAD)",
+        "description": "Foundation in technical drawing and drafting.",
+        "tags": ["AutoCAD", "Drafting"]
+      },
+      "business": null
+    }
+  ]
+}
