@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
-import { contacts } from "../../data/links";
+import { contacts } from "../../data/links"
 
 export default function ProfileContact() {
   return (
@@ -8,7 +8,12 @@ export default function ProfileContact() {
       {contacts.map(({ label, href, display }) => (
         <div key={label} className="flex items-center justify-between">
           <p className="font-medium">{label}</p>
-          <Link to={href} className="text-end text-zinc-400">
+
+          <Link
+            to={href}
+            target={label === "Email" ? "_self" : "_blank"}
+            className="text-end text-zinc-400"
+          >
             {display}
           </Link>
         </div>
