@@ -6,8 +6,8 @@ import SocialLinks from "./SocialLinks"
 export default function Navbar() {
   return (
     <nav className="nav flex items-center justify-between">
-      <div className="flex items-center gap-5">
-        <Logo />
+      <div className="flex items-center gap-3 sm:gap-5">
+        <Logo variant="nav" />
         <div className="w-px h-7 bg-zinc-700" />
         <NavRoutes links={navLinks} />
       </div>
