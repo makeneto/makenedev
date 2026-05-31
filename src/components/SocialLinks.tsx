@@ -10,7 +10,7 @@ import { socialLinks } from "../data/links"
 
 export default function SocialLinks() {
   return (
-    <section className="flex items-center gap-4 mt-2">
+    <section className="flex items-center gap-3 sm:gap-4 sm:mt-2">
       {socialLinks.map((link) => (
         <NavLink
           key={link.link}
@@ -20,13 +20,13 @@ export default function SocialLinks() {
           className={"nav--link"}
         >
           {link.label === "Github" ? (
-            <RiGithubLine size={20} />
+            <RiGithubLine size={19} />
           ) : link.label === "LinkedIn" ? (
-            <RiLinkedinBoxFill size={20} />
+            <RiLinkedinBoxFill size={19} />
           ) : link.label === "Instagram" ? (
-            <RiInstagramLine size={20} />
+            <RiInstagramLine size={19} />
           ) : link.label === "Dribbble" ? (
-            <RiDribbbleFill size={20} />
+            <RiDribbbleFill size={19} />
           ) : (
             link.label
           )}
