@@ -30,7 +30,7 @@ export default function StackCard({ children, name }: StackProps) {
           rel="noopener noreferrer"
           title="Website"
         >
-          <LinkIcon size={12} />
+          <LinkIcon size={10} />
         </Link>
       </div>
     </div>
