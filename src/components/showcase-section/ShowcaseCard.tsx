@@ -9,20 +9,20 @@ interface Props {
 
 const ShowcaseCard: React.FC<Props> = ({ item }) => {
   return (
-    <Link to={item.href} className="card" target="_blank">
+    <Link to={item.href} className="showcase-card" target="_blank">
       <img
         src={item.imageUrl}
         alt={item.imageAlt ?? item.title}
-        className="image"
+        className="cover"
         loading="lazy"
       />
 
-      <div className="body">
+      <div className="flex-col gap-2">
         <div className="flex items-center justify-between">
           <h3 className="title">{item.title}</h3>
           <ExternalLink />
         </div>
-        <p className="card--description">{item.description}</p>
+        <p className="showcase-card--description">{item.description}</p>
       </div>
     </Link>
   )
