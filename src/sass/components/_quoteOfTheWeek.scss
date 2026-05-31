@@ -1,0 +1,81 @@
+.quoteOfTheWeek {
+  margin-bottom: 20rem;
+  display: grid;
+  gap: 2rem;
+
+  @media (width <= 640px) {
+    margin-bottom: 15rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p:first-child {
+      font-family: "Antonio", sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: var(--color-zinc-200);
+      text-transform: uppercase;
+    }
+
+    & p:last-child {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    border-left: 0.3em solid white;
+    padding-block: 1rem;
+    padding-inline: 3rem 0;
+
+    @media (width <= 640px) {
+      padding-inline: 2rem 0;
+      display: grid;
+      gap: 2rem;
+    }
+
+    & h1,
+    small {
+      font-weight: 500;
+      font-style: italic;
+      font-family: serif;
+    }
+
+    & h1 {
+      width: 65%;
+      font-size: 4rem;
+      color: #a7a7a7;
+
+      @media (width <= 1280px) {
+        width: 70%;
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+
+      @media (width <= 640px) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    & small {
+      font-size: 1.7rem;
+
+      @media (width <= 1280px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    .error {
+      color: #f44336;
+      font-weight: 500;
+    }
+  }
+}

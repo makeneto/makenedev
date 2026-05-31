@@ -2,8 +2,13 @@
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 8rem;
     align-items: start;
+
+    @media (width <= 640px) {
+      grid-template-columns: none;
+      gap: 6rem;
+    }
   }
 
   &__subtitle {
@@ -20,27 +25,55 @@
     line-height: 1.2;
     font-weight: 700;
 
+    @media (width <= 1280px) {
+      font-size: 2.8rem;
+    }
+
     i {
       font-family: "Playfair Display", sans-serif;
       font-style: italic;
       font-weight: 500;
     }
   }
+
+  &__description {
+    margin-top: 1.2rem;
+
+    @media (width <= 1280px) {
+      margin-top: 1rem;
+    }
+  }
+
   &__description,
   &__email {
-    margin-top: 40px;
     max-width: 480px;
     color: var(--color-zinc-400);
     font-size: 1.2rem;
     line-height: 1.7;
+
+    @media (width <= 1280px) {
+      font-size: 1rem;
+    }
   }
 
   &__email {
-    margin-top: 60px;
+    margin-top: 6rem;
+
+    @media (width <= 1280px) {
+      margin-top: 7rem;
+    }
+
+    @media (width <= 640px) {
+      margin-top: 1rem;
+    }
   }
 
   a {
     font-size: 1.2rem;
+
+    @media (width <= 1280px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       text-decoration: underline;

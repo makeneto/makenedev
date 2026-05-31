@@ -27,8 +27,18 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem 4rem;
 
-    & svg {
+    @media (width <= 640px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem 2rem;
+    }
+
+    & svg,
+    & img {
       height: 3.5rem;
+
+      @media (width <= 1280px) {
+        height: 3rem;
+      }
     }
   }
 
