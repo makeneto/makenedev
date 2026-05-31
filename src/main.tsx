@@ -18,6 +18,6 @@ createRoot(document.getElementById("root")!).render(
       <Footer />
     </BrowserRouter>
 
-    <Toaster richColors />
+    <Toaster />
   </StrictMode>,
 )
