@@ -3,7 +3,7 @@ export default function Signature() {
     <img
       src="/assets/makene-white-signature.png"
       alt="Makenedev's signature"
-      className="w-32 h-auto"
+      className="w-20 h-auto sm:w-32 justify-self-center sm:justify-self-end"
     />
   )
 }
