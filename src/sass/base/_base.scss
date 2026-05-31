@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: "Inter", sans-serif;
-    background-color: black;
-    color: white;
-    padding-inline: 25rem;
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: white;
+  padding-inline: 25rem;
+  &::selection {
+    background-color: var(--color-zinc-700);
+  }
 
-    @media (width <= 1280px) {
-        padding-inline: 15rem;   
-    }
+  @media (width <= 1280px) {
+    padding-inline: 10rem;
+  }
+  
+  @media (width <= 640px) {
+    padding-inline: 1rem;
+  }
 }
 
 textarea {
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

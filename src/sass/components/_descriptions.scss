@@ -1,11 +1,19 @@
 .description {
-      &--medium {
-            color: var(--color-zinc-400);
-            font-size: 1.1rem;
-      }
-      
-      &--normal {
-            color: var(--color-zinc-400);
-            font-size: 1.2rem;
-      }
+  &--medium {
+    color: var(--color-zinc-400);
+    font-size: 1.1rem;
+
+    @media (width <= 1280px) {
+      font-size: 1rem;
+    }
+  }
+
+  &--normal {
+    color: var(--color-zinc-400);
+    font-size: 1.2rem;
+
+    @media (width <= 1280px) {
+      font-size: 1rem;
+    }
+  }
 }

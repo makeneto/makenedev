@@ -1,8 +1,4 @@
 .showcase {
-  &-section {
-    padding: 3rem 0;
-  }
-
   &-header {
     display: flex;
     align-items: center;
@@ -24,6 +20,10 @@
     margin: 0;
     white-space: nowrap;
     line-height: 1;
+
+    @media (width <= 1280px) {
+      font-size: 1.9rem;
+    }
   }
 }
 
@@ -57,5 +57,9 @@
 
   &--multi-row {
     grid-template-columns: repeat(2, 1fr);
+
+    @media (width <= 640px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

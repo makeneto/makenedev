@@ -1,103 +1,186 @@
 .homeHeader {
-    margin-bottom: 25rem;
-    display: grid;
-    gap: 13rem;
+  margin-bottom: 25rem;
+  display: grid;
+  gap: 13rem;
 
-    &__heroContent {
-        display: flex;
-        justify-content: center;
-        gap: 40rem;
-        position: relative;
+  @media (width <= 1280px) {
+    gap: 4rem;
+  }
 
-        & h1 {
-            font-family: "Playfair Display", sans-serif;
-            font-size: 6.4rem;
-            font-style: italic;
-            font-weight: 500;
-        }
+  @media (width <= 640px) {
+    margin-bottom: 18rem;
+    gap: 9.1rem;
+  }
 
-        & img {
-            position: absolute;
-            top: -20%;
-        }
+  &__heroContent {
+    display: flex;
+    justify-content: center;
+    gap: 40rem;
+    position: relative;
+
+    @media (width <= 1280px) {
+      gap: 27.4rem;
     }
 
-    &__openToWork {
-        display: flex;
-        justify-content: flex-end;
-        font-family: "Roboto", sans-serif;
-
-        & div {
-            background-color: #2b2b2b;
-            border-radius: 2rem;
-            padding: .5rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: .6rem;
-        }
-
-        &--dot {
-            width: 1rem;
-            height: 1rem;
-            background-color: #818181;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &--inner {
-                width: .5rem;
-                height: .5rem;
-                border-radius: 50%;
-                background-color: white;
-            }
-        }
-    } 
-
-    &__intro {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        font-family: "Anton", sans-serif;
-
-        & h2, h3 {
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        & h2 {
-            font-size: 6rem;
-            line-height: 7rem;
-        }
-
-        & h3 {
-            font-size: 2.9rem;
-            line-height: 3.5rem;
-            color: #9f9f9f;
-            padding-bottom: 0.6rem;
-            letter-spacing: 0.08rem;
-        }
+    @media (width <= 640px) {
+      gap: 1rem;
     }
+
+    & h1 {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 6.4rem;
+      font-style: italic;
+      font-weight: 500;
+
+      @media (width <= 1280px) {
+        font-size: 5rem;
+      }
+
+      @media (width <= 640px) {
+        font-size: 4.2rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    & img {
+      position: absolute;
+      top: -20%;
+
+      @media (width <= 1280px) {
+        top: -51%;
+        width: 35%;
+      }
+
+      @media (width <= 640px) {
+        top: 88%;
+        width: 62%;
+      }
+    }
+  }
+
+  &__openToWork {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (width <= 640px) {
+      position: relative;
+      bottom: -200%;
+    }
+
+    & div {
+      background-color: var(--color-zinc-900);
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: background 0.2s ease-out;
+
+      &:hover {
+        background-color: var(--color-zinc-800);
+      }
+
+      @media (width <= 1280px) {
+        padding: 0.5rem 0.9rem 0.5rem 0.7rem;
+      }
+
+      & p {
+        font-size: smaller;
+      }
+    }
+
+    &--dot {
+      width: 1rem;
+      height: 1rem;
+      background-color: #818181;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--inner {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+  }
+
+  &__intro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: "Anton", sans-serif;
+
+    & h2,
+    h3 {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      font-size: 6rem;
+      line-height: 7rem;
+
+      @media (width <= 1280px) {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+
+      @media (width <= 640px) {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+
+    & h3 {
+      font-size: 2.9rem;
+      line-height: 3.5rem;
+      color: #9f9f9f;
+      padding-bottom: 0.6rem;
+      letter-spacing: 0.08rem;
+
+      @media (width <= 1280px) {
+        font-size: 1.9rem;
+        line-height: 2.2rem;
+        padding-bottom: 0.1rem;
+      }
+
+      @media (width <= 640px) {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
 }
 
 .default-header {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 10rem;
+
+  @media (width <= 640px) {
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media (width <= 640px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &--about {
     display: grid;
-    gap: 1.2rem;
-    margin-bottom: 10rem;
+    gap: 1rem;
 
-    &__title {
-        font-size: 3.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
+    & span {
+      color: white;
+      font-weight: 600;
     }
-
-    &--about {
-        display: grid;
-        gap: 1rem;
-        
-        & span {
-            color: white;
-            font-weight: 600;
-        }
-    }
+  }
 }
