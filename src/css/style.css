@@ -6,9 +6,17 @@ body {
   color: white;
   padding-inline: 25rem;
 }
+body::selection {
+  background-color: var(--color-zinc-700);
+}
 @media (width <= 1280px) {
   body {
-    padding-inline: 15rem;
+    padding-inline: 10rem;
+  }
+}
+@media (width <= 640px) {
+  body {
+    padding-inline: 1rem;
   }
 }
 
@@ -23,8 +31,14 @@ textarea {
 .contact__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 8rem;
   align-items: start;
+}
+@media (width <= 640px) {
+  .contact__content {
+    grid-template-columns: none;
+    gap: 6rem;
+  }
 }
 .contact__subtitle {
   font-family: "Antonio", sans-serif;
@@ -39,23 +53,55 @@ textarea {
   line-height: 1.2;
   font-weight: 700;
 }
+@media (width <= 1280px) {
+  .contact__title {
+    font-size: 2.8rem;
+  }
+}
 .contact__title i {
   font-family: "Playfair Display", sans-serif;
   font-style: italic;
   font-weight: 500;
 }
+.contact__description {
+  margin-top: 1.2rem;
+}
+@media (width <= 1280px) {
+  .contact__description {
+    margin-top: 1rem;
+  }
+}
 .contact__description, .contact__email {
-  margin-top: 40px;
   max-width: 480px;
   color: var(--color-zinc-400);
   font-size: 1.2rem;
   line-height: 1.7;
 }
+@media (width <= 1280px) {
+  .contact__description, .contact__email {
+    font-size: 1rem;
+  }
+}
 .contact__email {
-  margin-top: 60px;
+  margin-top: 6rem;
+}
+@media (width <= 1280px) {
+  .contact__email {
+    margin-top: 7rem;
+  }
+}
+@media (width <= 640px) {
+  .contact__email {
+    margin-top: 1rem;
+  }
 }
 .contact a {
   font-size: 1.2rem;
+}
+@media (width <= 1280px) {
+  .contact a {
+    font-size: 1rem;
+  }
 }
 .contact a:hover {
   text-decoration: underline;
@@ -79,14 +125,30 @@ textarea {
   color: var(--color-zinc-400);
   font-size: 1.1rem;
 }
+@media (width <= 1280px) {
+  .description--medium {
+    font-size: 1rem;
+  }
+}
 .description--normal {
   color: var(--color-zinc-400);
   font-size: 1.2rem;
+}
+@media (width <= 1280px) {
+  .description--normal {
+    font-size: 1rem;
+  }
 }
 
 .footer {
   margin-top: 15rem;
   padding-bottom: 1.5rem;
+}
+@media (width <= 640px) {
+  .footer {
+    display: grid;
+    justify-content: center;
+  }
 }
 .footer__gratitude {
   font-size: 1.3rem;
@@ -105,11 +167,32 @@ textarea {
   display: grid;
   gap: 13rem;
 }
+@media (width <= 1280px) {
+  .homeHeader {
+    gap: 4rem;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader {
+    margin-bottom: 18rem;
+    gap: 9.1rem;
+  }
+}
 .homeHeader__heroContent {
   display: flex;
   justify-content: center;
   gap: 40rem;
   position: relative;
+}
+@media (width <= 1280px) {
+  .homeHeader__heroContent {
+    gap: 27.4rem;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader__heroContent {
+    gap: 1rem;
+  }
 }
 .homeHeader__heroContent h1 {
   font-family: "Playfair Display", sans-serif;
@@ -117,22 +200,62 @@ textarea {
   font-style: italic;
   font-weight: 500;
 }
+@media (width <= 1280px) {
+  .homeHeader__heroContent h1 {
+    font-size: 5rem;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader__heroContent h1 {
+    font-size: 4.2rem;
+    line-height: 2.5rem;
+  }
+}
 .homeHeader__heroContent img {
   position: absolute;
   top: -20%;
 }
+@media (width <= 1280px) {
+  .homeHeader__heroContent img {
+    top: -51%;
+    width: 35%;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader__heroContent img {
+    top: 88%;
+    width: 62%;
+  }
+}
 .homeHeader__openToWork {
   display: flex;
   justify-content: flex-end;
-  font-family: "Roboto", sans-serif;
+}
+@media (width <= 640px) {
+  .homeHeader__openToWork {
+    position: relative;
+    bottom: -200%;
+  }
 }
 .homeHeader__openToWork div {
-  background-color: #2b2b2b;
+  background-color: var(--color-zinc-900);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  transition: background 0.2s ease-out;
+}
+.homeHeader__openToWork div:hover {
+  background-color: var(--color-zinc-800);
+}
+@media (width <= 1280px) {
+  .homeHeader__openToWork div {
+    padding: 0.5rem 0.9rem 0.5rem 0.7rem;
+  }
+}
+.homeHeader__openToWork div p {
+  font-size: smaller;
 }
 .homeHeader__openToWork--dot {
   width: 1rem;
@@ -155,13 +278,26 @@ textarea {
   justify-content: space-between;
   font-family: "Anton", sans-serif;
 }
-.homeHeader__intro h2, .homeHeader__intro h3 {
+.homeHeader__intro h2,
+.homeHeader__intro h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
 .homeHeader__intro h2 {
   font-size: 6rem;
   line-height: 7rem;
+}
+@media (width <= 1280px) {
+  .homeHeader__intro h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader__intro h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
 }
 .homeHeader__intro h3 {
   font-size: 2.9rem;
@@ -170,16 +306,39 @@ textarea {
   padding-bottom: 0.6rem;
   letter-spacing: 0.08rem;
 }
+@media (width <= 1280px) {
+  .homeHeader__intro h3 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    padding-bottom: 0.1rem;
+  }
+}
+@media (width <= 640px) {
+  .homeHeader__intro h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
 
 .default-header {
   display: grid;
   gap: 1.2rem;
   margin-bottom: 10rem;
 }
+@media (width <= 640px) {
+  .default-header {
+    margin-bottom: 6rem;
+  }
+}
 .default-header__title {
   font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media (width <= 640px) {
+  .default-header__title {
+    font-size: 2.5rem;
+  }
 }
 .default-header--about {
   display: grid;
@@ -195,6 +354,16 @@ textarea {
   padding-top: 1.5rem;
   margin-bottom: 10rem;
 }
+@media (width <= 1280px) {
+  .nav {
+    margin-bottom: 7rem;
+  }
+}
+@media (width <= 640px) {
+  .nav--link, .nav--activeLink {
+    font-size: 0.9rem;
+  }
+}
 .nav--activeLink {
   font-weight: 600;
   color: white;
@@ -209,56 +378,85 @@ textarea {
   color: white;
 }
 
-.quoteOfTheDay {
+.quoteOfTheWeek {
   margin-bottom: 20rem;
   display: grid;
   gap: 2rem;
 }
-.quoteOfTheDay__header {
+@media (width <= 640px) {
+  .quoteOfTheWeek {
+    margin-bottom: 15rem;
+  }
+}
+.quoteOfTheWeek__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.quoteOfTheDay__header p:first-child {
+.quoteOfTheWeek__header p:first-child {
   font-family: "Antonio", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--color-zinc-200);
   text-transform: uppercase;
 }
-.quoteOfTheDay__header p:last-child {
+.quoteOfTheWeek__header p:last-child {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
-.quoteOfTheDay__content {
+.quoteOfTheWeek__content {
+  display: grid;
+  gap: 2rem;
   border-left: 0.3em solid white;
   padding-block: 1rem;
   padding-inline: 3rem 0;
-  display: grid;
-  gap: 2rem;
 }
-.quoteOfTheDay__content h1, .quoteOfTheDay__content small {
-  font-family: "Playfair Display", sans-serif;
+@media (width <= 640px) {
+  .quoteOfTheWeek__content {
+    padding-inline: 2rem 0;
+    display: grid;
+    gap: 2rem;
+  }
+}
+.quoteOfTheWeek__content h1,
+.quoteOfTheWeek__content small {
   font-weight: 500;
   font-style: italic;
+  font-family: serif;
 }
-.quoteOfTheDay__content h1 {
+.quoteOfTheWeek__content h1 {
   width: 65%;
   font-size: 4rem;
   color: #a7a7a7;
 }
-.quoteOfTheDay__content small {
+@media (width <= 1280px) {
+  .quoteOfTheWeek__content h1 {
+    width: 70%;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media (width <= 640px) {
+  .quoteOfTheWeek__content h1 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+.quoteOfTheWeek__content small {
   font-size: 1.7rem;
 }
-.quoteOfTheDay__content .error {
+@media (width <= 1280px) {
+  .quoteOfTheWeek__content small {
+    font-size: 1.3rem;
+  }
+}
+.quoteOfTheWeek__content .error {
   color: #f44336;
   font-weight: 500;
 }
 
-.showcase-section {
-  padding: 3rem 0;
-}
 .showcase-header {
   display: flex;
   align-items: center;
@@ -278,6 +476,11 @@ textarea {
   margin: 0;
   white-space: nowrap;
   line-height: 1;
+}
+@media (width <= 1280px) {
+  .showcase-heading {
+    font-size: 1.9rem;
+  }
 }
 
 .divider {
@@ -310,25 +513,35 @@ textarea {
 .showCaseGrid--multi-row {
   grid-template-columns: repeat(2, 1fr);
 }
+@media (width <= 640px) {
+  .showCaseGrid--multi-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
-.card {
+.showcase-card {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
-.card svg {
+.showcase-card svg {
   display: none;
 }
-.card:hover svg {
+.showcase-card:hover svg {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
 }
-.card:hover .card--description {
-  color: white;
-  margin: 0;
+@media (width <= 640px) {
+  .showcase-card:hover svg {
+    width: 1rem;
+    height: 1rem;
+  }
 }
-.card--description {
+.showcase-card:hover .showcase-card--description {
+  color: white;
+}
+.showcase-card--description {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-zinc-400);
@@ -338,8 +551,13 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (width <= 640px) {
+  .showcase-card--description {
+    margin-top: 0.5rem;
+  }
+}
 
-.image {
+.cover {
   width: 100%;
   height: 20rem;
   object-fit: cover;
@@ -347,11 +565,10 @@ textarea {
   display: block;
   transition: transform 0.25s ease;
 }
-
-.body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+@media (width <= 1280px) {
+  .cover {
+    height: 16rem;
+  }
 }
 
 .title {
@@ -385,8 +602,19 @@ textarea {
   grid-template-columns: repeat(6, 1fr);
   gap: 3rem 4rem;
 }
-.stack-grid svg {
+@media (width <= 640px) {
+  .stack-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+  }
+}
+.stack-grid svg, .stack-grid img {
   height: 3.5rem;
+}
+@media (width <= 1280px) {
+  .stack-grid svg, .stack-grid img {
+    height: 3rem;
+  }
 }
 .stack-card {
   display: flex;
@@ -529,6 +757,17 @@ textarea {
   grid-template-columns: 30% auto;
   gap: 4rem;
 }
+@media (width <= 1280px) {
+  .work-experience {
+    grid-template-columns: 35% auto;
+  }
+}
+@media (width <= 640px) {
+  .work-experience {
+    grid-template-columns: none;
+    gap: 15rem;
+  }
+}
 .work-experience a {
   transition: color 0.2s ease;
 }
@@ -585,6 +824,13 @@ textarea {
   font-size: 0.8rem;
   font-weight: 500;
 }
+@media (width <= 640px) {
+  .work-experience .profile__resume {
+    width: fit-content;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
 .work-experience .profile__resume, .work-experience .profile__resume svg {
   transition: all 0.2s ease-in;
 }
@@ -602,6 +848,15 @@ textarea {
   font-weight: 500;
   margin-bottom: 2.5rem;
 }
+@media (width <= 640px) {
+  .work-experience .experiences h1 {
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-zinc-600);
+  }
+}
 .work-experience .experiences__timeline {
   color: var(--color-zinc-400);
   display: grid;
@@ -614,31 +869,6 @@ textarea {
 .work-experience .experiences__work {
   display: grid;
   gap: 0.5rem;
-}
-
-.faq {
-  margin-inline: 10rem;
-  margin-top: 15rem;
-  display: grid;
-  gap: 5rem;
-}
-.faq__header {
-  text-align: center;
-  display: grid;
-  gap: 0.8rem;
-}
-.faq__header--subtitle {
-  color: var(--color-zinc-400);
-  text-transform: uppercase;
-}
-.faq__header h1 {
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-.faq__header h1 span {
-  font-family: "Playfair Display", sans-serif;
-  font-style: italic;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
