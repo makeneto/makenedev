@@ -92,19 +92,19 @@
     },
     {
       "id": "ai",
-      "title": "AI",
+      "title": "Artificial intelligence (AI)",
       "stacks": [
-        {
-          "id": "claude",
-          "name": "Claude AI",
-          "category": "AI",
-          "link": "https://claude.ai"
-        },
         {
           "id": "openai",
           "name": "OpenAI",
           "category": "AI",
           "link": "https://openai.com"
+        },
+        {
+          "id": "claude",
+          "name": "Claude AI",
+          "category": "AI",
+          "link": "https://claude.ai"
         },
         {
           "id": "lovable",
@@ -179,6 +179,12 @@
           "link": "https://vercel.com"
         },
         {
+          "id": "expo",
+          "name": "Expo",
+          "category": "Software",
+          "link": "https://expo.dev"
+        },
+        {
           "id": "pnpm",
           "name": "Pnpm",
           "category": "Software",
@@ -193,6 +199,30 @@
       ]
     },
     {
+      "id": "office",
+      "title": "Microsoft Office",
+      "stacks": [
+        {
+          "id": "moword",
+          "name": "Microsoft Word",
+          "category": "Software",
+          "link": "https://www.microsoft.com/en-us/microsoft-365/word"
+        },
+        {
+          "id": "moexcel",
+          "name": "Microsoft Excel",
+          "category": "Software",
+          "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+        },
+        {
+          "id": "mopowerpoint",
+          "name": "Microsoft PowerPoint",
+          "category": "Software",
+          "link": "https://www.microsoft.com/en-us/microsoft-365/powerpoint"
+        }
+      ]
+    },
+    {
       "id": "education",
       "title": "Education",
       "stacks": [
@@ -201,6 +231,12 @@
           "name": "Udemy",
           "category": "Education",
           "link": "https://www.udemy.com"
+        },
+        {
+          "id": "rocketseat",
+          "name": "Rocketseat",
+          "category": "Education",
+          "link": "https://www.rocketseat.com.br"
         },
         {
           "id": "anthropic",
