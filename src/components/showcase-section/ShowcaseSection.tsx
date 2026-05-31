@@ -37,7 +37,7 @@ const ShowcaseSection = ({
 
   return (
     <section ref={sectionRef} className="showcase-section">
-      <ShowcaseHeader title={title} viewAllHref={viewAllHref} />
+      <ShowcaseHeader title={title} />
 
       <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
 
@@ -45,6 +45,7 @@ const ShowcaseSection = ({
         <SectionControls
           page={page}
           totalPages={totalPages}
+          viewAll={viewAllHref}
           onPrev={handlePrev}
           onNext={handleNext}
           label="Web"
