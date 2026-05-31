@@ -11,7 +11,7 @@ interface NavRoutesProps {
 
 export default function NavRoutes({ links }: NavRoutesProps) {
   return (
-    <section className="flex items-center gap-5">
+    <section className="flex items-center gap-3 sm:gap-5">
       {links.map((link) => (
         <NavLink
           key={link.link}
