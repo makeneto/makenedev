@@ -175,6 +175,11 @@ textarea {
     gap: 12.4rem;
   }
 }
+@media (width <= 480px) {
+  .homeHeader {
+    gap: 12.4rem;
+  }
+}
 .homeHeader__heroContent {
   display: flex;
   justify-content: center;
@@ -231,7 +236,7 @@ textarea {
 @media (width <= 640px) {
   .homeHeader__openToWork {
     position: relative;
-    bottom: -300%;
+    bottom: -5rem;
   }
 }
 .homeHeader__openToWork div {
