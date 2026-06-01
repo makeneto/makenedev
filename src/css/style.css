@@ -748,10 +748,6 @@ textarea {
     display: none;
   }
 }
-.experience-section {
-  margin-top: 15rem;
-}
-
 .work-experience {
   display: grid;
   grid-template-columns: 30% auto;
