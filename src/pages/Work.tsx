@@ -1,9 +1,10 @@
 import React from "react"
+
 import DefaultHeader from "../components/headers/DefaultHeader"
 import ShowcaseSection from "../components/showcase-section/ShowcaseSection"
 import WorkResume from "../components/WorkResume"
-import { works } from "../data/works"
 import { useTitle } from "../hooks/useTitle"
+import { works } from "../data/works"
 
 export default function Work() {
   useTitle("My Works")
