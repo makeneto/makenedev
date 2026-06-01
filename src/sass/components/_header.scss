@@ -12,6 +12,10 @@
     gap: 12.4rem;
   }
 
+  @media (width <= 480px) {
+    gap: 12.4rem;
+  }
+
   &__heroContent {
     display: flex;
     justify-content: center;
@@ -64,7 +68,7 @@
 
     @media (width <= 640px) {
       position: relative;
-      bottom: -300%;
+      bottom: -5rem;
     }
 
     & div {
