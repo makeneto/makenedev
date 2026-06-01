@@ -8,9 +8,18 @@
   }
 
   @media (width <= 640px) {
+    margin-bottom: 6rem;
+    
     &--link,
     &--activeLink {
-      font-size: .9rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (width <= 400px) {
+    &--link,
+    &--activeLink {
+      font-size: 0.8rem;
     }
   }
 
