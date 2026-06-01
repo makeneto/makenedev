@@ -46,15 +46,21 @@ export default function Timeline() {
             <div className="timeline__year">{year.year}</div>
 
             <div className="timeline__column">
-              {year.personal && <TimelineCard {...year.personal} />}
+              {year.personal && (
+                <TimelineCard {...year.personal} track="Personal" />
+              )}
             </div>
 
             <div className="timeline__column">
-              {year.engineering && <TimelineCard {...year.engineering} />}
+              {year.engineering && (
+                <TimelineCard {...year.engineering} track="Engineering" />
+              )}
             </div>
 
             <div className="timeline__column">
-              {year.business && <TimelineCard {...year.business} />}
+              {year.business && (
+                <TimelineCard {...year.business} track="Business" />
+              )}
             </div>
           </React.Fragment>
         ))}
