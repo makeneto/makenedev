@@ -12,13 +12,10 @@ export default function Timeline() {
         <ShowcaseHeader title="Timeline" />
         <div>
           <p className="description--normal">
-            A journey is not a straight line it’s a sequence of choices, doubts,
-            and quiet adjustments. This timeline exists not only to show what
-            was done, but to reflect what drove each shift in direction. Every
-            step here represents a moment when something stopped making sense or
-            started to make more sense than before.None of this is about speed
-            or perfection. It’s about intentional evolution even when that
-            intention wasn’t clear at the time.
+            A journey isn’t linear — it’s choices, doubts and adjustments. This
+            timeline reflects shifts in direction, where things stopped or
+            started making more sense. It’s not about speed or perfection, but
+            intentional evolution.
           </p>
         </div>
       </div>
