@@ -3,6 +3,7 @@ type TimelineCardProps = {
   subtitle: string
   description: string
   tags?: string[]
+  track: string
 }
 
 export default function TimelineCard({
@@ -10,11 +11,14 @@ export default function TimelineCard({
   subtitle,
   description,
   tags,
+  track,
 }: TimelineCardProps) {
   return (
     <div className="timeline-card">
       <div className="timeline-card__dot" />
-      <span className="timeline-card__title">{title}</span>
+      <span className="timeline-card__title" data-track={track}>
+        {title}
+      </span>
       <h4 className="timeline-card__subtitle">{subtitle}</h4>
       <p className="timeline-card__description">{description}</p>
 
