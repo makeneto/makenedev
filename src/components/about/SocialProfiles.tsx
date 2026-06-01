@@ -10,11 +10,11 @@ export default function SocialProfiles() {
       {profileLinks.map((link) => (
         <Link key={link.link} to={link.link} target="_blank" prefetch="intent">
           {link.label === "Github" ? (
-            <RiGithubLine size={22} />
+            <RiGithubLine size={19} />
           ) : link.label === "LinkedIn" ? (
-            <RiLinkedinBoxFill size={22} />
+            <RiLinkedinBoxFill size={19} />
           ) : link.label === "Email" ? (
-            <Mail size={22} />
+            <Mail size={19} />
           ) : null}
         </Link>
       ))}
