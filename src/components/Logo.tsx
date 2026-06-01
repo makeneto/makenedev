@@ -13,7 +13,7 @@ export default function Logo({ variant }: LogoProps) {
         className={
           variant === "nav"
             ? "w-8 sm:w-12"
-            : "w-16 m-auto sm:m-0"
+            : "w-12 m-auto sm:m-0"
         }
       />
     </NavLink>
