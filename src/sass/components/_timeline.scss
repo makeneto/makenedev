@@ -15,7 +15,6 @@
   &__grid {
     display: grid;
     grid-template-columns: 80px repeat(3, 1fr);
-
     border-top: 1px solid var(--color-zinc-800);
   }
 
@@ -42,10 +41,8 @@
   &__year {
     padding-top: 1.9rem;
     padding-inline: 2rem;
-
     font-size: 0.7rem;
     color: rgba(255, 255, 255, 0.35);
-
     border-right: 1px solid var(--color-zinc-800);
     border-bottom: 1px solid var(--color-zinc-800);
     border-left: 1px solid var(--color-zinc-800);
@@ -54,10 +51,8 @@
   &__column {
     min-height: 150px;
     padding: 1.5rem 1rem 2.2rem;
-
     border-right: 1px solid var(--color-zinc-800);
     border-bottom: 1px solid var(--color-zinc-800);
-
     position: relative;
   }
 }
@@ -70,13 +65,10 @@
     position: absolute;
     left: -1.22rem;
     top: 0.66rem;
-
     width: 6px;
     height: 6px;
-
     border-radius: 999px;
     background: #fff;
-
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
   }
 
@@ -92,15 +84,12 @@
   &__subtitle {
     font-size: 0.875rem;
     font-weight: 600;
-
     margin-bottom: 0.5rem;
-
     color: rgba(255, 255, 255, 0.95);
   }
 
   &__description {
     font-size: 0.875rem;
-
     line-height: 1.6;
     max-width: 220px;
     color: rgba(255, 255, 255, 0.45);
@@ -124,20 +113,71 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .timeline {
+    gap: 6rem;
+
+    &__empty {
+      display: none;
+    }
+
     &__grid {
-      grid-template-columns: 60px 1fr;
+      border: none;
+      grid-template-columns: 1fr;
     }
 
-    &__header:nth-child(3),
-    &__header:nth-child(4) {
+    &__header {
       display: none;
     }
 
-    &__column:nth-child(4n),
-    &__column:nth-child(4n - 1) {
+    &__year {
+      grid-column: 1 / -1;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: "Antonio", sans-serif;
+      font-size: 1.27rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      padding-top: 1.5rem;
+      padding-inline: 0;
+      padding-bottom: 1rem;
+
+      &::before {
+        content: "*";
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+
+    &__column {
+      grid-column: 1 / -1;
+      border: none;
+      min-height: auto;
+      padding-inline: 0;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  .timeline-card {
+    @media (width <= 640px) {
+      padding-left: 0;
+    }
+
+    &__dot {
       display: none;
+    }
+
+    &__title {
+      &::before {
+        content: attr(data-track) " · ";
+        color: white;
+      }
     }
   }
 }
