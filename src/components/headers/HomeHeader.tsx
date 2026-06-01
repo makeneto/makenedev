@@ -12,15 +12,17 @@ export default function HomeHeader() {
         <h1>there!</h1>
       </section>
 
-      <Link to="/contact" prefetch="intent" className="homeHeader__openToWork">
+      <div className="homeHeader__openToWork">
         <div>
           <span className="homeHeader__openToWork--dot">
             <span className="homeHeader__openToWork--dot--inner"></span>
           </span>
 
-          <p>Available {!isMobile && "for new opportunities"} </p>
+          <Link to="/contact" prefetch="intent">
+            Available {!isMobile && "for new opportunities"}
+          </Link>
         </div>
-      </Link>
+      </div>
 
       <article className="homeHeader__intro">
         <h2>
