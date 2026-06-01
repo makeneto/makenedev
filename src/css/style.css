@@ -146,6 +146,7 @@ textarea {
 }
 @media (width <= 640px) {
   .footer {
+    margin-top: 10rem;
     display: grid;
     justify-content: center;
   }
