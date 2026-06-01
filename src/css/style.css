@@ -231,7 +231,7 @@ textarea {
 @media (width <= 640px) {
   .homeHeader__openToWork {
     position: relative;
-    bottom: -200%;
+    bottom: -300%;
   }
 }
 .homeHeader__openToWork div {
