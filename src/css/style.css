@@ -172,7 +172,7 @@ textarea {
 @media (width <= 640px) {
   .homeHeader {
     margin-bottom: 18rem;
-    gap: 9.1rem;
+    gap: 11rem;
   }
 }
 .homeHeader__heroContent {
@@ -204,7 +204,7 @@ textarea {
 }
 @media (width <= 640px) {
   .homeHeader__heroContent h1 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     line-height: 2.5rem;
   }
 }
@@ -220,7 +220,7 @@ textarea {
 }
 @media (width <= 640px) {
   .homeHeader__heroContent img {
-    top: 88%;
+    top: 87%;
     width: 62%;
   }
 }
