@@ -12,8 +12,9 @@
     gap: 12.4rem;
   }
 
-  @media (width <= 480px) {
-    gap: 12.4rem;
+  @media (width <= 400px) {
+    margin-bottom: 15rem;
+    gap: 10.4rem;
   }
 
   &__heroContent {
@@ -59,6 +60,11 @@
         top: 77%;
         width: 69%;
       }
+
+      @media (width <= 400px) {
+        top: 84%;
+        width: 65%;
+      }
     }
   }
 
@@ -86,6 +92,10 @@
 
       @media (width <= 1280px) {
         padding: 0.5rem 0.9rem 0.5rem 0.7rem;
+      }
+
+      @media (width <= 400px) {
+        padding: 0.3rem 0.8rem 0.3rem 0.5rem;
       }
 
       & p {
@@ -136,6 +146,11 @@
         font-size: 4rem;
         line-height: 4rem;
       }
+
+      @media (width <= 400px) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
     }
 
     & h3 {
@@ -174,7 +189,11 @@
     text-transform: uppercase;
 
     @media (width <= 640px) {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
+    }
+
+    @media (width <= 400px) {
+      font-size: 2.2rem;
     }
   }
 
