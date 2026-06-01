@@ -9,10 +9,12 @@ import "./css/index.css"
 import { Toaster } from "../src/components/ui/sonner.tsx"
 import Navbar from "./components/Navbar.tsx"
 import Footer from "./components/Footer.tsx"
+import ScrollToTop from "./hooks/scrollToTop.ts"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <App />
       <Footer />
