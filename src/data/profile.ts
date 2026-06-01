@@ -19,21 +19,21 @@ export const profile: Profile = {
       company: "Freelance",
       role: "Full-Stack Freelancer",
       description:
-        "Develop web and mobile applications with React Native, Next.js and more, delivering complete solutions for worldwide clients.",
+        "Deliver end-to-end digital products that solve real problems and create value for clients across different contexts and needs.",
       period: "2025 - Present",
     },
     {
       company: "Ourivesaria Luciano B.",
       role: "Frontend Developer",
       description:
-        "Build modern responsive interfaces using React, TypeScript, and TailwindCSS, focusing on high-impact UX/UI.",
+        "Designed and developed a complete application from scratch, collaborating closely with the UI/UX team to ensure scalable architecture and strong user experience.",
       period: "2023 - 2025",
     },
     {
       company: "Techwave Solutions",
       role: "Web Development Intern",
       description:
-        "Developed reusable and responsive components using React and Styled-components, accelerating internal project development.",
+        "Built reusable, responsive components with Next, Sass, Node.js and more, improving speed and consistency in internal development workflows.",
       period: "2022 - 2023",
     },
   ],
