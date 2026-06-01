@@ -15,8 +15,16 @@
     font-family: "Antonio", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    color: var(--color-zinc-200);
+    color: var(--color-zinc-300);
     text-transform: uppercase;
+
+    @media (width <= 640px) {
+      font-size: 1.2rem;
+    }
+
+    @media (width <= 400px) {
+      font-size: 1.1rem;
+    }
   }
 
   &__title {
@@ -27,6 +35,15 @@
 
     @media (width <= 1280px) {
       font-size: 2.8rem;
+    }
+
+    @media (width <= 640px) {
+      margin-top: 0.7rem;
+      font-size: 2.2rem;
+    }
+
+    @media (width <= 400px) {
+      font-size: 2rem;
     }
 
     i {
