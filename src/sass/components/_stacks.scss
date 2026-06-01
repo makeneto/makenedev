@@ -39,6 +39,10 @@
       @media (width <= 1280px) {
         height: 3rem;
       }
+
+      @media (width <= 640px) {
+        height: 2.97rem;
+      }
     }
   }
 
