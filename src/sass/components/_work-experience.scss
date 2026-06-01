@@ -135,6 +135,10 @@
         color: white;
         font-weight: 500;
       }
+
+      @media (width <= 640px) {
+        gap: 3rem;
+      }
     }
 
     &__work {
