@@ -819,7 +819,7 @@ textarea {
 
 @media (max-width: 640px) {
   .timeline {
-    gap: 6rem;
+    gap: 5rem;
   }
   .timeline__empty {
     display: none;
