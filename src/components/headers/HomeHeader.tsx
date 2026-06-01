@@ -8,7 +8,7 @@ export default function HomeHeader() {
     <header className="homeHeader">
       <section className="homeHeader__heroContent">
         <h1>Hey, </h1>
-        <img src="/assets/hero-img.webp" alt="Hero image" />
+        <img src="/assets/hero-img.webp" alt="Makene Neto" />
         <h1>there!</h1>
       </section>
 
