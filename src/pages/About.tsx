@@ -3,7 +3,7 @@ import AboutDescription from "../components/about/AboutDescription"
 import WorkExperience from "../components/about/WorkExperience"
 import Timeline from "../components/about/Timeline"
 import { useTitle } from "../hooks/useTitle"
-import StoryResume from "../components/about/StoryResume"
+import AboutResume from "../components/about/AboutResume"
 
 export default function About() {
   useTitle("About Me")
@@ -13,7 +13,7 @@ export default function About() {
       <DefaultHeader title="About me" component={<AboutDescription />} />
       <WorkExperience />
       <Timeline />
-      <StoryResume />
+      <AboutResume />
     </div>
   )
 }
