@@ -4,7 +4,7 @@ import Profile from "./Profile"
 
 export default function WorkExperience() {
   return (
-    <section className="experience-section">
+    <section>
       <ShowcaseHeader title="Profile" />
       <section className="work-experience">
         <Profile />
