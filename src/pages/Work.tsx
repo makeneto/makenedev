@@ -12,7 +12,7 @@ export default function Work() {
     <React.Fragment>
       <DefaultHeader
         title="My Work"
-        description="Algumas coisas você vê e segue em frente. Outras te param. Te fazem olhar duas vezes. Te fazem se perguntar como foram feitas. Esse é o único tipo de trabalho que vale a pena. Porque a atenção não é mais barata — tudo compete por ela ao mesmo tempo. Se o seu trabalho não cria uma pausa, mesmo que seja por um segundo, então é apenas ruído com tipografia melhor."
+        description="Some things you see and move on. Others stop you. Make you look twice. Make you wonder how they were made. That's the only kind of work that's worthwhile. Because attention isn't cheap everything competes for it at the same time. If your work doesn't create a pause, even for a second, then it's just noise with better typography."
       />
 
       <ShowcaseSection title="All Works" items={works} />
