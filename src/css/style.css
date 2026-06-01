@@ -994,6 +994,11 @@ textarea {
   color: white;
   font-weight: 500;
 }
+@media (width <= 640px) {
+  .work-experience .experiences__timeline {
+    gap: 3rem;
+  }
+}
 .work-experience .experiences__work {
   display: grid;
   gap: 0.5rem;
