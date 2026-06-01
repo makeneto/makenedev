@@ -13,7 +13,7 @@ const ShowcaseCard: React.FC<Props> = ({ item }) => {
       <img
         src={item.imageUrl}
         alt={item.imageAlt ?? item.title}
-        className="cover"
+        className="showcase-cover"
         loading="lazy"
       />
 
