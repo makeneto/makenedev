@@ -11,7 +11,8 @@ export default function Stack() {
     <React.Fragment>
       <DefaultHeader
         title="My Stack"
-        description="Front-end is where I started — and where I still feel most at home. But curiosity doesn't respect boundaries. Over time, the stack grew. Not because I was chasing trends, but because every project asked for something more. A server here. A database there. An AI integration that changed how I think about building altogether. I'm not a specialist in everything. I'm someone who learns deeply, connects the dots, and keeps moving forward. This page is proof of that movement."
+        description="Front-end is where I started and still feel at home, but curiosity expanded my stack over time. What began with interfaces grew into backend systems, databases, and AI integrations that changed how I think about building. I’m not a specialist in everything — I learn deeply, connect the dots across domains, and keep moving forward.
+"
       />
       <StackSection />
       <StackResume />
