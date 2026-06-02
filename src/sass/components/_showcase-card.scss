@@ -43,18 +43,18 @@
 
 .showcase-cover {
   width: 100%;
-  height: 20rem;
+  height: 20.5rem;
   object-fit: cover;
   object-position: center center;
   display: block;
   transition: transform 0.25s ease;
 
   @media (width <= 1280px) {
-    height: 16rem;
+    height: 17.5rem;
   }
 
   @media (width <= 640px) {
-    height: 15rem;
+    height: 15.5rem;
   }
 
   @media (width <= 400px) {
