@@ -57,7 +57,7 @@
       }
 
       @media (width <= 640px) {
-        top: 77%;
+        top: 83%;
         width: 69%;
       }
 
@@ -85,6 +85,13 @@
       align-items: center;
       gap: 0.6rem;
       transition: background 0.2s ease-out;
+      
+      @media (width <= 640px) {
+        & a {
+          font-size: .7rem;
+        }     
+      }
+
 
       &:hover {
         background-color: var(--color-zinc-800);
@@ -112,11 +119,21 @@
       align-items: center;
       justify-content: center;
 
+      @media (width <= 640px) {
+          width: 0.8em;
+          height: 0.8rem;
+      }
+
       &--inner {
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 50%;
         background-color: white;
+
+        @media (width <= 640px) {
+            width: 0.4rem;
+            height: 0.4rem;
+        }
       }
     }
   }
