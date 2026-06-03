@@ -253,7 +253,7 @@ textarea {
 }
 @media (width <= 640px) {
   .homeHeader__heroContent img {
-    top: 77%;
+    top: 83%;
     width: 69%;
   }
 }
@@ -282,6 +282,11 @@ textarea {
   gap: 0.6rem;
   transition: background 0.2s ease-out;
 }
+@media (width <= 640px) {
+  .homeHeader__openToWork div a {
+    font-size: 0.7rem;
+  }
+}
 .homeHeader__openToWork div:hover {
   background-color: var(--color-zinc-800);
 }
@@ -307,11 +312,23 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+@media (width <= 640px) {
+  .homeHeader__openToWork--dot {
+    width: 0.8em;
+    height: 0.8rem;
+  }
+}
 .homeHeader__openToWork--dot--inner {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: white;
+}
+@media (width <= 640px) {
+  .homeHeader__openToWork--dot--inner {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
 }
 .homeHeader__intro {
   display: flex;
