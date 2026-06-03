@@ -1,12 +1,26 @@
 export default function useDownloadResume() {
-  const filePath = "/documents/ls-makene-resume.pdf"
+  const handleClick = async () => {
+    let filename = "makene-resume-lsen.pdf"
 
-  const handleClick = () => {
+    try {
+      const res = await fetch("https://ipapi.co/json/")
+      const data = await res.json()
+
+      const country = data?.country_code
+
+      if (country === "AO") {
+        filename = "makene-resume-lden.pdf"
+      }
+    } catch {
+      filename = "makene-resume-lsen.pdf"
+    }
+
+    const filePath = `/documents/${filename}`
     window.open(filePath, "_blank")
 
     const link = document.createElement("a")
     link.href = filePath
-    link.download = "ls-makene-resume.pdf"
+    link.download = filename
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
