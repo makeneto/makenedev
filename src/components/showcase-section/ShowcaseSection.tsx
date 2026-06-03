@@ -48,7 +48,6 @@ const ShowcaseSection = ({
           viewAll={viewAllHref}
           onPrev={handlePrev}
           onNext={handleNext}
-          label="Web"
         />
       )}
     </section>
