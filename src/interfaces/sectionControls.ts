@@ -3,6 +3,5 @@ export interface SectionControlsProps {
   totalPages: number
   onPrev: () => void
   onNext: () => void
-  label: string
   viewAll?: string
 }
