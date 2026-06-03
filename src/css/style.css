@@ -695,11 +695,6 @@ textarea {
     height: 15.5rem;
   }
 }
-@media (width <= 884px) {
-  .showcase-cover {
-    height: 13rem;
-  }
-}
 @media (width <= 400px) {
   .showcase-cover {
     height: 14rem;
