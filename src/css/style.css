@@ -625,7 +625,7 @@ textarea {
   margin: 0;
   padding: 0;
 }
-@media (width <= 884px) {
+@media (width > 640px) and (width <= 884px) {
   .showCaseGrid {
     grid-template-columns: repeat(2, 1fr);
   }
