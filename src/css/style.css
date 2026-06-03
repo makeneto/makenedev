@@ -15,6 +15,11 @@ body::selection {
     padding-inline: 10rem;
   }
 }
+@media (width <= 884px) {
+  body {
+    padding-inline: 2rem;
+  }
+}
 @media (width <= 640px) {
   body {
     padding-inline: 1rem;
@@ -39,6 +44,11 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
   align-items: start;
+}
+@media (width <= 884px) {
+  .contact__content {
+    gap: 4rem;
+  }
 }
 @media (width <= 640px) {
   .contact__content {
@@ -219,6 +229,11 @@ textarea {
     gap: 27.4rem;
   }
 }
+@media (width <= 884px) {
+  .homeHeader__heroContent {
+    gap: 17.5rem;
+  }
+}
 @media (width <= 640px) {
   .homeHeader__heroContent {
     gap: 1rem;
@@ -249,6 +264,12 @@ textarea {
   .homeHeader__heroContent img {
     top: -51%;
     width: 35%;
+  }
+}
+@media (width <= 768px) {
+  .homeHeader__heroContent img {
+    top: -10%;
+    width: 40%;
   }
 }
 @media (width <= 640px) {
@@ -428,6 +449,11 @@ textarea {
     margin-bottom: 7rem;
   }
 }
+@media (width <= 884px) {
+  .nav {
+    margin-bottom: 8rem;
+  }
+}
 @media (width <= 640px) {
   .nav {
     margin-bottom: 6rem;
@@ -513,6 +539,13 @@ textarea {
     line-height: 4rem;
   }
 }
+@media (width <= 884px) {
+  .quoteOfTheWeek__content h1 {
+    width: 85%;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
 @media (width <= 640px) {
   .quoteOfTheWeek__content h1 {
     width: 100%;
@@ -592,6 +625,11 @@ textarea {
   margin: 0;
   padding: 0;
 }
+@media (width <= 884px) {
+  .showCaseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .showCaseGrid--multi-row {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -652,9 +690,14 @@ textarea {
     height: 17.5rem;
   }
 }
-@media (width <= 640px) {
+@media (width <= 884px) {
   .showcase-cover {
     height: 15.5rem;
+  }
+}
+@media (width <= 884px) {
+  .showcase-cover {
+    height: 13rem;
   }
 }
 @media (width <= 400px) {
@@ -834,7 +877,7 @@ textarea {
   padding: 0.125rem 0.625rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   .timeline {
     gap: 5rem;
   }
@@ -878,12 +921,12 @@ textarea {
     display: none;
   }
 }
-@media (max-width: 640px) and (width <= 640px) {
+@media (max-width: 840px) and (width <= 640px) {
   .timeline-card {
     padding-left: 0;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   .timeline-card__dot {
     display: none;
   }
@@ -900,6 +943,12 @@ textarea {
 @media (width <= 1280px) {
   .work-experience {
     grid-template-columns: 35% auto;
+  }
+}
+@media (width <= 884px) {
+  .work-experience {
+    grid-template-columns: 38% auto;
+    gap: 2rem;
   }
 }
 @media (width <= 640px) {
