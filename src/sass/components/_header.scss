@@ -27,6 +27,10 @@
       gap: 27.4rem;
     }
 
+    @media (width <= 884px) {
+      gap: 17.5rem;
+    }
+
     @media (width <= 640px) {
       gap: 1rem;
     }
@@ -54,6 +58,11 @@
       @media (width <= 1280px) {
         top: -51%;
         width: 35%;
+      }
+
+      @media (width <= 768px) {
+        top: -10%;
+        width: 40%;
       }
 
       @media (width <= 640px) {
