@@ -972,7 +972,7 @@ textarea {
 @media (width <= 640px) {
   .work-experience .profile__resume {
     width: fit-content;
-    gap: 0.8rem;
+    gap: 0.67rem;
     padding: 0.5rem 1rem;
   }
 }
