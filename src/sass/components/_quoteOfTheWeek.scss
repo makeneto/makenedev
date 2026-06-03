@@ -57,6 +57,13 @@
         line-height: 4rem;
       }
 
+      @media (width <= 884px) {
+        width: 85%;
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+      }
+      
+
       @media (width <= 640px) {
         width: 100%;
         font-size: 1.9rem;
