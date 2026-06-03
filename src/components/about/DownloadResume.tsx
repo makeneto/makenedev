@@ -8,7 +8,7 @@ export default function DownloadResume() {
   return (
     <button type="button" onClick={handleClick} className="profile__resume">
       Download Resume
-      <FileDown size={18} />
+      <FileDown size={15} />
     </button>
   )
 }
