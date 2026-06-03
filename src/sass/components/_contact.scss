@@ -5,6 +5,11 @@
     gap: 8rem;
     align-items: start;
 
+    @media (width <= 884px) {
+      gap: 4rem;
+    }
+    
+
     @media (width <= 640px) {
       grid-template-columns: none;
       gap: 6rem;
