@@ -7,6 +7,12 @@
     grid-template-columns: 35% auto;
   }
 
+  @media (width <= 884px) {
+    grid-template-columns: 38% auto;
+    gap: 2rem;
+  }
+  
+
   @media (width <= 640px) {
     grid-template-columns: none;
     gap: 15rem;
