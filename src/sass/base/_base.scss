@@ -15,6 +15,10 @@ body {
     padding-inline: 10rem;
   }
 
+  @media (width <= 884px) {
+    padding-inline: 2rem;   
+  }
+
   @media (width <= 640px) {
     padding-inline: 1rem;
   }
