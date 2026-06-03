@@ -23,7 +23,7 @@ export const profile: Profile = {
       period: "2025 - Present",
     },
     {
-      company: "Ourivesaria Luciano B.",
+      company: "Luciano B Goldsmiths",
       role: "Frontend Developer",
       description:
         "Designed and developed a complete application from scratch, collaborating closely with the UI/UX team to ensure scalable architecture and strong user experience.",
