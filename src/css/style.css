@@ -459,7 +459,7 @@ textarea {
     margin-bottom: 6rem;
   }
   .nav--link, .nav--activeLink {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 @media (width <= 400px) {
@@ -487,8 +487,8 @@ textarea {
 }
 @media (width <= 640px) {
   .nav-icon {
-    width: 1rem;
-    height: 1rem;
+    width: 1.15rem;
+    height: 1.15rem;
   }
 }
 
