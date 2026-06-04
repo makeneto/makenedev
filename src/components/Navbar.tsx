@@ -1,4 +1,3 @@
-import { RiTranslate2 } from "@remixicon/react"
 import { navLinks } from "../data/links"
 import Logo from "./Logo"
 import NavRoutes from "./NavRoutes"
