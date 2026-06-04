@@ -27,6 +27,11 @@
     }
   }
 
+  &--link,
+  &--activeLink {
+    text-transform: capitalize;
+  } 
+
   &--activeLink {
     font-weight: 600;
     color: white;
