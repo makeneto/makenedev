@@ -17,6 +17,7 @@ export default function NavRoutes({ links }: NavRoutesProps) {
           key={link.link}
           to={link.link}
           prefetch="intent"
+          translate={link.label === "Stack" || link.label === "Home" ? "no" : "yes"}
           className={({ isActive }) =>
             isActive ? "nav--activeLink" : "nav--link"
           }
