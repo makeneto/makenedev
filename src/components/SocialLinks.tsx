@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import {
+  RiDribbbleLine,
   RiGithubLine,
   RiInstagramLine,
   RiLinkedinBoxFill,
@@ -24,6 +25,8 @@ export default function SocialLinks() {
             <RiLinkedinBoxFill className="nav-icon" />
           ) : link.label === "Instagram" ? (
             <RiInstagramLine className="nav-icon" />
+          ) : link.label === "Dribbble" ? (
+            <RiDribbbleLine className="nav-icon" />
           ) : (
             link.label
           )}
