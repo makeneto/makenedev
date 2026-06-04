@@ -49,10 +49,6 @@ export const socialLinks = [
     label: "Instagram",
     link: "https://instagram.com/makeneto",
   },
-  {
-    label: "Dribbble",
-    link: "https://dribbble.com/makeneto",
-  },
 ]
 
 export const contacts = [
