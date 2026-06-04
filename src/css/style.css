@@ -473,6 +473,9 @@ textarea {
     font-size: 0.8rem;
   }
 }
+.nav--link, .nav--activeLink {
+  text-transform: capitalize;
+}
 .nav--activeLink {
   font-weight: 600;
   color: white;
