@@ -1,6 +1,6 @@
 import ProfilePic from "./ProfilePic"
 import ProfileHeader from "./ProfileHeader"
-import ProfileContact from "./ProfileContact"
+import ProfileLinks from "./ProfileLinks"
 import SocialProfiles from "./SocialProfiles"
 import DownloadResume from "./DownloadResume"
 
@@ -11,7 +11,7 @@ export default function Profile() {
 
       <div className="profile__content">
         <ProfileHeader />
-        <ProfileContact />
+        <ProfileLinks />
         <SocialProfiles />
         <DownloadResume />
       </div>
