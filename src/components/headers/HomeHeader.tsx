@@ -7,9 +7,9 @@ export default function HomeHeader() {
   return (
     <header className="homeHeader">
       <section className="homeHeader__heroContent">
-        <h1>Hey, </h1>
+        <h1 translate="no">Hey, </h1>
         <img src="/assets/hero-img.webp" alt="Makene Neto" />
-        <h1>there!</h1>
+        <h1 translate="no">there!</h1>
       </section>
 
       <div className="homeHeader__openToWork">
@@ -28,7 +28,7 @@ export default function HomeHeader() {
         <h2>
           I am
           <br />
-          Makene
+          <span translate="no">Makene</span>
         </h2>
 
         <h3>
