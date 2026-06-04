@@ -19,7 +19,7 @@ const ShowcaseCard: React.FC<Props> = ({ item }) => {
 
       <div className="flex-col gap-2">
         <div className="flex items-center justify-between">
-          <h3 className="title">{item.title}</h3>
+          <h3 className="title" translate="no">{item.title}</h3>
           <ExternalLink />
         </div>
         <p className="showcase-card--description">{item.description}</p>
