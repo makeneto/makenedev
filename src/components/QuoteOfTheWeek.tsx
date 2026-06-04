@@ -1,29 +1,11 @@
-import { useEffect, useState } from "react"
+import { useQuote } from "../hooks/useQuote"
 import { weekCounter } from "../utils/weekCounter"
-import type { Quote } from "../interfaces/quote"
-import { getWeeklyQuote } from "../services/makenesquotes"
 import { Link } from "react-router-dom"
 
 export default function QuoteOfTheWeek() {
   const { currentWeek, totalWeeks } = weekCounter()
-
-  const [data, setData] = useState<Quote | null>(null)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    async function loadQuote() {
-      try {
-        const res = await getWeeklyQuote()
-        setData(res)
-      } catch (err) {
-        console.error(err)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    loadQuote()
-  }, [])
+  const {loading, data} = useQuote()
+  
 
   return (
     <section className="quoteOfTheWeek">
@@ -42,7 +24,7 @@ export default function QuoteOfTheWeek() {
         </h1>
 
         <div className="flex items-center justify-between">
-          <small>— {loading ? "Loading..." : data?.quote?.author}</small>
+          <small translate="no">— {loading ? "Loading..." : data?.quote?.author}</small>
 
           <Link
             to="https://makenedev-primeapi.vercel.app/quote/week"
