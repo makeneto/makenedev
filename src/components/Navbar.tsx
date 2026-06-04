@@ -1,3 +1,4 @@
+import { RiTranslate2 } from "@remixicon/react"
 import { navLinks } from "../data/links"
 import Logo from "./Logo"
 import NavRoutes from "./NavRoutes"
@@ -12,7 +13,11 @@ export default function Navbar() {
         <NavRoutes links={navLinks} />
       </div>
 
-      <SocialLinks />
+      <div className="flex items-center gap-3 sm:gap-5">
+        <SocialLinks />
+        <div className="w-px h-4 sm:h-5 bg-zinc-700" />
+        <RiTranslate2 className="nav--link nav-icon"/>
+      </div>
     </nav>
   )
 }
