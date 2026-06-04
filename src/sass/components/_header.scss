@@ -153,6 +153,10 @@
     justify-content: space-between;
     font-family: "Anton", sans-serif;
 
+    @media (width <= 640px) {
+      gap: 4.8rem;   
+    }
+
     & h2,
     h3 {
       font-weight: 500;
@@ -180,11 +184,12 @@
     }
 
     & h3 {
+      text-align: end;
       font-size: 2.9rem;
       line-height: 3.5rem;
       color: #9f9f9f;
       padding-bottom: 0.6rem;
-      letter-spacing: 0.08rem;
+      letter-spacing: 0.05rem;
 
       @media (width <= 1280px) {
         font-size: 1.9rem;
