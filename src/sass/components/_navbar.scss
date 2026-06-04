@@ -52,5 +52,11 @@
       width: 1.15rem;
       height: 1.15rem;
     }
+
+    @media (width <= 400px) {
+        width: 1rem;
+        height: 1rem;
+    }
+    
   }
 }
