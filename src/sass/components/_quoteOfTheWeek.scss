@@ -65,7 +65,7 @@
       
 
       @media (width <= 640px) {
-        width: 100%;
+        width: 85%;
         font-size: 1.9rem;
         line-height: 2.3rem;
       }
@@ -81,6 +81,11 @@
 
       @media (width <= 1280px) {
         font-size: 1.3rem;
+      }
+
+      @media (width <= 640px) {
+        font-size: 1rem;
+          
       }
     }
 
