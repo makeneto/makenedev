@@ -6,6 +6,7 @@ export default function WorkExperience() {
   return (
     <section>
       <ShowcaseHeader title="Profile" />
+
       <section className="work-experience">
         <Profile />
         <Experiences />
