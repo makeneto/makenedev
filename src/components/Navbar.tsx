@@ -13,11 +13,7 @@ export default function Navbar() {
         <NavRoutes links={navLinks} />
       </div>
 
-      <div className="flex items-center gap-3 sm:gap-5">
-        <SocialLinks />
-        <div className="w-px h-4 sm:h-5 bg-zinc-700" />
-        <RiTranslate2 className="nav--link nav-icon"/>
-      </div>
+      <SocialLinks />
     </nav>
   )
 }
