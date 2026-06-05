@@ -3,7 +3,7 @@
 
 -   💓 I've been addicted to programming since **2021**
 
--   🛠️ I constantly work to improve my skills as a **Full-stack Developer**.
+-   🛠️ I constantly work to improve my skills as a **Front-end Developer**.
 
 -   🔍 Always looking for new challenges to expand my knowledge.
 
