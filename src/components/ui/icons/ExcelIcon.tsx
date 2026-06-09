@@ -2,7 +2,7 @@ import StackCard from "../../stack/StackCard"
 
 export default function ExcelIcon() {
   return (
-    <StackCard name="Microsoft Excel">
+    <StackCard name="Excel">
       <svg viewBox="0 0 486 500">
         <defs>
           <radialGradient
