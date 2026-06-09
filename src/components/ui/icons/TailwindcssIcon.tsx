@@ -2,7 +2,7 @@ import StackCard from "../../stack/StackCard"
 
 export default function TailwindcssIcon() {
   return (
-    <StackCard name="Tailwind CSS">
+    <StackCard name="TailwindCSS">
       <svg fill="none" viewBox="0 0 54 33">
         <g clip-path="url(#tailwindcss__a)">
           <path
