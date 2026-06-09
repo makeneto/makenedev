@@ -574,7 +574,7 @@ textarea {
 }
 @media (width <= 640px) {
   .quoteOfTheWeek__content h1 {
-    width: 85%;
+    width: 95%;
     font-size: 1.9rem;
     line-height: 2.3rem;
   }
