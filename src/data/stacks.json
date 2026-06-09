@@ -78,28 +78,28 @@
           "name": "Node.js",
           "category": "Library",
           "link": "https://nodejs.org",
-          "certificate": "?"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "express",
           "name": "Express.js",
           "category": "Framework",
           "link": "https://expressjs.com",
-          "certificate": "?"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "postman",
           "name": "Postman",
           "category": "Software",
           "link": "https://postman.com",
-          "certificate": "?"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "socketio",
           "name": "Socket.IO",
           "category": "Software",
           "link": "https://socket.io",
-          "certificate": "?"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         }
       ]
     },
@@ -139,14 +139,14 @@
           "name": "PostgreSQL",
           "category": "Database",
           "link": "https://www.postgresql.org",
-          "certificate": null
+          "certificate": "?"
         },
         {
           "id": "mongodb",
           "name": "MongoDB",
           "category": "Database",
           "link": "https://www.mongodb.com",
-          "certificate": "?"
+          "certificate": null
         }
       ]
     },
