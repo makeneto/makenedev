@@ -88,13 +88,6 @@
           "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
-          "id": "postman",
-          "name": "Postman",
-          "category": "Software",
-          "link": "https://postman.com",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
-        },
-        {
           "id": "socketio",
           "name": "Socket.IO",
           "category": "Software",
@@ -146,7 +139,7 @@
           "name": "MongoDB",
           "category": "Database",
           "link": "https://www.mongodb.com",
-          "certificate": null
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         }
       ]
     },
@@ -194,6 +187,13 @@
           "category": "Software",
           "link": "https://github.com/makeneto",
           "certificate": "https://ude.my/UC-HVUOD29E"
+        },
+        {
+          "id": "postman",
+          "name": "Postman",
+          "category": "Software",
+          "link": "https://postman.com",
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "vercel",
