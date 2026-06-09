@@ -101,16 +101,16 @@
           "link": "https://openai.com"
         },
         {
+          "id": "githubCopilot",
+          "name": "Copilot",
+          "category": "AI",
+          "link": "https://github.com/features/copilot"
+        },
+        {
           "id": "claude",
           "name": "Claude AI",
           "category": "AI",
           "link": "https://claude.ai"
-        },
-        {
-          "id": "lovable",
-          "name": "Lovable",
-          "category": "AI",
-          "link": "https://lovable.ai"
         }
       ]
     },
