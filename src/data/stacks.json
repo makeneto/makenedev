@@ -175,6 +175,13 @@
       "title": "Tools",
       "stacks": [
         {
+          "id": "vite",
+          "name": "Vite",
+          "category": "Devtool",
+          "link": "https://vitejs.dev",
+          "certificate": null
+        },
+        {
           "id": "git",
           "name": "Git",
           "category": "Software",
