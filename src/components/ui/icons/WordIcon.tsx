@@ -2,7 +2,7 @@ import StackCard from "../../stack/StackCard"
 
 export default function WordIcon() {
   return (
-    <StackCard name="Microsoft Word">
+    <StackCard name="Word">
       <svg viewBox="0 0 486 500">
         <defs>
           <radialGradient
