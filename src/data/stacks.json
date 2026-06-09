@@ -144,33 +144,6 @@
       ]
     },
     {
-      "id": "design",
-      "title": "Design",
-      "stacks": [
-        {
-          "id": "figma",
-          "name": "Figma",
-          "category": "Design",
-          "link": "https://figma.com",
-          "certificate": null
-        },
-        {
-          "id": "canva",
-          "name": "Canva",
-          "category": "Design",
-          "link": "https://canva.com",
-          "certificate": null
-        },
-        {
-          "id": "gimp",
-          "name": "Gimp",
-          "category": "Design",
-          "link": "https://gimp.org",
-          "certificate": null
-        }
-      ]
-    },
-    {
       "id": "tools",
       "title": "Tools",
       "stacks": [
@@ -228,6 +201,33 @@
           "name": "Npm",
           "category": "Software",
           "link": "https://www.npmjs.com",
+          "certificate": null
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "stacks": [
+        {
+          "id": "figma",
+          "name": "Figma",
+          "category": "Design",
+          "link": "https://figma.com",
+          "certificate": null
+        },
+        {
+          "id": "canva",
+          "name": "Canva",
+          "category": "Design",
+          "link": "https://canva.com",
+          "certificate": null
+        },
+        {
+          "id": "gimp",
+          "name": "Gimp",
+          "category": "Design",
+          "link": "https://gimp.org",
           "certificate": null
         }
       ]
