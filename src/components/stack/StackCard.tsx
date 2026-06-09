@@ -19,8 +19,13 @@ export default function StackCard({ children, name }: StackProps) {
       {children}
 
       <div className="flex flex-col items-center gap-1.5">
-        <p className="text-sm font-semibold text-center">{name}</p>
-        <span className="border border-zinc-800 rounded-4xl py-0.5 px-2.5 text-xs text-zinc-400 font-mono font-semibold">
+        <p className="text-sm font-semibold text-center" translate="no">
+          {name}
+        </p>
+        <span
+          className="border border-zinc-800 rounded-4xl py-0.5 px-2.5 text-xs text-zinc-400 font-mono font-semibold"
+          translate="no"
+        >
           {category}
         </span>
 
