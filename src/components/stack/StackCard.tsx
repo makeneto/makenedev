@@ -1,6 +1,5 @@
-import { LinkIcon } from "lucide-react"
-import { Link } from "react-router-dom"
 import { useFindStack } from "../../hooks/useFindStack"
+import StackLinks from "./StackLinks"
 
 interface StackProps {
   children: React.ReactNode
@@ -11,8 +10,8 @@ export default function StackCard({ children, name }: StackProps) {
   const stack = useFindStack(name)
 
   if (!stack) return null
-
-  const { category, link } = stack
+  
+  const { category, link, certificate } = stack
 
   return (
     <div className="stack-card">
@@ -29,14 +28,7 @@ export default function StackCard({ children, name }: StackProps) {
           {category}
         </span>
 
-        <Link
-          to={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Website"
-        >
-          <LinkIcon size={10} />
-        </Link>
+        <StackLinks link={link} certificate={certificate} />
       </div>
     </div>
   )
