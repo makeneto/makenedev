@@ -2,7 +2,7 @@ import StackCard from "../../stack/StackCard"
 
 export default function PowerpointIcon() {
   return (
-    <StackCard name="Microsoft PowerPoint">
+    <StackCard name="PowerPoint">
       <svg viewBox="60 78.75 581.25 562.5">
         <defs>
           <radialGradient
