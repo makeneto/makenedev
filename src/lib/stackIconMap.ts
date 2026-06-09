@@ -28,12 +28,12 @@ import FigmaIcon from "../components/ui/icons/FigmaIcon"
 import CanvaIcon from "../components/ui/icons/CanvaIcon"
 import GimpIcon from "../components/ui/icons/GimpIcon"
 import MongodbIcon from "../components/ui/icons/MongodbIcon"
-import LovableIcon from "../components/ui/icons/LovableIcon"
 import RocketseatIcon from "../components/ui/icons/RocketseatIcon"
 import WordIcon from "../components/ui/icons/WordIcon"
 import ExcelIcon from "../components/ui/icons/ExcelIcon"
 import PowerpointIcon from "../components/ui/icons/PowerpointIcon"
 import ExpoIcon from "../components/ui/icons/ExpoIcon"
+import GithubCopilot from "../components/ui/icons/GithubCopilot"
 
 export const stackIconMap: Record<string, ComponentType> = {
   javascript: JavaScriptIcon,
@@ -49,9 +49,9 @@ export const stackIconMap: Record<string, ComponentType> = {
   express: ExpressIcon,
   postman: PostmanIcon,
   socketio: SocketioIcon,
-  claude: ClaudeIcon,
+  githubCopilot: GithubCopilot,
   openai: OpenaiIcon,
-  lovable: LovableIcon,
+  claude: ClaudeIcon,
   postgresql: PostgresqlIcon,
   mongodb: MongodbIcon,
   figma: FigmaIcon,
