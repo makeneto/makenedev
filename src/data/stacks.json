@@ -97,6 +97,26 @@
       ]
     },
     {
+      "id": "database",
+      "title": "Database",
+      "stacks": [
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "category": "Database",
+          "link": "https://www.postgresql.org",
+          "certificate": "?"
+        },
+        {
+          "id": "mongodb",
+          "name": "MongoDB",
+          "category": "Database",
+          "link": "https://www.mongodb.com",
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
+        }
+      ]
+    },
+    {
       "id": "ai",
       "title": "Artificial intelligence (AI)",
       "stacks": [
@@ -120,26 +140,6 @@
           "category": "AI",
           "link": "https://claude.ai",
           "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
-        }
-      ]
-    },
-    {
-      "id": "database",
-      "title": "Database",
-      "stacks": [
-        {
-          "id": "postgresql",
-          "name": "PostgreSQL",
-          "category": "Database",
-          "link": "https://www.postgresql.org",
-          "certificate": "?"
-        },
-        {
-          "id": "mongodb",
-          "name": "MongoDB",
-          "category": "Database",
-          "link": "https://www.mongodb.com",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         }
       ]
     },
