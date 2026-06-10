@@ -992,9 +992,9 @@ textarea {
 }
 .work-experience .profile {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
-.work-experience .profile__pic {
+.work-experience .profile-pic {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%), url("/assets/makenedev-profile.jpeg");
   background-position: center top;
   background-size: cover;
@@ -1003,7 +1003,7 @@ textarea {
   border-radius: 0.3rem;
 }
 @media (width <= 400px) {
-  .work-experience .profile__pic {
+  .work-experience .profile-pic {
     height: 23rem;
   }
 }
