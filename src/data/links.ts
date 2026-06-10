@@ -62,14 +62,14 @@ export const contacts = [
     display: "m/contact",
   },
   {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/makene-neto",
+    display: "in/makene-neto",
+  },
+  {
     label: "Meeting",
     href: "https://calendly.com/makeneto17/30min",
     display: "calendly.com",
-  },
-  {
-    label: "Portfolio",
-    href: "https://makenedev.vercel.app",
-    display: "makenedev.com",
   },
 ]
 
@@ -79,11 +79,11 @@ export const profileLinks = [
     link: "https://github.com/makeneto",
   },
   {
-    label: "LinkedIn",
-    link: "https://linkedin.com/in/makene-neto",
-  },
-  {
     label: "Email",
     link: "mailto:makenedev@gmail.com",
+  },
+  {
+    label: "LinkedIn",
+    link: "https://linkedin.com/in/makene-neto",
   },
 ]
