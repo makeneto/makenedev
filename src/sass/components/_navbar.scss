@@ -4,16 +4,21 @@
   margin-bottom: 10rem;
 
   @media (width <= 1280px) {
-    margin-bottom: 7rem;
+    margin-bottom: 7.5rem;
+
+    &--link,
+    &--activeLink {
+      font-size: 0.9rem;
+    }
   }
-  
+
   @media (width <= 884px) {
     margin-bottom: 8rem;
   }
 
   @media (width <= 640px) {
     margin-bottom: 6rem;
-    
+
     &--link,
     &--activeLink {
       font-size: 0.9rem;
@@ -30,7 +35,7 @@
   &--link,
   &--activeLink {
     text-transform: capitalize;
-  } 
+  }
 
   &--activeLink {
     font-weight: 600;
@@ -59,9 +64,8 @@
     }
 
     @media (width <= 400px) {
-        width: 1rem;
-        height: 1rem;
+      width: 1rem;
+      height: 1rem;
     }
-    
   }
 }
