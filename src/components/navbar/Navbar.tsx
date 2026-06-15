@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="nav flex items-center justify-between">
       <div className="flex items-center gap-3 sm:gap-5">
         <Logo variant="nav" />
-        <div className="w-px h-7 bg-zinc-700" />
+        <div className="w-px h-7 bg-zinc-800" />
         <NavRoutes links={navLinks} />
       </div>
 
