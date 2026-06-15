@@ -12,7 +12,7 @@ export default function Logo({ variant }: LogoProps) {
         alt="Makenedev's Logo"
         className={
           variant === "nav"
-            ? "w-8 sm:w-12"
+            ? "w-8 sm:w-10"
             : "w-12 m-auto sm:m-0"
         }
       />
