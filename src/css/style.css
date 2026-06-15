@@ -452,7 +452,10 @@ textarea {
 }
 @media (width <= 1280px) {
   .nav {
-    margin-bottom: 7rem;
+    margin-bottom: 7.5rem;
+  }
+  .nav--link, .nav--activeLink {
+    font-size: 0.9rem;
   }
 }
 @media (width <= 884px) {
