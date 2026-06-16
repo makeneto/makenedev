@@ -3,7 +3,6 @@ export interface ShowcaseItem {
   title: string
   description: string
   imageUrl: string
-  imageAlt?: string
   href: string
   date?: string
   images?: string[]
