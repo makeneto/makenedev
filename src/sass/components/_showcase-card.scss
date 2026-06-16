@@ -24,7 +24,18 @@
     }
   }
 
+  &--title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+
+    @media (width <= 1280px) {
+      font-size: 1rem;
+    }
+  }
+
   &--description {
+    margin-top: 0.3rem;
     font-size: 1rem;
     line-height: 1.6;
     color: var(--color-zinc-400);
@@ -34,6 +45,11 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (width <= 1280px) {
+      margin-top: 0.4rem;
+      font-size: 0.875rem;
+    }
 
     @media (width <= 640px) {
       margin-top: 0.5rem;
@@ -55,15 +71,9 @@
 
   @media (width <= 884px) {
     height: 15.5rem;
-  }  
+  }
 
   @media (width <= 400px) {
     height: 14rem;
   }
-}
-
-.title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
 }
