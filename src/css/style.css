@@ -695,7 +695,18 @@ textarea {
 .showcase-card:hover .showcase-card--description {
   color: white;
 }
+.showcase-card--title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+@media (width <= 1280px) {
+  .showcase-card--title {
+    font-size: 1rem;
+  }
+}
 .showcase-card--description {
+  margin-top: 0.3rem;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-zinc-400);
@@ -704,6 +715,12 @@ textarea {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (width <= 1280px) {
+  .showcase-card--description {
+    margin-top: 0.4rem;
+    font-size: 0.875rem;
+  }
 }
 @media (width <= 640px) {
   .showcase-card--description {
@@ -733,12 +750,6 @@ textarea {
   .showcase-cover {
     height: 14rem;
   }
-}
-
-.title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
 }
 
 .stack-header {
