@@ -1,16 +1,15 @@
 <h1 align="left">Hi 👋🏾, my name is Makene Neto!</h1>
 <img align="right" width="300em" height="300em" src="https://github.com/nublson/nublson/blob/dev/animation_500_kv8i962g.gif"/>
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=makeneto&color=blue" alt="Profile views" /> </p>
 
-- 💼 I’m currently looking for a job
+- 💼 I’m currently looking for a job.
   
-- 🚀 Continuously improving my expertise as a **Web Developer**
+- 🚀 Continuously improving my expertise as a **Web Developer**.
   
-- 🔍 Always seeking new challenges and opportunities to expand my knowledge
+- 🔍 Always seeking new challenges and opportunities to expand my knowledge.
 
-- 🌍 Aspiring to contribute to impactful products and projects on a global scale
+- 🌍 Aspiring to contribute to impactful products and projects on a global scale.
   
-- 📫 Reach me at [makendev.com](https://makendev.vercel.app)
+- 📫 Reach me at [makendev.com](https://makendev.vercel.app).
 
 <br>
 
