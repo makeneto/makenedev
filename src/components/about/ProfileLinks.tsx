@@ -7,12 +7,12 @@ export default function ProfileLinks() {
     <section className="profile__contact">
       {contacts.map(({ label, href, display }) => (
         <div key={label} className="flex items-center justify-between">
-          <p className="font-medium">{label}</p>
+          <p className="sm:text-sm font-medium">{label}</p>
 
           <Link
             to={href}
             target={label === "Email" ? "_self" : "_blank"}
-            className="text-end text-zinc-400"
+            className="sm:text-sm text-end text-zinc-400"
           >
             {display}
           </Link>
