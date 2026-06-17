@@ -1,15 +1,15 @@
 <h1 align="left">Hi 👋🏾, my name is Makene Neto!</h1>
 <img align="right" width="300em" height="300em" src="https://github.com/nublson/nublson/blob/dev/animation_500_kv8i962g.gif"/>
 
--   💓 I've been addicted to programming since **2021**
+- 💼 I’m currently looking for a job.
+  
+- 🚀 I work with **Web Development**.
+  
+- 🔍 Always seeking new challenges and opportunities to expand my knowledge.
 
--   🛠️ I constantly work to improve my skills as a **Front-end Developer**.
-
--   🔍 Always looking for new challenges to expand my knowledge.
-
--   🌍 I dream of contributing to big projects that have a global impact.
-
--   🦖 And... Obviously, it's me ⛅☕
+- 🌍 Aspiring to contribute to impactful products and projects on a global scale.
+  
+- 📫 Reach me at [makendev.com](https://makendev.vercel.app).
 
 <br>
 
@@ -31,7 +31,7 @@
 ![Claude](https://img.shields.io/badge/-Claude-05122A?style=flat&logo=claude)&nbsp;
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=Git)&nbsp;
 
----
+##
 
 <br>
 
