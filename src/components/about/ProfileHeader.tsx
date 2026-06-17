@@ -10,7 +10,8 @@ export default function ProfileHeader() {
         <h1 className="profile__header--name">{name}</h1>
         <BadgeCheck size={17} className="fill-blue-500 text-black" />
       </div>
-      <p className="profile__header--title">{title}</p>
+      
+      <p className="text-sm profile__header--title">{title}</p>
     </section>
   )
 }
