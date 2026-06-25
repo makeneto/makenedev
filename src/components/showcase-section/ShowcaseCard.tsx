@@ -17,13 +17,14 @@ const ShowcaseCard: React.FC<Props> = ({ item }) => {
         loading="lazy"
       />
 
-      <div className="flex-col gap-2">
+      <div>
         <div className="flex items-center justify-between">
           <h1 className="showcase-card--title" translate="no">
             {item.title}
           </h1>
           <ExternalLink />
         </div>
+        
         <p className="showcase-card--description">{item.description}</p>
       </div>
     </Link>
