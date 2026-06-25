@@ -1,0 +1,48 @@
+.blog {
+  &-list {
+    margin-top: 3.5rem;
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      font-size: 1.01rem;
+      padding-block: 1rem;
+      color: white;
+      transition: all 0.1s ease-in;
+
+      border-bottom: 1px solid rgba(128, 128, 128, 0.344);
+
+      & p {
+        color: var(--color-zinc-400);
+      }
+
+      &:last-child,
+      &:last-child:hover {
+        border-bottom: none;
+      }
+
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+      }
+
+      & svg {
+        width: 0.9rem;
+        height: 0.9rem;
+        opacity: 0;
+        transition: all 0.1s ease-in;
+      }
+
+      &:hover {
+        border-bottom-color: white;
+
+        & svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
