@@ -7,7 +7,7 @@ export default function FooterLinks() {
   return (
     <section className="w-screen sm:w-auto grid justify-center gap-4 sm:flex items-center sm:justify-between border-t border-zinc-800 pt-6">
       <p className="text-gray-500 text-sm text-center sm:text-start">
-        @ Makenedev - {currentYear}
+        @ Makene Neto | {currentYear}
       </p>
 
       <NavRoutes links={footerLinks} />
