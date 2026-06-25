@@ -9,12 +9,12 @@ export default function Stack() {
 
   return (
     <React.Fragment>
-      <p>
-        <DefaultHeader
-          title="My Stack"
-          description={"Front-end is where I started and still feel at home, but curiosity expanded my stack over time. What began with interfaces grew into backend systems, databases, and AI integrations that changed how I think about building. I’m not a specialist in everything — I learn deeply, connect the dots across domains, and keep moving forward."}
-        />
-      </p>
+      <DefaultHeader
+        title="My Stack"
+        description={
+          "Front-end is where I started and still feel at home, but curiosity expanded my stack over time. What began with interfaces grew into backend systems, databases, and AI integrations that changed how I think about building. I’m not a specialist in everything — I learn deeply, connect the dots across domains, and keep moving forward."
+        }
+      />
       <StackSection />
       <StackResume />
     </React.Fragment>
