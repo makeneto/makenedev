@@ -39,6 +39,43 @@ textarea {
   scrollbar-width: none; /* Firefox */
 }
 
+.blog-list {
+  margin-top: 3.5rem;
+}
+.blog-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.01rem;
+  padding-block: 1rem;
+  color: white;
+  transition: all 0.1s ease-in;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.344);
+}
+.blog-list a p {
+  color: var(--color-zinc-400);
+}
+.blog-list a:last-child, .blog-list a:last-child:hover {
+  border-bottom: none;
+}
+.blog-list a div {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.blog-list a svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  opacity: 0;
+  transition: all 0.1s ease-in;
+}
+.blog-list a:hover {
+  border-bottom-color: white;
+}
+.blog-list a:hover svg {
+  opacity: 1;
+}
+
 .contact__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -718,7 +755,7 @@ textarea {
 }
 @media (width <= 1280px) {
   .showcase-card--description {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     font-size: 0.875rem;
   }
 }
