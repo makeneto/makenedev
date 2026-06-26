@@ -1,35 +1,39 @@
 import { Link } from "react-router-dom"
-import { ExternalLink } from "lucide-react"
+import { blogs } from "../../data/blogs"
+import { ArrowUpRight } from "lucide-react"
 
 export default function BlogList() {
   return (
     <ul className="blog-list">
-      <Link to="/blogs">
-        <div>
-          <p>Jul 2026</p>
-          <h1>Building in Public, and the Fear of Being Seen</h1>
-        </div>
-
-        <ExternalLink />
-      </Link>
-
-      <Link to="/blogs">
-        <div>
-          <p>Apr 2026</p>
-          <h1>AI Agents Won’t Replace You. But They Will Expose You.</h1>
-        </div>
-
-        <ExternalLink />
-      </Link>
-
-      <Link to="/blogs">
-        <div>
-          <p>Jan 2026</p>
-          <h1>AI Agents Won’t Replace You. But They Will Expose You.</h1>
-        </div>
-
-        <ExternalLink />
-      </Link>
+      {blogs.map((blog) => (
+        <li key={`${blog.link}-${blog.title}`} className="blog-list__item">
+          <Link to={blog.link} className="blog-card">
+            <div className="blog-card__media">
+              <img
+                src={blog.cover}
+                alt={blog.title}
+                className="blog-card__cover"
+              />
+              <div className="blog-card__overlay">
+                <span className="blog-card__category">{blog.category}</span>
+                <span className="blog-card__date">{blog.date}</span>
+                <span className="blog-card__author blog-card__author--overlay">
+                  By {blog.author}
+                </span>
+              </div>
+            </div>
+            <div className="blog-card__content">
+              <h3 className="blog-card__title">{blog.title}</h3>
+              <p className="blog-card__description">{blog.description}</p>
+              <div className="blog-card__footer">
+                <span className="blog-card__link">
+                  Read more <ArrowUpRight />
+                </span>
+              </div>
+            </div>
+          </Link>
+        </li>
+      ))}
     </ul>
   )
 }
