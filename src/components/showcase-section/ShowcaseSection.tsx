@@ -7,11 +7,11 @@ import { useScrollOnPaginate } from "../../hooks/useScrollOnPaginate"
 
 const ShowcaseSection = ({
   title,
-  viewAllHref,
+  viewAll,
   items,
   isHomePage = false,
 }: ShowcaseSectionProps) => {
-  const itemsPerPage = isHomePage ? 2 : 6
+  const itemsPerPage = isHomePage ? 2 : 4
 
   const { page, totalPages, visibleItems, nextPage, prevPage } = usePagination({
     items,
@@ -36,16 +36,16 @@ const ShowcaseSection = ({
   const showControls = isHomePage || totalPages > 1
 
   return (
-    <section ref={sectionRef} className="showcase-section">
-      <ShowcaseHeader title={title} />
+    <section ref={sectionRef}>
+      <ShowcaseHeader title={title} viewAll={viewAll} />
 
       <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
 
-      {showControls && (
+      {showControls && !viewAll && (
         <SectionControls
           page={page}
           totalPages={totalPages}
-          viewAll={viewAllHref}
+          viewAll={viewAll}
           onPrev={handlePrev}
           onNext={handleNext}
         />
