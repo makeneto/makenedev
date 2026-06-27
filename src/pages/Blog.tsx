@@ -3,6 +3,7 @@ import React from "react"
 import { useTitle } from "../hooks/useTitle"
 import DefaultHeader from "../components/headers/DefaultHeader"
 import BlogSection from "../components/blogs/BlogSection"
+import BlogResume from "../components/blogs/BlogResume"
 
 export default function Blog() {
   useTitle("My Blog")
@@ -12,21 +13,13 @@ export default function Blog() {
       <DefaultHeader
         title="My Blog"
         description={
-          "Front-end is where I started and still feel at home, but curiosity expanded my stack over time. What began with interfaces grew into backend systems, databases, and AI integrations that changed how I think about building. I’m not a specialist in everything — I learn deeply, connect the dots across domains, and keep moving forward."
+          "The world I write about is not fixed in one field or perspective. It shifts between technology, design, culture, business, and modern life. I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world. I’m not focused on mastering a single lane but building a broader understanding that evolves."
         }
+        isShowcase={true}
       />
 
-      <div
-        style={{
-          backgroundImage: "url('/assets/blog-asset.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "500px",
-        }}
-        className="rounded-lg shadow-lg mb-28 sm:mb-40"
-      />
-
-      <BlogSection title="Last Posts" />
+      <BlogSection title="Posts" />
+      <BlogResume />
     </React.Fragment>
   )
 }
