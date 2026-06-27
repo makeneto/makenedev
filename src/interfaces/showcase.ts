@@ -10,7 +10,7 @@ export interface ShowcaseItem {
 
 export interface ShowcaseSectionProps {
   title: string
-  viewAllHref?: string
+  viewAll?: string
   items: ShowcaseItem[]
   isHomePage?: boolean
   sectionLabel?: string
