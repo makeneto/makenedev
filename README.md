@@ -9,7 +9,7 @@
 
 - 🌍 Aspiring to contribute to impactful products and projects on a global scale.
   
-- 📫 Reach me at [makendev.com](https://makendev.vercel.app).
+- 📫 Reach me at [makendev.com](https://makenedev.vercel.app).
 
 <br>
 
