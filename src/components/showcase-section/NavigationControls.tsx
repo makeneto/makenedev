@@ -13,32 +13,38 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
   onPrev,
   onNext,
 }) => {
-  const isFirstPage = page === 0
-  const isLastPage = page >= totalPages - 1
+  const isFirstPage = page === 1
+  const isLastPage = page >= totalPages
 
   return (
     <div className="flex items-center justify-between mt-11 sm:mt-15">
-      <button
-        type="button"
-        aria-label="Previous"
-        onClick={onPrev}
-        disabled={isFirstPage}
-        className="flex items-center gap-1.5 text-zinc-400 hover:text-white disabled:opacity-0"
-      >
-        <ChevronLeft size={18} />
-        <span className="text-sm">Previous</span>
-      </button>
+      {!isFirstPage ? (
+        <button
+          type="button"
+          aria-label="Previous"
+          onClick={onPrev}
+          className="flex items-center gap-1.5 text-zinc-400 hover:text-white"
+        >
+          <ChevronLeft size={18} />
+          <span className="text-sm">Previous</span>
+        </button>
+      ) : (
+        <div />
+      )}
 
-      <button
-        type="button"
-        aria-label="Next"
-        onClick={onNext}
-        disabled={isLastPage}
-        className="flex items-center gap-1.5 text-zinc-400 hover:text-white disabled:opacity-0"
-      >
-        <span className="text-sm">Next</span>
-        <ChevronRight size={18} />
-      </button>
+      {!isLastPage ? (
+        <button
+          type="button"
+          aria-label="Next"
+          onClick={onNext}
+          className="flex items-center gap-1.5 text-zinc-400 hover:text-white"
+        >
+          <span className="text-sm">Next</span>
+          <ChevronRight size={18} />
+        </button>
+      ) : (
+        <div />
+      )}
     </div>
   )
 }
