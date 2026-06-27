@@ -10,14 +10,10 @@ export default function Home() {
     <React.Fragment>
       <HomeHeader />
       <QuoteOfTheWeek />
-      <ShowcaseSection
-        title="Last Projects"
-        viewAllHref="/work"
-        items={works}
-        isHomePage
-      />
+      <ShowcaseSection title="Works" viewAll="/work" items={works} isHomePage />
 
-      <ContactSection className="mt-60 sm:mt-80" />
+      {/* <BlogVerticalList /> */}
+      <ContactSection className="mt-50 sm:mt-70" />
     </React.Fragment>
   )
 }
