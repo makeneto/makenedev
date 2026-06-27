@@ -4,10 +4,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    padding-bottom: 1rem;
+    padding-block: 3.5rem 1rem;
     margin-bottom: 2rem;
 
     border-bottom: 1px solid var(--color-zinc-600);
+
+    @media (width <= 640px) {
+      padding-top: 2rem;
+    }
   }
 
   &-heading {
@@ -22,7 +26,11 @@
     line-height: 1;
 
     @media (width <= 1280px) {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
+    }
+
+    & span {
+      color: var(--color-zinc-500);
     }
   }
 }
@@ -54,15 +62,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   @media (width > 640px) and (width <= 884px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   &--multi-row {
     grid-template-columns: repeat(2, 1fr);
-    
-    
+
     @media (width <= 640px) {
       grid-template-columns: repeat(1, 1fr);
     }
