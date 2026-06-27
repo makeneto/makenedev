@@ -1,10 +1,10 @@
 .quoteOfTheWeek {
-  margin-bottom: 20rem;
+  margin-bottom: 16.5rem;
   display: grid;
   gap: 2rem;
 
   @media (width <= 640px) {
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
   }
 
   &__header {
@@ -62,17 +62,15 @@
         font-size: 2.8rem;
         line-height: 2.8rem;
       }
-      
 
       @media (width <= 640px) {
         width: 95%;
         font-size: 1.9rem;
-        line-height: 2.3rem;
       }
 
       @media (width <= 400px) {
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 2.6rem;
       }
     }
 
@@ -85,7 +83,6 @@
 
       @media (width <= 640px) {
         font-size: 1rem;
-          
       }
     }
 
