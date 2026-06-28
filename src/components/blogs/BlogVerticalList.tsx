@@ -7,7 +7,7 @@ export default function BlogVerticalList() {
   const blogsList = blogs.slice(0, 5)
 
   return (
-    <section className="mt-28 sm:mt-70">
+    <section className="mt-52 sm:mt-66">
       <ShowcaseHeader title="Posts" viewAll="/blog" />
 
       <ul className="verticalBlogs">
