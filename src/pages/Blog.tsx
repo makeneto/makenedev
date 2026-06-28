@@ -2,7 +2,7 @@ import React from "react"
 
 import { useTitle } from "../hooks/useTitle"
 import DefaultHeader from "../components/headers/DefaultHeader"
-import BlogSection from "../components/blogs/BlogSection"
+import BlogSection from "../components/blogs/BlogArea"
 import BlogResume from "../components/blogs/BlogResume"
 
 export default function Blog() {
