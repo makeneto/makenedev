@@ -8,9 +8,13 @@ export const navLinks = [
     link: "/work",
   },
   {
-    label: "Stack",
-    link: "/stack",
+    label: "Blog",
+    link: "/blog",
   },
+  // {
+  //   label: "Stack",
+  //   link: "/stack",
+  // },
 ]
 
 export const footerLinks = [
@@ -26,6 +30,10 @@ export const footerLinks = [
     label: "Work",
     link: "/work",
   },
+  // {
+  //   label: "Blog",
+  //   link: "/blog",
+  // },
   {
     label: "Stack",
     link: "/stack",
@@ -48,10 +56,6 @@ export const socialLinks = [
   {
     label: "Instagram",
     link: "https://instagram.com/makeneto",
-  },
-  {
-    label: "Dribbble",
-    link: "https://dribbble.com/makeneto",
   },
 ]
 
