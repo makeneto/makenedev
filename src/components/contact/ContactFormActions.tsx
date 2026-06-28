@@ -32,7 +32,7 @@ export function ContactFormActions({ loading, disabled, onSubmit }: Props) {
       ) : (
         <React.Fragment>
           Submit Form
-          <Send size={10} />
+          <Send />
         </React.Fragment>
       )}
     </Button>
