@@ -7,14 +7,14 @@ export const navLinks = [
     label: "Work",
     link: "/work",
   },
-  {
-    label: "Blog",
-    link: "/blog",
-  },
   // {
-  //   label: "Stack",
-  //   link: "/stack",
+  //   label: "Blog",
+  //   link: "/blog",
   // },
+  {
+    label: "Stack",
+    link: "/stack",
+  },
 ]
 
 export const footerLinks = [
