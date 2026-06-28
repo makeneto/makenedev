@@ -370,11 +370,6 @@ textarea {
     font-size: 1rem;
   }
 }
-@media (width <= 640px) {
-  .verticalBlogs a div p, .verticalBlogs a div h3 {
-    font-size: 1rem;
-  }
-}
 .verticalBlogs a div p {
   color: var(--color-zinc-500);
 }
