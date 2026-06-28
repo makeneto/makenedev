@@ -1,4 +1,17 @@
 .contact {
+  &__left {
+    position: sticky;
+    top: 5%;
+
+    @media (width <= 884px) {
+      top: 3%;
+    }
+
+    @media (width <= 640px) {
+      position: relative;
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
