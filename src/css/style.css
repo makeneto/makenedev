@@ -142,6 +142,11 @@ textarea {
 .blog-lastBlog img {
   height: 100%;
 }
+@media (width <= 640px) {
+  .blog-lastBlog img {
+    height: auto;
+  }
+}
 .blog-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,13 +353,26 @@ textarea {
 }
 .verticalBlogs a div {
   display: grid;
-  grid-template-columns: 5.2rem auto;
+  grid-template-columns: 6rem auto;
   gap: 1rem;
 }
 @media (width <= 640px) {
   .verticalBlogs a div {
     grid-template-columns: 5rem auto;
     padding-right: 0.3rem;
+  }
+}
+.verticalBlogs a div p, .verticalBlogs a div h3 {
+  font-size: 1.2rem;
+}
+@media (width <= 1280px) {
+  .verticalBlogs a div p, .verticalBlogs a div h3 {
+    font-size: 1rem;
+  }
+}
+@media (width <= 640px) {
+  .verticalBlogs a div p, .verticalBlogs a div h3 {
+    font-size: 1rem;
   }
 }
 .verticalBlogs a div p {
