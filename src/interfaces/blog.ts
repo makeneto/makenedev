@@ -7,5 +7,3 @@ export interface Blog {
   author: string
   category: string
 }
-
-export default Blog
