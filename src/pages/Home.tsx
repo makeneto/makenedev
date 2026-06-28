@@ -4,6 +4,7 @@ import HomeHeader from "../components/headers/HomeHeader"
 import ShowcaseSection from "../components/showcase-section/ShowcaseSection"
 import { works } from "../data/works"
 import QuoteOfTheWeek from "../components/QuoteOfTheWeek"
+import BlogVerticalList from "../components/blogs/BlogVerticalList"
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <QuoteOfTheWeek />
       <ShowcaseSection title="Works" viewAll="/work" items={works} isHomePage />
 
-      {/* <BlogVerticalList /> */}
+      <BlogVerticalList />
       <ContactSection className="mt-50 sm:mt-70" />
     </React.Fragment>
   )
