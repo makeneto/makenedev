@@ -1,4 +1,4 @@
-import type { ContactFormData } from "../constants/contact"
+import type { ContactFormData } from "../interfaces/contactForm"
 import type { ContactFormErrors } from "../constants/contactFormDefaults"
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
