@@ -17,7 +17,7 @@ export default function Work() {
         isShowcase={true}
       />
 
-      <ShowcaseSection title="Projects" items={works} />
+      <ShowcaseSection title="Projects" items={works} isShowcase={true} />
       <WorkResume />
     </React.Fragment>
   )
