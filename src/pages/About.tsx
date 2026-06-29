@@ -1,3 +1,5 @@
+import React from "react"
+
 import DefaultHeader from "../components/headers/DefaultHeader"
 import WorkExperience from "../components/about/WorkExperience"
 import Timeline from "../components/about/Timeline"
@@ -8,7 +10,7 @@ export default function About() {
   useTitle("About Me")
 
   return (
-    <div>
+    <React.Fragment>
       <DefaultHeader
         title="About me"
         description="Front-end Developer specialized in building modern, responsive, and
@@ -22,6 +24,6 @@ export default function About() {
       <WorkExperience />
       <Timeline />
       <AboutResume />
-    </div>
+    </React.Fragment>
   )
 }
