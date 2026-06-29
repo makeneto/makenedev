@@ -10,6 +10,7 @@ const ShowcaseSection = ({
   viewAll,
   items,
   isHomePage = false,
+  isShowcase,
 }: ShowcaseSectionProps) => {
   const itemsPerPage = isHomePage ? 2 : 4
 
@@ -37,7 +38,7 @@ const ShowcaseSection = ({
 
   return (
     <section ref={sectionRef}>
-      <ShowcaseHeader title={title} viewAll={viewAll} />
+      <ShowcaseHeader title={title} viewAll={viewAll} isShowcase={isShowcase} />
 
       <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
 
