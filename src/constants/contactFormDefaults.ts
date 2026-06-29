@@ -1,4 +1,4 @@
-import type { ContactFormData } from "./contact"
+import type { ContactFormData } from "../interfaces/contactForm"
 
 export type ContactFormErrors = Record<keyof ContactFormData, boolean>
 
