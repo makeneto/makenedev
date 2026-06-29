@@ -1,7 +1,7 @@
 import { AtSign, Briefcase, Phone, User } from "lucide-react"
 
 import { ContactInput } from "./ContactInput"
-import type { ContactFormData } from "../../constants/contact"
+import type { ContactFormData } from "../../interfaces/contactForm"
 
 interface Props {
   form: ContactFormData
