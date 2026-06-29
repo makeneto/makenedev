@@ -1,4 +1,4 @@
-import type { ContactFormData } from "../constants/contact"
+import type { ContactFormData } from "../interfaces/contactForm"
 
 const formspreeKey = import.meta.env.VITE_FORMSPREE_KEY
 
