@@ -987,14 +987,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding-block: 3.5rem 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--color-zinc-600);
-}
-@media (width <= 640px) {
-  .showcase-header {
-    padding-top: 2rem;
-  }
 }
 .showcase-heading {
   font-family: "Antonio", sans-serif;
