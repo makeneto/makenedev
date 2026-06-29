@@ -14,4 +14,5 @@ export interface ShowcaseSectionProps {
   items: ShowcaseItem[]
   isHomePage?: boolean
   sectionLabel?: string
+  isShowcase?: boolean
 }
