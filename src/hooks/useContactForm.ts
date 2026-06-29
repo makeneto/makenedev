@@ -2,7 +2,7 @@ import { useState } from "react"
 import { toast } from "sonner"
 
 import { sendContactForm } from "../services/formspree"
-import type { ContactFormData } from "../constants/contact"
+import type { ContactFormData } from "../interfaces/contactForm"
 import type { ContactFormErrors } from "../constants/contactFormDefaults"
 import { INITIAL_ERRORS, INITIAL_STATE } from "../constants/contactFormDefaults"
 import {
