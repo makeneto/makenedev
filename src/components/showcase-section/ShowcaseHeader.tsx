@@ -6,10 +6,12 @@ interface ShowcaseHeaderProps {
 }
 
 const ShowcaseHeader = ({ title, viewAll = "" }: ShowcaseHeaderProps) => {
+  const label = title !== "Timeline" ? (viewAll ? "Last" : "All") : null
+
   return (
     <header className="showcase-header">
       <h2 className="showcase-heading">
-        {viewAll ? "Last" : "All"} {title}
+        {label} {title}
       </h2>
 
       {viewAll && <ViewAllLink to={viewAll} />}
