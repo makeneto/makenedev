@@ -1,13 +1,30 @@
-export default function BlogAside() {
+interface BlogAsideProps {
+  categories: string[]
+  activeCategory: string
+  onSelectCategory: (category: string) => void
+}
+
+export default function BlogAside({
+  categories,
+  activeCategory,
+  onSelectCategory,
+}: BlogAsideProps) {
   return (
     <aside className="blog-aside">
       <h3>Categories</h3>
 
       <ul>
-        <li>All</li>
-        <li>Development</li>
-        <li>AI</li>
-        <li>Health</li>
+        {categories.map((category) => (
+          <li
+            key={category}
+            className={category === activeCategory ? "active" : ""}
+            onClick={() => onSelectCategory(category)}
+            role="button"
+            tabIndex={0}
+          >
+            {category}
+          </li>
+        ))}
       </ul>
 
       <div className="mt-10 bg-[#1515159d] p-3 text-zinc-400 border border-dashed border-zinc-800">
