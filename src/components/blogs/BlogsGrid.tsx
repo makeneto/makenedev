@@ -1,10 +1,14 @@
-import { blogs } from "../../data/blogs"
+import type { Blog } from "../../interfaces/blog"
 import BlogCard from "./BlogCard"
 
-export default function BlogsGrid() {
+interface BlogsGridProps {
+  blogs: Blog[]
+}
+
+export default function BlogsGrid({ blogs }: BlogsGridProps) {
   return (
     <ul className="blog-list">
-      {blogs.slice(1).map((blog) => (
+      {blogs.map((blog) => (
         <li key={`${blog.link}-${blog.title}`} className="blog-list__item">
           <BlogCard blog={blog} />
         </li>
