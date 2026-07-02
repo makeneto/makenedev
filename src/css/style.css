@@ -80,6 +80,15 @@ textarea {
   }
 }
 .blog-lastBlog {
+  border-bottom: 1px solid #2f2f2f;
+  padding-bottom: 2rem;
+}
+@media (width <= 640px) {
+  .blog-lastBlog {
+    padding-bottom: 3rem;
+  }
+}
+.blog-lastBlog-card {
   background-color: rgb(21, 21, 21);
   padding: 1rem 1rem 1rem 1.2rem;
   display: grid;
@@ -89,23 +98,23 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 @media (width <= 640px) {
-  .blog-lastBlog {
+  .blog-lastBlog-card {
     padding: 1.2rem;
     grid-template-columns: none;
   }
 }
-.blog-lastBlog:hover {
+.blog-lastBlog-card:hover {
   background-color: transparent;
   border: 1px dashed white;
 }
-.blog-lastBlog:hover h1 {
+.blog-lastBlog-card:hover h1 {
   text-decoration: underline;
 }
-.blog-lastBlog div span {
+.blog-lastBlog-card div span {
   font-size: 0.8rem;
   color: var(--color-zinc-400);
 }
-.blog-lastBlog div h1 {
+.blog-lastBlog-card div h1 {
   margin-top: 0.4rem;
   font-size: 1.8rem;
   font-weight: 600;
@@ -116,21 +125,21 @@ textarea {
   overflow: hidden;
 }
 @media (width <= 1280px) {
-  .blog-lastBlog div h1 {
+  .blog-lastBlog-card div h1 {
     font-size: 1.5rem;
   }
 }
 @media (width <= 884px) {
-  .blog-lastBlog div h1 {
+  .blog-lastBlog-card div h1 {
     font-size: 1.2rem;
   }
 }
 @media (width <= 640px) {
-  .blog-lastBlog div h1 {
+  .blog-lastBlog-card div h1 {
     font-size: 1.5rem;
   }
 }
-.blog-lastBlog div p {
+.blog-lastBlog-card div p {
   margin-block: 1rem 2rem;
   color: var(--color-zinc-200);
   display: -webkit-box;
@@ -139,11 +148,11 @@ textarea {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.blog-lastBlog img {
+.blog-lastBlog-card img {
   height: 100%;
 }
 @media (width <= 640px) {
-  .blog-lastBlog img {
+  .blog-lastBlog-card img {
     height: auto;
   }
 }
@@ -167,10 +176,21 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+.blog-list-section {
+  display: grid;
+  gap: 2rem;
+}
+@media (width <= 640px) {
+  .blog-list-section {
+    gap: 3rem;
+  }
+}
 .blog-list__item {
   display: flex;
 }
 .blog-card {
+  background-color: #101010;
+  padding: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -178,7 +198,12 @@ textarea {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
-  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  border: 1px dashed transparent;
+  transition: all 0.2s ease;
+}
+.blog-card:hover {
+  border: 1px dashed white;
+  background-color: transparent;
 }
 .blog-card:hover .blog-card__title,
 .blog-card:hover .blog-card__link {
@@ -242,7 +267,12 @@ textarea {
 .blog-card__content {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.8rem;
+}
+@media (width <= 640px) {
+  .blog-card__content {
+    gap: 1rem;
+  }
 }
 .blog-card__meta, .blog-card__footer {
   display: flex;
@@ -259,7 +289,6 @@ textarea {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
 }
 .blog-card__title {
-  margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
@@ -271,15 +300,19 @@ textarea {
   }
 }
 .blog-card__description {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.54;
   color: var(--color-zinc-400);
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+@media (width <= 640px) {
+  .blog-card__description {
+    font-size: 0.97rem;
+  }
 }
 .blog-card__link {
   color: white;
@@ -328,7 +361,7 @@ textarea {
   color: var(--color-zinc-400);
   cursor: pointer;
 }
-.blog-aside ul li:first-child {
+.blog-aside ul li.active {
   color: white;
   font-weight: 500;
   text-decoration: line-through;
@@ -410,11 +443,11 @@ textarea {
 
 .contact__left {
   position: sticky;
-  top: 5%;
+  top: 20%;
 }
 @media (width <= 884px) {
   .contact__left {
-    top: 3%;
+    top: 5%;
   }
 }
 @media (width <= 640px) {
