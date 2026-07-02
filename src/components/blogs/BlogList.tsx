@@ -1,9 +1,17 @@
-import BlogsGrid from "./BlogsSection"
+import type { Blog } from "../../interfaces/blog"
+import BlogsGrid from "./BlogsGrid"
+import LastBlog from "./LastBlog"
 
-export default function BlogList() {
+interface BlogListProps {
+  blogs: Blog[]
+  showLastBlog: boolean
+}
+
+export default function BlogList({ blogs, showLastBlog }: BlogListProps) {
   return (
     <section className="blog-list-section">
-      <BlogsGrid />
+      {showLastBlog && <LastBlog />}
+      <BlogsGrid blogs={blogs} />
     </section>
   )
 }
