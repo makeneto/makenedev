@@ -27,7 +27,7 @@ export default function BlogAside({
         ))}
       </ul>
 
-      <div className="mt-10 bg-[#1515159d] p-3 text-zinc-400 border border-dashed border-zinc-800">
+      <div className="mt-10 text-zinc-400">
         <p className="text-xs leading-4.5">
           Select a category to filter posts and explore specific topics.
         </p>
