@@ -27,7 +27,8 @@ export function ServicesCheckboxes({ services, selected, onChange }: Props) {
             items-center
             gap-2
             text-sm
-            text-white
+            text-black
+            dark:text-white
             cursor-pointer
           "
         >
