@@ -2,13 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import "./theme-vars";
+
 body {
   font-family: "Inter", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   padding-inline: 25rem;
+
   &::selection {
-    background-color: var(--color-zinc-700);
+    background-color: var(--selection-bg);
+    color: var(--text-primary);
   }
 
   @media (width <= 1280px) {
@@ -16,7 +20,7 @@ body {
   }
 
   @media (width <= 884px) {
-    padding-inline: 2rem;   
+    padding-inline: 2rem;
   }
 
   @media (width <= 640px) {
@@ -35,4 +39,8 @@ textarea {
 
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
 }
