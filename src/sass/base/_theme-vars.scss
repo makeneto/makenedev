@@ -1,0 +1,95 @@
+:root {
+  /* Light Mode */
+  --bg-primary: #fafaf8;
+  --bg-secondary: #f0f0ed;
+  --bg-tertiary: #e8e8e5;
+
+  --openToWork-bg: #edededb3;
+  --openToWork-hovered: #d5d5d5c9;
+
+  --stack-link: #e8e8e89a;
+
+  --light-gray-bg: #eeeeeeaf;
+
+  --profile-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  --text-primary: #0d0d0b;
+  --text-secondary: #6d6d6d;
+  --text-tertiary: #6a6a60;
+
+  --text-label: #000000;
+
+  --border-primary: #bebebe;
+  --border-secondary: #ccccc7;
+  --border-tertiary: #bfbfba;
+  --border-resume: #a0a0a4;
+
+  --button-primary-bg: #000000;
+  --button-primary-text: #ffffff;
+  --button-primary-bg-hovered: #2e2e2e;
+  --button-primary-disabled-bg: #d4d4d4;
+  --button-primary-disabled-text: #808080;
+
+  --surface-hover: #e8e8e5;
+  --surface-active: #d9d9d5;
+
+  --accent-soft: #d9d9d5;
+  --accent-medium: #b8b8af;
+  --accent-strong: #6a6a60;
+
+  --selection-bg: #ccccc7;
+
+  --text-primary-rgb: 13, 13, 11;
+  --text-secondary-rgb: 58, 58, 53;
+  --text-tertiary-rgb: 106, 106, 96;
+}
+
+.dark {
+  /* Dark Mode */
+  --bg-primary: #000000;
+  --bg-secondary: #151515;
+  --bg-tertiary: #1a1a1a;
+
+  --openToWork-bg: #18181b;
+  --openToWork-hovered: #27272aba;
+
+  --stack-link: #18181b;
+
+  --light-gray-bg: #43434336;
+
+  --profile-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgb(0, 0, 0) 100%
+  );
+
+  --text-primary: #ffffff;
+  --text-secondary: #9f9fa9;
+  --text-tertiary: #a8a8a8;
+
+  --text-label: #9f9fa9;
+
+  --border-primary: #3a3a3a;
+  --border-secondary: #3f3f3f;
+  --border-tertiary: #4f4f4f;
+  --border-resume: #3f3f46;
+
+  --button-primary-text: #000000;
+  --button-primary-bg: #ffffff;
+  --button-primary-bg-hovered: #d2d2d2;
+  --button-primary-disabled-bg: #444444a3;
+  --button-primary-disabled-text: #646464;
+
+  --surface-hover: #1f1f1f;
+  --surface-active: #2a2a2a;
+
+  --accent-soft: #3f3f3f;
+  --accent-medium: #2f2f2f;
+  --accent-strong: #a8a8a8;
+
+  --selection-bg: #3f3f3f;
+}
