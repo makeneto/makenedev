@@ -15,6 +15,7 @@ export interface Stack {
   category: StackCategory
   link: string
   certificate: null | string
+  learn: null | string
 }
 
 export interface StackSection {
