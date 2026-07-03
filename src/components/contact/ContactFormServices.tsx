@@ -10,7 +10,7 @@ interface Props {
 
 export function ContactFormServices({ services, onChange }: Props) {
   return (
-    <div className="mt-7">
+    <div>
       <label className="contact-form__label mb-4">
         <Flame size={15} />
         Choose services
