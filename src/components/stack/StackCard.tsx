@@ -10,8 +10,8 @@ export default function StackCard({ children, name }: StackProps) {
   const stack = useFindStack(name)
 
   if (!stack) return null
-  
-  const { category, link, certificate } = stack
+
+  const { category, link, certificate, learn } = stack
 
   return (
     <div className="stack-card">
@@ -22,13 +22,13 @@ export default function StackCard({ children, name }: StackProps) {
           {name}
         </p>
         <span
-          className="border border-zinc-800 rounded-4xl py-0.5 px-2.5 text-xs text-zinc-400 font-mono font-semibold"
+          className="border border-zinc-300 dark:border-zinc-800 rounded-4xl py-0.5 px-2.5 text-xs text-zinc-400 font-mono font-semibold"
           translate="no"
         >
           {category}
         </span>
 
-        <StackLinks link={link} certificate={certificate} />
+        <StackLinks link={link} certificate={certificate} learn={learn} />
       </div>
     </div>
   )
