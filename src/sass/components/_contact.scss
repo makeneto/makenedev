@@ -32,7 +32,7 @@
     font-family: "Antonio", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    color: var(--color-zinc-400);
+    color: var();
     text-transform: uppercase;
 
     @media (width <= 640px) {
@@ -81,7 +81,7 @@
   &__description,
   &__email {
     max-width: 480px;
-    color: var(--color-zinc-400);
+    color: var(--text-secondary);
     font-size: 1.2rem;
     line-height: 1.7;
 
@@ -116,6 +116,11 @@
 }
 
 .contact-form {
+  & section {
+    display: grid;
+    gap: 3rem;
+  }
+
   &__label {
     margin-bottom: 12px;
 
@@ -124,7 +129,38 @@
     gap: 8px;
 
     font-size: 14px;
-    color: #bebec8;
+    color: var(--text-label);
+  }
+}
+
+.submit {
+  &-btn {
+    background-color: transparent;
+    margin-top: 2rem;
+    padding-block: 1.25rem;
+    width: 100%;
+    border-radius: 999rem;
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    border: 1px solid transparent;
+    font-weight: 400;
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: var(--button-primary-disabled-bg);
+      color: var(--button-primary-disabled-text);
+    }
+
+    &:hover {
+      background-color: var(--button-primary-bg-hovered);
+
+      border: 1px solid var(--button-primary-text);
+    }
+  }
+
+  &-icon {
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 
