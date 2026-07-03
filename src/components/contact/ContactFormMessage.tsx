@@ -11,7 +11,7 @@ interface Props {
 
 export function ContactFormMessage({ value, error, onChange }: Props) {
   return (
-    <div className="mt-7">
+    <div>
       <ContactTextarea
         label="Message"
         icon={<Mail size={15} />}
