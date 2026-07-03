@@ -14,25 +14,14 @@ export function ContactFormActions({ loading, disabled, onSubmit }: Props) {
     <Button
       disabled={disabled || loading}
       onClick={onSubmit}
-      className="
-        mt-8
-        py-5
-        w-full
-        rounded-full
-        bg-white
-        text-black
-        hover:bg-zinc-200
-        disabled:pointer-events-none
-        disabled:cursor-not-allowed
-        disabled:opacity-40
-      "
+      className="submit-btn"
     >
       {loading ? (
         <Loader2 className="animate-spin" />
       ) : (
         <React.Fragment>
-          Submit Form
-          <Send />
+          Send message
+          <Send className="submit-icon" />
         </React.Fragment>
       )}
     </Button>
