@@ -18,10 +18,8 @@
   }
 
   & a {
-    transition: color 0.2s ease;
-
     &:hover {
-      color: white;
+      color: var(--text-primary);
       text-decoration: underline;
     }
   }
@@ -32,8 +30,7 @@
 
     &-pic {
       background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%),
-        url("/assets/makenedev-profile.jpeg");
+        var(--profile-gradient), url("/assets/makenedev-profile.jpeg");
       background-position: center top;
       background-size: cover;
       width: 100%;
@@ -74,10 +71,9 @@
 
       & svg {
         color: var(--color-zinc-400);
-        transition: color 0.2s ease;
 
         &:hover {
-          color: white;
+          color: var(--text-primary);
         }
       }
     }
@@ -86,11 +82,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border: 2px solid var(--color-zinc-700);
+      border: 2px solid var(--border-resume);
       border-radius: 9rem;
       padding: 0.5rem 1.2rem;
       font-size: 0.8rem;
       font-weight: 500;
+
+      transition: all 0.1s ease-in;
 
       @media (width <= 640px) {
         width: fit-content;
@@ -98,20 +96,16 @@
         padding: 0.5rem 1rem;
       }
 
-      &,
       & svg {
-        transition: all 0.2s ease-in;
-      }
-
-      & svg {
-        color: var(--color-zinc-700);
+        color: var(--border-resume);
+        transition: all 0.1s ease-in;
       }
 
       &:hover {
-        border-color: white;
+        border-color: var(--text-primary);
 
         & svg {
-          color: white;
+          color: var(--text-primary);
         }
       }
     }
@@ -127,7 +121,7 @@
         font-family: "Antonio", sans-serif;
         font-size: 1.5rem;
         font-weight: 900;
-        color: white;
+        color: var(--text-primary);
 
         text-transform: uppercase;
         line-height: 1;
@@ -142,13 +136,13 @@
     }
 
     &__timeline {
-      color: var(--color-zinc-400);
+      color: var(--secondary-text);
       display: grid;
       gap: 2.5rem;
 
       & h2 {
-        color: white;
-        font-weight: 500;
+        color: var(--text-primary);
+        font-weight: 700;
       }
 
       @media (width <= 640px) {
@@ -159,6 +153,10 @@
     &__work {
       display: grid;
       gap: 0.5rem;
+
+      & p {
+        color: var(--text-secondary);
+      }
     }
   }
 }
