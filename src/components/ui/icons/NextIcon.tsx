@@ -13,7 +13,12 @@ export default function NextIcon() {
           y="0"
           style={{ maskType: "alpha" }}
         >
-          <circle cx="90" cy="90" fill="#ffffff" r="90" />
+          <circle
+            cx="90"
+            cy="90"
+            className="fill-black dark:fill-white"
+            r="90"
+          />
         </mask>
         <g mask="url(#nextjs_icon_dark__:r8:mask0_408_134)">
           <circle cx="90" cy="90" data-circle="true" fill="#1a1a1a" r="90" />
