@@ -15,6 +15,7 @@ export default function Experiences() {
               <h2 className="sm:text-sm">{experience.role}</h2>
               <p className="sm:text-sm">{experience.description}</p>
             </div>
+            
             <p className="sm:text-sm">{experience.period}</p>
           </li>
         ))}
