@@ -55,16 +55,28 @@ export default function PnpmIcon() {
             <use xlinkHref="#pnpm_dark__dqv5133G8" fill="#f9ad00" />
           </g>
           <g>
-            <use xlinkHref="#pnpm_dark__b1Lv79ypvm" fill="#ffffff" />
+            <use
+              xlinkHref="#pnpm_dark__b1Lv79ypvm"
+              className="fill-black dark:fill-white"
+            />
           </g>
           <g>
-            <use xlinkHref="#pnpm_dark__hy1IZWwLX" fill="#ffffff" />
+            <use
+              xlinkHref="#pnpm_dark__hy1IZWwLX"
+              className="fill-black dark:fill-white"
+            />
           </g>
           <g>
-            <use xlinkHref="#pnpm_dark__akQfjxQes" fill="#ffffff" />
+            <use
+              xlinkHref="#pnpm_dark__akQfjxQes"
+              className="fill-black dark:fill-white"
+            />
           </g>
           <g>
-            <use xlinkHref="#pnpm_dark__bdSrwE5pk" fill="#ffffff" />
+            <use
+              xlinkHref="#pnpm_dark__bdSrwE5pk"
+              className="fill-black dark:fill-white"
+            />
           </g>
         </g>
       </svg>
