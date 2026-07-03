@@ -6,7 +6,7 @@ export default function Gratitude() {
       <Logo variant="footer" />
 
       <p className="footer__gratitude text-center sm:text-left">
-        <span>Glade to share</span> my work!
+        Glade to share my work!
       </p>
     </div>
   )
