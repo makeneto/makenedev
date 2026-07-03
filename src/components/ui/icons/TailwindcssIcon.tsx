@@ -14,7 +14,7 @@ export default function TailwindcssIcon() {
         </g>
         <defs>
           <clipPath id="tailwindcss__a">
-            <path fill="#fff" d="M0 0h54v32.4H0z" />
+            <path className="fill-black dark:fill-white" d="M0 0h54v32.4H0z" />
           </clipPath>
         </defs>
       </svg>
