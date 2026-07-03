@@ -22,7 +22,7 @@ export default function GimpIcon() {
           />
           <path
             id="gimp__u"
-            fill="#fff"
+            className="fill-black dark:fill-white"
             fillRule="evenodd"
             d="M23.157747 20.953165a1.767767 1.767767 0 1 1-3.535534 0 1.767767 1.767767 0 1 1 3.535534 0z"
             overflow="visible"
@@ -30,7 +30,7 @@ export default function GimpIcon() {
           />
           <path
             id="gimp__z"
-            fill="#fff"
+            className="fill-black dark:fill-white"
             d="M8.8749989 37.75a1.2499999 1.2499999 0 1 1-2.4999997 0 1.2499999 1.2499999 0 1 1 2.4999997 0z"
             opacity=".52777782"
             overflow="visible"
@@ -303,7 +303,7 @@ export default function GimpIcon() {
             transform="rotate(-36.83273 3.36645406 26.60031137)"
           />
           <path
-            fill="#fff"
+            className="fill-black dark:fill-white"
             fillRule="evenodd"
             d="M5.833631 23.251263a1.767767 2.1213202 0 1 1-3.5355339 0 1.767767 2.1213202 0 1 1 3.5355339 0z"
             overflow="visible"
