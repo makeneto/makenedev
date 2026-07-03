@@ -105,7 +105,8 @@
           "name": "PostgreSQL",
           "category": "Database",
           "link": "https://www.postgresql.org",
-          "certificate": "?"
+          "certificate": "?",
+          "learn": "https://github.com/makeneto/learning-postgresql"
         },
         {
           "id": "mongodb",
@@ -268,13 +269,6 @@
           "name": "Udemy",
           "category": "Education",
           "link": "https://www.udemy.com",
-          "certificate": null
-        },
-        {
-          "id": "rocketseat",
-          "name": "Rocketseat",
-          "category": "Education",
-          "link": "https://www.rocketseat.com.br",
           "certificate": null
         },
         {
