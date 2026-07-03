@@ -9,7 +9,7 @@ import { socialLinks } from "../data/links"
 
 export default function SocialLinks() {
   return (
-    <section className="flex items-center gap-3 sm:gap-4">
+    <section className="flex items-center gap-3 sm:gap-4 sm:mr-3">
       {socialLinks.map((link) => (
         <NavLink
           key={link.link}
