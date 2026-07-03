@@ -10,22 +10,22 @@ export function ContactForm() {
 
   return (
     <div className="contact-form">
-      <ContactFormFields
-        form={form}
-        errors={errors}
-        updateField={updateField}
-      />
-
-      <ContactFormServices
-        services={form.services}
-        onChange={(value) => updateField("services", value)}
-      />
-
-      <ContactFormMessage
-        value={form.message}
-        error={errors.message}
-        onChange={(e) => updateField("message", e.target.value)}
-      />
+      <section>
+        <ContactFormFields
+          form={form}
+          errors={errors}
+          updateField={updateField}
+        />
+        <ContactFormServices
+          services={form.services}
+          onChange={(value) => updateField("services", value)}
+        />
+        <ContactFormMessage
+          value={form.message}
+          error={errors.message}
+          onChange={(e) => updateField("message", e.target.value)}
+        />
+      </section>
 
       <ContactFormActions
         loading={loading}
