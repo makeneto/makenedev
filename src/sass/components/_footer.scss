@@ -2,6 +2,14 @@
   margin-top: 20rem;
   padding-bottom: 1.5rem;
 
+  @media (width <= 1280px) {
+    margin-top: 15rem;
+  }
+
+  @media (width <= 884px) {
+    margin-top: 12rem;
+  }
+
   @media (width <= 640px) {
     margin-top: 10rem;
     display: grid;
@@ -10,10 +18,7 @@
 
   &__gratitude {
     font-size: 1.3rem;
-
-    & span {
-      font-style: italic;
-      font-family: "Playfair Display", sans-serif;
-    }
+    font-style: italic;
+    font-family: "Playfair Display", sans-serif;
   }
 }
