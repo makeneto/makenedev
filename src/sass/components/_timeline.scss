@@ -3,8 +3,8 @@
   display: grid;
   gap: 8rem;
   width: 100%;
-  background: #000;
-  color: #fff;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 
   @media (width <= 640px) {
     margin-top: 11rem;
@@ -30,7 +30,7 @@
     .timeline__track {
       font-size: 0.62rem;
       letter-spacing: 0.15em;
-      color: rgba(255, 255, 255, 0.4);
+      color: var(--text-primary);
       display: block;
       margin-bottom: 0.4rem;
     }
@@ -38,7 +38,7 @@
     h3 {
       font-size: 0.875rem;
       font-weight: 500;
-      color: var(--color-zinc-400);
+      color: var(--text-secondary);
     }
   }
 
@@ -46,7 +46,8 @@
     padding-top: 1.9rem;
     padding-inline: 2rem;
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.35);
+    font-weight: 600;
+    color: var(--text-primary);
     border-right: 1px solid var(--color-zinc-800);
     border-bottom: 1px solid var(--color-zinc-800);
     border-left: 1px solid var(--color-zinc-800);
@@ -72,7 +73,7 @@
     width: 6px;
     height: 6px;
     border-radius: 999px;
-    background: #fff;
+    background-color: var(--text-primary);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
   }
 
@@ -81,7 +82,7 @@
     font-size: 0.62rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.35);
+    color: var(--text-secondary);
     margin-bottom: 0.5rem;
   }
 
@@ -89,14 +90,14 @@
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--text-primary);
   }
 
   &__description {
     font-size: 0.875rem;
     line-height: 1.6;
     max-width: 220px;
-    color: rgba(255, 255, 255, 0.45);
+    color: var(--text-tertiary);
     margin-bottom: 0.85rem;
   }
 
@@ -111,7 +112,7 @@
     font-family: var(--font-mono);
     font-weight: 600;
     border: 1px solid var(--color-zinc-800);
-    color: rgba(255, 255, 255, 0.45);
+    color: var(--text-secondary);
     border-radius: calc(var(--radius) * 2.6);
     padding: 0.125rem 0.625rem;
   }
@@ -145,14 +146,14 @@
       font-family: "Antonio", sans-serif;
       font-size: 1.27rem;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.85);
+      color: var(--text-primary);
       padding-top: 1.5rem;
       padding-inline: 0;
       padding-bottom: 1rem;
 
       &::before {
         content: "*";
-        color: rgba(255, 255, 255, 0.85);
+        color: var(--text-primary);
       }
     }
 
@@ -180,7 +181,7 @@
     &__title {
       &::before {
         content: attr(data-track) " · ";
-        color: white;
+        color: var(--text-primary);
       }
     }
   }
