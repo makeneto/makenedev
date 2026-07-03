@@ -28,7 +28,6 @@ import FigmaIcon from "../components/ui/icons/FigmaIcon"
 import CanvaIcon from "../components/ui/icons/CanvaIcon"
 import GimpIcon from "../components/ui/icons/GimpIcon"
 import MongodbIcon from "../components/ui/icons/MongodbIcon"
-import RocketseatIcon from "../components/ui/icons/RocketseatIcon"
 import WordIcon from "../components/ui/icons/WordIcon"
 import ExcelIcon from "../components/ui/icons/ExcelIcon"
 import PowerpointIcon from "../components/ui/icons/PowerpointIcon"
@@ -69,7 +68,6 @@ export const stackIconMap: Record<string, ComponentType> = {
   moexcel: ExcelIcon,
   mopowerpoint: PowerpointIcon,
   udemy: UdemyIcon,
-  rocketseat: RocketseatIcon,
   anthropic: AnthropicIcon,
   microsoft: MicrosoftIcon,
 }
