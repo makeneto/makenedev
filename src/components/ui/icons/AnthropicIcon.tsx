@@ -4,7 +4,7 @@ export default function AnthropicIcon() {
   return (
     <StackCard name="Anthropic">
       <svg
-        fill="#ffff"
+        className="fill-black dark:fill-white"
         fillRule="evenodd"
         style={{ flex: "none", lineHeight: "1" }}
         viewBox="0 0 24 24"
