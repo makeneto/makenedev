@@ -3,7 +3,7 @@
     padding-bottom: 1rem;
     margin-bottom: 2rem;
 
-    border-bottom: 1px solid var(--color-zinc-600);
+    border-bottom: 1px solid var(--border-primary);
   }
 
   &-heading {
@@ -12,7 +12,7 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -0.01em;
-    color: white;
+    color: var(--text-primary);
     margin: 0;
     white-space: nowrap;
     line-height: 1;
@@ -60,8 +60,12 @@
       }
     }
 
-    & a:hover {
-      background-color: var(--color-zinc-900);
+    & a {
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        background-color: var(--stack-link);
+      }
     }
   }
 }
