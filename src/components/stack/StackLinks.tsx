@@ -1,12 +1,17 @@
-import { Award, LinkIcon } from "lucide-react"
+import { LinkIcon, Award, BookOpen } from "lucide-react"
 import { Link } from "react-router-dom"
 
 interface StackLinksProps {
   link: string
   certificate: null | string
+  learn: null | string
 }
 
-export default function StackLinks({ link, certificate }: StackLinksProps) {
+export default function StackLinks({
+  link,
+  certificate,
+  learn,
+}: StackLinksProps) {
   return (
     <section className="flex items-center gap-0.5">
       <Link to={link} target="_blank" rel="noopener noreferrer" title="Website">
@@ -16,7 +21,7 @@ export default function StackLinks({ link, certificate }: StackLinksProps) {
       {certificate &&
         (certificate === "?" ? (
           <aside title="Certificate not available">
-            <Award className="w-auto h-4 text-yellow-400 opacity-25 cursor-not-allowed" />
+            <Award className="w-auto h-4 text-yellow-500 dark:text-yellow-400 opacity-30 dark:opacity-25" />
           </aside>
         ) : (
           <Link
@@ -25,9 +30,20 @@ export default function StackLinks({ link, certificate }: StackLinksProps) {
             rel="noopener noreferrer"
             title="Certificate"
           >
-            <Award className="text-yellow-400 hover:text-yellow-300 transition-colors" />
+            <Award className="text-yellow-500 dark:text-yellow-400 transition-colors" />
           </Link>
         ))}
+
+      {learn && (
+        <Link
+          to={learn}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Learn with me`}
+        >
+          <BookOpen className="text-blue-500 dark:text-blue-400 transition-colors" />
+        </Link>
+      )}
     </section>
   )
 }
