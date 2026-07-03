@@ -1,14 +1,88 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* Light Mode */
+  --bg-primary: #fafaf8;
+  --bg-secondary: #f0f0ed;
+  --bg-tertiary: #e8e8e5;
+  --openToWork-bg: #edededb3;
+  --openToWork-hovered: #d5d5d5c9;
+  --stack-link: #e8e8e89a;
+  --light-gray-bg: #eeeeeeaf;
+  --profile-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --text-primary: #0d0d0b;
+  --text-secondary: #6d6d6d;
+  --text-tertiary: #6a6a60;
+  --text-label: #000000;
+  --border-primary: #bebebe;
+  --border-secondary: #ccccc7;
+  --border-tertiary: #bfbfba;
+  --border-resume: #a0a0a4;
+  --button-primary-bg: #000000;
+  --button-primary-text: #ffffff;
+  --button-primary-bg-hovered: #2e2e2e;
+  --button-primary-disabled-bg: #d4d4d4;
+  --button-primary-disabled-text: #808080;
+  --surface-hover: #e8e8e5;
+  --surface-active: #d9d9d5;
+  --accent-soft: #d9d9d5;
+  --accent-medium: #b8b8af;
+  --accent-strong: #6a6a60;
+  --selection-bg: #ccccc7;
+  --text-primary-rgb: 13, 13, 11;
+  --text-secondary-rgb: 58, 58, 53;
+  --text-tertiary-rgb: 106, 106, 96;
+}
+
+.dark {
+  /* Dark Mode */
+  --bg-primary: #000000;
+  --bg-secondary: #151515;
+  --bg-tertiary: #1a1a1a;
+  --openToWork-bg: #18181b;
+  --openToWork-hovered: #27272aba;
+  --stack-link: #18181b;
+  --light-gray-bg: #43434336;
+  --profile-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgb(0, 0, 0) 100%
+  );
+  --text-primary: #ffffff;
+  --text-secondary: #9f9fa9;
+  --text-tertiary: #a8a8a8;
+  --text-label: #9f9fa9;
+  --border-primary: #3a3a3a;
+  --border-secondary: #3f3f3f;
+  --border-tertiary: #4f4f4f;
+  --border-resume: #3f3f46;
+  --button-primary-text: #000000;
+  --button-primary-bg: #ffffff;
+  --button-primary-bg-hovered: #d2d2d2;
+  --button-primary-disabled-bg: #444444a3;
+  --button-primary-disabled-text: #646464;
+  --surface-hover: #1f1f1f;
+  --surface-active: #2a2a2a;
+  --accent-soft: #3f3f3f;
+  --accent-medium: #2f2f2f;
+  --accent-strong: #a8a8a8;
+  --selection-bg: #3f3f3f;
+}
+
 body {
   font-family: "Inter", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   padding-inline: 25rem;
 }
 body::selection {
-  background-color: var(--color-zinc-700);
+  background-color: var(--selection-bg);
+  color: var(--text-primary);
 }
 @media (width <= 1280px) {
   body {
@@ -37,6 +111,9 @@ textarea::-webkit-scrollbar {
 textarea {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
 }
 
 .blog-body {
@@ -80,7 +157,7 @@ textarea {
   }
 }
 .blog-lastBlog {
-  border-bottom: 1px solid #2f2f2f;
+  border-bottom: 1px solid var(--border-primary);
   padding-bottom: 2rem;
 }
 @media (width <= 640px) {
@@ -89,13 +166,12 @@ textarea {
   }
 }
 .blog-lastBlog-card {
-  background-color: rgb(21, 21, 21);
+  background-color: var(--bg-secondary);
   padding: 1rem 1rem 1rem 1.2rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: 47% auto;
-  border: 1px dashed #3f3f3f;
-  transition: all 0.2s ease-in-out;
+  border: 1px dashed var(--border-secondary);
 }
 @media (width <= 640px) {
   .blog-lastBlog-card {
@@ -105,19 +181,20 @@ textarea {
 }
 .blog-lastBlog-card:hover {
   background-color: transparent;
-  border: 1px dashed white;
+  border: 1px dashed var(--text-primary);
 }
 .blog-lastBlog-card:hover h1 {
   text-decoration: underline;
 }
 .blog-lastBlog-card div span {
   font-size: 0.8rem;
-  color: var(--color-zinc-400);
+  color: var(--text-tertiary);
 }
 .blog-lastBlog-card div h1 {
   margin-top: 0.4rem;
   font-size: 1.8rem;
   font-weight: 600;
+  color: var(--text-primary);
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -141,7 +218,7 @@ textarea {
 }
 .blog-lastBlog-card div p {
   margin-block: 1rem 2rem;
-  color: var(--color-zinc-200);
+  color: var(--text-secondary);
   display: -webkit-box;
   line-clamp: 3;
   -webkit-line-clamp: 3;
@@ -189,7 +266,7 @@ textarea {
   display: flex;
 }
 .blog-card {
-  background-color: #101010;
+  background-color: var(--light-gray-bg);
   padding: 0.9rem;
   display: flex;
   flex-direction: column;
@@ -199,10 +276,9 @@ textarea {
   color: inherit;
   overflow: hidden;
   border: 1px dashed transparent;
-  transition: all 0.2s ease;
 }
 .blog-card:hover {
-  border: 1px dashed white;
+  border: 1px dashed var(--text-primary);
   background-color: transparent;
 }
 .blog-card:hover .blog-card__title,
@@ -282,7 +358,7 @@ textarea {
 }
 .blog-card__category, .blog-card__date, .blog-card__link {
   font-size: 0.75rem;
-  color: var(--color-zinc-400);
+  color: var(--text-tertiary);
 }
 .blog-card__overlay .blog-card__category, .blog-card__overlay .blog-card__date, .blog-card__overlay {
   color: white;
@@ -291,7 +367,7 @@ textarea {
 .blog-card__title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
   line-height: 1.4;
 }
 @media (width <= 1280px) {
@@ -302,7 +378,7 @@ textarea {
 .blog-card__description {
   font-size: 0.9rem;
   line-height: 1.54;
-  color: var(--color-zinc-400);
+  color: var(--text-tertiary);
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -315,7 +391,7 @@ textarea {
   }
 }
 .blog-card__link {
-  color: white;
+  color: var(--text-primary);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -349,8 +425,9 @@ textarea {
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
-  border-bottom: 1px dashed var(--color-zinc-700);
+  border-bottom: 1px dashed var(--border-primary);
   padding-bottom: 0.4rem;
+  color: var(--text-primary);
 }
 .blog-aside ul {
   display: grid;
@@ -358,16 +435,16 @@ textarea {
 }
 .blog-aside ul li {
   font-size: 0.87rem;
-  color: var(--color-zinc-400);
+  color: var(--text-tertiary);
   cursor: pointer;
 }
 .blog-aside ul li.active {
-  color: white;
+  color: var(--text-primary);
   font-weight: 500;
   text-decoration: line-through;
 }
 .blog-aside ul li:hover {
-  color: white;
+  color: var(--text-primary);
 }
 
 .verticalBlogs {
@@ -379,7 +456,7 @@ textarea {
   justify-content: space-between;
 }
 .verticalBlogs a:not(:last-child) {
-  border-bottom: 1px solid rgba(180, 180, 180, 0.12);
+  border-bottom: 1px solid var(--border-primary);
 }
 .verticalBlogs a {
   padding-block: 1rem;
@@ -404,9 +481,10 @@ textarea {
   }
 }
 .verticalBlogs a div p {
-  color: var(--color-zinc-500);
+  color: var(--text-tertiary);
 }
 .verticalBlogs a div h3 {
+  color: var(--text-primary);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -428,11 +506,8 @@ textarea {
     display: none;
   }
 }
-.verticalBlogs a, .verticalBlogs a svg {
-  transition: all 0.2s ease-in;
-}
 .verticalBlogs a:hover {
-  border-bottom-color: white;
+  border-bottom-color: var(--text-primary);
 }
 .verticalBlogs a:hover svg {
   opacity: 1;
@@ -476,7 +551,7 @@ textarea {
   font-family: "Antonio", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--color-zinc-400);
+  color: var();
   text-transform: uppercase;
 }
 @media (width <= 640px) {
@@ -526,7 +601,7 @@ textarea {
 }
 .contact__description, .contact__email {
   max-width: 480px;
-  color: var(--color-zinc-400);
+  color: var(--text-secondary);
   font-size: 1.2rem;
   line-height: 1.7;
 }
@@ -560,13 +635,42 @@ textarea {
   text-decoration: underline;
 }
 
+.contact-form section {
+  display: grid;
+  gap: 3rem;
+}
 .contact-form__label {
   margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 14px;
-  color: #bebec8;
+  color: var(--text-label);
+}
+
+.submit-btn {
+  background-color: transparent;
+  margin-top: 2rem;
+  padding-block: 1.25rem;
+  width: 100%;
+  border-radius: 999rem;
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: 1px solid transparent;
+  font-weight: 400;
+}
+.submit-btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--button-primary-disabled-bg);
+  color: var(--button-primary-disabled-text);
+}
+.submit-btn:hover {
+  background-color: var(--button-primary-bg-hovered);
+  border: 1px solid var(--button-primary-text);
+}
+.submit-icon {
+  width: 0.8rem;
+  height: 0.8rem;
 }
 
 .teste {
@@ -575,8 +679,8 @@ textarea {
 }
 
 .description--medium {
-  color: var(--color-zinc-400);
   font-size: 1.1rem;
+  color: var(--text-secondary);
 }
 @media (width <= 1280px) {
   .description--medium {
@@ -584,8 +688,8 @@ textarea {
   }
 }
 .description--normal {
-  color: var(--color-zinc-400);
   font-size: 1.2rem;
+  color: var(--text-secondary);
 }
 @media (width <= 1280px) {
   .description--normal {
@@ -597,6 +701,16 @@ textarea {
   margin-top: 20rem;
   padding-bottom: 1.5rem;
 }
+@media (width <= 1280px) {
+  .footer {
+    margin-top: 15rem;
+  }
+}
+@media (width <= 884px) {
+  .footer {
+    margin-top: 12rem;
+  }
+}
 @media (width <= 640px) {
   .footer {
     margin-top: 10rem;
@@ -606,8 +720,6 @@ textarea {
 }
 .footer__gratitude {
   font-size: 1.3rem;
-}
-.footer__gratitude span {
   font-style: italic;
   font-family: "Playfair Display", sans-serif;
 }
@@ -711,13 +823,13 @@ textarea {
   }
 }
 .homeHeader__openToWork div {
-  background-color: var(--color-zinc-900);
+  background-color: var(--openToWork-bg);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  transition: background 0.2s ease-out;
+  transition: all 0.2s ease-in;
 }
 @media (width <= 640px) {
   .homeHeader__openToWork div a {
@@ -725,7 +837,7 @@ textarea {
   }
 }
 .homeHeader__openToWork div:hover {
-  background-color: var(--color-zinc-800);
+  background-color: var(--openToWork-hovered);
 }
 @media (width <= 1280px) {
   .homeHeader__openToWork div {
@@ -743,7 +855,7 @@ textarea {
 .homeHeader__openToWork--dot {
   width: 1rem;
   height: 1rem;
-  background-color: #818181;
+  background-color: var(--accent-medium);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -759,7 +871,7 @@ textarea {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--text-primary);
 }
 @media (width <= 640px) {
   .homeHeader__openToWork--dot--inner {
@@ -809,7 +921,7 @@ textarea {
   text-align: end;
   font-size: 2.9rem;
   line-height: 3.5rem;
-  color: #9f9f9f;
+  color: var(--text-secondary);
   padding-bottom: 0.6rem;
   letter-spacing: 0.05rem;
 }
@@ -851,7 +963,7 @@ textarea {
   gap: 1rem;
 }
 .default-header--about span {
-  color: white;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -891,21 +1003,20 @@ textarea {
 }
 .nav--activeLink {
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
   text-decoration: line-through;
 }
 .nav--link {
   font-weight: 500;
-  color: var(--color-zinc-400);
-  transition: color 0.2s ease;
+  color: var(--text-tertiary);
 }
 .nav--link:hover {
-  color: white;
+  color: var(--text-primary);
 }
 .nav-icon {
   cursor: pointer;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
 }
 @media (width <= 640px) {
   .nav-icon {
@@ -949,7 +1060,7 @@ textarea {
 .quoteOfTheWeek__content {
   display: grid;
   gap: 2rem;
-  border-left: 0.3em solid white;
+  border-left: 0.3em solid var(--text-primary);
   padding-block: 1rem;
   padding-inline: 3rem 0;
 }
@@ -969,7 +1080,7 @@ textarea {
 .quoteOfTheWeek__content h1 {
   width: 65%;
   font-size: 4rem;
-  color: #a7a7a7;
+  color: var(--text-secondary);
 }
 @media (width <= 1280px) {
   .quoteOfTheWeek__content h1 {
@@ -989,12 +1100,12 @@ textarea {
   .quoteOfTheWeek__content h1 {
     width: 95%;
     font-size: 1.9rem;
+    line-height: 2.5rem;
   }
 }
 @media (width <= 400px) {
   .quoteOfTheWeek__content h1 {
     font-size: 1.8rem;
-    line-height: 2.6rem;
   }
 }
 .quoteOfTheWeek__content small {
@@ -1021,7 +1132,7 @@ textarea {
   justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--color-zinc-600);
+  border-bottom: 1px solid var(--border-primary);
 }
 .showcase-heading {
   font-family: "Antonio", sans-serif;
@@ -1029,7 +1140,7 @@ textarea {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: white;
+  color: var(--text-primary);
   margin: 0;
   white-space: nowrap;
   line-height: 1;
@@ -1046,16 +1157,15 @@ textarea {
 .divider {
   flex: 1;
   height: 1px;
-  background-color: #d4d4d4;
+  background-color: var(--border-primary);
 }
 
 .viewAll {
   font-size: 0.9375rem;
   font-weight: 400;
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
   white-space: nowrap;
-  transition: opacity 0.2s ease;
 }
 .viewAll:hover {
   text-decoration: underline;
@@ -1093,7 +1203,6 @@ textarea {
   width: 1rem;
   height: 1rem;
   opacity: 0;
-  transition: opacity 0.2s ease-in;
 }
 .showcase-card:hover svg {
   opacity: 1;
@@ -1104,7 +1213,7 @@ textarea {
 .showcase-card--title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
 }
 @media (width <= 1280px) {
   .showcase-card--title {
@@ -1115,7 +1224,7 @@ textarea {
   margin-top: 0.3rem;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--color-zinc-400);
+  color: var(--text-secondary);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1140,7 +1249,6 @@ textarea {
   object-fit: cover;
   object-position: center center;
   display: block;
-  transition: transform 0.25s ease;
 }
 @media (width <= 1280px) {
   .showcase-cover {
@@ -1161,7 +1269,7 @@ textarea {
 .stack-header {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--color-zinc-600);
+  border-bottom: 1px solid var(--border-primary);
 }
 .stack-heading {
   font-family: "Antonio", sans-serif;
@@ -1169,7 +1277,7 @@ textarea {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: white;
+  color: var(--text-primary);
   margin: 0;
   white-space: nowrap;
   line-height: 1;
@@ -1213,8 +1321,11 @@ textarea {
   width: auto;
   height: 1rem;
 }
+.stack-card a {
+  transition: all 0.1s ease-in;
+}
 .stack-card a:hover {
-  background-color: var(--color-zinc-900);
+  background-color: var(--stack-link);
 }
 
 .timeline {
@@ -1222,8 +1333,8 @@ textarea {
   display: grid;
   gap: 8rem;
   width: 100%;
-  background: #000;
-  color: #fff;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 @media (width <= 640px) {
   .timeline {
@@ -1248,20 +1359,21 @@ textarea {
 .timeline__header .timeline__track {
   font-size: 0.62rem;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-primary);
   display: block;
   margin-bottom: 0.4rem;
 }
 .timeline__header h3 {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--color-zinc-400);
+  color: var(--text-secondary);
 }
 .timeline__year {
   padding-top: 1.9rem;
   padding-inline: 2rem;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  color: var(--text-primary);
   border-right: 1px solid var(--color-zinc-800);
   border-bottom: 1px solid var(--color-zinc-800);
   border-left: 1px solid var(--color-zinc-800);
@@ -1285,7 +1397,7 @@ textarea {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: #fff;
+  background-color: var(--text-primary);
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
 }
 .timeline-card__title {
@@ -1293,20 +1405,20 @@ textarea {
   font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--text-secondary);
   margin-bottom: 0.5rem;
 }
 .timeline-card__subtitle {
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--text-primary);
 }
 .timeline-card__description {
   font-size: 0.875rem;
   line-height: 1.6;
   max-width: 220px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--text-tertiary);
   margin-bottom: 0.85rem;
 }
 .timeline-card__tags {
@@ -1319,7 +1431,7 @@ textarea {
   font-family: var(--font-mono);
   font-weight: 600;
   border: 1px solid var(--color-zinc-800);
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--text-secondary);
   border-radius: calc(var(--radius) * 2.6);
   padding: 0.125rem 0.625rem;
 }
@@ -1349,14 +1461,14 @@ textarea {
     font-family: "Antonio", sans-serif;
     font-size: 1.27rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
     padding-top: 1.5rem;
     padding-inline: 0;
     padding-bottom: 1rem;
   }
   .timeline__year::before {
     content: "*";
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
   }
   .timeline__column {
     grid-column: 1/-1;
@@ -1379,7 +1491,7 @@ textarea {
   }
   .timeline-card__title::before {
     content: attr(data-track) " · ";
-    color: white;
+    color: var(--text-primary);
   }
 }
 .work-experience {
@@ -1404,11 +1516,8 @@ textarea {
     gap: 8rem;
   }
 }
-.work-experience a {
-  transition: color 0.2s ease;
-}
 .work-experience a:hover {
-  color: white;
+  color: var(--text-primary);
   text-decoration: underline;
 }
 .work-experience .profile {
@@ -1416,7 +1525,7 @@ textarea {
   gap: 2rem;
 }
 .work-experience .profile-pic {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%), url("/assets/makenedev-profile.jpeg");
+  background: var(--profile-gradient), url("/assets/makenedev-profile.jpeg");
   background-position: center top;
   background-size: cover;
   width: 100%;
@@ -1451,20 +1560,20 @@ textarea {
 }
 .work-experience .profile__links svg {
   color: var(--color-zinc-400);
-  transition: color 0.2s ease;
 }
 .work-experience .profile__links svg:hover {
-  color: white;
+  color: var(--text-primary);
 }
 .work-experience .profile__resume {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid var(--color-zinc-700);
+  border: 2px solid var(--border-resume);
   border-radius: 9rem;
   padding: 0.5rem 1.2rem;
   font-size: 0.8rem;
   font-weight: 500;
+  transition: all 0.1s ease-in;
 }
 @media (width <= 640px) {
   .work-experience .profile__resume {
@@ -1473,17 +1582,15 @@ textarea {
     padding: 0.5rem 1rem;
   }
 }
-.work-experience .profile__resume, .work-experience .profile__resume svg {
-  transition: all 0.2s ease-in;
-}
 .work-experience .profile__resume svg {
-  color: var(--color-zinc-700);
+  color: var(--border-resume);
+  transition: all 0.1s ease-in;
 }
 .work-experience .profile__resume:hover {
-  border-color: white;
+  border-color: var(--text-primary);
 }
 .work-experience .profile__resume:hover svg {
-  color: white;
+  color: var(--text-primary);
 }
 .work-experience .experiences h1 {
   font-size: 1.3rem;
@@ -1495,7 +1602,7 @@ textarea {
     font-family: "Antonio", sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
-    color: white;
+    color: var(--text-primary);
     text-transform: uppercase;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -1506,13 +1613,13 @@ textarea {
   }
 }
 .work-experience .experiences__timeline {
-  color: var(--color-zinc-400);
+  color: var(--secondary-text);
   display: grid;
   gap: 2.5rem;
 }
 .work-experience .experiences__timeline h2 {
-  color: white;
-  font-weight: 500;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 @media (width <= 640px) {
   .work-experience .experiences__timeline {
@@ -1522,6 +1629,9 @@ textarea {
 .work-experience .experiences__work {
   display: grid;
   gap: 0.5rem;
+}
+.work-experience .experiences__work p {
+  color: var(--text-secondary);
 }
 
 /*# sourceMappingURL=style.css.map */
