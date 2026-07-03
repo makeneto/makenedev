@@ -15,7 +15,7 @@ export function ContactInput({
 }: Props) {
   const borderClass = invalid
     ? "border-red-900 focus-visible:border-red-900"
-    : "border-zinc-700 focus-visible:border-white"
+    : "border-zinc-300 focus-visible:border-black dark:border-zinc-700 dark:focus-visible:border-white"
 
   return (
     <div className="contact-form__field">
