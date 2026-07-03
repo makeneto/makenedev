@@ -87,23 +87,22 @@
     }
 
     & div {
-      background-color: var(--color-zinc-900);
+      background-color: var(--openToWork-bg);
       border-radius: 2rem;
       padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      transition: background 0.2s ease-out;
-      
+      transition: all 0.2s ease-in;
+
       @media (width <= 640px) {
         & a {
-          font-size: .7rem;
-        }     
+          font-size: 0.7rem;
+        }
       }
 
-
       &:hover {
-        background-color: var(--color-zinc-800);
+        background-color: var(--openToWork-hovered);
       }
 
       @media (width <= 1280px) {
@@ -122,26 +121,26 @@
     &--dot {
       width: 1rem;
       height: 1rem;
-      background-color: #818181;
+      background-color: var(--accent-medium);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
 
       @media (width <= 640px) {
-          width: 0.8em;
-          height: 0.8rem;
+        width: 0.8em;
+        height: 0.8rem;
       }
 
       &--inner {
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 50%;
-        background-color: white;
+        background-color: var(--text-primary);
 
         @media (width <= 640px) {
-            width: 0.4rem;
-            height: 0.4rem;
+          width: 0.4rem;
+          height: 0.4rem;
         }
       }
     }
@@ -154,7 +153,7 @@
     font-family: "Anton", sans-serif;
 
     @media (width <= 640px) {
-      gap: 4.8rem;   
+      gap: 4.8rem;
     }
 
     & h2,
@@ -187,7 +186,7 @@
       text-align: end;
       font-size: 2.9rem;
       line-height: 3.5rem;
-      color: #9f9f9f;
+      color: var(--text-secondary);
       padding-bottom: 0.6rem;
       letter-spacing: 0.05rem;
 
@@ -228,7 +227,7 @@
     gap: 1rem;
 
     & span {
-      color: white;
+      color: var(--text-primary);
       font-weight: 600;
     }
   }
