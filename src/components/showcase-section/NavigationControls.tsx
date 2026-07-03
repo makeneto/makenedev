@@ -23,7 +23,7 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
           type="button"
           aria-label="Previous"
           onClick={onPrev}
-          className="flex items-center gap-1.5 text-zinc-400 hover:text-white"
+          className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400"
         >
           <ChevronLeft size={18} />
           <span className="text-sm">Previous</span>
@@ -37,7 +37,7 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
           type="button"
           aria-label="Next"
           onClick={onNext}
-          className="flex items-center gap-1.5 text-zinc-400 hover:text-white"
+          className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400"
         >
           <span className="text-sm">Next</span>
           <ChevronRight size={18} />
