@@ -8,9 +8,12 @@ export default function ProfileHeader() {
     <section className="profile__header">
       <div className="flex items-center gap-1.5">
         <h1 className="profile__header--name">{name}</h1>
-        <BadgeCheck size={17} className="fill-blue-500 text-black" />
+        <BadgeCheck
+          size={17}
+          className="fill-blue-500 text-white dark:text-black"
+        />
       </div>
-      
+
       <p className="text-sm profile__header--title">{title}</p>
     </section>
   )
