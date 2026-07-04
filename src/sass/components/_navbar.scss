@@ -46,6 +46,7 @@
   &--link {
     font-weight: 500;
     color: var(--text-tertiary);
+    transition: all 0.1s ease-in;
 
     &:hover {
       color: var(--text-primary);
