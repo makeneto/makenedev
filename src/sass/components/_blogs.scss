@@ -36,7 +36,7 @@
   }
 
   &-lastBlog {
-    border-bottom: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--border-tertiary);
     padding-bottom: 2rem;
 
     @media (width <= 640px) {
@@ -152,7 +152,6 @@
   }
 
   &-card {
-    background-color: var(--light-gray-bg);
     padding: 0.9rem;
     display: flex;
     flex-direction: column;
@@ -162,6 +161,8 @@
     color: inherit;
     overflow: hidden;
     border: 1px dashed transparent;
+
+    transition: border 0.1s ease-in-out;
 
     &:hover {
       border: 1px dashed var(--text-primary);
@@ -361,14 +362,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.1s ease-in;
 
     &:not(:last-child) {
-      border-bottom: 1px solid var(--border-primary);
+      border-bottom: 1px solid var(--border-tertiary);
     }
 
     padding-block: 1rem;
 
-    & div {
+    & article {
       display: grid;
       grid-template-columns: 6rem auto;
       gap: 1rem;
@@ -387,20 +389,26 @@
         }
       }
 
-      & p {
+      & p,
+      & span {
         color: var(--text-tertiary);
       }
 
-      & h3 {
-        color: var(--text-primary);
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      & div {
+        display: grid;
+        gap: 0.4rem;
 
-        @media (width <= 640px) {
-          line-height: 1.66rem;
+        & h3 {
+          color: var(--text-primary);
+          font-weight: 500;
+
+          @media (width <= 640px) {
+            line-height: 1.66rem;
+          }
+        }
+
+        & span {
+          font-size: 0.875rem;
         }
       }
     }
@@ -409,6 +417,7 @@
       width: 0.87rem;
       height: 0.87rem;
       opacity: 0;
+      transition: all 0.1s ease-in;
 
       @media (width <= 640px) {
         display: none;
