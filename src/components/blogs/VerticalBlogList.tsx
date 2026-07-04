@@ -13,10 +13,16 @@ export default function VerticalBlogList() {
       <ul className="verticalBlogs">
         {blogsList.map((blog) => (
           <Link key={blog.link} to={blog.link}>
-            <div>
+            <article>
               <p>{blog.date}</p>
-              <h3>{blog.title}</h3>
-            </div>
+
+              <div>
+                <h3 className="line-clamp-2">{blog.title}</h3>
+                <span className="line-clamp-2 md:line-clamp-1">
+                  {blog.description}
+                </span>
+              </div>
+            </article>
 
             <ExternalLink />
           </Link>
