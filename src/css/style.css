@@ -518,7 +518,12 @@ textarea {
 
 .contact__left {
   position: sticky;
-  top: 20%;
+  top: 7%;
+}
+@media (width <= 1280px) {
+  .contact__left {
+    top: 20%;
+  }
 }
 @media (width <= 884px) {
   .contact__left {
@@ -1008,6 +1013,7 @@ textarea {
 .nav--link {
   font-weight: 500;
   color: var(--text-tertiary);
+  transition: all 0.1s ease-in;
 }
 .nav--link:hover {
   color: var(--text-primary);
