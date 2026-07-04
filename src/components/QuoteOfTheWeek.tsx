@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { RiLink } from "@remixicon/react"
+
 import { fallbackQuote } from "../data/fallbackQuote"
 import { useQuote } from "../hooks/useQuote"
 import { weekCounter } from "../utils/weekCounter"
@@ -16,7 +18,7 @@ export default function QuoteOfTheWeek() {
 
         <p>
           Week {currentWeek}
-          <span className="text-zinc-500">/{totalWeeks}</span>
+          <span className="text-zinc-500 text-sm">/{totalWeeks}</span>
         </p>
       </div>
 
@@ -31,11 +33,12 @@ export default function QuoteOfTheWeek() {
           </small>
 
           <Link
-            to="https://makenedev-primeapi.vercel.app/quote/week"
+            to="https://github.com/makeneto/prime-api"
             target="_blank"
-            className="text-xs text-zinc-700 hover:text-white hover:underline"
+            className="flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-700 hover:text-black dark:hover:text-white transition-all"
           >
-            By Makene's API.
+            <RiLink size={13} />
+            <span>By Makene's API</span>
           </Link>
         </div>
       </div>
