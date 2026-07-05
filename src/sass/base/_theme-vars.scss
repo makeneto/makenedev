@@ -1,10 +1,12 @@
 :root {
   /* Light Mode */
-  --bg-primary: #ffffff;
+  --bg-primary: #f8f5f0d6;
   --bg-secondary: #f0f0ed;
   --bg-tertiary: #e8e8e5;
+  --bg-service-card: #ffffff;
+  --bg-service-hovered: #000000;
 
-  --openToWork-bg: #edededb3;
+  --openToWork-bg: #b3af9424;
   --openToWork-hovered: #d5d5d5c9;
 
   --stack-link: #e8e8e89a;
@@ -20,13 +22,18 @@
   --text-primary: #0d0d0b;
   --text-secondary: #6d6d6d;
   --text-tertiary: #6a6a60;
+  --text-service-hovered: #ffffff;
+  --description-service-hovered: #c7c7bb;
 
   --text-label: #000000;
 
   --border-primary: #bebebe;
   --border-secondary: #ccccc7;
   --border-tertiary: #e9e9e9;
+  --border-services: transparent;
   --border-resume: #a0a0a4;
+
+  --shadow-service: rgb(255 255 255 / 39%);
 
   --button-primary-bg: #000000;
   --button-primary-text: #ffffff;
@@ -53,6 +60,8 @@
   --bg-primary: #000000;
   --bg-secondary: #151515;
   --bg-tertiary: #1a1a1a;
+  --bg-service-card: #000000;
+  --bg-service-hovered: #151515;
 
   --openToWork-bg: #18181b;
   --openToWork-hovered: #27272aba;
@@ -70,13 +79,18 @@
   --text-primary: #ffffff;
   --text-secondary: #9f9fa9;
   --text-tertiary: #a8a8a8;
+  --text-service-hovered: #ffffff;
+  --description-service-hovered: #828282;
 
   --text-label: #9f9fa9;
 
   --border-primary: #3a3a3a;
   --border-secondary: #3f3f3f;
   --border-tertiary: #1d1d1d;
+  --border-services: #252525;
   --border-resume: #3f3f46;
+
+  --shadow-service: none;
 
   --button-primary-text: #000000;
   --button-primary-bg: #ffffff;
