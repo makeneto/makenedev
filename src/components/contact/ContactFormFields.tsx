@@ -18,7 +18,7 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
       <ContactInput
         label="Full name"
         icon={<User size={15} />}
-        placeholder="Enter full name..."
+        placeholder="Enter full name"
         value={form.fullName}
         invalid={errors.fullName}
         onChange={(e) => updateField("fullName", e.target.value)}
@@ -27,7 +27,7 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
       <ContactInput
         label="Email address"
         icon={<AtSign size={15} />}
-        placeholder="Enter email address..."
+        placeholder="Enter email address"
         value={form.email}
         invalid={errors.email}
         onChange={(e) => updateField("email", e.target.value)}
@@ -36,7 +36,7 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
       <ContactInput
         label="Phone number"
         icon={<Phone size={15} />}
-        placeholder="Enter phone number..."
+        placeholder="Enter phone number"
         type="tel"
         inputMode="numeric"
         pattern="[0-9]*"
@@ -48,7 +48,7 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
       <ContactInput
         label="Job position"
         icon={<Briefcase size={15} />}
-        placeholder="Enter job position..."
+        placeholder="Enter job position"
         value={form.jobPosition}
         invalid={errors.jobPosition}
         onChange={(e) => updateField("jobPosition", e.target.value)}
