@@ -659,7 +659,12 @@ textarea {
 
 .contact-form section {
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
+}
+@media (width <= 884px) {
+  .contact-form section {
+    gap: 3.5rem;
+  }
 }
 .contact-form__label {
   margin-bottom: 12px;
