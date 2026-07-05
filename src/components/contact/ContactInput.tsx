@@ -34,7 +34,7 @@ export function ContactInput({
           rounded-full
           border-2
           bg-transparent
-          text-white
+          dark:text-white
           placeholder:text-xs
           placeholder:text-zinc-500
           focus-visible:ring-0
