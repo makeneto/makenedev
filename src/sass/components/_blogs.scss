@@ -130,7 +130,8 @@
 
     @media (width <= 1280px) {
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 1.8rem;
+      column-gap: 1.3rem;
+      row-gap: 3rem;
     }
 
     @media (width <= 640px) {
