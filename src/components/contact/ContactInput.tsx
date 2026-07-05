@@ -35,6 +35,7 @@ export function ContactInput({
           border-2
           bg-transparent
           text-white
+          placeholder:text-xs
           placeholder:text-zinc-500
           focus-visible:ring-0
           ${borderClass}
