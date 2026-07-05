@@ -8,7 +8,11 @@ export default function VerticalBlogList() {
 
   return (
     <section className="mt-52 sm:mt-66">
-      <ShowcaseHeader title="Posts" viewAll="/blog" />
+      <ShowcaseHeader
+        title="Last Posts"
+        linkSection="/blog"
+        textLink="View all"
+      />
 
       <ul className="verticalBlogs">
         {blogsList.map((blog) => (
