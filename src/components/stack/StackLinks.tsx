@@ -30,7 +30,7 @@ export default function StackLinks({
             rel="noopener noreferrer"
             title="Certificate"
           >
-            <Award className="text-yellow-500 dark:text-yellow-400 transition-colors" />
+            <Award className="text-yellow-600 dark:text-yellow-400 transition-colors" />
           </Link>
         ))}
 
@@ -41,7 +41,7 @@ export default function StackLinks({
           rel="noopener noreferrer"
           title={`Learn with me`}
         >
-          <BookOpen className="text-blue-500 dark:text-blue-400 transition-colors" />
+          <BookOpen className="text-blue-600 dark:text-blue-400 transition-colors" />
         </Link>
       )}
     </section>
