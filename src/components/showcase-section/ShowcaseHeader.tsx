@@ -2,26 +2,22 @@ import { ViewAllLink } from "./ViewAllLink"
 
 interface ShowcaseHeaderProps {
   title: string
-  viewAll?: string
+  linkSection?: string
+  textLink?: string
   isShowcase?: boolean
 }
 
 const ShowcaseHeader = ({
   title,
-  viewAll = "",
+  linkSection = "",
+  textLink = "View all",
   isShowcase,
 }: ShowcaseHeaderProps) => {
-  const isHiddenTitle = title === "Timeline" || title === "Profile"
-
-  const label = !isHiddenTitle ? (viewAll ? "Last" : "All") : null
-
   return (
     <header className={`showcase-header ${isShowcase && "pt-14"} pb-4`}>
-      <h2 className="showcase-heading">
-        {label} {title}
-      </h2>
+      <h2 className="showcase-heading">{title}</h2>
 
-      {viewAll && <ViewAllLink to={viewAll} />}
+      {linkSection && <ViewAllLink to={linkSection} textLink={textLink} />}
     </header>
   )
 }
