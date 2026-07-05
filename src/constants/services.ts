@@ -1,9 +1,8 @@
 export const SERVICES = [
-  "UI/UX Design",
   "Web Development",
-  "Android Development",
-  "IOS Development",
-  "Front-end Development",
-  "Back-end Development",
+  "AI Integration",
+  "Mobile Development",
+  "UI/UX Design",
+  "Gold Buying",
   "Other",
 ]
