@@ -121,7 +121,11 @@
 .contact-form {
   & section {
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
+
+    @media (width <= 884px) {
+      gap: 3.5rem;
+    }
   }
 
   &__label {
