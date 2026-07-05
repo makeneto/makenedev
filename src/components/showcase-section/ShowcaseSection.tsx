@@ -38,7 +38,11 @@ const ShowcaseSection = ({
 
   return (
     <section ref={sectionRef}>
-      <ShowcaseHeader title={title} viewAll={viewAll} isShowcase={isShowcase} />
+      <ShowcaseHeader
+        title={title}
+        linkSection={viewAll}
+        isShowcase={isShowcase}
+      />
 
       <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
 
