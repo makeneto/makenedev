@@ -3,10 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   /* Light Mode */
-  --bg-primary: #ffffff;
+  --bg-primary: #f8f5f0d6;
   --bg-secondary: #f0f0ed;
   --bg-tertiary: #e8e8e5;
-  --openToWork-bg: #edededb3;
+  --bg-service-card: #ffffff;
+  --bg-service-hovered: #000000;
+  --openToWork-bg: #b3af9424;
   --openToWork-hovered: #d5d5d5c9;
   --stack-link: #e8e8e89a;
   --light-gray-bg: #eeeeeeaf;
@@ -18,11 +20,15 @@
   --text-primary: #0d0d0b;
   --text-secondary: #6d6d6d;
   --text-tertiary: #6a6a60;
+  --text-service-hovered: #ffffff;
+  --description-service-hovered: #c7c7bb;
   --text-label: #000000;
   --border-primary: #bebebe;
   --border-secondary: #ccccc7;
   --border-tertiary: #e9e9e9;
+  --border-services: transparent;
   --border-resume: #a0a0a4;
+  --shadow-service: rgb(255 255 255 / 39%);
   --button-primary-bg: #000000;
   --button-primary-text: #ffffff;
   --button-primary-bg-hovered: #2e2e2e;
@@ -44,6 +50,8 @@
   --bg-primary: #000000;
   --bg-secondary: #151515;
   --bg-tertiary: #1a1a1a;
+  --bg-service-card: #000000;
+  --bg-service-hovered: #151515;
   --openToWork-bg: #18181b;
   --openToWork-hovered: #27272aba;
   --stack-link: #18181b;
@@ -56,11 +64,15 @@
   --text-primary: #ffffff;
   --text-secondary: #9f9fa9;
   --text-tertiary: #a8a8a8;
+  --text-service-hovered: #ffffff;
+  --description-service-hovered: #828282;
   --text-label: #9f9fa9;
   --border-primary: #3a3a3a;
   --border-secondary: #3f3f3f;
   --border-tertiary: #1d1d1d;
+  --border-services: #252525;
   --border-resume: #3f3f46;
+  --shadow-service: none;
   --button-primary-text: #000000;
   --button-primary-bg: #ffffff;
   --button-primary-bg-hovered: #d2d2d2;
@@ -245,7 +257,8 @@ textarea {
 @media (width <= 1280px) {
   .blog-list {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.8rem;
+    column-gap: 1.3rem;
+    row-gap: 3rem;
   }
 }
 @media (width <= 640px) {
@@ -1132,6 +1145,80 @@ textarea {
 .quoteOfTheWeek__content .error {
   color: #f44336;
   font-weight: 500;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+@media (width <= 884px) {
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width <= 640px) {
+  .services__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.services__list--card {
+  background-color: var(--bg-service-card);
+  padding: 1.4rem;
+  display: grid;
+  gap: 1.1rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border-services);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.services__list--card:hover, .services__list--card:first-child {
+  background-color: var(--bg-service-hovered);
+  color: var(--text-service-hovered);
+  border: 1px solid transparent;
+  transform: rotate(-3.8deg);
+}
+.services__list--card:hover p, .services__list--card:first-child p {
+  color: var(--description-service-hovered);
+}
+.services__list--card:hover span, .services__list--card:first-child span {
+  gap: 0.35rem;
+}
+.services__list--card:first-child {
+  box-shadow: 0 0 10px var(--shadow-service);
+}
+.services__list--card:first-child span {
+  gap: 0.1rem;
+}
+.services__list--card:first-child:hover {
+  box-shadow: none;
+  transform: rotate(0);
+}
+.services__list--card:first-child:hover span {
+  gap: 0.35rem;
+  font-weight: 500;
+}
+.services__list--card div {
+  display: grid;
+  gap: 0.8rem;
+}
+.services__list--card div svg {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.services__list--card div h1 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.services__list--card p {
+  color: var(--text-secondary);
+}
+.services__list--card span {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.1s ease-in;
 }
 
 .showcase-header {
