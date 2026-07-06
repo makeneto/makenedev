@@ -1,0 +1,65 @@
+{
+  "sections": [
+    {
+      "id": "daily-tools",
+      "title": "Daily Tools",
+      "tools": [
+        {
+          "id": "thinkpad-x1-carbon",
+          "image": "https://p3-ofp.static.pub//fes/cms/2024/07/05/05dhzg0lrtq4i0d3wxqyjjakwmbmzr331426.png",
+          "name": "ThinkPad X1 Carbon",
+          "description": "Main development machine for work and mobility.",
+          "link": "https://www.amazon.com/Lenovo-ThinkPad-Processor-Touchscreen-Performance/dp/B0G9SQRD12"
+        },
+        {
+          "id": "airpods-4",
+          "image": "https://www.att.com/scmsassets/global/accessories/audio/apple/airpods-4-with-active-noise-cancellation/carousel/4485t-2.png",
+          "name": "AirPods 4",
+          "description": "Used for focus sessions and training.",
+          "link": "https://www.amazon.com/dp/B0DGJ7HYG1"
+        },
+        {
+          "id": "iphone-13-pm",
+          "image": "https://images-cdn.ubuy.co.in/643847119453e71d5b4e6f63-new-apple-iphone-13-pro-max-256gb.jpg",
+          "name": "iPhone 13 Pro Max",
+          "description": "Daily communication and mobile workflows.",
+          "link": "https://www.amazon.com/dp/B0BGYFDQJX/ref=twister_B0BGYBY59B?_encoding=UTF8&th=1"
+        }
+      ]
+    },
+    {
+      "id": "desk-setup",
+      "title": "Desk Setup",
+      "tools": [
+        {
+          "id": "hp-elite-display-e243",
+          "image": "https://benson.ph/cdn/shop/products/1FH47AA-1_T1525414457.png?v=1607506346",
+          "name": "HP EliteDisplay 23.8\"",
+          "description": "Main external display for work.",
+          "link": "https://www.amazon.com/HP-EliteDisplay-23-8-Inch-1FH47AA-ABA/dp/B075QLP949"
+        },
+        {
+          "id": "hp-elite-mini-800",
+          "image": "https://au-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/A/4/A41KCPT-1_T1722926504.png",
+          "name": "HP Elite Mini 800",
+          "description": "Core desktop system for builds and execution.",
+          "link": "https://www.amazon.com/HP-Elite-Mini-Desktop-Computer/dp/B0GPZJVBHP?adgrpid=166290121155&hydadcr=21468_13508875&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY"
+        },
+        {
+          "id": "lenovo-700-modern-wireless-keyboard",
+          "image": "https://p4-ofp.static.pub/ShareResource/560x450/SSNP/GY41S04861/GY41S04861-560x450-05.png",
+          "name": "Lenovo 700 Modern Wireless Keyboard",
+          "description": "Primary input device for typing and development.",
+          "link": "https://www.amazon.com/Lenovo-Wireless-Bluetooth-Connection-Encryption/dp/B0FR8C3NGP"
+        },
+        {
+          "id": "maxell-mowl-cn-nano",
+          "image": "https://www.cecomsa.com/web/image/product.template/31838/image_1024?unique=7fafb65",
+          "name": "Maxell Mowl CN Nano",
+          "description": "Precision mouse for daily navigation and work.",
+          "link": "https://www.amazon.com/HP-Elite-Mini-Desktop-Computer/dp/B0GPZJVBHP?adgrpid=166290121155&hydadcr=21468_13508875&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY"
+        }
+      ]
+    }
+  ]
+}
