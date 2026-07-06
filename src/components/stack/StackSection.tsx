@@ -1,6 +1,6 @@
 import { useStacks } from "../../hooks/useStacks"
 import StackGrid from "./StackGrid"
-import StackHeader from "./StackHeader"
+import ToolsHeader from "./ToolsHeader"
 
 export default function StackSection() {
   const { sections } = useStacks()
@@ -9,7 +9,7 @@ export default function StackSection() {
     <section className="grid gap-25">
       {sections.map(({ id, title, stacks }) => (
         <section key={id}>
-          <StackHeader title={title} />
+          <ToolsHeader title={title} />
           <StackGrid stacks={stacks} />
         </section>
       ))}
