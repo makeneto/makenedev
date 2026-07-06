@@ -12,9 +12,7 @@ export default function ProfileLinks() {
           <Link
             to={href}
             target={label === "Email" ? "_self" : "_blank"}
-            className="sm:text-sm text-end 
-            text-zinc-500
-            dark:text-zinc-400"
+            className="sm:text-sm text-end"
           >
             {display}
           </Link>
