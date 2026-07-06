@@ -149,6 +149,13 @@
       "title": "Tools",
       "stacks": [
         {
+          "id": "vscode",
+          "name": "VS Code",
+          "category": "Software",
+          "link": "https://code.visualstudio.com",
+          "certificate": null
+        },
+        {
           "id": "vite",
           "name": "Vite",
           "category": "Devtool",
@@ -170,24 +177,10 @@
           "certificate": "https://ude.my/UC-HVUOD29E"
         },
         {
-          "id": "postman",
-          "name": "Postman",
-          "category": "Software",
-          "link": "https://postman.com",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
-        },
-        {
           "id": "vercel",
           "name": "Vercel",
           "category": "Software",
           "link": "https://vercel.com",
-          "certificate": null
-        },
-        {
-          "id": "expo",
-          "name": "Expo",
-          "category": "Software",
-          "link": "https://expo.dev",
           "certificate": null
         },
         {
@@ -218,10 +211,10 @@
           "certificate": null
         },
         {
-          "id": "canva",
-          "name": "Canva",
+          "id": "dribbble",
+          "name": "Dribbble",
           "category": "Design",
-          "link": "https://canva.com",
+          "link": "https://dribbble.com",
           "certificate": null
         },
         {
