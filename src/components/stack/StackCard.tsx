@@ -21,10 +21,7 @@ export default function StackCard({ children, name }: StackProps) {
         <p className="text-sm font-semibold text-center" translate="no">
           {name}
         </p>
-        <span
-          className="border border-zinc-300 dark:border-zinc-800 rounded-4xl py-0.5 px-2.5 text-xs text-zinc-400 font-mono font-semibold"
-          translate="no"
-        >
+        <span className="tag" translate="no">
           {category}
         </span>
 
