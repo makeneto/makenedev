@@ -39,6 +39,10 @@ export const footerLinks = [
     link: "/stack",
   },
   {
+    label: "Setup",
+    link: "/setup",
+  },
+  {
     label: "Contact",
     link: "/contact",
   },
