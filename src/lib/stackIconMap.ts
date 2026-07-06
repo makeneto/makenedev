@@ -23,17 +23,16 @@ import TailwindcssIcon from "../components/ui/icons/TailwindcssIcon"
 import TypescriptIcon from "../components/ui/icons/TypescriptIcon"
 import UdemyIcon from "../components/ui/icons/UdemyIcon"
 import VercelIcon from "../components/ui/icons/VercelIcon"
-import PostmanIcon from "../components/ui/icons/PostmanIcon"
 import FigmaIcon from "../components/ui/icons/FigmaIcon"
-import CanvaIcon from "../components/ui/icons/CanvaIcon"
 import GimpIcon from "../components/ui/icons/GimpIcon"
 import MongodbIcon from "../components/ui/icons/MongodbIcon"
 import WordIcon from "../components/ui/icons/WordIcon"
 import ExcelIcon from "../components/ui/icons/ExcelIcon"
 import PowerpointIcon from "../components/ui/icons/PowerpointIcon"
-import ExpoIcon from "../components/ui/icons/ExpoIcon"
 import GithubCopilotIcon from "../components/ui/icons/GithubCopilotIcon"
 import ViteIcon from "../components/ui/icons/ViteIcon"
+import VsCodeIcon from "../components/ui/icons/VsCodeIcon"
+import DribbbleIcon from "../components/ui/icons/DribbbleIcon"
 
 export const stackIconMap: Record<string, ComponentType> = {
   javascript: JavaScriptIcon,
@@ -47,21 +46,20 @@ export const stackIconMap: Record<string, ComponentType> = {
   shadcn: ShadcnIcon,
   node: NodeIcon,
   express: ExpressIcon,
-  postman: PostmanIcon,
   socketio: SocketioIcon,
   githubCopilot: GithubCopilotIcon,
   openai: OpenaiIcon,
   claude: ClaudeIcon,
   postgresql: PostgresqlIcon,
   mongodb: MongodbIcon,
+  vscode: VsCodeIcon,
   figma: FigmaIcon,
-  canva: CanvaIcon,
+  dribbble: DribbbleIcon,
   gimp: GimpIcon,
   vite: ViteIcon,
   git: GitIcon,
   github: GithubIcon,
   vercel: VercelIcon,
-  expo: ExpoIcon,
   pnpm: PnpmIcon,
   npm: NpmIcon,
   moword: WordIcon,
