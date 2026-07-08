@@ -20,6 +20,7 @@ export default function ToolCard({
       to={link}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Visit external link"
     >
       <img src={image} alt={name} />
 
