@@ -8,11 +8,16 @@ export type StackCategory =
   | "Database"
   | "AI"
   | "Education"
+  | "Engineering"
+  | "Personal"
+  | "Assistant"
+  | "Devtool"
+  | "Design"
 
 export interface Stack {
   id: string
   name: string
-  category: StackCategory
+  category: StackCategory[]
   link: string
   certificate: null | string
   learn: null | string
