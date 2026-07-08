@@ -1,10 +1,11 @@
-import { ExternalLink } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { blogs } from "../../data/blogs"
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
 import { Link } from "react-router-dom"
+import LastBlog from "./LastBlog"
 
 export default function VerticalBlogList() {
-  const blogsList = blogs.slice(0, 5)
+  const blogsList = blogs.slice(1, 4)
 
   return (
     <section className="mt-52 sm:mt-66">
@@ -14,21 +15,23 @@ export default function VerticalBlogList() {
         textLink="View all"
       />
 
+      <LastBlog />
+
       <ul className="verticalBlogs">
         {blogsList.map((blog) => (
-          <Link key={blog.link} to={blog.link}>
+          <Link key={blog.link} to={blog.link} prefetch="intent" className="verticalBlogs__item" aria-label={`Read more about ${blog.title}`}>
             <article>
               <p>{blog.date}</p>
 
               <div>
-                <h3 className="line-clamp-2">{blog.title}</h3>
+                <h2 className="line-clamp-2">{blog.title}</h2>
                 <span className="line-clamp-2 md:line-clamp-1">
                   {blog.description}
                 </span>
               </div>
             </article>
 
-            <ExternalLink />
+            <ArrowUpRight />
           </Link>
         ))}
       </ul>
