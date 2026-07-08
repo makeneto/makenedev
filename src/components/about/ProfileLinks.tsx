@@ -13,6 +13,7 @@ export default function ProfileLinks() {
             to={href}
             target={label === "Email" ? "_self" : "_blank"}
             className="sm:text-sm text-end"
+            aria-label={`Visit my ${label}`}
           >
             {display}
           </Link>
