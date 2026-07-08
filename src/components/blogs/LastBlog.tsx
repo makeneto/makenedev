@@ -7,7 +7,7 @@ export default function LastBlog() {
 
   return (
     <section className="blog-lastBlog">
-      <Link to={link} className="blog-lastBlog-card">
+      <Link to={link} prefetch="intent" aria-label="Read more about this blog post" className="blog-lastBlog-card">
         <section>
           <div>
             <span>{category}</span>
