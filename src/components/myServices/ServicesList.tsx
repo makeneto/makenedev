@@ -1,11 +1,11 @@
 import { services } from "../../data/services"
-import ServiceCard from "./ServiceCard"
+import ServiceRow from "./ServiceRow"
 
 export default function ServicesList() {
   return (
     <ul className="services__list">
       {services.map((service, index) => (
-        <ServiceCard key={index} {...service} />
+        <ServiceRow key={index} index={index} {...service} />
       ))}
     </ul>
   )
