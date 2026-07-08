@@ -9,7 +9,12 @@ interface Props {
 
 const ShowcaseCard: React.FC<Props> = ({ item }) => {
   return (
-    <Link to={item.href} className="showcase-card" target="_blank">
+    <Link
+      to={item.href}
+      className="showcase-card"
+      target="_blank"
+      aria-label={`Visit ${item.title} showcase`}
+    >
       <img
         src={item.imageUrl}
         alt={`${item.title} Cover Image`}
