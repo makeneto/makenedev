@@ -14,7 +14,13 @@ export default function StackLinks({
 }: StackLinksProps) {
   return (
     <section className="flex items-center gap-0.5">
-      <Link to={link} target="_blank" rel="noopener noreferrer" title="Website">
+      <Link
+        to={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Website"
+        aria-label="Visit website"
+      >
         <LinkIcon />
       </Link>
 
