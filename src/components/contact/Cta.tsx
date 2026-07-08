@@ -1,35 +1,27 @@
-import { Link } from "react-router-dom"
+import { useMediaQuery } from "react-responsive"
+
 import { ContactSectionHeader } from "./ContactSectionHeader"
-import { RiQuestionAnswerLine, RiVideoChatLine } from "@remixicon/react"
+import CtaButtons from "./CtaButtons"
 
 export default function Cta({ className }: { className?: string }) {
+  const isPhone = useMediaQuery({ maxWidth: 640 })
+
   return (
     <section className={`${className} contact`}>
       <div className="contact__content">
         <div className="contact__left">
-          <ContactSectionHeader />
+          <ContactSectionHeader description="Have a project in mind? Let's discuss how I can help you bring your ideas to life." />
 
-          <div className="cta__buttons">
-            <Link to="/contact" className="cta__button">
-              Contact Me
-              <RiQuestionAnswerLine />
-            </Link>
-
-            <Link
-              to="https://calendly.com/makeneto17/30min"
-              className="cta__button"
-            >
-              Meet with Me
-              <RiVideoChatLine />
-            </Link>
-          </div>
+          <CtaButtons />
         </div>
 
-        <img
-          src="/assets/cta-image.webp"
-          alt="Avatar"
-          className="w-55 mx-auto"
-        />
+        {!isPhone && (
+          <img
+            src="/assets/cta-image.webp"
+            alt="Avatar"
+            className="w-55 mx-auto"
+          />
+        )}
       </div>
     </section>
   )
