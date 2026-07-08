@@ -6,7 +6,12 @@ export default function BlogCard({ blog }: { blog: Blog }) {
   const { link, cover, title, author, date, category, description } = blog
 
   return (
-    <Link to={link} className="blog-card">
+    <Link
+      to={link}
+      prefetch="intent"
+      className="blog-card"
+      aria-label="Read more about this blog post"
+    >
       <div className="blog-card__media">
         <img src={cover} alt={title} className="blog-card__cover" />
         <div className="blog-card__overlay">
@@ -20,6 +25,7 @@ export default function BlogCard({ blog }: { blog: Blog }) {
           <span className="blog-card__category">{category}</span>
         </div>
       </div>
+
       <div className="blog-card__content">
         <h3 className="blog-card__title">{title}</h3>
         <p className="blog-card__description">{description}</p>
