@@ -7,7 +7,7 @@ export default function ContactSection({ className }: { className?: string }) {
     <section className={`${className} contact`}>
       <div className="contact__content">
         <div className="contact__left">
-          <ContactSectionHeader />
+          <ContactSectionHeader description="I build scalable, high-performance digital solutions with clean, maintainable architecture and a strong focus on efficiency and measurable impact." />
           <ContactSectionEmail />
         </div>
 
