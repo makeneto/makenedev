@@ -36,6 +36,7 @@ export default function QuoteOfTheWeek() {
             to="https://github.com/makeneto/prime-api"
             target="_blank"
             className="flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-700 hover:text-black dark:hover:text-white transition-all"
+            aria-label="By Makene's API"
           >
             <RiLink size={13} />
             <span>By Makene's API</span>
