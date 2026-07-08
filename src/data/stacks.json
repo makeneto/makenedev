@@ -122,6 +122,13 @@
       "title": "Artificial intelligence (AI)",
       "stacks": [
         {
+          "id": "claude",
+          "name": "Claude AI",
+          "category": "AI",
+          "link": "https://claude.ai",
+          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
+        },
+        {
           "id": "openai",
           "name": "OpenAI",
           "category": "AI",
@@ -134,13 +141,6 @@
           "category": "AI",
           "link": "https://github.com/features/copilot",
           "certificate": null
-        },
-        {
-          "id": "claude",
-          "name": "Claude AI",
-          "category": "AI",
-          "link": "https://claude.ai",
-          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
         }
       ]
     },
