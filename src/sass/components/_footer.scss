@@ -11,7 +11,7 @@
   }
 
   @media (width <= 640px) {
-    margin-top: 10rem;
+    margin-top: 13rem;
     display: grid;
     justify-content: center;
   }
@@ -21,4 +21,8 @@
     font-style: italic;
     font-family: "Playfair Display", sans-serif;
   }
+}
+
+.copyright {
+  color: var(--text-tertiary);
 }
