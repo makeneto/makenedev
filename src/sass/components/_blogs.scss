@@ -45,10 +45,10 @@
 
     &-card {
       background-color: var(--bg-secondary);
-      padding: 1rem 1rem 1rem 1.2rem;
+      padding: 1.5rem 1.5rem 1.5rem 1.7rem;
 
       display: grid;
-      gap: 2rem;
+      gap: 3rem;
       grid-template-columns: 47% auto;
       border: 1px dashed var(--border-secondary);
 
@@ -66,7 +66,11 @@
         }
       }
 
-      & div {
+      & section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         & span {
           font-size: 0.8rem;
           color: var(--text-tertiary);
@@ -360,48 +364,46 @@
   display: grid;
 
   & a {
+    padding-block: 1.7rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in-out;
 
     &:not(:last-child) {
       border-bottom: 1px solid var(--border-tertiary);
     }
 
-    padding-block: 1rem;
-
     & article {
       display: grid;
-      grid-template-columns: 6rem auto;
       gap: 1rem;
 
       @media (width <= 640px) {
-        grid-template-columns: 5rem auto;
         padding-right: 0.3rem;
       }
 
-      & p,
-      & h3 {
-        font-size: 1.2rem;
-
-        @media (width <= 1280px) {
-          font-size: 1rem;
-        }
+      & p {
+        font-size: 0.9rem;
       }
 
-      & p,
+      & h2 {
+        font-size: 1.1rem;
+      }
+
+      & p {
+        color: var(--text-secondary);
+      }
+
       & span {
         color: var(--text-tertiary);
       }
 
       & div {
-        display: grid;
-        gap: 0.4rem;
-
-        & h3 {
+        & h2 {
           color: var(--text-primary);
           font-weight: 500;
+          margin-bottom: 0.4rem;
 
           @media (width <= 640px) {
             line-height: 1.66rem;
@@ -409,16 +411,20 @@
         }
 
         & span {
-          font-size: 0.875rem;
+          font-size: 1rem;
+
+          @media (width <= 1280px) {
+            font-size: 0.875rem;
+          }
         }
       }
     }
 
     & svg {
-      width: 0.87rem;
-      height: 0.87rem;
+      width: 1.3rem;
+      height: 1.3rem;
       opacity: 0;
-      transition: all 0.1s ease-in;
+      transition: all 0.2s ease-in-out;
 
       @media (width <= 640px) {
         display: none;
@@ -426,15 +432,11 @@
     }
 
     &:hover {
-      border-bottom-color: var(--text-primary);
+      border-bottom: 1px solid var(--text-primary);
 
       & svg {
         opacity: 1;
       }
-    }
-
-    &:last-child:hover {
-      border-bottom: 1px solid white;
     }
   }
 }
