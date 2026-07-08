@@ -15,14 +15,21 @@ export default function Cta({ className }: { className?: string }) {
               <RiQuestionAnswerLine />
             </Link>
 
-            <Link to="https://calendly.com/makeneto17/30min" className="cta__button">
-             Meet with Me
+            <Link
+              to="https://calendly.com/makeneto17/30min"
+              className="cta__button"
+            >
+              Meet with Me
               <RiVideoChatLine />
             </Link>
           </div>
         </div>
 
-        <img src="/assets/hero-img.webp" alt="Avatar" className="w-55 mx-auto" />
+        <img
+          src="/assets/cta-image.webp"
+          alt="Avatar"
+          className="w-55 mx-auto"
+        />
       </div>
     </section>
   )
