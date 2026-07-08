@@ -10,13 +10,13 @@ export default function Experiences() {
       <ul className="experiences__timeline">
         {experiences.map((experience) => (
           <li className="experiences__work">
-            <span className="sm:text-sm">{experience.company}</span>
+            <span className="text-sm sm:text-[1rem]">{experience.company}</span>
             <div>
-              <h2 className="sm:text-sm">{experience.role}</h2>
-              <p className="sm:text-sm">{experience.description}</p>
+              <h2>{experience.role}</h2>
+              <p className="text-sm sm:text-[1rem]">{experience.description}</p>
             </div>
-            
-            <p className="sm:text-sm">{experience.period}</p>
+
+            <p className="text-sm sm:text-[1rem]">{experience.period}</p>
           </li>
         ))}
       </ul>
