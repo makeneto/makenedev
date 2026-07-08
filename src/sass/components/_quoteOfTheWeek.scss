@@ -1,7 +1,11 @@
 .quoteOfTheWeek {
-  margin-bottom: 16.5rem;
+  margin-bottom: 22.5rem;
   display: grid;
   gap: 2rem;
+
+  @media (width <= 1280px) {
+    margin-bottom: 16.5rem;
+  }
 
   @media (width <= 640px) {
     margin-bottom: 13rem;
