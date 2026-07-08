@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <React.Fragment>
       <HomeHeader />
-      <MyServices />
       <QuoteOfTheWeek />
+      <MyServices />
       <ShowcaseSection
         title="Last Works"
         viewAll="/work"
@@ -21,7 +21,8 @@ export default function Home() {
       />
 
       {/* <VerticalBlogList /> */}
-      <Cta className="mt-50 sm:mt-70" />
+
+      <Cta className="mt-50 sm:mt-70 xl:mt-90" />
     </React.Fragment>
   )
 }
