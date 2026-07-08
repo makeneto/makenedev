@@ -7,63 +7,63 @@
         {
           "id": "javascript",
           "name": "JavaScript",
-          "category": "Language",
+          "category": ["Language"],
           "link": "https://developer.mozilla.org/docs/Web/JavaScript",
           "certificate": "https://ude.my/UC-942380f7-699f-4f59-a2f2-648e1b5b4c98"
         },
         {
           "id": "react",
           "name": "React",
-          "category": "Library",
+          "category": ["Library"],
           "link": "https://react.dev",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
         },
         {
           "id": "typescript",
           "name": "TypeScript",
-          "category": "Language",
+          "category": ["Language"],
           "link": "https://www.typescriptlang.org",
           "certificate": "https://www.udemy.com/certificate/UC-38e8a080-e0de-4239-ba46-4978f4efcc43/"
         },
         {
           "id": "next",
           "name": "Next.js",
-          "category": "Framework",
+          "category": ["Framework"],
           "link": "https://nextjs.org",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
         },
         {
           "id": "redux",
           "name": "Redux",
-          "category": "Library",
+          "category": ["Library"],
           "link": "https://redux.js.org",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
         },
         {
           "id": "styledcomponents",
           "name": "Styled Components",
-          "category": "Library",
+          "category": ["Library"],
           "link": "https://styled-components.com",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
         },
         {
           "id": "sass",
           "name": "Sass",
-          "category": "Language",
+          "category": ["Language"],
           "link": "https://sass-lang.com",
           "certificate": "https://www.udemy.com/certificate/UC-dc45983d-db6c-4949-a6ff-e3e230fafe4a/"
         },
         {
           "id": "tailwindcss",
           "name": "TailwindCSS",
-          "category": "Framework",
+          "category": ["Framework"],
           "link": "https://tailwindcss.com",
           "certificate": "?"
         },
         {
           "id": "shadcn",
           "name": "Shadcn/ui",
-          "category": "Library",
+          "category": ["Library"],
           "link": "https://ui.shadcn.com",
           "certificate": "?"
         }
@@ -76,21 +76,21 @@
         {
           "id": "node",
           "name": "Node.js",
-          "category": "Library",
+          "category": ["Library"],
           "link": "https://nodejs.org",
           "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "express",
           "name": "Express.js",
-          "category": "Framework",
+          "category": ["Framework"],
           "link": "https://expressjs.com",
           "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         },
         {
           "id": "socketio",
           "name": "Socket.IO",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://socket.io",
           "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         }
@@ -103,7 +103,7 @@
         {
           "id": "postgresql",
           "name": "PostgreSQL",
-          "category": "Database",
+          "category": ["Database"],
           "link": "https://www.postgresql.org",
           "certificate": "?",
           "learn": "https://github.com/makeneto/learning-postgresql"
@@ -111,7 +111,7 @@
         {
           "id": "mongodb",
           "name": "MongoDB",
-          "category": "Database",
+          "category": ["Database"],
           "link": "https://www.mongodb.com",
           "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
         }
@@ -122,25 +122,25 @@
       "title": "Artificial intelligence (AI)",
       "stacks": [
         {
+          "id": "claude",
+          "name": "Claude AI",
+          "category": ["AI", "Engineering"],
+          "link": "https://claude.ai",
+          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
+        },
+        {
           "id": "openai",
           "name": "OpenAI",
-          "category": "AI",
+          "category": ["AI", "Personal"],
           "link": "https://openai.com",
           "certificate": null
         },
         {
           "id": "githubCopilot",
           "name": "Copilot",
-          "category": "AI",
+          "category": ["AI", "Assistant"],
           "link": "https://github.com/features/copilot",
           "certificate": null
-        },
-        {
-          "id": "claude",
-          "name": "Claude AI",
-          "category": "AI",
-          "link": "https://claude.ai",
-          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
         }
       ]
     },
@@ -151,49 +151,49 @@
         {
           "id": "vscode",
           "name": "VS Code",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://code.visualstudio.com",
           "certificate": null
         },
         {
           "id": "vite",
           "name": "Vite",
-          "category": "Devtool",
+          "category": ["Devtool"],
           "link": "https://vitejs.dev",
           "certificate": null
         },
         {
           "id": "git",
           "name": "Git",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://git-scm.com",
           "certificate": "https://ude.my/UC-HVUOD29E"
         },
         {
           "id": "github",
           "name": "Github",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://github.com/makeneto",
           "certificate": "https://ude.my/UC-HVUOD29E"
         },
         {
           "id": "vercel",
           "name": "Vercel",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://vercel.com",
           "certificate": null
         },
         {
           "id": "pnpm",
           "name": "Pnpm",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://pnpm.io",
           "certificate": null
         },
         {
           "id": "npm",
           "name": "Npm",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://www.npmjs.com",
           "certificate": null
         }
@@ -206,21 +206,21 @@
         {
           "id": "figma",
           "name": "Figma",
-          "category": "Design",
+          "category": ["Design"],
           "link": "https://figma.com",
           "certificate": null
         },
         {
           "id": "dribbble",
           "name": "Dribbble",
-          "category": "Design",
+          "category": ["Design"],
           "link": "https://dribbble.com",
           "certificate": null
         },
         {
           "id": "gimp",
           "name": "Gimp",
-          "category": "Design",
+          "category": ["Design"],
           "link": "https://gimp.org",
           "certificate": null
         }
@@ -233,21 +233,21 @@
         {
           "id": "moword",
           "name": "Word",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://www.microsoft.com/en-us/microsoft-365/word",
           "certificate": "?"
         },
         {
           "id": "moexcel",
           "name": "Excel",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://www.microsoft.com/en-us/microsoft-365/excel",
           "certificate": "?"
         },
         {
           "id": "mopowerpoint",
           "name": "PowerPoint",
-          "category": "Software",
+          "category": ["Software"],
           "link": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
           "certificate": "?"
         }
@@ -260,21 +260,21 @@
         {
           "id": "udemy",
           "name": "Udemy",
-          "category": "Education",
+          "category": ["Education"],
           "link": "https://www.udemy.com",
           "certificate": null
         },
         {
           "id": "anthropic",
           "name": "Anthropic",
-          "category": "Education",
+          "category": ["Education"],
           "link": "https://www.anthropic.com",
           "certificate": null
         },
         {
           "id": "microsoft",
           "name": "Microsoft",
-          "category": "Education",
+          "category": ["Education"],
           "link": "https://learn.microsoft.com",
           "certificate": null
         }
