@@ -1,4 +1,4 @@
-import { lazy } from "react"
+import React, { lazy } from "react"
 import { Route, Routes } from "react-router-dom"
 
 const Home = lazy(() => import("./pages/Home"))
@@ -11,7 +11,7 @@ const Contact = lazy(() => import("./pages/Contact"))
 
 export default function App() {
   return (
-    <div className="flex flex-col">
+    <React.Fragment>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,6 +21,6 @@ export default function App() {
         <Route path="/setup" element={<Setup />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </React.Fragment>
   )
 }
