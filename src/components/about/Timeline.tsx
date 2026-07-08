@@ -1,10 +1,11 @@
-import React from "react"
-import TimelineCard from "./TimelineCard"
-import data from "../../data/timeline.json"
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
+import TimelineDesktop from "./TimelineDesktop"
+import TimelineMobile from "./TimelineMobile"
+import { timelineTracks, useTimeline } from "../../hooks/useTimeline"
 
 export default function Timeline() {
-  const timelineData = data.timelineData
+  const { timelineData, currentYear, canGoPrev, canGoNext, handleYearChange } =
+    useTimeline()
 
   return (
     <section className="timeline">
@@ -20,48 +21,15 @@ export default function Timeline() {
         </div>
       </div>
 
-      <div className="timeline__grid">
-        <div className="timeline__empty" />
+      <TimelineMobile
+        currentYear={currentYear}
+        canGoPrev={canGoPrev}
+        canGoNext={canGoNext}
+        onYearChange={handleYearChange}
+        tracks={timelineTracks}
+      />
 
-        <div className="timeline__header">
-          <span className="timeline__track">TRACK 01</span>
-          <h3>Personal</h3>
-        </div>
-
-        <div className="timeline__header">
-          <span className="timeline__track">TRACK 02</span>
-          <h3>Engineering</h3>
-        </div>
-
-        <div className="timeline__header">
-          <span className="timeline__track">TRACK 03</span>
-          <h3>Business</h3>
-        </div>
-
-        {timelineData.map((year) => (
-          <React.Fragment key={year.year}>
-            <div className="timeline__year">{year.year}</div>
-
-            <div className="timeline__column">
-              {year.personal && (
-                <TimelineCard {...year.personal} track="Personal" />
-              )}
-            </div>
-
-            <div className="timeline__column">
-              {year.engineering && (
-                <TimelineCard {...year.engineering} track="Engineering" />
-              )}
-            </div>
-
-            <div className="timeline__column">
-              {year.business && (
-                <TimelineCard {...year.business} track="Business" />
-              )}
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
+      <TimelineDesktop timelineData={timelineData} tracks={timelineTracks} />
     </section>
   )
 }
