@@ -1,9 +1,10 @@
+import { useMediaQuery } from "react-responsive"
+
 import { navLinks } from "../../data/links"
 import Logo from "../Logo"
 import SocialLinks from "../SocialLinks"
+import ThemeToggle from "../ui/ThemeToggle"
 import NavRoutes from "./NavRoutes"
-import ThemeToggle from "../ThemeToggle"
-import { useMediaQuery } from "react-responsive"
 
 export default function Navbar() {
   const isMobile = useMediaQuery({ maxWidth: 768 })
