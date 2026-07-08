@@ -6,7 +6,7 @@ export default function StackSection() {
   const { sections } = useStacks()
 
   return (
-    <section className="grid gap-25">
+    <section className="grid gap-25 xl:gap-30 ">
       {sections.map(({ id, title, stacks }) => (
         <section key={id}>
           <ToolsHeader title={title} />
