@@ -4,14 +4,14 @@
 :root {
   /* Light Mode */
   --bg-primary: #f8f4ef;
-  --bg-secondary: #e8d8c35c;
+  --bg-secondary: rgba(232, 216, 195, 0.361);
   --bg-tertiary: #e8e8e5;
   --bg-service-card: #ffffff;
   --bg-service-hovered: #000000;
-  --openToWork-bg: #b3af9424;
-  --openToWork-hovered: #d5d5d5c9;
-  --stack-link: #e8e8e89a;
-  --light-gray-bg: #eeeeeeaf;
+  --openToWork-bg: rgba(179, 175, 148, 0.141);
+  --openToWork-hovered: rgba(213, 213, 213, 0.788);
+  --stack-link: rgba(232, 232, 232, 0.604);
+  --light-gray-bg: rgba(238, 238, 238, 0.686);
   --profile-gradient: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 60%,
@@ -42,7 +42,7 @@
   --accent-soft: #d9d9d5;
   --accent-medium: #b8b8af;
   --accent-strong: #6a6a60;
-  --selection-bg: #decdb8bd;
+  --selection-bg: rgba(222, 205, 184, 0.741);
   --text-primary-rgb: 13, 13, 11;
   --text-secondary-rgb: 58, 58, 53;
   --text-tertiary-rgb: 106, 106, 96;
@@ -55,10 +55,10 @@
   --bg-tertiary: #1a1a1a;
   --bg-service-card: #000000;
   --bg-service-hovered: #151515;
-  --openToWork-bg: #18181bbd;
-  --openToWork-hovered: #27272aba;
+  --openToWork-bg: rgba(24, 24, 27, 0.741);
+  --openToWork-hovered: rgba(39, 39, 42, 0.729);
   --stack-link: #18181b;
-  --light-gray-bg: #43434336;
+  --light-gray-bg: rgba(67, 67, 67, 0.212);
   --profile-gradient: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 60%,
@@ -81,7 +81,7 @@
   --button-primary-text: #000000;
   --button-primary-bg: #ffffff;
   --button-primary-bg-hovered: #d2d2d2;
-  --button-primary-disabled-bg: #444444a3;
+  --button-primary-disabled-bg: rgba(68, 68, 68, 0.639);
   --button-primary-disabled-text: #646464;
   --cta-button-hover: #bfbfbf;
   --surface-hover: #1f1f1f;
