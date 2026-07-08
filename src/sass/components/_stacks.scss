@@ -1,9 +1,13 @@
 .stack {
   &-header {
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     border-bottom: 1px solid var(--border-primary);
+
+    @media (width <= 1280px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &-heading {
