@@ -8,8 +8,8 @@ export default function Signature() {
     <img
       src={
         isLightTheme
-          ? "/assets/makenedev-light-signature.png"
-          : "/assets/makenedev-dark-signature.png"
+          ? "/assets/makenedev-light-signature.webp"
+          : "/assets/makenedev-dark-signature.webp"
       }
       alt="Makenedev's signature"
       className="w-20 h-auto m-auto sm:w-32 sm:m-0"
