@@ -7,7 +7,10 @@ export default function WorkResume() {
       <p className="description--medium">
         If you’d like to collaborate, build something together, or simply
         connect, feel free to{" "}
-        <Link to="/contact" className="hover:text-white underline">
+        <Link
+          to="/contact"
+          className="hover:text-black dark:hover:text-white underline"
+        >
           get in touch
         </Link>
         . I’m always open to ambitious ideas, creative people, and projects that
