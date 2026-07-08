@@ -10,7 +10,12 @@ export default function Logo({ variant }: LogoProps) {
   const isLightTheme = resolvedTheme === "light"
 
   return (
-    <NavLink to="/" prefetch="intent">
+    <NavLink
+      to="/"
+      prefetch="intent"
+      aria-label="Makenedev's Logo"
+      className="logo"
+    >
       <img
         src={
           isLightTheme
