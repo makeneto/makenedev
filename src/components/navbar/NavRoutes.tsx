@@ -23,6 +23,7 @@ export default function NavRoutes({ links }: NavRoutesProps) {
           className={({ isActive }) =>
             isActive ? "nav--activeLink" : "nav--link"
           }
+          aria-label={`Visit ${link.label} page`}
         >
           {link.label}
         </NavLink>
