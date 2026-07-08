@@ -8,15 +8,18 @@ export default function LastBlog() {
   return (
     <section className="blog-lastBlog">
       <Link to={link} className="blog-lastBlog-card">
-        <div>
-          <span>{category}</span>
-          <h1>{title}</h1>
-          <p>{description}</p>
+        <section>
+          <div>
+            <span>{category}</span>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </div>
+
           <div className="flex items-center justify-between">
             <span>By {author}</span>
             <span>{date}</span>
           </div>
-        </div>
+        </section>
         <img src={cover} alt={title + `Cover`} />
       </Link>
     </section>
