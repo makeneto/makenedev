@@ -55,7 +55,7 @@
   --bg-tertiary: #1a1a1a;
   --bg-service-card: #000000;
   --bg-service-hovered: #151515;
-  --openToWork-bg: #18181b;
+  --openToWork-bg: #18181bbd;
   --openToWork-hovered: #27272aba;
   --stack-link: #18181b;
   --light-gray-bg: #43434336;
@@ -1771,6 +1771,7 @@ textarea {
   }
 }
 .work-experience {
+  position: relative;
   display: grid;
   grid-template-columns: 30% auto;
   gap: 4rem;
@@ -1804,7 +1805,7 @@ textarea {
   gap: 2rem;
 }
 .work-experience .profile-pic {
-  background: var(--profile-gradient), url("/assets/makenedev-profile.jpeg");
+  background: var(--profile-gradient), url("/assets/makenedev-profile.webp");
   background-position: center top;
   background-size: cover;
   width: 100%;
@@ -1870,6 +1871,12 @@ textarea {
 }
 .work-experience .profile__resume:hover svg {
   color: var(--text-primary);
+}
+.work-experience .experiences {
+  position: sticky;
+  top: 7%;
+  align-self: start;
+  z-index: 10;
 }
 .work-experience .experiences h1 {
   font-size: 1.3rem;
