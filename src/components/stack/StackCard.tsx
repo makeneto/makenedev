@@ -21,9 +21,14 @@ export default function StackCard({ children, name }: StackProps) {
         <p className="text-sm font-semibold text-center" translate="no">
           {name}
         </p>
-        <span className="tag" translate="no">
-          {category}
-        </span>
+
+        <div className="flex w-full flex-wrap justify-center gap-1.5">
+          {category.map((cat: string) => (
+            <span key={cat} className="tag" translate="no">
+              {cat}
+            </span>
+          ))}
+        </div>
 
         <StackLinks link={link} certificate={certificate} learn={learn} />
       </div>
