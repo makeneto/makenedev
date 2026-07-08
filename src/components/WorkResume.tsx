@@ -9,6 +9,8 @@ export default function WorkResume() {
         connect, feel free to{" "}
         <Link
           to="/contact"
+          prefetch="intent"
+          aria-label="Get in touch"
           className="hover:text-black dark:hover:text-white underline"
         >
           get in touch
