@@ -7,9 +7,8 @@ export default function HomeHeader() {
   return (
     <header className="homeHeader">
       <section className="homeHeader__heroContent">
-        <h1 translate="no">Hey, </h1>
+        <h1 translate="no">Hey, there!</h1>
         <img src="/assets/hero-avatar.webp" alt="Makene Neto" />
-        <h1 translate="no">there!</h1>
       </section>
 
       <div className="homeHeader__openToWork">
