@@ -894,7 +894,7 @@ textarea {
 @media (width <= 640px) {
   .homeHeader__heroContent img {
     top: 83%;
-    width: 69%;
+    width: 73%;
   }
 }
 @media (width <= 400px) {
