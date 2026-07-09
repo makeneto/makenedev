@@ -109,7 +109,7 @@ body::selection {
 }
 @media (width <= 884px) {
   body {
-    padding-inline: 2rem;
+    padding-inline: 5rem;
   }
 }
 @media (width <= 640px) {
@@ -568,7 +568,7 @@ textarea {
     gap: 4rem;
   }
 }
-@media (width <= 640px) {
+@media (width <= 820px) {
   .contact__content {
     grid-template-columns: none;
     gap: 6rem;
@@ -807,13 +807,21 @@ textarea {
 }
 
 .homeHeader {
+  margin-top: -3rem;
   margin-bottom: 25rem;
   display: grid;
-  gap: 13rem;
+  gap: 10rem;
 }
 @media (width <= 1280px) {
   .homeHeader {
-    gap: 4rem;
+    margin-top: -4rem;
+    gap: 6rem;
+  }
+}
+@media (width <= 884px) {
+  .homeHeader {
+    margin-top: 0;
+    gap: 10.5rem;
   }
 }
 @media (width <= 640px) {
@@ -868,18 +876,19 @@ textarea {
 }
 .homeHeader__heroContent img {
   position: absolute;
-  top: -20%;
+  top: 66%;
+  width: 40%;
 }
 @media (width <= 1280px) {
   .homeHeader__heroContent img {
-    top: -51%;
-    width: 35%;
+    top: 63%;
+    width: 33%;
   }
 }
-@media (width <= 768px) {
+@media (width <= 884px) {
   .homeHeader__heroContent img {
-    top: -10%;
-    width: 40%;
+    top: 66%;
+    width: 52%;
   }
 }
 @media (width <= 640px) {
@@ -1166,8 +1175,7 @@ textarea {
   font-family: serif;
 }
 .quoteOfTheWeek__content h1 {
-  width: 65%;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--text-secondary);
 }
 @media (width <= 1280px) {
@@ -1501,7 +1509,7 @@ textarea {
 }
 @media (width <= 884px) {
   .showcase-cover {
-    height: 12.5rem;
+    height: 9.5rem;
   }
 }
 @media (width <= 640px) {
