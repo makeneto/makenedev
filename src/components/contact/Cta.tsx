@@ -4,7 +4,7 @@ import { ContactSectionHeader } from "./ContactSectionHeader"
 import CtaButtons from "./CtaButtons"
 
 export default function Cta({ className }: { className?: string }) {
-  const isPhone = useMediaQuery({ maxWidth: 640 })
+  const isPhone = useMediaQuery({ maxWidth: 820 })
 
   return (
     <section className={`${className} contact`}>
