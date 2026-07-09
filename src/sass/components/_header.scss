@@ -1,10 +1,17 @@
 .homeHeader {
+  margin-top: -3rem;
   margin-bottom: 25rem;
   display: grid;
-  gap: 13rem;
+  gap: 10rem;
 
   @media (width <= 1280px) {
-    gap: 4rem;
+    margin-top: -4rem;
+    gap: 6rem;
+  }
+
+  @media (width <= 884px) {
+    margin-top: 0;
+    gap: 10.5rem;
   }
 
   @media (width <= 640px) {
@@ -53,16 +60,17 @@
 
     & img {
       position: absolute;
-      top: -20%;
+      top: 66%;
+      width: 40%;
 
       @media (width <= 1280px) {
-        top: -51%;
-        width: 35%;
+        top: 63%;
+        width: 33%;
       }
 
-      @media (width <= 768px) {
-        top: -10%;
-        width: 40%;
+      @media (width <= 884px) {
+        top: 66%;
+        width: 52%;
       }
 
       @media (width <= 640px) {
