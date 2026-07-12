@@ -6,6 +6,7 @@ import ShowcaseSection from "../components/showcase-section/ShowcaseSection"
 import QuoteOfTheWeek from "../components/QuoteOfTheWeek"
 import MyServices from "../components/myServices/MyServices"
 import Cta from "../components/contact/Cta"
+import PricingSection from "../components/pricing/PricingSection"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         items={works}
         isHomePage
       />
+      <PricingSection />
 
       {/* <VerticalBlogList /> */}
 
