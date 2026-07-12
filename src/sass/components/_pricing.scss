@@ -1,0 +1,226 @@
+.pricing {
+  &__grid {
+    background-color: var(--bg-secondary);
+    display: grid;
+    grid-template-columns: 31% auto;
+    gap: 1rem;
+
+    margin-top: 3rem;
+    padding: 1rem;
+
+    @media (width <= 884px) {
+      grid-template-columns: auto;
+    }
+
+    @media (width <= 640px) {
+      gap: 2.5rem;
+    }
+
+    & section {
+      background-color: var(--bg-pricing-card);
+      display: flex;
+      padding: 2rem;
+      gap: 4rem;
+
+      @media (width <= 884px) {
+        display: grid;
+        gap: 6rem;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    &--standard {
+      padding: 2rem 1rem 2rem;
+
+      @media (width <= 884px) {
+        padding: 1rem;
+      }
+    }
+  }
+
+  &__card-top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__icon-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border-primary);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+
+    @media (width <= 640px) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &__card-icon {
+    color: var(--text-primary);
+
+    @media (width <= 640px) {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+
+  &__card-title {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.01em;
+
+    @media (width <= 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (width <= 640px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+
+    &--featured {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__currency {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+
+    @media (width <= 640px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__amount {
+    font-family: "Antonio", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    line-height: 1;
+
+    @media (width <= 884px) {
+      font-size: 3rem;
+    }
+
+    @media (width <= 640px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__card-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 1.5rem;
+
+    @media (width <= 768px) {
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 3rem;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+
+    @media (width <= 768px) {
+      font-size: 0.9rem;
+      gap: 0.6rem;
+    }
+  }
+
+  &__feature-dot {
+    flex-shrink: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--border-primary);
+    margin-top: 0.6rem;
+
+    @media (width <= 768px) {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--text-primary);
+
+    border: 1px solid transparent;
+    color: var(--bg-primary);
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.93rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.02em;
+
+    @media (width <= 768px) {
+      padding: 0.9rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      border-color: var(--text-primary);
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+
+    &--primary {
+      width: fit-content;
+      background-color: transparent;
+      color: var(--text-primary);
+      border-color: var(--border-secondary);
+
+      &:hover {
+        border-color: var(--text-primary);
+      }
+    }
+  }
+}
