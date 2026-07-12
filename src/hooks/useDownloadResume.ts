@@ -1,22 +1,14 @@
+import { useCallback } from "react"
+import { useUserLocale } from "./useUserLocale"
+
 export default function useDownloadResume() {
-  const handleClick = async () => {
-    let filename = "makene-resume-lsen.pdf"
+  const { locale } = useUserLocale()
 
-    try {
-      const res = await fetch("https://ipapi.co/json/")
-      const data = await res.json()
-
-      const country = data?.country_code
-
-      if (country === "AO") {
-        filename = "makene-resume-lden.pdf"
-      }
-    } catch {
-      filename = "makene-resume-lsen.pdf"
-    }
+  const handleClick = useCallback(() => {
+    const filename =
+      locale === "AO" ? "makene-resume-lden.pdf" : "makene-resume-lsen.pdf"
 
     const filePath = `/documents/${filename}`
-    window.open(filePath, "_blank")
 
     const link = document.createElement("a")
     link.href = filePath
@@ -24,7 +16,7 @@ export default function useDownloadResume() {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
-  }
+  }, [locale])
 
   return handleClick
 }
