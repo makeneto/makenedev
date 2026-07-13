@@ -1,0 +1,38 @@
+.loadingPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &__content {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+    padding: 0 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    h1 {
+      margin: 0;
+      font-family: "Antonio", sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  &__footer {
+    p {
+      color: var(--text-primary);
+      font-size: 0.875rem;
+      opacity: 0.8;
+      font-weight: 500;
+
+      & span {
+        color: var(--text-secondary);
+      }
+    }
+  }
+}
