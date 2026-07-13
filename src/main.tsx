@@ -8,8 +8,6 @@ import "./css/index.css"
 
 import App from "./App.tsx"
 import { Toaster } from "../src/components/ui/sonner.tsx"
-import Navbar from "./components/navbar/Navbar.tsx"
-import Footer from "./components/footer/Footer.tsx"
 import ScrollToTop from "./hooks/scrollToTop.ts"
 import ThemeProvider from "./components/ThemeProvider.tsx"
 
@@ -21,9 +19,7 @@ createRoot(document.getElementById("root")!).render(
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <ScrollToTop />
-          <Navbar />
           <App />
-          <Footer />
         </BrowserRouter>
 
         <Toaster />
