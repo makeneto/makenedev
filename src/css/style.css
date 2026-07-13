@@ -1057,6 +1057,38 @@ textarea {
   font-weight: 600;
 }
 
+.loadingPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.loadingPage__content {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.loadingPage__content h1 {
+  margin: 0;
+  font-family: "Antonio", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.loadingPage__footer p {
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.loadingPage__footer p span {
+  color: var(--text-secondary);
+}
+
 .nav {
   font-family: "Inter", sans-serif;
   padding-top: 1.5rem;
