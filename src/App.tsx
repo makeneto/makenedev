@@ -1,5 +1,6 @@
-import React, { lazy } from "react"
+import React, { lazy, Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
+import LoadingPage from "./pages/LoadingPage"
 
 const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
@@ -12,15 +13,17 @@ const Contact = lazy(() => import("./pages/Contact"))
 export default function App() {
   return (
     <React.Fragment>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/stack" element={<Stack />} />
-        <Route path="/setup" element={<Setup />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Suspense fallback={<LoadingPage />}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/stack" element={<Stack />} />
+          <Route path="/setup" element={<Setup />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
     </React.Fragment>
   )
 }
