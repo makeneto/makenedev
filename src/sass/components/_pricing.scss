@@ -23,8 +23,13 @@
       gap: 4rem;
 
       @media (width <= 884px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (width <= 640px) {
         display: grid;
-        gap: 6rem;
+        gap: 4rem;
       }
     }
   }
