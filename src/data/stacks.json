@@ -26,7 +26,7 @@
           "category": ["Language"],
           "link": "https://www.typescriptlang.org",
           "certificate": "https://www.udemy.com/certificate/UC-38e8a080-e0de-4239-ba46-4978f4efcc43/",
-           "learn": "https://github.com/makeneto/learning-typescript"
+          "learn": "https://github.com/makeneto/learning-typescript"
         },
         {
           "id": "next",
@@ -44,7 +44,7 @@
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
           "learn": "https://github.com/makeneto/learning-redux"
         },
-         {
+        {
           "id": "tailwindcss",
           "name": "TailwindCSS",
           "category": ["Framework"],
