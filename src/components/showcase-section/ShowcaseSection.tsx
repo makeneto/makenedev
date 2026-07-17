@@ -2,8 +2,7 @@ import type { ShowcaseSectionProps } from "../../interfaces/showcase"
 import ShowcaseHeader from "./ShowcaseHeader"
 import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
-import { usePagination } from "../../hooks/usePagination"
-import { useScrollOnPaginate } from "../../hooks/useScrollOnPaginate"
+import { useShowcasePagination } from "../../hooks/useShowcasePagination"
 
 const ShowcaseSection = ({
   title,
@@ -12,29 +11,18 @@ const ShowcaseSection = ({
   isHomePage = false,
   isShowcase,
 }: ShowcaseSectionProps) => {
-  const itemsPerPage = isHomePage ? 2 : 4
-
-  const { page, totalPages, visibleItems, nextPage, prevPage } = usePagination({
-    items,
-    itemsPerPage,
-  })
-
-  const { sectionRef, markPagination } = useScrollOnPaginate({
+  const {
+    sectionRef,
     page,
-    enabled: !isHomePage,
+    totalPages,
+    visibleItems,
+    handleNext,
+    handlePrev,
+    showControls,
+  } = useShowcasePagination({
+    items,
+    isHomePage,
   })
-
-  const handleNext = () => {
-    markPagination()
-    nextPage()
-  }
-
-  const handlePrev = () => {
-    markPagination()
-    prevPage()
-  }
-
-  const showControls = isHomePage || totalPages > 1
 
   return (
     <section ref={sectionRef}>
@@ -44,7 +32,7 @@ const ShowcaseSection = ({
         isShowcase={isShowcase}
       />
 
-      <ShowcaseGrid items={visibleItems} isHomePage={isHomePage} />
+      <ShowcaseGrid items={visibleItems} />
 
       {showControls && !viewAll && (
         <SectionControls
