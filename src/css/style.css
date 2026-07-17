@@ -95,30 +95,45 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  padding-inline: 25rem;
+  padding-inline: 1rem;
 }
 body::selection {
   background-color: var(--selection-bg);
   color: var(--text-primary);
 }
-@media (width <= 1280px) {
+@media (width >= 400px) {
   body {
-    padding-inline: 10rem;
+    padding-inline: 1.5rem;
   }
 }
-@media (width <= 884px) {
+@media (width >= 640px) {
+  body {
+    padding-inline: 3rem;
+  }
+}
+@media (width >= 884px) {
   body {
     padding-inline: 5rem;
   }
 }
-@media (width <= 640px) {
+@media (width >= 1280px) {
   body {
-    padding-inline: 1rem;
+    padding-inline: 10rem;
   }
 }
-@media (width <= 400px) {
+@media (width >= 1440px) {
   body {
-    padding-inline: 0.7rem;
+    padding-inline: 15rem;
+  }
+}
+@media (width >= 1600px) {
+  body {
+    padding-inline: 20rem;
+  }
+}
+@media (width >= 1920px) {
+  body {
+    padding-inline: 25rem;
   }
 }
 
@@ -1079,6 +1094,11 @@ textarea {
   font-weight: 800;
   text-transform: uppercase;
 }
+@media (width <= 640px) {
+  .loadingPage__content h1 {
+    font-size: 2rem;
+  }
+}
 .loadingPage__footer p {
   color: var(--text-primary);
   font-size: 0.875rem;
@@ -1810,26 +1830,49 @@ textarea {
 }
 .stack-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 3rem 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2.5rem;
 }
-@media (width <= 640px) {
+@media (width >= 400px) {
   .stack-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem 2rem;
+    row-gap: 3.7rem;
   }
 }
-.stack-grid svg, .stack-grid img {
-  height: 3.5rem;
+@media (width >= 640px) {
+  .stack-grid {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5rem;
+  }
 }
-@media (width <= 1280px) {
-  .stack-grid svg, .stack-grid img {
+@media (width >= 884px) {
+  .stack-grid {
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 5rem;
+  }
+}
+@media (width >= 1280px) {
+  .stack-grid {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 5rem;
+  }
+}
+.stack-grid svg {
+  height: 2.5rem;
+}
+@media (width >= 640px) {
+  .stack-grid svg {
+    height: 2.97rem;
+  }
+}
+@media (width >= 884px) {
+  .stack-grid svg {
     height: 3rem;
   }
 }
-@media (width <= 640px) {
-  .stack-grid svg, .stack-grid img {
-    height: 2.97rem;
+@media (width >= 1280px) {
+  .stack-grid svg {
+    height: 3.5rem;
   }
 }
 .stack-card {
