@@ -49,14 +49,16 @@
           "name": "Styled Components",
           "category": ["Library"],
           "link": "https://styled-components.com",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
+          "learn": "https://github.com/makeneto/learning-styled-components"
         },
         {
           "id": "sass",
           "name": "Sass",
           "category": ["Language"],
           "link": "https://sass-lang.com",
-          "certificate": "https://www.udemy.com/certificate/UC-dc45983d-db6c-4949-a6ff-e3e230fafe4a/"
+          "certificate": "https://www.udemy.com/certificate/UC-dc45983d-db6c-4949-a6ff-e3e230fafe4a/",
+          "learn": "https://github.com/makeneto/learning-sass"
         },
         {
           "id": "tailwindcss",
