@@ -71,7 +71,7 @@
           "name": "Shadcn/ui",
           "category": ["Library"],
           "link": "https://ui.shadcn.com",
-          "certificate": "?"
+          "certificate": null
         }
       ]
     },
