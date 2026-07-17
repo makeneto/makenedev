@@ -8,27 +8,39 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  padding-inline: 25rem;
+  padding-inline: 1rem;
 
   &::selection {
     background-color: var(--selection-bg);
     color: var(--text-primary);
   }
 
-  @media (width <= 1280px) {
-    padding-inline: 10rem;
+  @media (width >= 400px) {
+    padding-inline: 1.5rem;
   }
 
-  @media (width <= 884px) {
+  @media (width >= 640px) {
+    padding-inline: 3rem;
+  }
+
+  @media (width >= 884px) {
     padding-inline: 5rem;
   }
 
-  @media (width <= 640px) {
-    padding-inline: 1rem;
+  @media (width >= 1280px) {
+    padding-inline: 10rem;
   }
 
-  @media (width <= 400px) {
-    padding-inline: 0.7rem;
+  @media (width >= 1440px) {
+    padding-inline: 15rem;
+  }
+
+  @media (width >= 1600px) {
+    padding-inline: 20rem;
+  }
+
+  @media (width >= 1920px) {
+    padding-inline: 25rem;
   }
 }
 
