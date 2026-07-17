@@ -9,7 +9,8 @@
           "name": "JavaScript",
           "category": ["Language"],
           "link": "https://developer.mozilla.org/docs/Web/JavaScript",
-          "certificate": "https://ude.my/UC-942380f7-699f-4f59-a2f2-648e1b5b4c98"
+          "certificate": "https://ude.my/UC-942380f7-699f-4f59-a2f2-648e1b5b4c98",
+          "learn": "https://github.com/makeneto/clean-code-javascript"
         },
         {
           "id": "react",
