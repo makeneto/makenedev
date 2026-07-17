@@ -33,6 +33,7 @@ import GithubCopilotIcon from "../components/ui/icons/GithubCopilotIcon"
 import ViteIcon from "../components/ui/icons/ViteIcon"
 import VsCodeIcon from "../components/ui/icons/VsCodeIcon"
 import DribbbleIcon from "../components/ui/icons/DribbbleIcon"
+import FramerIcon from "../components/ui/icons/FramerIcon"
 
 export const stackIconMap: Record<string, ComponentType> = {
   javascript: JavaScriptIcon,
@@ -44,6 +45,7 @@ export const stackIconMap: Record<string, ComponentType> = {
   sass: SassIcon,
   tailwindcss: TailwindcssIcon,
   shadcn: ShadcnIcon,
+  framer: FramerIcon,
   node: NodeIcon,
   express: ExpressIcon,
   socketio: SocketioIcon,
