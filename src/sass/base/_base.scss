@@ -15,19 +15,11 @@ body {
     color: var(--text-primary);
   }
 
-  @media (width >= 400px) {
+  @media (width >= 640px) {
     padding-inline: 1.5rem;
   }
 
-  @media (width >= 640px) {
-    padding-inline: 3rem;
-  }
-
   @media (width >= 884px) {
-    padding-inline: 5rem;
-  }
-
-  @media (width >= 1280px) {
     padding-inline: 10rem;
   }
 
