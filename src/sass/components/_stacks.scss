@@ -24,24 +24,42 @@
 
   &-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 3rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2.5rem;
 
-    @media (width <= 640px) {
+    @media (width >= 400px) {
       grid-template-columns: repeat(3, 1fr);
-      gap: 4rem 2rem;
+      row-gap: 3.7rem;
     }
 
-    & svg,
-    & img {
-      height: 3.5rem;
+    @media (width >= 640px) {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 5rem;
+    }
 
-      @media (width <= 1280px) {
+    @media (width >= 884px) {
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 5rem;
+    }
+
+    @media (width >= 1280px) {
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 5rem;
+    }
+
+    & svg {
+      height: 2.5rem;
+
+      @media (width >= 640px) {
+        height: 2.97rem;
+      }
+
+      @media (width >= 884px) {
         height: 3rem;
       }
 
-      @media (width <= 640px) {
-        height: 2.97rem;
+      @media (width >= 1280px) {
+        height: 3.5rem;
       }
     }
   }
