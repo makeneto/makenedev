@@ -44,13 +44,12 @@
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
           "learn": "https://github.com/makeneto/learning-redux"
         },
-        {
-          "id": "styledcomponents",
-          "name": "Styled Components",
-          "category": ["Library"],
-          "link": "https://styled-components.com",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-styled-components"
+         {
+          "id": "tailwindcss",
+          "name": "TailwindCSS",
+          "category": ["Framework"],
+          "link": "https://tailwindcss.com",
+          "certificate": "?"
         },
         {
           "id": "sass",
@@ -61,11 +60,11 @@
           "learn": "https://github.com/makeneto/learning-sass"
         },
         {
-          "id": "tailwindcss",
-          "name": "TailwindCSS",
-          "category": ["Framework"],
-          "link": "https://tailwindcss.com",
-          "certificate": "?"
+          "id": "styledcomponents",
+          "name": "Styled Components",
+          "category": ["Library"],
+          "link": "https://styled-components.com",
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
         },
         {
           "id": "shadcn",
