@@ -47,7 +47,7 @@ export default function StackLinks({
           rel="noopener noreferrer"
           title={`Learn with me`}
         >
-          <BookOpen className="text-blue-600 dark:text-blue-400 transition-colors" />
+          <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
         </Link>
       )}
     </section>
