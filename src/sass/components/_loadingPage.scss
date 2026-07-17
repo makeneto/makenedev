@@ -20,6 +20,10 @@
       font-size: 3rem;
       font-weight: 800;
       text-transform: uppercase;
+
+      @media (width <= 640px) {
+        font-size: 2rem;
+      }
     }
   }
 
