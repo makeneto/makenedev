@@ -4,7 +4,7 @@ export const works: ShowcaseItem[] = [
   {
     id: 108,
     title: "Eminus",
-    description: "Building better financial habits for families.",
+    description: "Building better financial habits for families with smarter money management.",
     imageUrl: "/assets/work-cover8.webp",
     href: "https://github.com/makeneto/eminus",
     date: "2026-05-10",
