@@ -17,7 +17,8 @@
           "name": "React",
           "category": ["Library"],
           "link": "https://react.dev",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
+          "learn": "https://github.com/makeneto/learning-reactjs"
         },
         {
           "id": "typescript",
@@ -32,14 +33,16 @@
           "name": "Next.js",
           "category": ["Framework"],
           "link": "https://nextjs.org",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
+          "learn": "https://github.com/makeneto/learning-nextjs"
         },
         {
           "id": "redux",
           "name": "Redux",
           "category": ["Library"],
           "link": "https://redux.js.org",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
+          "learn": "https://github.com/makeneto/learning-redux"
         },
         {
           "id": "styledcomponents",
