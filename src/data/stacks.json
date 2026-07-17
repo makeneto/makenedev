@@ -65,7 +65,14 @@
           "name": "Shadcn/ui",
           "category": ["Library"],
           "link": "https://ui.shadcn.com",
-          "certificate": "?"
+          "certificate": null
+        },
+        {
+          "id": "framer",
+          "name": "Framer",
+          "category": ["Library"],
+          "link": "https://www.framer.com",
+          "certificate": null
         }
       ]
     },
