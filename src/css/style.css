@@ -1037,6 +1037,108 @@ textarea {
   font-weight: 600;
 }
 
+.layoutPage__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+}
+.layoutPage__header span {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+.layoutPage__header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+@media (width <= 640px) {
+  .layoutPage__header h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (width <= 400px) {
+  .layoutPage__header h1 {
+    font-size: 2.2rem;
+  }
+}
+.layoutPage__header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+.layoutPage__header ul {
+  display: grid;
+  gap: 1rem;
+}
+.layoutPage__header ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.layoutPage__header ul li span {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  border-radius: 50%;
+}
+.layoutPage__header ul li span svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.layoutPage__header button {
+  margin-top: 3rem;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+}
+.layoutPage__header--image {
+  background: var(--bg-secondary) url("/assets/layout_hero.webp");
+  background-position: top center;
+  background-size: cover;
+  border-radius: 0.7rem;
+}
+.layoutPage__form {
+  margin-top: 10rem;
+}
+.layoutPage__form--searchBar {
+  width: 30rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-resume);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 9rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.4rem;
+}
+.layoutPage__form--searchBar:focus, .layoutPage__form--searchBar:hover {
+  border-color: var(--text-primary);
+}
+.layoutPage__form--searchBar input {
+  width: 88%;
+  outline: none;
+  font-size: 0.9rem;
+}
+.layoutPage__form--searchBar button {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.layoutPage__form--searchBar button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
 .loadingPage {
   position: relative;
   width: 100%;
