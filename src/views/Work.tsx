@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 
 import DefaultHeader from "../components/headers/DefaultHeader"

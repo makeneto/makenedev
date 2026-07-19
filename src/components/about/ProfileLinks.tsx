@@ -1,24 +1,45 @@
-import { Link } from "react-router-dom"
+import Link from "next/link"
 
 import { contacts } from "../../data/links"
 
 export default function ProfileLinks() {
   return (
     <section className="profile__contact">
-      {contacts.map(({ label, href, display }) => (
-        <div key={label} className="flex items-center justify-between">
-          <p className="sm:text-sm font-medium">{label}</p>
+      {contacts.map(({ label, href, display }) => {
+        const isInternal = href.startsWith("/")
 
-          <Link
-            to={href}
-            target={label === "Email" ? "_self" : "_blank"}
-            className="sm:text-sm text-end"
-            aria-label={`Visit my ${label}`}
-          >
-            {display}
-          </Link>
-        </div>
-      ))}
+        if (isInternal) {
+          return (
+            <div key={label} className="flex items-center justify-between">
+              <p className="sm:text-sm font-medium">{label}</p>
+
+              <Link
+                href={href}
+                className="sm:text-sm text-end"
+                aria-label={`Visit my ${label}`}
+              >
+                {display}
+              </Link>
+            </div>
+          )
+        }
+
+        return (
+          <div key={label} className="flex items-center justify-between">
+            <p className="sm:text-sm font-medium">{label}</p>
+
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sm:text-sm text-end"
+              aria-label={`Visit my ${label}`}
+            >
+              {display}
+            </a>
+          </div>
+        )
+      })}
     </section>
   )
 }

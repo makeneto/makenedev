@@ -63,6 +63,11 @@
       color: var(--bg-primary);
       padding: 0.5rem 1.2rem;
       border-radius: 2rem;
+      transition: background-color 0.2s ease; 
+
+      &:hover {
+        background-color: var(--text-secondary);
+      }
     }
 
     &--image {
@@ -85,18 +90,19 @@
       gap: 1rem;
       border-radius: 9rem;
       padding: 0.5rem 0.5rem 0.5rem 1.4rem;
-
-      &:focus,
-      &:hover {
+      transition: border-color 0.2s ease;
+    
+      &:hover,
+      &:focus-within {
         border-color: var(--text-primary);
       }
-
+    
       & input {
         width: 88%;
         outline: none;
         font-size: 0.9rem;
       }
-
+    
       & button {
         background-color: var(--text-primary);
         color: var(--bg-primary);
@@ -106,7 +112,12 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+        transition: background-color 0.2s ease; 
 
+        &:hover {
+          background-color: var(--text-secondary);
+        }
+    
         & svg {
           width: 1.1rem;
           height: 1.1rem;

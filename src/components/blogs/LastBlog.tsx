@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import { blogs } from "../../data/blogs"
 
 export default function LastBlog() {
@@ -7,7 +7,11 @@ export default function LastBlog() {
 
   return (
     <section className="blog-lastBlog">
-      <Link to={link} prefetch="intent" aria-label="Read more about this blog post" className="blog-lastBlog-card">
+      <Link
+        href={link}
+        aria-label="Read more about this blog post"
+        className="blog-lastBlog-card"
+      >
         <section>
           <div>
             <span>{category}</span>

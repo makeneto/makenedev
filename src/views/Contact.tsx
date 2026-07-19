@@ -1,3 +1,5 @@
+"use client"
+
 import ContactSection from "../components/contact/ContactSection"
 import { useTitle } from "../hooks/useTitle"
 

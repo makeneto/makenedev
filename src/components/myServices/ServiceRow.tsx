@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 type ServiceRowProps = {
@@ -16,8 +16,7 @@ export default function ServiceRow({
 
   return (
     <Link
-      to="/contact"
-      prefetch="intent"
+      href="/contact"
       className="services__list--row"
       aria-label={`Learn more about ${title}`}
     >

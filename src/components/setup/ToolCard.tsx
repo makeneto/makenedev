@@ -1,5 +1,4 @@
 import { ExternalLink } from "lucide-react"
-import { Link } from "react-router-dom"
 
 interface ToolCardProps {
   image: string
@@ -15,9 +14,9 @@ export default function ToolCard({
   link,
 }: ToolCardProps) {
   return (
-    <Link
+    <a
       className="setup-card"
-      to={link}
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Visit external link"
@@ -31,6 +30,6 @@ export default function ToolCard({
         </div>
         <p>{description}</p>
       </section>
-    </Link>
+    </a>
   )
 }

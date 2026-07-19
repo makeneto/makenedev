@@ -1,6 +1,6 @@
 import type { ContactFormData } from "../interfaces/contactForm"
 
-const formspreeKey = import.meta.env.VITE_FORMSPREE_KEY
+const formspreeKey = process.env.NEXT_PUBLIC_FORMSPREE_KEY
 
 export async function sendContactForm(data: ContactFormData) {
   const payload = {

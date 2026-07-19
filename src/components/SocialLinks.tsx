@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom"
 import {
   RiGithubLine,
   RiInstagramLine,
@@ -11,11 +10,11 @@ export default function SocialLinks() {
   return (
     <section className="flex items-center gap-3 sm:gap-4 sm:mr-3">
       {socialLinks.map((link) => (
-        <NavLink
+        <a
           key={link.link}
-          to={link.link}
+          href={link.link}
           target="_blank"
-          prefetch="intent"
+          rel="noopener noreferrer"
           className="nav--link"
         >
           {link.label === "Github" ? (
@@ -27,7 +26,7 @@ export default function SocialLinks() {
           ) : (
             link.label
           )}
-        </NavLink>
+        </a>
       ))}
     </section>
   )
