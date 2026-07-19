@@ -1096,6 +1096,10 @@ textarea {
   color: var(--bg-primary);
   padding: 0.5rem 1.2rem;
   border-radius: 2rem;
+  transition: background-color 0.2s ease;
+}
+.layoutPage__header button:hover {
+  background-color: var(--text-secondary);
 }
 .layoutPage__header--image {
   background: var(--bg-secondary) url("/assets/layout_hero.webp");
@@ -1115,8 +1119,9 @@ textarea {
   gap: 1rem;
   border-radius: 9rem;
   padding: 0.5rem 0.5rem 0.5rem 1.4rem;
+  transition: border-color 0.2s ease;
 }
-.layoutPage__form--searchBar:focus, .layoutPage__form--searchBar:hover {
+.layoutPage__form--searchBar:hover, .layoutPage__form--searchBar:focus-within {
   border-color: var(--text-primary);
 }
 .layoutPage__form--searchBar input {
@@ -1133,6 +1138,10 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+.layoutPage__form--searchBar button:hover {
+  background-color: var(--text-secondary);
 }
 .layoutPage__form--searchBar button svg {
   width: 1.1rem;

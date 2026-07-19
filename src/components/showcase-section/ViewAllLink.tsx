@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react"
-import { Link } from "react-router-dom"
+import Link from "next/link"
 
 interface ViewAllLinkProps {
   to: string
@@ -11,8 +11,7 @@ export const ViewAllLink: React.FC<ViewAllLinkProps> = ({
   textLink = "View all",
 }) => (
   <Link
-    to={to}
-    prefetch="intent"
+    href={to}
     className="flex items-center gap-2 text-sm text-zinc-600 transition-all hover:text-black dark:hover:text-white hover:gap-1"
   >
     {textLink}

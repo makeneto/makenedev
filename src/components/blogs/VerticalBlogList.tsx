@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react"
+import Link from "next/link"
 import { blogs } from "../../data/blogs"
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
-import { Link } from "react-router-dom"
 import LastBlog from "./LastBlog"
 
 export default function VerticalBlogList() {
@@ -19,7 +19,12 @@ export default function VerticalBlogList() {
 
       <ul className="verticalBlogs">
         {blogsList.map((blog) => (
-          <Link key={blog.link} to={blog.link} prefetch="intent" className="verticalBlogs__item" aria-label={`Read more about ${blog.title}`}>
+          <Link
+            key={blog.link}
+            href={blog.link}
+            className="verticalBlogs__item"
+            aria-label={`Read more about ${blog.title}`}
+          >
             <article>
               <p>{blog.date}</p>
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import ResumeFrame from "./ResumeFrame"
 
 export default function WorkResume() {
@@ -8,8 +8,7 @@ export default function WorkResume() {
         If you’d like to collaborate, build something together, or simply
         connect, feel free to{" "}
         <Link
-          to="/contact"
-          prefetch="intent"
+          href="/contact"
           aria-label="Get in touch"
           className="hover:text-black dark:hover:text-white underline"
         >

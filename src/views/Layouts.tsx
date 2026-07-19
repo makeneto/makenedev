@@ -1,3 +1,5 @@
+"use client"
+
 import { Check, Search } from "lucide-react"
 import React from "react"
 
