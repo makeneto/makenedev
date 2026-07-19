@@ -1,0 +1,117 @@
+.layoutPage {
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+
+    & span {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    & h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+
+      @media (width <= 640px) {
+        font-size: 2.4rem;
+      }
+
+      @media (width <= 400px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    & p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+    }
+
+    & ul {
+      display: grid;
+      gap: 1rem;
+
+      & li {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        & span {
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--bg-secondary);
+          border-radius: 50%;
+
+          & svg {
+            width: 0.9rem;
+            height: 0.9rem;
+          }
+        }
+      }
+    }
+
+    & button {
+      margin-top: 3rem;
+      background-color: var(--text-primary);
+      color: var(--bg-primary);
+      padding: 0.5rem 1.2rem;
+      border-radius: 2rem;
+    }
+
+    &--image {
+      background: var(--bg-secondary) url("/assets/layout_hero.webp");
+      background-position: top center;
+      background-size: cover;
+      border-radius: 0.7rem;
+    }
+  }
+
+  &__form {
+    margin-top: 10rem;
+
+    &--searchBar {
+      width: 30rem;
+      background-color: var(--bg-secondary);
+      border: 2px solid var(--border-resume);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      border-radius: 9rem;
+      padding: 0.5rem 0.5rem 0.5rem 1.4rem;
+
+      &:focus,
+      &:hover {
+        border-color: var(--text-primary);
+      }
+
+      & input {
+        width: 88%;
+        outline: none;
+        font-size: 0.9rem;
+      }
+
+      & button {
+        background-color: var(--text-primary);
+        color: var(--bg-primary);
+        width: 2.3rem;
+        height: 2.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        & svg {
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+      }
+    }
+  }
+}
