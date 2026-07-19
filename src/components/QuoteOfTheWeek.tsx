@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { RiLink } from "@remixicon/react"
 
 import { fallbackQuote } from "../data/fallbackQuote"
@@ -32,15 +31,16 @@ export default function QuoteOfTheWeek() {
             — {isLoading ? "Loading..." : quote.author}
           </small>
 
-          <Link
-            to="https://github.com/makeneto/prime-api"
+          <a
+            href="https://github.com/makeneto/prime-api"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-700 hover:text-black dark:hover:text-white transition-all"
             aria-label="By Makene's API"
           >
             <RiLink size={13} />
-            <span>By Makene's API</span>
-          </Link>
+            <span>By Makene&apos;s API</span>
+          </a>
         </div>
       </div>
     </section>

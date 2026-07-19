@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 
 export default function HomeHeader() {
@@ -17,7 +17,7 @@ export default function HomeHeader() {
             <span className="homeHeader__openToWork--dot--inner"></span>
           </span>
 
-          <Link to="/contact" prefetch="intent">
+          <Link href="/contact">
             Available {!isMobile && "for new opportunities"}
           </Link>
         </div>

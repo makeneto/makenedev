@@ -1,6 +1,5 @@
 import React from "react"
 import type { ShowcaseItem } from "../../interfaces/showcase"
-import { Link } from "react-router-dom"
 import { ExternalLink } from "lucide-react"
 
 interface Props {
@@ -9,10 +8,11 @@ interface Props {
 
 const ShowcaseCard: React.FC<Props> = ({ item }) => {
   return (
-    <Link
-      to={item.href}
+    <a
+      href={item.href}
       className="showcase-card"
       target="_blank"
+      rel="noopener noreferrer"
       aria-label={`Visit ${item.title} showcase`}
     >
       <img
@@ -32,7 +32,7 @@ const ShowcaseCard: React.FC<Props> = ({ item }) => {
 
         <p className="showcase-card--description">{item.description}</p>
       </section>
-    </Link>
+    </a>
   )
 }
 

@@ -1,5 +1,7 @@
+"use client"
+
+import Link from "next/link"
 import { useTheme } from "next-themes"
-import { NavLink } from "react-router-dom"
 
 interface LogoProps {
   variant: "nav" | "footer"
@@ -10,12 +12,7 @@ export default function Logo({ variant }: LogoProps) {
   const isLightTheme = resolvedTheme === "light"
 
   return (
-    <NavLink
-      to="/"
-      prefetch="intent"
-      aria-label="Makenedev's Logo"
-      className="logo"
-    >
+    <Link href="/" aria-label="Makenedev's Logo" className="logo">
       <img
         src={
           isLightTheme
@@ -25,6 +22,6 @@ export default function Logo({ variant }: LogoProps) {
         alt="Makenedev's Logo"
         className={variant === "nav" ? "w-8 sm:w-10" : "w-12 m-auto sm:m-0"}
       />
-    </NavLink>
+    </Link>
   )
 }

@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react"
-import { Link } from "react-router-dom"
+import Link from "next/link"
 import type { Blog } from "../../interfaces/blog"
 
 export default function BlogCard({ blog }: { blog: Blog }) {
@@ -7,8 +7,7 @@ export default function BlogCard({ blog }: { blog: Blog }) {
 
   return (
     <Link
-      to={link}
-      prefetch="intent"
+      href={link}
       className="blog-card"
       aria-label="Read more about this blog post"
     >
