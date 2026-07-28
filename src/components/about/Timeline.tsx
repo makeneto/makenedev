@@ -1,7 +1,7 @@
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
 import TimelineDesktop from "./TimelineDesktop"
 import TimelineMobile from "./TimelineMobile"
-import { timelineTracks, useTimeline } from "../../hooks/useTimeline"
+import { timelineTracks, useTimeline } from "@/hooks/useTimeline"
 
 export default function Timeline() {
   const { timelineData, currentYear, canGoPrev, canGoNext, handleYearChange } =
