@@ -4,11 +4,8 @@ export function useFormatCurrency() {
   const { locale } = useUserLocale()
 
   return (amount: number) => {
-    return new Intl.NumberFormat(
-      locale === "AO" ? "pt-AO" : "en-US",
-      {
-        maximumFractionDigits: 0,
-      }
-    ).format(amount)
+    return new Intl.NumberFormat(locale === "AO" ? "pt-AO" : "en-US", {
+      maximumFractionDigits: 0,
+    }).format(amount)
   }
 }

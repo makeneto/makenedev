@@ -12,6 +12,7 @@ export const ViewAllLink: React.FC<ViewAllLinkProps> = ({
 }) => (
   <Link
     href={to}
+    prefetch
     className="flex items-center gap-2 text-sm text-zinc-600 transition-all hover:text-black dark:hover:text-white hover:gap-1"
   >
     {textLink}

@@ -1,0 +1,30 @@
+.github-btn {
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.865rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 9rem;
+  transition: all 0.1s ease-in;
+
+  &,
+  & svg,
+  & p {
+    transition: all 0.1s ease-in;
+  }
+
+  & svg {
+    color: var(--text-primary);
+  }
+
+  &:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+
+    & p,
+    & svg {
+      color: inherit;
+    }
+  }
+}

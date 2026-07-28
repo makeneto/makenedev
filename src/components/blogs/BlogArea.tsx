@@ -1,31 +1,20 @@
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
-import BlogAside from "./BlogAside"
-import BlogList from "./BlogList"
-import useFilteredBlogs from "../../hooks/useFilteredBlogs"
+import LastBlog from "./LastBlog"
+import VerticalBlogList from "./VerticalBlogList"
 
 interface BlogAreaProps {
-  title: string
+  isHome?: boolean
 }
 
-export default function BlogArea({ title }: BlogAreaProps) {
-  const { categories, filteredBlogs, activeCategory, setActiveCategory } =
-    useFilteredBlogs()
-
+export default function BlogArea({ isHome }: BlogAreaProps) {
   return (
-    <main className="showcase-section">
-      <ShowcaseHeader title={title} />
+    <section>
+      <ShowcaseHeader title="Writing" linkSection={isHome ? "/blog" : ""} />
 
-      <section className="blog-body">
-        <BlogList
-          blogs={filteredBlogs}
-          showLastBlog={activeCategory === "All"}
-        />
-        <BlogAside
-          categories={categories}
-          activeCategory={activeCategory}
-          onSelectCategory={setActiveCategory}
-        />
-      </section>
-    </main>
+      <div className="grid sm:grid-cols-[10%_auto] md:grid-cols-[50%_auto] lg:grid-cols-[60%_auto] xl:grid-cols-[55%_auto] gap-8 xl:gap-10">
+        <LastBlog vertical />
+        <VerticalBlogList />
+      </div>
+    </section>
   )
 }

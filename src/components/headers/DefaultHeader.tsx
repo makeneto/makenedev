@@ -13,9 +13,9 @@ export default function DefaultHeader({
 }: DefaultHeaderProps) {
   return (
     <header
-      className={`default-header ${!isShowcase ? "mb-28 sm:mb-40" : "mb-14 sm:mb-20"}`}
+      className={`"headerPage--default ${!isShowcase ? "mb-28 sm:mb-40" : "mb-14 sm:mb-20"}`}
     >
-      <h1 className="default-header__title">{title}</h1>
+      <h1 className="headerPage--default__title">{title}</h1>
       {description && <p className="description--normal">{description}</p>}
       {component && <div>{component}</div>}
     </header>

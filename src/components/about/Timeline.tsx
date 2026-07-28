@@ -13,7 +13,7 @@ export default function Timeline() {
         <ShowcaseHeader title="Timeline" />
         <div>
           <p className="description--normal">
-            A journey isn’t linear — it’s choices, doubts and adjustments. This
+            A journey isn’t linear, it’s choices, doubts and adjustments. This
             timeline reflects shifts in direction, where things stopped or
             started making more sense. It’s not about speed or perfection, but
             intentional evolution.

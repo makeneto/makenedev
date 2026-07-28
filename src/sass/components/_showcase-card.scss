@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 1.25rem;
 
+  @media (width <= 1280px) {
+    gap: 0.7rem;
+  }
+
   & svg {
     width: 0.9rem;
     height: 0.9rem;
@@ -21,16 +25,11 @@
   }
 
   &--title {
-    font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
 
     @media (width <= 640px) {
       font-size: 0.9rem;
-    }
-
-    @media (width <= 1280px) {
-      font-size: 0.875rem;
     }
   }
 
@@ -48,11 +47,14 @@
 
     @media (width <= 1280px) {
       margin-top: 0.2rem;
-      font-size: 0.875rem;
     }
 
     @media (width <= 884px) {
       -webkit-line-clamp: 1;
+    }
+
+    @media (width <= 640px) {
+      font-size: 0.9rem;
     }
   }
 }

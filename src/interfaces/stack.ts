@@ -18,9 +18,10 @@ export interface Stack {
   id: string
   name: string
   category: StackCategory[]
-  link: string
   certificate: null | string
   learn: null | string
+  exercises: null | string
+  website: null | string
 }
 
 export interface StackSection {

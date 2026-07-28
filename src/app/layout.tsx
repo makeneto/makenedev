@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 
 import "@/css/style.css"
 import "@/css/index.css"
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "CSS",
     "AI",
   ],
-  authors: [{ name: "Makene Neto", url: "https://makenedev.com" }],
+  authors: [{ name: "Makene Neto", url: "https://makenedev.vercel.app" }],
   openGraph: {
     title: "Makene Neto",
     description:
@@ -44,10 +44,13 @@ export const metadata: Metadata = {
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
     url: "https://i.postimg.cc/J7SXXCzR/makenedev.png",
   },
-  themeColor: "#000000",
   icons: {
     icon: "/favicon.ico",
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 }
 
 const themeScript = `

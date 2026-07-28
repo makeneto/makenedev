@@ -2,9 +2,11 @@
   /* Light Mode */
   --bg-primary: #f8f4ef;
   --bg-secondary: rgba(232, 216, 195, 0.361);
-  --bg-tertiary: #e8e8e5;
+  --bg-tertiary: rgba(78, 48, 5, 0.078);
   --bg-pricing-card: #ffffff;
   --bg-service-hovered: #000000;
+  --bg-tag-hovered: rgba(232, 216, 195, 0.361);
+  --bg-tag-hovered: rgba(232, 216, 195, 0.361);
 
   --openToWork-bg: rgba(179, 175, 148, 0.141);
   --openToWork-hovered: rgba(213, 213, 213, 0.788);
@@ -22,6 +24,7 @@
   --text-primary: #332d25;
   --text-secondary: #695f51;
   --text-tertiary: #988c7d;
+  --text-neutral: rgba(152, 139, 124, 0.6);
   --text-tag: #a2896be6;
   --text-service-hovered: #ffffff;
   --description-service-hovered: #c7c7bb;
@@ -82,6 +85,7 @@
   --text-primary: #ffffff;
   --text-secondary: #9f9fa9;
   --text-tertiary: #848484;
+  --text-neutral: #4a4a4f;
   --text-tag: #a1a1a1;
 
   --description-service-hovered: #828282;

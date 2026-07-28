@@ -1,5 +1,8 @@
 @use "./base/base";
 
+@use "./components/ui/tags";
+@use "./components/ui/githubBtn";
+
 @use "./components/blogs";
 @use "./components/contact";
 @use "./components/descriptions";
@@ -9,7 +12,6 @@
 @use "./components/loadingPage";
 @use "./components/navbar";
 @use "./components/pricing";
-@use "./components/quoteOfTheWeek";
 @use "./components/services";
 @use "./components/setup";
 @use "./components/showcase-section";

@@ -30,9 +30,9 @@ export default function StyledcomponentsIcon() {
           />
           <text
             className="fill-black dark:fill-white"
-            font-family="AppleColorEmoji, Apple Color Emoji"
-            font-size="100"
-            letter-spacing=".5"
+            fontFamily="AppleColorEmoji, Apple Color Emoji"
+            fontSize="100"
+            letterSpacing=".5"
             transform="translate(38 44)"
           >
             <tspan x="70" y="100">

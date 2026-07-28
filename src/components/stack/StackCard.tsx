@@ -11,7 +11,7 @@ export default function StackCard({ children, name }: StackProps) {
 
   if (!stack) return null
 
-  const { category, link, certificate, learn } = stack
+  const { category, certificate, learn, exercises, website } = stack
 
   return (
     <div className="stack-card">
@@ -24,13 +24,18 @@ export default function StackCard({ children, name }: StackProps) {
 
         <div className="flex w-full flex-wrap justify-center gap-1.5">
           {category.map((cat: string) => (
-            <span key={cat} className="tag" translate="no">
+            <span key={cat} className="tag tag--small" translate="no">
               {cat}
             </span>
           ))}
         </div>
 
-        <StackLinks link={link} certificate={certificate} learn={learn} />
+        <StackLinks
+          certificate={certificate}
+          learn={learn}
+          exercises={exercises}
+          website={website}
+        />
       </div>
     </div>
   )

@@ -50,17 +50,14 @@
 
 .showCaseGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 
   list-style: none;
 
-  @media (width <= 1280px) {
-    gap: 2rem;
-  }
-
   @media (width <= 640px) {
     grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
   }
 
   & li {

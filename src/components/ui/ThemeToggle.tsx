@@ -1,3 +1,5 @@
+"use client"
+
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
@@ -5,16 +7,16 @@ import { Button } from "./button"
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
-  const isDark = resolvedTheme === "dark"
 
   return (
     <Button
       variant="ghost"
       size="sm"
-      onClick={() => setTheme(isDark ? "light" : "dark")}
-      aria-label={`Activate ${isDark ? "light" : "dark"} mode`}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      aria-label="Toggle theme"
     >
-      {isDark ? <Sun className="nav-icon" /> : <Moon className="nav-icon" />}
+      <Sun className="nav-icon hidden dark:block" />
+      <Moon className="nav-icon block dark:hidden" />
     </Button>
   )
 }

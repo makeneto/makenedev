@@ -25,7 +25,7 @@ export default function TimelineCard({
       {tags && (
         <div className="timeline-card__tags">
           {tags.map((tag) => (
-            <span key={tag} className="tag">
+            <span key={tag} className="tag tag--small">
               {tag}
             </span>
           ))}

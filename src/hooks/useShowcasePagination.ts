@@ -1,4 +1,3 @@
-import { useMediaQuery } from "react-responsive"
 import { usePagination } from "./usePagination"
 import { useScrollOnPaginate } from "./useScrollOnPaginate"
 
@@ -11,9 +10,7 @@ export function useShowcasePagination<T>({
   items,
   isHomePage,
 }: UseShowcasePaginationProps<T>) {
-  const isMobile = useMediaQuery({ maxWidth: 640 })
-
-  const itemsPerPage = isHomePage ? (isMobile ? 2 : 3) : isMobile ? 4 : 6
+  const itemsPerPage = isHomePage ? 2 : 6
 
   const { page, totalPages, visibleItems, nextPage, prevPage } = usePagination({
     items,

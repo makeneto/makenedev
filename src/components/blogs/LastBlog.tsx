@@ -1,7 +1,12 @@
 import Link from "next/link"
 import { blogs } from "../../data/blogs"
 
-export default function LastBlog() {
+interface LastBlogProps {
+  isHome?: boolean
+  vertical?: boolean
+}
+
+export default function LastBlog({ isHome = false, vertical }: LastBlogProps) {
   const lastBlog = blogs[0]
   const { link, category, date, title, description, author, cover } = lastBlog
 
@@ -10,7 +15,7 @@ export default function LastBlog() {
       <Link
         href={link}
         aria-label="Read more about this blog post"
-        className="blog-lastBlog-card"
+        className={`blog-lastBlog__card ${vertical ? "blog-lastBlog__card--vertical" : "blog-lastBlog__card--horizontal"} ${!isHome ? "sticky-blog" : ""}`}
       >
         <section>
           <div>
