@@ -1,4 +1,4 @@
-import { footerLinks } from "../../data/links"
+import { footerLinks } from "@/data/links"
 import NavRoutes from "../navbar/NavRoutes"
 
 export default function FooterLinks() {
