@@ -1,4 +1,4 @@
-import { useSetup } from "../../hooks/useSetup"
+import { useSetup } from "@/hooks/useSetup"
 import ToolsHeader from "../stack/ToolsHeader"
 import SetupGrid from "./SetupGrid"
 
