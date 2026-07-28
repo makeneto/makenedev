@@ -1,4 +1,4 @@
-import { useFindStack } from "../../hooks/useFindStack"
+import { useFindStack } from "@/hooks/useFindStack"
 import StackLinks from "./StackLinks"
 
 interface StackProps {
