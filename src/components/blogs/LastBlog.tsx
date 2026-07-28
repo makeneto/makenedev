@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { blogs } from "../../data/blogs"
+import { blogs } from "@/data/blogs"
 
 interface LastBlogProps {
   isHome?: boolean
