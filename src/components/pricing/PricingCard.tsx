@@ -1,4 +1,4 @@
-import type { PricingPlan } from "../../interfaces/pricing"
+import type { PricingPlan } from "@/interfaces/pricing"
 import PricingHeader from "./PricingHeader"
 import PricingFeats from "./PricingFeats"
 import PricingButton from "./PricingButton"
