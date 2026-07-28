@@ -1,6 +1,6 @@
 import { FileText } from "lucide-react"
 import Link from "next/link"
-import { blogs } from "../../data/blogs"
+import { blogs } from "@/data/blogs"
 
 export default function VerticalBlogList({
   isHome = false,
