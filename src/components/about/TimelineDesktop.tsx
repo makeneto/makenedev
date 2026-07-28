@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import type { TimelineTrack, TimelineYear } from "../../hooks/useTimeline"
+import type { TimelineTrack, TimelineYear } from "@/hooks/useTimeline"
 import TimelineCard from "./TimelineCard"
 
 type TimelineDesktopProps = {
