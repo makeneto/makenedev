@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive"
 
-import { navLinks } from "../../data/links"
+import { navLinks } from "@/data/links"
 import Logo from "../Logo"
 import ThemeToggle from "../ui/ThemeToggle"
 import NavRoutes from "./NavRoutes"
