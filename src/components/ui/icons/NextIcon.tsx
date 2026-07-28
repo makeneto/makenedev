@@ -1,4 +1,4 @@
-import StackCard from "@/stack/StackCard"
+import StackCard from "@/components/stack/StackCard"
 
 export default function NextIcon() {
   return (
