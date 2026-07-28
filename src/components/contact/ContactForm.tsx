@@ -1,4 +1,4 @@
-import { useContactForm } from "../../hooks/useContactForm"
+import { useContactForm } from "@/hooks/useContactForm"
 import { ContactFormActions } from "./ContactFormActions"
 import { ContactFormFields } from "./ContactFormFields"
 import { ContactFormMessage } from "./ContactFormMessage"
