@@ -1,5 +1,5 @@
-import { stackIconMap } from "../../lib/stackIconMap"
-import type { Stack } from "../../interfaces/stack"
+import { stackIconMap } from "@/lib/stackIconMap"
+import type { Stack } from "@/interfaces/stack"
 
 interface StackGridProps {
   stacks: Stack[]
