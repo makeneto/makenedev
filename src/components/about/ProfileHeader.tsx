@@ -1,5 +1,5 @@
 import { BadgeCheck } from "lucide-react"
-import { profile } from "../../data/profile"
+import { profile } from "@/data/profile"
 
 export default function ProfileHeader() {
   const { name, title } = profile
