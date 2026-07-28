@@ -1,6 +1,6 @@
-import { useUserLocale } from "../../hooks/useUserLocale"
-import { getIcon } from "../../lib/getIcon"
-import { useFormatCurrency } from "../../utils/formatCurrency"
+import { useUserLocale } from "@/hooks/useUserLocale"
+import { getIcon } from "@/lib/getIcon"
+import { useFormatCurrency } from "@/utils/formatCurrency"
 
 interface PricingHeaderProps {
   icon: string
