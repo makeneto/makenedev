@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import { contacts } from "../../data/links"
+import { contacts } from "@/data/links"
 
 export default function ProfileLinks() {
   return (
