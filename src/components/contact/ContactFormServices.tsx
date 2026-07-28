@@ -1,7 +1,7 @@
 import { Flame } from "lucide-react"
 
 import { ServicesCheckboxes } from "./ServicesCheckboxes"
-import { SERVICES } from "../../constants/services"
+import { SERVICES } from "@/constants/services"
 
 interface Props {
   services: string[]
