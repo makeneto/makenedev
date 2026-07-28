@@ -1,6 +1,6 @@
 import { FileDown } from "lucide-react"
 
-import useDownloadResume from "../../hooks/useDownloadResume"
+import useDownloadResume from "@/hooks/useDownloadResume"
 
 export default function DownloadResume() {
   const handleClick = useDownloadResume()
