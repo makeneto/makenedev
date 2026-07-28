@@ -1,4 +1,4 @@
-import { profile } from "../../data/profile"
+import { profile } from "@/data/profile"
 
 export default function Experiences() {
   const { experiences } = profile
