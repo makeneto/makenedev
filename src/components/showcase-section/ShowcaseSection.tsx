@@ -1,8 +1,8 @@
-import type { ShowcaseSectionProps } from "../../interfaces/showcase"
+import type { ShowcaseSectionProps } from "@/interfaces/showcase"
 import ShowcaseHeader from "./ShowcaseHeader"
 import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
-import { useShowcasePagination } from "../../hooks/useShowcasePagination"
+import { useShowcasePagination } from "@/hooks/useShowcasePagination"
 
 const ShowcaseSection = ({
   title,
