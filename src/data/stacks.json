@@ -8,77 +8,91 @@
           "id": "javascript",
           "name": "JavaScript",
           "category": ["Language"],
-          "link": "https://developer.mozilla.org/docs/Web/JavaScript",
           "certificate": "https://ude.my/UC-942380f7-699f-4f59-a2f2-648e1b5b4c98",
-          "learn": "https://github.com/makeneto/clean-code-javascript"
+          "learn": "https://github.com/makeneto/clean-code-javascript",
+          "exercises": null,
+          "website": "https://developer.mozilla.org/docs/Web/JavaScript"
         },
         {
           "id": "react",
           "name": "React",
           "category": ["Library"],
-          "link": "https://react.dev",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-reactjs"
+          "learn": "https://github.com/makeneto/learning-reactjs",
+          "exercises": null,
+          "website": "https://react.dev"
         },
         {
           "id": "typescript",
           "name": "TypeScript",
           "category": ["Language"],
-          "link": "https://www.typescriptlang.org",
           "certificate": "https://www.udemy.com/certificate/UC-38e8a080-e0de-4239-ba46-4978f4efcc43/",
-          "learn": "https://github.com/makeneto/learning-typescript"
+          "learn": "https://github.com/makeneto/learning-typescript",
+          "exercises": null,
+          "website": "https://www.typescriptlang.org"
         },
         {
           "id": "next",
           "name": "Next.js",
           "category": ["Framework"],
-          "link": "https://nextjs.org",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-nextjs"
+          "learn": "https://github.com/makeneto/learning-nextjs",
+          "exercises": null,
+          "website": "https://nextjs.org"
         },
         {
           "id": "redux",
           "name": "Redux",
           "category": ["Library"],
-          "link": "https://redux.js.org",
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-redux"
+          "learn": "https://github.com/makeneto/learning-redux",
+          "exercises": null,
+          "website": "https://redux.js.org"
         },
         {
           "id": "tailwindcss",
           "name": "TailwindCSS",
           "category": ["Framework"],
-          "link": "https://tailwindcss.com",
-          "certificate": "?"
+          "certificate": "?",
+          "learn": null,
+          "exercises": null,
+          "website": "https://tailwindcss.com"
         },
         {
           "id": "sass",
           "name": "Sass",
           "category": ["Language"],
-          "link": "https://sass-lang.com",
           "certificate": "https://www.udemy.com/certificate/UC-dc45983d-db6c-4949-a6ff-e3e230fafe4a/",
-          "learn": "https://github.com/makeneto/learning-sass"
+          "learn": "https://github.com/makeneto/learning-sass",
+          "exercises": null,
+          "website": "https://sass-lang.com"
         },
         {
           "id": "styledcomponents",
           "name": "Styled Components",
           "category": ["Library"],
-          "link": "https://styled-components.com",
-          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582"
+          "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
+          "learn": null,
+          "exercises": null,
+          "website": "https://styled-components.com"
         },
         {
           "id": "shadcn",
           "name": "Shadcn/ui",
           "category": ["Library"],
-          "link": "https://ui.shadcn.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://ui.shadcn.com"
         },
         {
           "id": "framer",
           "name": "Framer",
           "category": ["Library"],
-          "link": "https://www.framer.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.framer.com"
         }
       ]
     },
@@ -90,22 +104,28 @@
           "id": "node",
           "name": "Node.js",
           "category": ["Library"],
-          "link": "https://nodejs.org",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187",
+          "learn": null,
+          "exercises": null,
+          "website": "https://nodejs.org"
         },
         {
           "id": "express",
           "name": "Express.js",
           "category": ["Framework"],
-          "link": "https://expressjs.com",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187",
+          "learn": null,
+          "exercises": null,
+          "website": "https://expressjs.com"
         },
         {
           "id": "socketio",
           "name": "Socket.IO",
           "category": ["Software"],
-          "link": "https://socket.io",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187",
+          "learn": null,
+          "exercises": null,
+          "website": "https://socket.io"
         }
       ]
     },
@@ -117,16 +137,19 @@
           "id": "postgresql",
           "name": "PostgreSQL",
           "category": ["Database"],
-          "link": "https://www.postgresql.org",
           "certificate": "?",
-          "learn": "https://github.com/makeneto/learning-postgresql"
+          "learn": "https://github.com/makeneto/learning-postgresql",
+          "exercises": "https://github.com/makeneto/exercices-postgresql",
+          "website": "https://www.postgresql.org"
         },
         {
           "id": "mongodb",
           "name": "MongoDB",
           "category": ["Database"],
-          "link": "https://www.mongodb.com",
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187"
+          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187",
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.mongodb.com"
         }
       ]
     },
@@ -138,22 +161,28 @@
           "id": "claude",
           "name": "Claude AI",
           "category": ["AI", "Engineering"],
-          "link": "https://claude.ai",
-          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc"
+          "certificate": "https://verify.skilljar.com/c/wretfdizt4xc",
+          "learn": null,
+          "exercises": null,
+          "website": "https://claude.ai"
         },
         {
           "id": "openai",
           "name": "OpenAI",
           "category": ["AI", "Personal"],
-          "link": "https://openai.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://openai.com"
         },
         {
           "id": "githubCopilot",
           "name": "Copilot",
           "category": ["AI", "Assistant"],
-          "link": "https://github.com/features/copilot",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://github.com/features/copilot"
         }
       ]
     },
@@ -165,50 +194,64 @@
           "id": "vscode",
           "name": "VS Code",
           "category": ["Software"],
-          "link": "https://code.visualstudio.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://code.visualstudio.com"
         },
         {
           "id": "vite",
           "name": "Vite",
           "category": ["Devtool"],
-          "link": "https://vitejs.dev",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://vitejs.dev"
         },
         {
           "id": "git",
           "name": "Git",
           "category": ["Software"],
-          "link": "https://git-scm.com",
-          "certificate": "https://ude.my/UC-HVUOD29E"
+          "certificate": "https://ude.my/UC-HVUOD29E",
+          "learn": null,
+          "exercises": null,
+          "website": "https://git-scm.com"
         },
         {
           "id": "github",
           "name": "Github",
           "category": ["Software"],
-          "link": "https://github.com/makeneto",
-          "certificate": "https://ude.my/UC-HVUOD29E"
+          "certificate": "https://ude.my/UC-HVUOD29E",
+          "learn": null,
+          "exercises": null,
+          "website": "https://github.com/makeneto"
         },
         {
           "id": "vercel",
           "name": "Vercel",
           "category": ["Software"],
-          "link": "https://vercel.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://vercel.com"
         },
         {
           "id": "pnpm",
           "name": "Pnpm",
           "category": ["Software"],
-          "link": "https://pnpm.io",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://pnpm.io"
         },
         {
           "id": "npm",
           "name": "Npm",
           "category": ["Software"],
-          "link": "https://www.npmjs.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.npmjs.com"
         }
       ]
     },
@@ -220,22 +263,28 @@
           "id": "figma",
           "name": "Figma",
           "category": ["Design"],
-          "link": "https://figma.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://figma.com"
         },
         {
           "id": "dribbble",
           "name": "Dribbble",
           "category": ["Design"],
-          "link": "https://dribbble.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://dribbble.com"
         },
         {
           "id": "gimp",
           "name": "Gimp",
           "category": ["Design"],
-          "link": "https://gimp.org",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://gimp.org"
         }
       ]
     },
@@ -247,22 +296,28 @@
           "id": "moword",
           "name": "Word",
           "category": ["Software"],
-          "link": "https://www.microsoft.com/en-us/microsoft-365/word",
-          "certificate": "?"
+          "certificate": "?",
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.microsoft.com/en-us/microsoft-365/word"
         },
         {
           "id": "moexcel",
           "name": "Excel",
           "category": ["Software"],
-          "link": "https://www.microsoft.com/en-us/microsoft-365/excel",
-          "certificate": "?"
+          "certificate": "?",
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.microsoft.com/en-us/microsoft-365/excel"
         },
         {
           "id": "mopowerpoint",
           "name": "PowerPoint",
           "category": ["Software"],
-          "link": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
-          "certificate": "?"
+          "certificate": "?",
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.microsoft.com/en-us/microsoft-365/powerpoint"
         }
       ]
     },
@@ -274,22 +329,28 @@
           "id": "udemy",
           "name": "Udemy",
           "category": ["Education"],
-          "link": "https://www.udemy.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.udemy.com"
         },
         {
           "id": "anthropic",
           "name": "Anthropic",
           "category": ["Education"],
-          "link": "https://www.anthropic.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.anthropic.com"
         },
         {
           "id": "microsoft",
           "name": "Microsoft",
           "category": ["Education"],
-          "link": "https://learn.microsoft.com",
-          "certificate": null
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://learn.microsoft.com"
         }
       ]
     }

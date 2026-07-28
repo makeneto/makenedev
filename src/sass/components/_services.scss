@@ -22,20 +22,12 @@
       }
 
       & h2 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 0.4rem;
 
         @media (width <= 1280px) {
-          font-size: 1.3rem;
-        }
-
-        @media (width <= 884px) {
-          font-size: 1.2rem;
-        }
-
-        @media (width <= 640px) {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
       }
 

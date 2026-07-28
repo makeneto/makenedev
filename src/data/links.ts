@@ -50,10 +50,6 @@ export const footerLinks = [
 
 export const socialLinks = [
   {
-    label: "Github",
-    link: "https://github.com/makeneto",
-  },
-  {
     label: "LinkedIn",
     link: "https://linkedin.com/in/makene-neto",
   },

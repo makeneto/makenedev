@@ -25,7 +25,7 @@ export default function HomeHeader() {
 
       <article className="homeHeader__intro">
         <h2>
-          I am
+          <span>I am</span>
           <br />
           <span translate="no">Makene</span>
         </h2>

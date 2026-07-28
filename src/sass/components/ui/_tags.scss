@@ -1,0 +1,12 @@
+.tag {
+  font-family: var(--font-mono);
+  color: var(--text-tag);
+
+  &--small {
+    padding: 0.125rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid var(--border-tag);
+    border-radius: calc(var(--radius) * 2.6);
+  }
+}

@@ -2,9 +2,9 @@ import { useMediaQuery } from "react-responsive"
 
 import { navLinks } from "../../data/links"
 import Logo from "../Logo"
-import SocialLinks from "../SocialLinks"
 import ThemeToggle from "../ui/ThemeToggle"
 import NavRoutes from "./NavRoutes"
+import SocialList from "../SocialLinks"
 
 export default function Navbar() {
   const isMobile = useMediaQuery({ maxWidth: 768 })
@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
 
       <div className="flex items-center sm:gap-4">
-        <SocialLinks />
+        <SocialList />
 
         {!isMobile && (
           <>

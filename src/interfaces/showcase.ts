@@ -1,11 +1,12 @@
 export interface ShowcaseItem {
-  id: string | number
+  id: number
+  created_at: string
+  slug: string
   title: string
   description: string
-  imageUrl: string
   href: string
-  date?: string
-  images?: string[]
+  imageUrl: string
+  stacks: string[]
 }
 
 export interface ShowcaseSectionProps {

@@ -2,7 +2,7 @@
   margin-top: -3rem;
   margin-bottom: 25rem;
   display: grid;
-  gap: 10rem;
+  gap: 11rem;
 
   @media (width <= 1280px) {
     margin-top: -4rem;
@@ -65,7 +65,7 @@
 
       @media (width <= 1280px) {
         top: 63%;
-        width: 33%;
+        width: 31%;
       }
 
       @media (width <= 884px) {
@@ -172,7 +172,11 @@
 
     & h2 {
       font-size: 6rem;
-      line-height: 7rem;
+      line-height: 6.4rem;
+
+      & span:first-child {
+        color: var(--text-neutral);
+      }
 
       @media (width <= 1280px) {
         font-size: 5rem;
@@ -212,31 +216,83 @@
   }
 }
 
-.default-header {
-  display: grid;
-  gap: 1.2rem;
+.headerPage {
+  &--default {
+    display: grid;
+    gap: 1.2rem;
 
-  &__title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    &__title {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
 
-    @media (width <= 640px) {
-      font-size: 2.4rem;
+      @media (width <= 640px) {
+        font-size: 2.4rem;
+      }
+
+      @media (width <= 400px) {
+        font-size: 2.2rem;
+      }
     }
 
-    @media (width <= 400px) {
-      font-size: 2.2rem;
+    &--about {
+      display: grid;
+      gap: 1rem;
+
+      & span {
+        color: var(--text-primary);
+        font-weight: 600;
+      }
     }
   }
 
-  &--about {
+  &--work {
     display: grid;
-    gap: 1rem;
+    margin-bottom: 3rem;
 
     & span {
-      color: var(--text-primary);
-      font-weight: 600;
+      color: var(--text-secondary);
+
+      & a {
+        color: var(--text-primary);
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: inherit;
+        }
+      }
+
+      & p {
+        cursor: default;
+      }
+    }
+
+    &__title {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-block: 1.5rem 0.5rem;
+
+      @media (width <= 640px) {
+        font-size: 2.9rem;
+      }
+
+      @media (width <= 400px) {
+        font-size: 2.7rem;
+      }
+    }
+
+    .external-link {
+      color: var(--text-secondary);
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: var(--text-primary);
+      }
+    }
+
+    &__description {
+      margin-top: 4rem;
     }
   }
 }
