@@ -1,4 +1,4 @@
-import type { SetupItem } from "../../interfaces/setup"
+import type { SetupItem } from "@/interfaces/setup"
 import ToolCard from "./ToolCard"
 
 interface SetupGridProps {
