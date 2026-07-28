@@ -1,4 +1,4 @@
-import type { ShowcaseItem } from "../../interfaces/showcase"
+import type { ShowcaseItem } from "@/interfaces/showcase"
 import ShowcaseCard from "./ShowcaseCard"
 
 interface ShowcaseGridProps {
