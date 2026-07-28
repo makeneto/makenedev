@@ -1,5 +1,5 @@
 import React from "react"
-import type { ShowcaseItem } from "../../interfaces/showcase"
+import type { ShowcaseItem } from "@/interfaces/showcase"
 import { ExternalLink } from "lucide-react"
 
 interface Props {
