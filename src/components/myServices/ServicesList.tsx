@@ -1,4 +1,4 @@
-import { services } from "../../data/services"
+import { services } from "@/data/services"
 import ServiceRow from "./ServiceRow"
 
 export default function ServicesList() {
