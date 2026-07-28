@@ -1,4 +1,4 @@
-import { useStacks } from "../../hooks/useStacks"
+import { useStacks } from "@/hooks/useStacks"
 import StackGrid from "./StackGrid"
 import ToolsHeader from "./ToolsHeader"
 
