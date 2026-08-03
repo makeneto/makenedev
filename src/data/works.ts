@@ -2,6 +2,14 @@ import type { ShowcaseItem } from "../interfaces/showcase"
 
 export const works: ShowcaseItem[] = [
   {
+    id: 109,
+    title: "Masterdriver",
+    description: "Application for studying for the driving test.",
+    imageUrl: "/assets/work-cover9.webp",
+    href: "https://masterdriver.vercel.app",
+    date: "2026-08-03",
+  },
+  {
     id: 108,
     title: "Eminus",
     description: "Building better financial habits for families with smarter money management.",
