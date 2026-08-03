@@ -4,7 +4,7 @@ export const works: ShowcaseItem[] = [
   {
     id: 109,
     title: "Masterdriver",
-    description: "Application for studying for the driving test.",
+    description: "Estuda para o exame de condução como se fosse um jogo. Ganha XP, sobe de nível, aprende a conduzir no teu ritmo.",
     imageUrl: "/assets/work-cover9.webp",
     href: "https://masterdriver.vercel.app",
     date: "2026-08-03",
