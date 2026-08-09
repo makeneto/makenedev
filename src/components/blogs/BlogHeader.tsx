@@ -2,7 +2,7 @@
 
 import { formatDate } from "@/utils/formatDate"
 import { RiArrowRightSLine } from "@remixicon/react"
-import { CalendarDays, ExternalLink } from "lucide-react"
+import { CalendarDays } from "lucide-react"
 import Link from "next/link"
 
 interface WorkHeaderProps {
@@ -31,7 +31,9 @@ export default function BlogHeader({
         </div>
       </div>
 
-      <p className="description--normal headerPage--work__description">{description}</p>
+      <p className="description--normal headerPage--work__description">
+        {description}
+      </p>
     </header>
   )
 }
