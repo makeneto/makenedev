@@ -19,7 +19,12 @@ export default function Work() {
         isShowcase
       />
 
-      <ShowcaseSection title="Projects" items={works} isShowcase />
+      <ShowcaseSection
+        title="Projects"
+        count={works.length}
+        items={works}
+        isShowcase
+      />
       <WorkResume />
     </React.Fragment>
   )

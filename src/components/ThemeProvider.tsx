@@ -3,21 +3,28 @@
 import type { ReactNode } from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
+// Silencia o falso-positivo do React 19 sobre a tag <script>
+// injetada internamente pelo next-themes (não afeta o funcionamento).
+if (typeof window !== "undefined") {
+  const originalError = console.error
+  console.error = (...args: unknown[]) => {
+    if (
+      typeof args[0] === "string" &&
+      args[0].includes("Encountered a script tag")
+    ) {
+      return
+    }
+    originalError(...args)
+  }
+}
+
 interface ThemeProviderProps {
   children: ReactNode
 }
 
 export default function ThemeProvider({ children }: ThemeProviderProps) {
   return (
-    <NextThemesProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem={true}
-      enableColorScheme={true}
-      disableTransitionOnChange={true}
-      storageKey="theme"
-      forcedTheme={undefined}
-    >
+    <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
       {children}
     </NextThemesProvider>
   )

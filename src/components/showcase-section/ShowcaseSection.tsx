@@ -1,3 +1,5 @@
+"use client"
+
 import type { ShowcaseSectionProps } from "@/interfaces/showcase"
 import ShowcaseHeader from "./ShowcaseHeader"
 import ShowcaseGrid from "./ShowcaseGrid"
@@ -10,6 +12,7 @@ const ShowcaseSection = ({
   items,
   isHomePage = false,
   isShowcase,
+  count,
 }: ShowcaseSectionProps) => {
   const {
     sectionRef,
@@ -28,6 +31,7 @@ const ShowcaseSection = ({
     <section ref={sectionRef}>
       <ShowcaseHeader
         title={title}
+        count={count ? count : 0}
         linkSection={viewAll}
         isShowcase={isShowcase}
       />

@@ -7,6 +7,17 @@
     margin-bottom: 2rem;
 
     border-bottom: 1px solid var(--border-primary);
+
+    &--counter {
+      background-color: var(--bg-tertiary);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 9rem;
+
+      @media (width <= 640px) {
+        display: none;
+      }
+    }
   }
 
   &-heading {

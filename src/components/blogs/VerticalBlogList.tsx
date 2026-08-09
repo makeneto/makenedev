@@ -1,20 +1,22 @@
 import { FileText } from "lucide-react"
 import Link from "next/link"
-import { blogs } from "@/data/blogs"
+import { getHomeData } from "@/services/wisp"
+import { formatDate } from "@/utils/formatDate"
 
-export default function VerticalBlogList({
+export default async function VerticalBlogList({
   isHome = false,
 }: {
   isHome?: boolean
 }) {
-  const blogsList = isHome ? blogs.slice(1, 7) : blogs.slice(1)
+  const { posts } = await getHomeData()
+  const recent = isHome ? posts.slice(1, 7) : posts.slice(1)
 
   return (
     <ul className="verticalBlogs">
-      {blogsList.map((blog, index) => (
+      {recent.map((blog, index) => (
         <Link
           key={`${index}-${blog.title}`}
-          href={blog.link}
+          href={`/blog/${blog.slug}`}
           className="verticalBlogs__item"
           aria-label={`Read more about ${blog.title}`}
         >
@@ -22,7 +24,7 @@ export default function VerticalBlogList({
 
           <article>
             <h2 className="line-clamp-2">{blog.title}</h2>
-            <p>{blog.date}</p>
+            <p>{formatDate(blog.publishedAt || blog.createdAt)}</p>
           </article>
         </Link>
       ))}

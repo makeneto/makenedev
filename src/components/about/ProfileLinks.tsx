@@ -28,7 +28,7 @@ export default function ProfileLinks() {
           <div key={label} className="flex items-center justify-between">
             <p className="sm:text-sm font-medium">{label}</p>
 
-            <a
+            <Link
               href={href}
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function ProfileLinks() {
               aria-label={`Visit my ${label}`}
             >
               {display}
-            </a>
+            </Link>
           </div>
         )
       })}

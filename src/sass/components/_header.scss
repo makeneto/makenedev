@@ -1,6 +1,6 @@
 .homeHeader {
   margin-top: -3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 18rem;
   display: grid;
   gap: 11rem;
 
@@ -43,7 +43,7 @@
     }
 
     & h1 {
-      font-family: "Playfair Display", sans-serif;
+      font-family: var(--font-playfair-display), serif;
       font-size: 6.4rem;
       font-style: italic;
       font-weight: 500;

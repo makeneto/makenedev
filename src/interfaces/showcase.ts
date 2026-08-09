@@ -14,6 +14,14 @@ export interface ShowcaseSectionProps {
   viewAll?: string
   items: ShowcaseItem[]
   isHomePage?: boolean
-  sectionLabel?: string
   isShowcase?: boolean
+  count?: number
+}
+
+export interface ShowcaseHeaderProps {
+  title: string
+  linkSection?: string
+  textLink?: string
+  isShowcase?: boolean
+  count?: number
 }
