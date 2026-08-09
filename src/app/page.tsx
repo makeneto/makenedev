@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 
 import { works } from "@/data/works"
@@ -8,8 +6,10 @@ import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import MyServices from "@/components/myServices/MyServices"
 import PricingSection from "@/components/pricing/PricingSection"
 import BlogArea from "@/components/blogs/BlogArea"
+import LastBlog from "@/components/blogs/LastBlog"
+import VerticalBlogList from "@/components/blogs/VerticalBlogList"
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <React.Fragment>
       <HomeHeader />
@@ -21,7 +21,10 @@ export default function HomePage() {
         isHomePage
       />
       <PricingSection />
-      <BlogArea isHome />
+      <BlogArea isHome>
+        <LastBlog vertical />
+        <VerticalBlogList />
+      </BlogArea>
     </React.Fragment>
   )
 }

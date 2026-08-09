@@ -1,3 +1,6 @@
+"use client"
+
+import Image from "next/image"
 import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 
@@ -8,7 +11,12 @@ export default function HomeHeader() {
     <header className="homeHeader">
       <section className="homeHeader__heroContent">
         <h1 translate="no">Hey, there!</h1>
-        <img src="/assets/hero-avatar.webp" alt="Makene Neto" />
+        <Image
+          src="/assets/hero-avatar.webp"
+          alt="Makene Neto"
+          width={1000}
+          height={1200}
+        />
       </section>
 
       <div className="homeHeader__openToWork">

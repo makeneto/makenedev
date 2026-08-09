@@ -1,9 +1,14 @@
 export interface Blog {
-  cover: string
+  image: string
   title: string
   description: string
   date: string
-  link: string
-  author: string
-  category: string
+  slug: string
+  publishedAt: string
+  createdAt: string
+}
+
+export interface Heading {
+  id: string
+  text: string
 }

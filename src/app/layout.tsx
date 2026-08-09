@@ -1,10 +1,50 @@
-import type { Metadata, Viewport } from "next"
+import type { Metadata } from "next"
+import {
+  Anton,
+  Antonio,
+  Inter,
+  Playfair_Display,
+  Roboto,
+} from "next/font/google"
 
 import "@/css/style.css"
 import "@/css/index.css"
 
 import Providers from "@/components/Providers"
 import SiteShell from "@/components/SiteShell"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
+
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anton",
+  display: "swap",
+})
+
+const antonio = Antonio({
+  subsets: ["latin"],
+  variable: "--font-antonio",
+  display: "swap",
+})
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800", "900"],
+  variable: "--font-playfair-display",
+  display: "swap",
+})
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: {
@@ -49,37 +89,18 @@ export const metadata: Metadata = {
   },
 }
 
-export const viewport: Viewport = {
-  themeColor: "#000000",
-}
-
-const themeScript = `
-(function () {
-  try {
-    const theme = localStorage.getItem("theme")
-    const isDark =
-      theme === "dark" ||
-      (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    if (isDark) {
-      document.documentElement.classList.add("dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-    }
-  } catch (e) {}
-})()
-`
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
-      <body>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${anton.variable} ${antonio.variable} ${playfairDisplay.variable} ${roboto.variable}`}
+    >
+      <body className={inter.className}>
         <Providers>
           <SiteShell>{children}</SiteShell>
         </Providers>
