@@ -3,7 +3,6 @@
 import React, { useState, type FormEvent } from "react"
 import { wisp } from "@/services/wisp"
 import { CommentsConfig } from "@/interfaces/comments"
-import { Textarea } from "@/components/ui/textarea"
 import { ContactTextarea } from "@/components/contact/ContactTextarea"
 import { AtSign, Loader2, Mail, Send, User } from "lucide-react"
 import { ContactInput } from "@/components/contact/ContactInput"
