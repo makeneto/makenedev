@@ -33,7 +33,7 @@ export default function HomeHeader() {
 
       <article className="homeHeader__intro">
         <h2>
-          <span>I am</span>
+          I am
           <br />
           <span translate="no">Makene</span>
         </h2>

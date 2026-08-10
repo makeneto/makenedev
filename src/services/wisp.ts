@@ -45,7 +45,7 @@ export function readingTime(content?: string | null) {
       .trim()
       .split(/\s+/)
       .filter(Boolean).length ?? 0
-  return `${Math.max(1, Math.ceil(words / 200))} min read`
+  return `${Math.max(1, Math.ceil(words / 200))} min`
 }
 
 export function excerpt(post: BlogPost | BlogArticle) {

@@ -43,13 +43,12 @@
     }
 
     & h1 {
-      font-family: var(--font-playfair-display), serif;
-      font-size: 6.4rem;
+      font-family: "Instrument serif", serif;
       font-style: italic;
-      font-weight: 500;
+      font-size: 6.4rem;
 
       @media (width <= 1280px) {
-        font-size: 5rem;
+        font-size: 6rem;
       }
 
       @media (width <= 640px) {
@@ -74,8 +73,8 @@
       }
 
       @media (width <= 640px) {
-        top: 83%;
         width: 70%;
+        top: 75%;
       }
 
       @media (width <= 400px) {
@@ -96,12 +95,15 @@
 
     & div {
       background-color: var(--openToWork-bg);
-      border-radius: 2rem;
-      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+
       display: flex;
       align-items: center;
       gap: 0.6rem;
+
       transition: all 0.2s ease-in;
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
 
       @media (width <= 640px) {
         & a {
@@ -173,10 +175,6 @@
     & h2 {
       font-size: 6rem;
       line-height: 6.4rem;
-
-      & span:first-child {
-        color: var(--text-neutral);
-      }
 
       @media (width <= 1280px) {
         font-size: 5rem;

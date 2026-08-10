@@ -11,7 +11,7 @@ interface Props {
 const ShowcaseCard: React.FC<Props> = ({ item }) => {
   return (
     <Link
-      href={`/work/${item.slug}`}
+      href={item.link}
       className="showcase-card"
       rel="noopener noreferrer"
       aria-label={`Visit ${item.title} showcase`}

@@ -5,13 +5,13 @@ import AboutResume from "@/components/about/AboutResume"
 import Timeline from "@/components/about/Timeline"
 import WorkExperience from "@/components/about/WorkExperience"
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import { useTitle } from "@/hooks/useTitle"
+import PageTitle from "@/components/PageTitle"
 
 export default function AboutPage() {
-  useTitle("About Me")
-
   return (
     <React.Fragment>
+      <PageTitle title="About Me" />
+
       <DefaultHeader
         title="About me"
         description="Front-end Developer specialized in building modern, responsive, and
@@ -22,6 +22,7 @@ export default function AboutPage() {
           Express and PostgreSQL, enabling effective collaboration across the
           full product development lifecycle."
       />
+
       <WorkExperience />
       <Timeline />
       <AboutResume />

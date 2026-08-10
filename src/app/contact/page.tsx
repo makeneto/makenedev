@@ -1,10 +1,16 @@
 "use client"
 
+import React from "react"
+
 import ContactSection from "@/components/contact/ContactSection"
-import { useTitle } from "@/hooks/useTitle"
+import PageTitle from "@/components/PageTitle"
 
 export default function ContactPage() {
-  useTitle("Contact Me")
+  return (
+    <React.Fragment>
+      <PageTitle title="Contact Me" />
 
-  return <ContactSection className="mt-0" />
+      <ContactSection className="mt-0" />
+    </React.Fragment>
+  )
 }
