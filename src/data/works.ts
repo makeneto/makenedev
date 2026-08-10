@@ -9,7 +9,7 @@ export const works: ShowcaseItem[] = [
     description:
       "Building better financial habits for families with smarter money management.",
     imageUrl: "/assets/work-cover8.webp",
-    href: "https://github.com/makeneto/eminus",
+    link: "https://github.com/makeneto/eminus",
     stacks: [
       "React.js",
       "TypeScript",
@@ -28,7 +28,7 @@ export const works: ShowcaseItem[] = [
     description:
       "Exclusive collection of premium headphones with immersive sound.",
     imageUrl: "/assets/work-cover2.webp",
-    href: "https://beats-by-dr.vercel.app",
+    link: "https://beats-by-dr.vercel.app",
     stacks: ["Next.js", "TypeScript", "Tailwindcss", "Sass", "Lucide Icons"],
   },
   {
@@ -38,7 +38,7 @@ export const works: ShowcaseItem[] = [
     title: "Wigland",
     description: "Find incredible wigs to enhance your beauty and style.",
     imageUrl: "/assets/work-cover7.webp",
-    href: "https://perucalandia.vercel.app",
+    link: "https://perucalandia.vercel.app",
     stacks: ["HTML5", "CSS3", "JavaScript"],
   },
 ]

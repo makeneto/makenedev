@@ -1,9 +1,11 @@
 @use "./base/base";
+@use "./base/theme-vars";
+
+@use "typography/fonts";
 
 @use "./components/layout/blog";
 
 @use "./components/ui/buttons";
-@use "./components/ui/comments";
 @use "./components/ui/tags";
 
 @use "./components/blogs";
@@ -11,8 +13,8 @@
 @use "./components/contact";
 @use "./components/descriptions";
 @use "./components/footer";
+@use "./components/github-graph";
 @use "./components/header";
-@use "./components/loadingPage";
 @use "./components/navbar";
 @use "./components/pricing";
 @use "./components/services";

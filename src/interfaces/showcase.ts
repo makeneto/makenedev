@@ -4,7 +4,7 @@ export interface ShowcaseItem {
   slug: string
   title: string
   description: string
-  href: string
+  link: string
   imageUrl: string
   stacks: string[]
 }

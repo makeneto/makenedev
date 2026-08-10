@@ -1,3 +1,4 @@
+import { Activity } from "react"
 import { useMediaQuery } from "react-responsive"
 
 import { navLinks } from "@/data/links"
@@ -20,12 +21,10 @@ export default function Navbar() {
       <div className="flex items-center sm:gap-4">
         <SocialList />
 
-        {!isMobile && (
-          <>
-            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
-            <ThemeToggle />
-          </>
-        )}
+        <Activity mode={!isMobile ? "visible" : "hidden"}>
+          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
+          <ThemeToggle />
+        </Activity>
       </div>
     </nav>
   )

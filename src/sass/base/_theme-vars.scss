@@ -52,13 +52,21 @@
 
   --accent-soft: #d9d9d5;
   --accent-medium: #b8b8af;
-  --accent-strong: #6a6a60;
-
-  --selection-bg: rgba(222, 205, 184, 0.741);
+  --accent-strong: #8e8e61;
 
   --text-primary-rgb: 13, 13, 11;
   --text-secondary-rgb: 58, 58, 53;
   --text-tertiary-rgb: 106, 106, 96;
+
+  --selection-bg: rgba(222, 205, 184, 0.63);
+
+  /* GitHub-style contribution graph */
+  --bg-githubGraph: transparent;
+  --contrib-0: #f2ebe0;
+  --contrib-1: #e4d7c3;
+  --contrib-2: #c7b092;
+  --contrib-3: var(--text-tag);
+  --contrib-4: #7a6650;
 }
 
 .dark {
@@ -116,5 +124,13 @@
   --accent-medium: #484848;
   --accent-strong: #a8a8a8;
 
-  --selection-bg: #3f3f3f;
+  --selection-bg: #212121;
+
+  /* GitHub-style contribution graph */
+  --bg-githubGraph: rgba(13, 13, 13, 0.89);
+  --contrib-0: var(--bg-tertiary);
+  --contrib-1: #2d2d2d;
+  --contrib-2: #5b5b5b;
+  --contrib-3: #a9a9a9;
+  --contrib-4: var(--text-primary);
 }

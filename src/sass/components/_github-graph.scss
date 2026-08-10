@@ -1,0 +1,193 @@
+:root {
+  color-scheme: light dark;
+  --calendar: var(--bg-githubGraph);
+  --line: var(--border-tertiary);
+  --copy: var(--text-secondary);
+}
+
+.calendar-shell {
+  margin-bottom: 9rem;
+  border: 6px solid var(--border-tertiary);
+  background: var(--calendar);
+  padding: 1.1rem 1rem;
+  overflow: hidden;
+
+  @media (width <= 884px) {
+    margin-bottom: 3.5rem;
+  }
+
+  .calendar-scroll {
+    overflow-x: auto;
+    overflow-y: visible;
+    overflow-anchor: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-medium) transparent;
+    padding-bottom: 3px;
+
+    &:focus-visible {
+      outline: 2px solid var(--copy);
+      outline-offset: 4px;
+      border-radius: 6px;
+    }
+  }
+
+  .calendar-inner {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  .calendar-months {
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+  }
+
+  .calendar-month-track {
+    display: grid;
+    column-gap: 6px;
+    align-items: center;
+    width: max-content;
+
+    span {
+      grid-row: 1;
+      justify-self: center;
+      white-space: nowrap;
+    }
+  }
+
+  .calendar-grid {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-start;
+    overflow: visible;
+  }
+
+  .calendar-week {
+    display: flex;
+    flex: 0 0 14px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contribution-cell {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background: var(--contrib-0);
+
+    &[data-tooltip] {
+      cursor: pointer;
+
+      &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: calc(100% + 10px);
+        transform: translateX(-50%) translateY(4px);
+        width: max-content;
+        max-width: 250px;
+        padding: 8px 12px;
+        border-radius: 9px;
+        background: var(--button-primary-bg);
+        color: var(--button-primary-text);
+        font-size: 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+        box-shadow: 0 8px 20px rgb(0 0 0 / 28%);
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.15s ease,
+          transform 0.15s ease;
+      }
+
+      &:hover::after,
+      &:focus-visible::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    &.low {
+      background: var(--contrib-1);
+    }
+
+    &.mid {
+      background: var(--contrib-2);
+    }
+
+    &.high {
+      background: var(--contrib-3);
+    }
+
+    &.peak {
+      background: var(--contrib-4);
+    }
+  }
+
+  .calendar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 17px;
+    color: var(--text-secondary);
+    font-size: 20px;
+
+    span {
+      font-size: 0.875rem;
+    }
+  }
+
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 4.2px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    border-width: 4px;
+    padding: 14px 8px 18px;
+
+    .calendar-months {
+      font-size: 11px;
+      height: 22px;
+      margin-bottom: 8px;
+    }
+
+    .calendar-month-track {
+      grid-template-columns: repeat(53, 11px) !important;
+      column-gap: 3px;
+    }
+
+    .calendar-grid {
+      gap: 3px;
+    }
+
+    .calendar-week {
+      flex-basis: 11px;
+      gap: 3px;
+    }
+
+    .contribution-cell {
+      width: 10px;
+      height: 10px;
+
+      &[data-tooltip]::after {
+        font-size: 14px;
+        padding: 9px 12px;
+      }
+    }
+
+    .calendar-footer {
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: 15px;
+      margin-top: 14px;
+    }
+  }
+}

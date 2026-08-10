@@ -1,37 +1,41 @@
-import { CalendarDays } from "lucide-react"
-import { formatDate } from "@/utils/formatDate"
+import { Clock3 } from "lucide-react"
 import Image from "next/image"
+import { BlogArticle, readingTime } from "@/services/wisp"
+import Link from "next/link"
+import React from "react"
 
 interface ArticleMetaProps {
-  publishedAt: string | Date | null
-  createdAt: string | Date | null
+  post: BlogArticle
 }
 
-export function ArticleMeta({ publishedAt, createdAt }: ArticleMetaProps) {
-  const date = publishedAt || createdAt
+export function ArticleMeta({ post }: ArticleMetaProps) {
+  const { content } = post
 
   return (
-    <>
+    <React.Fragment>
       <div>
-        <p>Date</p>
+        <p>Read time</p>
+
         <span className="flex items-center gap-2">
-          <CalendarDays size={14} /> {date ? formatDate(date) : "No data"}
+          <Clock3 size={14} strokeWidth={1.8} />
+          {readingTime(content)}
         </span>
       </div>
 
       <div>
         <p>Author</p>
-        <span className="flex items-center gap-2">
+
+        <Link href="/about" className="flex items-center gap-2">
           <Image
             src="https://github.com/makeneto.png"
             alt="Makene's profile"
             width={20}
             height={20}
             className="rounded-full"
-          />{" "}
-          Makene Neto
-        </span>
+          />
+          <p>Makene Neto</p>
+        </Link>
       </div>
-    </>
+    </React.Fragment>
   )
 }
