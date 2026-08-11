@@ -76,40 +76,7 @@
     height: 14px;
     border-radius: 2px;
     background: var(--contrib-0);
-
-    &[data-tooltip] {
-      cursor: pointer;
-
-      &::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        z-index: 10;
-        left: 50%;
-        bottom: calc(100% + 10px);
-        transform: translateX(-50%) translateY(4px);
-        width: max-content;
-        max-width: 250px;
-        padding: 8px 12px;
-        border-radius: 9px;
-        background: var(--button-primary-bg);
-        color: var(--button-primary-text);
-        font-size: 14px;
-        line-height: 1.2;
-        white-space: nowrap;
-        box-shadow: 0 8px 20px rgb(0 0 0 / 28%);
-        opacity: 0;
-        pointer-events: none;
-        transition:
-          opacity 0.15s ease,
-          transform 0.15s ease;
-      }
-
-      &:hover::after,
-      &:focus-visible::after {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-      }
-    }
+    cursor: pointer;
 
     &.low {
       background: var(--contrib-1);
