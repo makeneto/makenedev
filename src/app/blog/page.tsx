@@ -1,10 +1,10 @@
 import React from "react"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import BlogArea from "@/components/blogs/BlogArea"
-import LastBlog from "@/components/blogs/LastBlog"
-import VerticalBlogList from "@/components/blogs/VerticalBlogList"
-import BlogResume from "@/components/blogs/BlogResume"
+import BlogArea from "@/components/blog/BlogArea"
+import LastBlog from "@/components/blog/LastBlog"
+import VerticalBlogList from "@/components/blog/VerticalBlogList"
+import BlogResume from "@/components/blog/BlogResume"
 import PageTitle from "@/components/PageTitle"
 
 export default function BlogPage() {
