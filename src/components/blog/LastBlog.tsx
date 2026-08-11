@@ -3,7 +3,7 @@ import Image from "next/image"
 
 import { formatDate } from "@/utils/formatDate"
 import BlogViews from "./BlogViews"
-import { getBlogHomeData } from "@/services/blog"
+import { getBlogHomeData } from "@/features/blog/wispBlog"
 import { coverImage } from "@/services/wisp"
 
 interface LastBlogProps {
