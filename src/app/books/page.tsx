@@ -6,7 +6,7 @@ import BookResume from "@/components/books/BookResume"
 import ShowcaseHeader from "@/components/showcase-section/ShowcaseHeader"
 import PageTitle from "@/components/PageTitle"
 import { coverImage } from "@/services/wisp"
-import { getBooksHomeData } from "@/services/books"
+import { getBooksHomeData } from "@/features/books/wispBooks"
 
 export default async function BookPage() {
   const { posts } = await getBooksHomeData()
