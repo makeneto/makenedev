@@ -914,10 +914,6 @@ textarea {
   }
 }
 
-.engagement-wrap {
-  margin: 56px auto 0;
-}
-
 .engagement {
   width: fit-content;
   margin: 0 auto;
@@ -931,9 +927,13 @@ textarea {
 @media (width <= 640px) {
   .engagement {
     background: var(--bg-engagement);
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
-
+.engagement-wrap {
+  margin: 56px auto 0;
+}
 .engagement-reactions {
   display: flex;
   gap: 0.5rem;
@@ -949,29 +949,24 @@ textarea {
   padding: 0.5rem 0.8rem;
   transition: transform 0.2s;
 }
-
+.reaction-button:hover {
+  transform: translateY(-1px);
+}
 .reaction-button span {
   font-size: 24px;
   line-height: 1;
 }
-
 .reaction-button p {
   color: inherit;
   font: 500 16px/1 var(--font-inter), sans-serif;
   letter-spacing: 0;
   font-size: 0.875rem;
 }
-
-.reaction-button:hover {
-  transform: translateY(-1px);
-}
-
 .reaction-button.is-selected {
   border-color: transparent;
   background: var(--text-primary);
   color: var(--bg-primary);
 }
-
 .reaction-button:disabled {
   opacity: 0.6;
   cursor: wait;
@@ -991,12 +986,6 @@ textarea {
   transform: translateY(-1px);
 }
 
-@media (max-width: 700px) {
-  .engagement {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
 .footer {
   margin-top: 20rem;
   padding-bottom: 1.5rem;
