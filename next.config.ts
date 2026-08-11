@@ -7,8 +7,15 @@ const nextConfig: NextConfig = {
       process.env.NEXT_PUBLIC_FORMSPREE_KEY ?? process.env.FORMSPREE_KEY,
     NEXT_PUBLIC_BLOG_ID:
       process.env.NEXT_PUBLIC_BLOG_ID ?? process.env.PUBLIC_BLOG_ID,
+    NEXT_PUBLIC_BOOK_ID:
+      process.env.NEXT_PUBLIC_BOOK_ID ?? process.env.PUBLIC_BOOK_ID,
     NEXT_GITHUB_TOKEN:
       process.env.NEXT_GITHUB_TOKEN ?? process.env.GITHUB_TOKEN,
+    NEXT_DATABASE_URL:
+      process.env.NEXT_DATABASE_URL ?? process.env.DATABASE_URL,
+    NEXT_DATABASE_URL_UNPOOLED:
+      process.env.NEXT_DATABASE_URL_UNPOOLED ??
+      process.env.DATABASE_URL_UNPOOLED,
   },
   images: {
     remotePatterns: [
