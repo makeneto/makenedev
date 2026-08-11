@@ -3,7 +3,7 @@ import type { ShowcaseItem } from "../interfaces/showcase"
 export const works: ShowcaseItem[] = [
   {
     id: 109,
-    title: "Masterdriver",
+    title: "Master Driver",
     description:
       "Study for your driving test like it's a game. Earn XP and learn to drive at your own pace.",
     imageUrl: "/assets/work-cover9.webp",
