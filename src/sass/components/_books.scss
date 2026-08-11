@@ -19,8 +19,10 @@
     cursor: default;
 
     &:hover {
-      .book-cover img {
-        filter: grayscale(0);
+      @media (width >= 884px) {
+        .book-cover img {
+          filter: grayscale(0);
+        }
       }
     }
   }
@@ -54,8 +56,10 @@
       height: 80%;
       object-fit: contain;
       border-radius: 0.1rem;
-      filter: grayscale(100%);
       transition: filter 0.15s ease-in;
+      @media (width >= 884px) {
+        filter: grayscale(100%);
+      }
 
       @media (width <= 640px) {
         height: 70%;
