@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive"
 import { Button } from "../ui/button"
 import useShareArticle from "@/hooks/useShareArticle"
 import useEngagement from "@/hooks/useEngagement"
+import ReusableTooltip from "../ui/ReusableTooltip"
 
 export function Engagement({ slug }: { slug: string }) {
   const { metrics, reaction, busy } = useEngagement({ slug })
@@ -17,39 +18,45 @@ export function Engagement({ slug }: { slug: string }) {
     >
       <div className="engagement">
         <div className="engagement-reactions" aria-label="Reações">
-          <Button
-            size={isMobile ? "default" : "sm"}
-            className={`reaction-button ${metrics?.liked ? "is-selected" : ""}`}
-            onClick={() => reaction("like")}
-            disabled={busy}
-            aria-pressed={metrics?.liked ?? false}
-            aria-label="Like article"
-          >
-            <ThumbsUp aria-hidden="true" strokeWidth={2.2} />
-            {metrics && metrics.likes > 0 && <p>{metrics.likes}</p>}
-          </Button>
+          <ReusableTooltip content="Like">
+            <Button
+              size={isMobile ? "default" : "sm"}
+              className={`reaction-button ${metrics?.liked ? "is-selected" : ""}`}
+              onClick={() => reaction("like")}
+              disabled={busy}
+              aria-pressed={metrics?.liked ?? false}
+              aria-label="Like article"
+            >
+              <ThumbsUp aria-hidden="true" strokeWidth={2.2} />
+              {metrics && metrics.likes > 0 && <p>{metrics.likes}</p>}
+            </Button>
+          </ReusableTooltip>
 
-          <Button
-            size={isMobile ? "default" : "sm"}
-            className={`reaction-button ${metrics?.disliked ? "is-selected is-dislike" : ""}`}
-            onClick={() => reaction("dislike")}
-            disabled={busy}
-            aria-pressed={metrics?.disliked ?? false}
-            aria-label="I didn't like the article"
-          >
-            <ThumbsDown aria-hidden="true" strokeWidth={2.2} />
-            {metrics && metrics.dislikes > 0 && <p>{metrics.dislikes}</p>}
-          </Button>
+          <ReusableTooltip content="Dislike">
+            <Button
+              size={isMobile ? "default" : "sm"}
+              className={`reaction-button ${metrics?.disliked ? "is-selected is-dislike" : ""}`}
+              onClick={() => reaction("dislike")}
+              disabled={busy}
+              aria-pressed={metrics?.disliked ?? false}
+              aria-label="I didn't like the article"
+            >
+              <ThumbsDown aria-hidden="true" strokeWidth={2.2} />
+              {metrics && metrics.dislikes > 0 && <p>{metrics.dislikes}</p>}
+            </Button>
+          </ReusableTooltip>
 
-          <Button
-            size={isMobile ? "default" : "sm"}
-            type="button"
-            onClick={handleNativeShare}
-            aria-label="Share"
-            className="share-button"
-          >
-            <Share2 />
-          </Button>
+          <ReusableTooltip content="Share">
+            <Button
+              size={isMobile ? "default" : "sm"}
+              type="button"
+              onClick={handleNativeShare}
+              aria-label="Share"
+              className="share-button"
+            >
+              <Share2 />
+            </Button>
+          </ReusableTooltip>
         </div>
       </div>
     </section>
