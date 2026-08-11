@@ -76,7 +76,7 @@ export async function POST(
     body.action !== "view" &&
     body.action !== "like" &&
     body.action !== "dislike"
-  ) 
+  )
     return NextResponse.json({ error: "Invalid action" }, { status: 400 })
   const deviceId = body.deviceId
   const action = body.action
