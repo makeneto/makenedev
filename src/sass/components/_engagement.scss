@@ -1,0 +1,86 @@
+.engagement {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 999px;
+
+  background: var(--bg-primary);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-primary);
+
+  @media (width <= 640px) {
+    background: var(--bg-engagement);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  @media (width <= 640px) {
+  }
+
+  &-wrap {
+    margin: 56px auto 0;
+  }
+
+  &-reactions {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.reaction {
+  &-button {
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    background: var(--bg-tertiary);
+    border-radius: 999px;
+    height: 100%;
+    padding: 0.5rem 0.8rem;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    p {
+      color: inherit;
+      font:
+        500 16px/1 var(--font-inter),
+        sans-serif;
+      letter-spacing: 0;
+      font-size: 0.875rem;
+    }
+
+    &.is-selected {
+      border-color: transparent;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+  }
+}
+
+.share-button {
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  background: var(--bg-tertiary);
+  border-radius: 999px;
+  height: 100%;
+  padding: 0.5rem 0.8rem 0.5rem 0.65rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
