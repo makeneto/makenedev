@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { getPost, getPosts } from "@/services/blog"
+import { getPost, getPosts } from "@/features/blog/wispBlog"
 import { ArticleView } from "@/components/blog/ArticleView"
 
 type Props = { params: Promise<{ slug: string }> }
