@@ -58,6 +58,7 @@ textarea {
   --bg-service-hovered: #000000;
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
+  --bg-engagement: #f8f4efe3;
   --openToWork-bg: rgba(179, 175, 148, 0.141);
   --openToWork-hovered: rgba(213, 213, 213, 0.788);
   --stack-link: rgba(232, 232, 232, 0.604);
@@ -113,6 +114,7 @@ textarea {
   --bg-tertiary: #1a1a1a;
   --bg-pricing-card: #000000;
   --bg-service-hovered: #151515;
+  --bg-engagement: rgba(0, 0, 0, 0.651);
   --openToWork-bg: rgba(24, 24, 27, 0.741);
   --openToWork-hovered: rgba(39, 39, 42, 0.729);
   --stack-link: #18181b;
@@ -358,13 +360,6 @@ textarea {
   opacity: 0;
   transition: width 0.25s ease, opacity 0.25s ease;
   flex-shrink: 0;
-}
-.blog-share button svg {
-  color: var(--text-tertiary);
-  transition: color 0.15 ease-in;
-}
-.blog-share button:hover svg {
-  color: var(--text-primary);
 }
 
 .weak-text {
@@ -619,8 +614,6 @@ textarea {
 }
 .verticalBlogs a svg {
   color: var(--text-tertiary);
-  width: 3rem;
-  height: 3rem;
 }
 .verticalBlogs a article {
   display: grid;
@@ -653,7 +646,7 @@ textarea {
 
 .book-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 4.3rem 1rem;
 }
 @media (width <= 884px) {
@@ -663,42 +656,63 @@ textarea {
 }
 @media (width <= 640px) {
   .book-list {
+    margin-top: -3rem;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
   }
 }
 .book-card {
-  display: grid;
-  grid-template-rows: 90% auto;
-  gap: 1rem;
+  cursor: default;
 }
-.book-card:hover svg {
-  opacity: 1;
+.book-card:hover .book-cover img {
+  filter: grayscale(0);
 }
 .book-cover {
-  background-color: var(--bg-secondary);
+  position: relative;
+  height: 20rem;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.book-cover div {
+  background-color: var(--bg-secondary);
+  width: 100%;
+  height: 50%;
+}
+@media (width <= 640px) {
+  .book-cover div {
+    height: 40%;
+  }
+}
 .book-cover img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-self: center;
   width: auto;
   margin: auto;
   height: 80%;
   object-fit: contain;
   border-radius: 0.1rem;
+  filter: grayscale(100%);
+  transition: filter 0.15s ease-in;
 }
 @media (width <= 640px) {
   .book-cover img {
     height: 70%;
   }
 }
-.book-content div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.book-content {
+  text-align: center;
 }
-.book-content div h3 {
+@media (width <= 640px) {
+  .book-content {
+    margin-top: -1rem;
+  }
+}
+.book-content h3 {
   font-weight: 500;
   font-size: 0.875rem;
   display: -webkit-box;
@@ -706,12 +720,6 @@ textarea {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-.book-content div svg {
-  width: 0.8rem;
-  height: 0.8rem;
-  transition: opacity 0.1s ease-in-out;
-  opacity: 0;
 }
 .book-content p {
   font-size: 0.75rem;
@@ -906,6 +914,89 @@ textarea {
   }
 }
 
+.engagement-wrap {
+  margin: 56px auto 0;
+}
+
+.engagement {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 999px;
+  background: var(--bg-primary);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-primary);
+}
+@media (width <= 640px) {
+  .engagement {
+    background: var(--bg-engagement);
+  }
+}
+
+.engagement-reactions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reaction-button {
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  background: var(--bg-tertiary);
+  border-radius: 999px;
+  height: 100%;
+  padding: 0.5rem 0.8rem;
+  transition: transform 0.2s;
+}
+
+.reaction-button span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.reaction-button p {
+  color: inherit;
+  font: 500 16px/1 var(--font-inter), sans-serif;
+  letter-spacing: 0;
+  font-size: 0.875rem;
+}
+
+.reaction-button:hover {
+  transform: translateY(-1px);
+}
+
+.reaction-button.is-selected {
+  border-color: transparent;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.reaction-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.share-button {
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  background: var(--bg-tertiary);
+  border-radius: 999px;
+  height: 100%;
+  padding: 0.5rem 0.8rem 0.5rem 0.65rem;
+  transition: transform 0.2s;
+}
+.share-button:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+  .engagement {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 .footer {
   margin-top: 20rem;
   padding-bottom: 1.5rem;
