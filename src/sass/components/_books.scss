@@ -57,6 +57,7 @@
       object-fit: contain;
       border-radius: 0.1rem;
       transition: filter 0.15s ease-in;
+
       @media (width >= 884px) {
         filter: grayscale(100%);
       }
