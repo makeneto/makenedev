@@ -664,8 +664,10 @@ textarea {
 .book-card {
   cursor: default;
 }
-.book-card:hover .book-cover img {
-  filter: grayscale(0);
+@media (width >= 884px) {
+  .book-card:hover .book-cover img {
+    filter: grayscale(0);
+  }
 }
 .book-cover {
   position: relative;
@@ -696,8 +698,12 @@ textarea {
   height: 80%;
   object-fit: contain;
   border-radius: 0.1rem;
-  filter: grayscale(100%);
   transition: filter 0.15s ease-in;
+}
+@media (width >= 884px) {
+  .book-cover img {
+    filter: grayscale(100%);
+  }
 }
 @media (width <= 640px) {
   .book-cover img {
