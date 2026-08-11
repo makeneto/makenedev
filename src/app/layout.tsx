@@ -12,6 +12,7 @@ import "@/css/index.css"
 
 import Providers from "@/components/Providers"
 import SiteShell from "@/components/SiteShell"
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -102,7 +103,9 @@ export default function RootLayout({
     >
       <body className={inter.className}>
         <Providers>
-          <SiteShell>{children}</SiteShell>
+          <SiteShell>
+            <TooltipProvider>{children}</TooltipProvider>
+          </SiteShell>
         </Providers>
       </body>
     </html>
