@@ -1,15 +1,17 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink } from "lucide-react"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import BookResume from "@/components/books/BookResume"
 import ShowcaseHeader from "@/components/showcase-section/ShowcaseHeader"
-import { books } from "@/data/books"
 import PageTitle from "@/components/PageTitle"
+import { coverImage } from "@/services/wisp"
+import { getBooksHomeData } from "@/services/books"
 
-export default function BookPage() {
+export default async function BookPage() {
+  const { posts } = await getBooksHomeData()
+
   return (
     <React.Fragment>
       <PageTitle title="Books Read" />
@@ -20,14 +22,15 @@ export default function BookPage() {
       />
 
       <section>
-        <ShowcaseHeader title="Recommended Books" count={books.length} />
+        <ShowcaseHeader title="Bookcase" count={posts.length} />
 
         <ul className="book-list">
-          {books.map((book) => (
-            <Link href={book.link} key={book.title} className="book-card">
+          {posts.map((book) => (
+            <li key={book.title} className="book-card">
               <div className="book-cover">
+                <div />
                 <Image
-                  src={book.image}
+                  src={coverImage(book.image)}
                   alt={book.title}
                   width={200}
                   height={240}
@@ -35,14 +38,10 @@ export default function BookPage() {
               </div>
 
               <div className="book-content">
-                <div>
-                  <h3>{book.title}</h3>
-                  <ExternalLink />
-                </div>
-
-                <p>{book.author}</p>
+                <p>{book.description}</p>
+                <h3>{book.title}</h3>
               </div>
-            </Link>
+            </li>
           ))}
         </ul>
       </section>
