@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "next/image"
-import Link from "next/link"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import BookResume from "@/components/books/BookResume"
