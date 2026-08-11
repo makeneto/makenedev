@@ -1,4 +1,4 @@
-import { getBlogHomeData } from "@/services/blog"
+import { getBlogHomeData } from "@/features/blog/wispBlog"
 import BlogRow from "./BlogRow"
 
 export default async function VerticalBlogList({
