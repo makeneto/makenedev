@@ -226,21 +226,6 @@
       flex-shrink: 0;
     }
   }
-
-  &-share {
-    button {
-      svg {
-        color: var(--text-tertiary);
-        transition: color 0.15 ease-in;
-      }
-
-      &:hover {
-        svg {
-          color: var(--text-primary);
-        }
-      }
-    }
-  }
 }
 
 .weak {
