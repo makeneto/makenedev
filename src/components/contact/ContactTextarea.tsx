@@ -23,7 +23,7 @@ export function ContactTextarea({
       <Textarea
         {...props}
         aria-invalid={invalid}
-        className={`min-h-42 max-h-60 pt-5 pb-5.5 px-5 rounded-3xl border-2 bg-transparent text-white placeholder:text-zinc-500 focus-visible:ring-0 ${
+        className={`min-h-42 max-h-60 pt-5 pb-5.5 px-5 rounded-3xl border bg-transparent text-white placeholder:text-zinc-500 focus-visible:ring-0 ${
           invalid
             ? "border-red-500 focus-visible:border-red-500"
             : "border-zinc-700 focus-visible:border-white"
