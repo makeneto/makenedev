@@ -6,13 +6,14 @@
 }
 
 .calendar-shell {
+  border-radius: 0.8rem;
   margin-bottom: 9rem;
   border: 6px solid var(--border-tertiary);
   background: var(--calendar);
   padding: 1.1rem 1rem;
   overflow: hidden;
 
-  @media (width <= 884px) {
+  @media (max-width: 884px) {
     margin-bottom: 3.5rem;
   }
 
@@ -106,6 +107,10 @@
 
     span {
       font-size: 0.875rem;
+
+      @media (width <= 640px) {
+        font-size: 0.75rem;
+      }
     }
   }
 
@@ -117,8 +122,9 @@
   }
 
   @media (max-width: 640px) {
-    border-width: 4px;
-    padding: 14px 8px 18px;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    padding: 1.1rem 1rem;
 
     .calendar-months {
       font-size: 11px;
