@@ -3,8 +3,6 @@
 import type { ReactNode } from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
-// Silencia o falso-positivo do React 19 sobre a tag <script>
-// injetada internamente pelo next-themes (não afeta o funcionamento).
 if (typeof window !== "undefined") {
   const originalError = console.error
   console.error = (...args: unknown[]) => {
