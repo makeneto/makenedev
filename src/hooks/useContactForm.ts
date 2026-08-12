@@ -19,8 +19,6 @@ export function useContactForm() {
   const isValid =
     form.fullName.trim() &&
     form.email.trim() &&
-    form.phone.trim() &&
-    form.jobPosition.trim() &&
     form.services.length > 0 &&
     form.message.trim()
 
@@ -37,7 +35,7 @@ export function useContactForm() {
     field: K,
     value: ContactFormData[K],
   ) {
-    const normalizedValue = normalizeContactField(field, value)
+    const normalizedValue = normalizeContactField(value)
 
     setForm((prev) => ({
       ...prev,
