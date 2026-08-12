@@ -6,8 +6,6 @@ export async function sendContactForm(data: ContactFormData) {
   const payload = {
     name: data.fullName,
     email: data.email,
-    phone: data.phone,
-    jobPosition: data.jobPosition,
     services: data.services.join(", "),
     message: data.message,
     _subject: `New contact request from ${data.fullName}`,
