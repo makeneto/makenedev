@@ -5,10 +5,14 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_FORMSPREE_KEY:
       process.env.NEXT_PUBLIC_FORMSPREE_KEY ?? process.env.FORMSPREE_KEY,
+    NEXT_PUBLIC_WORKS_ID:
+      process.env.NEXT_PUBLIC_WORKS_ID ?? process.env.PUBLIC_WORKS_ID,
     NEXT_PUBLIC_BLOG_ID:
       process.env.NEXT_PUBLIC_BLOG_ID ?? process.env.PUBLIC_BLOG_ID,
     NEXT_PUBLIC_BOOK_ID:
       process.env.NEXT_PUBLIC_BOOK_ID ?? process.env.PUBLIC_BOOK_ID,
+    NEXT_PUBLIC_GEARS_ID:
+      process.env.NEXT_PUBLIC_GEARS_ID ?? process.env.PUBLIC_GEARS_ID,
     NEXT_GITHUB_TOKEN:
       process.env.NEXT_GITHUB_TOKEN ?? process.env.GITHUB_TOKEN,
     NEXT_DATABASE_URL:
@@ -30,10 +34,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "github.com",
-      },
-      {
-        protocol: "https",
-        hostname: "brieflane.com",
       },
     ],
   },
