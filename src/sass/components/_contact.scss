@@ -100,27 +100,27 @@
       text-decoration: underline;
     }
   }
-}
 
-.contact-form {
-  & section {
-    display: grid;
-    gap: 4rem;
+  &-form {
+    & section {
+      display: grid;
+      gap: 3rem;
 
-    @media (width <= 884px) {
-      gap: 3.5rem;
+      @media (width <= 884px) {
+        gap: 3.5rem;
+      }
     }
-  }
 
-  &__label {
-    margin-bottom: 12px;
+    &__label {
+      margin-bottom: 12px;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
 
-    font-size: 14px;
-    color: var(--text-label);
+      font-size: 14px;
+      color: var(--text-label);
+    }
   }
 }
 
