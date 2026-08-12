@@ -3,6 +3,7 @@ import {
   Anton,
   Antonio,
   Inter,
+  JetBrains_Mono,
   Playfair_Display,
   Roboto,
 } from "next/font/google"
@@ -44,6 +45,13 @@ const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-roboto",
+  display: "swap",
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-mono",
   display: "swap",
 })
 
@@ -99,13 +107,13 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${anton.variable} ${antonio.variable} ${playfairDisplay.variable} ${roboto.variable}`}
+      className={`${inter.variable} ${anton.variable} ${antonio.variable} ${playfairDisplay.variable} ${roboto.variable} ${jetbrainsMono.variable}`}
     >
       <body className={inter.className}>
         <Providers>
-          <SiteShell>
-            <TooltipProvider>{children}</TooltipProvider>
-          </SiteShell>
+          <TooltipProvider>
+            <SiteShell>{children}</SiteShell>
+          </TooltipProvider>
         </Providers>
       </body>
     </html>
