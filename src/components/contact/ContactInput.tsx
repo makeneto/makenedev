@@ -29,10 +29,11 @@ export function ContactInput({
         aria-invalid={invalid}
         className={`
           pt-5
-          pb-5.5
+          pb-[1.45rem]
           px-5
+          sm:px-5
           rounded-full
-          border-2
+          border
           bg-transparent
           dark:text-white
           placeholder:text-xs
