@@ -1,10 +1,8 @@
 export function ContactSectionHeader({ description }: { description: string }) {
   return (
     <header>
-      <span className="contact__subtitle">Contact me</span>
-
       <h2 className="contact__title">
-        Let’s Get In
+        Let’s Get in
         <br />
         <i>Touch.</i>
       </h2>
