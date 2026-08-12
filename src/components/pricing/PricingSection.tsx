@@ -8,6 +8,7 @@ export default function PricingSection() {
   return (
     <section className="pricing my-50 sm:my-70 xl:my-60">
       <ShowcaseHeader title="Pricing" />
+      
       <div className="pricing__grid">
         <PricingCard key={pricingPlans[0].id} plan={pricingPlans[0]} />
 
