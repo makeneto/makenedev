@@ -34,7 +34,9 @@ body::selection {
 }
 @media (width >= 1920px) {
   body {
-    padding-inline: 25rem;
+    padding-inline: 0;
+    max-width: 840px;
+    margin: auto;
   }
 }
 
