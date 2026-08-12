@@ -1,5 +1,6 @@
 import { LinkIcon, Award, BookOpen, Dumbbell } from "lucide-react"
 import Link from "next/link"
+import ReusableTooltip from "../ui/ReusableTooltip"
 
 interface StackLinksProps {
   certificate: null | string
@@ -18,53 +19,51 @@ export default function StackLinks({
     <section className="flex items-center gap-0.5">
       {certificate &&
         (certificate === "?" ? (
-          <aside title="Certificate not available">
-            <Award className="w-auto h-4 text-yellow-500 dark:text-yellow-400 opacity-35" />
-          </aside>
+          <ReusableTooltip side="bottom" content="Certificate not available">
+            <aside>
+              <Award className="w-auto h-4 text-yellow-500 dark:text-yellow-400 opacity-35" />
+            </aside>
+          </ReusableTooltip>
         ) : (
-          <Link
-            href={certificate}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Makene's Certificate"
-          >
-            <Award className="text-yellow-600 dark:text-yellow-400 transition-colors" />
-          </Link>
+          <ReusableTooltip side="bottom" content="Makene's Certificate">
+            <Link href={certificate} target="_blank" rel="noopener noreferrer">
+              <Award className="text-yellow-600 dark:text-yellow-400 transition-colors" />
+            </Link>
+          </ReusableTooltip>
         ))}
 
       {learn && (
-        <Link
-          href={learn}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Learn with Makene"
-        >
-          <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
-        </Link>
+        <ReusableTooltip side="bottom" content="Learn with Makene">
+          <Link href={learn} target="_blank" rel="noopener noreferrer">
+            <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
+          </Link>
+        </ReusableTooltip>
       )}
 
       {exercises && (
-        <Link
-          href={exercises}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Practice with Makene"
-          aria-label="Visit website"
-        >
-          <Dumbbell className="text-violet-600 dark:text-violet-400" />
-        </Link>
+        <ReusableTooltip side="bottom" content="Practice with Makene">
+          <Link
+            href={exercises}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit website"
+          >
+            <Dumbbell className="text-violet-600 dark:text-violet-400" />
+          </Link>
+        </ReusableTooltip>
       )}
 
       {website && (
-        <Link
-          href={website}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Oficial Site"
-          aria-label="Visit website"
-        >
-          <LinkIcon />
-        </Link>
+        <ReusableTooltip side="bottom" content="Website">
+          <Link
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit website"
+          >
+            <LinkIcon />
+          </Link>
+        </ReusableTooltip>
       )}
     </section>
   )
