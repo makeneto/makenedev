@@ -767,23 +767,6 @@ textarea {
     gap: 6rem;
   }
 }
-.contact__subtitle {
-  font-family: "Antonio", sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-}
-@media (width <= 640px) {
-  .contact__subtitle {
-    font-size: 1.2rem;
-  }
-}
-@media (width <= 400px) {
-  .contact__subtitle {
-    font-size: 1.1rem;
-  }
-}
 .contact__title {
   margin-top: 20px;
   font-size: 3.5rem;
@@ -793,6 +776,7 @@ textarea {
 @media (width <= 1280px) {
   .contact__title {
     font-size: 2.8rem;
+    line-height: 3rem;
   }
 }
 @media (width <= 640px) {
@@ -807,9 +791,10 @@ textarea {
   }
 }
 .contact__title i {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Instrument Serif", serif;
   font-style: italic;
   font-weight: 500;
+  text-transform: lowercase;
 }
 .contact__description {
   margin-top: 1.2rem;
@@ -820,7 +805,6 @@ textarea {
   }
 }
 .contact__description, .contact__email {
-  max-width: 480px;
   color: var(--text-secondary);
   font-size: 1.2rem;
   line-height: 1.7;
@@ -854,10 +838,9 @@ textarea {
 .contact a:hover {
   text-decoration: underline;
 }
-
 .contact-form section {
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
 }
 @media (width <= 884px) {
   .contact-form section {
@@ -1024,6 +1007,67 @@ textarea {
 
 .copyright {
   color: var(--text-tertiary);
+}
+
+.setup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+@media (width <= 884px) {
+  .setup-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width <= 640px) {
+  .setup-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.setup-card {
+  grid-template-rows: 10rem auto;
+  display: grid;
+  gap: 1.25rem;
+}
+@media (width <= 884px) {
+  .setup-card {
+    grid-template-rows: 7.3rem auto;
+  }
+}
+@media (width <= 640px) {
+  .setup-card {
+    grid-template-rows: 6.8rem auto;
+  }
+}
+.setup-card img {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+.setup-card__content {
+  display: grid;
+  gap: 0.2rem;
+  text-align: center;
+}
+.setup-card__content h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.setup-card__content p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 :root {
@@ -1809,88 +1853,6 @@ textarea {
 }
 .services__list--row:hover svg {
   color: var(--text-primary);
-}
-
-.setup-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-}
-@media (width <= 884px) {
-  .setup-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (width <= 640px) {
-  .setup-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-.setup-card {
-  grid-template-rows: 10rem auto;
-  display: grid;
-  gap: 1.25rem;
-}
-@media (width <= 884px) {
-  .setup-card {
-    grid-template-rows: 7.3rem auto;
-  }
-}
-@media (width <= 640px) {
-  .setup-card {
-    grid-template-rows: 6.8rem auto;
-  }
-}
-.setup-card img {
-  width: auto;
-  height: 100%;
-  margin: auto;
-  object-fit: contain;
-}
-.setup-card p, .setup-card a {
-  font-size: 0.875rem;
-}
-.setup-card:hover svg {
-  opacity: 1;
-}
-.setup-card:hover p {
-  color: var(--text-primary);
-}
-.setup-card__content {
-  display: grid;
-  gap: 0.2rem;
-}
-.setup-card__content div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.setup-card__content div h3 {
-  width: 90%;
-  font-weight: 500;
-  display: -webkit-box;
-  line-clamp: 1;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.setup-card__content div svg {
-  width: 0.8rem;
-  height: 0.8rem;
-  text-decoration: underline;
-  opacity: 0;
-  transition: opacity 0.13s ease-in-out;
-}
-.setup-card__content p {
-  color: var(--text-secondary);
-  transition: color 0.13s ease-in-out;
-  display: -webkit-box;
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .showcase-header {
