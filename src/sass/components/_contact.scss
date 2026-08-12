@@ -30,22 +30,6 @@
     }
   }
 
-  &__subtitle {
-    font-family: "Antonio", sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: var(--text-tertiary);
-    text-transform: uppercase;
-
-    @media (width <= 640px) {
-      font-size: 1.2rem;
-    }
-
-    @media (width <= 400px) {
-      font-size: 1.1rem;
-    }
-  }
-
   &__title {
     margin-top: 20px;
     font-size: 3.5rem;
@@ -54,6 +38,7 @@
 
     @media (width <= 1280px) {
       font-size: 2.8rem;
+      line-height: 3rem;
     }
 
     @media (width <= 640px) {
@@ -66,9 +51,10 @@
     }
 
     i {
-      font-family: "Playfair Display", sans-serif;
+      font-family: "Instrument Serif", serif;
       font-style: italic;
       font-weight: 500;
+      text-transform: lowercase;
     }
   }
 
@@ -82,7 +68,6 @@
 
   &__description,
   &__email {
-    max-width: 480px;
     color: var(--text-secondary);
     font-size: 1.2rem;
     line-height: 1.7;
