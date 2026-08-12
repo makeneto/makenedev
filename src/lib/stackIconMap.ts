@@ -30,10 +30,10 @@ import WordIcon from "../components/ui/icons/WordIcon"
 import ExcelIcon from "../components/ui/icons/ExcelIcon"
 import PowerpointIcon from "../components/ui/icons/PowerpointIcon"
 import GithubCopilotIcon from "../components/ui/icons/GithubCopilotIcon"
-import ViteIcon from "../components/ui/icons/ViteIcon"
 import VsCodeIcon from "../components/ui/icons/VsCodeIcon"
 import DribbbleIcon from "../components/ui/icons/DribbbleIcon"
 import FramerIcon from "../components/ui/icons/FramerIcon"
+import V0Icon from "@/components/ui/icons/V0Icon"
 
 export const stackIconMap: Record<string, ComponentType> = {
   javascript: JavaScriptIcon,
@@ -49,16 +49,16 @@ export const stackIconMap: Record<string, ComponentType> = {
   node: NodeIcon,
   express: ExpressIcon,
   socketio: SocketioIcon,
-  githubCopilot: GithubCopilotIcon,
-  openai: OpenaiIcon,
   claude: ClaudeIcon,
+  openai: OpenaiIcon,
+  githubCopilot: GithubCopilotIcon,
+  v0: V0Icon,
   postgresql: PostgresqlIcon,
   mongodb: MongodbIcon,
   vscode: VsCodeIcon,
   figma: FigmaIcon,
   dribbble: DribbbleIcon,
   gimp: GimpIcon,
-  vite: ViteIcon,
   git: GitIcon,
   github: GithubIcon,
   vercel: VercelIcon,
