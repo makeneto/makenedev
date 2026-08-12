@@ -1,0 +1,65 @@
+.setup {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @media (width <= 884px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (width <= 640px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &-card {
+    grid-template-rows: 10rem auto;
+    display: grid;
+    gap: 1.25rem;
+
+    @media (width <= 884px) {
+      grid-template-rows: 7.3rem auto;
+    }
+
+    @media (width <= 640px) {
+      grid-template-rows: 6.8rem auto;
+    }
+
+    & img {
+      width: auto;
+      height: 100%;
+      margin: auto;
+      object-fit: contain;
+    }
+
+    &__content {
+      display: grid;
+      gap: 0.2rem;
+      text-align: center;
+
+      & h3 {
+        font-size: 0.875rem;
+        font-weight: 500;
+
+        display: -webkit-box;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      & p {
+        color: var(--text-secondary);
+        font-size: 0.875rem;
+
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
