@@ -1,24 +1,16 @@
-import type { SetupItem } from "@/interfaces/setup"
+import { GearPost } from "@/interfaces/gears"
 import ToolCard from "./ToolCard"
 
 interface SetupGridProps {
-  tools: SetupItem[]
+  tools: GearPost[]
 }
 
 export default function SetupGrid({ tools }: SetupGridProps) {
   return (
     <div className="setup-grid">
-      {tools.map(({ id, image, name, description, link }) => {
-        return (
-          <ToolCard
-            key={id}
-            image={image}
-            name={name}
-            description={description}
-            link={link}
-          />
-        )
-      })}
+      {tools.map((post) => (
+        <ToolCard key={post.id} post={post} />
+      ))}
     </div>
   )
 }
