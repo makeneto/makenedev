@@ -49,7 +49,7 @@ export function formatContributionDate(date: string): string {
 
 export function formatShortDate(date: string): string {
   const [year, month, day] = date.split("-")
-  return `${month}.${day}.${year}`
+  return `${day}.${month}.${year}`
 }
 
 type MonthPosition = {
