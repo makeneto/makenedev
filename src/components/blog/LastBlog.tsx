@@ -43,7 +43,7 @@ export default async function LastBlog({
 
         <Image
           src={coverImage(image)}
-          alt={title + `Cover`}
+          alt={title}
           width={featured ? 1200 : 720}
           height={featured ? 720 : 480}
         />
