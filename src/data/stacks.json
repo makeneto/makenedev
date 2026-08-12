@@ -160,7 +160,7 @@
         {
           "id": "claude",
           "name": "Claude AI",
-          "category": ["AI", "Engineering"],
+          "category": ["AI"],
           "certificate": "https://verify.skilljar.com/c/wretfdizt4xc",
           "learn": null,
           "exercises": null,
@@ -169,7 +169,7 @@
         {
           "id": "openai",
           "name": "OpenAI",
-          "category": ["AI", "Personal"],
+          "category": ["AI"],
           "certificate": null,
           "learn": null,
           "exercises": null,
@@ -178,11 +178,20 @@
         {
           "id": "githubCopilot",
           "name": "Copilot",
-          "category": ["AI", "Assistant"],
+          "category": ["AI"],
           "certificate": null,
           "learn": null,
           "exercises": null,
           "website": "https://github.com/features/copilot"
+        },
+        {
+          "id": "v0",
+          "name": "v0",
+          "category": ["AI", "Vercel"],
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://v0.dev"
         }
       ]
     },
@@ -198,15 +207,6 @@
           "learn": null,
           "exercises": null,
           "website": "https://code.visualstudio.com"
-        },
-        {
-          "id": "vite",
-          "name": "Vite",
-          "category": ["Devtool"],
-          "certificate": null,
-          "learn": null,
-          "exercises": null,
-          "website": "https://vitejs.dev"
         },
         {
           "id": "git",
