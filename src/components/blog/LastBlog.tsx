@@ -6,15 +6,7 @@ import BlogViews from "./BlogViews"
 import { getBlogHomeData } from "@/features/blog/wispBlog"
 import { coverImage } from "@/services/wisp"
 
-interface LastBlogProps {
-  isHome?: boolean
-  vertical?: boolean
-}
-
-export default async function LastBlog({
-  isHome = false,
-  vertical,
-}: LastBlogProps) {
+export default async function LastBlog({ isHome = false }: LastBlogProps) {
   const { posts } = await getBlogHomeData()
   const featured = posts[0]
 
@@ -26,7 +18,7 @@ export default async function LastBlog({
       <Link
         href={`/blog/${slug}`}
         aria-label="Read more about this blog post"
-        className={`blog-lastBlog__card ${vertical ? "blog-lastBlog__card--vertical" : "blog-lastBlog__card--horizontal"} ${!isHome ? "sticky-blog" : ""}`}
+        className="blog-lastBlog__card"
       >
         <section>
           <div>
