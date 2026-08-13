@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { getPostBySlug } from "@/features/blog/wispBlog"
-import { BlogView } from "@/components/blog/ArticleView"
+import { ArticleContent } from "@/components/blog/ArticleContent"
 import { buildPostMetadata } from "@/features/postMetadata"
 
 type Props = { params: Promise<{ slug: string }> }
@@ -23,7 +23,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main>
-      <BlogView post={post} />
+      <ArticleContent post={post} />
     </main>
   )
 }
