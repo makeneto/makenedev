@@ -7,18 +7,7 @@
     gap: 0.7rem;
   }
 
-  & svg {
-    width: 0.9rem;
-    height: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.1s ease-in;
-  }
-
   &:hover {
-    & svg {
-      opacity: 1;
-    }
-
     .showcase-card--title {
       text-decoration: underline;
     }
