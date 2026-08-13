@@ -3,11 +3,10 @@ import React from "react"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import WorkResume from "@/components/WorkResume"
-import { works } from "@/data/works"
 import GithubGraph from "@/components/github/GithubGraph"
 import PageTitle from "@/components/PageTitle"
 
-export default function Work() {
+export default function WorkPage() {
   return (
     <React.Fragment>
       <PageTitle title="My Works" />
@@ -19,12 +18,7 @@ export default function Work() {
       />
 
       <GithubGraph />
-      <ShowcaseSection
-        title="Projects"
-        count={works.length}
-        items={works}
-        isShowcase
-      />
+      <ShowcaseSection title="Projects" isShowcase />
       <WorkResume />
     </React.Fragment>
   )
