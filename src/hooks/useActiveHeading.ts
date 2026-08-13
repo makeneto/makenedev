@@ -1,3 +1,5 @@
+"use client"
+
 import { Heading } from "@/interfaces/blog"
 import { useCallback, useEffect, useRef, useState } from "react"
 
