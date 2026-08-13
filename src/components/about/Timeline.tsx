@@ -1,3 +1,5 @@
+"use client"
+
 import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
 import TimelineDesktop from "./TimelineDesktop"
 import TimelineMobile from "./TimelineMobile"
