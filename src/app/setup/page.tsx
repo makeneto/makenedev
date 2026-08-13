@@ -5,7 +5,7 @@ import SetupResume from "@/components/setup/SetupResume"
 import SetupSection from "@/components/setup/SetupSection"
 import PageTitle from "@/components/PageTitle"
 
-export default function Setup() {
+export default function SetupPage() {
   return (
     <React.Fragment>
       <PageTitle title="My Setup" />
