@@ -1,14 +1,14 @@
 "use client"
 
-import { useMemo } from "react"
 import Link from "next/link"
+import { useMemo } from "react"
 import { ChevronLeft } from "lucide-react"
 
-import { type BlogArticle } from "@/services/wisp"
-import { processBlogContent } from "@/utils/processBlogContent"
-import BlogIntro from "./BlogIntro"
 import BlogAside from "./BlogAside"
+import PostHeader from "../post/PostHeader"
+import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "./Engagement"
+import { type BlogArticle } from "@/services/wisp"
 
 export function ArticleContent({ post }: { post: BlogArticle }) {
   const { html } = useMemo(
@@ -18,7 +18,7 @@ export function ArticleContent({ post }: { post: BlogArticle }) {
 
   return (
     <article>
-      <BlogIntro post={post} variant="blog" />
+      <PostHeader post={post} variant="blog" />
 
       <section className="mt-20 relative grid sm:grid-cols-[70%_auto] gap-20 xl:gap-15">
         <div className="relative">
