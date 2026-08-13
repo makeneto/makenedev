@@ -1,0 +1,63 @@
+.work {
+  &-content {
+    img {
+      height: 20rem;
+
+      @media (width <= 1280px) {
+        height: 22rem;
+      }
+
+      @media (width <= 640px) {
+        height: 14.5rem;
+      }
+    }
+
+    ol {
+      margin-top: 1.6rem;
+      display: grid;
+      gap: 1rem;
+      counter-reset: item;
+
+      li {
+        margin-left: 2rem;
+        counter-increment: item;
+        display: flex;
+        gap: 16px;
+
+        &::before {
+          content: counter(item) ".";
+          flex-shrink: 0;
+          width: 1.3rem;
+          color: var(--text-secondary);
+        }
+
+        strong {
+          color: var(--text-primary);
+          font-weight: 600;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.4rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        &::after {
+          content: "/";
+          opacity: 0.4;
+        }
+
+        &:last-child::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
