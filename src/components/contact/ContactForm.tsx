@@ -1,3 +1,5 @@
+"use client"
+
 import { useContactForm } from "@/hooks/useContactForm"
 import { ContactFormActions } from "./ContactFormActions"
 import { ContactFormFields } from "./ContactFormFields"
