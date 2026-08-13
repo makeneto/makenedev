@@ -1,54 +1,22 @@
-"use client"
-
 import type { ShowcaseSectionProps } from "@/interfaces/showcase"
-import ShowcaseHeader from "./ShowcaseHeader"
-import ShowcaseGrid from "./ShowcaseGrid"
-import SectionControls from "../ui/SectionControls"
-import { useShowcasePagination } from "@/hooks/useShowcasePagination"
+import ShowcaseContent from "./ShowcaseContent"
+import { getWorkHomeData } from "@/features/works/wispWorks"
 
-const ShowcaseSection = ({
+export default async function ShowcaseSection({
   title,
   viewAll,
-  items,
   isHomePage = false,
   isShowcase,
-  count,
-}: ShowcaseSectionProps) => {
-  const {
-    sectionRef,
-    page,
-    totalPages,
-    visibleItems,
-    handleNext,
-    handlePrev,
-    showControls,
-  } = useShowcasePagination({
-    items,
-    isHomePage,
-  })
+}: ShowcaseSectionProps) {
+  const { posts } = await getWorkHomeData()
 
   return (
-    <section ref={sectionRef}>
-      <ShowcaseHeader
-        title={title}
-        count={count ? count : 0}
-        linkSection={viewAll}
-        isShowcase={isShowcase}
-      />
-
-      <ShowcaseGrid items={visibleItems} />
-
-      {showControls && !viewAll && (
-        <SectionControls
-          page={page}
-          totalPages={totalPages}
-          viewAll={viewAll}
-          onPrev={handlePrev}
-          onNext={handleNext}
-        />
-      )}
-    </section>
+    <ShowcaseContent
+      posts={posts}
+      title={title}
+      viewAll={viewAll}
+      isHomePage={isHomePage}
+      isShowcase={isShowcase}
+    />
   )
 }
-
-export default ShowcaseSection
