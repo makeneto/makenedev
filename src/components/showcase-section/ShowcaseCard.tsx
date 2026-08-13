@@ -1,24 +1,28 @@
 import React from "react"
-import type { ShowcaseItem } from "@/interfaces/showcase"
 import { ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+import { coverImage } from "@/services/wisp"
+import type { getWorkHomeData } from "@/features/works/wispWorks"
+
+type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
+
 interface Props {
-  item: ShowcaseItem
+  post: WorkPost
 }
 
-const ShowcaseCard: React.FC<Props> = ({ item }) => {
+const ShowcaseCard: React.FC<Props> = ({ post }) => {
   return (
     <Link
-      href={item.link}
+      href={`work/${post.slug}`}
       className="showcase-card"
       rel="noopener noreferrer"
-      aria-label={`Visit ${item.title} showcase`}
+      aria-label={`Visit the work ${post.title}`}
     >
       <Image
-        src={item.imageUrl}
-        alt={`${item.title} Cover Image`}
+        src={coverImage(post.image)}
+        alt={`${post.title} Cover Image`}
         className="showcase-cover"
         width={300}
         height={250}
@@ -26,14 +30,14 @@ const ShowcaseCard: React.FC<Props> = ({ item }) => {
       />
 
       <section>
-        <div className="flex items-center justify-between">
+        <div className="flex posts-center justify-between">
           <h1 className="showcase-card--title" translate="no">
-            {item.title}
+            {post.title}
           </h1>
           <ExternalLink />
         </div>
 
-        <p className="showcase-card--description">{item.description}</p>
+        <p className="showcase-card--description">{post.description}</p>
       </section>
     </Link>
   )
