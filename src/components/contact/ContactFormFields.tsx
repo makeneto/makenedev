@@ -1,4 +1,4 @@
-import { AtSign, Briefcase, Phone, User } from "lucide-react"
+import { AtSign, User } from "lucide-react"
 
 import { ContactInput } from "./ContactInput"
 import type { ContactFormData } from "@/interfaces/contactForm"
