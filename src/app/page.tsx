@@ -22,7 +22,7 @@ export default async function HomePage() {
       />
       <PricingSection />
       <BlogArea isHome>
-        <LastBlog vertical />
+        <LastBlog />
         <VerticalBlogList />
       </BlogArea>
     </React.Fragment>
