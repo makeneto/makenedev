@@ -1,10 +1,11 @@
 import React from "react"
-import { ExternalLink } from "lucide-react"
+import { Heart, Eye } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 import { coverImage } from "@/services/wisp"
 import type { getWorkHomeData } from "@/features/works/wispWorks"
+import useEngagement from "@/hooks/useEngagement"
 
 type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
 
@@ -13,16 +14,19 @@ interface Props {
 }
 
 const ShowcaseCard: React.FC<Props> = ({ post }) => {
+  const { slug, title, image, description } = post
+  const { metrics } = useEngagement({ slug })
+
   return (
     <Link
-      href={`work/${post.slug}`}
+      href={`work/${slug}`}
       className="showcase-card"
       rel="noopener noreferrer"
-      aria-label={`Visit the work ${post.title}`}
+      aria-label={`Visit the work ${title}`}
     >
       <Image
-        src={coverImage(post.image)}
-        alt={`${post.title} Cover Image`}
+        src={coverImage(image)}
+        alt={`${title} Cover Image`}
         className="showcase-cover"
         width={300}
         height={250}
@@ -32,12 +36,20 @@ const ShowcaseCard: React.FC<Props> = ({ post }) => {
       <section>
         <div className="flex posts-center justify-between">
           <h1 className="showcase-card--title" translate="no">
-            {post.title}
+            {title}
           </h1>
-          <ExternalLink />
+
+          <div className="flex items-center gap-4">
+            <span className="flex items-center gap-1 text-xs">
+              <Heart size={13} className="weak-text" /> {metrics?.likes ?? "-"}
+            </span>
+            <span className="flex items-center gap-1 text-xs">
+              <Eye size={13} className="weak-text" /> {metrics?.views ?? "-"}
+            </span>
+          </div>
         </div>
 
-        <p className="showcase-card--description">{post.description}</p>
+        <p className="showcase-card--description">{description}</p>
       </section>
     </Link>
   )
