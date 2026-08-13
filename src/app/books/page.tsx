@@ -8,7 +8,7 @@ import PageTitle from "@/components/PageTitle"
 import { coverImage } from "@/services/wisp"
 import { getBooksHomeData } from "@/features/books/wispBooks"
 
-export default async function BookPage() {
+export default async function BooksPage() {
   const { posts } = await getBooksHomeData()
 
   return (
