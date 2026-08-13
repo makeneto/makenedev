@@ -1,27 +1,26 @@
-export interface ShowcaseItem {
-  id: number
-  created_at: string
-  slug: string
-  title: string
-  description: string
-  link: string
-  imageUrl: string
-  stacks: string[]
-}
+import { getWorkHomeData } from "@/features/works/wispWorks"
 
 export interface ShowcaseSectionProps {
   title: string
   viewAll?: string
-  items: ShowcaseItem[]
   isHomePage?: boolean
   isShowcase?: boolean
-  count?: number
 }
 
 export interface ShowcaseHeaderProps {
   title: string
   linkSection?: string
   textLink?: string
+  isShowcase?: boolean
+  count?: number
+}
+
+type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
+export interface ShowcaseContentProps {
+  posts: WorkPost[]
+  title: string
+  viewAll?: string
+  isHomePage: boolean
   isShowcase?: boolean
   count?: number
 }
