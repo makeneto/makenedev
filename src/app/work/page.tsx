@@ -1,10 +1,28 @@
 import React from "react"
+import { Metadata } from "next"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import WorkResume from "@/components/WorkResume"
 import GithubGraph from "@/components/github/GithubGraph"
 import PageTitle from "@/components/PageTitle"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "My Works | Makene Neto",
+  description:
+    "A living record of the things I've built, broken, and rebuilt along the way.",
+  alternates: {
+    canonical: `${SITE_URL}/work`,
+  },
+  openGraph: {
+    title: "My Works | Makene Neto",
+    description:
+      "A living record of the things I've built, broken, and rebuilt along the way.",
+    url: `${SITE_URL}/work`,
+    type: "website",
+  },
+}
 
 export default function WorkPage() {
   return (

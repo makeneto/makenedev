@@ -1,9 +1,25 @@
 import React from "react"
 
+import { Metadata } from "next"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import SetupResume from "@/components/setup/SetupResume"
 import SetupSection from "@/components/setup/SetupSection"
 import PageTitle from "@/components/PageTitle"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "My Setup | Makene Neto",
+  description: "Every device I use has earned its place through daily work.",
+  alternates: {
+    canonical: `${SITE_URL}/setup`,
+  },
+  openGraph: {
+    title: "My Setup | Makene Neto",
+    description: "Every device I use has earned its place through daily work.",
+    url: `${SITE_URL}/setup`,
+    type: "website",
+  },
+}
 
 export default function SetupPage() {
   return (

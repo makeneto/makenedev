@@ -1,11 +1,28 @@
-"use client"
 import React from "react"
+import { Metadata } from "next"
 
 import AboutResume from "@/components/about/AboutResume"
 import Timeline from "@/components/about/Timeline"
 import WorkExperience from "@/components/about/WorkExperience"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import PageTitle from "@/components/PageTitle"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "About Me | Makene Neto",
+  description:
+    "Front-end Developer specialized in building modern, responsive, and high-performance web applications.",
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
+  openGraph: {
+    title: "About Me | Makene Neto",
+    description:
+      "Front-end Developer specialized in building modern, responsive, and high-performance web applications.",
+    url: `${SITE_URL}/about`,
+    type: "website",
+  },
+}
 
 export default function AboutPage() {
   return (

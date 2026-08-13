@@ -1,4 +1,5 @@
 import React from "react"
+import { Metadata } from "next"
 import Image from "next/image"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
@@ -7,6 +8,22 @@ import ShowcaseHeader from "@/components/showcase-section/ShowcaseHeader"
 import PageTitle from "@/components/PageTitle"
 import { coverImage } from "@/services/wisp"
 import { getBooksHomeData } from "@/features/books/wispBooks"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "Books | Makene Neto",
+  description: "A living list of the books that passed by me and left a mark.",
+  alternates: {
+    canonical: `${SITE_URL}/books`,
+  },
+  openGraph: {
+    title: "Books | Makene Neto",
+    description:
+      "A living list of the books that passed by me and left a mark.",
+    url: `${SITE_URL}/books`,
+    type: "website",
+  },
+}
 
 export default async function BooksPage() {
   const { posts } = await getBooksHomeData()

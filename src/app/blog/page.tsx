@@ -6,6 +6,24 @@ import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
 import BlogResume from "@/components/blog/BlogResume"
 import PageTitle from "@/components/PageTitle"
+import { Metadata } from "next"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "My Blog | Makene Neto",
+  description:
+    "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
+  alternates: {
+    canonical: `${SITE_URL}/blog`,
+  },
+  openGraph: {
+    title: "My Blog | Makene Neto",
+    description:
+      "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
+    url: `${SITE_URL}/blog`,
+    type: "website",
+  },
+}
 
 export default function BlogPage() {
   return (
