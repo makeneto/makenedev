@@ -27,7 +27,7 @@ export function WorkContent({ post }: { post: BlogArticle }) {
             className="post-content work-content"
           />
 
-          <Engagement slug={post.slug} />
+          <Engagement post={post} basePath="work" />
         </div>
 
         <WorkAside post={post} />
