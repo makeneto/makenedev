@@ -2,14 +2,26 @@ import { Share2, ThumbsDown, ThumbsUp } from "lucide-react"
 import { useMediaQuery } from "react-responsive"
 
 import { Button } from "../ui/button"
-import useShareArticle from "@/hooks/useShareArticle"
 import useEngagement from "@/hooks/useEngagement"
 import ReusableTooltip from "../ui/ReusableTooltip"
+import useSharePost from "@/hooks/useSharePost"
+import { BlogArticle } from "@/services/wisp"
 
-export function Engagement({ slug }: { slug: string }) {
+interface EngagementProps {
+  post: BlogArticle
+  basePath: "blog" | "work"
+}
+
+export function Engagement({ post, basePath }: EngagementProps) {
+  const { title, slug } = post
   const { metrics, reaction, busy } = useEngagement({ slug })
-  const { handleNativeShare } = useShareArticle({ slug })
   const isMobile = useMediaQuery({ maxWidth: 640 })
+
+  const { handleNativeShare } = useSharePost({
+    title,
+    slug,
+    basePath,
+  })
 
   return (
     <section
