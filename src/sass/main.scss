@@ -3,7 +3,8 @@
 
 @use "typography/fonts";
 
-@use "./components/layout/blog";
+@use "./components/layout/blog-content";
+@use "./components/layout/work-content";
 
 @use "./components/ui/buttons";
 @use "./components/ui/tags";
@@ -18,6 +19,7 @@
 @use "./components/github-graph";
 @use "./components/header";
 @use "./components/navbar";
+@use "./components/posts";
 @use "./components/pricing";
 @use "./components/services";
 @use "./components/showcase-section";
