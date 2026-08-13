@@ -18,7 +18,7 @@ export default function BlogPage() {
       />
 
       <BlogArea>
-        <LastBlog vertical />
+        <LastBlog />
         <VerticalBlogList />
       </BlogArea>
       <BlogResume />
