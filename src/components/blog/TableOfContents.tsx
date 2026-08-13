@@ -16,7 +16,7 @@ export function TableOfContents({
   if (headings.length === 0) return null
 
   return (
-    <nav className="blog-toc">
+    <nav className="post-toc">
       <p>Index</p>
 
       <ul>
@@ -25,11 +25,11 @@ export function TableOfContents({
             <button
               type="button"
               onClick={() => onItemClick(heading.id)}
-              className={`blog-toc__item ${
+              className={`post-toc__item ${
                 activeId === heading.id ? "is-active" : ""
               }`}
             >
-              <span className="blog-toc__marker" />
+              <span className="post-toc__marker" />
               {heading.text}
             </button>
           </li>
