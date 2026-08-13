@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
-import { ArticleContent } from "@/components/blog/ArticleContent"
+import { WorkContent } from "@/components/work/WorkContent"
 import { getPostBySlug } from "@/features/works/wispWorks"
 import { buildPostMetadata } from "@/features/wisp/buildMetadata"
 
@@ -24,7 +24,7 @@ export default async function WorkPostPage({ params }: Props) {
 
   return (
     <main>
-      <ArticleContent post={post} />
+      <WorkContent post={post} />
     </main>
   )
 }
