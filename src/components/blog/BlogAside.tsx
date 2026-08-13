@@ -1,7 +1,9 @@
+import { useMemo } from "react"
+
+import PostAside from "../post/PostAside"
 import { BlogArticle } from "@/services/wisp"
 import { ArticleMeta } from "./ArticleMeta"
 import { TableOfContents } from "./TableOfContents"
-import { useMemo } from "react"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { useActiveHeading } from "@/hooks/useActiveHeading"
 
@@ -13,7 +15,7 @@ export default function BlogAside({ post }: { post: BlogArticle }) {
   const { activeId, activateHeading } = useActiveHeading(headings)
 
   return (
-    <aside className="post-aside">
+    <PostAside>
       <TableOfContents
         headings={headings}
         activeId={activeId}
@@ -21,6 +23,6 @@ export default function BlogAside({ post }: { post: BlogArticle }) {
       />
 
       <ArticleMeta post={post} />
-    </aside>
+    </PostAside>
   )
 }
