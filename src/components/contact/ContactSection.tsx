@@ -1,3 +1,5 @@
+"use client"
+
 import { ContactForm } from "./ContactForm"
 import { ContactSectionEmail } from "./ContactSectionEmail"
 import { ContactSectionHeader } from "./ContactSectionHeader"
