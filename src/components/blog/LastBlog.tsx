@@ -6,7 +6,7 @@ import BlogViews from "./BlogViews"
 import { getBlogHomeData } from "@/features/blog/wispBlog"
 import { coverImage } from "@/services/wisp"
 
-export default async function LastBlog({ isHome = false }: LastBlogProps) {
+export default async function LastBlog() {
   const { posts } = await getBlogHomeData()
   const featured = posts[0]
 
