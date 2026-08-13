@@ -31,20 +31,20 @@ export const footerLinks = [
     link: "/blog",
   },
   {
-    label: "Books",
-    link: "/books",
-  },
-  {
     label: "Stack",
     link: "/stack",
   },
   {
-    label: "Setup",
-    link: "/setup",
-  },
-  {
     label: "Contact",
     link: "/contact",
+  },
+  {
+    label: "Books",
+    link: "/books",
+  },
+  {
+    label: "Setup",
+    link: "/setup",
   },
 ]
 
