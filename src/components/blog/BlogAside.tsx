@@ -13,7 +13,7 @@ export default function BlogAside({ post }: { post: BlogArticle }) {
   const { activeId, activateHeading } = useActiveHeading(headings)
 
   return (
-    <aside className="blog-aside sticky top-10 h-fit">
+    <aside className="post-aside">
       <TableOfContents
         headings={headings}
         activeId={activeId}
