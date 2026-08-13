@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { ArticleContent } from "@/components/blog/ArticleContent"
-import { buildPostMetadata } from "@/features/postMetadata"
 import { getPostBySlug } from "@/features/works/wispWorks"
+import { buildPostMetadata } from "@/features/wisp/buildMetadata"
 
 type Props = { params: Promise<{ slug: string }> }
 
