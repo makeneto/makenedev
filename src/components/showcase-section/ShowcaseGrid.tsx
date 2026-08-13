@@ -1,17 +1,17 @@
-import type { ShowcaseItem } from "@/interfaces/showcase"
 import ShowcaseCard from "./ShowcaseCard"
+import type { getWorkHomeData } from "@/features/works/wispWorks"
+
+type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
 
 interface ShowcaseGridProps {
-  items: ShowcaseItem[]
+  posts: WorkPost[]
 }
 
-const ShowcaseGrid = ({ items }: ShowcaseGridProps) => {
+const ShowcaseGrid = ({ posts }: ShowcaseGridProps) => {
   return (
     <ul className="showCaseGrid" role="list">
-      {items.map((item) => (
-        <li key={item.id}>
-          <ShowcaseCard item={item} />
-        </li>
+      {posts.map((work) => (
+        <ShowcaseCard key={work.id} post={work} />
       ))}
     </ul>
   )
