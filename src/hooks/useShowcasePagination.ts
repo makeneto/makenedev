@@ -2,20 +2,21 @@ import { usePagination } from "./usePagination"
 import { useScrollOnPaginate } from "./useScrollOnPaginate"
 
 interface UseShowcasePaginationProps<T> {
-  items: T[]
+  posts: T[]
   isHomePage: boolean
 }
 
 export function useShowcasePagination<T>({
-  items,
+  posts,
   isHomePage,
 }: UseShowcasePaginationProps<T>) {
-  const itemsPerPage = isHomePage ? 2 : 6
+  const postItems = isHomePage ? 2 : 6
 
-  const { page, totalPages, visibleItems, nextPage, prevPage } = usePagination({
-    items,
-    itemsPerPage,
-  })
+  const { page, totalPages, visiblePosts, nextPage, prevPage } =
+    usePagination<T>({
+      posts,
+      postItems,
+    })
 
   const { sectionRef, markPagination } = useScrollOnPaginate({
     page,
@@ -38,7 +39,7 @@ export function useShowcasePagination<T>({
     sectionRef,
     page,
     totalPages,
-    visibleItems,
+    visiblePosts,
     handleNext,
     handlePrev,
     showControls,
