@@ -1,4 +1,3 @@
-// src/hooks/useActiveHeading.ts
 import { Heading } from "@/interfaces/blog"
 import { useCallback, useEffect, useRef, useState } from "react"
 
@@ -18,8 +17,6 @@ export function useActiveHeading(headings: Heading[]) {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // Ignora atualizações do observer enquanto o scroll
-        // for causado por clique no índice (evita "flicker" nos itens do meio)
         if (isProgrammaticScroll.current) return
 
         const visible = entries
@@ -45,7 +42,6 @@ export function useActiveHeading(headings: Heading[]) {
     const el = document.getElementById(id)
     if (!el) return
 
-    // trava o observer, define o item ativo na hora do clique
     isProgrammaticScroll.current = true
     setActiveId(id)
 
@@ -56,10 +52,8 @@ export function useActiveHeading(headings: Heading[]) {
       window.removeEventListener("scrollend", release)
     }
 
-    // "scrollend" é o sinal mais confiável de que o scroll suave terminou
     window.addEventListener("scrollend", release, { once: true })
 
-    // fallback para browsers sem suporte a "scrollend" (ex: Safari mais antigo)
     fallbackTimeout.current = setTimeout(release, 1000)
 
     el.scrollIntoView({ behavior: "smooth", block: "start" })
