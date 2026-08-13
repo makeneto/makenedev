@@ -18,13 +18,13 @@ export function ArticleContent({ post }: { post: BlogArticle }) {
 
   return (
     <article>
-      <BlogIntro post={post} />
+      <BlogIntro post={post} variant="blog" />
 
       <section className="mt-20 relative grid sm:grid-cols-[70%_auto] gap-20 xl:gap-15">
         <div className="relative">
           <div
             dangerouslySetInnerHTML={{ __html: html }}
-            className="blog-content"
+            className="post-content blog-content"
           />
 
           <Engagement slug={post.slug} />
