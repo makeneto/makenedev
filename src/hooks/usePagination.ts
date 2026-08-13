@@ -1,24 +1,20 @@
 import { useMemo, useState } from "react"
 
 interface UsePaginationProps<T> {
-  items: T[]
-  itemsPerPage: number
+  posts: T[]
+  postItems: number
 }
 
-export function usePagination<T>({
-  items,
-  itemsPerPage,
-}: UsePaginationProps<T>) {
-  // Use 1-based pages to match UI controls
+export function usePagination<T>({ posts, postItems }: UsePaginationProps<T>) {
   const [page, setPage] = useState(1)
 
-  const totalPages = Math.max(1, Math.ceil(items.length / itemsPerPage))
+  const totalPages = Math.max(1, Math.ceil(posts.length / postItems))
 
-  const visibleItems = useMemo(() => {
-    const start = (page - 1) * itemsPerPage
+  const visiblePosts = useMemo(() => {
+    const start = (page - 1) * postItems
 
-    return items.slice(start, start + itemsPerPage)
-  }, [items, page, itemsPerPage])
+    return posts.slice(start, start + postItems)
+  }, [posts, page, postItems])
 
   const nextPage = () => {
     setPage((prev) => Math.min(totalPages, prev + 1))
@@ -31,7 +27,7 @@ export function usePagination<T>({
   return {
     page,
     totalPages,
-    visibleItems,
+    visiblePosts,
     nextPage,
     prevPage,
   }
