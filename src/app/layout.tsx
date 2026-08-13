@@ -14,6 +14,7 @@ import "@/css/index.css"
 import Providers from "@/components/Providers"
 import SiteShell from "@/components/SiteShell"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { SITE_URL } from "@/constants/siteUrl"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -85,7 +86,7 @@ export const metadata: Metadata = {
     "CSS",
     "AI",
   ],
-  authors: [{ name: "Makene Neto", url: "https://makenedev.vercel.app" }],
+  authors: [{ name: "Makene Neto", url: SITE_URL }],
   openGraph: {
     title: "Makene Neto",
     description:
