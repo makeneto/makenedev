@@ -1,11 +1,27 @@
-"use client"
-
 import React from "react"
+import { Metadata } from "next"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import StackSection from "@/components/stack/StackSection"
 import StackResume from "@/components/stack/StackResume"
 import PageTitle from "@/components/PageTitle"
+import { SITE_URL } from "@/constants/siteUrl"
+
+export const metadata: Metadata = {
+  title: "My Stack | Makene Neto",
+  description:
+    "Front-end is where I started and still feel at home, but curiosity expanded my stack over time.",
+  alternates: {
+    canonical: `${SITE_URL}/stack`,
+  },
+  openGraph: {
+    title: "My Stack | Makene Neto",
+    description:
+      "Front-end is where I started and still feel at home, but curiosity expanded my stack over time.",
+    url: `${SITE_URL}/stack`,
+    type: "website",
+  },
+}
 
 export default function StackPage() {
   return (

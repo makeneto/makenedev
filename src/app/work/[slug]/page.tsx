@@ -2,10 +2,20 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { WorkContent } from "@/components/work/WorkContent"
-import { getPostBySlug } from "@/features/works/wispWorks"
+import { getPostBySlug, getPosts } from "@/features/works/wispWorks"
 import { buildPostMetadata } from "@/features/wisp/buildMetadata"
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd"
 
 type Props = { params: Promise<{ slug: string }> }
+
+export const dynamicParams = true
+
+export const revalidate = 600
+
+export async function generateStaticParams() {
+  const posts = await getPosts()
+  return posts.map((post) => ({ slug: post.slug }))
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
@@ -23,8 +33,12 @@ export default async function WorkPostPage({ params }: Props) {
   if (!post) notFound()
 
   return (
-    <main>
-      <WorkContent post={post} />
-    </main>
+    <>
+      <ArticleJsonLd post={post} type="work" />
+
+      <main>
+        <WorkContent post={post} />
+      </main>
+    </>
   )
 }
