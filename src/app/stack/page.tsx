@@ -7,7 +7,7 @@ import StackSection from "@/components/stack/StackSection"
 import StackResume from "@/components/stack/StackResume"
 import PageTitle from "@/components/PageTitle"
 
-export default function Stack() {
+export default function StackPage() {
   return (
     <React.Fragment>
       <PageTitle title="My Stack" />
@@ -24,9 +24,3 @@ export default function Stack() {
     </React.Fragment>
   )
 }
-
-// Invalid DOM property `clipPath`. Did you mean `clipPath`?
-// Invalid DOM property `clipRule`. Did you mean `clipRule`?
-// Invalid DOM property `font-family`. Did you mean `fontFamily`?
-// Invalid DOM property `font-size`. Did you mean `fontSize`?
-// Invalid DOM property `letter-spacing`. Did you mean `letterSpacing`?
