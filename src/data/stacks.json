@@ -9,7 +9,7 @@
           "name": "JavaScript",
           "category": ["Language"],
           "certificate": "https://ude.my/UC-942380f7-699f-4f59-a2f2-648e1b5b4c98",
-          "learn": "https://github.com/makeneto/clean-code-javascript",
+          "learn": "clean-code-javascript",
           "exercises": null,
           "website": "https://developer.mozilla.org/docs/Web/JavaScript"
         },
@@ -18,7 +18,7 @@
           "name": "React",
           "category": ["Library"],
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-reactjs",
+          "learn": "learning-reactjs",
           "exercises": null,
           "website": "https://react.dev"
         },
@@ -27,7 +27,7 @@
           "name": "TypeScript",
           "category": ["Language"],
           "certificate": "https://www.udemy.com/certificate/UC-38e8a080-e0de-4239-ba46-4978f4efcc43/",
-          "learn": "https://github.com/makeneto/learning-typescript",
+          "learn": "learning-typescript",
           "exercises": null,
           "website": "https://www.typescriptlang.org"
         },
@@ -36,7 +36,7 @@
           "name": "Next.js",
           "category": ["Framework"],
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-nextjs",
+          "learn": "learning-nextjs",
           "exercises": null,
           "website": "https://nextjs.org"
         },
@@ -45,7 +45,7 @@
           "name": "Redux",
           "category": ["Library"],
           "certificate": "https://www.udemy.com/certificate/UC-e5180ccf-0f64-48b7-8c0d-c52c647e7582",
-          "learn": "https://github.com/makeneto/learning-redux",
+          "learn": "learning-redux",
           "exercises": null,
           "website": "https://redux.js.org"
         },
@@ -63,7 +63,7 @@
           "name": "Sass",
           "category": ["Language"],
           "certificate": "https://www.udemy.com/certificate/UC-dc45983d-db6c-4949-a6ff-e3e230fafe4a/",
-          "learn": "https://github.com/makeneto/learning-sass",
+          "learn": "learning-sass",
           "exercises": null,
           "website": "https://sass-lang.com"
         },
@@ -138,8 +138,8 @@
           "name": "PostgreSQL",
           "category": ["Database"],
           "certificate": "?",
-          "learn": "https://github.com/makeneto/learning-postgresql",
-          "exercises": "https://github.com/makeneto/exercices-postgresql",
+          "learn": "learning-postgresql",
+          "exercises": "exercices-postgresql",
           "website": "https://www.postgresql.org"
         },
         {
