@@ -1,10 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { formatDate } from "@/utils/formatDate"
 import BlogViews from "./BlogViews"
 import { getBlogHomeData } from "@/features/blog/wispBlog"
 import { coverImage } from "@/services/wisp"
+import { formatLongDate } from "@/utils/formatDate"
 
 export default async function LastBlog() {
   const { posts } = await getBlogHomeData()
@@ -28,7 +28,7 @@ export default async function LastBlog() {
           </div>
 
           <div className="flex items-center justify-between">
-            <span>{formatDate(publishedAt || createdAt)}</span>
+            <span>{formatLongDate(publishedAt || createdAt)}</span>
             <BlogViews slug={slug} />
           </div>
         </section>

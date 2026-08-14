@@ -2,7 +2,7 @@ import { FileText } from "lucide-react"
 import Link from "next/link"
 
 import { BlogPost } from "@/services/wisp"
-import { formatDate } from "@/utils/formatDate"
+import { formatLongDate } from "@/utils/formatDate"
 
 export default function BlogRow({ post }: { post: BlogPost }) {
   const { slug, title, publishedAt, createdAt } = post
@@ -18,7 +18,7 @@ export default function BlogRow({ post }: { post: BlogPost }) {
       <article>
         <h2 className="line-clamp-2">{title}</h2>
 
-        <p>{formatDate(publishedAt || createdAt)}</p>
+        <p>{formatLongDate(publishedAt || createdAt)}</p>
       </article>
     </Link>
   )
