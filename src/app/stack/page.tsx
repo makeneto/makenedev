@@ -1,11 +1,11 @@
 import React from "react"
 import { Metadata } from "next"
 
+import { SITE_URL } from "@/constants/siteUrl"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import StackSection from "@/components/stack/StackSection"
 import StackResume from "@/components/stack/StackResume"
 import PageTitle from "@/components/PageTitle"
-import { SITE_URL } from "@/constants/siteUrl"
 
 export const metadata: Metadata = {
   title: "My Stack | Makene Neto",

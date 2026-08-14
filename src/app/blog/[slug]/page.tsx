@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+
 import { notFound } from "next/navigation"
 import { getPostBySlug, getPosts } from "@/features/blog/wispBlog"
 import { ArticleContent } from "@/components/blog/ArticleContent"

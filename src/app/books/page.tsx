@@ -2,13 +2,13 @@ import React from "react"
 import { Metadata } from "next"
 import Image from "next/image"
 
+import { SITE_URL } from "@/constants/siteUrl"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import BookResume from "@/components/books/BookResume"
 import ShowcaseHeader from "@/components/showcase-section/ShowcaseHeader"
 import PageTitle from "@/components/PageTitle"
 import { coverImage } from "@/services/wisp"
 import { getBooksHomeData } from "@/features/books/wispBooks"
-import { SITE_URL } from "@/constants/siteUrl"
 
 export const metadata: Metadata = {
   title: "Books | Makene Neto",
