@@ -1,7 +1,8 @@
 "use client"
 
-import { SITE_URL } from "@/constants/siteUrl"
 import { useEffect, useState } from "react"
+
+import { site } from "@/constants/site"
 
 export interface ShareProps {
   title?: string
@@ -15,7 +16,7 @@ export default function useSharePost({
   basePath = "blog",
 }: ShareProps) {
   const [canNativeShare, setCanNativeShare] = useState(false)
-  const url = `${SITE_URL}/${basePath}/${slug}`
+  const url = `${site.url}/${basePath}/${slug}`
 
   useEffect(() => {
     setCanNativeShare(typeof navigator !== "undefined" && !!navigator.share)
@@ -25,7 +26,7 @@ export default function useSharePost({
     if (canNativeShare) {
       try {
         await navigator.share({
-          title: `${title} | Makene Neto`,
+          title: `${title} | ${site.dev}`,
           url,
         })
       } catch {}

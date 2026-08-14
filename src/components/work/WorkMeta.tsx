@@ -5,6 +5,7 @@ import React from "react"
 
 import { BlogArticle } from "@/services/wisp"
 import useEngagement from "@/hooks/useEngagement"
+import { site } from "@/constants/site"
 
 interface ArticleMetaProps {
   post: BlogArticle
@@ -21,13 +22,13 @@ export function WorkMeta({ post }: ArticleMetaProps) {
 
         <Link href="/about" className="flex items-center gap-2">
           <Image
-            src="https://github.com/makeneto.png"
+            src={`${site.github}.png`}
             alt="Makene's profile"
             width={20}
             height={20}
             className="rounded-full"
           />
-          <p>Makene Neto</p>
+          <p>{site.dev}</p>
         </Link>
       </div>
 

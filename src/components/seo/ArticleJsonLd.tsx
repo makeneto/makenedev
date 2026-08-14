@@ -1,16 +1,12 @@
+import { site } from "@/constants/site"
 import { BlogArticle } from "@/services/wisp"
 
 type ArticleJsonLdProps = {
   post: BlogArticle
-  authorName?: string
   type?: "blog" | "work"
 }
 
-export function ArticleJsonLd({
-  post,
-  authorName = "Makene Neto",
-  type = "blog",
-}: ArticleJsonLdProps) {
+export function ArticleJsonLd({ post, type = "blog" }: ArticleJsonLdProps) {
   const { title, description, image, publishedAt, updatedAt } = post
 
   const jsonLd = {
@@ -23,7 +19,7 @@ export function ArticleJsonLd({
     ...(updatedAt && { dateModified: updatedAt }),
     author: {
       "@type": "Person",
-      name: authorName,
+      name: site.dev,
     },
   }
 

@@ -1,3 +1,5 @@
+import { site } from "@/constants/site"
+
 type Experience = {
   company: string
   role: string
@@ -12,7 +14,7 @@ type Profile = {
 }
 
 export const profile: Profile = {
-  name: "Makene Neto",
+  name: site.dev,
   title: "Software Engineer",
   experiences: [
     {
