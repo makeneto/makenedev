@@ -7,20 +7,20 @@ import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
 import BlogResume from "@/components/blog/BlogResume"
 import PageTitle from "@/components/PageTitle"
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
-  title: "My Blog | Makene Neto",
+  title: `My Blog | ${site.dev}`,
   description:
     "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
   alternates: {
-    canonical: `${SITE_URL}/blog`,
+    canonical: `${site.url}/blog`,
   },
   openGraph: {
-    title: "My Blog | Makene Neto",
+    title: `My Blog | ${site.dev}`,
     description:
       "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
-    url: `${SITE_URL}/blog`,
+    url: `${site.url}/blog`,
     type: "website",
   },
 }

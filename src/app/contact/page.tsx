@@ -1,22 +1,22 @@
 import React from "react"
 import { Metadata } from "next"
 
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 import ContactSection from "@/components/contact/ContactSection"
 import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
-  title: "Contact Me | Makene Neto",
+  title: `Contact Me | ${site.dev}`,
   description:
     "I build scalable, high-performance digital solutions with clean, maintainable architecture and a strong focus on efficiency and measurable impact.",
   alternates: {
-    canonical: `${SITE_URL}/contact`,
+    canonical: `${site.url}/contact`,
   },
   openGraph: {
-    title: "Contact Me | Makene Neto",
+    title: `Contact Me | ${site.dev}`,
     description:
       "I build scalable, high-performance digital solutions with clean, maintainable architecture and a strong focus on efficiency and measurable impact.",
-    url: `${SITE_URL}/contact`,
+    url: `${site.url}/contact`,
     type: "website",
   },
 }

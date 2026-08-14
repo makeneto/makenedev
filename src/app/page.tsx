@@ -8,20 +8,18 @@ import PricingSection from "@/components/pricing/PricingSection"
 import BlogArea from "@/components/blog/BlogArea"
 import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
-  title: "Makene Neto",
-  description:
-    "Makene Neto — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.",
+  title: site.dev,
+  description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
   alternates: {
-    canonical: SITE_URL,
+    canonical: site.url,
   },
   openGraph: {
-    title: "My Works | Makene Neto",
-    description:
-      "Makene Neto — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.",
-    url: SITE_URL,
+    title: `My Works | ${site.dev}`,
+    description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
+    url: site.url,
     type: "website",
   },
 }

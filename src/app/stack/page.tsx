@@ -1,24 +1,24 @@
 import React from "react"
 import { Metadata } from "next"
 
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import StackSection from "@/components/stack/StackSection"
 import StackResume from "@/components/stack/StackResume"
 import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
-  title: "My Stack | Makene Neto",
+  title: `My Stack | ${site.dev}`,
   description:
     "Front-end is where I started and still feel at home, but curiosity expanded my stack over time.",
   alternates: {
-    canonical: `${SITE_URL}/stack`,
+    canonical: `${site.url}/stack`,
   },
   openGraph: {
-    title: "My Stack | Makene Neto",
+    title: `My Stack | ${site.dev}`,
     description:
       "Front-end is where I started and still feel at home, but curiosity expanded my stack over time.",
-    url: `${SITE_URL}/stack`,
+    url: `${site.url}/stack`,
     type: "website",
   },
 }
