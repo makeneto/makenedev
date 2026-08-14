@@ -1,4 +1,4 @@
-import { ContributionWeek, MonthPosition } from "@/interfaces/githubTypes"
+import { ContributionWeek, MonthPosition } from "@/interfaces/github-types"
 
 export function getMonthPositions(weeks: ContributionWeek[]): MonthPosition[] {
   const monthFormatter = new Intl.DateTimeFormat("en-US", { month: "short" })

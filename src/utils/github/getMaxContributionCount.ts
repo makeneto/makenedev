@@ -1,4 +1,4 @@
-import { ContributionWeek } from "@/interfaces/githubTypes"
+import { ContributionWeek } from "@/interfaces/github-types"
 
 export function getMaxContributionCount(weeks: ContributionWeek[]): number {
   const counts = weeks
