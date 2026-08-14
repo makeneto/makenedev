@@ -3,17 +3,10 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import {
-  formatContributionDate,
-  formatShortDate,
-  getContributionLevel,
-  type ContributionDay,
-} from "@/lib/github-contributions"
-
-type ContributionCellProps = {
-  day: ContributionDay
-  max: number
-}
+import { ContributionCellProps } from "@/interfaces/githubTypes"
+import { formatShortDate } from "@/utils/formatDate"
+import { getContributionLevel } from "@/utils/github/getContributionLevel"
+import { formatContributionDate } from "@/utils/github/getMaxContributionCount"
 
 export function ContributionCell({ day, max }: ContributionCellProps) {
   const level = getContributionLevel(day.contributionCount, max)
