@@ -16,7 +16,9 @@ interface PostHeaderProps {
 
 export default function PostHeader({ post, variant }: PostHeaderProps) {
   const isMobile = useMediaQuery({ maxWidth: 884 })
-  const date = post.publishedAt || post.createdAt
+
+  const { publishedAt, createdAt, slug } = post
+  const date = publishedAt || createdAt
 
   return (
     <header className="grid gap-5 sm:gap-5">
@@ -62,7 +64,7 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
 
             <Button variant="ghost">
               <Link
-                href="#"
+                href={`${site.github}/${slug}`}
                 className="flex items-center gap-2 weak-text weak-hover"
               >
                 <Code2 size={16} strokeWidth={1.8} />
