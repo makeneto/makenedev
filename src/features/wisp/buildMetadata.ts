@@ -22,7 +22,7 @@ export function buildPostMetadata(
   }
 
   return {
-    title: `${post.title} | ${site.dev}`,
+    title: post.title,
     description: post.description || undefined,
     openGraph: {
       title: `${post.title} | ${site.dev}`,
