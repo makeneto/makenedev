@@ -7,7 +7,7 @@ import { ContributionCell } from "./ContributionCell"
 import { ContributionLegend } from "./ContributionLegend"
 import { ContributionMonths } from "./ContributionMonths"
 import { getMaxContributionCount } from "@/utils/github/getMaxContributionCount"
-import { ContributionWeek } from "@/interfaces/githubTypes"
+import { ContributionWeek } from "@/interfaces/github-types"
 
 type ContributionCalendarProps = {
   weeks: ContributionWeek[]
