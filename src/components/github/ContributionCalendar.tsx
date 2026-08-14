@@ -6,8 +6,8 @@ import { useScrollToEnd } from "@/hooks/use-scroll-to-end"
 import { ContributionCell } from "./ContributionCell"
 import { ContributionLegend } from "./ContributionLegend"
 import { ContributionMonths } from "./ContributionMonths"
-import { ContributionWeek } from "@/features/github/api"
-import { getMaxContributionCount } from "@/lib/github-contributions"
+import { getMaxContributionCount } from "@/utils/github/getMaxContributionCount"
+import { ContributionWeek } from "@/interfaces/githubTypes"
 
 type ContributionCalendarProps = {
   weeks: ContributionWeek[]
@@ -60,7 +60,7 @@ export function ContributionCalendar({
 
         <div className="calendar-footer">
           <span className="hidden sm:block">
-            {total.toLocaleString("en")} contributions in the last year
+            {total.toLocaleString("en-US")} contributions in the last year
           </span>
 
           <ContributionLegend />
