@@ -1436,7 +1436,7 @@ textarea {
 .post-content img {
   width: 100%;
   height: 20rem;
-  border-radius: calc(var(--radius) * 1.4);
+  border-radius: 0.6rem;
   object-fit: cover;
 }
 @media (width <= 1280px) {
@@ -1446,6 +1446,7 @@ textarea {
 }
 @media (width <= 640px) {
   .post-content img {
+    border-radius: 0.6rem;
     height: 15rem;
   }
 }
