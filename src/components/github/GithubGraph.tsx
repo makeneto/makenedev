@@ -1,6 +1,6 @@
 import { HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getQueryClient } from "@/lib/get-query-client"
-import { contributionsQueryOptions } from "@/features/github/queries"
+import { contributionsQueryOptions } from "@/features/github/github-queries"
 import { GithubGraphClient } from "./GithubGraphClient"
 
 export default async function GithubGraph() {
