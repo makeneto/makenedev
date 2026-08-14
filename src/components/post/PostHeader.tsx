@@ -7,6 +7,7 @@ import { CalendarDays, Code2, ExternalLink } from "lucide-react"
 import { BlogArticle } from "@/services/wisp"
 import { formatDate } from "@/utils/formatDate"
 import { Button } from "../ui/button"
+import { site } from "@/constants/site"
 
 interface PostHeaderProps {
   post: BlogArticle
@@ -23,14 +24,14 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
         {isMobile ? (
           <Link href="/about" className="flex items-center gap-2">
             <Image
-              src="https://github.com/makeneto.png"
+              src={`${site.github}.png`}
               alt="Makene's profile"
               width={20}
               height={20}
               className="rounded-full"
             />
 
-            <p>Makene Neto</p>
+            <p>{site.dev}</p>
           </Link>
         ) : (
           <span className="flex items-center gap-1">

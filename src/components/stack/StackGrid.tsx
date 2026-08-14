@@ -12,7 +12,7 @@ export default function StackGrid({ stacks }: StackGridProps) {
         const Icon = stackIconMap[id]
 
         if (!Icon) {
-          console.warn(`[StackGrid] Icon não encontrado para id: "${id}"`)
+          console.warn(`[StackGrid] Icon not found for id: "${id}"`)
           return null
         }
 

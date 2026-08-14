@@ -4,6 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 
+import { site } from "@/constants/site"
+
 export default function HomeHeader() {
   const isMobile = useMediaQuery({ maxWidth: 884 })
 
@@ -13,7 +15,7 @@ export default function HomeHeader() {
         <h1 translate="no">Hey, there!</h1>
         <Image
           src="/assets/hero-avatar.webp"
-          alt="Makene Neto"
+          alt={site.dev}
           width={1000}
           height={1200}
         />

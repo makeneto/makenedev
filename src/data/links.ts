@@ -1,3 +1,5 @@
+import { site } from "@/constants/site"
+
 export const navLinks = [
   {
     label: "About",
@@ -80,11 +82,11 @@ export const contacts = [
 export const profileLinks = [
   {
     label: "Github",
-    link: "https://github.com/makeneto",
+    link: site.github,
   },
   {
     label: "Email",
-    link: "mailto:makenedev@gmail.com",
+    link: `mailto:${site.email}`,
   },
   {
     label: "LinkedIn",

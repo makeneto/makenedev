@@ -1,3 +1,4 @@
+import { site } from "@/constants/site"
 import type { Metadata } from "next"
 
 type WispPost = {
@@ -14,18 +15,17 @@ export function buildPostMetadata(
   post: WispPost,
   options: BuildMetadataOptions,
 ): Metadata {
-  const siteName = "Makenedev"
   const { notFoundTitle = "Content not found" } = options
 
   if (!post) {
-    return { title: `${notFoundTitle} — ${siteName}` }
+    return { title: `${notFoundTitle} | ${site.dev}` }
   }
 
   return {
-    title: post.title,
+    title: `${post.title} | ${site.dev}`,
     description: post.description || undefined,
     openGraph: {
-      title: post.title,
+      title: `${post.title} | ${site.dev}`,
       description: post.description || undefined,
       images: post.image ? [post.image] : undefined,
     },

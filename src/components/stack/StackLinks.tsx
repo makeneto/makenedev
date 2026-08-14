@@ -1,6 +1,7 @@
 import { LinkIcon, Award, BookOpen, Dumbbell } from "lucide-react"
 import Link from "next/link"
 import ReusableTooltip from "../ui/ReusableTooltip"
+import { site } from "@/constants/site"
 
 interface StackLinksProps {
   certificate: null | string
@@ -34,7 +35,11 @@ export default function StackLinks({
 
       {learn && (
         <ReusableTooltip side="bottom" content="Learn with Makene">
-          <Link href={learn} target="_blank" rel="noopener noreferrer">
+          <Link
+            href={`${site.github}/${learn}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
           </Link>
         </ReusableTooltip>

@@ -2,10 +2,10 @@
 
 import { useEffect } from "react"
 
+import { site } from "@/constants/site"
+
 export function useTitle(title?: string) {
   useEffect(() => {
-    const baseTitle = "Makene Neto"
-
-    document.title = title ? `${title} | ${baseTitle}` : baseTitle
+    document.title = title ? `${title} | ${site.dev}` : site.dev
   }, [title])
 }
