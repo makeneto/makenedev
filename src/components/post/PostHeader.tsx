@@ -5,9 +5,9 @@ import { RiArrowRightSLine } from "@remixicon/react"
 import { CalendarDays, Code2, ExternalLink } from "lucide-react"
 
 import { BlogArticle } from "@/services/wisp"
-import { formatDate } from "@/utils/formatDate"
 import { Button } from "../ui/button"
 import { site } from "@/constants/site"
+import { formatLongDate } from "@/utils/formatDate"
 
 interface PostHeaderProps {
   post: BlogArticle
@@ -44,7 +44,7 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
         )}
 
         <span className="weak-text flex items-center gap-2">
-          <CalendarDays size={14} /> {date ? formatDate(date) : "No data"}
+          <CalendarDays size={14} /> {date ? formatLongDate(date) : "No data"}
         </span>
       </div>
 
