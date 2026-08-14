@@ -1,8 +1,10 @@
+import { getContributions } from "@/utils/github/getContributions"
 import { queryOptions } from "@tanstack/react-query"
-import { getContributions } from "./github-api"
 
 export const contributionsQueryOptions = queryOptions({
   queryKey: ["github-contributions"],
   queryFn: getContributions,
-  staleTime: 1000 * 60 * 60,
+  staleTime: 1000 * 60 * 10,
+  refetchOnWindowFocus: false,
+  refetchOnReconnect: false,
 })
