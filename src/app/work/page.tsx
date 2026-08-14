@@ -1,12 +1,12 @@
 import React from "react"
 import { Metadata } from "next"
 
+import { SITE_URL } from "@/constants/siteUrl"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import WorkResume from "@/components/WorkResume"
 import GithubGraph from "@/components/github/GithubGraph"
 import PageTitle from "@/components/PageTitle"
-import { SITE_URL } from "@/constants/siteUrl"
 
 export const metadata: Metadata = {
   title: "My Works | Makene Neto",

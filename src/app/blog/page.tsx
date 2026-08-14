@@ -1,4 +1,5 @@
 import React from "react"
+import { Metadata } from "next"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import BlogArea from "@/components/blog/BlogArea"
@@ -6,7 +7,6 @@ import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
 import BlogResume from "@/components/blog/BlogResume"
 import PageTitle from "@/components/PageTitle"
-import { Metadata } from "next"
 import { SITE_URL } from "@/constants/siteUrl"
 
 export const metadata: Metadata = {

@@ -1,9 +1,9 @@
 import React from "react"
 import { Metadata } from "next"
 
+import { SITE_URL } from "@/constants/siteUrl"
 import ContactSection from "@/components/contact/ContactSection"
 import PageTitle from "@/components/PageTitle"
-import { SITE_URL } from "@/constants/siteUrl"
 
 export const metadata: Metadata = {
   title: "Contact Me | Makene Neto",
