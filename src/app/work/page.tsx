@@ -9,14 +9,14 @@ import GithubGraph from "@/components/github/GithubGraph"
 import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
-  title: "My Works | Makene Neto",
+  title: "My Work | Makene Neto",
   description:
     "A living record of the things I've built, broken, and rebuilt along the way.",
   alternates: {
     canonical: `${SITE_URL}/work`,
   },
   openGraph: {
-    title: "My Works | Makene Neto",
+    title: "My Work | Makene Neto",
     description:
       "A living record of the things I've built, broken, and rebuilt along the way.",
     url: `${SITE_URL}/work`,
