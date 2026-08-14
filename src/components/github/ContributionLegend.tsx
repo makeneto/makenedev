@@ -1,4 +1,4 @@
-import { CONTRIBUTION_LEVELS } from "@/lib/github-contributions"
+import { CONTRIBUTION_LEVELS } from "@/constants/githubConstants"
 
 export function ContributionLegend() {
   return (
