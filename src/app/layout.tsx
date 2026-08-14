@@ -105,7 +105,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-US"
       suppressHydrationWarning
       className={`${inter.variable} ${anton.variable} ${antonio.variable} ${playfairDisplay.variable} ${roboto.variable} ${jetbrainsMono.variable}`}
     >
