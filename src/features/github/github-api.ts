@@ -23,7 +23,7 @@ export async function fetchContributionsFromGitHub(): Promise<ContributionsData>
       variables: { login: "makeneto", from, to },
     }),
     next: {
-      revalidate: 3600,
+      revalidate: 1200,
       tags: ["github-contributions"],
     },
   })

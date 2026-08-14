@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { fetchContributionsFromGitHub } from "@/features/github/github-api"
 
-export const revalidate = 3600
+export const revalidate = 1200
 
 export async function GET() {
   try {
