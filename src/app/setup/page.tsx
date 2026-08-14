@@ -1,22 +1,22 @@
 import React from "react"
 import { Metadata } from "next"
 
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import SetupResume from "@/components/setup/SetupResume"
 import SetupSection from "@/components/setup/SetupSection"
 import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
-  title: "My Setup | Makene Neto",
+  title: `My Setup | ${site.dev}`,
   description: "Every device I use has earned its place through daily work.",
   alternates: {
-    canonical: `${SITE_URL}/setup`,
+    canonical: `${site.url}/setup`,
   },
   openGraph: {
-    title: "My Setup | Makene Neto",
+    title: `My Setup | ${site.dev}`,
     description: "Every device I use has earned its place through daily work.",
-    url: `${SITE_URL}/setup`,
+    url: `${site.url}/setup`,
     type: "website",
   },
 }

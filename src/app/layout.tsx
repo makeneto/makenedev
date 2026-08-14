@@ -14,7 +14,7 @@ import "@/css/index.css"
 import Providers from "@/components/Providers"
 import SiteShell from "@/components/SiteShell"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,13 +58,12 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Makene Neto",
-    template: "%s | Makene Neto",
+    default: site.dev,
+    template: `%s | ${site.dev}`,
   },
-  description:
-    "Makene Neto — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.",
+  description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
   keywords: [
-    "Makene Neto",
+    site.dev,
     "Makene",
     "Makita",
     "Makenedev",
@@ -86,11 +85,11 @@ export const metadata: Metadata = {
     "CSS",
     "AI",
   ],
-  authors: [{ name: "Makene Neto", url: SITE_URL }],
+  authors: [{ name: site.dev, url: site.url }],
   openGraph: {
-    title: "Makene Neto",
+    title: site.dev,
     description:
-      "Makene Neto — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.",
+      `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
     url: "https://i.postimg.cc/J7SXXCzR/makenedev.png",
   },

@@ -2,7 +2,7 @@ import React from "react"
 import { Metadata } from "next"
 import Image from "next/image"
 
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import BookResume from "@/components/books/BookResume"
 import ShowcaseHeader from "@/components/showcase-section/ShowcaseHeader"
@@ -11,16 +11,16 @@ import { coverImage } from "@/services/wisp"
 import { getBooksHomeData } from "@/features/books/wispBooks"
 
 export const metadata: Metadata = {
-  title: "Books | Makene Neto",
+  title: `Books | ${site.dev}`,
   description: "A living list of the books that passed by me and left a mark.",
   alternates: {
-    canonical: `${SITE_URL}/books`,
+    canonical: `${site.url}/books`,
   },
   openGraph: {
-    title: "Books | Makene Neto",
+    title: `Books | ${site.dev}`,
     description:
       "A living list of the books that passed by me and left a mark.",
-    url: `${SITE_URL}/books`,
+    url: `${site.url}/books`,
     type: "website",
   },
 }

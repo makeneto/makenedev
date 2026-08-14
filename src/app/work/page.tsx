@@ -1,7 +1,7 @@
 import React from "react"
 import { Metadata } from "next"
 
-import { SITE_URL } from "@/constants/siteUrl"
+import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import WorkResume from "@/components/WorkResume"
@@ -9,17 +9,17 @@ import GithubGraph from "@/components/github/GithubGraph"
 import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
-  title: "My Work | Makene Neto",
+  title: `My Work | ${site.dev}`,
   description:
     "A living record of the things I've built, broken, and rebuilt along the way.",
   alternates: {
-    canonical: `${SITE_URL}/work`,
+    canonical: `${site.url}/work`,
   },
   openGraph: {
-    title: "My Work | Makene Neto",
+    title: `My Work | ${site.dev}`,
     description:
       "A living record of the things I've built, broken, and rebuilt along the way.",
-    url: `${SITE_URL}/work`,
+    url: `${site.url}/work`,
     type: "website",
   },
 }
