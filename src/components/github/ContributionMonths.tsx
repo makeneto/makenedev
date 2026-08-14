@@ -1,5 +1,5 @@
-import { ContributionWeek } from "@/features/github/api"
-import { getMonthPositions } from "@/lib/github-contributions"
+import { ContributionWeek } from "@/interfaces/githubTypes"
+import { getMonthPositions } from "@/utils/github/getMonthPositions"
 
 type ContributionMonthsProps = {
   weeks: ContributionWeek[]
