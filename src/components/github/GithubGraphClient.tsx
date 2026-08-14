@@ -2,7 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query"
 import { ContributionCalendar } from "./ContributionCalendar"
-import { contributionsQueryOptions } from "@/features/github/queries"
+import { contributionsQueryOptions } from "@/features/github/github-queries"
 
 export function GithubGraphClient() {
   const { data, isLoading, isError } = useQuery(contributionsQueryOptions)
