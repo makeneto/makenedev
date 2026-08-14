@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { fetchContributionsFromGitHub } from "@/features/github/api"
+import { fetchContributionsFromGitHub } from "@/features/github/github-api"
 
 export const dynamic = "force-dynamic"
 
