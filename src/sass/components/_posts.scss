@@ -110,10 +110,6 @@
       border-color: var(--border-tertiary);
       margin-top: 3rem;
 
-      @media (width <= 640px) {
-        border-color: var(--border-secondary);
-      }
-
       &:last-child {
         border-color: white;
       }

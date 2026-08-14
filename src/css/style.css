@@ -1488,11 +1488,6 @@ textarea {
   border-color: var(--border-tertiary);
   margin-top: 3rem;
 }
-@media (width <= 640px) {
-  .post-content hr {
-    border-color: var(--border-secondary);
-  }
-}
 .post-content hr:last-child {
   border-color: white;
 }
