@@ -12,7 +12,6 @@ export default function ShowcaseContent({
   viewAll,
   isHomePage,
   isShowcase,
-  count,
 }: ShowcaseContentProps) {
   const {
     sectionRef,
@@ -31,7 +30,7 @@ export default function ShowcaseContent({
     <section ref={sectionRef}>
       <ShowcaseHeader
         title={title}
-        count={count ? count : posts.length}
+        count={isHomePage ? 0 : posts.length}
         linkSection={viewAll}
         isShowcase={isShowcase}
       />
