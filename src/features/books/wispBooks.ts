@@ -9,7 +9,6 @@ export const getBook = bookClient.getPost
 export const getBookBySlug = bookClient.getPostBySlug
 export const getBookTags = bookClient.getTags
 export const getBooksHomeData = bookClient.getHomeData
-export const revalidate = 300
 
 export default bookClient.client
 export { bookClient }

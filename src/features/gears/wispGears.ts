@@ -9,7 +9,6 @@ export const getGear = gearClient.getPost
 export const getGearBySlug = gearClient.getPostBySlug
 export const getGearTags = gearClient.getTags
 export const getGearsHomeData = gearClient.getHomeData
-export const revalidate = 300
 
 export default gearClient.client
 export { gearClient }

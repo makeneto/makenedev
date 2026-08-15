@@ -9,7 +9,6 @@ export const getPost = blog.getPost
 export const getPostBySlug = blog.getPostBySlug
 export const getTags = blog.getTags
 export const getBlogHomeData = blog.getHomeData
-export const revalidate = 300
 
 export default blog.client
 export { blog }
