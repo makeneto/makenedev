@@ -30,7 +30,10 @@ export function ContributionCalendar({
         <span className="weak-text">contributions in the last year.</span>
       </p>
 
-      <section className="calendar-shell" aria-labelledby="contributions-title">
+      <section
+        className="calendar-shell card-wrapper"
+        aria-labelledby="contributions-title"
+      >
         <div
           ref={scrollRef}
           className="calendar-scroll"

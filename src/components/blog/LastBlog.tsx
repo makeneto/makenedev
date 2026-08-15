@@ -18,8 +18,15 @@ export default async function LastBlog() {
       <Link
         href={`/blog/${slug}`}
         aria-label="Read more about this blog post"
-        className="blog-lastBlog__card"
+        className="blog-lastBlog__card card-wrapper"
       >
+        <Image
+          src={coverImage(image)}
+          alt={title}
+          width={featured ? 1200 : 720}
+          height={featured ? 720 : 480}
+        />
+        
         <section>
           <div>
             <span>{tags?.[0]?.name || "Reflections"}</span>
@@ -32,13 +39,6 @@ export default async function LastBlog() {
             <BlogViews slug={slug} />
           </div>
         </section>
-
-        <Image
-          src={coverImage(image)}
-          alt={title}
-          width={featured ? 1200 : 720}
-          height={featured ? 720 : 480}
-        />
       </Link>
     </section>
   )
