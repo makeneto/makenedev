@@ -12,11 +12,11 @@ export function GithubGraphClient() {
   return (
     <main>
       {isLoading ? (
-        <div className="calendar-shell calendar-loading">
+        <div className="calendar-shell card-wrapper calendar-loading">
           Loading contributions…
         </div>
       ) : isError || !hasData ? (
-        <div className="calendar-shell calendar-loading">
+        <div className="calendar-shell card-wrapper calendar-loading">
           Contributions could not be loaded now.
         </div>
       ) : (
