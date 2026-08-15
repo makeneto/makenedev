@@ -5,7 +5,6 @@ import AboutResume from "@/components/about/AboutResume"
 import Timeline from "@/components/about/Timeline"
 import WorkExperience from "@/components/about/WorkExperience"
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import PageTitle from "@/components/PageTitle"
 import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
@@ -27,8 +26,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <React.Fragment>
-      <PageTitle title="About Me" />
-
       <DefaultHeader
         title="About me"
         description="Front-end Developer specialized in building modern, responsive, and

@@ -5,7 +5,6 @@ import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import StackSection from "@/components/stack/StackSection"
 import StackResume from "@/components/stack/StackResume"
-import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
   title: `My Stack | ${site.dev}`,
@@ -26,8 +25,6 @@ export const metadata: Metadata = {
 export default function StackPage() {
   return (
     <React.Fragment>
-      <PageTitle title="My Stack" />
-
       <DefaultHeader
         title="My Stack"
         description={

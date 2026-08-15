@@ -5,7 +5,6 @@ import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
 import SetupResume from "@/components/setup/SetupResume"
 import SetupSection from "@/components/setup/SetupSection"
-import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
   title: `My Setup | ${site.dev}`,
@@ -24,8 +23,6 @@ export const metadata: Metadata = {
 export default function SetupPage() {
   return (
     <React.Fragment>
-      <PageTitle title="My Setup" />
-
       <DefaultHeader
         title="My Setup"
         description={

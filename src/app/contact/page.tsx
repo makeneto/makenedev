@@ -3,7 +3,6 @@ import { Metadata } from "next"
 
 import { site } from "@/constants/site"
 import ContactSection from "@/components/contact/ContactSection"
-import PageTitle from "@/components/PageTitle"
 
 export const metadata: Metadata = {
   title: `Contact Me | ${site.dev}`,
@@ -24,8 +23,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <React.Fragment>
-      <PageTitle title="Contact Me" />
-
       <ContactSection className="mt-0" />
     </React.Fragment>
   )
