@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import BookResume from "@/components/books/BookResume"
+import BooksResume from "@/components/books/BooksResume"
 import PageTitle from "@/components/PageTitle"
 import ShowcaseBooks from "@/components/books/ShowcaseBooks"
 
@@ -33,7 +33,7 @@ export default function BooksPage() {
       />
 
       <ShowcaseBooks />
-      <BookResume />
+      <BooksResume />
     </React.Fragment>
   )
 }
