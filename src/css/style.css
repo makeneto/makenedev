@@ -61,6 +61,7 @@ textarea {
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-engagement: #f8f4efe3;
+  --bg-book: rgba(254, 187, 100, 0.361);
   --openToWork-bg: rgba(179, 175, 148, 0.141);
   --openToWork-hovered: rgba(213, 213, 213, 0.788);
   --stack-link: rgba(232, 232, 232, 0.604);
@@ -117,6 +118,7 @@ textarea {
   --bg-pricing-card: #000000;
   --bg-service-hovered: #151515;
   --bg-engagement: rgba(0, 0, 0, 0.651);
+  --bg-book: rgb(47, 47, 47);
   --openToWork-bg: rgba(24, 24, 27, 0.741);
   --openToWork-hovered: rgba(39, 39, 42, 0.729);
   --stack-link: #18181b;
@@ -472,6 +474,10 @@ textarea {
 .book-card {
   cursor: default;
 }
+.book-card:hover .book-cover div {
+  background-color: var(--bg-book);
+  height: 60%;
+}
 @media (width >= 884px) {
   .book-card:hover .book-cover img {
     filter: grayscale(0);
@@ -488,12 +494,8 @@ textarea {
 .book-cover div {
   background-color: var(--bg-secondary);
   width: 100%;
-  height: 50%;
-}
-@media (width <= 640px) {
-  .book-cover div {
-    height: 40%;
-  }
+  height: 40%;
+  transition: all 0.15s ease-in;
 }
 .book-cover img {
   position: absolute;
@@ -506,7 +508,7 @@ textarea {
   height: 80%;
   object-fit: contain;
   border-radius: 0.1rem;
-  transition: filter 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
 @media (width >= 884px) {
   .book-cover img {
