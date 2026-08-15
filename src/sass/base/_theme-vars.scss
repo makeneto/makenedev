@@ -24,7 +24,7 @@
   );
 
   --text-primary: #332d25;
-  --text-secondary: #695f51;
+  --text-secondary: ##74695a;
   --text-tertiary: #988c7d;
   --text-neutral: rgba(152, 139, 124, 0.6);
   --text-tag: #a2896be6;
@@ -95,7 +95,7 @@
   );
 
   --text-primary: #ffffff;
-  --text-secondary: #9f9fa9;
+  --text-secondary: var(--color-muted-foreground);
   --text-tertiary: #848484;
   --text-neutral: #44444a;
   --text-tag: #a1a1a1;
