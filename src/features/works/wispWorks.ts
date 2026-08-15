@@ -13,7 +13,6 @@ export const getPost = works.getPost
 export const getPostBySlug = works.getPostBySlug
 export const getTags = works.getTags
 export const getWorkHomeData = works.getHomeData
-export const revalidate = 300
 
 export default works.client
 export { works }
