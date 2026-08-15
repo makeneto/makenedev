@@ -11,7 +11,7 @@ export default async function ShowcaseBooks() {
 
       <ul className="book-list">
         {posts.map((book) => (
-          <BookCard book={book} />
+          <BookCard key={book.id} book={book} />
         ))}
       </ul>
     </section>
