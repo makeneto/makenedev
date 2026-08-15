@@ -57,10 +57,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: {
-    default: site.dev,
-    template: `%s | ${site.dev}`,
-  },
+  title: site.dev,
   description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
   keywords: [
     site.dev,
@@ -88,8 +85,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.dev, url: site.url }],
   openGraph: {
     title: site.dev,
-    description:
-      `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
+    description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
     url: "https://i.postimg.cc/J7SXXCzR/makenedev.png",
   },
