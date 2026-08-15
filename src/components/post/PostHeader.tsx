@@ -77,7 +77,7 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
               <Link
                 href={`${site.github}/${slug}`}
                 target="_blank"
-                className="flex items-center gap-2 weak-text weak-hover"
+                className="flex items-center gap-2 weak-text"
               >
                 <Code2 size={16} strokeWidth={1.8} />
                 Source Code
