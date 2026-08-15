@@ -72,7 +72,7 @@ textarea {
     rgba(255, 255, 255, 0) 100%
   );
   --text-primary: #332d25;
-  --text-secondary: #695f51;
+  --text-secondary: ##74695a;
   --text-tertiary: #988c7d;
   --text-neutral: rgba(152, 139, 124, 0.6);
   --text-tag: #a2896be6;
@@ -129,7 +129,7 @@ textarea {
     rgb(0, 0, 0) 100%
   );
   --text-primary: #ffffff;
-  --text-secondary: #9f9fa9;
+  --text-secondary: var(--color-muted-foreground);
   --text-tertiary: #848484;
   --text-neutral: #44444a;
   --text-tag: #a1a1a1;
@@ -289,6 +289,12 @@ textarea {
   color: inherit;
 }
 
+.card-wrapper {
+  border: 1px solid var(--border-secondary);
+  outline: 1px solid var(--border-tertiary);
+  outline-offset: 0.4rem;
+}
+
 .tag {
   font-family: var(--font-mono);
   color: var(--text-tag);
@@ -326,11 +332,11 @@ textarea {
   position: sticky;
   top: 7.5%;
   background-color: var(--bg-secondary);
-  display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 1rem;
+  display: grid;
+  gap: 1.5rem;
   padding: 1.5rem;
   border: 1px dashed var(--border-secondary);
+  border-radius: 0.3rem;
   transition: all 0.15s ease-in-out;
 }
 @media (width <= 640px) {
@@ -342,6 +348,8 @@ textarea {
 .blog-lastBlog__card img {
   height: 22rem;
   width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
 }
 @media (width <= 1280px) {
   .blog-lastBlog__card img {
@@ -888,7 +896,6 @@ textarea {
 .calendar-shell {
   border-radius: 0.8rem;
   margin-bottom: 9rem;
-  border: 6px solid var(--border-tertiary);
   background: var(--calendar);
   padding: 1.1rem 1rem;
   overflow: hidden;
@@ -1440,6 +1447,9 @@ textarea {
   height: 20rem;
   border-radius: 0.6rem;
   object-fit: cover;
+  border: 1px solid var(--border-secondary);
+  outline: 1px solid var(--border-tertiary);
+  outline-offset: 0.4rem;
 }
 @media (width <= 1280px) {
   .post-content img {
@@ -1923,7 +1933,7 @@ textarea {
 }
 @media (width <= 1280px) {
   .showcase-card {
-    gap: 0.7rem;
+    gap: 1.3rem;
   }
 }
 .showcase-card:hover .showcase-card--title {
@@ -1940,7 +1950,7 @@ textarea {
 }
 .showcase-card--description {
   margin-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.6;
   color: var(--text-secondary);
   display: -webkit-box;
@@ -1970,7 +1980,7 @@ textarea {
   height: auto;
   object-fit: cover;
   object-position: center center;
-  display: block;
+  border-radius: 0.6rem;
 }
 
 .stack-header {
