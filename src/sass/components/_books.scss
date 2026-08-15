@@ -19,6 +19,11 @@
     cursor: default;
 
     &:hover {
+      .book-cover div {
+        background-color: var(--bg-book);
+        height: 60%;
+      }
+
       @media (width >= 884px) {
         .book-cover img {
           filter: grayscale(0);
@@ -38,11 +43,8 @@
     div {
       background-color: var(--bg-secondary);
       width: 100%;
-      height: 50%;
-
-      @media (width <= 640px) {
-        height: 40%;
-      }
+      height: 40%;
+      transition: all 0.15s ease-in;
     }
 
     & img {
@@ -56,7 +58,7 @@
       height: 80%;
       object-fit: contain;
       border-radius: 0.1rem;
-      transition: filter 0.15s ease-in;
+      transition: all 0.15s ease-in;
 
       @media (width >= 884px) {
         filter: grayscale(100%);
