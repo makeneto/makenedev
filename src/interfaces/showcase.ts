@@ -22,5 +22,4 @@ export interface ShowcaseContentProps {
   viewAll?: string
   isHomePage: boolean
   isShowcase?: boolean
-  count?: number
 }
