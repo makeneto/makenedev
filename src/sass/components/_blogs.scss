@@ -23,11 +23,12 @@
       position: sticky;
       top: 7.5%;
       background-color: var(--bg-secondary);
-      display: flex;
-      flex-wrap: wrap-reverse;
-      gap: 1rem;
+      display: grid;
+      gap: 1.5rem;
       padding: 1.5rem;
       border: 1px dashed var(--border-secondary);
+      border-radius: 0.3rem;
+
       transition: all 0.15s ease-in-out;
 
       @media (width <= 640px) {
@@ -38,6 +39,8 @@
       & img {
         height: 22rem;
         width: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
 
         @media (width <= 1280px) {
           height: 17rem;
