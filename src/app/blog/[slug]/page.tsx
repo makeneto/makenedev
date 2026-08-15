@@ -10,7 +10,7 @@ type Props = { params: Promise<{ slug: string }> }
 
 export const dynamicParams = true
 
-export const revalidate = 100
+export const revalidate = 300
 
 export async function generateStaticParams() {
   const posts = await getPosts()
