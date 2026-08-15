@@ -7,6 +7,8 @@ import BooksResume from "@/components/books/BooksResume"
 import PageTitle from "@/components/PageTitle"
 import ShowcaseBooks from "@/components/books/ShowcaseBooks"
 
+export const revalidate = 300
+
 export const metadata: Metadata = {
   title: `Books | ${site.dev}`,
   description: "A living list of the books that passed by me and left a mark.",
