@@ -20,6 +20,9 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
   const { publishedAt, createdAt, slug } = post
   const date = publishedAt || createdAt
 
+  const projectLink = post.tags[0].name
+  const liveDemoLink = projectLink ? `https://${projectLink}` : "#"
+
   return (
     <header className="grid gap-5 sm:gap-5">
       <div className="text-sm gap-2 flex items-center justify-between">
@@ -55,16 +58,25 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
 
         {variant === "work" && (
           <div className="flex items-center justify-between">
-            <Button variant="ghost">
-              <Link href="#" className="flex items-center gap-2 weak-hover">
+            <Button variant="ghost" size={isMobile ? "sm" : "default"}>
+              <Link
+                href={liveDemoLink}
+                target="_blank"
+                className={`flex items-center gap-2 ${isMobile && "weak-text"} weak-hover`}
+              >
                 <ExternalLink size={16} strokeWidth={1.8} />
                 Live Demo
               </Link>
             </Button>
 
-            <Button variant="ghost">
+            <Button
+              variant="ghost"
+              size={isMobile ? "sm" : "default"}
+              className="hidden sm:block"
+            >
               <Link
                 href={`${site.github}/${slug}`}
+                target="_blank"
                 className="flex items-center gap-2 weak-text weak-hover"
               >
                 <Code2 size={16} strokeWidth={1.8} />
