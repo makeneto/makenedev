@@ -20,7 +20,7 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
   const { publishedAt, createdAt, slug } = post
   const date = publishedAt || createdAt
 
-  const projectLink = post.tags[0].name
+  const projectLink = post.tags[0]?.name
   const liveDemoLink = projectLink ? `https://${projectLink}` : "#"
 
   return (
