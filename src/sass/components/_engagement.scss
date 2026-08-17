@@ -15,11 +15,8 @@
     flex-direction: column;
   }
 
-  @media (width <= 640px) {
-  }
-
   &-wrap {
-    margin: 56px auto 0;
+    margin: 4rem auto;
   }
 
   &-reactions {
