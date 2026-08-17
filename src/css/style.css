@@ -382,7 +382,13 @@ textarea {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-primary);
-  text-transform: uppercase;
+}
+@media (width >= 640px) {
+  .blog-lastBlog__card section h1 {
+    text-transform: uppercase;
+  }
+}
+.blog-lastBlog__card section h1 {
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;

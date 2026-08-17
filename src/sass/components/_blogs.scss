@@ -75,7 +75,10 @@
           font-size: 1.8rem;
           font-weight: 600;
           color: var(--text-primary);
-          text-transform: uppercase;
+
+          @media (width >= 640px) {
+            text-transform: uppercase;
+          }
 
           display: -webkit-box;
           line-clamp: 2;
