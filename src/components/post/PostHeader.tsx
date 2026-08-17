@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useMediaQuery } from "react-responsive"
 import { RiArrowRightSLine } from "@remixicon/react"
-import { CalendarDays, Code2, ExternalLink } from "lucide-react"
+import { CalendarDays, ExternalLink } from "lucide-react"
 
 import { BlogArticle } from "@/services/wisp"
 import { Button } from "../ui/button"
@@ -17,10 +17,10 @@ interface PostHeaderProps {
 export default function PostHeader({ post, variant }: PostHeaderProps) {
   const isMobile = useMediaQuery({ maxWidth: 884 })
 
-  const { publishedAt, createdAt, slug } = post
+  const { publishedAt, createdAt, tags } = post
   const date = publishedAt || createdAt
 
-  const projectLink = post.tags[0]?.name
+  const projectLink = tags[0]?.name
   const liveDemoLink = projectLink ? `https://${projectLink}` : "#"
 
   return (
@@ -55,42 +55,25 @@ export default function PostHeader({ post, variant }: PostHeaderProps) {
 
       <div className="post-intro">
         <h1>{post.title}</h1>
-
         {variant === "work" && (
-          <div className="flex items-center justify-between">
-            <Button variant="ghost" size={isMobile ? "sm" : "default"}>
-              <Link
-                href={liveDemoLink}
-                target="_blank"
-                className={`flex items-center gap-2 ${isMobile && "weak-text"} weak-hover`}
-              >
-                <ExternalLink size={16} strokeWidth={1.8} />
-                Live Demo
-              </Link>
+          <Link
+            href={liveDemoLink}
+            target="_blank"
+            className={`flex items-center gap-2 ${isMobile && "weak-text"} weak-hoverW`}
+          >
+            <Button variant="link">
+              <ExternalLink strokeWidth={1.8} />
+              Live Demo
             </Button>
-
-            <Button
-              variant="ghost"
-              size={isMobile ? "sm" : "default"}
-              className="hidden sm:block"
-            >
-              <Link
-                href={`${site.github}/${slug}`}
-                target="_blank"
-                className="flex items-center gap-2 weak-text"
-              >
-                <Code2 size={16} strokeWidth={1.8} />
-                Source Code
-              </Link>
-            </Button>
-          </div>
+          </Link>
         )}
-
-        <p
-          className={`sm:text-[1.04rem] xl:text-[1.2rem] ${variant === "blog" ? "mt-[1.6rem]" : "mt-9"}`}
-        >
-          {post.description}
-        </p>
+        {variant === "blog" && (
+          <p
+            className={`sm:text-[1.04rem] xl:text-[1.2rem] ${variant === "blog" ? "mt-[1.6rem]" : "mt-9"}`}
+          >
+            {post.description}
+          </p>
+        )}
       </div>
     </header>
   )
