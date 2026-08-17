@@ -1,4 +1,4 @@
-import { Heading } from "@/interfaces/blog"
+import { Heading } from "@/interfaces/post"
 import { slugify } from "@/utils/slugify"
 
 export function processBlogContent(html: string): {
