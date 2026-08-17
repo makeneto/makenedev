@@ -1,19 +1,13 @@
-import { Eye } from "lucide-react"
+import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
 
-import { BlogArticle } from "@/services/wisp"
-import useEngagement from "@/hooks/useEngagement"
 import { site } from "@/constants/site"
-
-interface ArticleMetaProps {
-  post: BlogArticle
-}
+import { RiGithubLine } from "@remixicon/react"
+import { ArticleMetaProps } from "../blog/ArticleMeta"
 
 export function WorkMeta({ post }: ArticleMetaProps) {
   const { slug } = post
-  const { metrics } = useEngagement({ slug })
 
   return (
     <React.Fragment>
@@ -33,12 +27,15 @@ export function WorkMeta({ post }: ArticleMetaProps) {
       </div>
 
       <div>
-        <p>Metrics</p>
+        <p>Repository</p>
 
-        <span className="flex items-center gap-2">
-          <Eye size={14} strokeWidth={1.8} />
-          {metrics?.views} views
-        </span>
+        <Link
+          href={`${site.github}/${slug}`}
+          className="flex items-center gap-2"
+        >
+          <RiGithubLine size={14} strokeWidth={1.8} />
+          makeneto/{slug}
+        </Link>
       </div>
     </React.Fragment>
   )
