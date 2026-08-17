@@ -1,6 +1,6 @@
 "use client"
 
-import { Heading } from "@/interfaces/blog"
+import { Heading } from "@/interfaces/post"
 import { useCallback, useEffect, useRef, useState } from "react"
 
 export function useActiveHeading(headings: Heading[]) {
