@@ -16,13 +16,13 @@ export default function BlogAside({ post }: { post: BlogArticle }) {
 
   return (
     <PostAside>
+      <ArticleMeta post={post} />
       <TableOfContents
         headings={headings}
         activeId={activeId}
         onItemClick={activateHeading}
+        post={post}
       />
-
-      <ArticleMeta post={post} />
     </PostAside>
   )
 }
