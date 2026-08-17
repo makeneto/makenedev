@@ -1,9 +1,10 @@
 .pricing {
-  &__grid {
+  &-grid {
     background-color: var(--bg-secondary);
     display: grid;
     grid-template-columns: 31% auto;
     gap: 1rem;
+    border-radius: 0.5rem;
 
     padding: 1rem;
 
@@ -20,6 +21,7 @@
       display: flex;
       padding: 2rem;
       gap: 4rem;
+      border-radius: 0.5rem;
 
       @media (width <= 884px) {
         display: flex;
