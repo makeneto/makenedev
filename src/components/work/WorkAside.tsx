@@ -15,13 +15,13 @@ export default function WorkAside({ post }: { post: BlogArticle }) {
 
   return (
     <PostAside>
+      <WorkMeta post={post} />
       <TableOfContents
         headings={headings}
         activeId={activeId}
         onItemClick={activateHeading}
+        post={post}
       />
-
-      <WorkMeta post={post} />
     </PostAside>
   )
 }
