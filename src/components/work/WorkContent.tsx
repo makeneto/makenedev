@@ -1,16 +1,15 @@
 "use client"
 
-import Link from "next/link"
 import { useMemo } from "react"
-import { ChevronLeft } from "lucide-react"
 
 import PostHeader from "../post/PostHeader"
 import WorkAside from "./WorkAside"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "../blog/Engagement"
-import { type BlogArticle } from "@/services/wisp"
+import { PostContentProps } from "@/interfaces/post"
+import { Controls } from "../post/PostControls"
 
-export function WorkContent({ post }: { post: BlogArticle }) {
+export function WorkContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
     () => processBlogContent(post.content),
     [post.content],
@@ -28,17 +27,17 @@ export function WorkContent({ post }: { post: BlogArticle }) {
           />
 
           <Engagement post={post} basePath="work" />
+
+          <Controls
+            variant="work"
+            previous={previous}
+            next={next}
+            basePath="/work"
+          />
         </div>
 
         <WorkAside post={post} />
       </section>
-
-      <Link
-        href="/work"
-        className="mt-20 md:mt-30 weak-text weak-hover flex items-center gap-1"
-      >
-        <ChevronLeft size={16} /> More works
-      </Link>
     </article>
   )
 }
