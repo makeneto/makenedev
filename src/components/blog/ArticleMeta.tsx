@@ -6,7 +6,7 @@ import { Clock3 } from "lucide-react"
 import { BlogArticle, readingTime } from "@/services/wisp"
 import { site } from "@/constants/site"
 
-interface ArticleMetaProps {
+export interface ArticleMetaProps {
   post: BlogArticle
 }
 
