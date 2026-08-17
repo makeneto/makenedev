@@ -5,6 +5,7 @@ import { WorkContent } from "@/components/work/WorkContent"
 import { getPostBySlug, getPosts } from "@/features/works/wispWorks"
 import { buildPostMetadata } from "@/features/wisp/buildMetadata"
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd"
+import { getAdjacentWorks } from "@/features/works/getAdjacentWorks"
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function WorkPostPage({ params }: Props) {
   const { slug } = await params
   const post = await getPostBySlug(slug)
+  const { previous, next } = await getAdjacentWorks(slug)
 
   if (!post) notFound()
 
@@ -37,7 +39,7 @@ export default async function WorkPostPage({ params }: Props) {
       <ArticleJsonLd post={post} type="work" />
 
       <main>
-        <WorkContent post={post} />
+        <WorkContent post={post} previous={previous} next={next} />
       </main>
     </>
   )
