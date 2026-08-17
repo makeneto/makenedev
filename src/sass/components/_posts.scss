@@ -22,10 +22,8 @@
   }
 
   &-aside {
-    position: sticky;
-    top: 2.5rem;
-    height: fit-content;
     display: grid;
+    align-content: start;
     gap: 2.1rem;
 
     @media (width <= 640px) {
@@ -119,12 +117,20 @@
     }
 
     blockquote {
-      margin-block: 3rem;
       background-color: var(--bg-secondary);
-      padding: 2rem;
+      margin-block: 4rem 3rem;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--border-secondary);
+      outline: 1px solid var(--border-tertiary);
+      outline-offset: 0.4rem;
+      border-radius: 0.5rem;
 
       strong {
         font-weight: normal;
+      }
+
+      @media (width <= 640px) {
+        margin-top: 3rem;
       }
     }
 
