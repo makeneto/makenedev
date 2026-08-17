@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 
 import { notFound } from "next/navigation"
 import { getPostBySlug, getPosts } from "@/features/blog/wispBlog"
+import { getAdjacentPosts } from "@/features/blog/getAdjacentPosts"
 import { ArticleContent } from "@/components/blog/ArticleContent"
 import { buildPostMetadata } from "@/features/wisp/buildMetadata"
 import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd"
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
   const post = await getPostBySlug(slug)
+  const { previous, next } = await getAdjacentPosts(slug)
 
   if (!post) notFound()
 
@@ -37,7 +39,7 @@ export default async function BlogPostPage({ params }: Props) {
       <ArticleJsonLd post={post} type="blog" />
 
       <main>
-        <ArticleContent post={post} />
+        <ArticleContent post={post} previous={previous} next={next} />
       </main>
     </>
   )
