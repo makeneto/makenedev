@@ -2,7 +2,7 @@
 
 import { useMemo } from "react"
 
-import PostHeader from "../post/PostHeader"
+import PostHeader from "./WorkHeader"
 import WorkAside from "./WorkAside"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "../blog/Engagement"
@@ -16,28 +16,26 @@ export function WorkContent({ post, previous, next }: PostContentProps) {
   )
 
   return (
-    <article>
-      <PostHeader post={post} variant="work" />
+    <article className="relative grid sm:grid-cols-[70%_auto] gap-20 xl:gap-15">
+      <div className="relative">
+        <PostHeader post={post} />
 
-      <section className="mt-20 relative grid sm:grid-cols-[70%_auto] gap-20 xl:gap-15">
-        <div className="relative">
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-            className="post-content work-content"
-          />
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="mt-20 post-content work-content"
+        />
 
-          <Engagement post={post} basePath="work" />
+        <Engagement post={post} basePath="work" />
 
-          <Controls
-            variant="work"
-            previous={previous}
-            next={next}
-            basePath="/work"
-          />
-        </div>
+        <Controls
+          variant="work"
+          previous={previous}
+          next={next}
+          basePath="/work"
+        />
+      </div>
 
-        <WorkAside post={post} />
-      </section>
+      <WorkAside post={post} className="mt-15" />
     </article>
   )
 }
