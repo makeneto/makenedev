@@ -2,7 +2,7 @@ import StackCard from "@/components/stack/StackCard"
 
 export default function FramerIcon() {
   return (
-    <StackCard name="Framer">
+    <StackCard name="Framer (Motion)">
       <svg viewBox="0 0 256 384" preserveAspectRatio="xMidYMid">
         <path
           className="fill-black dark:fill-white"
