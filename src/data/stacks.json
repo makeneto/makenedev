@@ -87,7 +87,7 @@
         },
         {
           "id": "framer",
-          "name": "Framer",
+          "name": "Framer (Motion)",
           "category": ["Library"],
           "certificate": null,
           "learn": null,
@@ -119,6 +119,15 @@
           "website": "https://expressjs.com"
         },
         {
+          "id": "prisma",
+          "name": "Prisma (ORM)",
+          "category": ["Software"],
+          "certificate": null,
+          "learn": null,
+          "exercises": null,
+          "website": "https://www.prisma.io/docs/orm"
+        },
+        {
           "id": "socketio",
           "name": "Socket.IO",
           "category": ["Software"],
@@ -141,15 +150,6 @@
           "learn": "learning-postgresql",
           "exercises": "exercices-postgresql",
           "website": "https://www.postgresql.org"
-        },
-        {
-          "id": "mongodb",
-          "name": "MongoDB",
-          "category": ["Database"],
-          "certificate": "https://www.udemy.com/certificate/UC-ca202142-e269-499b-87a2-ee936aea4187",
-          "learn": null,
-          "exercises": null,
-          "website": "https://www.mongodb.com"
         }
       ]
     },
@@ -160,7 +160,7 @@
         {
           "id": "claude",
           "name": "Claude AI",
-          "category": ["AI"],
+          "category": ["Reasoning"],
           "certificate": "https://verify.skilljar.com/c/wretfdizt4xc",
           "learn": null,
           "exercises": null,
@@ -169,7 +169,7 @@
         {
           "id": "openai",
           "name": "OpenAI",
-          "category": ["AI"],
+          "category": ["Generalist"],
           "certificate": null,
           "learn": null,
           "exercises": null,
@@ -178,7 +178,7 @@
         {
           "id": "githubCopilot",
           "name": "Copilot",
-          "category": ["AI"],
+          "category": ["Coding"],
           "certificate": null,
           "learn": null,
           "exercises": null,
@@ -187,7 +187,7 @@
         {
           "id": "v0",
           "name": "v0",
-          "category": ["AI", "Vercel"],
+          "category": ["UI"],
           "certificate": null,
           "learn": null,
           "exercises": null,
