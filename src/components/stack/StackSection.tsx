@@ -1,3 +1,5 @@
+"use client"
+
 import { useStacks } from "@/hooks/useStacks"
 import StackGrid from "./StackGrid"
 import ToolsHeader from "./ToolsHeader"
