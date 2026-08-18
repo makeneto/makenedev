@@ -2,6 +2,7 @@ import { LinkIcon, Award, BookOpen, Dumbbell } from "lucide-react"
 import Link from "next/link"
 import ReusableTooltip from "../ui/ReusableTooltip"
 import { site } from "@/constants/site"
+import { Button } from "../ui/button"
 
 interface StackLinksProps {
   certificate: null | string
@@ -17,58 +18,66 @@ export default function StackLinks({
   website,
 }: StackLinksProps) {
   return (
-    <section className="flex items-center gap-0.5">
+    <section className="flex items-center">
       {certificate &&
         (certificate === "?" ? (
-          <ReusableTooltip side="bottom" content="Certificate not available">
-            <aside>
+          <aside>
+            <Button variant="ghost" size="sm" disabled>
               <Award className="w-auto h-4 text-yellow-500 dark:text-yellow-400 opacity-35" />
-            </aside>
-          </ReusableTooltip>
+            </Button>
+          </aside>
         ) : (
-          <ReusableTooltip side="bottom" content="Makene's Certificate">
-            <Link href={certificate} target="_blank" rel="noopener noreferrer">
-              <Award className="text-yellow-600 dark:text-yellow-400 transition-colors" />
-            </Link>
-          </ReusableTooltip>
+          <Link href={certificate} target="_blank" rel="noopener noreferrer">
+            <ReusableTooltip side="bottom" content="Makene's Certificate">
+              <Button variant="ghost" size="sm">
+                <Award className="text-yellow-600 dark:text-yellow-400 transition-colors" />
+              </Button>
+            </ReusableTooltip>
+          </Link>
         ))}
 
       {learn && (
-        <ReusableTooltip side="bottom" content="Learn with Makene">
-          <Link
-            href={`${site.github}/${learn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
-          </Link>
-        </ReusableTooltip>
+        <Link
+          href={`${site.github}/${learn}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ReusableTooltip side="bottom" content="Learn with Makene">
+            <Button variant="ghost" size="sm">
+              <BookOpen className="text-sky-600 dark:text-sky-500 transition-colors" />
+            </Button>
+          </ReusableTooltip>
+        </Link>
       )}
 
       {exercises && (
-        <ReusableTooltip side="bottom" content="Practice with Makene">
-          <Link
-            href={exercises}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit website"
-          >
-            <Dumbbell className="text-violet-600 dark:text-violet-400" />
-          </Link>
-        </ReusableTooltip>
+        <Link
+          href={exercises}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit website"
+        >
+          <ReusableTooltip side="bottom" content="Practice with Makene">
+            <Button variant="ghost" size="sm">
+              <Dumbbell className="text-violet-600 dark:text-violet-400" />
+            </Button>
+          </ReusableTooltip>
+        </Link>
       )}
 
       {website && (
-        <ReusableTooltip side="bottom" content="Website">
-          <Link
-            href={website}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit website"
-          >
-            <LinkIcon />
-          </Link>
-        </ReusableTooltip>
+        <Link
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit website"
+        >
+          <ReusableTooltip side="bottom" content="Website">
+            <Button variant="ghost" size="sm">
+              <LinkIcon />
+            </Button>
+          </ReusableTooltip>
+        </Link>
       )}
     </section>
   )
