@@ -6,7 +6,12 @@ import { TableOfContents } from "../blog/TableOfContents"
 import { WorkMeta } from "./WorkMeta"
 import PostAside from "../post/PostAside"
 
-export default function WorkAside({ post }: { post: BlogArticle }) {
+export interface PostAsideProps {
+  post: BlogArticle
+  className?: string
+}
+
+export default function WorkAside({ post, className }: PostAsideProps) {
   const { headings } = useMemo(
     () => processBlogContent(post.content),
     [post.content],
@@ -14,8 +19,9 @@ export default function WorkAside({ post }: { post: BlogArticle }) {
   const { activeId, activateHeading } = useActiveHeading(headings)
 
   return (
-    <PostAside>
+    <PostAside className={className}>
       <WorkMeta post={post} />
+
       <TableOfContents
         headings={headings}
         activeId={activeId}
