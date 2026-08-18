@@ -1,5 +1,12 @@
 import { ReactNode } from "react"
 
-export default function PostAside({ children }: { children: ReactNode }) {
-  return <aside className="post-aside relative">{children}</aside>
+interface PostAsideProps {
+  children: ReactNode
+  className?: string
+}
+
+export default function PostAside({ children, className }: PostAsideProps) {
+  return (
+    <aside className={`post-aside relative ${className}`}>{children}</aside>
+  )
 }
