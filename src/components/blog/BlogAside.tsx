@@ -1,13 +1,13 @@
 import { useMemo } from "react"
 
 import PostAside from "../post/PostAside"
-import { BlogArticle } from "@/services/wisp"
 import { ArticleMeta } from "./ArticleMeta"
 import { TableOfContents } from "./TableOfContents"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { useActiveHeading } from "@/hooks/useActiveHeading"
+import { PostAsideProps } from "../work/WorkAside"
 
-export default function BlogAside({ post }: { post: BlogArticle }) {
+export default function BlogAside({ post, className }: PostAsideProps) {
   const { headings } = useMemo(
     () => processBlogContent(post.content),
     [post.content],
@@ -15,7 +15,7 @@ export default function BlogAside({ post }: { post: BlogArticle }) {
   const { activeId, activateHeading } = useActiveHeading(headings)
 
   return (
-    <PostAside>
+    <PostAside className={className}>
       <ArticleMeta post={post} />
       <TableOfContents
         headings={headings}
