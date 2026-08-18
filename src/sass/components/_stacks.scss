@@ -72,22 +72,7 @@
 
     & a,
     & aside {
-      margin-top: 0.2rem;
-      padding: 0.5rem;
-      border-radius: 0.3rem;
-
-      & svg {
-        width: auto;
-        height: 1rem;
-      }
-    }
-
-    & a {
-      transition: all 0.1s ease-in;
-
-      &:hover {
-        background-color: var(--stack-link);
-      }
+      margin-top: .4rem;
     }
   }
 }
