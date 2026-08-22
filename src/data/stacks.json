@@ -146,7 +146,7 @@
           "id": "postgresql",
           "name": "PostgreSQL",
           "category": ["Database"],
-          "certificate": "?",
+          "certificate": "https://www.udemy.com/certificate/UC-f794bc21-6df7-4888-81f7-e90141e7d5ac",
           "learn": "learning-postgresql",
           "exercises": "exercices-postgresql",
           "website": "https://www.postgresql.org"
