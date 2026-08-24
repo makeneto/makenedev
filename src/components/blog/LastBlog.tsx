@@ -10,6 +10,20 @@ export default async function LastBlog() {
   const { posts } = await getBlogHomeData()
   const featured = posts[0]
 
+  if (!featured) {
+    return (
+      <section className="blog-lastBlog" aria-label="Latest blog post">
+        <div className="blog-lastBlog__card card-wrapper">
+          <section>
+            <span>Reflections</span>
+            <h1>No blog posts yet</h1>
+            <p>New stories and updates will appear here soon.</p>
+          </section>
+        </div>
+      </section>
+    )
+  }
+
   const { createdAt, description, image, publishedAt, slug, tags, title } =
     featured
 

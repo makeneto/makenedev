@@ -5,9 +5,11 @@ import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
 import { useShowcasePagination } from "@/hooks/useShowcasePagination"
 import { ShowcaseContentProps } from "@/interfaces/showcase"
-import { ChevronRight } from "lucide-react"
-import { Button } from "../ui/button"
 import { ViewAllLink } from "./ViewAllLink"
+import { useMemo, useState } from "react"
+
+const isUrlTag = (tag: string) => /^(?:https?:\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+(?::\d+)?(?:[/?#].*)?$/i.test(tag.trim())
+const tagLabel = (tag: unknown) => typeof tag === "string" ? tag : typeof tag === "object" && tag !== null && "name" in tag ? String(tag.name) : ""
 
 export default function ShowcaseContent({
   posts,
@@ -17,6 +19,17 @@ export default function ShowcaseContent({
   isShowcase,
   children,
 }: ShowcaseContentProps) {
+  const [selectedCategory, setSelectedCategory] = useState("all")
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
+  const categories = useMemo(() => Array.from(new Set(posts.flatMap((post) => {
+    const tags = Array.isArray((post as { tags?: unknown[] }).tags) ? (post as { tags: unknown[] }).tags : []
+    return tags.map(tagLabel).filter((tag) => tag && !isUrlTag(tag))
+  }))).sort(), [posts])
+  const filteredPosts = selectedCategory === "all" ? posts : posts.filter((post) => {
+    const tags = Array.isArray((post as { tags?: unknown[] }).tags) ? (post as { tags: unknown[] }).tags : []
+    return tags.map(tagLabel).includes(selectedCategory)
+  })
+
   const {
     sectionRef,
     page,
@@ -26,7 +39,7 @@ export default function ShowcaseContent({
     handlePrev,
     showControls,
   } = useShowcasePagination({
-    posts,
+    posts: filteredPosts,
     isHomePage,
   })
 
@@ -37,11 +50,16 @@ export default function ShowcaseContent({
         count={isHomePage ? 0 : posts.length}
         linkSection={viewAll}
         isShowcase={isShowcase}
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+        viewMode={viewMode}
+        onViewModeChange={setViewMode}
       >
         {children}
       </ShowcaseHeader>
 
-      <ShowcaseGrid posts={visiblePosts} />
+      <ShowcaseGrid posts={visiblePosts} viewMode={viewMode} />
 
       {isHomePage && <ViewAllLink to="/work" className="justify-self-center mt-12" />}
 

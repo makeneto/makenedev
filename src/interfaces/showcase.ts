@@ -16,6 +16,11 @@ export interface ShowcaseHeaderProps {
   textLink?: string
   isShowcase?: boolean
   count?: number
+  categories?: string[]
+  selectedCategory?: string
+  onCategoryChange?: (value: string) => void
+  viewMode?: "grid" | "list"
+  onViewModeChange?: (value: "grid" | "list") => void
 }
 
 type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
