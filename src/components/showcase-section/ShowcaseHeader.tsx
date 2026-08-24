@@ -1,6 +1,9 @@
 import { Activity } from "react"
+import { LayoutGrid, List } from "lucide-react"
 import { ViewAllLink } from "./ViewAllLink"
 import { ShowcaseHeaderProps } from "@/interfaces/showcase"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select"
+import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group"
 
 const ShowcaseHeader = ({
   title,
@@ -9,12 +12,41 @@ const ShowcaseHeader = ({
   isShowcase,
   count,
   children,
+  categories = [],
+  selectedCategory = "all",
+  onCategoryChange,
+  viewMode = "grid",
+  onViewModeChange,
 }: ShowcaseHeaderProps) => {
   return (
     <header className={`showcase-header ${isShowcase && "pt-14"} pb-4`}>
       <h2 className="showcase-heading">{title}</h2>
 
-      <div className="grid grid-cols-2 items-center w-auto shrink-0 justify-end gap-2">
+      <div className="showcase-header--controls">
+        {categories.length > 0 && onCategoryChange && (
+          <Select value={selectedCategory} onValueChange={onCategoryChange}>
+            <SelectTrigger aria-label="Filter works by category" className="showcase-filter">
+              <SelectValue placeholder="All works" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All works</SelectItem>
+              {categories.map((category) => (
+                <SelectItem key={category} value={category}>{category}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        )}
+        <ToggleGroup
+          type="single"
+          value={viewMode}
+          onValueChange={(value) => value && onViewModeChange?.(value as "grid" | "list")}
+          aria-label="Choose project view"
+          variant="outline"
+          size="sm"
+        >
+          <ToggleGroupItem value="grid" aria-label="Grid view"><LayoutGrid /></ToggleGroupItem>
+          <ToggleGroupItem value="list" aria-label="List view"><List /></ToggleGroupItem>
+        </ToggleGroup>
         {children}
         <Activity mode={linkSection ? "visible" : "hidden"}>
           <ViewAllLink to={linkSection} textLink={textLink} />
