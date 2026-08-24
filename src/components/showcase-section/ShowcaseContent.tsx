@@ -5,6 +5,9 @@ import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
 import { useShowcasePagination } from "@/hooks/useShowcasePagination"
 import { ShowcaseContentProps } from "@/interfaces/showcase"
+import { ChevronRight } from "lucide-react"
+import { Button } from "../ui/button"
+import { ViewAllLink } from "./ViewAllLink"
 
 export default function ShowcaseContent({
   posts,
@@ -12,6 +15,7 @@ export default function ShowcaseContent({
   viewAll,
   isHomePage,
   isShowcase,
+  children,
 }: ShowcaseContentProps) {
   const {
     sectionRef,
@@ -33,9 +37,13 @@ export default function ShowcaseContent({
         count={isHomePage ? 0 : posts.length}
         linkSection={viewAll}
         isShowcase={isShowcase}
-      />
+      >
+        {children}
+      </ShowcaseHeader>
 
       <ShowcaseGrid posts={visiblePosts} />
+
+      {isHomePage && <ViewAllLink to="/work" className="justify-self-center mt-12" />}
 
       {showControls && !viewAll && (
         <SectionControls

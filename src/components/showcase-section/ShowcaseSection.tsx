@@ -7,6 +7,7 @@ export default async function ShowcaseSection({
   viewAll,
   isHomePage = false,
   isShowcase,
+  children
 }: ShowcaseSectionProps) {
   const { posts } = await getWorkHomeData()
 
@@ -17,6 +18,7 @@ export default async function ShowcaseSection({
       viewAll={viewAll}
       isHomePage={isHomePage}
       isShowcase={isShowcase}
+      children={children}
     />
   )
 }
