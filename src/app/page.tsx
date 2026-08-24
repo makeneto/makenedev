@@ -9,6 +9,8 @@ import BlogArea from "@/components/blog/BlogArea"
 import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
 import { site } from "@/constants/site"
+import { SelectWork } from "@/components/work/SelectWork"
+import { SelectFormat } from "@/components/work/SelectFormat"
 
 export const metadata: Metadata = {
   title: site.dev,
@@ -29,7 +31,12 @@ export default async function HomePage() {
     <React.Fragment>
       <HomeHeader />
       <MyServices />
-      <ShowcaseSection title="Last Works" viewAll="/work" isHomePage />
+      <ShowcaseSection title="Works" isHomePage>
+        <div className="flex items-center gap-5">
+          <SelectWork />
+          <SelectFormat />
+        </div>
+      </ShowcaseSection>
       <PricingSection />
       <BlogArea isHome>
         <LastBlog />
