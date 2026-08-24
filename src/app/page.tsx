@@ -9,6 +9,8 @@ import BlogArea from "@/components/blog/BlogArea"
 import LastBlog from "@/components/blog/LastBlog"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
 import { site } from "@/constants/site"
+import { SelectWork } from "@/components/work/SelectWork"
+import { SelectFormat } from "@/components/work/SelectFormat"
 
 export const metadata: Metadata = {
   title: site.dev,
@@ -30,10 +32,19 @@ export default async function HomePage() {
       <HomeHeader />
       <MyServices />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ShowcaseSection title="Works" isHomePage />
 =======
       <ShowcaseSection title="Last Works" viewAll="/work" isHomePage />
 >>>>>>> parent of 628a4d9 (initial commit)
+=======
+      <ShowcaseSection title="Works" isHomePage>
+        <div className="flex items-center gap-5">
+          <SelectWork />
+          <SelectFormat />
+        </div>
+      </ShowcaseSection>
+>>>>>>> parent of 28cfdfd (feat: remove work selection components and update format toggle)
       <PricingSection />
       <BlogArea isHome>
         <LastBlog />

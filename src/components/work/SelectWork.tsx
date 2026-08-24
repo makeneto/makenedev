@@ -18,7 +18,7 @@ const items = [
 
 export function SelectWork() {
   return (
-    <Select defaultValue="apple">
+    <Select items={items} defaultValue="apple">
       <SelectTrigger className="w-full max-w-48">
         <SelectValue />
       </SelectTrigger>
