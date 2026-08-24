@@ -1912,12 +1912,6 @@ textarea {
   gap: 2rem;
   list-style: none;
 }
-@media (width <= 640px) {
-  .showCaseGrid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 4rem;
-  }
-}
 .showCaseGrid li {
   transition: all 0.1s ease-in-out;
 }
@@ -1926,14 +1920,15 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (width <= 640px) {
-  .showCaseGrid {
-    row-gap: 3rem;
-  }
-}
 @media (width <= 884px) {
   .showCaseGrid {
     gap: 3rem;
+  }
+}
+@media (width <= 640px) {
+  .showCaseGrid {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
   }
 }
 
