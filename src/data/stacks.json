@@ -123,7 +123,7 @@
           "name": "Prisma (ORM)",
           "category": ["Software"],
           "certificate": null,
-          "learn": null,
+          "learn": "https://github.com/makeneto/learning-prisma-orm",
           "exercises": null,
           "website": "https://www.prisma.io/docs/orm"
         },
