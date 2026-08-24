@@ -5,11 +5,14 @@ import ShowcaseGrid from "./ShowcaseGrid"
 import SectionControls from "../ui/SectionControls"
 import { useShowcasePagination } from "@/hooks/useShowcasePagination"
 import { ShowcaseContentProps } from "@/interfaces/showcase"
+<<<<<<< HEAD
 import { ViewAllLink } from "./ViewAllLink"
 import { useMemo, useState } from "react"
 
 const isUrlTag = (tag: string) => /^(?:https?:\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+(?::\d+)?(?:[/?#].*)?$/i.test(tag.trim())
 const tagLabel = (tag: unknown) => typeof tag === "string" ? tag : typeof tag === "object" && tag !== null && "name" in tag ? String(tag.name) : ""
+=======
+>>>>>>> parent of 628a4d9 (initial commit)
 
 export default function ShowcaseContent({
   posts,
@@ -17,7 +20,6 @@ export default function ShowcaseContent({
   viewAll,
   isHomePage,
   isShowcase,
-  children,
 }: ShowcaseContentProps) {
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
@@ -50,6 +52,7 @@ export default function ShowcaseContent({
         count={isHomePage ? 0 : posts.length}
         linkSection={viewAll}
         isShowcase={isShowcase}
+<<<<<<< HEAD
         categories={categories}
         selectedCategory={selectedCategory}
         onCategoryChange={setSelectedCategory}
@@ -58,10 +61,11 @@ export default function ShowcaseContent({
       >
         {children}
       </ShowcaseHeader>
+=======
+      />
+>>>>>>> parent of 628a4d9 (initial commit)
 
       <ShowcaseGrid posts={visiblePosts} viewMode={viewMode} />
-
-      {isHomePage && <ViewAllLink to="/work" className="justify-self-center mt-12" />}
 
       {showControls && !viewAll && (
         <SectionControls

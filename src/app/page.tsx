@@ -29,7 +29,11 @@ export default async function HomePage() {
     <React.Fragment>
       <HomeHeader />
       <MyServices />
+<<<<<<< HEAD
       <ShowcaseSection title="Works" isHomePage />
+=======
+      <ShowcaseSection title="Last Works" viewAll="/work" isHomePage />
+>>>>>>> parent of 628a4d9 (initial commit)
       <PricingSection />
       <BlogArea isHome>
         <LastBlog />

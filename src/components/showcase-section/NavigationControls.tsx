@@ -1,5 +1,4 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "../ui/button"
 
 interface NavigationControlsProps {
   page: number
@@ -20,31 +19,29 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
   return (
     <div className="flex items-center justify-between mt-11 sm:mt-15">
       {!isFirstPage ? (
-        <Button
-          variant="link"
-          size="sm"
-          className="font-medium weak-text weak-hover"
+        <button
+          type="button"
           aria-label="Previous"
           onClick={onPrev}
+          className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400"
         >
-          Previous
-          <ChevronLeft />
-        </Button>
+          <ChevronLeft size={18} />
+          <span className="text-sm">Previous</span>
+        </button>
       ) : (
         <div />
       )}
 
       {!isLastPage ? (
-        <Button
-          variant="link"
-          size="sm"
+        <button
+          type="button"
           aria-label="Next"
           onClick={onNext}
-          className="font-medium weak-text weak-hover"
+          className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400"
         >
-          Next
-          <ChevronRight />
-        </Button>
+          <span className="text-sm">Next</span>
+          <ChevronRight size={18} />
+        </button>
       ) : (
         <div />
       )}

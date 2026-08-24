@@ -13,17 +13,21 @@ const ShowcaseHeader = ({
   textLink = "View all",
   isShowcase,
   count,
+<<<<<<< HEAD
   children,
   categories = [],
   selectedCategory = "all",
   onCategoryChange,
   viewMode = "grid",
   onViewModeChange,
+=======
+>>>>>>> parent of 628a4d9 (initial commit)
 }: ShowcaseHeaderProps) => {
   return (
     <header className={`showcase-header ${isShowcase && "pt-14"} pb-4`}>
       <h2 className="showcase-heading">{title}</h2>
 
+<<<<<<< HEAD
       <div className="showcase-header--controls">
         {categories.length > 0 && onCategoryChange && (
           <Select value={selectedCategory} onValueChange={onCategoryChange}>
@@ -57,6 +61,15 @@ const ShowcaseHeader = ({
           <p className="showcase-header--counter">{count} items</p>
         </Activity>
       </div>
+=======
+      <Activity mode={linkSection ? "visible" : "hidden"}>
+        <ViewAllLink to={linkSection} textLink={textLink} />
+      </Activity>
+
+      <Activity mode={count ? "visible" : "hidden"}>
+        <p className="showcase-header--counter">{count} items</p>
+      </Activity>
+>>>>>>> parent of 628a4d9 (initial commit)
     </header>
   )
 }
