@@ -1,8 +1,6 @@
 import { getWorkHomeData } from "@/features/works/wispWorks"
-import { ReactNode } from "react"
 
 export interface ShowcaseSectionProps {
-  children?: ReactNode
   title: string
   viewAll?: string
   isHomePage?: boolean
@@ -10,7 +8,6 @@ export interface ShowcaseSectionProps {
 }
 
 export interface ShowcaseHeaderProps {
-  children?: ReactNode
   title: string
   linkSection?: string
   textLink?: string
@@ -25,7 +22,6 @@ export interface ShowcaseHeaderProps {
 
 type WorkPost = Awaited<ReturnType<typeof getWorkHomeData>>["posts"][number]
 export interface ShowcaseContentProps {
-  children?: ReactNode
   posts: WorkPost[]
   title: string
   viewAll?: string
