@@ -50,8 +50,20 @@
 
 .showcase-cover {
   width: 100%;
-  height: auto;
+  height: 17.5rem;
   object-fit: cover;
-  object-position: center center;
+  object-position: top center;
   border-radius: 0.4rem;
+
+  @media (width <= 884px) {
+    height: 12rem;
+  }
+
+  @media (width <= 640px) {
+    height: 14rem;
+  }
+
+  @media (width <= 400px) {
+    height: 12rem;
+  }
 }
