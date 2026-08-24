@@ -1,5 +1,3 @@
-"use client"
-
 import { Activity } from "react"
 import { LayoutGrid, List } from "lucide-react"
 import { ViewAllLink } from "./ViewAllLink"
