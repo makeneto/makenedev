@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { RiArrowRightSLine, RiGithubLine } from "@remixicon/react"
-import { CalendarDays, ExternalLink } from "lucide-react"
+import { CalendarDays, Globe } from "lucide-react"
 
 import { BlogArticle } from "@/services/wisp"
 import { formatLongDate } from "@/utils/formatDate"
@@ -35,7 +35,7 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
         <div className="flex items-center gap-3 text-sm">
           <Link href={liveDemoLink} target="_blank">
             <Button variant="link" className="p-0">
-              <ExternalLink size={14} strokeWidth={1.8} />
+              <Globe size={14} strokeWidth={1.8} />
               Live Demo
             </Button>
           </Link>
