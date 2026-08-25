@@ -1,16 +1,8 @@
 .work {
   &-content {
     img {
+      height: auto;
       object-position: left top;
-      max-height: 20rem;
-
-      @media (width <= 1280px) {
-        max-height: 22rem;
-      }
-
-      @media (width <= 640px) {
-        max-height: 14.5rem;
-      }
     }
 
     ol {
