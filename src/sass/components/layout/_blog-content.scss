@@ -1,15 +1,17 @@
 .blog {
   &-content {
     img {
-      height: 20rem;
+      object-position: top center;
+
+      max-height: 20rem;
       margin-bottom: 2.1rem;
 
       @media (width <= 1280px) {
-        height: 22rem;
+        max-height: 22rem;
       }
 
       @media (width <= 640px) {
-        height: 14.5rem;
+        max-height: 14.5rem;
       }
     }
 
