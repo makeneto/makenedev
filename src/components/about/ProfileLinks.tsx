@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 import { contacts } from "@/data/links"
+import { Button } from "../ui/button"
 
 export default function ProfileLinks() {
   return (
@@ -18,7 +19,9 @@ export default function ProfileLinks() {
                 className="sm:text-sm text-end"
                 aria-label={`Visit my ${label}`}
               >
-                {display}
+                <Button variant="link" size="sm" className="btn--link p-0">
+                  {display}
+                </Button>
               </Link>
             </div>
           )
@@ -35,7 +38,9 @@ export default function ProfileLinks() {
               className="sm:text-sm text-end"
               aria-label={`Visit my ${label}`}
             >
-              {display}
+              <Button variant="link" size="sm" className="btn--link p-0">
+                {display}
+              </Button>
             </Link>
           </div>
         )
