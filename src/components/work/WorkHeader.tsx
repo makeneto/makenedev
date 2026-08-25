@@ -4,13 +4,14 @@ import { CalendarDays, ExternalLink } from "lucide-react"
 
 import { BlogArticle } from "@/services/wisp"
 import { formatLongDate } from "@/utils/formatDate"
+import { site } from "@/constants/site"
 
 export default function WorkHeader({ post }: { post: BlogArticle }) {
-  const { publishedAt, createdAt, tags } = post
+  const { slug, publishedAt, createdAt, tags } = post
   const date = publishedAt || createdAt
 
   const projectLink = tags[0]?.name
-  const liveDemoLink = projectLink ? `https://${projectLink}` : "#"
+  const liveDemoLink = projectLink ? `https://${projectLink}` : `${site.github}/${slug}`
 
   return (
     <header className="grid gap-5 sm:gap-5">
