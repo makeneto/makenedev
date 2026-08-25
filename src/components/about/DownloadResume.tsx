@@ -3,14 +3,15 @@
 import { FileDown } from "lucide-react"
 
 import useDownloadResume from "@/hooks/useDownloadResume"
+import { Button } from "../ui/button"
 
 export default function DownloadResume() {
   const handleClick = useDownloadResume()
 
   return (
-    <button type="button" onClick={handleClick} className="profile__resume">
+    <Button variant="ghost" onClick={handleClick} className="profile__resume p-0">
       Download Resume
       <FileDown size={15} />
-    </button>
+    </Button>
   )
 }
