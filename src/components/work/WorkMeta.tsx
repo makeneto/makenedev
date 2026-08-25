@@ -3,12 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { site } from "@/constants/site"
-import { RiGithubLine } from "@remixicon/react"
-import { ArticleMetaProps } from "../blog/ArticleMeta"
 
-export function WorkMeta({ post }: ArticleMetaProps) {
-  const { slug } = post
-
+export function WorkMeta() {
   return (
     <React.Fragment>
       <div>
@@ -23,18 +19,6 @@ export function WorkMeta({ post }: ArticleMetaProps) {
             className="rounded-full"
           />
           <p>{site.dev}</p>
-        </Link>
-      </div>
-
-      <div>
-        <p>Repository</p>
-
-        <Link
-          href={`${site.github}/${slug}`}
-          className="flex items-center gap-2"
-        >
-          <RiGithubLine size={14} strokeWidth={1.8} />
-          makeneto/{slug}
         </Link>
       </div>
     </React.Fragment>
