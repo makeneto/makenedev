@@ -56,7 +56,7 @@ function ControlLink({
         isPrevious ? "" : "flex-row-reverse"
       }`}
     >
-      <Button variant="link">
+      <Button variant="link" className="p-0">
         {isPrevious && <ChevronLeft size={16} />}
         {variant === "work" ? item.title : isPrevious ? "Previous" : "Next"}
         {!isPrevious && <ChevronRight size={16} />}
