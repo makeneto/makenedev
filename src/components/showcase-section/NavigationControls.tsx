@@ -24,7 +24,7 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
           variant="link"
           aria-label="Previous"
           onClick={onPrev}
-          className="p-0"
+          className="btn--link p-0"
         >
           <ChevronLeft size={18} />
           <span className="text-sm">Previous</span>
@@ -38,7 +38,7 @@ export const NavigationControls: React.FC<NavigationControlsProps> = ({
           variant="link"
           aria-label="Next"
           onClick={onNext}
-          className="p-0"
+          className="btn--link p-0"
         >
           <span className="text-sm">Next</span>
           <ChevronRight size={18} />
