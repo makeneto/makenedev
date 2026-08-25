@@ -156,7 +156,7 @@ textarea {
   --selection-bg: #212121;
   /* GitHub-style contribution graph */
   --bg-githubGraph: rgba(13, 13, 13, 0.89);
-  --contrib-0: var(--bg-tertiary);
+  --contrib-0: rgba(26, 26, 26, 0.6);
   --contrib-1: #2d2d2d;
   --contrib-2: #5b5b5b;
   --contrib-3: #a9a9a9;
@@ -213,18 +213,8 @@ textarea {
 }
 
 .work-content img {
+  height: auto;
   object-position: left top;
-  max-height: 20rem;
-}
-@media (width <= 1280px) {
-  .work-content img {
-    max-height: 22rem;
-  }
-}
-@media (width <= 640px) {
-  .work-content img {
-    max-height: 14.5rem;
-  }
 }
 .work-content ol {
   margin-top: 1.6rem;
@@ -1899,7 +1889,7 @@ textarea {
 .showCaseGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 3rem;
   list-style: none;
 }
 @media (width <= 640px) {
