@@ -20,7 +20,7 @@ export default function WorkAside({ post, className }: PostAsideProps) {
 
   return (
     <PostAside className={className}>
-      <WorkMeta post={post} />
+      <WorkMeta />
 
       <TableOfContents
         headings={headings}
