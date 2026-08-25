@@ -33,7 +33,7 @@ export default function WorkPage() {
       />
 
       <GithubGraph />
-      <ShowcaseSection title="Projects" isShowcase />
+      <ShowcaseSection title="Works" isShowcase />
       <WorkResume />
     </React.Fragment>
   )
