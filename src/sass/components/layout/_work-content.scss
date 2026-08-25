@@ -1,14 +1,15 @@
 .work {
   &-content {
     img {
-      height: 20rem;
-        
+      object-position: left top;
+      max-height: 20rem;
+
       @media (width <= 1280px) {
-        height: 22rem;
+        max-height: 22rem;
       }
 
       @media (width <= 640px) {
-        height: 14.5rem;
+        max-height: 14.5rem;
       }
     }
 
