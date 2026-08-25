@@ -57,23 +57,11 @@
   &-content {
     img {
       width: 100%;
-      height: auto;
-      max-height: 25rem;
       border-radius: 0.6rem;
       object-fit: cover;
-      object-position: left top;
       border: 1px solid var(--border-secondary);
       outline: 1px solid var(--border-tertiary);
       outline-offset: 0.4rem;
-
-      @media (width <= 640px) {
-        border-radius: 0.6rem;
-        height: 15rem;
-      }
-
-      @media (width <= 640px) {
-        height: 12rem;
-      }
     }
 
     h2 {
