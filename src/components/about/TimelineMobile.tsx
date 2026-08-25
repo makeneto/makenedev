@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { TimelineTrack, TimelineYear } from "@/hooks/useTimeline"
 import TimelineCard from "./TimelineCard"
+import { Button } from "../ui/button"
 
 type TimelineMobileProps = {
   currentYear: TimelineYear
@@ -20,27 +21,29 @@ export default function TimelineMobile({
   return (
     <div className="timeline__mobile">
       <div className="timeline__mobile-nav">
-        <button
+        <Button
+          variant="link"
           type="button"
-          className="timeline__mobile-button"
+          className="btn--link p-0"
           onClick={() => onYearChange("prev")}
           disabled={!canGoPrev}
         >
           <ChevronLeft size={18} />
           <span className="text-sm">Previous</span>
-        </button>
+        </Button>
 
         <span className="timeline__mobile-year">{currentYear.year}</span>
 
-        <button
+        <Button
+          variant="link"
           type="button"
-          className="timeline__mobile-button"
+          className="btn--link p-0"
           onClick={() => onYearChange("next")}
           disabled={!canGoNext}
         >
           <span className="text-sm">Next</span>
           <ChevronRight size={18} />
-        </button>
+        </Button>
       </div>
 
       <div className="timeline__mobile-grid">
