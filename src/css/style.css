@@ -164,17 +164,18 @@ textarea {
 }
 
 .blog-content img {
-  height: 20rem;
+  object-position: top center;
+  max-height: 20rem;
   margin-bottom: 2.1rem;
 }
 @media (width <= 1280px) {
   .blog-content img {
-    height: 22rem;
+    max-height: 22rem;
   }
 }
 @media (width <= 640px) {
   .blog-content img {
-    height: 14.5rem;
+    max-height: 14.5rem;
   }
 }
 .blog-content ol,
@@ -212,16 +213,17 @@ textarea {
 }
 
 .work-content img {
-  height: 20rem;
+  object-position: left top;
+  max-height: 20rem;
 }
 @media (width <= 1280px) {
   .work-content img {
-    height: 22rem;
+    max-height: 22rem;
   }
 }
 @media (width <= 640px) {
   .work-content img {
-    height: 14.5rem;
+    max-height: 14.5rem;
   }
 }
 .work-content ol {
@@ -1449,25 +1451,11 @@ textarea {
 }
 .post-content img {
   width: 100%;
-  height: auto;
-  max-height: 25rem;
   border-radius: 0.6rem;
   object-fit: cover;
-  object-position: left top;
   border: 1px solid var(--border-secondary);
   outline: 1px solid var(--border-tertiary);
   outline-offset: 0.4rem;
-}
-@media (width <= 640px) {
-  .post-content img {
-    border-radius: 0.6rem;
-    height: 15rem;
-  }
-}
-@media (width <= 640px) {
-  .post-content img {
-    height: 12rem;
-  }
 }
 .post-content h2 {
   font-size: 1.8rem;
@@ -1967,7 +1955,7 @@ textarea {
   line-height: 1.6;
   color: var(--text-secondary);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
