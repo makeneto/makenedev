@@ -1,7 +1,7 @@
-import type { PricingPlan } from "@/interfaces/pricing"
 import PricingHeader from "./PricingHeader"
 import PricingFeats from "./PricingFeats"
 import PricingButton from "./PricingButton"
+import { PricingPlan } from "@/data/pricing"
 
 interface PricingCardProps {
   plan: PricingPlan
@@ -22,6 +22,8 @@ export default function PricingCard({ plan }: PricingCardProps) {
       <PricingFeats features={plan.features} />
 
       <PricingButton
+        link={plan.link}
+        externalLink={plan.externalLink}
         highlighted={plan.highlighted}
         buttonText={plan.buttonText}
       />
