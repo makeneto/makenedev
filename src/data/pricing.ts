@@ -6,6 +6,8 @@ export interface PricingPlan {
   features: string[]
   highlighted?: boolean
   icon: string
+  link: string
+  externalLink?: boolean
   buttonText: string
 }
 
@@ -13,7 +15,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: "starter",
     name: "Starter",
-    price: 30000,
+    price: 35000,
     description:
       "Ideal for those who need a simple, fast, and professional online presence to showcase their business.",
     features: [
@@ -25,6 +27,8 @@ export const pricingPlans: PricingPlan[] = [
     ],
     highlighted: false,
     icon: "seed",
+    link: "/contact",
+    externalLink: false,
     buttonText: "Get Started Now!",
   },
   {
@@ -43,12 +47,14 @@ export const pricingPlans: PricingPlan[] = [
     ],
     highlighted: true,
     icon: "brief",
+    link: "/contact",
+    externalLink: false,
     buttonText: "Request a Quote",
   },
   {
     id: "genius",
     name: "Genius",
-    price: 350000,
+    price: 360000,
     description:
       "For companies that need a custom web application with backend, authentication, and tailored functionalities.",
     features: [
@@ -62,6 +68,8 @@ export const pricingPlans: PricingPlan[] = [
     ],
     highlighted: true,
     icon: "brain",
+    link: "https://calendly.com/makeneto17/30min",
+    externalLink: true,
     buttonText: "Schedule a Meeting",
   },
 ]
