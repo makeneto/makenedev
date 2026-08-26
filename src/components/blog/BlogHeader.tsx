@@ -1,11 +1,11 @@
-import Image from "next/image"
 import Link from "next/link"
 import { RiArrowRightSLine } from "@remixicon/react"
 import { CalendarDays } from "lucide-react"
 
-import { site } from "@/constants/site"
 import { formatLongDate } from "@/utils/formatDate"
 import { BlogArticle } from "@/services/wisp"
+import { Button } from "../ui/button"
+import MakeneProfileLink from "../post/MakeneProfileLink"
 
 export default function BlogHeader({ post }: { post: BlogArticle }) {
   const { publishedAt, createdAt } = post
@@ -14,7 +14,11 @@ export default function BlogHeader({ post }: { post: BlogArticle }) {
   return (
     <header className="grid gap-5 sm:gap-5">
       <span className="flex items-center gap-1">
-        <Link href="/blog">Blog</Link>
+        <Link href="/blog">
+          <Button variant="link" className="p-0">
+            Blog
+          </Button>
+        </Link>
         <RiArrowRightSLine size={16} />
         <h1 className="line weak-text line-clamp-1">{post.title}</h1>
       </span>
@@ -23,16 +27,7 @@ export default function BlogHeader({ post }: { post: BlogArticle }) {
         <h1>{post.title}</h1>
 
         <div className="flex items-center gap-3 text-sm">
-          <Link href="/about" className="flex items-center gap-2">
-            <Image
-              src={`${site.github}.png`}
-              alt="Makene's profile"
-              width={18}
-              height={18}
-              className="rounded-full"
-            />
-            <span className="font-medium">{site.dev}</span>
-          </Link>
+          <MakeneProfileLink />
 
           <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
 
