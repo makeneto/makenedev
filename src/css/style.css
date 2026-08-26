@@ -1995,12 +1995,17 @@ textarea {
 }
 @media (width <= 640px) {
   .showcase-cover {
-    height: 14rem;
+    height: 15.6rem;
   }
 }
 @media (width <= 400px) {
   .showcase-cover {
-    height: 12rem;
+    height: 14rem;
+  }
+}
+@media (width <= 376px) {
+  .showcase-cover {
+    height: 13.5rem;
   }
 }
 
