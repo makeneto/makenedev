@@ -12,15 +12,18 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
   const date = publishedAt || createdAt
 
   const projectLink = tags[0]?.name
-  const liveDemoLink = projectLink
-    ? `https://${projectLink}`
-    : `${site.github}/${slug}`
+  const liveDemoLink = `https://${projectLink}`
 
   return (
     <header className="grid gap-5 sm:gap-5">
       <div className="flex items-centers justify-between">
         <span className="flex items-center gap-1">
-          <Link href="/work">Work</Link> <RiArrowRightSLine size={16} />
+          <Link href="/work">
+            <Button variant="link" className="p-0">
+              Work
+            </Button>
+          </Link>
+          <RiArrowRightSLine size={16} />
           <h1 className="line weak-text line-clamp-1">{post.title}</h1>
         </span>
 
@@ -33,14 +36,18 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
         <h1>{post.title}</h1>
 
         <div className="flex items-center gap-3 text-sm">
-          <Link href={liveDemoLink} target="_blank">
-            <Button variant="link" className="p-0">
-              <Globe size={14} strokeWidth={1.8} />
-              Live Demo
-            </Button>
-          </Link>
+          {projectLink && (
+            <div className="flex items-center gap-3">
+              <Link href={projectLink ? liveDemoLink : ""} target="_blank">
+                <Button variant="link" className="p-0">
+                  <Globe size={14} strokeWidth={1.8} />
+                  Live Demo
+                </Button>
+              </Link>
 
-          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
+              <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
+            </div>
+          )}
 
           <Link href={`${site.github}/${slug}`}>
             <Button variant="link" className="btn--link p-0">
