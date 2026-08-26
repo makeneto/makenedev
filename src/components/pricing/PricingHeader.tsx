@@ -1,6 +1,6 @@
-import { useUserLocale } from "@/hooks/useUserLocale"
 import { getIcon } from "@/lib/getIcon"
 import { useFormatCurrency } from "@/utils/formatCurrency"
+import { RiArrowRightSLine } from "@remixicon/react"
 
 interface PricingHeaderProps {
   icon: string
@@ -15,10 +15,7 @@ export default function PricingHeader({
   price,
   description,
 }: PricingHeaderProps) {
-  const { locale } = useUserLocale()
   const formatCurrency = useFormatCurrency()
-
-  const isAngola = locale === "AO"
 
   return (
     <div className="pricing__card-top">
@@ -26,9 +23,11 @@ export default function PricingHeader({
       <h3 className="pricing__card-title">{name}</h3>
 
       <div className="pricing__price">
-        {!isAngola && <span className="pricing__currency">$</span>}
-        <span className="pricing__amount">{formatCurrency(price)}</span>
-        {isAngola && <span className="pricing__currency">kz</span>}
+        <span className="pricing__amount">
+          <RiArrowRightSLine />
+          {formatCurrency(price)}
+        </span>
+        <span className="pricing__currency">kz</span>
       </div>
 
       <p className="pricing__card-description">{description}</p>
