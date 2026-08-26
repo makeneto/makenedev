@@ -1679,11 +1679,19 @@ textarea {
   }
 }
 .pricing__amount {
+  display: flex;
+  align-items: center;
   font-family: "Antonio", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--text-primary);
   line-height: 1;
+}
+.pricing__amount svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 0.26rem;
+  color: var(--text-secondary);
 }
 @media (width <= 884px) {
   .pricing__amount {
