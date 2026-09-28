@@ -1,42 +1,49 @@
-import { site } from "@/constants/site"
+import { site } from "@/constants/site";
 
 type Experience = {
-  company: string
-  role: string
-  description: string
-  period: string
-}
+  company: string;
+  role: string;
+  description: string;
+  period: string;
+};
 
 type Profile = {
-  name: string
-  title: string
-  experiences: Experience[]
-}
+  name: string;
+  title: string;
+  experiences: Experience[];
+};
 
 export const profile: Profile = {
   name: site.dev,
   title: "Software Engineer",
   experiences: [
     {
+      company: "SCKJ",
+      role: "Software Engineer",
+      description:
+        "Build and maintain scalable software solutions, turning business requirements into reliable digital products that deliver real value and impact.",
+      period: "2026 - Present"
+    },
+    {
       company: "Freelance",
       role: "Full-Stack Freelancer",
       description:
         "Deliver end-to-end digital products that solve real problems and create value for clients across different contexts and needs.",
-      period: "2025 - Present",
+      period: "2025 - 2026"
     },
     {
       company: "Luciano B Goldsmiths",
       role: "Frontend Developer",
       description:
         "Designed and developed a complete application from scratch, collaborating closely with the UI/UX team to ensure scalable architecture and strong user experience.",
-      period: "2023 - 2025",
+      period: "2023 - 2025"
     },
     {
       company: "Techwave Solutions",
       role: "Web Development Intern",
       description:
         "Built reusable, responsive components with Next, Sass, Node.js and more, improving speed and consistency in internal development workflows.",
-      period: "2022 - 2023",
-    },
-  ],
-}
+      period: "2022 - 2023"
+    }
+  ]
+};
