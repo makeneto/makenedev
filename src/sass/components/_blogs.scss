@@ -25,14 +25,13 @@
       background-color: var(--bg-secondary);
       display: grid;
       gap: 1.5rem;
-      padding: 1.5rem;
+      padding: 0.5rem;
       border: 1px dashed var(--border-secondary);
       border-radius: 0.3rem;
 
       transition: all 0.15s ease-in-out;
 
       @media (width <= 640px) {
-        padding: 1.2rem;
         gap: 1rem;
       }
 
@@ -61,6 +60,7 @@
       }
 
       & section {
+        padding: 0 1rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
