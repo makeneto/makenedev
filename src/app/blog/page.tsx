@@ -1,28 +1,26 @@
-import React from "react"
-import { Metadata } from "next"
+import React from "react";
+import { Metadata } from "next";
 
-import DefaultHeader from "@/components/headers/DefaultHeader"
-import BlogArea from "@/components/blog/BlogArea"
-import LastBlog from "@/components/blog/LastBlog"
-import VerticalBlogList from "@/components/blog/VerticalBlogList"
-import BlogResume from "@/components/blog/BlogResume"
-import { site } from "@/constants/site"
+import DefaultHeader from "@/components/headers/DefaultHeader";
+import VerticalBlogList from "@/components/blog/VerticalBlogList";
+import BlogResume from "@/components/blog/BlogResume";
+import { site } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: `My Blog | ${site.dev}`,
   description:
     "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
   alternates: {
-    canonical: `${site.url}/blog`,
+    canonical: `${site.url}/blog`
   },
   openGraph: {
     title: `My Blog | ${site.dev}`,
     description:
       "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
     url: `${site.url}/blog`,
-    type: "website",
-  },
-}
+    type: "website"
+  }
+};
 
 export default function BlogPage() {
   return (
@@ -32,11 +30,8 @@ export default function BlogPage() {
         description="The world I write about is not fixed in one field or perspective. It shifts between technology, design, culture, business, and modern life. I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world. I’m not focused on mastering a single lane but building a broader understanding that evolves."
       />
 
-      <BlogArea>
-        <LastBlog />
-        <VerticalBlogList />
-      </BlogArea>
+      <VerticalBlogList />
       <BlogResume />
     </React.Fragment>
-  )
+  );
 }

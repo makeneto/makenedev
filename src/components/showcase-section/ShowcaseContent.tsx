@@ -27,7 +27,7 @@ export default function ShowcaseContent({
   })
 
   return (
-    <section ref={sectionRef}>
+    <section ref={sectionRef} className="mb-60">
       <ShowcaseHeader
         title={title}
         count={isHomePage ? 0 : posts.length}
