@@ -75,10 +75,7 @@
           font-size: 1.8rem;
           font-weight: 600;
           color: var(--text-primary);
-
-          @media (width >= 640px) {
-            text-transform: uppercase;
-          }
+          text-transform: uppercase;
 
           display: -webkit-box;
           line-clamp: 2;
@@ -95,7 +92,7 @@
           }
 
           @media (width <= 640px) {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
           }
         }
 
