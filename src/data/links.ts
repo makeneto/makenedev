@@ -33,10 +33,6 @@ export const footerLinks = [
     link: "/blog",
   },
   {
-    label: "Stack",
-    link: "/stack",
-  },
-  {
     label: "Contact",
     link: "/contact",
   },
