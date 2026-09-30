@@ -9,7 +9,7 @@
 
 - 🌍 Aspiring to contribute to impactful products and projects on a global scale.
   
-- 📫 Reach me at [makenedev.com](https://makene.dev).
+- 📫 Reach me at [makene.dev](https://makene.dev).
 
 <br>
 
