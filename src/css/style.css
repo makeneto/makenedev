@@ -344,7 +344,7 @@ textarea {
   }
 }
 .blog-lastBlog__card img {
-  height: 22rem;
+  height: 29rem;
   width: 100%;
   object-fit: cover;
   border-radius: 0.2rem;
@@ -381,13 +381,7 @@ textarea {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-primary);
-}
-@media (width >= 640px) {
-  .blog-lastBlog__card section h1 {
-    text-transform: uppercase;
-  }
-}
-.blog-lastBlog__card section h1 {
+  text-transform: uppercase;
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -406,7 +400,7 @@ textarea {
 }
 @media (width <= 640px) {
   .blog-lastBlog__card section h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .blog-lastBlog__card section p {
