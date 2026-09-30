@@ -1,6 +1,6 @@
 export const site = {
   dev: "Makene Neto",
   email: "makenedev@gmail.com",
-  url: "https://makenedev.vercel.app",
+  url: "https://makene.dev",
   github: "https://github.com/makeneto",
 }
