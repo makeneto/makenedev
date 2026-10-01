@@ -1,17 +1,17 @@
-import { site } from "@/constants/site";
+import { site } from "@/constants/site"
 
 type Experience = {
-  company: string;
-  role: string;
-  description: string;
-  period: string;
-};
+  company: string
+  role: string
+  description: string
+  period: string
+}
 
 type Profile = {
-  name: string;
-  title: string;
-  experiences: Experience[];
-};
+  name: string
+  title: string
+  experiences: Experience[]
+}
 
 export const profile: Profile = {
   name: site.dev,
@@ -46,4 +46,4 @@ export const profile: Profile = {
       period: "2022 - 2023"
     }
   ]
-};
+}
