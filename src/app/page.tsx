@@ -6,6 +6,7 @@ import ShowcaseSection from "@/components/showcase-section/ShowcaseSection";
 import MyServices from "@/components/myServices/MyServices";
 import VerticalBlogList from "@/components/blog/VerticalBlogList";
 import { site } from "@/constants/site";
+import ContactSection from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
   title: site.dev,
@@ -28,6 +29,7 @@ export default async function HomePage() {
       <MyServices />
       <ShowcaseSection title="Last Works" viewAll="/work" isHomePage />
       <VerticalBlogList />
+      <ContactSection className="mt-40 sm:mt-60" />
     </React.Fragment>
   );
 }
