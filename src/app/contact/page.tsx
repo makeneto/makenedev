@@ -1,8 +1,8 @@
-import React from "react";
-import { Metadata } from "next";
+import React from "react"
+import { Metadata } from "next"
 
-import { site } from "@/constants/site";
-import ContactSection from "@/components/contact/ContactSection";
+import { site } from "@/constants/site"
+import ContactSection from "@/components/contact/ContactSection"
 
 export const metadata: Metadata = {
   title: `Contact Me | ${site.dev}`,
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     url: `${site.url}/contact`,
     type: "website"
   }
-};
+}
 
 export default function ContactPage() {
   return (
     <React.Fragment>
       <ContactSection />
     </React.Fragment>
-  );
+  )
 }
