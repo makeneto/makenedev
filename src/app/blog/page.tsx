@@ -1,10 +1,10 @@
-import React from "react";
-import { Metadata } from "next";
+import React from "react"
+import { Metadata } from "next"
 
-import DefaultHeader from "@/components/headers/DefaultHeader";
-import VerticalBlogList from "@/components/blog/VerticalBlogList";
-import BlogResume from "@/components/blog/BlogResume";
-import { site } from "@/constants/site";
+import DefaultHeader from "@/components/headers/DefaultHeader"
+import VerticalBlogList from "@/components/blog/VerticalBlogList"
+import BlogResume from "@/components/blog/BlogResume"
+import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
   title: `My Blog | ${site.dev}`,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: `${site.url}/blog`,
     type: "website"
   }
-};
+}
 
 export default function BlogPage() {
   return (
@@ -33,5 +33,5 @@ export default function BlogPage() {
       <VerticalBlogList />
       <BlogResume />
     </React.Fragment>
-  );
+  )
 }
