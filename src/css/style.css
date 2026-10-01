@@ -1987,10 +1987,10 @@ textarea {
   }
 }
 .work-experience {
-  position: relative;
+  grid-template-columns: 35% auto;
+  gap: 3rem;
   display: grid;
-  grid-template-columns: 30% auto;
-  gap: 4rem;
+  position: relative;
 }
 @media (width <= 1280px) {
   .work-experience {
