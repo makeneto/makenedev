@@ -1,15 +1,15 @@
-import { AtSign, User } from "lucide-react";
+import { AtSign, User } from "lucide-react"
 
-import { ContactInput } from "./ContactInput";
-import type { ContactFormData } from "@/interfaces/contactForm";
+import { ContactInput } from "./ContactInput"
+import type { ContactFormData } from "@/interfaces/contactForm"
 
 interface Props {
-  form: ContactFormData;
-  errors: Record<keyof ContactFormData, boolean>;
+  form: ContactFormData
+  errors: Record<keyof ContactFormData, boolean>
   updateField: <K extends keyof ContactFormData>(
     field: K,
     value: ContactFormData[K]
-  ) => void;
+  ) => void
 }
 
 export function ContactFormFields({ form, errors, updateField }: Props) {
@@ -33,5 +33,5 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
         onChange={(e) => updateField("email", e.target.value)}
       />
     </div>
-  );
+  )
 }
