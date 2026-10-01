@@ -1,11 +1,11 @@
-import { ArrowRight, FileText } from "lucide-react";
-import Link from "next/link";
+import { ArrowRight, FileText } from "lucide-react"
+import Link from "next/link"
 
-import { BlogPost } from "@/services/wisp";
-import { formatLongDate } from "@/utils/formatDate";
+import { BlogPost } from "@/services/wisp"
+import { formatLongDate } from "@/utils/formatDate"
 
 export default function BlogRow({ post }: { post: BlogPost }) {
-  const { slug, title, publishedAt, createdAt } = post;
+  const { slug, title, publishedAt, createdAt } = post
 
   return (
     <Link
@@ -27,5 +27,5 @@ export default function BlogRow({ post }: { post: BlogPost }) {
         <ArrowRight className="hidden sm:block opacity-0 transition-opacity group-hover:opacity-100 mr-2" />
       </article>
     </Link>
-  );
+  )
 }
