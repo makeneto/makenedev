@@ -1,24 +1,24 @@
-import { AtSign, User } from "lucide-react"
+import { AtSign, User } from "lucide-react";
 
-import { ContactInput } from "./ContactInput"
-import type { ContactFormData } from "@/interfaces/contactForm"
+import { ContactInput } from "./ContactInput";
+import type { ContactFormData } from "@/interfaces/contactForm";
 
 interface Props {
-  form: ContactFormData
-  errors: Record<keyof ContactFormData, boolean>
+  form: ContactFormData;
+  errors: Record<keyof ContactFormData, boolean>;
   updateField: <K extends keyof ContactFormData>(
     field: K,
-    value: ContactFormData[K],
-  ) => void
+    value: ContactFormData[K]
+  ) => void;
 }
 
 export function ContactFormFields({ form, errors, updateField }: Props) {
   return (
-    <div className="grid sm:grid-cols-2 gap-5">
+    <div className="grid gap-5">
       <ContactInput
         label="Full name"
         icon={<User size={15} />}
-        placeholder="Gabriel Afonso"
+        placeholder="Makene Neto"
         value={form.fullName}
         invalid={errors.fullName}
         onChange={(e) => updateField("fullName", e.target.value)}
@@ -27,11 +27,11 @@ export function ContactFormFields({ form, errors, updateField }: Props) {
       <ContactInput
         label="Email address"
         icon={<AtSign size={15} />}
-        placeholder="gabriel@afonso.com"
+        placeholder="makenedev@gmail.com"
         value={form.email}
         invalid={errors.email}
         onChange={(e) => updateField("email", e.target.value)}
       />
     </div>
-  )
+  );
 }
