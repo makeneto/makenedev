@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import useEngagement from "@/hooks/useEngagement"
-import { Heading } from "@/interfaces/post"
-import { Eye } from "lucide-react"
-import { BlogArticle } from "@/services/wisp"
+import useEngagement from "@/hooks/useEngagement";
+import { Heading } from "@/interfaces/post";
+import { Eye } from "lucide-react";
+import { BlogArticle } from "@/services/wisp";
 
 interface TableOfContentsProps {
-  headings: Heading[]
-  activeId: string | null
-  onItemClick: (id: string) => void
-  post: BlogArticle
+  headings: Heading[];
+  activeId: string | null;
+  onItemClick: (id: string) => void;
+  post: BlogArticle;
 }
 
 export function TableOfContents({
   headings,
   activeId,
   onItemClick,
-  post,
+  post
 }: TableOfContentsProps) {
-  const { slug } = post
-  const { metrics } = useEngagement({ slug })
+  const { slug } = post;
+  const { metrics } = useEngagement({ slug });
 
-  if (headings.length === 0) return null
+  if (headings.length === 0) return null;
   return (
     <aside className="grid gap-[2.1rem] sticky top-10">
       <nav className="post-toc">
@@ -53,5 +53,5 @@ export function TableOfContents({
         </span>
       </div>
     </aside>
-  )
+  );
 }
