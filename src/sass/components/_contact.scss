@@ -17,7 +17,7 @@
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8rem;
+    gap: 4rem;
     align-items: start;
 
     @media (width <= 884px) {
@@ -69,7 +69,7 @@
   &__description,
   &__email {
     color: var(--text-secondary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7;
 
     @media (width <= 1280px) {
@@ -90,7 +90,7 @@
   }
 
   & a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     @media (width <= 1280px) {
       font-size: 1rem;
@@ -102,6 +102,12 @@
   }
 
   &-form {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-secondary);
+    outline: 1px solid var(--border-tertiary);
+    outline-offset: 0.4rem;
+
     & section {
       display: grid;
       gap: 3rem;
