@@ -1,14 +1,14 @@
-import { getBlogHomeData } from "@/features/blog/wispBlog";
-import BlogRow from "./BlogRow";
-import ShowcaseHeader from "../showcase-section/ShowcaseHeader";
+import { getBlogHomeData } from "@/features/blog/wispBlog"
+import BlogRow from "./BlogRow"
+import ShowcaseHeader from "../showcase-section/ShowcaseHeader"
 
 export default async function VerticalBlogList({
   isHome = false
 }: {
-  isHome?: boolean;
+  isHome?: boolean
 }) {
-  const { posts } = await getBlogHomeData();
-  const recent = isHome ? posts.slice(0, 7) : posts;
+  const { posts } = await getBlogHomeData()
+  const recent = isHome ? posts.slice(0, 7) : posts
 
   return (
     <section>
@@ -20,5 +20,5 @@ export default async function VerticalBlogList({
         ))}
       </ul>
     </section>
-  );
+  )
 }
