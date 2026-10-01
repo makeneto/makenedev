@@ -12,15 +12,15 @@ export const metadata: Metadata = {
   description:
     "Front-end Developer specialized in building modern, responsive, and high-performance web applications.",
   alternates: {
-    canonical: `${site.url}/about`,
+    canonical: `${site.url}/about`
   },
   openGraph: {
     title: `About Me | ${site.dev}`,
     description:
       "Front-end Developer specialized in building modern, responsive, and high-performance web applications.",
     url: `${site.url}/about`,
-    type: "website",
-  },
+    type: "website"
+  }
 }
 
 export default function AboutPage() {
