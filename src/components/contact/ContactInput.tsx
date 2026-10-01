@@ -28,15 +28,17 @@ export function ContactInput({
         {...props}
         aria-invalid={invalid}
         className={`
-          pt-5
-          pb-[1.45rem]
-          px-5
-          sm:px-5
-          rounded-full
+          pt-4
+          pb-5
+          xl:pb-4.5
+          px-2.5
+          sm:px-3
+          rounded-lg
           border
+          text-sm
           bg-transparent
           dark:text-white
-          placeholder:text-xs
+          placeholder:text-sm
           placeholder:text-zinc-500
           focus-visible:ring-0
           ${borderClass}
