@@ -36,7 +36,7 @@ export default function BlogHeader({ post }: { post: BlogArticle }) {
           </span>
         </div>
 
-        <p className="sm:text-[1.04rem] xl:text-[1.2rem] mt-12">
+        <p className="sm:text-[1.04rem] xl:text-[1.05rem] mt-12">
           {post.description}
         </p>
       </div>
