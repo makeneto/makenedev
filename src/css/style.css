@@ -151,7 +151,7 @@ textarea {
   --accent-soft: #3f3f3f;
   --accent-medium: #484848;
   --accent-strong: #a8a8a8;
-  --selection-bg: #212121;
+  --selection-bg: rgba(255, 255, 255, 0.144);
   /* GitHub-style contribution graph */
   --bg-githubGraph: rgba(13, 13, 13, 0.89);
   --contrib-0: rgba(26, 26, 26, 0.6);
@@ -420,7 +420,7 @@ textarea {
     align-self: flex-start;
   }
 }
-.verticalBlogs a {
+.verticalBlogs__item {
   padding: 0.6rem;
   display: grid;
   grid-template-columns: 3rem auto;
@@ -430,32 +430,40 @@ textarea {
   border-radius: 1rem;
   height: fit-content;
 }
-.verticalBlogs a:hover {
+.verticalBlogs__item:hover {
   background: var(--bg-secondary);
 }
-.verticalBlogs a svg {
+.verticalBlogs__item:hover--arrowIcon {
+  opacity: 1;
+}
+.verticalBlogs__item--fileTextIcon {
   color: var(--text-tertiary);
 }
-.verticalBlogs a article {
+.verticalBlogs__item article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.verticalBlogs__item article div {
   display: grid;
   gap: 0.2rem;
 }
 @media (width <= 640px) {
-  .verticalBlogs a article {
+  .verticalBlogs__item article div {
     padding-right: 0.3rem;
   }
 }
-.verticalBlogs a article h2 {
+.verticalBlogs__item article div h2 {
   color: var(--text-primary);
   font-size: 0.9rem;
   font-weight: 500;
 }
 @media (width <= 640px) {
-  .verticalBlogs a article h2 {
+  .verticalBlogs__item article div h2 {
     line-height: 1.66rem;
   }
 }
-.verticalBlogs a article p {
+.verticalBlogs__item article div p {
   font-size: 0.875rem;
   color: var(--text-tertiary);
 }
@@ -567,7 +575,7 @@ textarea {
 .contact__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+  gap: 4rem;
   align-items: start;
 }
 @media (width <= 884px) {
@@ -620,7 +628,7 @@ textarea {
 }
 .contact__description, .contact__email {
   color: var(--text-secondary);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
 @media (width <= 1280px) {
@@ -642,7 +650,7 @@ textarea {
   }
 }
 .contact a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 @media (width <= 1280px) {
   .contact a {
@@ -651,6 +659,13 @@ textarea {
 }
 .contact a:hover {
   text-decoration: underline;
+}
+.contact-form {
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-secondary);
+  outline: 1px solid var(--border-tertiary);
+  outline-offset: 0.4rem;
 }
 .contact-form section {
   display: grid;
@@ -1455,7 +1470,7 @@ textarea {
   }
 }
 .post-content p {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
   margin-top: 1.6rem;
 }
@@ -1508,9 +1523,6 @@ textarea {
   gap: 1rem;
 }
 .post-toc__item {
-  display: flex;
-  align-items: center;
-  gap: 0;
   background: none;
   border: none;
   text-align: left;
@@ -1521,11 +1533,6 @@ textarea {
 }
 .post-toc__item.is-active {
   color: var(--foreground, #fff);
-  gap: 8px;
-}
-.post-toc__item.is-active .post-toc__marker {
-  width: 16px;
-  opacity: 1;
 }
 .post-toc__marker {
   width: 0;
@@ -1656,6 +1663,11 @@ textarea {
   object-fit: cover;
   object-position: top center;
   border-radius: 0.4rem;
+}
+@media (width >= 1536px) {
+  .showcase-cover {
+    height: 15.5rem;
+  }
 }
 @media (width <= 884px) {
   .showcase-cover {
