@@ -1,12 +1,12 @@
-import React from "react";
-import { Metadata } from "next";
+import React from "react"
+import { Metadata } from "next"
 
-import HomeHeader from "@/components/headers/HomeHeader";
-import ShowcaseSection from "@/components/showcase-section/ShowcaseSection";
-import MyServices from "@/components/myServices/MyServices";
-import VerticalBlogList from "@/components/blog/VerticalBlogList";
-import { site } from "@/constants/site";
-import ContactSection from "@/components/contact/ContactSection";
+import HomeHeader from "@/components/headers/HomeHeader"
+import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
+import MyServices from "@/components/myServices/MyServices"
+import VerticalBlogList from "@/components/blog/VerticalBlogList"
+import { site } from "@/constants/site"
+import ContactSection from "@/components/contact/ContactSection"
 
 export const metadata: Metadata = {
   title: site.dev,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: site.url,
     type: "website"
   }
-};
+}
 
 export default async function HomePage() {
   return (
@@ -31,5 +31,5 @@ export default async function HomePage() {
       <VerticalBlogList />
       <ContactSection className="mt-40 sm:mt-60" />
     </React.Fragment>
-  );
+  )
 }
