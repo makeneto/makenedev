@@ -55,6 +55,10 @@
   object-position: top center;
   border-radius: 0.4rem;
 
+  @media (width >= 1536px) {
+    height: 15.5rem;
+  }
+
   @media (width <= 884px) {
     height: 12rem;
   }
