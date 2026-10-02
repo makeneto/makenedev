@@ -5,8 +5,8 @@ import HomeHeader from "@/components/headers/HomeHeader"
 import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
 import MyServices from "@/components/myServices/MyServices"
 import VerticalBlogList from "@/components/blog/VerticalBlogList"
-import { site } from "@/constants/site"
 import ContactSection from "@/components/contact/ContactSection"
+import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
   title: site.dev,
