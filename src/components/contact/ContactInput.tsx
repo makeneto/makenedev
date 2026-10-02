@@ -18,16 +18,17 @@ export function ContactInput({
     : "border-zinc-300 focus-visible:border-black dark:border-zinc-700 dark:focus-visible:border-white"
 
   return (
-    <div className="contact-form__field">
+    <div>
       <label className="contact-form__label">
-        {icon}
-        {label}
-      </label>
+        <p>
+          {icon}
+          {label}
+        </p>
 
-      <Input
-        {...props}
-        aria-invalid={invalid}
-        className={`
+        <Input
+          {...props}
+          aria-invalid={invalid}
+          className={`
           pt-4
           pb-5
           xl:pb-4.5
@@ -44,7 +45,8 @@ export function ContactInput({
           ${borderClass}
           ${className}
         `}
-      />
+        />
+      </label>
     </div>
   )
 }
