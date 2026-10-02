@@ -12,8 +12,10 @@ export function ContactFormServices({ services, onChange }: Props) {
   return (
     <div>
       <label className="contact-form__label mb-4">
-        <Flame size={15} />
-        Choose services
+        <p>
+          <Flame size={15} />
+          Choose services
+        </p>
       </label>
 
       <ServicesCheckboxes
