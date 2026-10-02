@@ -16,19 +16,21 @@ export function ContactTextarea({
   return (
     <div className="contact-form__field">
       <label className="contact-form__label">
-        {icon}
-        {label}
-      </label>
+        <p>
+          {icon}
+          {label}
+        </p>
 
-      <Textarea
-        {...props}
-        aria-invalid={invalid}
-        className={`min-h-42 max-h-60 pt-4 pb-5.5 px-4 rounded-3xl border bg-transparent text-sm text-white placeholder:text-zinc-500 focus-visible:ring-0 ${
-          invalid
-            ? "border-red-500 focus-visible:border-red-500"
-            : "border-zinc-700 focus-visible:border-white"
-        } ${className}`}
-      />
+        <Textarea
+          {...props}
+          aria-invalid={invalid}
+          className={`min-h-42 max-h-60 pt-4 pb-5.5 px-4 rounded-3xl border bg-transparent text-sm text-white placeholder:text-zinc-500 focus-visible:ring-0 ${
+            invalid
+              ? "border-red-500 focus-visible:border-red-500"
+              : "border-zinc-700 focus-visible:border-white"
+          } ${className}`}
+        />
+      </label>
     </div>
   )
 }
