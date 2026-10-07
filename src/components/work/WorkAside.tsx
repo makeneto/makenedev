@@ -26,7 +26,6 @@ export default function WorkAside({ post, className }: PostAsideProps) {
         headings={headings}
         activeId={activeId}
         onItemClick={activateHeading}
-        post={post}
       />
     </PostAside>
   )
