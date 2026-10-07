@@ -1,4 +1,4 @@
-import { Share2, ThumbsDown, ThumbsUp } from "lucide-react"
+import { Eye, Share2, ThumbsDown, ThumbsUp } from "lucide-react"
 import { useMediaQuery } from "react-responsive"
 
 import { Button } from "../ui/button"
@@ -30,6 +30,19 @@ export function Engagement({ post, basePath }: EngagementProps) {
     >
       <div className="engagement">
         <div className="engagement-reactions" aria-label="Reações">
+          <ReusableTooltip content="Views">
+            <button
+              className="reaction-view"
+              aria-pressed={Boolean(metrics?.views)}
+              aria-label="Like article"
+            >
+              <Eye aria-hidden="true" />
+              {metrics && metrics.views > 0 && <p>{metrics.views}</p>}
+            </button>
+          </ReusableTooltip>
+
+          <div className="w-px border-r" />
+
           <ReusableTooltip content="Like">
             <Button
               size={isMobile ? "default" : "sm"}
@@ -57,6 +70,8 @@ export function Engagement({ post, basePath }: EngagementProps) {
               {metrics && metrics.dislikes > 0 && <p>{metrics.dislikes}</p>}
             </Button>
           </ReusableTooltip>
+
+          <div className="w-px border-r" />
 
           <ReusableTooltip content="Share">
             <Button
