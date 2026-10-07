@@ -742,7 +742,7 @@ textarea {
   background: var(--bg-primary);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  border: 1px solid var(--border-primary);
+  border: 1px solid var(--border-tertiary);
 }
 @media (width <= 640px) {
   .engagement {
@@ -759,14 +759,33 @@ textarea {
   gap: 0.5rem;
 }
 
+.reaction-view {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border-tertiary);
+  color: var(--text-primary);
+  cursor: default;
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  height: 100%;
+  padding: 0.25rem 0.8rem;
+  transition: transform 0.2s;
+  font-size: small;
+}
+.reaction-view svg {
+  width: 1.2rem;
+  height: auto;
+  stroke-width: 1.3;
+}
 .reaction-button {
   border: 1px solid var(--border-primary);
   color: var(--text-primary);
   cursor: pointer;
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   border-radius: 999px;
   height: 100%;
-  padding: 0.5rem 0.8rem;
+  padding: 0.35rem 0.8rem;
   transition: transform 0.2s;
 }
 .reaction-button:hover {
@@ -796,10 +815,10 @@ textarea {
   border: 1px solid var(--border-primary);
   color: var(--text-primary);
   cursor: pointer;
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   border-radius: 999px;
   height: 100%;
-  padding: 0.5rem 0.8rem 0.5rem 0.65rem;
+  padding: 0.35rem 0.8rem 0.35rem 0.65rem;
   transition: transform 0.2s;
 }
 .share-button:hover {
