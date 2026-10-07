@@ -21,7 +21,6 @@ export default function BlogAside({ post, className }: PostAsideProps) {
         headings={headings}
         activeId={activeId}
         onItemClick={activateHeading}
-        post={post}
       />
     </PostAside>
   )
