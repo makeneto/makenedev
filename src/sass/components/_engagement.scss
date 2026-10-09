@@ -70,10 +70,10 @@
     p {
       color: inherit;
       font:
-        500 16px/1 var(--font-inter),
+        16px/1 var(--font-inter),
         sans-serif;
       letter-spacing: 0;
-      font-size: 0.875rem;
+      font-size: small;
     }
 
     &.is-selected {
