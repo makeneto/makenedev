@@ -28,6 +28,7 @@
 ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)&nbsp;
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=PostgreSQL)&nbsp;
 ![Supabase](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=Supabase)&nbsp;
+![Claude](https://img.shields.io/badge/-Claude-05122A?style=flat&logo=Claude)&nbsp;
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=Git)&nbsp;
 
 ##
