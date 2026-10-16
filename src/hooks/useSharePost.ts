@@ -1,7 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
-
 import { site } from "@/constants/site"
 
 export interface ShareProps {
@@ -15,12 +13,9 @@ export default function useSharePost({
   slug,
   basePath = "blog",
 }: ShareProps) {
-  const [canNativeShare, setCanNativeShare] = useState(false)
+  const canNativeShare =
+    typeof navigator !== "undefined" && typeof navigator.share === "function"
   const url = `${site.url}/${basePath}/${slug}`
-
-  useEffect(() => {
-    setCanNativeShare(typeof navigator !== "undefined" && !!navigator.share)
-  }, [])
 
   async function handleNativeShare() {
     if (canNativeShare) {
@@ -29,7 +24,11 @@ export default function useSharePost({
           title: `${title} | ${site.dev}`,
           url,
         })
-      } catch {}
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") return
+
+        throw error
+      }
       return
     }
   }
