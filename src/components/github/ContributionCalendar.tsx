@@ -30,13 +30,11 @@ export function ContributionCalendar({
   const handleClick = useDownloadResume()
 
   return (
-    <section className="bg-(--bg-secondary) dark:bg-(--border-tertiary) border border-(--bg-secondary) p-2 rounded-xl sm:rounded-2xl">
-      <p className="block sm:hidden text-sm mx-2 mt-2 mb-4">
-        <span className="font-medium">{total.toLocaleString("en")}</span>{" "}
-        <span className="weak-text">contributions in the last year.</span>
-      </p>
-
-      <section className="calendar-shell" aria-labelledby="contributions-title">
+    <section className="bg-(--bg-secondary) dark:bg-(--border-tertiary) border border-(--bg-secondary) p-1 rounded-xl">
+      <section
+        className="calendar-shell shadow-sm dark:shadow-lg"
+        aria-labelledby="contributions-title"
+      >
         <div
           ref={scrollRef}
           className="calendar-scroll"
@@ -65,16 +63,17 @@ export function ContributionCalendar({
         </div>
 
         <div className="calendar-footer">
-          <span className="hidden sm:block">
-            {total.toLocaleString("en-US")} contributions in the last year
-          </span>
+          <p className="text-sm">
+            <span className="font-medium">{total.toLocaleString("en")}</span>{" "}
+            <span className="weak-text">contributions in one year</span>
+          </p>
 
           <ContributionLegend />
         </div>
       </section>
 
-      <div className="p-2">
-        <p className="mt-4 flex flex-wrap items-center gap-x-1">
+      <div className="mt-2 p-2">
+        <p className="flex flex-wrap items-center gap-x-1">
           Interested in working together? Check out my{" "}
           <button
             onClick={handleClick}
