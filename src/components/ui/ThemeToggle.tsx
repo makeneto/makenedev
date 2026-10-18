@@ -11,12 +11,11 @@ export default function ThemeToggle() {
   return (
     <Button
       variant="ghost"
-      size="sm"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       aria-label="Toggle theme"
     >
-      <Sun className="nav-icon hidden dark:block" />
-      <Moon className="nav-icon block dark:hidden" />
+      <Sun className=" hidden dark:block" />
+      <Moon className=" block dark:hidden" />
     </Button>
   )
 }
