@@ -2,10 +2,6 @@ import { site } from "@/constants/site"
 
 export const navLinks = [
   {
-    label: "About",
-    link: "/about",
-  },
-  {
     label: "Work",
     link: "/work",
   },
@@ -17,14 +13,6 @@ export const navLinks = [
 
 export const footerLinks = [
   {
-    label: "Home",
-    link: "/",
-  },
-  {
-    label: "About",
-    link: "/about",
-  },
-  {
     label: "Work",
     link: "/work",
   },
@@ -33,20 +21,16 @@ export const footerLinks = [
     link: "/blog",
   },
   {
-    label: "Contact",
-    link: "/contact",
-  },
-  {
     label: "Books",
     link: "/books",
-  },
-  {
-    label: "Setup",
-    link: "/setup",
   },
 ]
 
 export const socialLinks = [
+  {
+    label: "Github",
+    link: site.github,
+  },
   {
     label: "LinkedIn",
     link: "https://linkedin.com/in/makene-neto",
