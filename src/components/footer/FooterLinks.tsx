@@ -6,8 +6,8 @@ export default function FooterLinks() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <section className="w-screen sm:w-auto grid justify-center gap-4 sm:flex items-center sm:justify-between border-t border-[--border-primary] pt-6">
-      <span className="copyright text-sm text-center sm:text-start">
+    <section className="sm:w-auto flex flex-col-reverse sm:flex-row justify-center gap-3 items-center sm:justify-between border-t border-[--border-primary] pt-6">
+      <span className="weak-text text-sm text-center sm:text-start">
         © {site.dev} | {currentYear}
       </span>
 
