@@ -43,6 +43,7 @@ textarea {
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-engagement: #f8f4efe3;
+  --bg-calendar-shell: #ffffff;
   --text-primary: #332d25;
   --text-secondary: #74695a;
   --text-tertiary: #988c7d;
@@ -65,10 +66,11 @@ textarea {
 
 /* Dark Mode */
 .dark {
-  --bg-primary: #000000;
+  --bg-primary: #0c0c0c;
   --bg-secondary: #151515;
   --bg-tertiary: #1a1a1a;
   --bg-engagement: rgba(0, 0, 0, 0.651);
+  --bg-calendar-shell: #000000;
   --text-primary: #ffffff;
   --text-secondary: var(--color-muted-foreground);
   --text-tertiary: #848484;
@@ -448,7 +450,7 @@ textarea {
 
 .calendar-shell {
   border-radius: 0.8rem;
-  background: var(--bg-primary);
+  background: var(--bg-calendar-shell);
   padding: 1.1rem 1rem;
   overflow: hidden;
 }
@@ -572,8 +574,6 @@ textarea {
     padding: 9px 12px;
   }
   .calendar-shell .calendar-footer {
-    align-items: flex-start;
-    flex-direction: column;
     font-size: 15px;
     margin-top: 14px;
   }
