@@ -7,14 +7,9 @@
 
 .calendar-shell {
   border-radius: 0.8rem;
-  margin-bottom: 9rem;
-  background: var(--calendar);
+  background: var(--bg-primary);
   padding: 1.1rem 1rem;
   overflow: hidden;
-
-  @media (max-width: 884px) {
-    margin-bottom: 3.5rem;
-  }
 
   .calendar-scroll {
     overflow-x: auto;
@@ -44,7 +39,7 @@
 
   .calendar-month-track {
     display: grid;
-    column-gap: 6px;
+    column-gap: 2px;
     align-items: center;
     width: max-content;
 
@@ -57,7 +52,7 @@
 
   .calendar-grid {
     display: flex;
-    gap: 6px;
+    gap: 2px;
     justify-content: flex-start;
     overflow: visible;
   }
@@ -72,9 +67,9 @@
   .contribution-cell {
     position: relative;
     display: block;
-    width: 14px;
-    height: 14px;
-    border-radius: 2px;
+    width: 11px;
+    height: 11px;
+    border-radius: 1.5px;
     background: var(--contrib-0);
     cursor: pointer;
 
