@@ -2,8 +2,7 @@ import React from "react"
 import { Metadata } from "next"
 
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import VerticalBlogList from "@/components/blog/VerticalBlogList"
-import BlogResume from "@/components/blog/BlogResume"
+import VerticalBlogList from "@/components/blog/BlogList"
 import { site } from "@/constants/site"
 
 export const metadata: Metadata = {
@@ -11,15 +10,15 @@ export const metadata: Metadata = {
   description:
     "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
   alternates: {
-    canonical: `${site.url}/blog`
+    canonical: `${site.url}/blog`,
   },
   openGraph: {
     title: `My Blog | ${site.dev}`,
     description:
       "I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world.",
     url: `${site.url}/blog`,
-    type: "website"
-  }
+    type: "website",
+  },
 }
 
 export default function BlogPage() {
@@ -27,11 +26,10 @@ export default function BlogPage() {
     <React.Fragment>
       <DefaultHeader
         title="My Blog"
-        description="The world I write about is not fixed in one field or perspective. It shifts between technology, design, culture, business, and modern life. I explore ideas as they come, connect what seems unrelated, and understand how everything fits in a changing world. I’m not focused on mastering a single lane but building a broader understanding that evolves."
+        description="The world I write about is not fixed in one field or perspective."
       />
 
       <VerticalBlogList />
-      <BlogResume />
     </React.Fragment>
   )
 }
