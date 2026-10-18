@@ -30,9 +30,9 @@ export default function NavRoutes({ links }: NavRoutesProps) {
           key={link.link}
           href={link.link}
           translate={link.label === "Home" ? "no" : "yes"}
-          className={
+          className={`text-sm ${
             isActivePath(pathname, link.link) ? "nav--activeLink" : "nav--link"
-          }
+          }`}
           aria-label={`Visit ${link.label} page`}
         >
           {link.label}
