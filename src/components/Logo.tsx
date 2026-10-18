@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 export default function Logo({ variant }: LogoProps) {
-  const sizeClass = variant === "nav" ? "w-8 sm:w-10" : "w-12 m-auto sm:m-0"
+  const sizeClass = variant === "nav" ? "w-8 sm:w-8.5" : "w-12 m-auto sm:m-0"
 
   return (
     <Link href="/" aria-label="Makenedev's Logo" className="logo">
