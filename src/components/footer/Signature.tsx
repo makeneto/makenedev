@@ -28,9 +28,9 @@ export default function Signature() {
           : "/assets/makenedev-dark-signature.webp"
       }
       alt="Makenedev's signature"
-      className="m-auto h-auto w-20 sm:m-0 sm:w-32"
       width={100}
       height={40}
+      className="m-auto h-auto w-20 sm:m-0 sm:w-30"
     />
   )
 }
