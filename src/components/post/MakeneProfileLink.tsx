@@ -6,7 +6,7 @@ import { site } from "@/constants/site"
 
 export default function MakeneProfileLink() {
   return (
-    <Link href="/about" className="flex items-center gap-2">
+    <Link href="/" className="flex items-center gap-2">
       <Button variant="link" className="btn--link p-0">
         <Image
           src={`${site.github}.png`}
