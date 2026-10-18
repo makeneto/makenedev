@@ -1,12 +1,5 @@
 import type { Metadata } from "next"
-import {
-  Anton,
-  Antonio,
-  Inter,
-  JetBrains_Mono,
-  Playfair_Display,
-  Roboto,
-} from "next/font/google"
+import { Inter } from "next/font/google"
 
 import "@/css/style.css"
 import "@/css/index.css"
@@ -22,65 +15,19 @@ const inter = Inter({
   display: "swap",
 })
 
-const anton = Anton({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-anton",
-  display: "swap",
-})
-
-const antonio = Antonio({
-  subsets: ["latin"],
-  variable: "--font-antonio",
-  display: "swap",
-})
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800", "900"],
-  variable: "--font-playfair-display",
-  display: "swap",
-})
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
-  display: "swap",
-})
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-mono",
-  display: "swap",
-})
-
 export const metadata: Metadata = {
   title: site.dev,
   description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
   keywords: [
     site.dev,
     "Makene",
-    "Makita",
+    "Makene Neto",
     "Makenedev",
-    "Neto",
     "Desenvolvimento",
-    "Web",
     "Software",
     "Portfolio",
-    "Engineer",
-    "Software Engineer",
+    "software Engineer",
     "Frontend",
-    "Backend",
-    "Fullstack",
-    "React",
-    "Node.js",
-    "TypeScript",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "AI",
   ],
   authors: [{ name: site.dev, url: site.url }],
   openGraph: {
@@ -100,11 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en-US"
-      suppressHydrationWarning
-      className={`${inter.variable} ${anton.variable} ${antonio.variable} ${playfairDisplay.variable} ${roboto.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang="en-US" suppressHydrationWarning className={inter.variable}>
       <body className={inter.className}>
         <Providers>
           <TooltipProvider>
