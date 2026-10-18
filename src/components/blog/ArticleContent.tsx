@@ -2,7 +2,6 @@
 
 import { useMemo } from "react"
 
-import BlogAside from "./BlogAside"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "./Engagement"
 import { Controls } from "../post/PostControls"
@@ -16,26 +15,22 @@ export function ArticleContent({ post, previous, next }: PostContentProps) {
   )
 
   return (
-    <article className="relative grid sm:grid-cols-[70%_auto] gap-20 xl:gap-15">
-      <div className="relative">
-        <BlogHeader post={post} />
+    <article>
+      <BlogHeader post={post} />
 
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-          className="mt-20 post-content blog-content"
-        />
+      <div
+        dangerouslySetInnerHTML={{ __html: html }}
+        className="mt-20 post-content blog-content"
+      />
 
-        <Engagement post={post} basePath="blog" />
+      <Engagement post={post} basePath="blog" />
 
-        <Controls
-          variant="blog"
-          previous={previous}
-          next={next}
-          basePath="/blog"
-        />
-      </div>
-
-      <BlogAside post={post} className="mt-15" />
+      <Controls
+        variant="blog"
+        previous={previous}
+        next={next}
+        basePath="/blog"
+      />
     </article>
   )
 }
