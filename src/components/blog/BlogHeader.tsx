@@ -1,38 +1,30 @@
-import Link from "next/link"
-import { RiArrowRightSLine } from "@remixicon/react"
-import { CalendarDays } from "lucide-react"
+import { CalendarDays, Clock3 } from "lucide-react"
 
 import { formatLongDate } from "@/utils/formatDate"
-import { BlogArticle } from "@/services/wisp"
-import { Button } from "../ui/button"
+import { BlogArticle, readingTime } from "@/services/wisp"
 import MakeneProfileLink from "../post/MakeneProfileLink"
 
 export default function BlogHeader({ post }: { post: BlogArticle }) {
-  const { publishedAt, createdAt } = post
+  const { publishedAt, createdAt, content } = post
   const date = publishedAt || createdAt
 
   return (
     <header className="grid gap-5 sm:gap-5">
-      <span className="flex items-center gap-1">
-        <Link href="/blog">
-          <Button variant="link" className="p-0">
-            Blog
-          </Button>
-        </Link>
-        <RiArrowRightSLine size={16} />
-        <h1 className="line weak-text line-clamp-1">{post.title}</h1>
-      </span>
+      <MakeneProfileLink />
 
       <div className="post-intro">
         <h1>{post.title}</h1>
 
         <div className="flex items-center gap-3 text-sm">
-          <MakeneProfileLink />
-
-          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
-
           <span className="weak-text flex items-center gap-2">
             <CalendarDays size={14} /> {date ? formatLongDate(date) : "No data"}
+          </span>
+
+          <div className="w-px h-4 bg-zinc-800" />
+
+          <span className="weak-text flex items-center gap-2">
+            <Clock3 size={14} strokeWidth={1.8} />
+            <p>{readingTime(content)}</p>
           </span>
         </div>
 
