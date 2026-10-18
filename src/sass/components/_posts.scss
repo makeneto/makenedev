@@ -1,18 +1,17 @@
 .post {
   &-intro {
     h1 {
-      font-size: 2.5rem;
+      font-size: 1.89rem;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 1rem;
 
       @media (width <= 640px) {
-        font-size: 1.8rem;
-        line-height: 2.7rem;
+        font-size: 1.3rem;
       }
 
       @media (width <= 400px) {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -61,13 +60,13 @@
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       font-weight: 500;
       padding-top: 1.7rem;
-      margin-block: 1rem 2rem;
+      margin-block: 0.5rem 1rem;
 
       @media (width <= 640px) {
-        font-size: 1.45rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -118,45 +117,6 @@
 
     & a:last-child {
       display: none;
-    }
-  }
-
-  &-toc {
-    p {
-      font-weight: 500;
-      margin-bottom: 0.6rem;
-    }
-
-    ul {
-      display: grid;
-      gap: 1rem;
-    }
-
-    &__item {
-      background: none;
-      border: none;
-      text-align: left;
-      cursor: pointer;
-      color: var(--text-tertiary);
-      font-size: 0.85rem;
-      transition:
-        color 0.25s ease,
-        gap 0.25s ease;
-
-      &.is-active {
-        color: var(--foreground, #fff);
-      }
-    }
-
-    &__marker {
-      width: 0;
-      height: 1px;
-      background: currentColor;
-      opacity: 0;
-      transition:
-        width 0.25s ease,
-        opacity 0.25s ease;
-      flex-shrink: 0;
     }
   }
 }
