@@ -1,23 +1,21 @@
 interface DefaultHeaderProps {
   title: string
   description?: string
-  component?: React.ReactNode
-  isShowcase?: boolean
 }
 
 export default function DefaultHeader({
   title,
   description,
-  component,
-  isShowcase = false,
 }: DefaultHeaderProps) {
   return (
-    <header
-      className={`"headerPage--default ${!isShowcase ? "mb-28 sm:mb-40" : "mb-14 sm:mb-20"}`}
-    >
-      <h1 className="headerPage--default__title">{title}</h1>
-      {description && <p className="description--normal">{description}</p>}
-      {component && <div>{component}</div>}
+    <header className="grid gap-2 mb-20">
+      <h1
+        className="m-0 whitespace-nowrap text-[1.6rem] lowercase italic leading-none tracking-[-0.01em] text-(--text-primary)"
+        style={{ fontFamily: '"Instrument Serif", serif' }}
+      >
+        {title}.
+      </h1>
+      {description && <p className="weak-text">{description}</p>}
     </header>
   )
 }
