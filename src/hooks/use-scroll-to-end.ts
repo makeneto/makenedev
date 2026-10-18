@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react"
 
-export function useScrollToEnd<T extends HTMLElement>(deps: unknown[] = []) {
+export function useScrollToEnd<T extends HTMLElement>(dependency?: unknown) {
   const scrollRef = useRef<T>(null)
   const innerRef = useRef<HTMLDivElement>(null)
 
@@ -26,7 +26,7 @@ export function useScrollToEnd<T extends HTMLElement>(deps: unknown[] = []) {
       resizeObserver.disconnect()
       window.removeEventListener("load", scrollToEnd)
     }
-  }, deps)
+  }, [dependency])
 
   return { scrollRef, innerRef }
 }
