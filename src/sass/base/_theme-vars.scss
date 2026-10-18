@@ -1,58 +1,21 @@
+/* Light Mode */
 :root {
-  /* Light Mode */
   --bg-primary: #f8f4ef;
   --bg-secondary: rgba(232, 216, 195, 0.361);
   --bg-tertiary: rgba(78, 48, 5, 0.078);
-  --bg-pricing-card: #ffffff;
-  --bg-service-hovered: #000000;
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-tag-hovered: rgba(232, 216, 195, 0.361);
   --bg-engagement: #f8f4efe3;
-  --bg-book: rgba(254, 187, 100, 0.361);
-
-  --openToWork-bg: rgba(179, 175, 148, 0.141);
-  --openToWork-hovered: rgba(213, 213, 213, 0.788);
-
-  --light-gray-bg: rgba(238, 238, 238, 0.686);
-
-  --profile-gradient: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(255, 255, 255, 0) 100%
-  );
 
   --text-primary: #332d25;
   --text-secondary: #74695a;
   --text-tertiary: #988c7d;
-  --text-neutral: rgba(152, 139, 124, 0.6);
-  --text-tag: #a2896be6;
-  --text-service-hovered: #ffffff;
-  --description-service-hovered: #c7c7bb;
 
-  --text-label: #332d25;
+  --text-service-hovered: #ffffff;
 
   --border-primary: #bebebe;
   --border-secondary: #ccccc7;
   --border-tertiary: #72645229;
-  --border-tag: #c2b3a1;
-  --border-services: transparent;
-  --border-resume: #c7c2bc;
-
-  --shadow-service: rgb(255 255 255 / 39%);
-
-  --button-primary-bg: #332d25;
-  --button-primary-text: #ffffff;
-  --button-primary-bg-hovered: #2e2e2e;
-  --button-primary-disabled-bg: #d4d4d4;
-  --button-primary-disabled-text: #808080;
-  --cta-button-hover: #504639;
-
-  --surface-hover: #e8e8e5;
-  --surface-active: #d9d9d5;
-
-  --accent-soft: #d9d9d5;
-  --accent-medium: #b8b8af;
-  --accent-strong: #8e8e61;
 
   --text-primary-rgb: 13, 13, 11;
   --text-secondary-rgb: 58, 58, 53;
@@ -69,60 +32,22 @@
   --contrib-4: #7a6650;
 }
 
+/* Dark Mode */
 .dark {
-  /* Dark Mode */
   --bg-primary: #000000;
   --bg-secondary: #151515;
   --bg-tertiary: #1a1a1a;
-  --bg-pricing-card: #000000;
-  --bg-service-hovered: #151515;
   --bg-engagement: rgba(0, 0, 0, 0.651);
-  --bg-book: rgb(47, 47, 47);
-
-  --openToWork-bg: rgba(24, 24, 27, 0.741);
-  --openToWork-hovered: rgba(39, 39, 42, 0.729);
-
-  --light-gray-bg: rgba(67, 67, 67, 0.212);
-
-  --profile-gradient: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 60%,
-    rgb(0, 0, 0) 100%
-  );
 
   --text-primary: #ffffff;
   --text-secondary: var(--color-muted-foreground);
   --text-tertiary: #848484;
-  --text-neutral: #44444a;
-  --text-tag: #a1a1a1;
-
-  --description-service-hovered: #828282;
-
-  --text-label: #9f9fa9;
 
   --border-primary: #3a3a3a;
   --border-secondary: #3f3f3f;
   --border-tertiary: #1d1d1d;
-  --border-tag: #262626;
-
-  --border-services: #252525;
-  --border-resume: #3f3f46;
-
-  --shadow-service: none;
-
-  --button-primary-text: #000000;
-  --button-primary-bg: #ffffff;
-  --button-primary-bg-hovered: #d2d2d2;
-  --button-primary-disabled-bg: rgba(68, 68, 68, 0.639);
-  --button-primary-disabled-text: #646464;
-  --cta-button-hover: #bfbfbf;
 
   --surface-hover: #1f1f1f;
-  --surface-active: #2a2a2a;
-
-  --accent-soft: #3f3f3f;
-  --accent-medium: #484848;
-  --accent-strong: #a8a8a8;
 
   --selection-bg: rgba(255, 255, 255, 0.144);
 
