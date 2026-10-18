@@ -1,30 +1,25 @@
-import { Activity } from "react"
-import { useMediaQuery } from "react-responsive"
-
 import { navLinks } from "@/data/links"
 import Logo from "../Logo"
 import ThemeToggle from "../ui/ThemeToggle"
 import NavRoutes from "./NavRoutes"
-import SocialList from "../SocialLinks"
+import SocialLinks from "./SocialLinks"
 
 export default function Navbar() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
-
   return (
     <nav className="nav flex items-center justify-between">
-      <div className="flex items-center gap-3 sm:gap-5">
+      <div className="flex items-center gap-4 sm:gap-5">
         <Logo variant="nav" />
-        <div className="w-px h-7 bg-zinc-200 dark:bg-zinc-800" />
+        <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-700" />
         <NavRoutes links={navLinks} />
       </div>
 
-      <div className="flex items-center sm:gap-4">
-        <SocialList />
+      <div className="flex items-center sm:gap-2">
+        <SocialLinks />
 
-        <Activity mode={!isMobile ? "visible" : "hidden"}>
-          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
+        <div className="hidden min-[769px]:flex items-center">
+          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-700" />
           <ThemeToggle />
-        </Activity>
+        </div>
       </div>
     </nav>
   )
