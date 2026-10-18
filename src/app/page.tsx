@@ -1,35 +1,32 @@
-import React from "react"
 import { Metadata } from "next"
 
-import HomeHeader from "@/components/headers/HomeHeader"
-import ShowcaseSection from "@/components/showcase-section/ShowcaseSection"
-import MyServices from "@/components/myServices/MyServices"
-import VerticalBlogList from "@/components/blog/VerticalBlogList"
-import ContactSection from "@/components/contact/ContactSection"
+import WorksList from "@/components/work/WorksList"
 import { site } from "@/constants/site"
+import HomeHeader from "@/components/headers/HomeHeader"
+import MyExperiences from "@/components/home/MyExperience"
+import BlogList from "@/components/blog/BlogList"
 
 export const metadata: Metadata = {
   title: site.dev,
   description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
   alternates: {
-    canonical: site.url
+    canonical: site.url,
   },
   openGraph: {
     title: `My Works | ${site.dev}`,
     description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
     url: site.url,
-    type: "website"
-  }
+    type: "website",
+  },
 }
 
 export default async function HomePage() {
   return (
-    <React.Fragment>
+    <main className="flex flex-col gap-32">
       <HomeHeader />
-      <MyServices />
-      <ShowcaseSection title="Last Works" viewAll="/work" isHomePage />
-      <VerticalBlogList />
-      <ContactSection className="mt-40 sm:mt-60" />
-    </React.Fragment>
+      <MyExperiences isHomePage />
+      <WorksList isHomePage />
+      <BlogList isHomePage />
+    </main>
   )
 }
