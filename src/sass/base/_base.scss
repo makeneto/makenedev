@@ -2,33 +2,25 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 42rem;
+
+  @media (width <= 640px) {
+    padding-inline: 1rem;
+    max-width: 100%;
+  }
 
   &::selection {
     background-color: var(--selection-bg);
-    color: var(--text-primary);
+    color: var(--text-secondary);
   }
+}
 
-  @media (width >= 640px) {
-    padding-inline: 1.5rem;
-  }
-
-  @media (width >= 884px) {
-    padding-inline: 10rem;
-  }
-
-  @media (width >= 1440px) {
-    padding-inline: 15rem;
-  }
-
-  @media (width >= 1600px) {
-    padding-inline: 30rem;
-  }
-
-  @media (width >= 1920px) {
-    padding-inline: 0;
-    max-width: 840px;
-    margin: auto;
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea,
+  select {
+    font-size: inherit;
   }
 }
 
