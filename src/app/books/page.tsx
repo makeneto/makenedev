@@ -3,8 +3,7 @@ import { Metadata } from "next"
 
 import { site } from "@/constants/site"
 import DefaultHeader from "@/components/headers/DefaultHeader"
-import BooksResume from "@/components/books/BooksResume"
-import ShowcaseBooks from "@/components/books/ShowcaseBooks"
+import BooksList from "@/components/books/BooksList"
 
 export const revalidate = 300
 
@@ -28,11 +27,10 @@ export default function BooksPage() {
     <React.Fragment>
       <DefaultHeader
         title="Books Read"
-        description={`A living list of the books that passed by me and left a mark. It's not a "best of all time" list, it's simply what I read, what made me think differently, and what I think is worth your time. I'm updating this list as I finish new readings, so check back here every now and then.`}
+        description={`A living list of the books that passed by me and left a mark.`}
       />
 
-      <ShowcaseBooks />
-      <BooksResume />
+      <BooksList />
     </React.Fragment>
   )
 }
