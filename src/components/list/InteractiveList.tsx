@@ -156,7 +156,7 @@ function ListItemContent({ item }: { item: InteractiveListItem }) {
             )}
           </h3>
           {item.meta && (
-            <span className="shrink-0 text-sm weak-text">{item.meta}</span>
+            <span className="shrink-0 text-xs sm:text-sm weak-text">{item.meta}</span>
           )}
           {item.actions?.length ? (
             <div className="flex shrink-0 items-center gap-4">
@@ -166,7 +166,7 @@ function ListItemContent({ item }: { item: InteractiveListItem }) {
                   href={action.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm hover:underline underline-offset-3"
+                  className="flex items-center gap-1 text-xs sm:text-sm hover:underline underline-offset-3"
                 >
                   {action.label}
                   <ArrowUpRight size={16} aria-hidden="true" />
