@@ -11,6 +11,8 @@ import { ContributionWeek } from "@/interfaces/github-types"
 import { Button } from "../ui/button"
 import { ArrowUpRight, Calendar1Icon, Mail } from "lucide-react"
 import useDownloadResume from "@/hooks/useDownloadResume"
+import Link from "next/link"
+import { site } from "@/constants/site"
 
 type ContributionCalendarProps = {
   weeks: ContributionWeek[]
@@ -83,12 +85,17 @@ export function ContributionCalendar({
         </p>
 
         <div className="mt-5 sm:mt-4 space-x-2">
-          <Button>
-            <Calendar1Icon /> Book an intro call
-          </Button>
-          <Button variant="outline">
-            <Mail /> Send an email
-          </Button>
+          <Link href="https://cal.com/makene-neto-qqro7h/30min" target="_blank">
+            <Button>
+              <Calendar1Icon /> Book an intro call
+            </Button>
+          </Link>
+
+          <Link href={`malito:${site.email}`} target="_blank">
+            <Button variant="outline">
+              <Mail /> Send an email
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
