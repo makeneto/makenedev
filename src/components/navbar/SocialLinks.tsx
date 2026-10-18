@@ -1,4 +1,8 @@
-import { RiInstagramLine, RiLinkedinBoxFill } from "@remixicon/react"
+import {
+  RiGithubFill,
+  RiInstagramLine,
+  RiLinkedinBoxFill,
+} from "@remixicon/react"
 import Link from "next/link"
 
 import { socialLinks } from "@/data/links"
@@ -14,7 +18,9 @@ export default function SocialLinks() {
           rel="noopener noreferrer"
           className="nav--link"
         >
-          {link.label === "LinkedIn" ? (
+          {link.label === "Github" ? (
+            <RiGithubFill className="nav-icon" />
+          ) : link.label === "LinkedIn" ? (
             <RiLinkedinBoxFill className="nav-icon" />
           ) : link.label === "Instagram" ? (
             <RiInstagramLine className="nav-icon" />
