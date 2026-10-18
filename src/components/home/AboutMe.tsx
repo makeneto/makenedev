@@ -23,13 +23,10 @@ export default function AboutMe() {
       <div className="grid gap-4">
         <p className="description--medium">
           Not every path needs a title. Some progress happens in silence through
-          iteration, uncertainty, and persistence when no one is watching. This
-          journey.
+          iteration.
         </p>
         <p className="description--medium">
-          Not every path needs a title. Some progress happens in silence through
-          iteration, uncertainty, and persistence when no one is watching. This
-          journey.
+          Not every path needs a title. Some progress happens in .
         </p>
       </div>
     </header>
