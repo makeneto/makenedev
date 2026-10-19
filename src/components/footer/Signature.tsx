@@ -30,7 +30,7 @@ export default function Signature() {
       alt="Makenedev's signature"
       width={100}
       height={40}
-      className="h-auto w-20 sm:m-0 sm:w-30"
+      className="h-auto w-20 mx-auto sm:m-0 sm:w-30 mb-8 sm:mb-7"
     />
   )
 }
