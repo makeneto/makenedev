@@ -3,36 +3,14 @@
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-import { AdjacentItem, ControlsProps } from "@/interfaces/post"
-import { Button } from "../ui/button"
+import { AdjacentItem } from "@/interfaces/post"
+import { Button } from "../../ui/button"
 
-export function Controls({ variant, previous, next, basePath }: ControlsProps) {
-  if (!previous && !next) return null
-
-  return (
-    <nav className="flex items-center justify-between gap-6">
-      <ControlLink
-        item={previous}
-        basePath={basePath}
-        direction="previous"
-        variant={variant}
-      />
-
-      <ControlLink
-        item={next}
-        basePath={basePath}
-        direction="next"
-        variant={variant}
-      />
-    </nav>
-  )
-}
-
-function ControlLink({
+export function PostControlsLink({
   item,
   basePath,
   direction,
-  variant,
+  variant
 }: {
   item: AdjacentItem | null
   basePath: string
