@@ -16,10 +16,8 @@ export default function Navbar() {
       <div className="flex items-center sm:gap-2">
         <SocialLinks />
 
-        <div className="hidden min-[769px]:flex items-center">
-          <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-700" />
-          <ThemeToggle />
-        </div>
+        <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
+        <ThemeToggle />
       </div>
     </nav>
   )
