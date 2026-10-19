@@ -15,7 +15,7 @@ export default function DefaultHeader({
       >
         {title}.
       </h1>
-      {description && <p className="weak-text">{description}</p>}
+      {description && <p className="weak-text text-[0.96rem]">{description}</p>}
     </header>
   )
 }
