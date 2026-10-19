@@ -13,7 +13,7 @@ export default function Navbar() {
         <NavRoutes links={navLinks} />
       </div>
 
-      <div className="flex items-center sm:gap-2">
+      <div className="flex items-center">
         <SocialLinks />
 
         <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800" />
