@@ -1,75 +1,75 @@
+import {
+  RiGithubFill,
+  RiInstagramLine,
+  RiLinkedinBoxFill
+} from "@remixicon/react"
+
 import { site } from "@/constants/site"
+import { LinkType } from "@/interfaces/link-types"
+import { Calendar1Icon, Mail } from "lucide-react"
 
-export const navLinks = [
+export const navLinks: LinkType[] = [
   {
+    ariaLabel: "Link to the Work page",
     label: "Work",
-    link: "/work",
+    href: "/work"
   },
   {
+    ariaLabel: "Link to the Blog page",
     label: "Blog",
-    link: "/blog",
-  },
+    href: "/blog"
+  }
 ]
 
-export const footerLinks = [
+export const socialLinks: LinkType[] = [
   {
+    ariaLabel: "Makene's GitHub",
+    icon: RiGithubFill,
+    href: site.github
+  },
+  {
+    ariaLabel: "Makene's LinkedIn",
+    icon: RiLinkedinBoxFill,
+    href: "https://linkedin.com/in/makene-neto"
+  },
+  {
+    ariaLabel: "Makene's Instagram",
+    icon: RiInstagramLine,
+    href: site.instagram
+  }
+]
+
+export const contactLinks: LinkType[] = [
+  {
+    ariaLabel: "Schedule a call with Makene",
+    label: "Book an intro call",
+    icon: Calendar1Icon,
+    buttonVariant: "default",
+    href: site.call
+  },
+  {
+    ariaLabel: "Send an email to Makene",
+    label: "Send an email",
+    icon: Mail,
+    buttonVariant: "outline",
+    href: `mailto:${site.email}`
+  }
+]
+
+export const footerLinks: LinkType[] = [
+  {
+    ariaLabel: "Link to the Work page",
     label: "Work",
-    link: "/work",
+    href: "/work"
   },
   {
+    ariaLabel: "Link to the Blog page",
     label: "Blog",
-    link: "/blog",
+    href: "/blog"
   },
   {
+    ariaLabel: "Link to the Books page",
     label: "Books",
-    link: "/books",
-  },
-]
-
-export const socialLinks = [
-  {
-    label: "Github",
-    link: site.github,
-  },
-  {
-    label: "LinkedIn",
-    link: "https://linkedin.com/in/makene-neto",
-  },
-  {
-    label: "Instagram",
-    link: "https://instagram.com/makeneto",
-  },
-]
-
-export const contacts = [
-  {
-    label: "Email",
-    href: "/contact",
-    display: "m/contact",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com/in/makene-neto",
-    display: "in/makene-neto",
-  },
-  {
-    label: "Meeting",
-    href: "https://calendly.com/makeneto17/30min",
-    display: "calendly.com",
-  },
-]
-
-export const profileLinks = [
-  {
-    label: "Github",
-    link: site.github,
-  },
-  {
-    label: "Email",
-    link: `mailto:${site.email}`,
-  },
-  {
-    label: "LinkedIn",
-    link: "https://linkedin.com/in/makene-neto",
-  },
+    href: "/books"
+  }
 ]
