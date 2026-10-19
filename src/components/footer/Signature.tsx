@@ -13,7 +13,7 @@ export default function Signature() {
   const mounted = useSyncExternalStore(
     subscribe,
     getClientSnapshot,
-    getServerSnapshot,
+    getServerSnapshot
   )
 
   if (!mounted) return null
@@ -30,7 +30,7 @@ export default function Signature() {
       alt="Makenedev's signature"
       width={100}
       height={40}
-      className="m-auto h-auto w-20 sm:m-0 sm:w-30"
+      className="h-auto w-20 sm:m-0 sm:w-30"
     />
   )
 }
