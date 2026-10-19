@@ -1,18 +1,9 @@
-"use client"
+import type { ContributionWeek } from "@/interfaces/github-types"
 
-import { TooltipProvider } from "@/components/ui/tooltip"
-import { useScrollToEnd } from "@/hooks/use-scroll-to-end"
-
-import { ContributionCell } from "./ContributionCell"
-import { ContributionLegend } from "./ContributionLegend"
-import { ContributionMonths } from "./ContributionMonths"
-import { getMaxContributionCount } from "@/utils/github/getMaxContributionCount"
-import { ContributionWeek } from "@/interfaces/github-types"
-import { Button } from "../ui/button"
-import { ArrowUpRight, Calendar1Icon, Mail } from "lucide-react"
-import useDownloadResume from "@/hooks/useDownloadResume"
-import Link from "next/link"
-import { site } from "@/constants/site"
+import { ContactLinks } from "./ContactLinks"
+import { ContributionFooter } from "./ContributionFooter"
+import { ContributionGraph } from "./ContributionGraph"
+import { ResumeCta } from "./ResumeCta"
 
 type ContributionCalendarProps = {
   weeks: ContributionWeek[]
@@ -23,79 +14,21 @@ type ContributionCalendarProps = {
 export function ContributionCalendar({
   weeks,
   total,
-  year,
+  year
 }: ContributionCalendarProps) {
-  const { scrollRef, innerRef } = useScrollToEnd<HTMLDivElement>(weeks.length)
-  const max = getMaxContributionCount(weeks)
-  const handleClick = useDownloadResume()
-
   return (
     <section className="bg-(--bg-secondary) dark:bg-(--border-tertiary) border border-(--bg-secondary) p-1 rounded-xl">
       <section
         className="calendar-shell shadow-sm dark:shadow-lg"
         aria-labelledby="contributions-title"
       >
-        <div
-          ref={scrollRef}
-          className="calendar-scroll"
-          tabIndex={0}
-          aria-label="Deslize horizontalmente para ver os últimos 12 meses"
-        >
-          <div className="calendar-inner" ref={innerRef}>
-            <ContributionMonths weeks={weeks} />
-
-            <TooltipProvider delayDuration={0}>
-              <div
-                className="calendar-grid"
-                role="grid"
-                aria-label={`Calendário de contribuições de ${year}`}
-              >
-                {weeks.map((week, weekIndex) => (
-                  <div className="calendar-week" role="row" key={weekIndex}>
-                    {week.contributionDays.map((day) => (
-                      <ContributionCell key={day.date} day={day} max={max} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </TooltipProvider>
-          </div>
-        </div>
-
-        <div className="calendar-footer">
-          <p className="text-sm">
-            <span className="font-medium">{total.toLocaleString("en")}</span>{" "}
-            <span className="weak-text">contributions in one year</span>
-          </p>
-
-          <ContributionLegend />
-        </div>
+        <ContributionGraph weeks={weeks} year={year} />
+        <ContributionFooter total={total} />
       </section>
 
       <div className="mt-2 p-2">
-        <p className="flex flex-wrap items-center gap-x-1">
-          Interested in working together? Check out my{" "}
-          <button
-            onClick={handleClick}
-            className="weak-text flex items-center gap-1 hover:underline underline-offset-3"
-          >
-            Resume <ArrowUpRight size={16} />
-          </button>
-        </p>
-
-        <div className="mt-5 sm:mt-4 space-x-2">
-          <Link href="https://cal.com/makene-neto-qqro7h/30min" target="_blank">
-            <Button>
-              <Calendar1Icon /> Book an intro call
-            </Button>
-          </Link>
-
-          <Link href={`mailto:${site.email}`} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline">
-              <Mail /> Send an email
-            </Button>
-          </Link>
-        </div>
+        <ResumeCta />
+        <ContactLinks />
       </div>
     </section>
   )
