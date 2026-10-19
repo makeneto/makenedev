@@ -1,0 +1,34 @@
+import { CalendarDays } from "lucide-react"
+
+import { BlogArticle } from "@/services/wisp"
+import { formatLongDate } from "@/utils/formatDate"
+import { getExperiencePeriod } from "@/data/experiencePeriods"
+import { ContactLinks } from "../github/ContactLinks"
+import { RecommendButton } from "./RecommendButton"
+
+export default function ExperienceHeader({ post }: { post: BlogArticle }) {
+  const { slug, publishedAt, createdAt } = post
+  const date = publishedAt || createdAt
+  const period = getExperiencePeriod(slug)
+
+  return (
+    <header className="grid gap-5 sm:gap-5">
+      <span className="weak-text text-sm flex items-center gap-2 shrink-0">
+        <CalendarDays size={14} />
+        {period || (date ? formatLongDate(date) : "No data")}
+      </span>
+
+      <div className="post-intro mb-0">
+        <h1>{post.title}</h1>
+        <p className="mt-3 mb-1.5 text-(--text-secondary)">
+          {post.description}
+        </p>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <ContactLinks />
+        <RecommendButton slug={post.slug} />
+      </div>
+    </header>
+  )
+}
