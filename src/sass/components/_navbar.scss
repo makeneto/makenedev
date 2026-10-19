@@ -17,7 +17,7 @@
 
   &--link,
   &--activeLink {
-    text-transform: capitalize;
+    text-transform: lowercase;
     font-weight: 500;
   }
 
@@ -38,13 +38,8 @@
 
   &-icon {
     cursor: pointer;
-    width: 1.2rem;
-    height: 1.2rem;
-
-    @media (width <= 640px) {
-      width: 1.15rem;
-      height: 1.15rem;
-    }
+    width: 1.1rem;
+    height: 1.1rem;
 
     @media (width <= 400px) {
       width: 1rem;
