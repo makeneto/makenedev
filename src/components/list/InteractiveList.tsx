@@ -138,7 +138,7 @@ function ListItemContent({ item }: { item: InteractiveListItem }) {
 
       <div className="min-w-0 flex-1 flex flex-col gap-1">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-          <h3 className="min-w-0 flex-1 text-base font-medium">
+          <h3 className="min-w-0 flex-1 text-base">
             {item.href ? (
               <Link
                 href={item.href}
