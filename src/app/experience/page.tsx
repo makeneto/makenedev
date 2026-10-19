@@ -26,7 +26,7 @@ export default function ExperiencePage() {
     <React.Fragment>
       <DefaultHeader
         title="Experience"
-        description="A timeline of the work, teams, and product decisions behind the work."
+        description="Where I worked, what I built, and what I achieved."
       />
 
       <MyExperiences />
