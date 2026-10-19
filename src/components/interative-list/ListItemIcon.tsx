@@ -9,7 +9,7 @@ export function ListItemIcon({ icon, iconSrc }: ListItemIconProps) {
 
   if (!iconSrc || (!isBook && !isCover)) return null
 
-  if (isBook) {
+   if (isBook) {
     return (
       <div className="relative h-12 w-8 shrink-0">
         <Image
@@ -29,7 +29,7 @@ export function ListItemIcon({ icon, iconSrc }: ListItemIconProps) {
       alt=""
       width={20}
       height={20}
-      className="mt-0.5 size-7 rounded-full object-contain"
+      className="mt-0.5 size-7 rounded-full object-contain border"
     />
   )
 }
