@@ -90,7 +90,7 @@ export function ContributionCalendar({
             </Button>
           </Link>
 
-          <Link href={`malito:${site.email}`} target="_blank">
+          <Link href={`mailto:${site.email}`} target="_blank" rel="noopener noreferrer">
             <Button variant="outline">
               <Mail /> Send an email
             </Button>
