@@ -9,7 +9,7 @@ export type InteractiveListItem = {
   description?: string | null
   meta?: string
   href?: string
-  icon?: "cover" | "file"
+  icon?: "cover" | "file" | "book"
   iconSrc?: string
   actions?: InteractiveListAction[]
 }
