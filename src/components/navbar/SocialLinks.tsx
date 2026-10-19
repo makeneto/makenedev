@@ -11,7 +11,7 @@ type SocialLink = {
 
 export default function SocialLinks() {
   return (
-    <ul className="flex items-center gap-3 sm:gap-4 sm:mr-3">
+    <ul className="flex items-center gap-3 sm:gap-4 mr-3">
       {socialLinks.map(({ ariaLabel, href, icon: Icon }: SocialLink) => {
         if (!Icon) return null
 
