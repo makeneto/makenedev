@@ -20,7 +20,7 @@ export default function ExperienceHeader({ post }: { post: BlogArticle }) {
 
       <div className="post-intro mb-0">
         <h1>{post.title}</h1>
-        <p className="mt-3 mb-1.5 text-(--text-secondary)">
+        <p className="mt-3 mb-1.5 text-[0.96rem] text-(--text-secondary)">
           {post.description}
         </p>
       </div>
