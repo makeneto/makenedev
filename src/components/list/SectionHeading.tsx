@@ -10,7 +10,7 @@ type SectionHeadingProps = {
 export default function SectionHeading({
   title,
   viewAll,
-  count,
+  count
 }: SectionHeadingProps) {
   return (
     <header className="mb-8 flex items-center justify-between gap-4 border-b border-zinc-200 pb-4 dark:border-zinc-800">
@@ -32,6 +32,7 @@ export default function SectionHeading({
           <Link
             href={viewAll}
             className="flex items-center gap-1 text-sm hover:underline underline-offset-3"
+            aria-label={`See more about ${title}`}
           >
             View all <ArrowRight size={16} aria-hidden="true" />
           </Link>
