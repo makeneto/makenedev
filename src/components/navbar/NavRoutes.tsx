@@ -1,15 +1,11 @@
 "use client"
 
+import { LinkType } from "@/interfaces/link-types"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-interface LinkProps {
-  label: string
-  link: string
-}
-
 interface NavRoutesProps {
-  links: LinkProps[]
+  links: LinkType[]
 }
 
 function isActivePath(pathname: string, href: string) {
@@ -27,11 +23,11 @@ export default function NavRoutes({ links }: NavRoutesProps) {
     <section className="flex items-center gap-3 sm:gap-5">
       {links.map((link) => (
         <Link
-          key={link.link}
-          href={link.link}
+          key={link.href}
+          href={link.href}
           translate={link.label === "Home" ? "no" : "yes"}
           className={`text-sm ${
-            isActivePath(pathname, link.link) ? "nav--activeLink" : "nav--link"
+            isActivePath(pathname, link.href) ? "nav--activeLink" : "nav--link"
           }`}
           aria-label={`Visit ${link.label} page`}
         >
