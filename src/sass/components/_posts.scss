@@ -1,10 +1,8 @@
 .post {
   &-intro {
     h1 {
-      font-size: 1.89rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 600;
 
       @media (width <= 640px) {
         font-size: 1.3rem;
@@ -60,10 +58,13 @@
     }
 
     h2 {
-      font-size: 1.3rem;
+      margin-top: 2.7rem;
+      font-size: 1.2rem;
       font-weight: 500;
-      padding-top: 1.7rem;
-      margin-block: 0.5rem 1rem;
+
+      & strong {
+        font-weight: 600;
+      }
 
       @media (width <= 640px) {
         font-size: 1.2rem;
@@ -73,7 +74,7 @@
     p {
       font-size: 1.05rem;
       color: var(--text-secondary);
-      margin-top: 1.6rem;
+      margin-top: 1rem;
 
       @media (width <= 1280px) {
         font-size: 1.05rem;

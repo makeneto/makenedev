@@ -4,14 +4,15 @@ import { useMemo } from "react"
 
 import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "./Engagement"
-import { Controls } from "../post/PostControls"
+
 import { PostContentProps } from "@/interfaces/post"
 import BlogHeader from "./BlogHeader"
+import { PostControls } from "../post/controls/PostControls"
 
 export function ArticleContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
     () => processBlogContent(post.content),
-    [post.content],
+    [post.content]
   )
 
   return (
@@ -25,7 +26,7 @@ export function ArticleContent({ post, previous, next }: PostContentProps) {
 
       <Engagement post={post} basePath="blog" />
 
-      <Controls
+      <PostControls
         variant="blog"
         previous={previous}
         next={next}

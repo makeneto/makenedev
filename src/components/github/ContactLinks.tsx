@@ -5,7 +5,7 @@ import { contactLinks } from "@/data/links"
 
 export function ContactLinks() {
   return (
-    <ul className="mt-5 sm:mt-4 flex flex-wrap gap-2">
+    <ul className="flex flex-wrap gap-2">
       {contactLinks.map(({ href, label, buttonVariant, icon: Icon }) => (
         <li key={href}>
           <Button asChild variant={buttonVariant}>

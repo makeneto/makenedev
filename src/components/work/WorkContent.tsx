@@ -6,12 +6,12 @@ import PostHeader from "./WorkHeader"
 import { processBlogContent } from "@/utils/processBlogContent"
 import { Engagement } from "../blog/Engagement"
 import { PostContentProps } from "@/interfaces/post"
-import { Controls } from "../post/PostControls"
+import { PostControls } from "../post/controls/PostControls"
 
 export function WorkContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
     () => processBlogContent(post.content),
-    [post.content],
+    [post.content]
   )
 
   return (
@@ -25,7 +25,7 @@ export function WorkContent({ post, previous, next }: PostContentProps) {
 
       <Engagement post={post} basePath="work" />
 
-      <Controls
+      <PostControls
         variant="work"
         previous={previous}
         next={next}

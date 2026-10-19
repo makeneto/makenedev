@@ -31,7 +31,7 @@ export default function SectionHeading({
         {viewAll && (
           <Link
             href={viewAll}
-            className="flex items-center gap-1 text-sm hover:underline underline-offset-3"
+            className="flex items-center gap-1 text-sm hover:underline underline-offset-3 transition active:translate-y-px"
             aria-label={`See more about ${title}`}
           >
             View all <ArrowRight size={16} aria-hidden="true" />

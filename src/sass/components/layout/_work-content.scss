@@ -12,10 +12,10 @@
       counter-reset: item;
 
       li {
-        margin-left: 2rem;
+        margin-left: 1rem;
         counter-increment: item;
         display: flex;
-        gap: 16px;
+        gap: 10px;
 
         &::before {
           content: counter(item) ".";

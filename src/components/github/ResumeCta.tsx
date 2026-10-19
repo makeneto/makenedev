@@ -8,7 +8,7 @@ export function ResumeCta() {
   const handleDownload = useDownloadResume()
 
   return (
-    <p className="flex flex-wrap items-center gap-x-1">
+    <p className="mb-5 sm:mb-4 flex flex-wrap items-center gap-x-1 text-sm">
       Interested in working together? Check out my{" "}
       <button
         type="button"

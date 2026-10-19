@@ -18,21 +18,21 @@
   &--link,
   &--activeLink {
     text-transform: capitalize;
+    font-weight: 500;
   }
 
   &--activeLink {
-    font-weight: 600;
     color: var(--text-primary);
-    text-decoration: line-through;
   }
 
   &--link {
-    font-weight: 500;
-    color: var(--text-secondary);;
+    color: var(--text-secondary);
     transition: all 0.1s ease-in;
 
     &:hover {
       color: var(--text-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 

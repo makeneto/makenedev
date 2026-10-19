@@ -1,4 +1,5 @@
 import { getWorkHomeData } from "@/features/works/wispWorks"
+import { coverImage } from "@/services/wisp"
 import { site } from "@/constants/site"
 import InteractiveList from "@/components/list/InteractiveList"
 
@@ -8,40 +9,26 @@ export interface isHomeProps {
 
 export default async function WorksList({ isHomePage = false }: isHomeProps) {
   const { posts } = await getWorkHomeData()
-  const items = posts.map((post) => {
-    const domain = post.tags[0]?.name
-    const websiteUrl = domain
-      ? /^https?:\/\//i.test(domain)
-        ? domain
-        : `https://${domain}`
-      : undefined
-    const hostname = websiteUrl ? new URL(websiteUrl).hostname : undefined
-
-    return {
-      id: post.id,
-      title: post.title,
-      description: post.description,
-      href: `/work/${post.slug}`,
-      icon: "favicon" as const,
-      iconSrc: hostname
-        ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(hostname)}&sz=64`
-        : undefined,
-      fallbackIconSrc: hostname
-        ? `https://icons.duckduckgo.com/ip3/${encodeURIComponent(hostname)}.ico`
-        : undefined,
-      actions: [
-        ...(websiteUrl ? [{ label: "Website", href: websiteUrl }] : []),
-        { label: "GitHub", href: `${site.github}/${post.slug}` },
-      ],
-    }
-  })
 
   return (
     <InteractiveList
       title={isHomePage ? "Last Works" : "Works"}
-      items={items}
+      items={posts.map((post) => ({
+        id: post.id,
+        title: post.title,
+        description: post.description,
+        href: `/work/${post.slug}`,
+        icon: post.image ? "cover" : undefined,
+        iconSrc: post.image ? coverImage(post.image) : undefined,
+        actions: [
+          ...(post.tags[0]?.name
+            ? [{ label: "Website", href: `https://${post.tags[0].name}` }]
+            : []),
+          { label: "GitHub", href: `${site.github}/${post.slug}` }
+        ]
+      }))}
       viewAll={isHomePage ? "/work" : undefined}
-      count={isHomePage ? undefined : items.length}
+      count={isHomePage ? undefined : posts.length}
       itemsPerPage={10}
       paginate={!isHomePage}
       isHomePage={isHomePage}

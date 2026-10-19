@@ -20,9 +20,9 @@
       margin-top: 1.6rem;
       display: grid;
       gap: 1rem;
+      margin-left: 2.5rem;
 
       li {
-        margin-left: 2rem;
 
         strong {
           color: var(--text-primary);
@@ -37,7 +37,7 @@
       li {
         counter-increment: item;
         display: flex;
-        gap: 16px;
+        gap: 10px;
 
         &::before {
           content: counter(item) ".";

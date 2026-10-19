@@ -6,9 +6,14 @@ import {
 
 import { site } from "@/constants/site"
 import { LinkType } from "@/interfaces/link-types"
-import { Calendar1Icon, Mail } from "lucide-react"
+import { CalendarDays, Mail } from "lucide-react"
 
 export const navLinks: LinkType[] = [
+  {
+    ariaLabel: "Link to the Experience page",
+    label: "Experience",
+    href: "/experience"
+  },
   {
     ariaLabel: "Link to the Work page",
     label: "Work",
@@ -43,7 +48,7 @@ export const contactLinks: LinkType[] = [
   {
     ariaLabel: "Schedule a call with Makene",
     label: "Book an intro call",
-    icon: Calendar1Icon,
+    icon: CalendarDays,
     buttonVariant: "default",
     href: site.call
   },
@@ -57,6 +62,11 @@ export const contactLinks: LinkType[] = [
 ]
 
 export const footerLinks: LinkType[] = [
+  {
+    ariaLabel: "Link to the Experience page",
+    label: "Experience",
+    href: "/experience"
+  },
   {
     ariaLabel: "Link to the Work page",
     label: "Work",

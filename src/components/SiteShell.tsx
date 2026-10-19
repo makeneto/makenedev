@@ -7,10 +7,10 @@ import Footer from "@/components/footer/Footer"
 
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   return (
-    <React.Fragment>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      {children}
+      <main className="flex-1">{children}</main>
       <Footer />
-    </React.Fragment>
+    </div>
   )
 }

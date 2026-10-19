@@ -21,11 +21,11 @@ export default function AboutMe() {
       </div>
 
       <div className="grid gap-4">
-        <p className="description--medium">
+        <p className="text-(--text-secondary)">
           Not every path needs a title. Some progress happens in silence through
-          iteration.
+          iteration. silence through iteration silence through iteration.
         </p>
-        <p className="description--medium">
+        <p className="text-(--text-secondary)">
           Not every path needs a title. Some progress happens in .
         </p>
       </div>

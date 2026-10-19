@@ -108,10 +108,7 @@ textarea {
   margin-top: 1.6rem;
   display: grid;
   gap: 1rem;
-}
-.blog-content ol li,
-.blog-content ul li {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 .blog-content ol li strong,
 .blog-content ul li strong {
@@ -124,7 +121,7 @@ textarea {
 .blog-content ol li {
   counter-increment: item;
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 .blog-content ol li::before {
   content: counter(item) ".";
@@ -148,10 +145,10 @@ textarea {
   counter-reset: item;
 }
 .work-content ol li {
-  margin-left: 2rem;
+  margin-left: 1rem;
   counter-increment: item;
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 .work-content ol li::before {
   content: counter(item) ".";
@@ -324,30 +321,6 @@ textarea {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.description--medium {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-}
-@media (width <= 1280px) {
-  .description--medium {
-    font-size: 1rem;
-  }
-}
-.description--normal {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-}
-@media (width <= 1280px) {
-  .description--normal {
-    font-size: 1.05rem;
-  }
-}
-@media (width <= 640px) {
-  .description--normal {
-    font-size: 1rem;
-  }
 }
 
 .engagement {
@@ -672,19 +645,19 @@ textarea {
 }
 .nav--link, .nav--activeLink {
   text-transform: capitalize;
+  font-weight: 500;
 }
 .nav--activeLink {
-  font-weight: 600;
   color: var(--text-primary);
-  text-decoration: line-through;
 }
 .nav--link {
-  font-weight: 500;
   color: var(--text-secondary);
   transition: all 0.1s ease-in;
 }
 .nav--link:hover {
   color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .nav-icon {
   cursor: pointer;
@@ -705,10 +678,8 @@ textarea {
 }
 
 .post-intro h1 {
-  font-size: 1.89rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 @media (width <= 640px) {
   .post-intro h1 {
@@ -757,10 +728,12 @@ textarea {
   outline-offset: 0.4rem;
 }
 .post-content h2 {
-  font-size: 1.3rem;
+  margin-top: 2.7rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  padding-top: 1.7rem;
-  margin-block: 0.5rem 1rem;
+}
+.post-content h2 strong {
+  font-weight: 600;
 }
 @media (width <= 640px) {
   .post-content h2 {
@@ -770,7 +743,7 @@ textarea {
 .post-content p {
   font-size: 1.05rem;
   color: var(--text-secondary);
-  margin-top: 1.6rem;
+  margin-top: 1rem;
 }
 @media (width <= 1280px) {
   .post-content p {
