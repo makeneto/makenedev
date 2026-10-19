@@ -13,7 +13,7 @@ export default async function BooksList() {
         id: book.id,
         title: book.title,
         description: book.description,
-        icon: book.image ? "cover" : undefined,
+        icon: book.image ? "book" : undefined,
         iconSrc: book.image ? coverImage(book.image) : undefined,
       }))}
     />
