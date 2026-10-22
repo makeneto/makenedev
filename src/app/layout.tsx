@@ -16,23 +16,21 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  verification: {
+    google: site.googleSiteVerification,
+  },
+  applicationName: site.dev,
   title: site.dev,
-  description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
-  keywords: [
-    site.dev,
-    "Makene",
-    "Makene Neto",
-    "Makenedev",
-    "Desenvolvimento",
-    "Software",
-    "Portfolio",
-    "software Engineer",
-    "Frontend",
-  ],
+  description: `${site.dev} — ${site.description}`,
+  keywords: site.keywords,
   authors: [{ name: site.dev, url: site.url }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: site.dev,
-    description: `${site.dev} — Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.`,
+    description: `${site.dev} — ${site.description}`,
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
     url: "https://i.postimg.cc/J7SXXCzR/makenedev.png",
   },
