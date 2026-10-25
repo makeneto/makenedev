@@ -29,7 +29,7 @@ export function ListItemIcon({ icon, iconSrc }: ListItemIconProps) {
       alt=""
       width={20}
       height={20}
-      className="mt-0.5 size-7 rounded-full object-contain border"
+      className="mt-0.5 size-6.5 rounded-full object-contain border"
     />
   )
 }
