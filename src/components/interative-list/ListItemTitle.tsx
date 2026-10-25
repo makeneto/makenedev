@@ -7,7 +7,7 @@ type ListItemTitleProps = {
   underlineOnHover?: boolean
 }
 
-const LINK_BASE = "grid sm:flex items-center justify-between"
+const LINK_BASE = "grid sm:flex items-center justify-between text-[0.92rem]"
 const LINK_UNDERLINE =
   "w-fit hover:underline underline-offset-3 transition active:translate-y-px"
 
