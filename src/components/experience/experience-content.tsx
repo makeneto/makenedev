@@ -5,7 +5,7 @@ import { useMemo } from "react"
 import ExperienceHeader from "@/components/experience/experience-header"
 import { PostContentProps } from "@/interfaces/post"
 import { processBlogContent } from "@/utils/process-blog-content"
-import { PostControls } from "../post/controls/post-controls"
+import { PostControls } from "@/components/shared/post-controls/post-controls"
 
 export function ExperienceContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
