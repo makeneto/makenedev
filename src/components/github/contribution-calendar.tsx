@@ -1,9 +1,9 @@
 import type { ContributionWeek } from "@/interfaces/github-types"
 
-import { ContactLinks } from "./contact-links"
 import { ContributionFooter } from "./contribution-footer"
 import { ContributionGraph } from "./contribution-graph"
-import { ResumeCta } from "./resume-cta"
+import { ContactLinks } from "@/components/contact/contact-links"
+import { ResumeCta } from "@/components/contact/resume-cta"
 
 type ContributionCalendarProps = {
   weeks: ContributionWeek[]
