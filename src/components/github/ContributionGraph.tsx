@@ -1,6 +1,6 @@
 "use client"
 
-import { useScrollToEnd } from "@/hooks/use-scroll-to-end"
+import { useScrollToEnd } from "@/hooks/useScrollToEnd"
 import type { ContributionWeek } from "@/interfaces/github-types"
 import { getMaxContributionCount } from "@/utils/github/getMaxContributionCount"
 
