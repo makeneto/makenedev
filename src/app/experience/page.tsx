@@ -2,8 +2,8 @@ import React from "react"
 import { Metadata } from "next"
 
 import { site } from "@/constants/site"
-import DefaultHeader from "@/components/headers/DefaultHeader"
-import MyExperiences from "@/components/home/MyExperience"
+import Header from "@/components/headers/header"
+import MyExperiences from "@/components/home/my-experience"
 
 export const metadata: Metadata = {
   title: `Experience | ${site.dev}`,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <React.Fragment>
-      <DefaultHeader
+      <Header
         title="Experience"
         description="Where I worked, what I built, and what I achieved."
       />
