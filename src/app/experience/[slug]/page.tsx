@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
-import { ExperienceContent } from "@/components/experience/ExperienceContent"
+import { ExperienceContent } from "@/components/experience/experience-content"
 import {
   getExperiencePostBySlug,
   getExperiencePosts
-} from "@/features/experience/wispExperiences"
-import { getAdjacentExperiences } from "@/features/experience/getAdjacentExperiences"
-import { buildPostMetadata } from "@/features/wisp/buildMetadata"
-import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd"
+} from "@/features/experience/wisp-experiences"
+import { getAdjacentExperiences } from "@/features/experience/get-adjacent-experiences"
+import { buildPostMetadata } from "@/features/wisp/build-metadata"
+import { ArticleJsonLd } from "@/components/seo/article-json-ld"
 
 type Props = { params: Promise<{ slug: string }> }
 
