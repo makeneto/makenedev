@@ -1,4 +1,4 @@
-import { CONTRIBUTIONS_QUERY } from "@/constants/githubConstants"
+import { CONTRIBUTIONS_QUERY } from "@/constants/github-constants"
 import { ContributionsData, GitHubResponse } from "@/interfaces/github-types"
 
 export async function fetchContributionsFromGitHub(): Promise<ContributionsData> {
@@ -16,16 +16,16 @@ export async function fetchContributionsFromGitHub(): Promise<ContributionsData>
     method: "POST",
     headers: {
       Authorization: `Bearer ${githubToken}`,
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
       query: CONTRIBUTIONS_QUERY,
-      variables: { login: "makeneto", from, to },
+      variables: { login: "makeneto", from, to }
     }),
     next: {
       revalidate: 1200,
-      tags: ["github-contributions"],
-    },
+      tags: ["github-contributions"]
+    }
   })
 
   if (!response.ok) throw new Error(`GitHub responded with ${response.status}`)
