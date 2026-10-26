@@ -1,7 +1,7 @@
 import { getWorkHomeData } from "@/features/works/wisp-works"
 import { coverImage } from "@/services/wisp"
 import { site } from "@/constants/site"
-import InteractiveList from "@/components/list/interactive-list"
+import InteractiveList from "@/components/ui/interactive-list"
 
 export interface isHomeProps {
   isHomePage?: boolean
