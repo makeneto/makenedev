@@ -6,7 +6,7 @@ import PostHeader from "./work-header"
 import { processBlogContent } from "@/utils/process-blog-content"
 import { Engagement } from "../blog/engagement"
 import { PostContentProps } from "@/interfaces/post"
-import { PostControls } from "../post/controls/post-controls"
+import { PostControls } from "@/components/shared/post-controls/post-controls"
 
 export function WorkContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
