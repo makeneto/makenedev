@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
-import { WorkContent } from "@/components/work/WorkContent"
-import { getPostBySlug, getPosts } from "@/features/works/wispWorks"
-import { buildPostMetadata } from "@/features/wisp/buildMetadata"
-import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd"
-import { getAdjacentWorks } from "@/features/works/getAdjacentWorks"
+import { WorkContent } from "@/components/work/work-content"
+import { getPostBySlug, getPosts } from "@/features/works/wisp-works"
+import { buildPostMetadata } from "@/features/wisp/build-metadata"
+import { ArticleJsonLd } from "@/components/seo/article-json-ld"
+import { getAdjacentWorks } from "@/features/works/get-adjacent-works"
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPostBySlug(slug)
 
   return buildPostMetadata(post, {
-    notFoundTitle: "Project not found",
+    notFoundTitle: "Project not found"
   })
 }
 
