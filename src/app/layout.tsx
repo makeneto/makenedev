@@ -4,21 +4,21 @@ import { Inter } from "next/font/google"
 import "@/css/style.css"
 import "@/css/index.css"
 
-import Providers from "@/components/Providers"
-import SiteShell from "@/components/SiteShell"
+import Providers from "@/components/providers"
+import SiteShell from "@/components/sites-shell"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { site } from "@/constants/site"
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap",
+  display: "swap"
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   verification: {
-    google: site.googleSiteVerification,
+    google: site.googleSiteVerification
   },
   applicationName: site.dev,
   title: site.dev,
@@ -26,21 +26,21 @@ export const metadata: Metadata = {
   keywords: site.keywords,
   authors: [{ name: site.dev, url: site.url }],
   alternates: {
-    canonical: "/",
+    canonical: "/"
   },
   openGraph: {
     title: site.dev,
     description: `${site.dev} — ${site.description}`,
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
-    url: "https://i.postimg.cc/J7SXXCzR/makenedev.png",
+    url: "https://i.postimg.cc/J7SXXCzR/makenedev.png"
   },
   icons: {
-    icon: "/favicon.ico",
-  },
+    icon: "/favicon.ico"
+  }
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
