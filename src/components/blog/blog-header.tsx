@@ -2,7 +2,7 @@ import { CalendarDays, Clock3 } from "lucide-react"
 
 import { formatLongDate } from "@/utils/format-date"
 import { BlogArticle, readingTime } from "@/services/wisp"
-import MakeneProfileLink from "../post/makene-profile-link"
+import MakeneProfileLink from "./makene-profile-link"
 
 export default function BlogHeader({ post }: { post: BlogArticle }) {
   const { publishedAt, createdAt, content } = post
