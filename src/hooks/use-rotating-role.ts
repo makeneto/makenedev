@@ -1,6 +1,6 @@
 "use client"
 
-import { EXIT_MS } from "@/constants/rotatingRoles"
+import { EXIT_MS } from "@/constants/rotating-roles"
 import { useEffect, useState } from "react"
 
 export type RolePhase = "idle" | "out" | "in"
