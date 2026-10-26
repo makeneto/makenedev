@@ -1,6 +1,6 @@
 import { getExperiencePeriod } from "@/data/experience-periods"
 import { getExperienceHomeData } from "@/features/experience/wisp-experiences"
-import InteractiveList from "@/components/list/interactive-list"
+import InteractiveList from "@/components/ui/interactive-list"
 import { coverImage } from "@/services/wisp"
 
 export default async function MyExperiences({
