@@ -2,8 +2,8 @@ import React from "react"
 import { Metadata } from "next"
 
 import { site } from "@/constants/site"
-import Header from "@/components/headers/header"
 import BooksList from "@/components/books/books-list"
+import PageHeader from "@/components/shared/page-header"
 
 export const revalidate = 300
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function BooksPage() {
   return (
     <React.Fragment>
-      <Header
+      <PageHeader
         title="Books Read"
         description={`A living list of the books that passed by me and left a mark.`}
       />
