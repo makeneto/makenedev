@@ -1,9 +1,9 @@
-import { LEVEL_THRESHOLDS } from "@/constants/githubConstants"
+import { LEVEL_THRESHOLDS } from "@/constants/github-constants"
 import { ContributionLevel } from "@/interfaces/github-types"
 
 export function getContributionLevel(
   count: number,
-  max: number,
+  max: number
 ): ContributionLevel {
   if (count === 0) return "empty"
 
