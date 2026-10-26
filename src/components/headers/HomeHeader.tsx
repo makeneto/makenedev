@@ -1,4 +1,4 @@
-import AboutMe from "../home/AboutMe"
+import AboutMe from "../home/about/AboutMe"
 import GithubGraph from "../github/GithubGraph"
 
 export default function HomeHeader() {
