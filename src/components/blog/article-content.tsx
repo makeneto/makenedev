@@ -7,7 +7,7 @@ import { Engagement } from "./engagement"
 
 import { PostContentProps } from "@/interfaces/post"
 import BlogHeader from "./blog-header"
-import { PostControls } from "../post/controls/post-controls"
+import { PostControls } from "@/components/shared/post-controls/post-controls"
 
 export function ArticleContent({ post, previous, next }: PostContentProps) {
   const { html } = useMemo(
