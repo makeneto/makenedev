@@ -1,0 +1,75 @@
+$exit-duration: 250ms;
+$enter-duration: 450ms;
+$shine-duration: 2100ms;
+$shine-delay: 150ms;
+
+$enter-easing: cubic-bezier(0.22, 1, 0.36, 1);
+
+.role {
+  position: relative;
+  display: inline-block;
+
+  &-out {
+    animation: role-out $exit-duration ease-in forwards;
+  }
+
+  &-in {
+    animation: role-in $enter-duration $enter-easing both;
+  }
+
+  &-shine::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    color: transparent;
+    background: linear-gradient(
+        105deg,
+        transparent 42%,
+        var(--role-shine, #fff) 50%,
+        transparent 58%
+      )
+      100% 0 / 300% 100% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: role-shine $shine-duration ease-in-out $shine-delay both;
+  }
+}
+
+@keyframes role-out {
+  to {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(0.35em);
+  }
+}
+
+@keyframes role-in {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(-0.3em);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes role-shine {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .role-in,
+  .role-out,
+  .role-shine::after {
+    animation: none;
+  }
+}
