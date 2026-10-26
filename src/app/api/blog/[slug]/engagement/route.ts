@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { sql } from "drizzle-orm"
-import { db } from "@/lib/engagementDb"
+import { db } from "@/lib/engagement-db"
 
 export const runtime = "nodejs"
 
