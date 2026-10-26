@@ -1,6 +1,6 @@
 import { getBlogHomeData } from "@/features/blog/wisp-blog"
 import { formatLongDate } from "@/utils/format-date"
-import InteractiveList from "@/components/list/interactive-list"
+import InteractiveList from "@/components/ui/interactive-list"
 
 export default async function BlogList({
   isHomePage = false
