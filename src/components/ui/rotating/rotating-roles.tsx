@@ -1,6 +1,6 @@
 "use client"
 
-import { DEFAULT_INTERVAL_MS } from "@/constants/rotatingRoles"
+import { DEFAULT_INTERVAL_MS } from "@/constants/rotating-roles"
 import { useRotatingRole } from "@/hooks/use-rotating-role"
 import RoleText from "./rotating-text"
 
