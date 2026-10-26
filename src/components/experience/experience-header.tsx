@@ -3,7 +3,7 @@ import { CalendarDays } from "lucide-react"
 import { BlogArticle } from "@/services/wisp"
 import { formatLongDate } from "@/utils/format-date"
 import { getExperiencePeriod } from "@/data/experience-periods"
-import { ContactLinks } from "../github/contact-links"
+import { ContactLinks } from "@/components/contact/contact-links"
 import { RecommendButton } from "./recommend-button"
 
 export default function ExperienceHeader({ post }: { post: BlogArticle }) {
