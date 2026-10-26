@@ -1,9 +1,9 @@
 import React from "react"
 import { Metadata } from "next"
 
-import Header from "@/components/headers/header"
 import VerticalBlogList from "@/components/blog/blog-list"
 import { site } from "@/constants/site"
+import PageHeader from "@/components/shared/page-header"
 
 export const metadata: Metadata = {
   title: `My Blog | ${site.dev}`,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <React.Fragment>
-      <Header
+      <PageHeader
         title="My Blog"
         description="The world I write about is not fixed in one field or perspective."
       />
