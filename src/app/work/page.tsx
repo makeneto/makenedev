@@ -2,8 +2,8 @@ import React from "react"
 import { Metadata } from "next"
 
 import { site } from "@/constants/site"
-import Header from "@/components/headers/header"
 import WorksList from "@/components/work/works-list"
+import PageHeader from "@/components/shared/page-header"
 
 export const metadata: Metadata = {
   title: `My Work | ${site.dev}`,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function WorkPage() {
   return (
     <React.Fragment>
-      <Header
+      <PageHeader
         title="My Works"
         description="Some ideas stay on paper. I prefer to put them out into the world."
       />
