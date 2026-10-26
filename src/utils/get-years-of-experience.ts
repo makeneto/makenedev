@@ -1,4 +1,4 @@
-import { NUMBER_WORDS } from "@/constants/yearsOfExperience"
+import { NUMBER_WORDS } from "@/constants/years-of-experience"
 
 const CAREER_START = new Date(2021, 1, 24) // 24-02-2021
 
