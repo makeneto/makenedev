@@ -1,6 +1,6 @@
 import { getBooksHomeData } from "@/features/books/wisp-books"
 import { coverImage } from "@/services/wisp"
-import InteractiveList from "@/components/list/interactive-list"
+import InteractiveList from "@/components/ui/interactive-list"
 
 export default async function BooksList() {
   const { posts } = await getBooksHomeData()
