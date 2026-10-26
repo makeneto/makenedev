@@ -4,8 +4,8 @@ import { Inter } from "next/font/google"
 import "@/css/style.css"
 import "@/css/index.css"
 
-import Providers from "@/components/providers"
-import SiteShell from "@/components/sites-shell"
+import Providers from "@/components/layout/providers"
+import SiteShell from "@/components/layout/site-shell"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { site } from "@/constants/site"
 
