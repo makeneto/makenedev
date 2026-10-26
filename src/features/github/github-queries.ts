@@ -1,4 +1,4 @@
-import { getContributions } from "@/utils/github/getContributions"
+import { getContributions } from "@/utils/github/get-contributions"
 import { queryOptions } from "@tanstack/react-query"
 
 export const contributionsQueryOptions = queryOptions({

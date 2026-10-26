@@ -1,5 +1,5 @@
-import FooterLinks from "./FooterLinks"
-import Signature from "./Signature"
+import FooterLinks from "./footer-links"
+import Signature from "./signature"
 
 export default function Footer() {
   return (

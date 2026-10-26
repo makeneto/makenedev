@@ -1,4 +1,4 @@
-import { getYearsLabel } from "@/utils/getYearsOfExperience"
+import { getYearsLabel } from "@/utils/get-years-of-experience"
 
 export default function AboutDescription() {
   const years = getYearsLabel()

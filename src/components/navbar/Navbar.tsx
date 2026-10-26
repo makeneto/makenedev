@@ -1,8 +1,8 @@
 import { navLinks } from "@/data/links"
-import Logo from "../Logo"
-import ThemeToggle from "../ui/ThemeToggle"
-import NavRoutes from "./NavRoutes"
-import SocialLinks from "./SocialLinks"
+import Logo from "../logo"
+import ThemeToggle from "../ui/theme-toggle"
+import NavRoutes from "./nav-routes"
+import SocialLinks from "./social-links"
 
 export default function Navbar() {
   return (

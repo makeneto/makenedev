@@ -1,4 +1,4 @@
-import { RolePhase } from "@/hooks/useRotatingRole"
+import { RolePhase } from "@/hooks/use-rotating-role"
 
 type RoleTextProps = {
   text: string

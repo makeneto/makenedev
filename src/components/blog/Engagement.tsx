@@ -2,9 +2,9 @@ import { Eye, Share2, ThumbsDown, ThumbsUp } from "lucide-react"
 import { useMediaQuery } from "react-responsive"
 
 import { Button } from "../ui/button"
-import useEngagement from "@/hooks/useEngagement"
-import ReusableTooltip from "../ui/ReusableTooltip"
-import useSharePost from "@/hooks/useSharePost"
+import useEngagement from "@/hooks/use-engagement"
+import ReusableTooltip from "../ui/reusable-tooltip"
+import useSharePost from "@/hooks/use-share-post"
 import { BlogArticle } from "@/services/wisp"
 
 interface EngagementProps {
@@ -20,7 +20,7 @@ export function Engagement({ post, basePath }: EngagementProps) {
   const { handleNativeShare } = useSharePost({
     title,
     slug,
-    basePath,
+    basePath
   })
 
   return (
