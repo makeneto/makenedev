@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next"
 
-import { getPosts as getBlogPosts } from "@/features/blog/wispBlog"
-import { getPosts as getWorkPosts } from "@/features/works/wispWorks"
-import { getExperiencePosts } from "@/features/experience/wispExperiences"
+import { getPosts as getBlogPosts } from "@/features/blog/wisp-blog"
+import { getPosts as getWorkPosts } from "@/features/works/wisp-works"
+import { getExperiencePosts } from "@/features/experience/wisp-experiences"
 import { site } from "@/constants/site"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
