@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: site.dev,
     description: `${site.dev} — ${site.description}`,
     images: ["https://i.postimg.cc/J7SXXCzR/makenedev.png"],
-    url: "https://i.postimg.cc/J7SXXCzR/makenedev.png"
+    url: site.url
   },
   icons: {
     icon: "/favicon.ico"
