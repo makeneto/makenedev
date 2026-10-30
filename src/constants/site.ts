@@ -11,6 +11,7 @@ export const site = {
   call: "https://cal.com/makene-neto-qqro7h/30min",
   github: "https://github.com/makeneto",
   linkedin: "https://linkedin.com/in/makene-neto",
+  twitter: "https://x.com/makeneneto?s=11",
   instagram: "https://instagram.com/makeneto",
 
   keywords: [
