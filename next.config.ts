@@ -3,8 +3,6 @@ import type { NextConfig } from "next"
 const nextConfig: NextConfig = {
   agentRules: false,
   env: {
-    NEXT_PUBLIC_EXPERIENCE_ID:
-      process.env.NEXT_PUBLIC_EXPERIENCE_ID ?? process.env.PUBLIC_EXPERIENCE_ID,
     NEXT_PUBLIC_WORKS_ID:
       process.env.NEXT_PUBLIC_WORKS_ID ?? process.env.PUBLIC_WORKS_ID,
     NEXT_PUBLIC_BLOG_ID:
