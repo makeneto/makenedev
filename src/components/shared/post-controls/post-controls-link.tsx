@@ -30,6 +30,7 @@ export function PostControlsLink({
   return (
     <Link
       href={`${basePath}/${item.slug}`}
+      aria-label={`Go to ${item.title}`}
       className={`weak-text weak-hover text-sm flex items-center gap-1 ${
         isPrevious ? "" : "flex-row-reverse"
       }`}
