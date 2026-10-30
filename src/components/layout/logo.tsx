@@ -9,7 +9,7 @@ export default function Logo({ variant }: LogoProps) {
   const sizeClass = variant === "nav" ? "w-8 sm:w-8.5" : "w-12 m-auto sm:m-0"
 
   return (
-    <Link href="/" aria-label="Makenedev's Logo" className="logo">
+    <Link href="/" aria-label="Go to homepage" className="logo">
       <Image
         src="/assets/makenedev-dark-logo.png"
         alt="Makenedev's Logo"
