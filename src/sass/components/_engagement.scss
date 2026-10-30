@@ -1,19 +1,7 @@
 .engagement {
-  width: fit-content;
   margin: 0 auto;
-  padding: 0.5rem;
-  border-radius: 999px;
-
-  background: var(--bg-primary);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-tertiary);
-
-  @media (width <= 640px) {
-    background: var(--bg-engagement);
-    align-items: flex-start;
-    flex-direction: column;
-  }
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-tertiary);
 
   &-wrap {
     margin: 4rem auto;
@@ -21,41 +9,18 @@
 
   &-reactions {
     display: flex;
+    justify-content: space-between;
     gap: 0.5rem;
   }
 }
 
 .reaction {
-  &-view {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-
-    border: 1px solid var(--border-tertiary);
-    color: var(--text-primary);
-    cursor: default;
-    background: var(--bg-secondary);
-    border-radius: 999px;
-    height: 100%;
-    padding: 0.25rem 0.8rem;
-    transition: transform 0.2s;
-    font-size: small;
-
-    & svg {
-      width: 1.2rem;
-      height: auto;
-      stroke-width: 1.3;
-    }
-  }
-
   &-button {
-    border: 1px solid var(--border-primary);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     cursor: pointer;
-    background: var(--bg-secondary);
-    border-radius: 999px;
+    background: transparent;
     height: 100%;
-    padding: 0.35rem 0.8rem;
+    padding: 0.3rem 0.5rem;
     transition: transform 0.2s;
 
     &:hover {
@@ -76,10 +41,9 @@
       font-size: small;
     }
 
-    &.is-selected {
-      border-color: transparent;
-      background: var(--text-primary);
-      color: var(--bg-primary);
+    &.is-selected,
+    &:hover {
+      color: var(--text-primary);
     }
 
     &:disabled {
@@ -90,16 +54,16 @@
 }
 
 .share-button {
-  border: 1px solid var(--border-primary);
-  color: var(--text-primary);
+  color: var(--text-secondary);
   cursor: pointer;
-  background: var(--bg-secondary);
+  background: transparent;
   border-radius: 999px;
   height: 100%;
-  padding: 0.35rem 0.8rem 0.35rem 0.65rem;
+  padding: 0.3rem 0.3rem;
   transition: transform 0.2s;
 
   &:hover {
+    color: var(--text-primary);
     transform: translateY(-1px);
   }
 }
