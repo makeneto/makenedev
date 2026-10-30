@@ -2,7 +2,6 @@ import { ControlsProps } from "@/interfaces/post"
 import { PostControlsLink } from "./post-controls-link"
 
 export function PostControls({
-  variant,
   previous,
   next,
   basePath
@@ -15,14 +14,12 @@ export function PostControls({
         item={previous}
         basePath={basePath}
         direction="previous"
-        variant={variant}
       />
 
       <PostControlsLink
         item={next}
         basePath={basePath}
         direction="next"
-        variant={variant}
       />
     </nav>
   )
