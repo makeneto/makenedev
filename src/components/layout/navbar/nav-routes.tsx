@@ -25,6 +25,7 @@ export default function NavRoutes({ links }: NavRoutesProps) {
         <Link
           key={link.href}
           href={link.href}
+          target={link.external ? "_blank" : "_self"}
           translate={link.label === "Home" ? "no" : "yes"}
           className={`text-sm ${
             isActivePath(pathname, link.href) ? "nav--activeLink" : "nav--link"
