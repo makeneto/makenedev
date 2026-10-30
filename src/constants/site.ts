@@ -6,7 +6,7 @@ export const site = {
   url: "https://makene.dev",
 
   description:
-    "Software Engineer. Minimalist portfolio showcasing projects, experiences, and what motivates me as a software engineer.",
+    "Software Engineer. Minimalist portfolio showcasing projects, blog, and what motivates me as a software engineer.",
 
   call: "https://cal.com/makene-neto-qqro7h/30min",
   github: "https://github.com/makeneto",
