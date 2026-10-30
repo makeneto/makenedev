@@ -59,7 +59,7 @@
 
     h2 {
       margin-top: 2.7rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
 
       & strong {
@@ -67,21 +67,17 @@
       }
 
       @media (width <= 640px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
 
     p {
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       color: var(--text-secondary);
       margin-top: 1rem;
 
       @media (width <= 1280px) {
-        font-size: 1.05rem;
-      }
-
-      @media (width <= 640px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       &:first-child {
@@ -124,6 +120,7 @@
 
 .weak {
   &-text {
+    transition: all 0.2 ease-in;
     color: var(--text-secondary);
   }
 
