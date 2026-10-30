@@ -15,7 +15,7 @@ export default function BlogHeader({ post }: { post: BlogArticle }) {
       <div className="post-intro">
         <h1>{post.title}</h1>
 
-        <div className="flex items-center gap-3 text-sm mt-2">
+        <div className="flex items-center gap-3 text-xs mt-4">
           <span className="weak-text flex items-center gap-2">
             <CalendarDays size={14} /> {date ? formatLongDate(date) : "No data"}
           </span>
@@ -28,7 +28,7 @@ export default function BlogHeader({ post }: { post: BlogArticle }) {
           </span>
         </div>
 
-        <p className="sm:text-[1.04rem] xl:text-[1.05rem] mt-12">
+        <p className="text-[0.9rem] sm:text-[0.95rem] text-taupe-500 dark:text-neutral-300 mt-12">
           {post.description}
         </p>
       </div>
