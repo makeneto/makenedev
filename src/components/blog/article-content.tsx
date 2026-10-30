@@ -27,7 +27,6 @@ export function ArticleContent({ post, previous, next }: PostContentProps) {
       <Engagement post={post} basePath="blog" />
 
       <PostControls
-        variant="blog"
         previous={previous}
         next={next}
         basePath="/blog"
