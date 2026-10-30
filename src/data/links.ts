@@ -10,11 +10,6 @@ import { CalendarDays, Mail } from "lucide-react"
 
 export const navLinks: LinkType[] = [
   {
-    ariaLabel: "Link to the Experience page",
-    label: "Experience",
-    href: "/experience"
-  },
-  {
     ariaLabel: "Link to the Work page",
     label: "Work",
     href: "/work"
@@ -62,11 +57,6 @@ export const contactLinks: LinkType[] = [
 ]
 
 export const footerLinks: LinkType[] = [
-  {
-    ariaLabel: "Link to the Experience page",
-    label: "Experience",
-    href: "/experience"
-  },
   {
     ariaLabel: "Link to the Work page",
     label: "Work",
