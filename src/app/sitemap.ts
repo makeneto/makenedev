@@ -2,12 +2,10 @@ import type { MetadataRoute } from "next"
 
 import { getPosts as getBlogPosts } from "@/features/blog/wisp-blog"
 import { getPosts as getWorkPosts } from "@/features/works/wisp-works"
-import { getExperiencePosts } from "@/features/experience/wisp-experiences"
 import { site } from "@/constants/site"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [blogPosts, workPosts, experiencePosts] = await Promise.all([
-    getExperiencePosts(),
+  const [blogPosts, workPosts] = await Promise.all([
     getWorkPosts(),
     getBlogPosts()
   ])
@@ -18,12 +16,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1
-    },
-    {
-      url: `${site.url}/experience`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9
     },
     {
       url: `${site.url}/work`,
@@ -45,14 +37,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   ]
 
-  const experienceRoutes: MetadataRoute.Sitemap = experiencePosts.map(
-    (post) => ({
-      url: `${site.url}/experience/${post.slug}`,
-      lastModified: post.updatedAt ?? post.publishedAt ?? new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8
-    })
-  )
   const workRoutes: MetadataRoute.Sitemap = workPosts.map((post) => ({
     url: `${site.url}/work/${post.slug}`,
     lastModified: post.updatedAt ?? post.publishedAt ?? new Date(),
@@ -67,5 +51,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6
   }))
 
-  return [...staticRoutes, ...experienceRoutes, ...workRoutes, ...blogRoutes]
+  return [...staticRoutes, ...workRoutes, ...blogRoutes]
 }
