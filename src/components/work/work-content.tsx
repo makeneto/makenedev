@@ -25,12 +25,7 @@ export function WorkContent({ post, previous, next }: PostContentProps) {
 
       <Engagement post={post} basePath="work" />
 
-      <PostControls
-        variant="work"
-        previous={previous}
-        next={next}
-        basePath="/work"
-      />
+      <PostControls previous={previous} next={next} basePath="/work" />
     </article>
   )
 }
