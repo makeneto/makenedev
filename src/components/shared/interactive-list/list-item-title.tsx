@@ -27,7 +27,7 @@ export function ListItemTitle({
 
   return (
     <h3 className="flex-1 text-base">
-      <Link href={href} className={linkClassName}>
+      <Link href={href} aria-label={`Go to ${title}`} className={linkClassName}>
         {title}
         {description && (
           <span className="weak-text text-sm">{description}</span>
