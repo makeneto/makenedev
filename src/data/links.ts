@@ -1,9 +1,3 @@
-import {
-  RiGithubFill,
-  RiInstagramLine,
-  RiLinkedinBoxFill
-} from "@remixicon/react"
-
 import { site } from "@/constants/site"
 import { LinkType } from "@/interfaces/link-types"
 import { CalendarDays, Mail } from "lucide-react"
@@ -18,24 +12,11 @@ export const navLinks: LinkType[] = [
     ariaLabel: "Link to the Blog page",
     label: "Blog",
     href: "/blog"
-  }
-]
-
-export const socialLinks: LinkType[] = [
-  {
-    ariaLabel: "Makene's GitHub",
-    icon: RiGithubFill,
-    href: site.github
   },
   {
-    ariaLabel: "Makene's LinkedIn",
-    icon: RiLinkedinBoxFill,
-    href: "https://linkedin.com/in/makene-neto"
-  },
-  {
-    ariaLabel: "Makene's Instagram",
-    icon: RiInstagramLine,
-    href: site.instagram
+    ariaLabel: "Link to the Books page",
+    label: "Books",
+    href: "/books"
   }
 ]
 
@@ -58,18 +39,27 @@ export const contactLinks: LinkType[] = [
 
 export const footerLinks: LinkType[] = [
   {
-    ariaLabel: "Link to the Work page",
-    label: "Work",
-    href: "/work"
+    ariaLabel: "Go to the Github",
+    label: "Github",
+    href: site.github,
+    external: true
   },
   {
-    ariaLabel: "Link to the Blog page",
-    label: "Blog",
-    href: "/blog"
+    ariaLabel: "Go to LinkedIn",
+    label: "LinkedIn",
+    href: site.linkedin,
+    external: true
   },
   {
-    ariaLabel: "Link to the Books page",
-    label: "Books",
-    href: "/books"
+    ariaLabel: "Go to the X (Twitter)",
+    label: "twitter (x)",
+    href: site.twitter,
+    external: true
+  },
+  {
+    ariaLabel: "Go to the Instagram",
+    label: "Instagram",
+    href: site.instagram,
+    external: true
   }
 ]
