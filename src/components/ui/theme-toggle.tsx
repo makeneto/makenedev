@@ -10,8 +10,6 @@ export default function ThemeToggle() {
 
   return (
     <div className="hidden lg:flex items-center">
-      <div className="w-px h-4.5 bg-zinc-200 dark:bg-zinc-800" />
-
       <Button
         variant="ghost"
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
