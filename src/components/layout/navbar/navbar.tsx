@@ -2,7 +2,6 @@ import { navLinks } from "@/data/links"
 import Logo from "../logo"
 import ThemeToggle from "@/components/ui/theme-toggle"
 import NavRoutes from "./nav-routes"
-import SocialLinks from "./social-links"
 
 export default function Navbar() {
   return (
@@ -13,10 +12,7 @@ export default function Navbar() {
         <NavRoutes links={navLinks} />
       </div>
 
-      <div className="flex items-center">
-        <SocialLinks />
-        <ThemeToggle />
-      </div>
+      <ThemeToggle />
     </nav>
   )
 }
