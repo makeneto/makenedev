@@ -16,6 +16,7 @@ export function ListItemActions({ actions }: ListItemActionsProps) {
           key={href}
           href={href}
           target="_blank"
+          aria-label={`Go to ${label}`}
           rel="noopener noreferrer"
           className="flex items-center gap-1 transition text-xs text-(--text-secondary) hover:text-(--text-primary) hover:underline underline-offset-3 active:translate-y-px"
         >
