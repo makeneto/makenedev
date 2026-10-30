@@ -11,7 +11,6 @@ export interface AdjacentItems {
 }
 
 export interface ControlsProps {
-  variant: "work" | "blog"
   previous: AdjacentItem | null
   next: AdjacentItem | null
   basePath: string
