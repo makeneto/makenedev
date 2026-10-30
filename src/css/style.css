@@ -611,7 +611,8 @@ textarea {
   }
 }
 .nav--link, .nav--activeLink {
-  text-transform: lowercase;
+  text-transform: capitalize;
+  font-size: small;
   font-weight: 500;
 }
 .nav--activeLink {
