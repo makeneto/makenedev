@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 
 import { AdjacentItem } from "@/interfaces/post"
 import { Button } from "@/components/ui/button"
@@ -9,13 +8,11 @@ import { Button } from "@/components/ui/button"
 export function PostControlsLink({
   item,
   basePath,
-  direction,
-  variant
+  direction
 }: {
   item: AdjacentItem | null
   basePath: string
   direction: "previous" | "next"
-  variant: "work" | "blog"
 }) {
   const isPrevious = direction === "previous"
 
@@ -28,17 +25,14 @@ export function PostControlsLink({
   }
 
   return (
-    <Link
-      href={`${basePath}/${item.slug}`}
-      aria-label={`Go to ${item.title}`}
-      className={`weak-text weak-hover text-sm flex items-center gap-1 ${
-        isPrevious ? "" : "flex-row-reverse"
-      }`}
-    >
-      <Button variant="link" className="btn--link p-0">
-        {isPrevious && <ChevronLeft size={16} />}
-        {variant === "work" ? item.title : isPrevious ? "Previous" : "Next"}
-        {!isPrevious && <ChevronRight size={16} />}
+    <Link href={`${basePath}/${item.slug}`} aria-label={`Go to ${item.title}`} className="group">
+      <Button
+        className={`bg-transparent grid p-0 ${isPrevious ? "text-start" : "text-end"}`}
+      >
+        <span className="weak-text text-xs">
+          {isPrevious ? "Previous" : "Next"}
+        </span>
+        <p className="text-taupe-900 dark:text-white group-hover:underline underline-offset-3">{item.title}</p>
       </Button>
     </Link>
   )
