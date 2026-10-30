@@ -9,7 +9,7 @@ export function ContactLinks() {
       {contactLinks.map(({ href, label, buttonVariant, icon: Icon }) => (
         <li key={href}>
           <Button asChild variant={buttonVariant}>
-            <Link href={href} target="_blank" rel="noopener noreferrer">
+            <Link href={href} target="_blank" aria-label="Go to contact channel" rel="noopener noreferrer">
               {Icon ? <Icon aria-hidden="true" focusable="false" /> : null}
               {label}
             </Link>
