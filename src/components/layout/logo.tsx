@@ -1,31 +1,16 @@
-import Image from "next/image"
 import Link from "next/link"
 
-interface LogoProps {
-  variant: "nav" | "footer"
-}
-
-export default function Logo({ variant }: LogoProps) {
-  const sizeClass = variant === "nav" ? "w-8 sm:w-8.5" : "w-12 m-auto sm:m-0"
-
+export default function Logo() {
   return (
-    <Link href="/" aria-label="Go to homepage" className="logo">
-      <Image
-        src="/assets/makenedev-dark-logo.png"
-        alt="Makenedev's Logo"
-        width={160}
-        height={40}
-        className={`${sizeClass} hidden dark:block`}
-        priority
-      />
-      <Image
-        src="/assets/makenedev-light-logo.png"
-        alt="Makenedev's Logo"
-        width={160}
-        height={40}
-        className={`${sizeClass} block dark:hidden`}
-        priority
-      />
+    <Link
+      href="/"
+      aria-label="Go to homepage"
+      className="group flex items-center gap-1 select-none"
+    >
+      <span className="mb-1.5 text-3xl font-bold text-taupe-700 dark:text-white">
+        m
+      </span>{" "}
+      <div className="h-7.5 transition-all border-r-4 border-taupe-300 dark:border-neutral-600 group-hover:border-taupe-400 dark:group-hover:border-neutral-400" />
     </Link>
   )
 }
