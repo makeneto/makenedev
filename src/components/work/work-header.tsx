@@ -18,7 +18,7 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
     <header className="grid gap-5 sm:gap-5">
       <div className="flex items-centers justify-between">
         <span className="flex items-center gap-1">
-          <Link href="/work">
+          <Link href="/work" aria-label="Go to work page">
             <Button variant="link" className="p-0">
               Work
             </Button>
@@ -38,7 +38,11 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
         <div className="flex items-center gap-3 text-sm">
           {projectLink && (
             <div className="flex items-center gap-3">
-              <Link href={projectLink ? liveDemoLink : ""} target="_blank">
+              <Link
+                href={projectLink ? liveDemoLink : ""}
+                target="_blank"
+                aria-label={`View more about ${post.title}`}
+              >
                 <Button variant="link" className="p-0">
                   <Globe size={14} strokeWidth={1.8} />
                   Live Demo
@@ -50,7 +54,11 @@ export default function WorkHeader({ post }: { post: BlogArticle }) {
           )}
 
           <Link href={`${site.github}/${slug}`}>
-            <Button variant="link" className="btn--link p-0">
+            <Button
+              variant="link"
+              className="btn--link p-0"
+              aria-label="Open github repository"
+            >
               <RiGithubLine size={14} strokeWidth={1.8} />
               Repository
             </Button>
