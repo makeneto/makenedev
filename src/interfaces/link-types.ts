@@ -13,4 +13,5 @@ export type LinkType = {
     | "destructive"
     | "link"
   icon?: RemixiconComponentType | LucideIcon
+  external?: boolean
 }
