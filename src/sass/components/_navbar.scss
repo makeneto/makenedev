@@ -17,7 +17,8 @@
 
   &--link,
   &--activeLink {
-    text-transform: lowercase;
+    text-transform: capitalize;
+    font-size: small;
     font-weight: 500;
   }
 
