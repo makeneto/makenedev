@@ -1,5 +1,3 @@
-import { site } from "@/constants/site"
-import { LinkType, SocialLinkType } from "@/interfaces/link-types"
 import {
   RiGithubFill,
   RiGlobalLine,
@@ -9,6 +7,9 @@ import {
   RiTwitterXLine
 } from "@remixicon/react"
 import { CalendarDays, Mail } from "lucide-react"
+
+import { site } from "@/constants/site"
+import { LinkType, SocialLinkType } from "@/interfaces/link-types"
 
 export const navLinks: LinkType[] = [
   {
@@ -42,33 +43,6 @@ export const contactLinks: LinkType[] = [
     icon: Mail,
     buttonVariant: "outline",
     href: `mailto:${site.email}`
-  }
-]
-
-export const footerLinks: LinkType[] = [
-  {
-    ariaLabel: "Go to the Github",
-    label: "Github",
-    href: site.github,
-    external: true
-  },
-  {
-    ariaLabel: "Go to LinkedIn",
-    label: "LinkedIn",
-    href: site.linkedin,
-    external: true
-  },
-  {
-    ariaLabel: "Go to the X (Twitter)",
-    label: "twitter (x)",
-    href: site.twitter,
-    external: true
-  },
-  {
-    ariaLabel: "Go to the Instagram",
-    label: "Instagram",
-    href: site.instagram,
-    external: true
   }
 ]
 
