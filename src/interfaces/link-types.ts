@@ -15,3 +15,10 @@ export type LinkType = {
   icon?: RemixiconComponentType | LucideIcon
   external?: boolean
 }
+
+export type SocialLinkType = {
+  ariaLabel: string
+  href: string
+  icon: RemixiconComponentType | LucideIcon
+  external?: boolean
+}
