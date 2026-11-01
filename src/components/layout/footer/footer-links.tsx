@@ -1,5 +1,6 @@
-import { footerLinks } from "@/data/links"
-import NavRoutes from "../navbar/nav-routes"
+import Link from "next/link"
+import { ExternalLink } from "lucide-react"
+
 import { site } from "@/constants/site"
 
 export default function FooterLinks() {
@@ -11,7 +12,9 @@ export default function FooterLinks() {
         © {site.dev} | {currentYear}
       </span>
 
-      <NavRoutes links={footerLinks} />
+      <Link href="/links" className="nav--link flex items-center gap-1.5">
+        Social Links <ExternalLink className="size-3.5" />
+      </Link>
     </section>
   )
 }
