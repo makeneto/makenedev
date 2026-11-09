@@ -1,6 +1,6 @@
 export const roles = [
+  "Founder",
   "Entrepreneur",
   "Software Engineer",
-  "Founder",
-  "Frontend Engineer",
+  "Product Engineer",
 ]
